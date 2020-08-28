@@ -1,0 +1,7 @@
+{
+    "source file": "commons.py",
+    "line number": "56",
+    "func name": "remove_unreachable_nodes",
+    "func arg": "(graph)",
+    "comments": "Removes unreachable nodes (nodes with no edges), inplace.\n\nParameters ---------- graph : :class:`~gensim.summarization.graph.Graph` Given graph.\n"
+}

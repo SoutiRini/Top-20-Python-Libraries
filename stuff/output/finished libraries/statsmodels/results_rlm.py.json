@@ -1,0 +1,7 @@
+{
+    "source file": "results_rlm.py",
+    "line number": "6",
+    "func name": "_shift_intercept",
+    "func arg": "(arr)",
+    "comments": "A convenience function to make the SAS covariance matrix compatible with statsmodels.rlm covariance\n\n\n"
+}

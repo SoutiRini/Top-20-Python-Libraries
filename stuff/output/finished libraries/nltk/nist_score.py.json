@@ -1,0 +1,7 @@
+{
+    "source file": "nist_score.py",
+    "line number": "174",
+    "func name": "nist_length_penalty",
+    "func arg": "(ref_len, hyp_len)",
+    "comments": "Calculates the NIST length penalty, from Eq. 3 in Doddington (2002)\n\npenalty = exp( beta * log( min( len(hyp)/len(ref) , 1.0 )))\n\nwhere,\n\n`beta` is chosen to make the brevity penalty factor = 0.5 when the no. of words in the system output (hyp) is 2/3 of the average no. of words in the reference translation (ref)\n\nThe NIST penalty is different from BLEU's such that it minimize the impact of the score of small variations in the length of a translation. See Fig. 4 in\n\nDoddington (2002)\n"
+}

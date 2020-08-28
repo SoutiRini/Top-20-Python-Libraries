@@ -1,0 +1,7 @@
+{
+    "source file": "optimize.py",
+    "line number": "207",
+    "func name": "_check_optimize_result",
+    "func arg": "(solver, result, max_iter, extra_warning_msg)",
+    "comments": "Check the OptimizeResult for successful convergence\n\nParameters ---------- solver : str Solver name. Currently only `lbfgs` is supported.\n\nresult : OptimizeResult Result of the scipy.optimize.minimize function.\n\nmax_iter : int, default=None Expected maximum number of iterations.\n\nextra_warning_msg : str, default=None Extra warning message.\n##### Returns\n* **n_iter **: int\n   Number of iterations.\n\n"
+}

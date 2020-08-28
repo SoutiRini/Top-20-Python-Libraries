@@ -1,0 +1,7 @@
+{
+    "source file": "test__remove_redundancy.py",
+    "line number": "26",
+    "func name": "_assert_success",
+    "func arg": "(res, desired_fun, desired_x, rtol, atol)",
+    "comments": ""
+}

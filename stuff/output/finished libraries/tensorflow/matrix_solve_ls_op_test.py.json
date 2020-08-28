@@ -1,0 +1,7 @@
+{
+    "source file": "matrix_solve_ls_op_test.py",
+    "line number": "233",
+    "func name": "_GetLargeMatrixSolveLsOpTests",
+    "func arg": "(dtype, use_placeholder, fast, l2_regularizer)",
+    "comments": ""
+}

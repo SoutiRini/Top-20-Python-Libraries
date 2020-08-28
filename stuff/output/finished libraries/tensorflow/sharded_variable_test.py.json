@@ -1,0 +1,7 @@
+{
+    "source file": "sharded_variable_test.py",
+    "line number": "42",
+    "func name": "_load_and_run",
+    "func arg": "(model_dir, inputs, signature_key)",
+    "comments": "Load a SavedModel into a TF 1.x-style graph and run `signature_key`.\n\n\n"
+}

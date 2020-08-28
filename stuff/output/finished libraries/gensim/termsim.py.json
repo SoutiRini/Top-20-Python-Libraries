@@ -1,0 +1,7 @@
+{
+    "source file": "termsim.py",
+    "line number": "89",
+    "func name": "_shortest_uint_dtype",
+    "func arg": "(max_value)",
+    "comments": "Get the shortest unsingned integer data-type required for representing values up to a given maximum value.\n\n\n##### Returns\n"
+}

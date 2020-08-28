@@ -1,0 +1,7 @@
+{
+    "source file": "random_seed.py",
+    "line number": "29",
+    "func name": "get_seed",
+    "func arg": "(seed)",
+    "comments": "Returns the local seeds an operation should use given an op-specific seed.\n\nSee `random_seed.get_seed` for more details. This wrapper adds support for the case where `seed` may be a tensor.\n##### Args\n* **seed**: An integer or a `tf.int64` scalar tensor.\n\n##### Returns\n"
+}

@@ -1,0 +1,7 @@
+{
+    "source file": "basic49.py",
+    "line number": "397",
+    "func name": "ifft2",
+    "func arg": "(x, shape, axes, overwrite_x)",
+    "comments": "2-D discrete inverse Fourier transform of real or complex sequence.\n\nReturn inverse 2-D discrete Fourier transform of arbitrary type sequence x.\n\nSee `ifft` for more information.\n\nSee also -------- fft2, ifft\n\nExamples -------- >>> from scipy.fftpack import fft2, ifft2 >>> y = np.mgrid[:5, :5][0] >>> y array([[0, 0, 0, 0, 0], [1, 1, 1, 1, 1], [2, 2, 2, 2, 2], [3, 3, 3, 3, 3], [4, 4, 4, 4, 4]]) >>> np.allclose(y, fft2(ifft2(y))) True\n"
+}

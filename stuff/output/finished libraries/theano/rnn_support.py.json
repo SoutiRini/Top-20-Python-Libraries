@@ -1,0 +1,7 @@
+{
+    "source file": "rnn_support.py",
+    "line number": "50",
+    "func name": "bias_weights",
+    "func arg": "(length, param_list, name)",
+    "comments": "theano shared variable for bias unit, given length\n\n\n"
+}

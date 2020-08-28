@@ -1,0 +1,7 @@
+{
+    "source file": "genpareto.py",
+    "line number": "139",
+    "func name": "meanexcess_dist",
+    "func arg": "(lb, **kwds)",
+    "comments": ""
+}

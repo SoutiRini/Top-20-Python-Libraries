@@ -1,0 +1,7 @@
+{
+    "source file": "model_architectures.py",
+    "line number": "292",
+    "func name": "get_models",
+    "func arg": "(exclude_models)",
+    "comments": "Get all models excluding the specificed ones.\n\n\n"
+}

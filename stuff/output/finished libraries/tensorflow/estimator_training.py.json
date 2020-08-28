@@ -1,0 +1,7 @@
+{
+    "source file": "estimator_training.py",
+    "line number": "344",
+    "func name": "estimator_evaluate",
+    "func arg": "(estimator, evaluate_distributed_fn, hooks)",
+    "comments": "Run distribute coordinator for Estimator's `evaluate` method.\n\n\n"
+}

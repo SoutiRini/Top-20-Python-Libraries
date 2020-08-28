@@ -1,0 +1,7 @@
+{
+    "source file": "multinomial_op_test.py",
+    "line number": "216",
+    "func name": "native_op_vs_composed_ops",
+    "func arg": "(batch_size, num_classes, num_samples, num_iters)",
+    "comments": ""
+}

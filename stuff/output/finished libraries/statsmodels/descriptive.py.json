@@ -1,0 +1,7 @@
+{
+    "source file": "descriptive.py",
+    "line number": "26",
+    "func name": "DescStat",
+    "func arg": "(endog)",
+    "comments": "Returns an instance to conduct inference on descriptive statistics via empirical likelihood.  See DescStatUV and DescStatMV for more information.\n\nParameters ---------- endog : ndarray Array of data\n##### Returns\n"
+}

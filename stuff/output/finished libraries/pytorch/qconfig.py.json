@@ -1,0 +1,7 @@
+{
+    "source file": "qconfig.py",
+    "line number": "90",
+    "func name": "get_default_qat_qconfig",
+    "func arg": "(backend)",
+    "comments": ""
+}

@@ -1,0 +1,7 @@
+{
+    "source file": "laguerre.py",
+    "line number": "1561",
+    "func name": "lagweight",
+    "func arg": "(x)",
+    "comments": "Weight function of the Laguerre polynomials.\n\nThe weight function is :math:`exp(-x)` and the interval of integration is :math:`[0, \\inf]`. The Laguerre polynomials are orthogonal, but not normalized, with respect to this weight function.\n\nParameters ---------- x : array_like Values at which the weight function will be computed.\n##### Returns\n* **w **: ndarray\n   The weight function at `x`.\n\n* **.. versionadded**: \n\n"
+}

@@ -1,0 +1,7 @@
+{
+    "source file": "depth_to_space.py",
+    "line number": "27",
+    "func name": "make_depth_to_space_tests",
+    "func arg": "(options)",
+    "comments": "Make a set of tests to do depth_to_space.\n\n\n"
+}

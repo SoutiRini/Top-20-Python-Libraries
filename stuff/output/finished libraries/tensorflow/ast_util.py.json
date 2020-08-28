@@ -1,0 +1,7 @@
+{
+    "source file": "ast_util.py",
+    "line number": "283",
+    "func name": "parallel_walk",
+    "func arg": "(node, other)",
+    "comments": "Walks two ASTs in parallel.\n\nThe two trees must have identical structure.\n##### Args\n* **node**: Union[ast.AST, Iterable[ast.AST]]\n\n* **other**: Union[ast.AST, Iterable[ast.AST]]\n\n* **elds**: \n\n"
+}

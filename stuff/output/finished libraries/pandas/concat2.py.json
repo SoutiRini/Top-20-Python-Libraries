@@ -1,0 +1,7 @@
+{
+    "source file": "concat2.py",
+    "line number": "590",
+    "func name": "_make_concat_multiindex",
+    "func arg": "(indexes, keys, levels, names)",
+    "comments": ""
+}

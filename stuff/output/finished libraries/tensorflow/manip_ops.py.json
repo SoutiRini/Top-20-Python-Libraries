@@ -1,0 +1,7 @@
+{
+    "source file": "manip_ops.py",
+    "line number": "31",
+    "func name": "roll",
+    "func arg": "(input, shift, axis, name)",
+    "comments": ""
+}

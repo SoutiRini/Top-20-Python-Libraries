@@ -1,0 +1,7 @@
+{
+    "source file": "unittest_tools.py",
+    "line number": "451",
+    "func name": "assertFailure_fast",
+    "func arg": "(f)",
+    "comments": "A Decorator to handle the test cases that are failing when THEANO_FLAGS =cycle_detection='fast'.\n\n\n"
+}

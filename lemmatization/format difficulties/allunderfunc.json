@@ -1,0 +1,12 @@
+{"function": 
+	[{"source file": "app.py", 
+	"line number": "60", 
+	"func name": "_make_timedelta", 
+	"func arg": "(value)",
+	"comments": ""},
+
+	{"source file": "app.py", 
+	"line number": "66", 
+	"func name": "setupmethod", 
+	"func arg": "(f)", 
+	"comments": "Wraps a method so that it performs a check in debug mode if the first request was already handled.\n\n\n"}]}

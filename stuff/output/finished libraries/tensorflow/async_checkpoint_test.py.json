@@ -1,0 +1,7 @@
+{
+    "source file": "async_checkpoint_test.py",
+    "line number": "65",
+    "func name": "model_fn",
+    "func arg": "(features, labels, mode, params)",
+    "comments": ""
+}

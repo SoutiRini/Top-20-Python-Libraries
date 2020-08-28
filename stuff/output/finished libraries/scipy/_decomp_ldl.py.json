@@ -1,0 +1,7 @@
+{
+    "source file": "_decomp_ldl.py",
+    "line number": "298",
+    "func name": "_ldl_construct_tri_factor",
+    "func arg": "(lu, swap_vec, pivs, lower)",
+    "comments": "Helper function to construct explicit outer factors of LDL factorization.\n\nIf lower is True the permuted factors are multiplied as L(1)*L(2)*...*L(k). Otherwise, the permuted factors are multiplied as L(k)*...*L(2)*L(1). See LAPACK documentation for more details.\n\nParameters ---------- lu : ndarray The triangular array that is extracted from LAPACK routine call with ones on the diagonals. swap_vec : ndarray The array that defines the row swapping indices. If the kth entry is m then rows k,m are swapped. Notice that the mth entry is not necessarily k to avoid undoing the swapping. pivs : ndarray The array that defines the block diagonal structure returned by _ldl_sanitize_ipiv(). lower : bool, optional The boolean to switch between lower and upper triangular structure.\n##### Returns\n* **lu **: ndarray\n    The square outer factor which satisfies the L * D * L.T = A\n\n* **perm **: ndarray\n    The permutation vector that brings the lu to the triangular form\n\n"
+}

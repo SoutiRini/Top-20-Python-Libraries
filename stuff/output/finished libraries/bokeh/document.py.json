@@ -1,0 +1,7 @@
+{
+    "source file": "document.py",
+    "line number": "1168",
+    "func name": "_combine_document_events",
+    "func arg": "(new_event, old_events)",
+    "comments": "Attempt to combine a new event with a list of previous events.\n\nThe ``old_event`` will be scanned in reverse, and ``.combine(new_event)`` will be called on each. If a combination can be made, the function will return immediately. Otherwise, ``new_event`` will be appended to ``old_events``.\n##### Args\n* **new_event (DocumentChangedEvent) **: The new event to attempt to combine\n\n##### Returns\n"
+}

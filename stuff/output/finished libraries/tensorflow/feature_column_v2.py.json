@@ -1,0 +1,7 @@
+{
+    "source file": "feature_column_v2.py",
+    "line number": "4430",
+    "func name": "_sanitize_column_name_for_variable_scope",
+    "func arg": "(name)",
+    "comments": "Sanitizes user-provided feature names for use as variable scopes.\n\n\n"
+}

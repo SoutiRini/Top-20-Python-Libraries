@@ -1,0 +1,7 @@
+{
+    "source file": "_remove_redundancy.py",
+    "line number": "361",
+    "func name": "_remove_redundancy",
+    "func arg": "(A, b)",
+    "comments": "Eliminates redundant equations from system of equations defined by Ax = b and identifies infeasibilities.\n\nParameters ---------- A : 2-D array An array representing the left-hand side of a system of equations b : 1-D array An array representing the right-hand side of a system of equations\n##### Returns\n* **A **: 2-D array\n    An array representing the left-hand side of a system of equations\n\n* **b **: 1-D array\n    An array representing the right-hand side of a system of equations\n\n* **status**: int\n    An integer indicating the status of the system\n    0\n\n* **message **: str\n    A string descriptor of the exit status of the optimization.\n\n* **.. [2] Andersen, Erling D. \"Finding all linearly dependent rows in\n       large-scale linear programming.\" Optimization Methods and Software\n       6.3 (1995)**: 219-227.\n\n"
+}

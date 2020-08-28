@@ -1,0 +1,7 @@
+{
+    "source file": "test_numeric3.py",
+    "line number": "311",
+    "func name": "test_getitem_int64",
+    "func arg": "(datetime_series)",
+    "comments": ""
+}

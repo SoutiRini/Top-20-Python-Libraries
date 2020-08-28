@@ -1,0 +1,7 @@
+{
+    "source file": "poly_editor.py",
+    "line number": "22",
+    "func name": "dist_point_to_segment",
+    "func arg": "(p, s0, s1)",
+    "comments": "Get the distance of a point to a segment. *p*, *s0*, *s1* are *xy* sequences This algorithm from http://geomalgorithms.com/a02-_lines.html\n\n\n"
+}

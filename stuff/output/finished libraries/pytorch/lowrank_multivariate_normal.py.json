@@ -1,0 +1,7 @@
+{
+    "source file": "lowrank_multivariate_normal.py",
+    "line number": "32",
+    "func name": "_batch_lowrank_mahalanobis",
+    "func arg": "(W, D, x, capacitance_tril)",
+    "comments": "Uses \"Woodbury matrix identity\":: inv(W @ W.T + D) = inv(D) - inv(D) @ W @ inv(C) @ W.T @ inv(D), where :math:`C` is the capacitance matrix :math:`I + W.T @ inv(D) @ W`, to compute the squared Mahalanobis distance :math:`x.T @ inv(W @ W.T + D) @ x`.\n\n\n"
+}

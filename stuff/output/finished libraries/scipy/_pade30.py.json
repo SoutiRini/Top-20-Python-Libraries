@@ -1,0 +1,7 @@
+{
+    "source file": "_pade30.py",
+    "line number": "6",
+    "func name": "pade",
+    "func arg": "(an, m, n)",
+    "comments": "Return Pade approximation to a polynomial as the ratio of two polynomials.\n\nParameters ---------- an : (N,) array_like Taylor series coefficients. m : int The order of the returned approximating polynomial `q`. n : int, optional The order of the returned approximating polynomial `p`. By default, the order is ``len(an)-m``.\n##### Returns\n* **p, q **: Polynomial class\n    The Pade approximation of the polynomial defined by `an` is\n    ``p(x)/q(x)``.\n\n"
+}

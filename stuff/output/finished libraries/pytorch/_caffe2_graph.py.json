@@ -1,0 +1,7 @@
+{
+    "source file": "_caffe2_graph.py",
+    "line number": "801",
+    "func name": "protos_to_graph_def",
+    "func arg": "(net_defs, shapes, **kwargs)",
+    "comments": "Convert a set of Caffe2 net definitions to a Tensorflow graph.\n\n\n##### Args\n* **net_defs**: List of caffe2_pb2.NetDef protobufs representing computation\n    graphs.\n\n* **shapes**: Dictionary mapping blob names to their shapes/dimensions.\n\n##### Returns\n"
+}

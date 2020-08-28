@@ -1,0 +1,7 @@
+{
+    "source file": "reuters.py",
+    "line number": "155",
+    "func name": "get_word_index",
+    "func arg": "(path)",
+    "comments": "Retrieves a dict mapping words to their index in the Reuters dataset.\n\nArguments: path: where to cache the data (relative to `~/.keras/dataset`).\n##### Returns\n"
+}

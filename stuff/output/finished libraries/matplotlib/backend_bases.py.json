@@ -1,0 +1,7 @@
+{
+    "source file": "backend_bases.py",
+    "line number": "2613",
+    "func name": "button_press_handler",
+    "func arg": "(event, canvas, toolbar)",
+    "comments": "The default Matplotlib button actions for extra mouse buttons.\n\nParameters are as for `key_press_handler`, except that *event* is a `MouseEvent`.\n"
+}

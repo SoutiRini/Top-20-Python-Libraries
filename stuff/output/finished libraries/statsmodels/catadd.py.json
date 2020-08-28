@@ -1,0 +1,7 @@
+{
+    "source file": "catadd.py",
+    "line number": "4",
+    "func name": "add_indep",
+    "func arg": "(x, varnames, dtype)",
+    "comments": "construct array with independent columns\n\nx is either iterable (list, tuple) or instance of ndarray or a subclass of it.\n\nIf x is an ndarray, then each column is assumed to represent a variable with observations in rows.\n"
+}

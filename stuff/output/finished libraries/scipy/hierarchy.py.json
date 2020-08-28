@@ -1,0 +1,7 @@
+{
+    "source file": "hierarchy.py",
+    "line number": "4039",
+    "func name": "leaders",
+    "func arg": "(Z, T)",
+    "comments": "Return the root nodes in a hierarchical clustering.\n\n\n##### Returns\n* **L **: ndarray\n    The leader linkage node id's stored as a k-element 1-D array,\n    where ``k`` is the number of flat clusters found in ``T``.\n    ``L[j]=i`` is the linkage cluster node id that is the\n    leader of flat cluster with id M[j]. If ``i < n``, ``i``\n    corresponds to an original observation, otherwise it\n    corresponds to a non-singleton cluster.\n\n* **M **: ndarray\n    The leader linkage node id's stored as a k-element 1-D array, where\n    ``k`` is the number of flat clusters found in ``T``. This allows the\n    set of flat cluster ids to be any arbitrary set of ``k`` integers.\n    For example\n\n* **fcluster**: for the creation of flat cluster assignments.\n\n* **to a dataset ``X`` - and a flat cluster assignment array ``T``**: \n\n* **in the dendrogram that are the leaders of each flat cluster**: \n\n* **the flat clusters in ``T``**: \n\n"
+}

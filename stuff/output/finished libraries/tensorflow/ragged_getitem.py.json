@@ -1,0 +1,7 @@
+{
+    "source file": "ragged_getitem.py",
+    "line number": "459",
+    "func name": "_if_ge_zero",
+    "func arg": "(value, true_fn, false_fn)",
+    "comments": "Returns `true_fn() if value >= 0 else false_fn()`.\n\n\n"
+}

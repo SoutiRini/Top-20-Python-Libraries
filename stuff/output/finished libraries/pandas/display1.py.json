@@ -1,0 +1,7 @@
+{
+    "source file": "display1.py",
+    "line number": "14",
+    "func name": "detect_console_encoding",
+    "func arg": "()",
+    "comments": "Try to find the most capable encoding supported by the console. slightly modified from the way IPython handles the same issue.\n\n\n"
+}

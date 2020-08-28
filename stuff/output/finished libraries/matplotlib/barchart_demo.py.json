@@ -1,0 +1,7 @@
+{
+    "source file": "barchart_demo.py",
+    "line number": "67",
+    "func name": "plot_student_results",
+    "func arg": "(student, scores, cohort_size)",
+    "comments": ""
+}

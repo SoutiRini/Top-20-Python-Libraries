@@ -1,0 +1,7 @@
+{
+    "source file": "remote_cluster_test.py",
+    "line number": "46",
+    "func name": "get_server_def",
+    "func arg": "(job_name, local_server_port, remote_server_addresses, task_index)",
+    "comments": "Returns a server def with a single job + multiple tasks.\n\n\n"
+}

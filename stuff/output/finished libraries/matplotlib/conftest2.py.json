@@ -1,0 +1,7 @@
+{
+    "source file": "conftest2.py",
+    "line number": "127",
+    "func name": "pd",
+    "func arg": "()",
+    "comments": "Fixture to import and configure pandas.\n\n\n"
+}

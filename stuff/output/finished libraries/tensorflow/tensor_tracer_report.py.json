@@ -1,0 +1,7 @@
+{
+    "source file": "tensor_tracer_report.py",
+    "line number": "223",
+    "func name": "proto_fingerprint",
+    "func arg": "(message_proto)",
+    "comments": ""
+}

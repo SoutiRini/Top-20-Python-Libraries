@@ -1,0 +1,7 @@
+{
+    "source file": "print_coercion_tables.py",
+    "line number": "31",
+    "func name": "print_coercion_table",
+    "func arg": "(ntypes, inputfirstvalue, inputsecondvalue, firstarray, use_promote_types)",
+    "comments": ""
+}

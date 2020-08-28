@@ -1,0 +1,7 @@
+{
+    "source file": "mixed_precision.py",
+    "line number": "376",
+    "func name": "disable_mixed_precision_graph_rewrite_v1",
+    "func arg": "()",
+    "comments": "Disables the mixed precision graph rewrite.\n\nAfter this is called, the mixed precision graph rewrite will no longer run for new Sessions, and so float32 operations will no longer be converted to float16 in such Sessions. However, any existing Sessions will continue to have the graph rewrite enabled if they were created after `enable_mixed_precision_graph_rewrite` was called but before `disable_mixed_precision_graph_rewrite` was called.\n\nThis does not undo the effects of loss scaling. Any optimizers wrapped with a LossScaleOptimizer will continue to do loss scaling, although this loss scaling will no longer be useful if the optimizer is used in new Sessions, as the graph rewrite no longer converts the graph to use float16.\n\nThis function is useful for unit testing. A unit tests can test using the mixed precision graph rewrite, then disable it so future unit tests continue using float32. If this is done, unit tests should not share a single session, as `enable_mixed_precision_graph_rewrite` and `disable_mixed_precision_graph_rewrite` have no effect on existing sessions.\n"
+}

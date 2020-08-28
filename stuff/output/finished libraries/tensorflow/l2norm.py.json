@@ -1,0 +1,7 @@
+{
+    "source file": "l2norm.py",
+    "line number": "28",
+    "func name": "make_l2norm_tests",
+    "func arg": "(options)",
+    "comments": "Make a set of tests to do l2norm.\n\n\n"
+}

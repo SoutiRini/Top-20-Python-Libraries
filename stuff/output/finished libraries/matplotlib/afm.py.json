@@ -1,0 +1,7 @@
+{
+    "source file": "afm.py",
+    "line number": "326",
+    "func name": "_parse_optional",
+    "func arg": "(fh)",
+    "comments": "Parse the optional fields for kern pair data and composites.\n\n\n##### Returns\n* **kern_data **: dict\n    A dict containing kerning information. May be empty.\n    See `._parse_kern_pairs`.\n\n* **composites **: dict\n    A dict containing composite information. May be empty.\n    See `._parse_composites`.\n\n"
+}

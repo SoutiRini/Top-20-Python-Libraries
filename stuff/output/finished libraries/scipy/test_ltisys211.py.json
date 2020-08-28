@@ -1,0 +1,7 @@
+{
+    "source file": "test_ltisys211.py",
+    "line number": "17",
+    "func name": "_assert_poles_close",
+    "func arg": "(P1, P2, rtol, atol)",
+    "comments": "Check each pole in P1 is close to a pole in P2 with a 1e-8 relative tolerance or 1e-8 absolute tolerance (useful for zero poles). These tolerances are very strict but the systems tested are known to accept these poles so we should not be far from what is requested.\n\n\n"
+}

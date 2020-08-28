@@ -1,0 +1,7 @@
+{
+    "source file": "functional_saver.py",
+    "line number": "117",
+    "func name": "sharded_filename",
+    "func arg": "(filename_tensor, shard, num_shards)",
+    "comments": "Append sharding information to a filename.\n\n\n##### Args\n* **filename_tensor**: A string tensor.\n\n* **shard**: Integer.  The shard for the filename.\n\n* **num_shards**: An int Tensor for the number of shards.\n\n##### Returns\n"
+}

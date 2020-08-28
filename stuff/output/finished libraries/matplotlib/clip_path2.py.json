@@ -1,0 +1,7 @@
+{
+    "source file": "clip_path2.py",
+    "line number": "80",
+    "func name": "clip_line_to_rect",
+    "func arg": "(xline, yline, bbox)",
+    "comments": ""
+}

@@ -1,0 +1,7 @@
+{
+    "source file": "test_commands.py",
+    "line number": "128",
+    "func name": "get_permissions_dict",
+    "func arg": "(path, renamings, ignore)",
+    "comments": ""
+}

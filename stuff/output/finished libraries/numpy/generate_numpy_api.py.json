@@ -1,0 +1,7 @@
+{
+    "source file": "generate_numpy_api.py",
+    "line number": "157",
+    "func name": "do_generate_api",
+    "func arg": "(targets, sources)",
+    "comments": ""
+}

@@ -1,0 +1,7 @@
+{
+    "source file": "iterator_ops1.py",
+    "line number": "939",
+    "func name": "get_next_as_optional",
+    "func arg": "(iterator)",
+    "comments": "Returns a `tf.experimental.Optional` with the next element of the iterator.\n\nIf the iterator has reached the end of the sequence, the returned `tf.experimental.Optional` will have no value.\n##### Args\n* **iterator**: A `tf.data.Iterator`.\n\n##### Returns\n"
+}

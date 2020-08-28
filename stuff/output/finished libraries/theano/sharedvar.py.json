@@ -1,0 +1,7 @@
+{
+    "source file": "sharedvar.py",
+    "line number": "42",
+    "func name": "shared",
+    "func arg": "(value, name, strict, allow_downcast)",
+    "comments": "SharedVariable constructor for scalar values. Default: int64 or float64.\n\nNotes ----- We implement this using 0-d tensors for now.\n"
+}

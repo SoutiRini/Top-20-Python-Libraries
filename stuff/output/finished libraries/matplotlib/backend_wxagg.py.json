@@ -1,0 +1,7 @@
+{
+    "source file": "backend_wxagg.py",
+    "line number": "58",
+    "func name": "_convert_agg_to_wx_bitmap",
+    "func arg": "(agg, bbox)",
+    "comments": "Convert the region of the agg buffer bounded by bbox to a wx.Bitmap.  If bbox is None, the entire buffer is converted. Note: agg must be a backend_agg.RendererAgg instance.\n\n\n"
+}

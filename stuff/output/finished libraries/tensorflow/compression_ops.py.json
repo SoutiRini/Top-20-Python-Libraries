@@ -1,0 +1,7 @@
+{
+    "source file": "compression_ops.py",
+    "line number": "39",
+    "func name": "uncompress",
+    "func arg": "(element, output_spec)",
+    "comments": "Uncompress a compressed dataset element.\n\n\n##### Args\n* **element**: A scalar variant tensor to uncompress. The element should have been\n  created by calling `compress`.\n\n* **output_spec**: A nested structure of `tf.TypeSpec` representing the type(s) of\n  the uncompressed element.\n\n##### Returns\n"
+}

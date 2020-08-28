@@ -1,0 +1,7 @@
+{
+    "source file": "dct_ops.py",
+    "line number": "187",
+    "func name": "idct",
+    "func arg": "(input, type, n, axis, norm, name)",
+    "comments": "Computes the 1D [Inverse Discrete Cosine Transform (DCT)][idct] of `input`.\n\nCurrently Types I, II, III, IV are supported. Type III is the inverse of Type II, and vice versa.\n\nNote that you must re-normalize by 1/(2n) to obtain an inverse if `norm` is not `'ortho'`. That is: `signal == idct(dct(signal)) * 0.5 / signal.shape[-1]`. When `norm='ortho'`, we have: `signal == idct(dct(signal, norm='ortho'), norm='ortho')`.\n\n@compatibility(scipy) Equivalent to [scipy.fftpack.idct] (https://docs.scipy.org/doc/scipy-1.4.0/reference/generated/scipy.fftpack.idct.html) for Type-I, Type-II, Type-III and Type-IV DCT. @end_compatibility\n##### Args\n* **input**: A `[..., samples]` `float32`/`float64` `Tensor` containing the\n  signals to take the DCT of.\n\n* **type**: The IDCT type to perform. Must be 1, 2, 3 or 4.\n\n* **n**: For future expansion. The length of the transform. Must be `None`.\n\n* **axis**: For future expansion. The axis to compute the DCT along. Must be `-1`.\n\n* **norm**: The normalization to apply. `None` for no normalization or `'ortho'`\n  for orthonormal normalization.\n\n* **name**: An optional name for the operation.\n\n##### Returns\n"
+}

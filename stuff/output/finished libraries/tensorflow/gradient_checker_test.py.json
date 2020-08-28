@@ -1,0 +1,7 @@
+{
+    "source file": "gradient_checker_test.py",
+    "line number": "43",
+    "func name": "_nan_grad",
+    "func arg": "(unused_op, grad)",
+    "comments": "A gradient that returns NaN.\n\n\n"
+}

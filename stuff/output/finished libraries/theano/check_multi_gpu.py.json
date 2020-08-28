@@ -1,0 +1,7 @@
+{
+    "source file": "check_multi_gpu.py",
+    "line number": "19",
+    "func name": "main",
+    "func arg": "(dev1, dev2)",
+    "comments": ""
+}

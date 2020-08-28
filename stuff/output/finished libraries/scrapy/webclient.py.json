@@ -1,0 +1,7 @@
+{
+    "source file": "webclient.py",
+    "line number": "28",
+    "func name": "_parse",
+    "func arg": "(url)",
+    "comments": "Return tuple of (scheme, netloc, host, port, path), all in bytes except for port which is int. Assume url is from Request.url, which was passed via safe_url_string and is ascii-only.\n\n\n"
+}

@@ -1,0 +1,7 @@
+{
+    "source file": "_basic.py",
+    "line number": "2481",
+    "func name": "zeta",
+    "func arg": "(x, q, out)",
+    "comments": "Riemann or Hurwitz zeta function.\n\nParameters ---------- x : array_like of float Input data, must be real q : array_like of float, optional Input data, must be real.\n\nDefaults to Riemann zeta. out : ndarray, optional Output array for the computed values.\n##### Returns\n* **out **: array_like\n    Values of zeta(x).\n\n* **.. math**: \n\n* **.. [dlmf] NIST, Digital Library of Mathematical Functions,\n    https**: //dlmf.nist.gov/25.11#i\n\n* **Some specific values**: \n\n* **Relation to the `polygamma` function**: \n\n"
+}

@@ -1,0 +1,7 @@
+{
+    "source file": "quantize_jit.py",
+    "line number": "166",
+    "func name": "quantize_dynamic_jit",
+    "func arg": "(model, qconfig_dict, inplace, debug)",
+    "comments": "Quantize the input float TorchScript model with post training dynamic quantization. Currently only qint8 quantization of torch.nn.Linear is supported.\n\n\n##### Args\n* **`model`**: input float TorchScript model\n\n* **`qconfig_dict`**: qconfig_dict is a dictionary with names of sub modules as key and\n\n* **descriptions in **: func\n\n* **`inplace`**: carry out model transformations in-place, the original module is\n\n* **`debug`**: flag for producing a debug friendly model (preserve weight attribute)\n\n* **rn**: \n\n* **ple**: \n\n* **calibrate(model, data_loader)**: \n\n* **with torch.no_grad()**: for image, target in data_loader\n\n* **{''**: qconfig},\n\n"
+}

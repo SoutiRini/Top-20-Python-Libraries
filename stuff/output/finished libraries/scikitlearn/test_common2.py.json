@@ -1,0 +1,7 @@
+{
+    "source file": "test_common2.py",
+    "line number": "167",
+    "func name": "test_ensemble_heterogeneous_estimators_all_dropped",
+    "func arg": "(X, y, estimator)",
+    "comments": ""
+}

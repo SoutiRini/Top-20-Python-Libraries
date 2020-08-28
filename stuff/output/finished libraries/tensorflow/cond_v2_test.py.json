@@ -1,0 +1,7 @@
+{
+    "source file": "cond_v2_test.py",
+    "line number": "1537",
+    "func name": "_has_node_with_op",
+    "func arg": "(run_metadata, op_type)",
+    "comments": "Whether any node in `run_metadata.partition_graphs` matches `op_type`.\n\n\n"
+}

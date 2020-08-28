@@ -1,0 +1,7 @@
+{
+    "source file": "control_ops_util.py",
+    "line number": "141",
+    "func name": "add_while_op",
+    "func arg": "(while_net, cond_blob, lexical_scope, loop_body_net, condition_body_net)",
+    "comments": "A helper function to add a While op to the net. Same rules for determining outer and inner blobs as for the 'If' operator apply for the 'While' operator loop and condition subnets. If specified, condition net is executed in a separate workspace before the first and after each iteration, the last operator must have a single scalar boolean output that is written into the condition blob. Inputs: while_net - net to add a While op to; cond_blob - scalar bool blob reference, used as a stop condition; lexical_scope - a set of outer blob names visible to the loop's body; loop_body_net - net to execute on each iteration; condition_body_net - net to compute condition value\n\n\n"
+}

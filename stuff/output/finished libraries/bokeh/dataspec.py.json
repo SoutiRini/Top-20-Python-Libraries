@@ -1,0 +1,7 @@
+{
+    "source file": "dataspec.py",
+    "line number": "607",
+    "func name": "value",
+    "func arg": "(val, transform)",
+    "comments": "Convenience function to explicitly return a \"value\" specification for a Bokeh :class:`~bokeh.core.properties.DataSpec` property.\n\n\n##### Args\n* **val (any) **: a fixed value to specify for a ``DataSpec`` property.\n\n* **transform (Transform, optional) **: a transform to apply (default\n\n##### Returns\n* **dict **: ``{ \"value\"\n\n* **ote**: \n\n* **ple**: \n\n* **.. code-block**: \n\n"
+}

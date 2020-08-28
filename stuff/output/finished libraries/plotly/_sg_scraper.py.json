@@ -1,0 +1,7 @@
+{
+    "source file": "_sg_scraper.py",
+    "line number": "65",
+    "func name": "figure_rst",
+    "func arg": "(figure_list, sources_dir)",
+    "comments": "Generate RST for a list of PNG filenames.\n\nDepending on whether we have one or more figures, we use a single rst call to 'image' or a horizontal list.\n\nParameters ---------- figure_list : list List of strings of the figures' absolute paths. sources_dir : str absolute path of Sphinx documentation sources\n##### Returns\n* **images_rst **: str\n    rst code to embed the images in the document\n\n"
+}

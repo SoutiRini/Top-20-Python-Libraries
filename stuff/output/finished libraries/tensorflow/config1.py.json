@@ -1,0 +1,7 @@
+{
+    "source file": "config1.py",
+    "line number": "729",
+    "func name": "disable_mlir_graph_optimization",
+    "func arg": "()",
+    "comments": "Disables experimental MLIR-Based TensorFlow Compiler Optimizations.\n\n\n"
+}

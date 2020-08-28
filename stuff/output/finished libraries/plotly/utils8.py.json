@@ -1,0 +1,7 @@
+{
+    "source file": "utils8.py",
+    "line number": "259",
+    "func name": "list_of_options",
+    "func arg": "(iterable, conj, period)",
+    "comments": "Returns an English listing of objects seperated by commas ','\n\nFor example, ['foo', 'bar', 'baz'] becomes 'foo, bar and baz' if the conjunction 'and' is selected.\n"
+}

@@ -1,0 +1,7 @@
+{
+    "source file": "_theil_sen.py",
+    "line number": "151",
+    "func name": "_lstsq",
+    "func arg": "(X, y, indices, fit_intercept)",
+    "comments": "Least Squares Estimator for TheilSenRegressor class.\n\nThis function calculates the least squares method on a subset of rows of X and y defined by the indices array. Optionally, an intercept column is added if intercept is set to true.\n\nParameters ---------- X : array-like of shape (n_samples, n_features) Design matrix, where n_samples is the number of samples and n_features is the number of features.\n\ny : array, shape = [n_samples] Target vector, where n_samples is the number of samples.\n\nindices : array, shape = [n_subpopulation, n_subsamples] Indices of all subsamples with respect to the chosen subpopulation.\n\nfit_intercept : bool Fit intercept or not.\n##### Returns\n* **weights **: array, shape = [n_subpopulation, n_features + intercept]\n    Solution matrix of n_subpopulation solved least square problems.\n\n"
+}

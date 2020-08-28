@@ -1,0 +1,7 @@
+{
+    "source file": "correlation_structures.py",
+    "line number": "145",
+    "func name": "yule_walker_acov",
+    "func arg": "(acov, order, method, df, inv)",
+    "comments": "Estimate AR(p) parameters from acovf using Yule-Walker equation.\n\nParameters ---------- acov : array_like, 1d auto-covariance order : int, optional The order of the autoregressive process.\n\nDefault is 1. inv : bool If inv is True the inverse of R is also returned.\n\nDefault is False.\n##### Returns\n* **rho **: ndarray\n    The estimated autoregressive coefficients\n\n* **Rinv **: ndarray\n    inverse of the Toepliz matrix\n\n"
+}

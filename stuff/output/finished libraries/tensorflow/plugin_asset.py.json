@@ -1,0 +1,7 @@
+{
+    "source file": "plugin_asset.py",
+    "line number": "84",
+    "func name": "get_all_plugin_assets",
+    "func arg": "(graph)",
+    "comments": "Retrieve all PluginAssets stored in the graph collection.\n\n\n##### Args\n* **graph**: Optionally, the graph to get assets from. If unspecified, the default\n  graph is used.\n\n##### Returns\n"
+}

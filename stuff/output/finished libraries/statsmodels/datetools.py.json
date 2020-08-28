@@ -1,0 +1,7 @@
+{
+    "source file": "datetools.py",
+    "line number": "166",
+    "func name": "dates_from_range",
+    "func arg": "(start, end, length)",
+    "comments": "Turns a sequence of date strings and returns a list of datetime.\n\nParameters ---------- start : str The first abbreviated date, for instance, '1965q1' or '1965m1' end : str, optional The last abbreviated date if length is None. length : int, optional The length of the returned array of end is None.\n\nExamples -------- >>> import statsmodels.api as sm >>> import pandas as pd >>> dates = pd.date_range('1960m1', length=nobs)\n##### Returns\n* **date_list **: ndarray\n    A list of datetime types.\n\n"
+}

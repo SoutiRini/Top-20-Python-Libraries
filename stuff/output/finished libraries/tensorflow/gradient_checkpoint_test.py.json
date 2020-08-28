@@ -1,0 +1,7 @@
+{
+    "source file": "gradient_checkpoint_test.py",
+    "line number": "111",
+    "func name": "_train_with_recompute",
+    "func arg": "(n_steps)",
+    "comments": "Trains a single large model with gradient checkpointing using tf.recompute_grad.\n\n\n"
+}

@@ -1,0 +1,7 @@
+{
+    "source file": "get_layer_policy.py",
+    "line number": "29",
+    "func name": "get_layer_policy",
+    "func arg": "(layer)",
+    "comments": "Returns the dtype policy of a layer.\n\n\n##### Args\n* **layer**: A `tf.keras.layers.Layer`.\n\n##### Returns\n"
+}

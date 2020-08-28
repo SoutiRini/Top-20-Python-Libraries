@@ -1,0 +1,7 @@
+{
+    "source file": "common.py",
+    "line number": "238",
+    "func name": "_write_to_file",
+    "func arg": "(object_fields, items, entity_fields, writer)",
+    "comments": ""
+}

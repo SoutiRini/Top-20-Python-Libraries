@@ -1,0 +1,7 @@
+{
+    "source file": "conftest10.py",
+    "line number": "916",
+    "func name": "non_mapping_dict_subclass",
+    "func arg": "()",
+    "comments": "Fixture for a non-mapping dictionary subclass.\n\n\n"
+}

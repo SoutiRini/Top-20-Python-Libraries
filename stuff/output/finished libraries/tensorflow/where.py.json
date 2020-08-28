@@ -1,0 +1,7 @@
+{
+    "source file": "where.py",
+    "line number": "27",
+    "func name": "make_where_tests",
+    "func arg": "(options)",
+    "comments": "Make a set of tests to do where.\n\n\n"
+}

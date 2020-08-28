@@ -1,0 +1,7 @@
+{
+    "source file": "_ridge.py",
+    "line number": "969",
+    "func name": "_find_smallest_angle",
+    "func arg": "(query, vectors)",
+    "comments": "Find the column of vectors that is most aligned with the query.\n\nBoth query and the columns of vectors must have their l2 norm equal to 1.\n\nParameters ---------- query : ndarray of shape (n_samples,) Normalized query vector.\n\nvectors : ndarray of shape (n_samples, n_features) Vectors to which we compare query, as columns. Must be normalized.\n"
+}

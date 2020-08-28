@@ -1,0 +1,7 @@
+{
+    "source file": "sysconfig.py",
+    "line number": "91",
+    "func name": "get_build_info",
+    "func arg": "()",
+    "comments": "Get a dictionary describing TensorFlow's build environment.\n\nValues are generated when TensorFlow is compiled, and are static for each TensorFlow package. The return value is a dictionary with string keys such as:\n\n- cuda_version\n\n- cudnn_version\n\n- is_cuda_build\n\n- is_rocm_build\n\n- msvcp_dll_names\n\n- nvcuda_dll_name\n\n- cudart_dll_name\n\n- cudnn_dll_name\n\nNote that the actual keys and values returned by this function is subject to change across different versions of TensorFlow or across platforms.\n##### Returns\n"
+}

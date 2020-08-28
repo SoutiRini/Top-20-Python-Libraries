@@ -1,0 +1,7 @@
+{
+    "source file": "font_table.py",
+    "line number": "52",
+    "func name": "draw_font_table",
+    "func arg": "(path)",
+    "comments": "Draw a font table of the first 255 chars of the given font.\n\nParameters ---------- path : str or None The path to the font file.\n\nIf None, use Matplotlib's default font.\n"
+}

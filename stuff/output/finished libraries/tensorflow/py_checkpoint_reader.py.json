@@ -1,0 +1,7 @@
+{
+    "source file": "py_checkpoint_reader.py",
+    "line number": "85",
+    "func name": "NewCheckpointReader",
+    "func arg": "(filepattern)",
+    "comments": "A function that returns a CheckPointReader.\n\n\n##### Args\n* **filepattern**: The filename.\n\n##### Returns\n"
+}

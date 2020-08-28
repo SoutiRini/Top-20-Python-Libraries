@@ -1,0 +1,7 @@
+{
+    "source file": "random.py",
+    "line number": "14",
+    "func name": "_random_choice_csc",
+    "func arg": "(n_samples, classes, class_probability, random_state)",
+    "comments": "Generate a sparse random matrix given column class distributions\n\nParameters ---------- n_samples : int, Number of samples to draw in each column.\n\nclasses : list of size n_outputs of arrays of size (n_classes,) List of classes for each column.\n\nclass_probability : list of size n_outputs of arrays of\n\n\n\n\n\n\n\n shape (n_classes,), default=None Class distribution of each column. If None, uniform distribution is assumed.\n\nrandom_state : int, RandomState instance, default=None Controls the randomness of the sampled classes. See :term:`Glossary <random_state>`.\n##### Returns\n* **random_matrix **: sparse csc matrix of size (n_samples, n_outputs)\n\n"
+}

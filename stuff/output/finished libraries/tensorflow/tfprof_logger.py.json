@@ -1,0 +1,7 @@
+{
+    "source file": "tfprof_logger.py",
+    "line number": "193",
+    "func name": "write_op_log",
+    "func arg": "(graph, log_dir, op_log, run_meta, add_trace)",
+    "comments": "Log provided 'op_log', and add additional model information below.\n\nThe API also assigns ops in tf.compat.v1.trainable_variables() an op type called '_trainable_variables'. The API also logs 'flops' statistics for ops with op.RegisterStatistics() defined. flops calculation depends on Tensor shapes defined in 'graph', which might not be complete. 'run_meta', if provided, completes the shape information with best effort.\n##### Args\n* **graph**: tf.Graph. If None and eager execution is not enabled, use\n    default graph.\n\n* **log_dir**: directory to write the log file.\n\n* **op_log**: (Optional) OpLogProto proto to be written. If not provided, an new\n    one is created.\n\n* **run_meta**: (Optional) RunMetadata proto that helps flops computation using\n    run time shape information.\n\n* **add_trace**: Whether to add python code trace information.\n    Used to support \"code\" view.\n\n"
+}

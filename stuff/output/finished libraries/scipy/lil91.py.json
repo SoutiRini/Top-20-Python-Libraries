@@ -1,0 +1,7 @@
+{
+    "source file": "lil91.py",
+    "line number": "527",
+    "func name": "isspmatrix_lil",
+    "func arg": "(x)",
+    "comments": "Is x of lil_matrix type?\n\nParameters ---------- x object to check for being a lil matrix\n##### Returns\n"
+}

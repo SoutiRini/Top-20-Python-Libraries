@@ -1,0 +1,7 @@
+{
+    "source file": "model_coverage_lib.py",
+    "line number": "661",
+    "func name": "test_keras_model_v2",
+    "func arg": "(filename, input_shapes, input_data, input_data_range, **kwargs)",
+    "comments": "Validates the tf.keras model converts to a TFLite model.\n\nConverts the tf.keras model to TFLite and checks the accuracy of the model on random data.\n##### Args\n* **filename**: Full filepath of HDF5 file containing the tf.keras model.\n\n* **input_shapes**: List of list of integers representing input shapes in the\n  order of the tf.keras model's .input attribute (e.g., [[1, 16, 16, 3]]).\n  (default None)\n\n* **input_data**: np.ndarray to pass into models during inference. (default None).\n\n* **input_data_range**: A map where the key is the input tensor name and\n  the value is a tuple (min_val, max_val) which specifies the value range of\n  the corresponding input tensor. For example, '{'input1'\n\n* ****kwargs**: Additional arguments to be passed into the converter.\n\n"
+}

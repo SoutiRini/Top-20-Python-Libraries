@@ -1,0 +1,7 @@
+{
+    "source file": "scatter_nd_ops_test.py",
+    "line number": "103",
+    "func name": "_NumpyMax",
+    "func arg": "(ref, indices, updates)",
+    "comments": ""
+}

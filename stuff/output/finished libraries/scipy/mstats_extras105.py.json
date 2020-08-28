@@ -1,0 +1,7 @@
+{
+    "source file": "mstats_extras105.py",
+    "line number": "444",
+    "func name": "rsh",
+    "func arg": "(data, points)",
+    "comments": "Evaluates Rosenblatt's shifted histogram estimators for each data point.\n\nRosenblatt's estimator is a centered finite-difference approximation to the derivative of the empirical cumulative distribution function.\n\nParameters ---------- data : sequence Input data, should be 1-D. Masked values are ignored. points : sequence or None, optional Sequence of points where to evaluate Rosenblatt shifted histogram. If None, use the data.\n"
+}

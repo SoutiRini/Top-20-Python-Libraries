@@ -1,0 +1,7 @@
+{
+    "source file": "testutils.py",
+    "line number": "279",
+    "func name": "assert_mask_equal",
+    "func arg": "(m1, m2, err_msg)",
+    "comments": "Asserts the equality of two masks.\n\n\n"
+}

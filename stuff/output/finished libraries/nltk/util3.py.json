@@ -1,0 +1,7 @@
+{
+    "source file": "util3.py",
+    "line number": "332",
+    "func name": "check_megam_config",
+    "func arg": "()",
+    "comments": "Checks whether the MEGAM binary is configured.\n\n\n"
+}

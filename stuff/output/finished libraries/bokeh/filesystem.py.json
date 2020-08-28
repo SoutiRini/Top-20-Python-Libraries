@@ -1,0 +1,7 @@
+{
+    "source file": "filesystem.py",
+    "line number": "108",
+    "func name": "with_temporary_file",
+    "func arg": "(func, dir, suffix)",
+    "comments": "\n\n\n"
+}

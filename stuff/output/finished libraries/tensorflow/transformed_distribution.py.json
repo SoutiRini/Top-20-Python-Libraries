@@ -1,0 +1,7 @@
+{
+    "source file": "transformed_distribution.py",
+    "line number": "117",
+    "func name": "_is_scalar_from_shape",
+    "func arg": "(shape)",
+    "comments": "Returns `True` `Tensor` if `Tensor` shape implies a scalar.\n\n\n"
+}

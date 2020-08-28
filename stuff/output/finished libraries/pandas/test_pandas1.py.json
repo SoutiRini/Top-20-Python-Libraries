@@ -1,0 +1,7 @@
+{
+    "source file": "test_pandas1.py",
+    "line number": "35",
+    "func name": "assert_json_roundtrip_equal",
+    "func arg": "(result, expected, orient)",
+    "comments": ""
+}

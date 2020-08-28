@@ -1,0 +1,7 @@
+{
+    "source file": "_base.py",
+    "line number": "31",
+    "func name": "_most_frequent",
+    "func arg": "(array, extra_value, n_repeat)",
+    "comments": "Compute the most frequent value in a 1d array extended with [extra_value] * n_repeat, where extra_value is assumed to be not part of the array.\n\n\n"
+}

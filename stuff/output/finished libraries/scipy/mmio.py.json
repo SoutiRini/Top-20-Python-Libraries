@@ -1,0 +1,7 @@
+{
+    "source file": "mmio.py",
+    "line number": "811",
+    "func name": "_is_fromfile_compatible",
+    "func arg": "(stream)",
+    "comments": "Check whether `stream` is compatible with numpy.fromfile.\n\nPassing a gzipped file object to ``fromfile/fromstring`` doesn't work with Python 3.\n"
+}

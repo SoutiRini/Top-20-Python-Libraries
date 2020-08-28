@@ -1,0 +1,7 @@
+{
+    "source file": "convert.py",
+    "line number": "580",
+    "func name": "toco_convert",
+    "func arg": "(input_data, input_tensors, output_tensors, **kwargs)",
+    "comments": "Convert a model using TOCO.\n\nTypically this function is used to convert from TensorFlow GraphDef to TFLite. Conversion can be customized by providing arguments that are forwarded to `build_toco_convert_protos` (see documentation for details). This function has been deprecated. Please use `lite.TFLiteConverter` instead.\n##### Args\n* **input_data**: Input data (i.e. often `sess.graph_def`),\n\n* **input_tensors**: List of input tensors. Type and shape are computed using\n  `foo.shape` and `foo.dtype`.\n\n* **output_tensors**: List of output tensors (only .name is used from this).\n\n* ***args**: See `build_toco_convert_protos`,\n\n* ****kwargs**: See `build_toco_convert_protos`.\n\n##### Returns\n"
+}

@@ -1,0 +1,7 @@
+{
+    "source file": "remote_module.py",
+    "line number": "21",
+    "func name": "_create_module",
+    "func arg": "(module_cls, args, kwargs, module_interface_cls)",
+    "comments": ""
+}

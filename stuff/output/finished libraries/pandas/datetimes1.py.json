@@ -1,0 +1,7 @@
+{
+    "source file": "datetimes1.py",
+    "line number": "954",
+    "func name": "to_time",
+    "func arg": "(arg, format, infer_time_format, errors)",
+    "comments": "Parse time strings to time objects using fixed strptime formats (\"%H:%M\", \"%H%M\", \"%I:%M%p\", \"%I%M%p\", \"%H:%M:%S\", \"%H%M%S\", \"%I:%M:%S%p\", \"%I%M%S%p\")\n\nUse infer_time_format if all the strings are in the same format to speed up conversion.\n\nParameters ---------- arg : string in time format, datetime.time, list, tuple, 1-d array,\n\nSeries format : str, default None Format used to convert arg into a time object.\n\nIf None, fixed formats are used. infer_time_format: bool, default False Infer the time format based on the first non-NaN element.\n\nIf all strings are in the same format, this will speed up conversion. errors : {'ignore', 'raise', 'coerce'}, default 'raise'\n\n- If 'raise', then invalid parsing will raise an exception\n\n- If 'coerce', then invalid parsing will be set as None\n\n- If 'ignore', then invalid parsing will return the input\n##### Returns\n"
+}

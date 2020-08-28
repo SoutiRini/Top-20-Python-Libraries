@@ -1,0 +1,7 @@
+{
+    "source file": "test_gmm_poisson.py",
+    "line number": "58",
+    "func name": "moment_exponential_mult",
+    "func arg": "(params, data, exp)",
+    "comments": ""
+}

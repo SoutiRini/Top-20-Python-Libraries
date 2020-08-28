@@ -1,0 +1,7 @@
+{
+    "source file": "bezier.py",
+    "line number": "614",
+    "func name": "concatenate_paths",
+    "func arg": "(paths)",
+    "comments": "Concatenate a list of paths into a single path.\n\n\n"
+}

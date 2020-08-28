@@ -1,0 +1,7 @@
+{
+    "source file": "liveness.py",
+    "line number": "206",
+    "func name": "resolve",
+    "func arg": "(node, source_info, graphs, include_annotations)",
+    "comments": "Resolves the live symbols at the exit of control flow statements.\n\n\n##### Args\n* **node**: ast.AST\n\n* **source_info**: transformer.SourceInfo\n\n* **graphs**: Dict[ast.FunctionDef, cfg.Graph]\n\n* **include_annotations**: Bool, whether type annotations should be included in\n  the analysis.\n\n##### Returns\n"
+}

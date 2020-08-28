@@ -1,0 +1,7 @@
+{
+    "source file": "version.py",
+    "line number": "9",
+    "func name": "stable_semver",
+    "func arg": "()",
+    "comments": "Get the stable portion of the semantic version string (the first three numbers), without any of the trailing labels\n\n'3.0.0rc11' -> '3.0.0'\n"
+}

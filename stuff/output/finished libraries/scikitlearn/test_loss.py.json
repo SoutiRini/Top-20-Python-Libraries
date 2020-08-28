@@ -1,0 +1,7 @@
+{
+    "source file": "test_loss.py",
+    "line number": "312",
+    "func name": "test_init_gradient_and_hessians_sample_weight",
+    "func arg": "()",
+    "comments": ""
+}

@@ -1,0 +1,7 @@
+{
+    "source file": "basic_loops.py",
+    "line number": "25",
+    "func name": "basic_train_loop",
+    "func arg": "(supervisor, train_step_fn, args, kwargs, master)",
+    "comments": "Basic loop to train a model.\n\nCalls `train_step_fn` in a loop to train a model.\n\nThe function is called as:\n\n```python train_step_fn(session, *args, **kwargs) ```\n\nIt is passed a `tf.compat.v1.Session` in addition to `args` and `kwargs`.\n\nThe function typically runs one training step in the session.\n##### Args\n* **supervisor**: `tf.compat.v1.train.Supervisor` to run the training services.\n\n* **train_step_fn**: Callable to execute one training step.  Called repeatedly as\n  `train_step_fn(session, *args **kwargs)`.\n\n* **args**: Optional positional arguments passed to `train_step_fn`.\n\n* **kwargs**: Optional keyword arguments passed to `train_step_fn`.\n\n* **master**: Master to use to create the training session.  Defaults to `\"\"`\n  which causes the session to be created in the local process.\n\n"
+}

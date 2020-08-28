@@ -1,0 +1,7 @@
+{
+    "source file": "run.py",
+    "line number": "82",
+    "func name": "drop_bad_flags",
+    "func arg": "(flags)",
+    "comments": "Drop flags that are problematic for compiling old scipy versions\n\n\n"
+}

@@ -1,0 +1,7 @@
+{
+    "source file": "test_fastica.py",
+    "line number": "288",
+    "func name": "test_fastica_output_shape",
+    "func arg": "(whiten, return_X_mean, return_n_iter)",
+    "comments": ""
+}

@@ -1,0 +1,7 @@
+{
+    "source file": "pfunc.py",
+    "line number": "499",
+    "func name": "iter_over_pairs",
+    "func arg": "(pairs)",
+    "comments": "Return an iterator over pairs present in the 'pairs' input.\n\nParameters ---------- pairs : dictionary or iterable The pairs to iterate upon. These may be stored either as (key, value) items in a dictionary, or directly as pairs in any kind of iterable structure.\n##### Returns\n"
+}

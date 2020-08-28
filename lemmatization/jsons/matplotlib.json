@@ -1,0 +1,2265 @@
+{"function":
+[{
+    "source file": "_axes.py",
+    "line number": "40",
+    "func name": "_make_inset_locator",
+    "func arg": "(bounds, trans, parent)",
+    "comments": "Helper function to locate inset axes, used in `.Axes.inset_axes`.\n\nA locator gets used in `Axes.set_aspect` to override the default locations...\n\nIt is a function that takes an axes object and a renderer and tells `set_aspect` where it is to be placed.\n\nHere *rect* is a rectangle [l, b, w, h] that specifies the location for the axes in the transform given by *trans* on the *parent*.\n"
+},{
+    "source file": "_backend_pdf_ps.py",
+    "line number": "14",
+    "func name": "_cached_get_afm_from_fname",
+    "func arg": "(fname)",
+    "comments": ""
+},{
+    "source file": "_backend_tk.py",
+    "line number": "47",
+    "func name": "blit",
+    "func arg": "(photoimage, aggimage, offsets, bbox)",
+    "comments": "Blit *aggimage* to *photoimage*.\n\n*offsets* is a tuple describing how to fill the ``offset`` field of the ``Tk_PhotoImageBlock`` struct: it should be (0, 1, 2, 3) for RGBA8888 data, (2, 1, 0, 3) for little-endian ARBG32 (i.e. GBRA8888) data and (1, 2, 3, 0) for big-endian ARGB32 (i.e. ARGB8888) data.\n\nIf *bbox* is passed, it defines the region that gets blitted.\n"
+},{
+    "source file": "_base.py",
+    "line number": "88",
+    "func name": "_process_plot_format",
+    "func arg": "(fmt)",
+    "comments": "Convert a MATLAB style color/line style format string to a (*linestyle*, *marker*, *color*) tuple.\n\nExample format strings include:\n\n* 'ko': black circles * '.b': blue dots * 'r--': red dashed lines * 'C2--': the third color in the color cycle, dashed lines\n\nSee Also -------- matplotlib.Line2D.lineStyles, matplotlib.colors.cnames All possible styles and color format strings.\n"
+},{
+    "source file": "_cm.py",
+    "line number": "1096",
+    "func name": "_gist_yarg",
+    "func arg": "(x)",
+    "comments": ""
+},{
+    "source file": "_constrained_layout.py",
+    "line number": "541",
+    "func name": "layoutcolorbargridspec",
+    "func arg": "(parents, cax, shrink, aspect, location, pad)",
+    "comments": "Do the layout for a colorbar, to not overly pollute colorbar.py\n\n*pad* is in fraction of the original axis size.\n"
+},{
+    "source file": "_formlayout.py",
+    "line number": "488",
+    "func name": "fedit",
+    "func arg": "(data, title, comment, icon, parent, apply)",
+    "comments": "Create form dialog and return result (if Cancel button is pressed, return None)\n\ndata: datalist, datagroup title: str comment: str icon: QIcon instance parent: parent QWidget apply: apply callback (function)\n\ndatalist: list/tuple of (field_name, field_value) datagroup: list/tuple of (datalist *or* datagroup, title, comment)\n\n-> one field for each member of a datalist -> one tab for each member of a top-level datagroup -> one page (of a multipage widget, each page can be selected with a combo box) for each member of a datagroup inside a datagroup\n\nSupported types for field_value:\n\n- int, float, str, unicode, bool\n\n- colors: in Qt-compatible text form, i.e. in hex format or name (red, ...) (automatically detected from a string)\n\n- list/tuple: * the first element will be the selected index (or value) * the other elements can be couples (key, value) or only values\n"
+},{
+    "source file": "_internal_utils.py",
+    "line number": "15",
+    "func name": "graphviz_dump_transform",
+    "func arg": "(transform, dest)",
+    "comments": "Generate a graphical representation of the transform tree for *transform* using the :program:`dot` program (which this function depends on).  The output format (png, dot, etc.) is determined from the suffix of *dest*.\n\nParameters ---------- transform : `~matplotlib.transform.Transform` The represented transform. dest : str Output filename.\n\nThe extension must be one of the formats supported by :program:`dot`, e.g. png, svg, dot, ... (see https://www.graphviz.org/doc/info/output.html). highlight : list of `~matplotlib.transform.Transform` or None The transforms in the tree to be drawn in bold. If *None*, *transform* is highlighted.\n"
+},{
+    "source file": "_layoutbox.py",
+    "line number": "655",
+    "func name": "plot_children",
+    "func arg": "(fig, box, level, printit)",
+    "comments": "Simple plotting to show where boxes are.\n\n\n"
+},{
+    "source file": "_secondary_axes.py",
+    "line number": "10",
+    "func name": "_make_secondary_locator",
+    "func arg": "(rect, parent)",
+    "comments": "Helper function to locate the secondary axes.\n\nA locator gets used in `Axes.set_aspect` to override the default locations...\n\nIt is a function that takes an axes object and a renderer and tells `set_aspect` where it is to be placed.\n\nThis locator make the transform be in axes-relative co-coordinates because that is how we specify the \"location\" of the secondary axes.\n\nHere *rect* is a rectangle [l, b, w, h] that specifies the location for the axes in the transform given by *trans* on the *parent*.\n"
+},{
+    "source file": "_subplots.py",
+    "line number": "229",
+    "func name": "_picklable_subplot_class_constructor",
+    "func arg": "(axes_class)",
+    "comments": "Stub factory that returns an empty instance of the appropriate subplot class when called with an axes class. This is purely to allow pickling of Axes and Subplots.\n\n\n"
+},{
+    "source file": "_text_layout.py",
+    "line number": "8",
+    "func name": "layout",
+    "func arg": "(string, font)",
+    "comments": "Render *string* with *font*.  For each character in *string*, yield a (glyph-index, x-position) pair.  When such a pair is yielded, the font's glyph is set to the corresponding character.\n\nParameters ---------- string : str The string to be rendered. font : FT2Font The font. kern_mode : int A FreeType kerning mode.\n\nYields ------ glyph_index : int x_position : float\n"
+},{
+    "source file": "_version.py",
+    "line number": "419",
+    "func name": "get_versions",
+    "func arg": "()",
+    "comments": ""
+},{
+    "source file": "advanced_hillshading.py",
+    "line number": "56",
+    "func name": "shade_other_data",
+    "func arg": "()",
+    "comments": "Demonstrates displaying different variables through shade and color.\n\n\n"
+},{
+    "source file": "affine_image.py",
+    "line number": "31",
+    "func name": "do_plot",
+    "func arg": "(ax, Z, transform)",
+    "comments": ""
+},{
+    "source file": "afm.py",
+    "line number": "326",
+    "func name": "_parse_optional",
+    "func arg": "(fh)",
+    "comments": "Parse the optional fields for kern pair data and composites.\n\n\n##### Returns\n* **kern_data **: dict\n    A dict containing kerning information. May be empty.\n    See `._parse_kern_pairs`.\n\n* **composites **: dict\n    A dict containing composite information. May be empty.\n    See `._parse_composites`.\n\n"
+},{
+    "source file": "align_ylabels.py",
+    "line number": "14",
+    "func name": "make_plot",
+    "func arg": "(axs)",
+    "comments": ""
+},{
+    "source file": "anatomy.py",
+    "line number": "67",
+    "func name": "text",
+    "func arg": "(x, y, text)",
+    "comments": ""
+},{
+    "source file": "anchored_artists.py",
+    "line number": "107",
+    "func name": "draw_sizebar",
+    "func arg": "(ax)",
+    "comments": "Draw a horizontal bar with length of 0.1 in data coordinates, with a fixed label underneath.\n\n\n"
+},{
+    "source file": "angle_helper2.py",
+    "line number": "137",
+    "func name": "select_step360",
+    "func arg": "(v1, v2, nv, include_last, threshold_factor)",
+    "comments": ""
+},{
+    "source file": "animate_decay.py",
+    "line number": "38",
+    "func name": "run",
+    "func arg": "(data)",
+    "comments": ""
+},{
+    "source file": "animated_histogram.py",
+    "line number": "68",
+    "func name": "animate",
+    "func arg": "(i)",
+    "comments": ""
+},{
+    "source file": "animation.py",
+    "line number": "773",
+    "func name": "_embedded_frames",
+    "func arg": "(frame_list, frame_format)",
+    "comments": "frame_list should be a list of base64-encoded png files\n\n\n"
+},{
+    "source file": "arrow_demo.py",
+    "line number": "26",
+    "func name": "make_arrow_plot",
+    "func arg": "(data, size, display, shape, max_arrow_width, arrow_sep, alpha, normalize_data, ec, labelcolor, head_starts_at_zero, rate_labels, **kwargs)",
+    "comments": "Makes an arrow plot.\n\nParameters ---------- data Dict with probabilities for the bases and pair transitions. size Size of the graph in inches. display : {'length', 'width', 'alpha'} The arrow property to change. shape : {'full', 'left', 'right'} For full or half arrows. max_arrow_width : float Maximum width of an arrow, data coordinates. arrow_sep : float Separation between arrows in a pair, data coordinates. alpha : float Maximum opacity of arrows. **kwargs Can be anything allowed by a Arrow object, e.g. *linewidth* or *edgecolor*.\n"
+},{
+    "source file": "art3d.py",
+    "line number": "791",
+    "func name": "_zalpha",
+    "func arg": "(colors, zs)",
+    "comments": "Modify the alphas of the color list according to depth.\n\n\n"
+},{
+    "source file": "artist_reference.py",
+    "line number": "21",
+    "func name": "label",
+    "func arg": "(xy, text)",
+    "comments": ""
+},{
+    "source file": "artist.py",
+    "line number": "1643",
+    "func name": "kwdoc",
+    "func arg": "(artist)",
+    "comments": "Inspect an `~matplotlib.artist.Artist` class (using `.ArtistInspector`) and return information about its settable properties and their current values.\n\nParameters ---------- artist : `~matplotlib.artist.Artist` or an iterable of `Artist`\\s\n##### Returns\n* **str\n    The settable properties of *artist*, as plain text if\n    **: rc\n\n"
+},{
+    "source file": "auto_subplots_adjust.py",
+    "line number": "23",
+    "func name": "on_draw",
+    "func arg": "(event)",
+    "comments": ""
+},{
+    "source file": "axes_divider1.py",
+    "line number": "746",
+    "func name": "make_axes_area_auto_adjustable",
+    "func arg": "(ax, use_axes, pad, adjust_dirs)",
+    "comments": ""
+},{
+    "source file": "axes_grid1.py",
+    "line number": "15",
+    "func name": "_tick_only",
+    "func arg": "(ax, bottom_on, left_on)",
+    "comments": ""
+},{
+    "source file": "axes_margins.py",
+    "line number": "18",
+    "func name": "f",
+    "func arg": "(t)",
+    "comments": ""
+},{
+    "source file": "axes_rgb1.py",
+    "line number": "60",
+    "func name": "imshow_rgb",
+    "func arg": "(ax, r, g, b, **kwargs)",
+    "comments": ""
+},{
+    "source file": "axes_size1.py",
+    "line number": "223",
+    "func name": "from_any",
+    "func arg": "(size, fraction_ref)",
+    "comments": "Create a Fixed unit when the first argument is a float, or a Fraction unit if that is a string that ends with %. The second argument is only meaningful when Fraction unit is created.\n\n>>> a = Size.from_any(1.2) # => Size.Fixed(1.2) >>> Size.from_any(\"50%\", a) # => Size.Fraction(0.5, a)\n"
+},{
+    "source file": "axes_zoom_effect.py",
+    "line number": "81",
+    "func name": "zoom_effect02",
+    "func arg": "(ax1, ax2, **kwargs)",
+    "comments": "ax1 : the main axes ax1 : the zoomed axes\n\nSimilar to zoom_effect01.\n\nThe xmin & xmax will be taken from the ax1.viewLim.\n"
+},{
+    "source file": "axes3d.py",
+    "line number": "2943",
+    "func name": "get_test_data",
+    "func arg": "(delta)",
+    "comments": "Return a tuple X, Y, Z with a test data set.\n\n\n"
+},{
+    "source file": "axis_direction_demo_step01.py",
+    "line number": "11",
+    "func name": "setup_axes",
+    "func arg": "(fig, rect)",
+    "comments": ""
+},{
+    "source file": "axis_direction_demo_step02.py",
+    "line number": "11",
+    "func name": "setup_axes",
+    "func arg": "(fig, rect)",
+    "comments": ""
+},{
+    "source file": "axis_direction_demo_step03.py",
+    "line number": "11",
+    "func name": "setup_axes",
+    "func arg": "(fig, rect)",
+    "comments": ""
+},{
+    "source file": "axis_direction_demo_step04.py",
+    "line number": "11",
+    "func name": "setup_axes",
+    "func arg": "(fig, rect)",
+    "comments": ""
+},{
+    "source file": "axis.py",
+    "line number": "1942",
+    "func name": "_make_getset_interval",
+    "func arg": "(method_name, lim_name, attr_name)",
+    "comments": "Helper to generate ``get_{data,view}_interval`` and ``set_{data,view}_interval`` implementations.\n\n\n"
+},{
+    "source file": "axis3d.py",
+    "line number": "22",
+    "func name": "tick_update_position",
+    "func arg": "(tick, tickxs, tickys, labelpos)",
+    "comments": "Update tick line and label position and style.\n\n\n"
+},{
+    "source file": "backend_agg.py",
+    "line number": "52",
+    "func name": "get_hinting_flag",
+    "func arg": "()",
+    "comments": ""
+},{
+    "source file": "backend_bases.py",
+    "line number": "2613",
+    "func name": "button_press_handler",
+    "func arg": "(event, canvas, toolbar)",
+    "comments": "The default Matplotlib button actions for extra mouse buttons.\n\nParameters are as for `key_press_handler`, except that *event* is a `MouseEvent`.\n"
+},{
+    "source file": "backend_cairo.py",
+    "line number": "74",
+    "func name": "_cairo_font_args_from_font_prop",
+    "func arg": "(prop)",
+    "comments": "Convert a `.FontProperties` or a `.FontEntry` to arguments that can be passed to `.Context.select_font_face`.\n\n\n"
+},{
+    "source file": "backend_gtk3.py",
+    "line number": "902",
+    "func name": "error_msg_gtk",
+    "func arg": "(msg, parent)",
+    "comments": ""
+},{
+    "source file": "backend_nbagg.py",
+    "line number": "28",
+    "func name": "connection_info",
+    "func arg": "()",
+    "comments": "Return a string showing the figure and connection status for the backend.\n\nThis is intended as a diagnostic tool, and not for general use.\n"
+},{
+    "source file": "backend_pdf.py",
+    "line number": "417",
+    "func name": "_paint_path",
+    "func arg": "(fill, stroke)",
+    "comments": "Return the PDF operator to paint a path.\n\nParameters ---------- fill: bool Fill the path with the fill color. stroke: bool Stroke the outline of the path with the line color.\n"
+},{
+    "source file": "backend_pgf.py",
+    "line number": "982",
+    "func name": "_cleanup_all",
+    "func arg": "()",
+    "comments": ""
+},{
+    "source file": "backend_ps.py",
+    "line number": "1242",
+    "func name": "pstoeps",
+    "func arg": "(tmpfile, bbox, rotated)",
+    "comments": "Convert the postscript to encapsulated postscript.  The bbox of the eps file will be replaced with the given *bbox* argument. If None, original bbox will be used.\n\n\n"
+},{
+    "source file": "backend_qt5.py",
+    "line number": "138",
+    "func name": "_allow_super_init",
+    "func arg": "(__init__)",
+    "comments": "Decorator for ``__init__`` to allow ``super().__init__`` on PyQt4/PySide2.\n\n\n"
+},{
+    "source file": "backend_svg.py",
+    "line number": "264",
+    "func name": "generate_css",
+    "func arg": "(attrib)",
+    "comments": ""
+},{
+    "source file": "backend_template.py",
+    "line number": "169",
+    "func name": "new_figure_manager_given_figure",
+    "func arg": "(num, figure)",
+    "comments": "Create a new figure manager instance for the given figure.\n\n\n"
+},{
+    "source file": "backend_tools.py",
+    "line number": "1086",
+    "func name": "add_tools_to_container",
+    "func arg": "(container, tools)",
+    "comments": "Add multiple tools to the container.\n\nParameters ---------- container : Container `backend_bases.ToolContainerBase` object that will get the tools added. tools : list, optional List in the form ``[[group1, [tool1, tool2 ...]], [group2, [...]]]`` where the tools ``[tool1, tool2, ...]`` will display in group1. See `add_tool` for details.\n"
+},{
+    "source file": "backend_webagg_core.py",
+    "line number": "89",
+    "func name": "_handle_key",
+    "func arg": "(key)",
+    "comments": "Handle key codes\n\n\n"
+},{
+    "source file": "backend_webagg.py",
+    "line number": "285",
+    "func name": "ipython_inline_display",
+    "func arg": "(figure)",
+    "comments": ""
+},{
+    "source file": "backend_wx.py",
+    "line number": "1092",
+    "func name": "_set_frame_icon",
+    "func arg": "(frame)",
+    "comments": ""
+},{
+    "source file": "backend_wxagg.py",
+    "line number": "58",
+    "func name": "_convert_agg_to_wx_bitmap",
+    "func arg": "(agg, bbox)",
+    "comments": "Convert the region of the agg buffer bounded by bbox to a wx.Bitmap.  If bbox is None, the entire buffer is converted. Note: agg must be a backend_agg.RendererAgg instance.\n\n\n"
+},{
+    "source file": "barchart_demo.py",
+    "line number": "67",
+    "func name": "plot_student_results",
+    "func arg": "(student, scores, cohort_size)",
+    "comments": ""
+},{
+    "source file": "barchart.py",
+    "line number": "34",
+    "func name": "autolabel",
+    "func arg": "(rects)",
+    "comments": "Attach a text label above each bar in *rects*, displaying its height.\n\n\n"
+},{
+    "source file": "basic_units.py",
+    "line number": "370",
+    "func name": "cos",
+    "func arg": "(x)",
+    "comments": ""
+},{
+    "source file": "bayes_update.py",
+    "line number": "19",
+    "func name": "beta_pdf",
+    "func arg": "(x, a, b)",
+    "comments": ""
+},{
+    "source file": "bezier.py",
+    "line number": "614",
+    "func name": "concatenate_paths",
+    "func arg": "(paths)",
+    "comments": "Concatenate a list of paths into a single path.\n\n\n"
+},{
+    "source file": "bmh.py",
+    "line number": "22",
+    "func name": "plot_beta_hist",
+    "func arg": "(ax, a, b)",
+    "comments": ""
+},{
+    "source file": "boilerplate.py",
+    "line number": "334",
+    "func name": "build_pyplot",
+    "func arg": "(pyplot_path)",
+    "comments": ""
+},{
+    "source file": "boxplot_demo.py",
+    "line number": "194",
+    "func name": "fake_bootstrapper",
+    "func arg": "(n)",
+    "comments": "This is just a placeholder for the user's method of bootstrapping the median and its confidence intervals.\n\n\n"
+},{
+    "source file": "cache_zenodo_svg.py",
+    "line number": "49",
+    "func name": "_get_xdg_cache_dir",
+    "func arg": "()",
+    "comments": "Return the XDG cache directory.\n\nSee https://standards.freedesktop.org/basedir-spec/basedir-spec-latest.html\n"
+},{
+    "source file": "check_buttons.py",
+    "line number": "36",
+    "func name": "func",
+    "func arg": "(label)",
+    "comments": ""
+},{
+    "source file": "clip_path2.py",
+    "line number": "80",
+    "func name": "clip_line_to_rect",
+    "func arg": "(xline, yline, bbox)",
+    "comments": ""
+},{
+    "source file": "close_event.py",
+    "line number": "11",
+    "func name": "on_close",
+    "func arg": "(event)",
+    "comments": ""
+},{
+    "source file": "cm.py",
+    "line number": "177",
+    "func name": "get_cmap",
+    "func arg": "(name, lut)",
+    "comments": "Get a colormap instance, defaulting to rc values if *name* is None.\n\nColormaps added with :func:`register_cmap` take precedence over built-in colormaps.\n\nNotes ----- Currently, this returns the global colormap object, which is deprecated. In Matplotlib 3.5, you will no longer be able to modify the global colormaps in-place.\n\nParameters ---------- name : `matplotlib.colors.Colormap` or str or None, default: None If a `.Colormap` instance, it will be returned. Otherwise, the name of a colormap known to Matplotlib, which will be resampled by *lut*. The default, None, means :rc:`image.cmap`. lut : int or None, default: None If *name* is not already a Colormap instance and *lut* is not None, the colormap will be resampled to have *lut* entries in the lookup table.\n"
+},{
+    "source file": "colorbar1.py",
+    "line number": "781",
+    "func name": "colorbar",
+    "func arg": "(mappable, cax, ax, **kw)",
+    "comments": "Create a colorbar for a ScalarMappable instance.\n\nDocumentation for the pyplot thin wrapper:\n\n%s\n"
+},{
+    "source file": "colorbar2.py",
+    "line number": "1651",
+    "func name": "colorbar_factory",
+    "func arg": "(cax, mappable, **kwargs)",
+    "comments": "Create a colorbar on the given axes for the given mappable.\n\n.. note:: This is a low-level function to turn an existing axes into a colorbar axes.\n\nTypically, you'll want to use `~.Figure.colorbar` instead, which automatically handles creation and placement of a suitable axes as well.\n\nParameters ---------- cax : `~matplotlib.axes.Axes` The `~.axes.Axes` to turn into a colorbar. mappable : `~matplotlib.cm.ScalarMappable` The mappable to be described by the colorbar. **kwargs Keyword arguments are passed to the respective colorbar class.\n##### Returns\n"
+},{
+    "source file": "colormap_reference.py",
+    "line number": "48",
+    "func name": "plot_color_gradients",
+    "func arg": "(cmap_category, cmap_list)",
+    "comments": ""
+},{
+    "source file": "colormap-manipulation.py",
+    "line number": "194",
+    "func name": "plot_linearmap",
+    "func arg": "(cdict)",
+    "comments": ""
+},{
+    "source file": "colormaps.py",
+    "line number": "366",
+    "func name": "plot_color_gradients",
+    "func arg": "(cmap_category, cmap_list)",
+    "comments": ""
+},{
+    "source file": "colors1.py",
+    "line number": "71",
+    "func name": "demo",
+    "func arg": "(sty)",
+    "comments": ""
+},{
+    "source file": "colors2.py",
+    "line number": "2147",
+    "func name": "from_levels_and_colors",
+    "func arg": "(levels, colors, extend)",
+    "comments": "A helper routine to generate a cmap and a norm instance which behave similar to contourf's levels and colors arguments.\n\nParameters ---------- levels : sequence of numbers The quantization levels used to construct the `BoundaryNorm`. Value ``v`` is quantized to level ``i`` if ``lev[i] <= v < lev[i+1]``. colors : sequence of colors The fill color to use for each level. If *extend* is \"neither\" there must be ``n_level\n\n- 1`` colors. For an *extend* of \"min\" or \"max\" add one extra color, and for an *extend* of \"both\" add two colors. extend : {'neither', 'min', 'max', 'both'}, optional The behaviour when a value falls out of range of the given levels. See `~.Axes.contourf` for details.\n##### Returns\n* **cmap **: `~matplotlib.colors.Normalize`\n\n* **norm **: `~matplotlib.colors.Colormap`\n\n"
+},{
+    "source file": "compare.py",
+    "line number": "433",
+    "func name": "save_diff_image",
+    "func arg": "(expected, actual, output)",
+    "comments": "Parameters ---------- expected : str File path of expected image. actual : str File path of actual image. output : str File path to save difference image to.\n\n\n"
+},{
+    "source file": "conf2.py",
+    "line number": "386",
+    "func name": "setup",
+    "func arg": "(app)",
+    "comments": ""
+},{
+    "source file": "confidence_ellipse.py",
+    "line number": "104",
+    "func name": "get_correlated_dataset",
+    "func arg": "(n, dependency, mu, scale)",
+    "comments": ""
+},{
+    "source file": "conftest2.py",
+    "line number": "127",
+    "func name": "pd",
+    "func arg": "()",
+    "comments": "Fixture to import and configure pandas.\n\n\n"
+},{
+    "source file": "connectionstyle_demo.py",
+    "line number": "14",
+    "func name": "demo_con_style",
+    "func arg": "(ax, connectionstyle)",
+    "comments": ""
+},{
+    "source file": "constrainedlayout_guide.py",
+    "line number": "416",
+    "func name": "docomplicated",
+    "func arg": "(suptitle)",
+    "comments": ""
+},{
+    "source file": "contour1.py",
+    "line number": "636",
+    "func name": "_find_closest_point_on_path",
+    "func arg": "(lc, point)",
+    "comments": "Parameters ---------- lc : coordinates of vertices point : coordinates of test point\n\n\n"
+},{
+    "source file": "coords_demo.py",
+    "line number": "28",
+    "func name": "on_click",
+    "func arg": "(event)",
+    "comments": ""
+},{
+    "source file": "coords_report.py",
+    "line number": "13",
+    "func name": "millions",
+    "func arg": "(x)",
+    "comments": ""
+},{
+    "source file": "core.py",
+    "line number": "231",
+    "func name": "reload_library",
+    "func arg": "()",
+    "comments": "Reload the style library.\n\n\n"
+},{
+    "source file": "custom_boxstyle01.py",
+    "line number": "28",
+    "func name": "custom_box_style",
+    "func arg": "(x0, y0, width, height, mutation_size, mutation_aspect)",
+    "comments": "Given the location and size of the box, return the path of the box around it.\n\nRotation is automatically taken care of.\n\nParameters ---------- x0, y0, width, height : float Box location and size. mutation_size : float Mutation reference scale, typically the text font size. mutation_aspect Mutation aspect ratio.\n"
+},{
+    "source file": "custom_roles.py",
+    "line number": "28",
+    "func name": "setup",
+    "func arg": "(app)",
+    "comments": ""
+},{
+    "source file": "custom_ticker1.py",
+    "line number": "19",
+    "func name": "millions",
+    "func arg": "(x, pos)",
+    "comments": "The two args are the value and tick position.\n\n\n"
+},{
+    "source file": "customized_violin.py",
+    "line number": "30",
+    "func name": "set_axis_style",
+    "func arg": "(ax, labels)",
+    "comments": ""
+},{
+    "source file": "date_index_formatter.py",
+    "line number": "32",
+    "func name": "format_date",
+    "func arg": "(x, pos)",
+    "comments": ""
+},{
+    "source file": "date_precision_and_epochs.py",
+    "line number": "28",
+    "func name": "_reset_epoch_for_tutorial",
+    "func arg": "()",
+    "comments": "Users (and downstream libraries) should not use the private method of resetting the epoch.\n\n\n"
+},{
+    "source file": "dates.py",
+    "line number": "1787",
+    "func name": "date_ticker_factory",
+    "func arg": "(span, tz, numticks)",
+    "comments": "Create a date locator with *numticks* (approx) and a date formatter for *span* in days.  Return value is (locator, formatter).\n\n\n"
+},{
+    "source file": "decorators.py",
+    "line number": "477",
+    "func name": "_image_directories",
+    "func arg": "(func)",
+    "comments": "Compute the baseline and result image directories for testing *func*.\n\nFor test module ``foo.bar.test_baz``, the baseline directory is at ``foo/bar/baseline_images/test_baz`` and the result directory at ``$(pwd)/result_images/test_baz``.\n\nThe result directory is created if it doesn't exist.\n"
+},{
+    "source file": "demo_agg_filter.py",
+    "line number": "255",
+    "func name": "light_filter_pie",
+    "func arg": "(ax)",
+    "comments": ""
+},{
+    "source file": "demo_axes_divider.py",
+    "line number": "99",
+    "func name": "demo",
+    "func arg": "()",
+    "comments": ""
+},{
+    "source file": "demo_axes_grid.py",
+    "line number": "92",
+    "func name": "demo_grid_with_each_cbar_labelled",
+    "func arg": "(fig)",
+    "comments": "A grid of 2x2 images. Each image has its own colorbar.\n\n\n"
+},{
+    "source file": "demo_axes_grid2.py",
+    "line number": "19",
+    "func name": "add_inner_title",
+    "func arg": "(ax, title, loc, **kwargs)",
+    "comments": ""
+},{
+    "source file": "demo_axes_hbox_divider.py",
+    "line number": "15",
+    "func name": "make_heights_equal",
+    "func arg": "(fig, rect, ax1, ax2, pad)",
+    "comments": ""
+},{
+    "source file": "demo_axes_rgb.py",
+    "line number": "48",
+    "func name": "demo_rgb2",
+    "func arg": "()",
+    "comments": ""
+},{
+    "source file": "demo_axis_direction.py",
+    "line number": "66",
+    "func name": "add_floating_axis2",
+    "func arg": "(ax1)",
+    "comments": ""
+},{
+    "source file": "demo_constrained_layout.py",
+    "line number": "18",
+    "func name": "example_plot",
+    "func arg": "(ax)",
+    "comments": ""
+},{
+    "source file": "demo_curvelinear_grid.py",
+    "line number": "61",
+    "func name": "curvelinear_test2",
+    "func arg": "(fig)",
+    "comments": "Polar projection, but in a rectangular box.\n\n\n"
+},{
+    "source file": "demo_curvelinear_grid2.py",
+    "line number": "23",
+    "func name": "curvelinear_test1",
+    "func arg": "(fig)",
+    "comments": "Grid for custom transform.\n\n\n"
+},{
+    "source file": "demo_edge_colorbar.py",
+    "line number": "56",
+    "func name": "demo_right_cbar",
+    "func arg": "(fig)",
+    "comments": "A grid of 2x2 images. Each row has its own colorbar.\n\n\n"
+},{
+    "source file": "demo_floating_axes.py",
+    "line number": "88",
+    "func name": "setup_axes3",
+    "func arg": "(fig, rect)",
+    "comments": "Sometimes, things like axis_direction need to be adjusted.\n\n\n"
+},{
+    "source file": "demo_floating_axis.py",
+    "line number": "21",
+    "func name": "curvelinear_test2",
+    "func arg": "(fig)",
+    "comments": "Polar projection, but in a rectangular box.\n\n\n"
+},{
+    "source file": "demo_gridspec01.py",
+    "line number": "14",
+    "func name": "annotate_axes",
+    "func arg": "(fig)",
+    "comments": ""
+},{
+    "source file": "demo_gridspec03.py",
+    "line number": "17",
+    "func name": "annotate_axes",
+    "func arg": "(fig)",
+    "comments": ""
+},{
+    "source file": "demo_gridspec06.py",
+    "line number": "13",
+    "func name": "squiggle_xy",
+    "func arg": "(a, b, c, d)",
+    "comments": ""
+},{
+    "source file": "demo_ribbon_box.py",
+    "line number": "62",
+    "func name": "main",
+    "func arg": "()",
+    "comments": ""
+},{
+    "source file": "demo_text_rotation_mode.py",
+    "line number": "26",
+    "func name": "test_rotation_mode",
+    "func arg": "(fig, mode, subplot_location)",
+    "comments": ""
+},{
+    "source file": "demo_ticklabel_alignment.py",
+    "line number": "13",
+    "func name": "setup_axes",
+    "func arg": "(fig, rect)",
+    "comments": ""
+},{
+    "source file": "demo_ticklabel_direction.py",
+    "line number": "12",
+    "func name": "setup_axes",
+    "func arg": "(fig, rect)",
+    "comments": ""
+},{
+    "source file": "demo_tight_layout.py",
+    "line number": "23",
+    "func name": "example_plot",
+    "func arg": "(ax)",
+    "comments": ""
+},{
+    "source file": "deprecation.py",
+    "line number": "494",
+    "func name": "_suppress_matplotlib_deprecation_warning",
+    "func arg": "()",
+    "comments": ""
+},{
+    "source file": "disable_internet.py",
+    "line number": "137",
+    "func name": "no_internet",
+    "func arg": "(verbose)",
+    "comments": "Temporarily disables internet access (if not already disabled).\n\nIf it was already disabled before entering the context manager (i.e. `turn_off_internet` was called previously) then this is a no-op and leaves internet access disabled until a manual call to `turn_on_internet`.\n"
+},{
+    "source file": "docstring.py",
+    "line number": "77",
+    "func name": "dedent_interpd",
+    "func arg": "(func)",
+    "comments": "Dedent *func*'s docstring, then interpolate it with ``interpd``.\n\n\n"
+},{
+    "source file": "donut.py",
+    "line number": "23",
+    "func name": "make_circle",
+    "func arg": "(r)",
+    "comments": ""
+},{
+    "source file": "double_pendulum.py",
+    "line number": "83",
+    "func name": "animate",
+    "func arg": "(i)",
+    "comments": ""
+},{
+    "source file": "dviread.py",
+    "line number": "1089",
+    "func name": "_fontfile",
+    "func arg": "(cls, suffix, texname)",
+    "comments": ""
+},{
+    "source file": "dynamic_image.py",
+    "line number": "15",
+    "func name": "f",
+    "func arg": "(x, y)",
+    "comments": ""
+},{
+    "source file": "embedding_in_wx5_sgskip.py",
+    "line number": "46",
+    "func name": "demo",
+    "func arg": "()",
+    "comments": ""
+},{
+    "source file": "embedding_webagg_sgskip.py",
+    "line number": "37",
+    "func name": "create_figure",
+    "func arg": "()",
+    "comments": "Creates a simple example figure.\n\n\n"
+},{
+    "source file": "errorbars_and_boxes.py",
+    "line number": "42",
+    "func name": "make_error_boxes",
+    "func arg": "(ax, xdata, ydata, xerror, yerror, facecolor, edgecolor, alpha)",
+    "comments": ""
+},{
+    "source file": "fahrenheit_celsius_scales.py",
+    "line number": "21",
+    "func name": "make_plot",
+    "func arg": "()",
+    "comments": ""
+},{
+    "source file": "fancyarrow_demo.py",
+    "line number": "25",
+    "func name": "to_texstring",
+    "func arg": "(s)",
+    "comments": ""
+},{
+    "source file": "fancybox_demo.py",
+    "line number": "43",
+    "func name": "draw_control_points_for_patches",
+    "func arg": "(ax)",
+    "comments": ""
+},{
+    "source file": "figure_axes_enter_leave.py",
+    "line number": "30",
+    "func name": "on_leave_figure",
+    "func arg": "(event)",
+    "comments": ""
+},{
+    "source file": "figure_title.py",
+    "line number": "12",
+    "func name": "f",
+    "func arg": "(t)",
+    "comments": ""
+},{
+    "source file": "figure.py",
+    "line number": "2804",
+    "func name": "figaspect",
+    "func arg": "(arg)",
+    "comments": "Calculate the width and height for a figure with a specified aspect ratio.\n\nWhile the height is taken from :rc:`figure.figsize`, the width is adjusted to match the desired aspect ratio. Additionally, it is ensured that the width is in the range [4., 16.] and the height is in the range [2., 16.]. If necessary, the default height is adjusted to ensure this.\n\nParameters ---------- arg : float or 2d array If a float, this defines the aspect ratio (i.e. the ratio height / width). In case of an array the aspect ratio is number of rows / number of columns, so that the array could be fitted in the figure undistorted.\n##### Returns\n* **Make a figure twice as tall as it is wide**: \n\n* **Make a figure with the proper aspect for an array**: \n\n"
+},{
+    "source file": "figureoptions.py",
+    "line number": "31",
+    "func name": "figure_edit",
+    "func arg": "(axes, parent)",
+    "comments": "Edit matplotlib figure options\n\n\n"
+},{
+    "source file": "fill.py",
+    "line number": "19",
+    "func name": "koch_snowflake",
+    "func arg": "(order, scale)",
+    "comments": "Return two lists x, y of point coordinates of the Koch snowflake.\n\nParameters ---------- order : int The recursion depth. scale : float The extent of the snowflake (edge length of the base triangle).\n"
+},{
+    "source file": "filled_step.py",
+    "line number": "79",
+    "func name": "stack_hist",
+    "func arg": "(ax, stacked_data, sty_cycle, bottoms, hist_func, labels, plot_func, plot_kwargs)",
+    "comments": "Parameters ---------- ax : axes.Axes The axes to add artists too\n\nstacked_data : array or Mapping A (N, M) shaped array.\n\nThe first dimension will be iterated over to compute histograms row-wise\n\nsty_cycle : Cycler or operable of dict Style to apply to each set\n\nbottoms : array, default: 0 The initial positions of the bottoms.\n\nhist_func : callable, optional Must have signature `bin_vals, bin_edges = f(data)`. `bin_edges` expected to be one longer than `bin_vals`\n\nlabels : list of str, optional The label for each set.\n\nIf not given and stacked data is an array defaults to 'default set {n}'\n\nIf stacked_data is a mapping, and labels is None, default to the keys (which may come out in a random order).\n\nIf stacked_data is a mapping and labels is given then only the columns listed by be plotted.\n\nplot_func : callable, optional Function to call to draw the histogram must have signature:\n\nret = plot_func(ax, edges, top, bottoms=bottoms, label=label, **kwargs)\n\nplot_kwargs : dict, optional Any extra kwargs to pass through to the plotting function.\n\nThis will be the same for all calls to the plotting function and will over-ride the values in cycle.\n##### Returns\n* **arts **: dict\n    Dictionary of artists keyed on their labels\n\n"
+},{
+    "source file": "findobj_demo.py",
+    "line number": "29",
+    "func name": "myfunc",
+    "func arg": "(x)",
+    "comments": ""
+},{
+    "source file": "firefox.py",
+    "line number": "19",
+    "func name": "svg_parse",
+    "func arg": "(path)",
+    "comments": ""
+},{
+    "source file": "floating_axes2.py",
+    "line number": "364",
+    "func name": "floatingaxes_class_factory",
+    "func arg": "(axes_class)",
+    "comments": ""
+},{
+    "source file": "font_manager.py",
+    "line number": "1421",
+    "func name": "_load_fontmanager",
+    "func arg": "()",
+    "comments": ""
+},{
+    "source file": "font_table.py",
+    "line number": "52",
+    "func name": "draw_font_table",
+    "func arg": "(path)",
+    "comments": "Draw a font table of the first 255 chars of the given font.\n\nParameters ---------- path : str or None The path to the font file.\n\nIf None, use Matplotlib's default font.\n"
+},{
+    "source file": "fontconfig_pattern.py",
+    "line number": "190",
+    "func name": "generate_fontconfig_pattern",
+    "func arg": "(d)",
+    "comments": "Given a dictionary of key/value pairs, generates a fontconfig pattern string.\n\n\n"
+},{
+    "source file": "generate_credits.py",
+    "line number": "78",
+    "func name": "generate_credits",
+    "func arg": "()",
+    "comments": ""
+},{
+    "source file": "gh_api.py",
+    "line number": "265",
+    "func name": "post_download",
+    "func arg": "(project, filename, name, description)",
+    "comments": "Upload a file to the GitHub downloads area\n\n\n"
+},{
+    "source file": "ginput_manual_clabel_sgskip.py",
+    "line number": "63",
+    "func name": "f",
+    "func arg": "(x, y, pts)",
+    "comments": ""
+},{
+    "source file": "github_stats.py",
+    "line number": "94",
+    "func name": "report",
+    "func arg": "(issues, show_urls)",
+    "comments": "Summary report about a list of issues, printing number and title.\n\n\n"
+},{
+    "source file": "github.py",
+    "line number": "154",
+    "func name": "setup",
+    "func arg": "(app)",
+    "comments": "Install the plugin.\n\nparam app: Sphinx application context.\n"
+},{
+    "source file": "gradient_bar.py",
+    "line number": "59",
+    "func name": "gradient_bar",
+    "func arg": "(ax, x, y, width, bottom)",
+    "comments": ""
+},{
+    "source file": "grayscale.py",
+    "line number": "27",
+    "func name": "image_and_patch_example",
+    "func arg": "(ax)",
+    "comments": ""
+},{
+    "source file": "grid_finder2.py",
+    "line number": "8",
+    "func name": "_deprecate_factor_none",
+    "func arg": "(factor)",
+    "comments": ""
+},{
+    "source file": "gridspec_multicolumn.py",
+    "line number": "15",
+    "func name": "format_axes",
+    "func arg": "(fig)",
+    "comments": ""
+},{
+    "source file": "gridspec_nested.py",
+    "line number": "14",
+    "func name": "format_axes",
+    "func arg": "(fig)",
+    "comments": ""
+},{
+    "source file": "gridspec1.py",
+    "line number": "231",
+    "func name": "squiggle_xy",
+    "func arg": "(a, b, c, d, i)",
+    "comments": ""
+},{
+    "source file": "hatch_style_reference.py",
+    "line number": "17",
+    "func name": "hatches_plot",
+    "func arg": "(ax, h)",
+    "comments": ""
+},{
+    "source file": "hatch.py",
+    "line number": "184",
+    "func name": "get_path",
+    "func arg": "(hatchpattern, density)",
+    "comments": "Given a hatch specifier, *hatchpattern*, generates Path to render the hatch in a unit square.  *density* is the number of lines per unit square.\n\n\n"
+},{
+    "source file": "hinton_demo.py",
+    "line number": "17",
+    "func name": "hinton",
+    "func arg": "(matrix, max_weight, ax)",
+    "comments": "Draw Hinton diagram for visualizing a weight matrix.\n\n\n"
+},{
+    "source file": "horizontal_barchart_distribution.py",
+    "line number": "32",
+    "func name": "survey",
+    "func arg": "(results, category_names)",
+    "comments": "Parameters ---------- results : dict A mapping from question labels to a list of answers per category. It is assumed all lists contain the same number of entries and that it matches the length of *category_names*. category_names : list of str The category labels.\n\n\n"
+},{
+    "source file": "image_annotated_heatmap.py",
+    "line number": "297",
+    "func name": "func",
+    "func arg": "(x, pos)",
+    "comments": ""
+},{
+    "source file": "image_transparency_blend.py",
+    "line number": "24",
+    "func name": "normal_pdf",
+    "func arg": "(x, mean, var)",
+    "comments": ""
+},{
+    "source file": "image_zcoord.py",
+    "line number": "27",
+    "func name": "format_coord",
+    "func arg": "(x, y)",
+    "comments": ""
+},{
+    "source file": "image.py",
+    "line number": "1659",
+    "func name": "thumbnail",
+    "func arg": "(infile, thumbfile, scale, interpolation, preview)",
+    "comments": "Make a thumbnail of image in *infile* with output filename *thumbfile*.\n\nSee :doc:`/gallery/misc/image_thumbnail_sgskip`.\n\nParameters ---------- infile : str or file-like The image file. Matplotlib relies on Pillow_ for image reading, and thus supports a wide range of file formats, including PNG, JPG, TIFF and others.\n\n.. _Pillow: https://python-pillow.org/\n\nthumbfile : str or file-like The thumbnail filename.\n\nscale : float, default: 0.1 The scale factor for the thumbnail.\n\ninterpolation : str, default: 'bilinear' The interpolation scheme used in the resampling. See the *interpolation* parameter of `~.Axes.imshow` for possible values.\n\npreview : bool, default: False If True, the default backend (presumably a user interface backend) will be used which will cause a figure to be raised if `~matplotlib.pyplot.show` is called.\n\nIf it is False, the figure is created using `.FigureCanvasBase` and the drawing backend is selected as `.Figure.savefig` would normally do.\n##### Returns\n"
+},{
+    "source file": "imshow_extent.py",
+    "line number": "135",
+    "func name": "generate_imshow_demo_grid",
+    "func arg": "(extents, xlim, ylim)",
+    "comments": ""
+},{
+    "source file": "inset_locator_demo2.py",
+    "line number": "40",
+    "func name": "add_sizebar",
+    "func arg": "(ax, size)",
+    "comments": ""
+},{
+    "source file": "inset_locator1.py",
+    "line number": "604",
+    "func name": "mark_inset",
+    "func arg": "(parent_axes, inset_axes, loc1, loc2, **kwargs)",
+    "comments": "Draw a box to mark the location of an area represented by an inset axes.\n\nThis function draws a box in *parent_axes* at the bounding box of *inset_axes*, and shows a connection with the inset axes by drawing lines at the corners, giving a \"zoomed in\" effect.\n\nParameters ---------- parent_axes : `matplotlib.axes.Axes` Axes which contains the area of the inset axes.\n\ninset_axes : `matplotlib.axes.Axes` The inset axes.\n\nloc1, loc2 : {1, 2, 3, 4} Corners to use for connecting the inset axes and the area in the parent axes.\n\n**kwargs Patch properties for the lines and box drawn:\n\n%(Patch)s\n##### Returns\n* **pp **: `matplotlib.patches.Patch`\n    The patch drawn to represent the area of the inset axes.\n\n* **p1, p2 **: `matplotlib.patches.Patch`\n    The patches connecting two corners of the inset axes and its area.\n\n"
+},{
+    "source file": "integral.py",
+    "line number": "20",
+    "func name": "func",
+    "func arg": "(x)",
+    "comments": ""
+},{
+    "source file": "joinstyle.py",
+    "line number": "26",
+    "func name": "plot_angle",
+    "func arg": "(ax, x, y, angle, style)",
+    "comments": ""
+},{
+    "source file": "keypress_demo.py",
+    "line number": "13",
+    "func name": "on_press",
+    "func arg": "(event)",
+    "comments": ""
+},{
+    "source file": "layer_images.py",
+    "line number": "12",
+    "func name": "func3",
+    "func arg": "(x, y)",
+    "comments": ""
+},{
+    "source file": "leftventricle_bulleye.py",
+    "line number": "15",
+    "func name": "bullseye_plot",
+    "func arg": "(ax, data, seg_bold, cmap, norm)",
+    "comments": "Bullseye representation for the left ventricle.\n\nParameters ---------- ax : axes data : list of int and float The intensity values for each of the 17 segments seg_bold : list of int, optional A list with the segments to highlight cmap : ColorMap or None, optional Optional argument to set the desired colormap norm : Normalize or None, optional Optional argument to normalize data into the [0.0, 1.0] range\n\nNotes ----- This function creates the 17 segment model for the left ventricle according to the American Heart Association (AHA) [1]_\n\nReferences ---------- .. [1] M. D. Cerqueira, N. J. Weissman, V. Dilsizian, A. K. Jacobs, S. Kaul, W. K. Laskey, D. J. Pennell, J. A. Rumberger, T. Ryan, and M. S. Verani, \"Standardized myocardial segmentation and nomenclature for tomographic imaging of the heart\", Circulation, vol. 105, no. 4, pp. 539-542, 2002.\n"
+},{
+    "source file": "legend_handler.py",
+    "line number": "37",
+    "func name": "update_from_first_child",
+    "func arg": "(tgt, src)",
+    "comments": ""
+},{
+    "source file": "legend_picking.py",
+    "line number": "30",
+    "func name": "on_pick",
+    "func arg": "(event)",
+    "comments": ""
+},{
+    "source file": "legend1.py",
+    "line number": "1161",
+    "func name": "_parse_legend_args",
+    "func arg": "(axs, **kwargs)",
+    "comments": "Get the handles and labels from the calls to either ``figure.legend`` or ``axes.legend``.\n\n``axs`` is a list of axes (to get legend artists from)\n"
+},{
+    "source file": "lifecycle.py",
+    "line number": "200",
+    "func name": "currency",
+    "func arg": "(x, pos)",
+    "comments": "The two args are the value and tick position\n\n\n"
+},{
+    "source file": "lines.py",
+    "line number": "113",
+    "func name": "_mark_every_path",
+    "func arg": "(markevery, tpath, affine, ax_transform)",
+    "comments": "Helper function that sorts out how to deal the input `markevery` and returns the points where markers should be drawn.\n\nTakes in the `markevery` value and the line path and returns the sub-sampled path.\n"
+},{
+    "source file": "linestyles.py",
+    "line number": "44",
+    "func name": "plot_linestyles",
+    "func arg": "(ax, linestyles, title)",
+    "comments": ""
+},{
+    "source file": "logos2.py",
+    "line number": "109",
+    "func name": "make_logo",
+    "func arg": "(height_px, lw_bars, lw_grid, lw_border, rgrid, with_text)",
+    "comments": "Create a full figure with the Matplotlib logo.\n\nParameters ---------- height_px : int Height of the figure in pixel. lw_bars : float The linewidth of the bar border. lw_grid : float The linewidth of the grid. lw_border : float The linewidth of icon border. rgrid : sequence of float The radial grid positions. with_text : bool Whether to draw only the icon or to include 'matplotlib' as text.\n"
+},{
+    "source file": "lorenz_attractor.py",
+    "line number": "21",
+    "func name": "lorenz",
+    "func arg": "(x, y, z, s, r, b)",
+    "comments": "Given: x, y, z: a point of interest in three dimensional space s, r, b: parameters defining the lorenz attractor Returns: x_dot, y_dot, z_dot: values of the lorenz attractor's partial derivatives at the point x, y, z\n\n\n"
+},{
+    "source file": "make_icons.py",
+    "line number": "94",
+    "func name": "make_icons",
+    "func arg": "()",
+    "comments": ""
+},{
+    "source file": "mandelbrot.py",
+    "line number": "16",
+    "func name": "mandelbrot_set",
+    "func arg": "(xmin, xmax, ymin, ymax, xn, yn, maxiter, horizon)",
+    "comments": ""
+},{
+    "source file": "marker_reference.py",
+    "line number": "37",
+    "func name": "split_list",
+    "func arg": "(a_list)",
+    "comments": ""
+},{
+    "source file": "markevery_demo.py",
+    "line number": "44",
+    "func name": "trim_axs",
+    "func arg": "(axs, N)",
+    "comments": "Reduce *axs* to *N* Axes. All further Axes are removed from the figure.\n\n\n"
+},{
+    "source file": "math_symbol_table.py",
+    "line number": "161",
+    "func name": "setup",
+    "func arg": "(app)",
+    "comments": ""
+},{
+    "source file": "mathmpl.py",
+    "line number": "92",
+    "func name": "setup",
+    "func arg": "(app)",
+    "comments": ""
+},{
+    "source file": "mathtext_examples.py",
+    "line number": "58",
+    "func name": "doall",
+    "func arg": "()",
+    "comments": ""
+},{
+    "source file": "mathtext_wx_sgskip.py",
+    "line number": "28",
+    "func name": "mathtext_to_wxbitmap",
+    "func arg": "(s)",
+    "comments": ""
+},{
+    "source file": "mathtext2.py",
+    "line number": "3469",
+    "func name": "math_to_image",
+    "func arg": "(s, filename_or_obj, prop, dpi, format)",
+    "comments": "Given a math expression, renders it in a closely-clipped bounding box to an image file.\n\nParameters ---------- s : str A math expression.\n\nThe math portion must be enclosed in dollar signs. filename_or_obj : str or path-like or file-like Where to write the image data. prop : `.FontProperties`, optional The size and style of the text. dpi : float, optional The output dpi.\n\nIf not set, the dpi is determined as for `.Figure.savefig`. format : str, optional The output format, e.g., 'svg', 'pdf', 'ps' or 'png'.\n\nIf not set, the format is determined as for `.Figure.savefig`.\n"
+},{
+    "source file": "memleak.py",
+    "line number": "15",
+    "func name": "run_memleak_test",
+    "func arg": "(bench, iterations, report)",
+    "comments": ""
+},{
+    "source file": "missing_references.py",
+    "line number": "284",
+    "func name": "setup",
+    "func arg": "(app)",
+    "comments": ""
+},{
+    "source file": "mixed_subplots.py",
+    "line number": "13",
+    "func name": "f",
+    "func arg": "(t)",
+    "comments": ""
+},{
+    "source file": "mlab.py",
+    "line number": "912",
+    "func name": "cohere",
+    "func arg": "(x, y, NFFT, Fs, detrend, window, noverlap, pad_to, sides, scale_by_freq)",
+    "comments": "The coherence between *x* and *y*.  Coherence is the normalized cross spectral density\n\n.. math::\n\nC_{xy} = \\frac{|P_{xy}|^2},{P_{xx}P_{yy}}\n\nParameters ---------- x, y Array or sequence containing the data\n\n%(Spectral)s\n\n%(PSD)s\n\nnoverlap : int The number of points of overlap between blocks.\n\nThe default value is 0 (no overlap).\n##### Returns\n* **Cxy **: 1-D array\n    The coherence vector.\n\n* **freqs **: 1-D array\n        The frequencies for the elements in *Cxy*.\n\n* ****: func\n\n"
+},{
+    "source file": "mock_gui_toolkits.py",
+    "line number": "9",
+    "func name": "setup",
+    "func arg": "(app)",
+    "comments": ""
+},{
+    "source file": "mosaic.py",
+    "line number": "41",
+    "func name": "identify_axes",
+    "func arg": "(ax_dict, fontsize)",
+    "comments": "Helper to identify the Axes in the examples below.\n\nDraws the label in a large font in the center of the Axes.\n\nParameters ---------- ax_dict : Dict[str, Axes] Mapping between the title / label and the Axes.\n\nfontsize : int, optional How big the label should be\n"
+},{
+    "source file": "mpl_with_glade3_sgskip.py",
+    "line number": "24",
+    "func name": "main",
+    "func arg": "()",
+    "comments": ""
+},{
+    "source file": "multi_image.py",
+    "line number": "41",
+    "func name": "update",
+    "func arg": "(changed_image)",
+    "comments": ""
+},{
+    "source file": "multiple_yaxis_with_spines.py",
+    "line number": "18",
+    "func name": "make_patch_spines_invisible",
+    "func arg": "(ax)",
+    "comments": ""
+},{
+    "source file": "multiprocess_sgskip.py",
+    "line number": "95",
+    "func name": "main",
+    "func arg": "()",
+    "comments": ""
+},{
+    "source file": "named_colors.py",
+    "line number": "22",
+    "func name": "plot_colortable",
+    "func arg": "(colors, title, sort_colors, emptycols)",
+    "comments": ""
+},{
+    "source file": "offsetbox.py",
+    "line number": "137",
+    "func name": "_get_aligned_offsets",
+    "func arg": "(hd_list, height, align)",
+    "comments": "Given a list of (height, descent) of each boxes, align the boxes with *align* and calculate the y-offsets of each boxes. total width and the offset positions of each items according to *mode*. xdescent is analogous to the usual descent, but along the x-direction. xdescent values are currently ignored.\n\nParameters ---------- hd_list List of (height, xdescent) of boxes to be aligned. height : float or None Intended total length. If None, the maximum of the heights in *hd_list* is used. align : {'baseline', 'left', 'top', 'right', 'bottom', 'center'} Align mode.\n"
+},{
+    "source file": "parasite_axes1.py",
+    "line number": "413",
+    "func name": "host_subplot",
+    "func arg": "(**kwargs)",
+    "comments": "Create a subplot that can act as a host to parasitic axes.\n\nParameters ---------- figure : `matplotlib.figure.Figure` Figure to which the subplot will be added. Defaults to the current figure `.pyplot.gcf()`.\n\n*args, **kwargs Will be passed on to the underlying ``Axes`` object creation.\n"
+},{
+    "source file": "patches.py",
+    "line number": "2786",
+    "func name": "_point_along_a_line",
+    "func arg": "(x0, y0, x1, y1, d)",
+    "comments": "Return the point on the line connecting (*x0*, *y0*) -- (*x1*, *y1*) whose distance from (*x0*, *y0*) is *d*.\n\n\n"
+},{
+    "source file": "path.py",
+    "line number": "1004",
+    "func name": "get_path_collection_extents",
+    "func arg": "(master_transform, paths, transforms, offsets, offset_transform)",
+    "comments": "Given a sequence of `Path`\\s, `~.Transform`\\s objects, and offsets, as found in a `~.PathCollection`, returns the bounding box that encapsulates all of them.\n\nParameters ---------- master_transform : `~.Transform` Global transformation applied to all paths. paths : list of `Path` transforms : list of `~.Affine2D` offsets : (N, 2) array-like offset_transform : `~.Affine2D` Transform applied to the offsets before offsetting the path.\n\nNotes ----- The way that *paths*, *transforms* and *offsets* are combined follows the same method as for collections:\n\nEach is iterated over independently, so if you have 3 paths, 2 transforms and 1 offset, their combinations are as follows:\n\n(A, A, A), (B, B, A), (C, A, A)\n"
+},{
+    "source file": "patheffects.py",
+    "line number": "166",
+    "func name": "_subclass_with_normal",
+    "func arg": "(effect_class)",
+    "comments": "Create a PathEffect class combining *effect_class* and a normal draw.\n\n\n"
+},{
+    "source file": "pathpatch3d.py",
+    "line number": "17",
+    "func name": "text3d",
+    "func arg": "(ax, xyz, s, zdir, size, angle, usetex, **kwargs)",
+    "comments": "Plots the string 's' on the axes 'ax', with position 'xyz', size 'size', and rotation angle 'angle'.  'zdir' gives the axis which is to be treated as the third dimension.  usetex is a boolean indicating whether the string should be interpreted as latex or not.  Any additional keyword arguments are passed on to transform_path.\n\nNote: zdir affects the interpretation of xyz.\n"
+},{
+    "source file": "pcolormesh_grids.py",
+    "line number": "42",
+    "func name": "_annotate",
+    "func arg": "(ax, x, y, title)",
+    "comments": ""
+},{
+    "source file": "pick_event_demo.py",
+    "line number": "163",
+    "func name": "pick_image",
+    "func arg": "()",
+    "comments": ""
+},{
+    "source file": "pick_event_demo2.py",
+    "line number": "26",
+    "func name": "onpick",
+    "func arg": "(event)",
+    "comments": ""
+},{
+    "source file": "pie_and_donut_labels.py",
+    "line number": "45",
+    "func name": "func",
+    "func arg": "(pct, allvals)",
+    "comments": ""
+},{
+    "source file": "plot_directive.py",
+    "line number": "613",
+    "func name": "run",
+    "func arg": "(arguments, content, options, state_machine, state, lineno)",
+    "comments": ""
+},{
+    "source file": "polar.py",
+    "line number": "711",
+    "func name": "_is_full_circle_rad",
+    "func arg": "(thetamin, thetamax)",
+    "comments": "Determine if a wedge (in radians) spans the full circle.\n\nThe condition is derived from :class:`~matplotlib.patches.Wedge`.\n"
+},{
+    "source file": "poly_editor.py",
+    "line number": "22",
+    "func name": "dist_point_to_segment",
+    "func arg": "(p, s0, s1)",
+    "comments": "Get the distance of a point to a segment. *p*, *s0*, *s1* are *xy* sequences This algorithm from http://geomalgorithms.com/a02-_lines.html\n\n\n"
+},{
+    "source file": "polys3d.py",
+    "line number": "19",
+    "func name": "polygon_under_graph",
+    "func arg": "(xlist, ylist)",
+    "comments": "Construct the vertex list which defines the polygon filling the space under the (xlist, ylist) line graph.  Assumes the xs are in ascending order.\n\n\n"
+},{
+    "source file": "pong_sgskip.py",
+    "line number": "35",
+    "func name": "start_anim",
+    "func arg": "(event)",
+    "comments": ""
+},{
+    "source file": "proj3d.py",
+    "line number": "169",
+    "func name": "rot_x",
+    "func arg": "(V, alpha)",
+    "comments": ""
+},{
+    "source file": "pylab_with_gtk_sgskip.py",
+    "line number": "49",
+    "func name": "update",
+    "func arg": "(event)",
+    "comments": ""
+},{
+    "source file": "pyplot_two_subplots.py",
+    "line number": "12",
+    "func name": "f",
+    "func arg": "(t)",
+    "comments": ""
+},{
+    "source file": "pyplot1.py",
+    "line number": "246",
+    "func name": "f",
+    "func arg": "(t)",
+    "comments": ""
+},{
+    "source file": "pyplot2.py",
+    "line number": "3136",
+    "func name": "nipy_spectral",
+    "func arg": "()",
+    "comments": ""
+},{
+    "source file": "qt_compat.py",
+    "line number": "207",
+    "func name": "_setDevicePixelRatioF",
+    "func arg": "(obj, val)",
+    "comments": "Call obj.setDevicePixelRatioF(val) with graceful fallback for older Qt.\n\nThis can be replaced by the direct call when we require Qt>=5.6.\n"
+},{
+    "source file": "quiver.py",
+    "line number": "436",
+    "func name": "_check_consistent_shapes",
+    "func arg": "()",
+    "comments": ""
+},{
+    "source file": "radar_chart.py",
+    "line number": "109",
+    "func name": "example_data",
+    "func arg": "()",
+    "comments": ""
+},{
+    "source file": "radio_buttons.py",
+    "line number": "50",
+    "func name": "stylefunc",
+    "func arg": "(label)",
+    "comments": ""
+},{
+    "source file": "rain.py",
+    "line number": "45",
+    "func name": "update",
+    "func arg": "(frame_number)",
+    "comments": ""
+},{
+    "source file": "rainbow_text.py",
+    "line number": "30",
+    "func name": "rainbow_text",
+    "func arg": "(x, y, strings, colors, orientation, ax, **kwargs)",
+    "comments": "Take a list of *strings* and *colors* and place them next to each other, with text strings[i] being shown in colors[i].\n\nParameters ---------- x, y : float Text position in data coordinates. strings : list of str The strings to draw. colors : list of color The colors to use. orientation : {'horizontal', 'vertical'} ax : Axes, optional The Axes to draw into. If None, the current axes will be used. **kwargs All other keyword arguments are passed to plt.text(), so you can set the font size, family, etc.\n"
+},{
+    "source file": "random_walk.py",
+    "line number": "39",
+    "func name": "update_lines",
+    "func arg": "(num, data_lines, lines)",
+    "comments": ""
+},{
+    "source file": "range6.py",
+    "line number": "9",
+    "func name": "range6",
+    "func arg": "()",
+    "comments": "The function that should be executed.\n\n\n"
+},{
+    "source file": "rcsetup.py",
+    "line number": "1066",
+    "func name": "_convert_validator_spec",
+    "func arg": "(key, conv)",
+    "comments": ""
+},{
+    "source file": "rectangle_selector.py",
+    "line number": "31",
+    "func name": "toggle_selector",
+    "func arg": "(event)",
+    "comments": ""
+},{
+    "source file": "run_examples.py",
+    "line number": "43",
+    "func name": "main",
+    "func arg": "()",
+    "comments": ""
+},{
+    "source file": "sankey_links.py",
+    "line number": "27",
+    "func name": "corner",
+    "func arg": "(sankey)",
+    "comments": "Generate a corner link.\n\n\n"
+},{
+    "source file": "scale.py",
+    "line number": "670",
+    "func name": "_get_scale_docs",
+    "func arg": "()",
+    "comments": "Helper function for generating docstrings related to scales.\n\n\n"
+},{
+    "source file": "scales.py",
+    "line number": "84",
+    "func name": "inverse",
+    "func arg": "(a)",
+    "comments": ""
+},{
+    "source file": "scatter_hist.py",
+    "line number": "35",
+    "func name": "scatter_hist",
+    "func arg": "(x, y, ax, ax_histx, ax_histy)",
+    "comments": ""
+},{
+    "source file": "scatter3d.py",
+    "line number": "16",
+    "func name": "randrange",
+    "func arg": "(n, vmin, vmax)",
+    "comments": "Helper function to make an array of random numbers having shape (n, ) with each number distributed Uniform(vmin, vmax).\n\n\n"
+},{
+    "source file": "secondary_axis.py",
+    "line number": "156",
+    "func name": "anomaly_to_celsius",
+    "func arg": "(x)",
+    "comments": ""
+},{
+    "source file": "setup.py",
+    "line number": "68",
+    "func name": "has_flag",
+    "func arg": "(flagname)",
+    "comments": "Return whether a flag name is supported on the specified compiler.\n\n\n"
+},{
+    "source file": "setupext.py",
+    "line number": "503",
+    "func name": "add_qhull_flags",
+    "func arg": "(ext)",
+    "comments": ""
+},{
+    "source file": "shading_example.py",
+    "line number": "36",
+    "func name": "compare",
+    "func arg": "(z, cmap, ve)",
+    "comments": ""
+},{
+    "source file": "simple_anchored_artists.py",
+    "line number": "61",
+    "func name": "draw_sizebar",
+    "func arg": "(ax)",
+    "comments": "Draw a horizontal bar with length of 0.1 in data coordinates, with a fixed label underneath.\n\n\n"
+},{
+    "source file": "simple_anim.py",
+    "line number": "18",
+    "func name": "animate",
+    "func arg": "(i)",
+    "comments": ""
+},{
+    "source file": "simple_axis_direction03.py",
+    "line number": "12",
+    "func name": "setup_axes",
+    "func arg": "(fig, rect)",
+    "comments": ""
+},{
+    "source file": "simple_axis_pad.py",
+    "line number": "79",
+    "func name": "ann",
+    "func arg": "(ax1, d)",
+    "comments": ""
+},{
+    "source file": "skip_deprecated.py",
+    "line number": "13",
+    "func name": "setup",
+    "func arg": "(app)",
+    "comments": ""
+},{
+    "source file": "slider_demo.py",
+    "line number": "57",
+    "func name": "colorfunc",
+    "func arg": "(label)",
+    "comments": ""
+},{
+    "source file": "span_selector.py",
+    "line number": "30",
+    "func name": "onselect",
+    "func arg": "(xmin, xmax)",
+    "comments": ""
+},{
+    "source file": "spine_placement_demo.py",
+    "line number": "65",
+    "func name": "adjust_spines",
+    "func arg": "(ax, spines)",
+    "comments": ""
+},{
+    "source file": "stackplot_demo.py",
+    "line number": "52",
+    "func name": "gaussian_mixture",
+    "func arg": "(x, n)",
+    "comments": "Return a random mixture of *n* Gaussians, evaluated at positions *x*.\n\n\n"
+},{
+    "source file": "stackplot.py",
+    "line number": "16",
+    "func name": "stackplot",
+    "func arg": "(axes, x, **kwargs)",
+    "comments": "Draw a stacked area plot.\n\nParameters ---------- x : 1d array of dimension N\n\ny : 2d array (dimension MxN), or sequence of 1d arrays (each dimension 1xN)\n\nThe data is assumed to be unstacked. Each of the following calls is legal::\n\nstackplot(x, y)\n\n\n\n\n\n\n\n\n\n\n\n\n\n # where y is MxN stackplot(x, y1, y2, y3, y4)\n\n# where y1, y2, y3, y4, are all 1xNm\n\nbaseline : {'zero', 'sym', 'wiggle', 'weighted_wiggle'} Method used to calculate the baseline:\n\n- ``'zero'``: Constant zero baseline, i.e. a simple stacked plot.\n\n- ``'sym'``:\n\nSymmetric around zero and is sometimes called 'ThemeRiver'.\n\n- ``'wiggle'``: Minimizes the sum of the squared slopes.\n\n- ``'weighted_wiggle'``: Does the same but weights to account for size of each layer. It is also called 'Streamgraph'-layout. More details can be found at http://leebyron.com/streamgraph/.\n\nlabels : Length N sequence of strings Labels to assign to each data series.\n\ncolors : Length N sequence of colors A list or tuple of colors. These will be cycled through and used to colour the stacked areas.\n\n**kwargs All other keyword arguments are passed to `.Axes.fill_between`.\n##### Returns\n"
+},{
+    "source file": "streamplot.py",
+    "line number": "666",
+    "func name": "_gen_starting_points",
+    "func arg": "(shape)",
+    "comments": "Yield starting points for streamlines.\n\nTrying points on the boundary first gives higher quality streamlines. This algorithm starts with a point on the mask corner and spirals inward. This algorithm is inefficient, but fast compared to rest of streamplot.\n"
+},{
+    "source file": "strip_chart.py",
+    "line number": "42",
+    "func name": "emitter",
+    "func arg": "(p)",
+    "comments": "Return a random value in [0, 1) with probability p, else 0.\n\n\n"
+},{
+    "source file": "style_sheets_reference.py",
+    "line number": "102",
+    "func name": "plot_figure",
+    "func arg": "(style_label)",
+    "comments": "Setup and plot the demonstration figure with a given style.\n\n\n"
+},{
+    "source file": "subset.py",
+    "line number": "360",
+    "func name": "main",
+    "func arg": "(argv)",
+    "comments": ""
+},{
+    "source file": "table.py",
+    "line number": "646",
+    "func name": "table",
+    "func arg": "(ax, cellText, cellColours, cellLoc, colWidths, rowLabels, rowColours, rowLoc, colLabels, colColours, colLoc, loc, bbox, edges, **kwargs)",
+    "comments": "Add a table to an `~.axes.Axes`.\n\nAt least one of *cellText* or *cellColours* must be specified. These parameters must be 2D lists, in which the outer lists define the rows and the inner list define the column values per row. Each row must have the same number of elements.\n\nThe table can optionally have row and column headers, which are configured using *rowLabels*, *rowColours*, *rowLoc* and *colLabels*, *colColours*, *colLoc* respectively.\n\nFor finer grained control over tables, use the `.Table` class and add it to the axes with `.Axes.add_table`.\n\nParameters ---------- cellText : 2D list of str, optional The texts to place into the table cells.\n\n*Note*: Line breaks in the strings are currently not accounted for and will result in the text exceeding the cell boundaries.\n\ncellColours : 2D list of colors, optional The background colors of the cells.\n\ncellLoc : {'left', 'center', 'right'}, default: 'right' The alignment of the text within the cells.\n\ncolWidths : list of float, optional The column widths in units of the axes. If not given, all columns will have a width of *1 / ncols*.\n\nrowLabels : list of str, optional The text of the row header cells.\n\nrowColours : list of colors, optional The colors of the row header cells.\n\nrowLoc : {'left', 'center', 'right'}, default: 'left' The text alignment of the row header cells.\n\ncolLabels : list of str, optional The text of the column header cells.\n\ncolColours : list of colors, optional The colors of the column header cells.\n\ncolLoc : {'left', 'center', 'right'}, default: 'left' The text alignment of the column header cells.\n\nloc : str, optional The position of the cell with respect to *ax*. This must be one of the `~.Table.codes`.\n\nbbox : `.Bbox`, optional A bounding box to draw the table into. If this is not *None*, this overrides *loc*.\n\nedges : substring of 'BRTL' or {'open', 'closed', 'horizontal', 'vertical'} The cell edges to be drawn with a line. See also `~.Cell.visible_edges`.\n##### Returns\n"
+},{
+    "source file": "test_afm.py",
+    "line number": "132",
+    "func name": "test_malformed_header",
+    "func arg": "(afm_data, caplog)",
+    "comments": ""
+},{
+    "source file": "test_agg_filter.py",
+    "line number": "9",
+    "func name": "test_agg_filter_alpha",
+    "func arg": "()",
+    "comments": ""
+},{
+    "source file": "test_agg.py",
+    "line number": "240",
+    "func name": "test_pil_kwargs_tiff",
+    "func arg": "()",
+    "comments": ""
+},{
+    "source file": "test_animation.py",
+    "line number": "233",
+    "func name": "test_funcanimation_cache_frame_data",
+    "func arg": "(cache_frame_data)",
+    "comments": ""
+},{
+    "source file": "test_arrow_patches.py",
+    "line number": "150",
+    "func name": "test_invalid_intersection",
+    "func arg": "()",
+    "comments": ""
+},{
+    "source file": "test_artist.py",
+    "line number": "275",
+    "func name": "test_artist_inspector_get_aliases",
+    "func arg": "()",
+    "comments": ""
+},{
+    "source file": "test_axes_grid.py",
+    "line number": "56",
+    "func name": "test_imagegrid",
+    "func arg": "()",
+    "comments": ""
+},{
+    "source file": "test_axes_grid1.py",
+    "line number": "477",
+    "func name": "test_axes_class_tuple",
+    "func arg": "()",
+    "comments": ""
+},{
+    "source file": "test_axes.py",
+    "line number": "6391",
+    "func name": "test_relative_ticklabel_sizes",
+    "func arg": "(size)",
+    "comments": ""
+},{
+    "source file": "test_axisartist_angle_helper.py",
+    "line number": "114",
+    "func name": "test_formatters",
+    "func arg": "(Formatter, regex, direction, factor, values)",
+    "comments": ""
+},{
+    "source file": "test_axisartist_axis_artist.py",
+    "line number": "80",
+    "func name": "test_axis_artist",
+    "func arg": "()",
+    "comments": ""
+},{
+    "source file": "test_axisartist_axislines.py",
+    "line number": "64",
+    "func name": "test_ParasiteAxesAuxTrans",
+    "func arg": "()",
+    "comments": ""
+},{
+    "source file": "test_axisartist_clip_path.py",
+    "line number": "10",
+    "func name": "test_clip_path",
+    "func arg": "()",
+    "comments": ""
+},{
+    "source file": "test_axisartist_floating_axes.py",
+    "line number": "76",
+    "func name": "test_curvelinear4",
+    "func arg": "()",
+    "comments": ""
+},{
+    "source file": "test_axisartist_grid_finder.py",
+    "line number": "6",
+    "func name": "test_pretty_print_format",
+    "func arg": "()",
+    "comments": ""
+},{
+    "source file": "test_axisartist_grid_helper_curvelinear.py",
+    "line number": "147",
+    "func name": "test_axis_direction",
+    "func arg": "()",
+    "comments": ""
+},{
+    "source file": "test_backend_bases.py",
+    "line number": "107",
+    "func name": "test_interactive_zoom",
+    "func arg": "()",
+    "comments": ""
+},{
+    "source file": "test_backend_cairo.py",
+    "line number": "12",
+    "func name": "test_patch_alpha_coloring",
+    "func arg": "(fig_test, fig_ref)",
+    "comments": "Test checks that the patch and collection are rendered with the specified alpha values in their facecolor and edgecolor.\n\n\n"
+},{
+    "source file": "test_backend_nbagg.py",
+    "line number": "13",
+    "func name": "test_ipynb",
+    "func arg": "()",
+    "comments": ""
+},{
+    "source file": "test_backend_pdf.py",
+    "line number": "269",
+    "func name": "test_empty_rasterized",
+    "func arg": "()",
+    "comments": ""
+},{
+    "source file": "test_backend_pgf.py",
+    "line number": "322",
+    "func name": "test_bbox_inches_tight",
+    "func arg": "(tmpdir)",
+    "comments": ""
+},{
+    "source file": "test_backend_ps.py",
+    "line number": "130",
+    "func name": "test_partial_usetex",
+    "func arg": "(caplog)",
+    "comments": ""
+},{
+    "source file": "test_backend_qt.py",
+    "line number": "282",
+    "func name": "test_canvas_reinit",
+    "func arg": "()",
+    "comments": ""
+},{
+    "source file": "test_backend_svg.py",
+    "line number": "375",
+    "func name": "test_svg_metadata",
+    "func arg": "()",
+    "comments": ""
+},{
+    "source file": "test_backend_tk.py",
+    "line number": "7",
+    "func name": "test_blit",
+    "func arg": "()",
+    "comments": ""
+},{
+    "source file": "test_backend_tools.py",
+    "line number": "19",
+    "func name": "test_format_shortcut",
+    "func arg": "(rc_shortcut, expected)",
+    "comments": ""
+},{
+    "source file": "test_backend_webagg.py",
+    "line number": "8",
+    "func name": "test_webagg_fallback",
+    "func arg": "(backend)",
+    "comments": ""
+},{
+    "source file": "test_backends_interactive.py",
+    "line number": "166",
+    "func name": "test_webagg",
+    "func arg": "()",
+    "comments": ""
+},{
+    "source file": "test_basic.py",
+    "line number": "37",
+    "func name": "test_lazy_imports",
+    "func arg": "()",
+    "comments": ""
+},{
+    "source file": "test_bbox_tight.py",
+    "line number": "115",
+    "func name": "test_noop_tight_bbox",
+    "func arg": "()",
+    "comments": ""
+},{
+    "source file": "test_category.py",
+    "line number": "277",
+    "func name": "test_overriding_units_in_plot",
+    "func arg": "(fig_test, fig_ref)",
+    "comments": ""
+},{
+    "source file": "test_cbook.py",
+    "line number": "664",
+    "func name": "test_setattr_cm",
+    "func arg": "()",
+    "comments": ""
+},{
+    "source file": "test_collections.py",
+    "line number": "640",
+    "func name": "test_quadmesh_set_array",
+    "func arg": "()",
+    "comments": ""
+},{
+    "source file": "test_colorbar.py",
+    "line number": "605",
+    "func name": "test_colorbar_int",
+    "func arg": "(clim)",
+    "comments": ""
+},{
+    "source file": "test_colors.py",
+    "line number": "1160",
+    "func name": "test_repr_html",
+    "func arg": "()",
+    "comments": ""
+},{
+    "source file": "test_compare_images.py",
+    "line number": "45",
+    "func name": "test_image_comparison_expect_rms",
+    "func arg": "(im1, im2, tol, expect_rms)",
+    "comments": "Compare two images, expecting a particular RMS error.\n\nim1 and im2 are filenames relative to the baseline_dir directory.\n\ntol is the tolerance to pass to compare_images.\n\nexpect_rms is the expected RMS value, or None. If None, the test will succeed if compare_images succeeds. Otherwise, the test will succeed if compare_images fails and returns an RMS error almost equal to this value.\n"
+},{
+    "source file": "test_constrainedlayout.py",
+    "line number": "391",
+    "func name": "test_hidden_axes",
+    "func arg": "()",
+    "comments": ""
+},{
+    "source file": "test_container.py",
+    "line number": "10",
+    "func name": "test_errorbar_remove",
+    "func arg": "()",
+    "comments": ""
+},{
+    "source file": "test_contour.py",
+    "line number": "390",
+    "func name": "test_contour_linewidth",
+    "func arg": "(rc_lines_linewidth, rc_contour_linewidth, call_linewidths, expected)",
+    "comments": ""
+},{
+    "source file": "test_cycles.py",
+    "line number": "134",
+    "func name": "test_invalid_input_forms",
+    "func arg": "()",
+    "comments": ""
+},{
+    "source file": "test_dates.py",
+    "line number": "984",
+    "func name": "test_change_interval_multiples",
+    "func arg": "()",
+    "comments": ""
+},{
+    "source file": "test_determinism.py",
+    "line number": "124",
+    "func name": "test_determinism_source_date_epoch",
+    "func arg": "(fmt, string)",
+    "comments": "Test SOURCE_DATE_EPOCH support. Output a document with the environment variable SOURCE_DATE_EPOCH set to 2000-01-01 00:00 UTC and check that the document contains the timestamp that corresponds to this date (given as an argument).\n\nParameters ---------- fmt : {\"pdf\", \"ps\", \"svg\"} Output format. string : bytes Timestamp string for 2000-01-01 00:00 UTC.\n"
+},{
+    "source file": "test_dviread.py",
+    "line number": "53",
+    "func name": "test_dviread",
+    "func arg": "()",
+    "comments": ""
+},{
+    "source file": "test_figure.py",
+    "line number": "783",
+    "func name": "test_reused_gridspec",
+    "func arg": "()",
+    "comments": "Test that these all use the same gridspec\n\n\n"
+},{
+    "source file": "test_font_manager.py",
+    "line number": "212",
+    "func name": "test_fork",
+    "func arg": "()",
+    "comments": ""
+},{
+    "source file": "test_fontconfig_pattern.py",
+    "line number": "47",
+    "func name": "test_fontconfig_str",
+    "func arg": "()",
+    "comments": "Test FontProperties string conversions for correctness.\n\n\n"
+},{
+    "source file": "test_gridspec.py",
+    "line number": "29",
+    "func name": "test_repr",
+    "func arg": "()",
+    "comments": ""
+},{
+    "source file": "test_image.py",
+    "line number": "1092",
+    "func name": "test_exact_vmin",
+    "func arg": "()",
+    "comments": ""
+},{
+    "source file": "test_legend.py",
+    "line number": "638",
+    "func name": "test_no_warn_big_data_when_loc_specified",
+    "func arg": "()",
+    "comments": ""
+},{
+    "source file": "test_lines.py",
+    "line number": "263",
+    "func name": "test_odd_dashes",
+    "func arg": "(fig_test, fig_ref)",
+    "comments": ""
+},{
+    "source file": "test_marker.py",
+    "line number": "145",
+    "func name": "test_marker_clipping",
+    "func arg": "(fig_ref, fig_test)",
+    "comments": ""
+},{
+    "source file": "test_mathtext.py",
+    "line number": "338",
+    "func name": "test_mathtext_to_png",
+    "func arg": "(tmpdir)",
+    "comments": ""
+},{
+    "source file": "test_matplotlib.py",
+    "line number": "28",
+    "func name": "test_use_doc_standard_backends",
+    "func arg": "()",
+    "comments": "Test that the standard backends mentioned in the docstring of matplotlib.use() are the same as in matplotlib.rcsetup.\n\n\n"
+},{
+    "source file": "test_mlab.py",
+    "line number": "1699",
+    "func name": "test_psd_oversampling",
+    "func arg": "()",
+    "comments": "Test the case len(x) < NFFT for psd().\n\n\n"
+},{
+    "source file": "test_mplot3d.py",
+    "line number": "979",
+    "func name": "test_equal_box_aspect",
+    "func arg": "()",
+    "comments": ""
+},{
+    "source file": "test_offsetbox.py",
+    "line number": "244",
+    "func name": "test_annotationbbox_extents",
+    "func arg": "()",
+    "comments": ""
+},{
+    "source file": "test_patches.py",
+    "line number": "525",
+    "func name": "test_rotated_arcs",
+    "func arg": "()",
+    "comments": ""
+},{
+    "source file": "test_path.py",
+    "line number": "438",
+    "func name": "test_intersect_zero_length_segment",
+    "func arg": "()",
+    "comments": ""
+},{
+    "source file": "test_patheffects.py",
+    "line number": "119",
+    "func name": "test_collection",
+    "func arg": "()",
+    "comments": ""
+},{
+    "source file": "test_pickle.py",
+    "line number": "198",
+    "func name": "test_unpickle_canvas",
+    "func arg": "()",
+    "comments": ""
+},{
+    "source file": "test_png.py",
+    "line number": "44",
+    "func name": "test_truncated_buffer",
+    "func arg": "()",
+    "comments": ""
+},{
+    "source file": "test_polar.py",
+    "line number": "344",
+    "func name": "test_thetalim_valid_invalid",
+    "func arg": "()",
+    "comments": ""
+},{
+    "source file": "test_preprocess_data.py",
+    "line number": "197",
+    "func name": "test_docstring_addition",
+    "func arg": "()",
+    "comments": ""
+},{
+    "source file": "test_pyplot.py",
+    "line number": "79",
+    "func name": "test_nrows_error",
+    "func arg": "()",
+    "comments": ""
+},{
+    "source file": "test_quiver.py",
+    "line number": "252",
+    "func name": "test_quiver_setuvc_numbers",
+    "func arg": "()",
+    "comments": "Check that it is possible to set all arrow UVC to the same numbers\n\n\n"
+},{
+    "source file": "test_rcparams.py",
+    "line number": "494",
+    "func name": "test_backend_fallback_headful",
+    "func arg": "(tmpdir)",
+    "comments": ""
+},{
+    "source file": "test_sankey.py",
+    "line number": "10",
+    "func name": "test_label",
+    "func arg": "()",
+    "comments": ""
+},{
+    "source file": "test_scale.py",
+    "line number": "193",
+    "func name": "test_function_scale",
+    "func arg": "()",
+    "comments": ""
+},{
+    "source file": "test_simplification.py",
+    "line number": "332",
+    "func name": "test_clipping_full",
+    "func arg": "()",
+    "comments": ""
+},{
+    "source file": "test_skew.py",
+    "line number": "149",
+    "func name": "test_skew_rectangle",
+    "func arg": "()",
+    "comments": ""
+},{
+    "source file": "test_sphinxext.py",
+    "line number": "14",
+    "func name": "test_tinypages",
+    "func arg": "(tmpdir)",
+    "comments": ""
+},{
+    "source file": "test_spines.py",
+    "line number": "67",
+    "func name": "test_label_without_ticks",
+    "func arg": "()",
+    "comments": ""
+},{
+    "source file": "test_streamplot.py",
+    "line number": "102",
+    "func name": "test_streamplot_limits",
+    "func arg": "()",
+    "comments": ""
+},{
+    "source file": "test_style.py",
+    "line number": "174",
+    "func name": "test_xkcd_cm",
+    "func arg": "()",
+    "comments": ""
+},{
+    "source file": "test_subplots.py",
+    "line number": "169",
+    "func name": "test_dont_mutate_kwargs",
+    "func arg": "()",
+    "comments": ""
+},{
+    "source file": "test_table.py",
+    "line number": "181",
+    "func name": "test_table_cells",
+    "func arg": "()",
+    "comments": ""
+},{
+    "source file": "test_testing.py",
+    "line number": "20",
+    "func name": "test_wrap_failure",
+    "func arg": "()",
+    "comments": ""
+},{
+    "source file": "test_texmanager.py",
+    "line number": "5",
+    "func name": "test_fontconfig_preamble",
+    "func arg": "()",
+    "comments": "Test that the preamble is included in _fontconfig\n\n\n"
+},{
+    "source file": "test_text.py",
+    "line number": "685",
+    "func name": "test_fontproperties_kwarg_precedence",
+    "func arg": "()",
+    "comments": "Test that kwargs take precedence over fontproperties defaults.\n\n\n"
+},{
+    "source file": "test_ticker.py",
+    "line number": "1345",
+    "func name": "test_bad_locator_subs",
+    "func arg": "(sub)",
+    "comments": ""
+},{
+    "source file": "test_tightlayout.py",
+    "line number": "316",
+    "func name": "test_non_agg_renderer",
+    "func arg": "(monkeypatch, recwarn)",
+    "comments": ""
+},{
+    "source file": "test_transforms.py",
+    "line number": "664",
+    "func name": "test_lockable_bbox",
+    "func arg": "(locked_element)",
+    "comments": ""
+},{
+    "source file": "test_triangulation.py",
+    "line number": "1144",
+    "func name": "test_tricontour_non_finite_z",
+    "func arg": "()",
+    "comments": ""
+},{
+    "source file": "test_ttconv.py",
+    "line number": "11",
+    "func name": "test_truetype_conversion",
+    "func arg": "(recwarn)",
+    "comments": ""
+},{
+    "source file": "test_type1font.py",
+    "line number": "6",
+    "func name": "test_Type1Font",
+    "func arg": "()",
+    "comments": ""
+},{
+    "source file": "test_units.py",
+    "line number": "169",
+    "func name": "test_subclass",
+    "func arg": "(fig_test, fig_ref)",
+    "comments": ""
+},{
+    "source file": "test_usetex.py",
+    "line number": "82",
+    "func name": "test_textcomp_full",
+    "func arg": "()",
+    "comments": ""
+},{
+    "source file": "test_widgets.py",
+    "line number": "322",
+    "func name": "test_polygon_selector",
+    "func arg": "()",
+    "comments": ""
+},{
+    "source file": "text_intro.py",
+    "line number": "357",
+    "func name": "formatoddticks",
+    "func arg": "(x, pos)",
+    "comments": "Format odd tick positions.\n\n\n"
+},{
+    "source file": "text_rotation.py",
+    "line number": "24",
+    "func name": "addtext",
+    "func arg": "(ax, props)",
+    "comments": ""
+},{
+    "source file": "text.py",
+    "line number": "66",
+    "func name": "_get_textbox",
+    "func arg": "(text, renderer)",
+    "comments": "Calculate the bounding box of the text. Unlike :meth:`matplotlib.text.Text.get_extents` method, The bbox size of the text before the rotation is calculated.\n\n\n"
+},{
+    "source file": "textbox.py",
+    "line number": "28",
+    "func name": "submit",
+    "func arg": "(expression)",
+    "comments": "Update the plotted function to the new math *expression*.\n\n*expression* is a string using \"t\" as its independent variable, e.g. \"t ** 3\".\n"
+},{
+    "source file": "tick_labels_from_values.py",
+    "line number": "28",
+    "func name": "format_fn",
+    "func arg": "(tick_val, tick_pos)",
+    "comments": ""
+},{
+    "source file": "tick-formatters.py",
+    "line number": "79",
+    "func name": "major_formatter",
+    "func arg": "(x, pos)",
+    "comments": ""
+},{
+    "source file": "tick-locators.py",
+    "line number": "16",
+    "func name": "setup",
+    "func arg": "(ax, title)",
+    "comments": "Set up common parameters for the Axes in the example.\n\n\n"
+},{
+    "source file": "ticker.py",
+    "line number": "2368",
+    "func name": "is_close_to_int",
+    "func arg": "(x)",
+    "comments": ""
+},{
+    "source file": "tight_bbox.py",
+    "line number": "72",
+    "func name": "process_figure_for_rasterizing",
+    "func arg": "(fig, bbox_inches_restore, fixed_dpi)",
+    "comments": "A function that needs to be called when figure dpi changes during the drawing (e.g., rasterizing).  It recovers the bbox and re-adjust it with the new dpi.\n\n\n"
+},{
+    "source file": "tight_layout_guide.py",
+    "line number": "35",
+    "func name": "example_plot",
+    "func arg": "(ax, fontsize)",
+    "comments": ""
+},{
+    "source file": "tight_layout.py",
+    "line number": "212",
+    "func name": "get_tight_layout_figure",
+    "func arg": "(fig, axes_list, subplotspec_list, renderer, pad, h_pad, w_pad, rect)",
+    "comments": "Return subplot parameters for tight-layouted-figure with specified padding.\n\nParameters ---------- fig : Figure axes_list : list of Axes subplotspec_list : list of `.SubplotSpec` The subplotspecs of each axes. renderer : renderer pad : float Padding between the figure edge and the edges of subplots, as a fraction of the font size. h_pad, w_pad : float Padding (height/width) between edges of adjacent subplots.\n\nDefaults to *pad*. rect : Tuple[float, float, float, float], optional (left, bottom, right, top) rectangle in normalized figure coordinates that the whole subplots area (including labels) will fit into. Defaults to using the entire figure.\n##### Returns\n"
+},{
+    "source file": "timers.py",
+    "line number": "14",
+    "func name": "update_title",
+    "func arg": "(axes)",
+    "comments": ""
+},{
+    "source file": "transforms.py",
+    "line number": "2893",
+    "func name": "offset_copy",
+    "func arg": "(trans, fig, x, y, units)",
+    "comments": "Return a new transform with an added offset.\n\nParameters ---------- trans : `Transform` subclass Any transform, to which offset will be applied. fig : `~matplotlib.figure.Figure`, default: None Current figure. It can be None if *units* are 'dots'. x, y : float, default: 0.0 The offset to apply. units : {'inches', 'points', 'dots'}, default: 'inches' Units of the offset.\n##### Returns\n"
+},{
+    "source file": "triage_tests.py",
+    "line number": "338",
+    "func name": "launch",
+    "func arg": "(result_images, source)",
+    "comments": "Launch the GUI.\n\n\n"
+},{
+    "source file": "tricontour_smooth_delaunay.py",
+    "line number": "35",
+    "func name": "experiment_res",
+    "func arg": "(x, y)",
+    "comments": "An analytic function representing experiment results.\n\n\n"
+},{
+    "source file": "tricontour_smooth_user.py",
+    "line number": "18",
+    "func name": "function_z",
+    "func arg": "(x, y)",
+    "comments": ""
+},{
+    "source file": "tricontour.py",
+    "line number": "292",
+    "func name": "tricontourf",
+    "func arg": "(ax, **kwargs)",
+    "comments": "%(_tricontour_doc)s\n\nantialiased : bool, default: True Whether to use antialiasing.\n\nNotes ----- `.tricontourf` fills intervals that are closed at the top; that is, for boundaries *z1* and *z2*, the filled region is::\n\nz1 < Z <= z2\n\nexcept for the lowest interval, which is closed on both sides (i.e. it includes the lowest value).\n"
+},{
+    "source file": "trifinder_event_demo.py",
+    "line number": "26",
+    "func name": "on_mouse_move",
+    "func arg": "(event)",
+    "comments": ""
+},{
+    "source file": "trigradient_demo.py",
+    "line number": "19",
+    "func name": "dipole_potential",
+    "func arg": "(x, y)",
+    "comments": "The electric dipole potential V, at position *x*, *y*.\n\n\n"
+},{
+    "source file": "triinterpolate.py",
+    "line number": "1584",
+    "func name": "_extract_submatrices",
+    "func arg": "(M, block_indices, block_size, axis)",
+    "comments": "Extract selected blocks of a matrices *M* depending on parameters *block_indices* and *block_size*.\n\n\n##### Returns\n* **    M_res[..., ir, **: ] = M[(block_indices*block_size+ir),\n\n"
+},{
+    "source file": "tripcolor.py",
+    "line number": "9",
+    "func name": "tripcolor",
+    "func arg": "(ax, **kwargs)",
+    "comments": "Create a pseudocolor plot of an unstructured triangular grid.\n\nThe triangulation can be specified in one of two ways; either::\n\ntripcolor(triangulation, ...)\n\nwhere triangulation is a `.Triangulation` object, or\n\n::\n\ntripcolor(x, y, ...) tripcolor(x, y, triangles, ...) tripcolor(x, y, triangles=triangles, ...) tripcolor(x, y, mask=mask, ...) tripcolor(x, y, triangles, mask=mask, ...)\n\nin which case a Triangulation object will be created.\n\nSee `.Triangulation` for a explanation of these possibilities.\n\nThe next argument must be *C*, the array of color values, either one per point in the triangulation if color values are defined at points, or one per triangle in the triangulation if color values are defined at triangles. If there are the same number of points and triangles in the triangulation it is assumed that color values are defined at points; to force the use of color values at triangles use the kwarg ``facecolors=C`` instead of just ``C``.\n\n*shading* may be 'flat' (the default) or 'gouraud'. If *shading* is 'flat' and C values are defined at points, the color values used for each triangle are from the mean C of the triangle's three points. If *shading* is 'gouraud' then color values must be defined at points.\n\nThe remaining kwargs are the same as for `~.Axes.pcolor`.\n"
+},{
+    "source file": "triplot.py",
+    "line number": "5",
+    "func name": "triplot",
+    "func arg": "(ax, **kwargs)",
+    "comments": "Draw a unstructured triangular grid as lines and/or markers.\n\nThe triangulation to plot can be specified in one of two ways; either::\n\ntriplot(triangulation, ...)\n\nwhere triangulation is a `.Triangulation` object, or\n\n::\n\ntriplot(x, y, ...) triplot(x, y, triangles, ...) triplot(x, y, triangles=triangles, ...) triplot(x, y, mask=mask, ...) triplot(x, y, triangles, mask=mask, ...)\n\nin which case a Triangulation object will be created.\n\nSee `.Triangulation` for a explanation of these possibilities.\n\nThe remaining args and kwargs are the same as for `~.Axes.plot`.\n##### Returns\n* **lines **: `~matplotlib.lines.Line2D`\n    The drawn triangles edges.\n\n* **markers **: `~matplotlib.lines.Line2D`\n    The drawn marker nodes.\n\n"
+},{
+    "source file": "unchained.py",
+    "line number": "57",
+    "func name": "update",
+    "func arg": "()",
+    "comments": ""
+},{
+    "source file": "UnitDblConverter.py",
+    "line number": "15",
+    "func name": "rad_fn",
+    "func arg": "(x, pos)",
+    "comments": "Radian function formatter.\n\n\n"
+},{
+    "source file": "units.py",
+    "line number": "58",
+    "func name": "_is_natively_supported",
+    "func arg": "(x)",
+    "comments": "Return whether *x* is of a type that Matplotlib natively supports or an array of objects of such types.\n\n\n"
+},{
+    "source file": "usage.py",
+    "line number": "212",
+    "func name": "my_plotter",
+    "func arg": "(ax, data1, data2, param_dict)",
+    "comments": "A helper function to make a graph\n\nParameters ---------- ax : Axes The axes to draw to\n\ndata1 : array The x data\n\ndata2 : array The y data\n\nparam_dict : dict Dictionary of kwargs to pass to ax.plot\n##### Returns\n* **out **: list\n    list of artists added\n\n"
+},{
+    "source file": "usetex_baseline_test.py",
+    "line number": "37",
+    "func name": "test_window_extent",
+    "func arg": "(ax, usetex, preview)",
+    "comments": ""
+},{
+    "source file": "usetex_fonteffects.py",
+    "line number": "13",
+    "func name": "setfont",
+    "func arg": "(font)",
+    "comments": ""
+},{
+    "source file": "versioneer.py",
+    "line number": "1663",
+    "func name": "scan_setup_py",
+    "func arg": "()",
+    "comments": ""
+},{
+    "source file": "visualize_tests.py",
+    "line number": "48",
+    "func name": "run",
+    "func arg": "(show_browser)",
+    "comments": "Build a website for visual comparison\n\n\n"
+},{
+    "source file": "voxels_numpy_logo.py",
+    "line number": "12",
+    "func name": "explode",
+    "func arg": "(data)",
+    "comments": ""
+},{
+    "source file": "voxels_rgb.py",
+    "line number": "13",
+    "func name": "midpoints",
+    "func arg": "(x)",
+    "comments": ""
+},{
+    "source file": "voxels_torus.py",
+    "line number": "14",
+    "func name": "midpoints",
+    "func arg": "(x)",
+    "comments": ""
+},{
+    "source file": "whats_new_99_axes_grid.py",
+    "line number": "28",
+    "func name": "get_rgb",
+    "func arg": "()",
+    "comments": ""
+},{
+    "source file": "widgets2.py",
+    "line number": "21",
+    "func name": "do_event",
+    "func arg": "(tool, etype, button, xdata, ydata, key, step)",
+    "comments": "Trigger an event\n\nParameters ---------- tool : matplotlib.widgets.RectangleSelector etype the event to trigger xdata : int x coord of mouse in data coords ydata : int y coord of mouse in data coords button : int or str button pressed None, 1, 2, 3, 'up', 'down' (up and down are used for scroll events) key the key depressed when the mouse event triggered (see :class:`KeyEvent`) step : int number of scroll steps (positive for 'up', negative for 'down')\n"
+},{
+    "source file": "wire3d_animation_sgskip.py",
+    "line number": "17",
+    "func name": "generate",
+    "func arg": "(X, Y, phi)",
+    "comments": "Generates Z data for the points in the X, Y meshgrid and parameter phi.\n\n\n"
+},{
+    "source file": "zoom_inset_axes.py",
+    "line number": "14",
+    "func name": "get_demo_image",
+    "func arg": "()",
+    "comments": ""
+},{
+    "source file": "zoom_window.py",
+    "line number": "38",
+    "func name": "on_press",
+    "func arg": "(event)",
+    "comments": ""
+}]
+}

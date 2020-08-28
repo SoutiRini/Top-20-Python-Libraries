@@ -1,0 +1,25 @@
+{}{}{
+    "source file": "_lxml.py",
+    "line number": "36",
+    "func name": "_invert",
+    "func arg": "(d)",
+    "comments": "Invert a dictionary.\n\n\n"
+}{}{}{}{}{}{
+    "source file": "diagnose.py",
+    "line number": "226",
+    "func name": "profile",
+    "func arg": "(num_elements, parser)",
+    "comments": "Use Python's profiler on a randomly generated document.\n\n\n"
+}{
+    "source file": "element.py",
+    "line number": "34",
+    "func name": "_alias",
+    "func arg": "(attr)",
+    "comments": "Alias one attribute name to another for backward compatibility\n\n\n"
+}{}{}{}{}{}{}{}{}{}{
+    "source file": "testing.py",
+    "line number": "1067",
+    "func name": "skipIf",
+    "func arg": "(condition, reason)",
+    "comments": ""
+}

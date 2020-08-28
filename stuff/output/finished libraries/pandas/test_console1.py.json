@@ -1,0 +1,7 @@
+{
+    "source file": "test_console1.py",
+    "line number": "62",
+    "func name": "test_detect_console_encoding_fallback_to_default",
+    "func arg": "(monkeypatch, std, locale)",
+    "comments": ""
+}

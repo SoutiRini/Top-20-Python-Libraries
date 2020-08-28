@@ -1,0 +1,7 @@
+{
+    "source file": "ldamallet.py",
+    "line number": "582",
+    "func name": "malletmodel2ldamodel",
+    "func arg": "(mallet_model, gamma_threshold, iterations)",
+    "comments": "Convert :class:`~gensim.models.wrappers.ldamallet.LdaMallet` to :class:`~gensim.models.ldamodel.LdaModel`.\n\nThis works by copying the training model weights (alpha, beta...) from a trained mallet model into the gensim model.\n\nParameters ---------- mallet_model : :class:`~gensim.models.wrappers.ldamallet.LdaMallet` Trained Mallet model gamma_threshold : float, optional To be used for inference in the new LdaModel. iterations : int, optional Number of iterations to be used for inference in the new LdaModel.\n##### Returns\n* ****: class\n\n"
+}

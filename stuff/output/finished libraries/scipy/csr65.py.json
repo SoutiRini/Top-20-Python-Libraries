@@ -1,0 +1,7 @@
+{
+    "source file": "csr65.py",
+    "line number": "335",
+    "func name": "isspmatrix_csr",
+    "func arg": "(x)",
+    "comments": "Is x of csr_matrix type?\n\nParameters ---------- x object to check for being a csr matrix\n##### Returns\n"
+}

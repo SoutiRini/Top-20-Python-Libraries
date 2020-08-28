@@ -1,0 +1,7 @@
+{
+    "source file": "test_tiff_ifdrational.py",
+    "line number": "46",
+    "func name": "test_ifd_rational_save",
+    "func arg": "(tmp_path)",
+    "comments": ""
+}

@@ -1,0 +1,7 @@
+{
+    "source file": "invalid1.py",
+    "line number": "38",
+    "func name": "make_invalid_op",
+    "func arg": "(name)",
+    "comments": "Return a binary method that always raises a TypeError.\n\nParameters ---------- name : str\n##### Returns\n* **invalid_op **: function\n\n"
+}

@@ -1,0 +1,7 @@
+{
+    "source file": "_import_c_extension.py",
+    "line number": "63",
+    "func name": "_TensorCPU_reshape",
+    "func arg": "(shape)",
+    "comments": ""
+}

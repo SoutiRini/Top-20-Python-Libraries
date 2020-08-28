@@ -1,0 +1,7 @@
+{
+    "source file": "test_online_lda.py",
+    "line number": "398",
+    "func name": "test_verbosity",
+    "func arg": "(verbose, evaluate_every, expected_lines, expected_perplexities)",
+    "comments": ""
+}

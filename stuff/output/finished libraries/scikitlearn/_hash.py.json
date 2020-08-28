@@ -1,0 +1,7 @@
+{
+    "source file": "_hash.py",
+    "line number": "23",
+    "func name": "_iteritems",
+    "func arg": "(d)",
+    "comments": "Like d.iteritems, but accepts any collections.Mapping.\n\n\n"
+}

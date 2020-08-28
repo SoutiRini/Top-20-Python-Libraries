@@ -1,0 +1,7 @@
+{
+    "source file": "logos2.py",
+    "line number": "109",
+    "func name": "make_logo",
+    "func arg": "(height_px, lw_bars, lw_grid, lw_border, rgrid, with_text)",
+    "comments": "Create a full figure with the Matplotlib logo.\n\nParameters ---------- height_px : int Height of the figure in pixel. lw_bars : float The linewidth of the bar border. lw_grid : float The linewidth of the grid. lw_border : float The linewidth of icon border. rgrid : sequence of float The radial grid positions. with_text : bool Whether to draw only the icon or to include 'matplotlib' as text.\n"
+}

@@ -1,0 +1,7 @@
+{
+    "source file": "aggregation.py",
+    "line number": "15",
+    "func name": "arithmetic_mean",
+    "func arg": "(confirmed_measures)",
+    "comments": "Perform the arithmetic mean aggregation on the output obtained from the confirmation measure module.\n\nParameters ---------- confirmed_measures : list of float List of calculated confirmation measure on each set in the segmented topics.\n##### Returns\n* **.. sourcecode**: \n\n"
+}

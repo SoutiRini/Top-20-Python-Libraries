@@ -1,0 +1,7 @@
+{
+    "source file": "sparse_linalg_solve.py",
+    "line number": "34",
+    "func name": "_create_sparse_poisson2d",
+    "func arg": "(n)",
+    "comments": ""
+}

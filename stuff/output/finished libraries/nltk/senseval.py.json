@@ -1,0 +1,7 @@
+{
+    "source file": "senseval.py",
+    "line number": "172",
+    "func name": "_fixXML",
+    "func arg": "(text)",
+    "comments": "Fix the various issues with Senseval pseudo-XML.\n\n\n"
+}

@@ -1,0 +1,7 @@
+{
+    "source file": "np_utils.py",
+    "line number": "85",
+    "func name": "normalize",
+    "func arg": "(x, axis, order)",
+    "comments": "Normalizes a Numpy array.\n\nArguments: x: Numpy array to normalize. axis: axis along which to normalize. order: Normalization order (e.g. `order=2` for L2 norm).\n##### Returns\n"
+}

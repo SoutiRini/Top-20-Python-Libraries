@@ -1,0 +1,7 @@
+{
+    "source file": "validate_docstrings.py",
+    "line number": "1005",
+    "func name": "main",
+    "func arg": "(func_name, prefix, errors, output_format, ignore_deprecated)",
+    "comments": ""
+}

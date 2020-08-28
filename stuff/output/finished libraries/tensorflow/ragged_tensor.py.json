@@ -1,0 +1,7 @@
+{
+    "source file": "ragged_tensor.py",
+    "line number": "2744",
+    "func name": "_get_optional_partition_dtype",
+    "func arg": "(values)",
+    "comments": "Returns the partition dtype, or None if None exists.\n\n\n"
+}

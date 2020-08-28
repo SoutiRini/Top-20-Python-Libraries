@@ -1,0 +1,7 @@
+{
+    "source file": "profiler_client1.py",
+    "line number": "128",
+    "func name": "_strip_prefix",
+    "func arg": "(s, prefix)",
+    "comments": ""
+}

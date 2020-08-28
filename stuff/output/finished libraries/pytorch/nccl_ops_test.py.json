@@ -1,0 +1,7 @@
+{
+    "source file": "nccl_ops_test.py",
+    "line number": "28",
+    "func name": "benchmark",
+    "func arg": "(ws, net, warmups, iters)",
+    "comments": ""
+}

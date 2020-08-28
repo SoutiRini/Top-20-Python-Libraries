@@ -1,0 +1,7 @@
+{
+    "source file": "trf_linear.py",
+    "line number": "143",
+    "func name": "trf_linear",
+    "func arg": "(A, b, x_lsq, lb, ub, tol, lsq_solver, lsmr_tol, max_iter, verbose)",
+    "comments": ""
+}

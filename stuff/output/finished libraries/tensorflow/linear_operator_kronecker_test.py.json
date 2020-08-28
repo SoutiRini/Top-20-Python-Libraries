@@ -1,0 +1,7 @@
+{
+    "source file": "linear_operator_kronecker_test.py",
+    "line number": "38",
+    "func name": "_kronecker_dense",
+    "func arg": "(factors)",
+    "comments": "Convert a list of factors, into a dense Kronecker product.\n\n\n"
+}

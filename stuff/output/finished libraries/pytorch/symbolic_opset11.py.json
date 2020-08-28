@@ -1,0 +1,7 @@
+{
+    "source file": "symbolic_opset11.py",
+    "line number": "649",
+    "func name": "flatten",
+    "func arg": "(g, input, start_dim, end_dim)",
+    "comments": ""
+}

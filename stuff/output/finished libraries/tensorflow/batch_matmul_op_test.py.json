@@ -1,0 +1,7 @@
+{
+    "source file": "batch_matmul_op_test.py",
+    "line number": "195",
+    "func name": "_GetBatchMatmulGradientWithBroadcastingTest",
+    "func arg": "(dtype, adjoint_a, adjoint_b)",
+    "comments": ""
+}

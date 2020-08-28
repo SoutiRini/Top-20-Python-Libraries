@@ -1,0 +1,7 @@
+{
+    "source file": "trigradient_demo.py",
+    "line number": "19",
+    "func name": "dipole_potential",
+    "func arg": "(x, y)",
+    "comments": "The electric dipole potential V, at position *x*, *y*.\n\n\n"
+}

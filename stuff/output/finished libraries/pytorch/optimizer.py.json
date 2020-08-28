@@ -1,0 +1,7 @@
+{
+    "source file": "optimizer.py",
+    "line number": "43",
+    "func name": "_wait_for_all",
+    "func arg": "(rpc_futs)",
+    "comments": ""
+}

@@ -1,0 +1,7 @@
+{
+    "source file": "matfuncs.py",
+    "line number": "672",
+    "func name": "khatri_rao",
+    "func arg": "(a, b)",
+    "comments": "Khatri-rao product\n\nA column-wise Kronecker product of two matrices\n\nParameters ---------- a:\n\n(n, k) array_like Input array b:\n\n(m, k) array_like Input array\n##### Returns\n* **c**: (n*m, k) ndarray\n    Khatri-rao product of `a` and `b`.\n\n* **The mathematical definition of the Khatri-Rao product is**: \n\n* **.. math**: \n\n* **which is the Kronecker product of every column of A and B, e.g.**: \n\n* **kron **: Kronecker product\n\n"
+}

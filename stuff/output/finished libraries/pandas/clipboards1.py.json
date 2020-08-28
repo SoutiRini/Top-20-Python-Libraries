@@ -1,0 +1,7 @@
+{
+    "source file": "clipboards1.py",
+    "line number": "79",
+    "func name": "to_clipboard",
+    "func arg": "(obj, excel, sep, **kwargs)",
+    "comments": "Attempt to write text representation of object to the system clipboard The clipboard can be then pasted into Excel for example.\n\nParameters ---------- obj : the object to write to the clipboard excel : boolean, defaults to True if True, use the provided separator, writing in a csv format for allowing easy pasting into excel. if False, write a string representation of the object to the clipboard sep : optional, defaults to tab other keywords are passed to to_csv\n\nNotes ----- Requirements for your platform\n\n- Linux: xclip, or xsel (with PyQt4 modules)\n\n- Windows:\n\n- OS X\n"
+}

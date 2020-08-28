@@ -1,0 +1,7 @@
+{
+    "source file": "response.py",
+    "line number": "63",
+    "func name": "open_in_browser",
+    "func arg": "(response, _openfunc)",
+    "comments": "Open the given response in a local web browser, populating the <base> tag for external links to work\n\n\n"
+}

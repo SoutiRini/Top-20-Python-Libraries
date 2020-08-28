@@ -1,0 +1,7 @@
+{
+    "source file": "constants.py",
+    "line number": "279",
+    "func name": "nu2lambda",
+    "func arg": "(nu)",
+    "comments": "Convert optical frequency to wavelength.\n\nParameters ---------- nu : array_like Optical frequency to be converted.\n##### Returns\n* **lambda **: float or array of floats\n    Equivalent wavelength(s).\n\n"
+}

@@ -1,0 +1,7 @@
+{
+    "source file": "test_splines.py",
+    "line number": "56",
+    "func name": "test_spline_filter_vs_matrix_solution",
+    "func arg": "(order, mode)",
+    "comments": ""
+}

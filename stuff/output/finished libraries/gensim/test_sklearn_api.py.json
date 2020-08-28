@@ -1,0 +1,7 @@
+{
+    "source file": "test_sklearn_api.py",
+    "line number": "1242",
+    "func name": "dumb_scorer",
+    "func arg": "(worda_count, wordb_count, bigram_count, len_vocab, min_count, corpus_word_count)",
+    "comments": ""
+}

@@ -1,0 +1,7 @@
+{
+    "source file": "test_integer_validator.py",
+    "line number": "154",
+    "func name": "test_rejection_aok_min_max",
+    "func arg": "(val, validator_aok)",
+    "comments": ""
+}

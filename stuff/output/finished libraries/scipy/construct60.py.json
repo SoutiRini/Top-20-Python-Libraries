@@ -1,0 +1,7 @@
+{
+    "source file": "construct60.py",
+    "line number": "815",
+    "func name": "rand",
+    "func arg": "(m, n, density, format, dtype, random_state)",
+    "comments": "Generate a sparse matrix of the given shape and density with uniformly distributed values.\n\nParameters ---------- m, n : int shape of the matrix density : real, optional density of the generated matrix: density equal to one means a full matrix, density of 0 means a matrix with no non-zero items. format : str, optional sparse matrix format. dtype : dtype, optional type of the returned matrix values. random_state : {numpy.random.RandomState, int, np.random.Generator}, optional Random number generator or random seed. If not given, the singleton numpy.random will be used.\n##### Returns\n* **res **: sparse matrix\n\n* **scipy.sparse.random **: Similar function that allows a user-specified random\n    data source.\n\n"
+}

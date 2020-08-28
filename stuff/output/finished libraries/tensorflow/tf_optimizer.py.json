@@ -1,0 +1,7 @@
+{
+    "source file": "tf_optimizer.py",
+    "line number": "27",
+    "func name": "OptimizeGraph",
+    "func arg": "(config_proto, metagraph, verbose, graph_id, cluster, strip_default_attributes)",
+    "comments": "Optimize the provided metagraph.\n\nFor best results, the signature_def field in `metagraph` should be populated with information about input (feed) and output (fetch) tensors.\n##### Args\n* **config_proto**: a ConfigProto protobuf.\n\n* **metagraph**: a MetagraphDef protobuf.\n\n* **verbose**: whether to log optimization results.\n\n* **graph_id**: a string identifying this graph.\n\n* **cluster**: a grappler cluster object representing hardware resources\n    available to run this graph.\n\n* **strip_default_attributes**: whether graph node attributes having default\n    values should be removed after all the optimization passes. This\n    option is useful if the resulting graph will be executed by an older\n    process that might not know some of the recently added attributes.\n\n"
+}

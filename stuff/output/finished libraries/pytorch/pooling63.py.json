@@ -1,0 +1,7 @@
+{
+    "source file": "pooling63.py",
+    "line number": "31",
+    "func name": "max_pool_with_index",
+    "func arg": "(model, blob_in, blob_out, order, **kwargs)",
+    "comments": "Max pooling with an explicit index of max position\n\n\n"
+}

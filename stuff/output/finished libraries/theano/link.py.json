@@ -1,0 +1,7 @@
+{
+    "source file": "link.py",
+    "line number": "1022",
+    "func name": "WrapLinkerMany",
+    "func arg": "(linkers, wrappers)",
+    "comments": "Variant on WrapLinker that runs a series of wrapper functions instead of just one.\n\n\n"
+}

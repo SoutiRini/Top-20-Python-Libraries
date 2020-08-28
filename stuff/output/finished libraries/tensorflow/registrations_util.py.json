@@ -1,0 +1,7 @@
+{
+    "source file": "registrations_util.py",
+    "line number": "81",
+    "func name": "combined_non_singular_hint",
+    "func arg": "(operator_a, operator_b)",
+    "comments": "Get combined hint for when .\n\n\n"
+}

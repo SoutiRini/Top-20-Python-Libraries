@@ -1,0 +1,7 @@
+{
+    "source file": "_formlayout.py",
+    "line number": "488",
+    "func name": "fedit",
+    "func arg": "(data, title, comment, icon, parent, apply)",
+    "comments": "Create form dialog and return result (if Cancel button is pressed, return None)\n\ndata: datalist, datagroup title: str comment: str icon: QIcon instance parent: parent QWidget apply: apply callback (function)\n\ndatalist: list/tuple of (field_name, field_value) datagroup: list/tuple of (datalist *or* datagroup, title, comment)\n\n-> one field for each member of a datalist -> one tab for each member of a top-level datagroup -> one page (of a multipage widget, each page can be selected with a combo box) for each member of a datagroup inside a datagroup\n\nSupported types for field_value:\n\n- int, float, str, unicode, bool\n\n- colors: in Qt-compatible text form, i.e. in hex format or name (red, ...) (automatically detected from a string)\n\n- list/tuple: * the first element will be the selected index (or value) * the other elements can be couples (key, value) or only values\n"
+}

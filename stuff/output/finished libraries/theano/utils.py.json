@@ -1,0 +1,7 @@
+{
+    "source file": "utils.py",
+    "line number": "34",
+    "func name": "shape_of_variables",
+    "func arg": "(fgraph, input_shapes)",
+    "comments": "Compute the numeric shape of all intermediate variables given input shapes.\n\nParameters ---------- fgraph The theano.FunctionGraph in question. input_shapes : dict A dict mapping input to shape.\n##### Returns\n* **shapes **: dict\n    A dict mapping variable to shape\n\n* **.. warning**: \n\n* **>>> y = x[512**: ]; y.name = 'y'\n\n* **>>> d = shape_of_variables(fgraph, {x**: (1024, 1024)})\n\n"
+}

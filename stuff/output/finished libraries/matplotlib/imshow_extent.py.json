@@ -1,0 +1,7 @@
+{
+    "source file": "imshow_extent.py",
+    "line number": "135",
+    "func name": "generate_imshow_demo_grid",
+    "func arg": "(extents, xlim, ylim)",
+    "comments": ""
+}

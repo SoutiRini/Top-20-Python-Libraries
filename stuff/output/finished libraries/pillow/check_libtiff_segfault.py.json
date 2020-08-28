@@ -1,0 +1,7 @@
+{
+    "source file": "check_libtiff_segfault.py",
+    "line number": "7",
+    "func name": "test_libtiff_segfault",
+    "func arg": "()",
+    "comments": "This test should not segfault. It will on Pillow <= 3.1.0 and libtiff >= 4.0.0\n\n\n"
+}

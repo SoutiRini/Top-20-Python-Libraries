@@ -1,0 +1,7 @@
+{
+    "source file": "tf_trt_integration_test_base.py",
+    "line number": "967",
+    "func name": "_AddTests",
+    "func arg": "(test_class)",
+    "comments": "Adds test methods to TfTrtIntegrationTestBase.\n\n\n"
+}

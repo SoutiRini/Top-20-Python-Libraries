@@ -1,0 +1,7 @@
+{
+    "source file": "cast.py",
+    "line number": "27",
+    "func name": "make_cast_tests",
+    "func arg": "(options)",
+    "comments": "Generate examples for cast.\n\n\n"
+}

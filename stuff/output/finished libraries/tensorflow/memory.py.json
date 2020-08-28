@@ -1,0 +1,7 @@
+{
+    "source file": "memory.py",
+    "line number": "24",
+    "func name": "dismantle_ordered_dict",
+    "func arg": "(ordered_dict)",
+    "comments": "Remove reference cycle in OrderedDict `ordered_dict`.\n\nHelpful for making sure the garbage collector doesn't need to run after using an OrderedDict.\n##### Args\n* **ordered_dict**: A `OrderedDict` object to destroy. This object is unusable\n  after this function runs.\n\n"
+}

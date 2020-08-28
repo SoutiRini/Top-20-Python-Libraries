@@ -1,0 +1,7 @@
+{
+    "source file": "test_basic34.py",
+    "line number": "2817",
+    "func name": "structure_function",
+    "func arg": "(f, index)",
+    "comments": "Decorator to structure a function which apply on dense matrix.\n\nHere, the inputs of the function must be dense matrix. The sparse pattern is determined by finding the zeros.\n\n:param index: The index of the parameter from which the function must be structured.\n\n:return: The structured function for its `index` parameter.\n"
+}

@@ -1,0 +1,7 @@
+{
+    "source file": "functional_ops_test.py",
+    "line number": "50",
+    "func name": "simple_scoped_fn",
+    "func arg": "(a, x)",
+    "comments": "Simple function: (a, x) -> 2(x+a), but with \"2\" as a variable in scope.\n\n\n"
+}

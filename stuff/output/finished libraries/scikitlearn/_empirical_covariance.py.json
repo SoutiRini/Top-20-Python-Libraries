@@ -1,0 +1,7 @@
+{
+    "source file": "_empirical_covariance.py",
+    "line number": "52",
+    "func name": "empirical_covariance",
+    "func arg": "(X)",
+    "comments": "Computes the Maximum likelihood covariance estimator\n\nParameters ---------- X : ndarray of shape (n_samples, n_features) Data from which to compute the covariance estimate\n\nassume_centered : bool, default=False If True, data will not be centered before computation. Useful when working with data whose mean is almost, but not exactly zero. If False, data will be centered before computation.\n##### Returns\n* **covariance **: ndarray of shape (n_features, n_features)\n    Empirical covariance (Maximum Likelihood Estimator).\n\n"
+}

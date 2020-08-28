@@ -1,0 +1,7 @@
+{
+    "source file": "estimator_checks.py",
+    "line number": "2961",
+    "func name": "check_requires_y_none",
+    "func arg": "(name, estimator_orig)",
+    "comments": ""
+}

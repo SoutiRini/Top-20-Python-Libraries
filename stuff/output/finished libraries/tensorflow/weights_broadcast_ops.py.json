@@ -1,0 +1,7 @@
+{
+    "source file": "weights_broadcast_ops.py",
+    "line number": "136",
+    "func name": "broadcast_weights",
+    "func arg": "(weights, values)",
+    "comments": "Broadcast `weights` to the same shape as `values`.\n\nThis returns a version of `weights` following the same broadcast rules as `mul(weights, values)`, but limited to the weights shapes allowed by `assert_broadcastable`. When computing a weighted average, use this function to broadcast `weights` before summing them; e.g., `reduce_sum(w * v) / reduce_sum(_broadcast_weights(w, v))`.\n##### Args\n* **weights**: `Tensor` whose shape is broadcastable to `values` according to the\n  rules of `assert_broadcastable`.\n\n* **values**: `Tensor` of any shape.\n\n##### Returns\n"
+}

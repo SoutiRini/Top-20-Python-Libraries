@@ -1,0 +1,7 @@
+{
+    "source file": "gen_autograd_functions.py",
+    "line number": "263",
+    "func name": "uses_single_grad",
+    "func arg": "(func)",
+    "comments": ""
+}

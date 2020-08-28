@@ -1,0 +1,7 @@
+{
+    "source file": "download-wheels.py",
+    "line number": "41",
+    "func name": "download_wheels",
+    "func arg": "(version, wheelhouse)",
+    "comments": "Download release wheels.\n\nThe release wheels for the given SciPy version are downloaded into the given directory.\n\nParameters ---------- version : str The release version. For instance, \"1.5.0\". wheelhouse : str Directory in which to download the wheels.\n"
+}

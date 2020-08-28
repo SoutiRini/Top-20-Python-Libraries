@@ -1,0 +1,7 @@
+{
+    "source file": "test_assert_series_equal1.py",
+    "line number": "181",
+    "func name": "test_series_equal_categorical_mismatch",
+    "func arg": "(check_categorical)",
+    "comments": ""
+}

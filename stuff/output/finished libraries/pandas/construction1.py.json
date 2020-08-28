@@ -1,0 +1,7 @@
+{
+    "source file": "construction1.py",
+    "line number": "601",
+    "func name": "sanitize_index",
+    "func arg": "(data, index, copy)",
+    "comments": "Sanitize an index type to return an ndarray of the underlying, pass through a non-Index.\n\n\n"
+}

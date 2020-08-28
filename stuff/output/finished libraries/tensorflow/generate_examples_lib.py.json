@@ -1,0 +1,7 @@
+{
+    "source file": "generate_examples_lib.py",
+    "line number": "294",
+    "func name": "generate_multi_set_examples",
+    "func arg": "(options, test_sets)",
+    "comments": "Generate examples for test sets.\n\n\n##### Args\n* **options**: Options containing information to generate examples.\n\n* **test_sets**: List of the name of test sets to generate examples.\n\n"
+}

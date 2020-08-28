@@ -1,0 +1,1381 @@
+{}{
+    "source file": "_version.py",
+    "line number": "477",
+    "func name": "get_versions",
+    "func arg": "()",
+    "comments": "Get version information or return default if unable to do so.\n\n\n"
+}{
+    "source file": "abstract_conv.py",
+    "line number": "1864",
+    "func name": "bilinear_upsampling",
+    "func arg": "(input, ratio, frac_ratio, batch_size, num_input_channels, use_1D_kernel)",
+    "comments": "Compute bilinear upsampling This function will build the symbolic graph for upsampling a tensor by the given ratio using bilinear interpolation.\n\nParameters ---------- input: symbolic 4D tensor mini-batch of feature map stacks, of shape (batch size, input channels, input rows, input columns) that will be upsampled. ratio: `int or Constant or Scalar Tensor of int* dtype` the ratio by which the input is upsampled in the 2D space (row and col size). frac_ratio: None, tuple of int or tuple of tuples of int The tuple defining the fractional ratio by which the input is upsampled in the 2D space. One fractional ratio should be represented as (numerator, denominator). If row and col ratios are different frac_ratio should be a tuple of fractional ratios, i.e a tuple of tuples. use_1D_kernel: bool if set to true, row and column will be upsampled separately by 1D kernels, otherwise they are upsampled together using a 2D kernel. The final result is the same, only the speed can differ, given factors such as upsampling ratio.\n##### Returns\n* ****: note\n\n"
+}{}{
+    "source file": "basic_ops.py",
+    "line number": "1550",
+    "func name": "profile_printer",
+    "func arg": "(message, compile_time, fct_call_time, apply_time, apply_cimpl, outputs_size, file)",
+    "comments": ""
+}{}{
+    "source file": "basic_sympy.py",
+    "line number": "25",
+    "func name": "theano_dtype",
+    "func arg": "(expr)",
+    "comments": ""
+}{
+    "source file": "basic.py",
+    "line number": "4201",
+    "func name": "handle_composite",
+    "func arg": "(node, mapping)",
+    "comments": ""
+}{
+    "source file": "basic1.py",
+    "line number": "4075",
+    "func name": "dot",
+    "func arg": "(x, y)",
+    "comments": "Operation for efficiently calculating the dot product when one or all operands is sparse. Supported format are CSC and CSR. The output of the operation is dense.\n\nParameters ---------- x Sparse or dense matrix variable. y Sparse or dense matrix variable.\n##### Returns\n"
+}{}{
+    "source file": "basic3.py",
+    "line number": "6762",
+    "func name": "choose",
+    "func arg": "(a, choices, out, mode)",
+    "comments": "Construct an array from an index array and a set of arrays to choose from.\n\nFirst of all, if confused or uncertain, definitely look at the Examples\n\n- in its full generality, this function is less simple than it might seem from the following code description (below ndi = numpy.lib.index_tricks):\n\nnp.choose(a,c) == np.array([c[a[I]][I] for I in ndi.ndindex(a.shape)]).\n\nBut this omits some subtleties. Here is a fully general summary:\n\nGiven an ``index`` array (a) of integers and a sequence of n arrays (choices), a and each choice array are first broadcast, as necessary, to arrays of a common shape; calling these Ba and Bchoices[i], i = 0,...,n-1 we have that, necessarily, Ba.shape == Bchoices[i].shape for each i. Then, a new array with shape Ba.shape is created as follows:\n\n- if mode=raise (the default), then, first of all, each element of a (and thus Ba) must be in the range [0, n-1]; now, suppose that i (in that range) is the value at the (j0, j1, ..., jm) position in Ba\n\n- then the value at the same position in the new array is the value in Bchoices[i] at that same position;\n\n- if mode=wrap, values in a (and thus Ba) may be any (signed) integer; modular arithmetic is used to map integers outside the range [0, n-1] back into that range; and then the new array is constructed as above;\n\n- if mode=clip, values in a (and thus Ba) may be any (signed) integer; negative integers are mapped to 0; values greater than n-1 are mapped to n-1; and then the new array is constructed as above.\n\nParameters ---------- a : int array This array must contain integers in [0, n-1], where n is the number of choices, unless mode=wrap or mode=clip, in which cases any integers are permissible. choices : sequence of arrays Choice arrays. a and all of the choices must be broadcastable to the same shape. If choices is itself an array (not recommended), then its outermost dimension (i.e., the one corresponding to choices.shape[0]) is taken as defining the ``sequence``. out : array, optional If provided, the result will be inserted into this array. It should be of the appropriate shape and dtype. mode : {``raise`` (default), ``wrap``, ``clip``}, optional Specifies how indices outside [0, n-1] will be treated: ``raise`` : an exception is raised ``wrap`` : value becomes value mod n ``clip`` : values < 0 are mapped to 0, values > n-1 are mapped to n-1\n##### Returns\n"
+}{
+    "source file": "blas_c.py",
+    "line number": "692",
+    "func name": "make_c_gemv_destructive",
+    "func arg": "(node)",
+    "comments": ""
+}{
+    "source file": "blas_headers.py",
+    "line number": "1048",
+    "func name": "____gemm_code",
+    "func arg": "(check_ab, a_init, b_init)",
+    "comments": ""
+}{
+    "source file": "blas_scipy.py",
+    "line number": "65",
+    "func name": "make_ger_destructive",
+    "func arg": "(node)",
+    "comments": ""
+}{
+    "source file": "blas.py",
+    "line number": "1870",
+    "func name": "local_inplace_gpuagemmbatch",
+    "func arg": "(node, inputs)",
+    "comments": ""
+}{
+    "source file": "blas4.py",
+    "line number": "2446",
+    "func name": "local_print_as_we_go_along",
+    "func arg": "(node)",
+    "comments": ""
+}{}{}{
+    "source file": "blocksparse6.py",
+    "line number": "222",
+    "func name": "sparse_block_dot",
+    "func arg": "(W, h, inputIdx, b, outputIdx)",
+    "comments": "Compute the dot product (plus bias) of the specified pieces of vectors and matrices. See SparseBlockGemv to get more information.\n\nThe parameter types are actually their expected shapes relative to each other.\n\nParameters ---------- W : iBlocks, oBlocks, iSize, oSize weight matrix h : batch, iWin, iSize input from lower layer (sparse) inputIdx : batch, iWin indexes of the input blocks b : oBlocks, oSize bias vector outputIdx : batch, oWin indexes of the output blocks\n##### Returns\n"
+}{
+    "source file": "bn.py",
+    "line number": "765",
+    "func name": "local_abstract_batch_norm_inference",
+    "func arg": "(node)",
+    "comments": ""
+}{}{
+    "source file": "buildbot_filter.py",
+    "line number": "6",
+    "func name": "filter_output",
+    "func arg": "(fd_in)",
+    "comments": ""
+}{
+    "source file": "builders.py",
+    "line number": "718",
+    "func name": "inline_ofg_expansion",
+    "func arg": "(node)",
+    "comments": "This optimization expands internal graph of OpFromGraph. Only performed if node.op.is_inline == True Doing so can improve optimization at the cost of compilation speed.\n\n\n"
+}{
+    "source file": "burn_gpu.py",
+    "line number": "15",
+    "func name": "burn",
+    "func arg": "()",
+    "comments": ""
+}{}{
+    "source file": "cc.py",
+    "line number": "1874",
+    "func name": "_default_checker",
+    "func arg": "(x, y)",
+    "comments": "Default checker for DualLinker. This checks that the variables contain the same data using ==.\n\nParameters: ---------- x,y the variables to compare data\n"
+}{
+    "source file": "check_blas.py",
+    "line number": "103",
+    "func name": "test",
+    "func arg": "()",
+    "comments": ""
+}{
+    "source file": "check_dnn_conv.py",
+    "line number": "972",
+    "func name": "test_true_half_config_support",
+    "func arg": "()",
+    "comments": ""
+}{}{
+    "source file": "check_multi_gpu.py",
+    "line number": "19",
+    "func name": "main",
+    "func arg": "(dev1, dev2)",
+    "comments": ""
+}{
+    "source file": "check_whitespace.py",
+    "line number": "172",
+    "func name": "main",
+    "func arg": "(argv)",
+    "comments": ""
+}{
+    "source file": "cmodule.py",
+    "line number": "2423",
+    "func name": "icc_module_compile_str",
+    "func arg": "()",
+    "comments": ""
+}{
+    "source file": "compiledir.py",
+    "line number": "246",
+    "func name": "basecompiledir_purge",
+    "func arg": "()",
+    "comments": ""
+}{
+    "source file": "compilelock.py",
+    "line number": "318",
+    "func name": "refresh_lock",
+    "func arg": "(lock_file)",
+    "comments": "'Refresh' an existing lock by re-writing the file containing the owner's unique id, using a new (randomly generated) id, which is also returned.\n\n\n"
+}{
+    "source file": "conf.py",
+    "line number": "204",
+    "func name": "linkcode_resolve",
+    "func arg": "(domain, info)",
+    "comments": ""
+}{
+    "source file": "config.py",
+    "line number": "37",
+    "func name": "ref_cast",
+    "func arg": "(x)",
+    "comments": ""
+}{
+    "source file": "configdefaults.py",
+    "line number": "1919",
+    "func name": "default_compiledir",
+    "func arg": "()",
+    "comments": ""
+}{
+    "source file": "configparser.py",
+    "line number": "416",
+    "func name": "BoolParam",
+    "func arg": "(default, is_valid, allow_override)",
+    "comments": ""
+}{}{
+    "source file": "conv3d2d.py",
+    "line number": "297",
+    "func name": "local_inplace_DiagonalSubtensor",
+    "func arg": "(node)",
+    "comments": "Also work for IncDiagonalSubtensor.\n\n\n"
+}{
+    "source file": "conv7.py",
+    "line number": "21",
+    "func name": "conv2d",
+    "func arg": "(input, filters, image_shape, filter_shape, border_mode, subsample, **kargs)",
+    "comments": "signal.conv.conv2d performs a basic 2D convolution of the input with the given filters. The input parameter can be a single 2D image or a 3D tensor, containing a set of images. Similarly, filters can be a single 2D filter or a 3D tensor, corresponding to a set of 2D filters.\n\nShape parameters are optional and will result in faster execution.\n\nParameters ---------- input\n\n : Symbolic theano tensor for images to be filtered. Dimensions: ([num_images], image height, image width) filters : Symbolic theano tensor for convolution filter(s). Dimensions: ([num_filters], filter height, filter width) border_mode: {'valid', 'full'} See scipy.signal.convolve2d. subsample Factor by which to subsample output. image_shape : tuple of length 2 or 3 ([num_images,] image height, image width). filter_shape : tuple of length 2 or 3 ([num_filters,] filter height, filter width). kwargs See theano.tensor.nnet.conv.conv2d.\n##### Returns\n"
+}{
+    "source file": "conv8.py",
+    "line number": "1789",
+    "func name": "gen_conv_code_unroll_batch_kern",
+    "func arg": "(d, unroll_bsize, unroll_ksize)",
+    "comments": "c_code for ConvOp that unroll the batch size loop.\n\n\n"
+}{}{}{
+    "source file": "cpucount.py",
+    "line number": "37",
+    "func name": "cpuCount",
+    "func arg": "()",
+    "comments": "Returns the number of CPUs in the system\n\n\n"
+}{
+    "source file": "ctc.py",
+    "line number": "177",
+    "func name": "local_gpu_ctc_no_grad",
+    "func arg": "(node)",
+    "comments": ""
+}{
+    "source file": "ctc9.py",
+    "line number": "238",
+    "func name": "local_ctc_no_grad",
+    "func arg": "(node)",
+    "comments": ""
+}{
+    "source file": "cudnn_defs.py",
+    "line number": "322",
+    "func name": "get_definitions",
+    "func arg": "(cudnn_version)",
+    "comments": "Return cuDNN definitions to be used by Theano for the given cuDNN version.\n\n``cudnn_version`` must be None or an integer (typically the version returned by :func:`theano.gpuarray.dnn.version`). if None, return definitions for the\n\nmost recent supported cuDNN version.\n"
+}{
+    "source file": "cutils.py",
+    "line number": "17",
+    "func name": "compile_cutils",
+    "func arg": "()",
+    "comments": "Do just the compilation of cutils_ext.\n\n\n"
+}{
+    "source file": "d3viz.py",
+    "line number": "119",
+    "func name": "d3write",
+    "func arg": "(fct, path, **kwargs)",
+    "comments": "Convert Theano graph to pydot graph and write to dot file.\n\nParameters ---------- fct : theano.compile.function_module.Function A compiled Theano function, variable, apply or a list of variables. path: str Path to output file\n\nNotes ----- This function accepts extra parameters which will be forwarded to :class:`theano.d3viz.formatting.PyDotFormatter`.\n"
+}{
+    "source file": "debugmode.py",
+    "line number": "1238",
+    "func name": "_check_preallocated_output",
+    "func arg": "(node, thunk, prealloc_modes, def_val, storage_map, r_vals, dr_vals, perform, active_order_set, inplace_outs, init_outputs)",
+    "comments": "Try to apply thunk() on different output storages.\n\n\n"
+}{
+    "source file": "destroyhandler.py",
+    "line number": "233",
+    "func name": "fast_inplace_check",
+    "func arg": "(inputs)",
+    "comments": "Return the variables in inputs that are posible candidate for as inputs of inplace operation.\n\nParameters ---------- inputs : list Inputs Variable that you want to use as inplace destination.\n"
+}{
+    "source file": "disturb_mem.py",
+    "line number": "12",
+    "func name": "disturb_mem",
+    "func arg": "()",
+    "comments": ""
+}{}{
+    "source file": "dnn.py",
+    "line number": "4060",
+    "func name": "local_abstract_batch_norm_inference_cudnn",
+    "func arg": "(op, ctx_name, inputs, outputs)",
+    "comments": ""
+}{}{}{}{
+    "source file": "elemwise_cgen.py",
+    "line number": "465",
+    "func name": "make_loop_careduce",
+    "func arg": "(loop_orders, dtypes, loop_tasks, sub)",
+    "comments": "Make a nested loop over several arrays and associate specific code to each level of nesting.\n\nParameters ---------- loop_orders : list of N tuples of length M Each value of each tuple can be either the index of a dimension to loop over or the letter 'x' which means there is no looping to be done over that variable at that point (in other words we broadcast over that dimension). If an entry is an integer, it will become an alias of the entry of that rank. loop_tasks : list of M+1 pieces of code The ith loop_task is a pair of strings, the first string is code to be executed before the ith loop starts, the second one contains code to be executed just before going to the next element of the ith dimension. The last element if loop_tasks is a single string, containing code to be executed at the very end. sub: dictionary Maps 'lv#' to a suitable variable name. The 'lvi' variable corresponds to the ith element of loop_orders.\n"
+}{
+    "source file": "elemwise_openmp_speedup.py",
+    "line number": "20",
+    "func name": "runScript",
+    "func arg": "(N)",
+    "comments": ""
+}{
+    "source file": "elemwise_time_test.py",
+    "line number": "34",
+    "func name": "ElemwiseOpTime",
+    "func arg": "(N, script, loops)",
+    "comments": ""
+}{
+    "source file": "elemwise.py",
+    "line number": "2468",
+    "func name": "gpu_ca_reduce_cuda",
+    "func arg": "(scalar_op, axis, reduce_mask, dtype, acc_dtype, pre_scalar_op)",
+    "comments": ""
+}{
+    "source file": "elemwise10.py",
+    "line number": "44",
+    "func name": "TensorConstant",
+    "func arg": "(**kwargs)",
+    "comments": ""
+}{
+    "source file": "extending_theano_solution_1.py",
+    "line number": "200",
+    "func name": "numpy_sub",
+    "func arg": "(a, b)",
+    "comments": ""
+}{
+    "source file": "extra_ops.py",
+    "line number": "462",
+    "func name": "local_gpua_cumop",
+    "func arg": "(op, ctx_name, inputs, outputs)",
+    "comments": ""
+}{
+    "source file": "extra_ops11.py",
+    "line number": "1358",
+    "func name": "ravel_multi_index",
+    "func arg": "(multi_index, dims, mode, order)",
+    "comments": "Converts a tuple of index arrays into an array of flat indices, applying boundary modes to the multi-index.\n\nParameters ---------- multi_index : tuple of Theano or NumPy arrays A tuple of integer arrays, one array for each dimension. dims : tuple of ints The shape of array into which the indices from ``multi_index`` apply. mode : {'raise', 'wrap', 'clip'}, optional Specifies how out-of-bounds indices are handled.\n\nCan specify either one mode or a tuple of modes, one mode per index. * 'raise' -- raise an error (default) * 'wrap' -- wrap around * 'clip' -- clip to the range In 'clip' mode, a negative index which would normally wrap will clip to 0 instead. order : {'C', 'F'}, optional Determines whether the multi-index should be viewed as indexing in row-major (C-style) or column-major (Fortran-style) order.\n##### Returns\n* **raveled_indices **: Theano array\n    An array of indices into the flattened version of an array\n    of dimensions ``dims``.\n\n"
+}{
+    "source file": "fft.py",
+    "line number": "367",
+    "func name": "_unitary",
+    "func arg": "(norm)",
+    "comments": ""
+}{
+    "source file": "fft12.py",
+    "line number": "202",
+    "func name": "_unitary",
+    "func arg": "(norm)",
+    "comments": ""
+}{}{
+    "source file": "formatting.py",
+    "line number": "356",
+    "func name": "dict_to_pdnode",
+    "func arg": "(d)",
+    "comments": "Create pydot node from dict.\n\n\n"
+}{
+    "source file": "fourier.py",
+    "line number": "121",
+    "func name": "dct_matrix",
+    "func arg": "(rows, cols, unitary)",
+    "comments": "Return a (rows x cols) matrix implementing a discrete cosine transform.\n\nThis algorithm is adapted from Dan Ellis' Rastmat spec2cep.m, lines 15-20.\n"
+}{}{
+    "source file": "fp16_help.py",
+    "line number": "30",
+    "func name": "write_w",
+    "func arg": "(dtype)",
+    "comments": "Return the function name to write data.\n\nThis should be used like this::\n\ncode = 'res = %s(oval)' % (write_w(output_type),)\n"
+}{}{
+    "source file": "function_module.py",
+    "line number": "1932",
+    "func name": "get_info_on_inputs",
+    "func arg": "(named_inputs, n_unnamed_inputs)",
+    "comments": "Return a human-readable description of named and un-named inputs.\n\n\n"
+}{
+    "source file": "function.py",
+    "line number": "74",
+    "func name": "function",
+    "func arg": "(inputs, outputs, mode, updates, givens, no_default_updates, accept_inplace, name, rebuild_strict, allow_input_downcast, profile, on_unused_input)",
+    "comments": "Return a :class:`callable object <theano.compile.function_module.Function>` that will calculate `outputs` from `inputs`.\n\nParameters ---------- inputs : list of either Variable or In instances. Function parameters, these are not allowed to be shared variables. outputs : list or dict of Variables or Out instances. If it is a dict, the keys must be strings. Expressions to compute. mode : string or `Mode` instance. Compilation mode. updates : iterable over pairs (shared_variable, new_expression). List, tuple or OrderedDict. Updates the values for SharedVariable inputs according to these expressions. givens : iterable over pairs (Var1, Var2) of Variables. List, tuple or dict. The Var1 and Var2 in each pair must have the same Type. Specific substitutions to make in the computation graph (Var2 replaces Var1). no_default_updates: either bool or list of Variables If True, do not perform any automatic update on Variables. If False (default), perform them all. Else, perform automatic updates on all Variables that are neither in \"updates\" nor in \"no_default_updates\". accept_inplace : bool True iff the graph can contain inplace operations prior to the optimization phase (default is False). *Note* this parameter is unsupported, and its use is not recommended. name : str An optional name for this function. The profile mode will print the time spent in this function. rebuild_strict : bool True (Default) is the safer and better tested setting, in which case `givens` must substitute new variables with the same Type as the variables they replace. False is a you-better-know-what-you-are-doing setting, that permits `givens` to replace variables with new variables of any Type. The consequence of changing a Type is that all results depending on that variable may have a different Type too (the graph is rebuilt from inputs to outputs). If one of the new types does not make sense for one of the Ops in the graph, an Exception will be raised. allow_input_downcast: bool or None True means that the values passed as inputs when calling the function can be silently down-casted to fit the dtype of the corresponding Variable, which may lose precision. False means that it will only be cast to a more general, or precise, type. None (default) is almost like False, but allows down-casting of Python float scalars to floatX. profile: None, True, or ProfileStats instance Accumulate profiling information into a given ProfileStats instance. If argument is `True` then a new ProfileStats instance will be used. If argument is a string, a new ProfileStats instance will be created with that string as its ``message`` attribute. This profiling object will be available via self.profile. on_unused_input What to do if a variable in the 'inputs' list is not used in the graph. Possible values are 'raise', 'warn', 'ignore' and None.\n##### Returns\n* ****: class\n\n* **Regarding givens**: Be careful to make sure that these\n\n* **Internal documentation**: What happens when you call theano.function?\n       1. RemoveShared\n\n"
+}{}{
+    "source file": "gh_api.py",
+    "line number": "98",
+    "func name": "get_pulls_list",
+    "func arg": "(project, github_api)",
+    "comments": "get pull request list\n\ngithub_api : version of github api to use\n"
+}{
+    "source file": "gradient.py",
+    "line number": "2234",
+    "func name": "grad_scale",
+    "func arg": "(x, multiplier)",
+    "comments": "This op scale or inverse the gradient in the backpropagation.\n\nParameters ---------- x: The variable we want its gradient inputs scale multiplier: Scale of the gradient\n\nExamples -------- >>> x = theano.tensor.fscalar() >>> fx = theano.tensor.sin(x) >>> fp = theano.tensor.grad(fx, wrt=x) >>> fprime = theano.function([x], fp) >>> print(fprime(2))\n\n# doctest: +ELLIPSIS -0.416... >>> f_inverse=grad_scale(fx, -1.) >>> fpp = theano.tensor.grad(f_inverse, wrt=x) >>> fpprime = theano.function([x], fpp) >>> print(fpprime(2))\n\n# doctest: +ELLIPSIS 0.416...\n"
+}{
+    "source file": "graph.py",
+    "line number": "1451",
+    "func name": "nodes_constructed",
+    "func arg": "()",
+    "comments": "A contextmanager that is used in inherit_stack_trace and keeps track of all the newly created varaible nodes inside an optimization. A list of new_nodes is instantiated but will be filled in a lazy manner (when Variable.notify_construction_observers is called).\n\n`observer` is the entity that updates the new_nodes list. construction_observers is a list inside Variable class and contains a list of observer functions. The observer functions inside construction_observers are only called when a variable node is instantiated (where Variable.notify_construction_observers is called). When the observer function is called, a new variable node is added to the new_nodes list.\n\n Parameters ---------- new_nodes A list of all the variable nodes that are created inside the optimization.\n\nyields new_nodes list.\n"
+}{}{
+    "source file": "ifelse.py",
+    "line number": "669",
+    "func name": "cond_merge_random_op",
+    "func arg": "(main_node)",
+    "comments": ""
+}{
+    "source file": "inc_code.py",
+    "line number": "4",
+    "func name": "inc_code",
+    "func arg": "()",
+    "comments": ""
+}{
+    "source file": "inplace.py",
+    "line number": "384",
+    "func name": "transpose_inplace",
+    "func arg": "(x, **kwargs)",
+    "comments": "Perform a transpose on a tensor without copying the underlying storage\n\n\n"
+}{}{
+    "source file": "io14.py",
+    "line number": "300",
+    "func name": "mpi_tag_key",
+    "func arg": "(a)",
+    "comments": "Break MPI ties by using the variable tag - prefer lower tags first.\n\n\n"
+}{
+    "source file": "kernel_codegen.py",
+    "line number": "303",
+    "func name": "inline_softmax_fixed_shared",
+    "func arg": "(N, buf, x, stride_x, load_x, sm, sm_stride, write_sm, threadPos, threadCount, b, stride_b, load_b, dtype)",
+    "comments": "Generate code to perform softmax with a fixed amount of shared memory.\n\nOn entry, `buf` is assumed to be empty.\n\nOn exit, `buf[0]` contains the softmax, `buf2` contains un-normalized softmax.\n\nParameters ---------- N Length of the buffer, atleast waprSize(32). buf A shared memory buffer of size warpSize * sizeof(dtype). x A ptr to the gpu memory where the row is stored. stride_x The stride between each element in x. load_x Wrapper to read from x. sm A ptr to the gpu memory to store the result. sm_stride The stride between each sm element. write_sm Wrapper before writing to sm. threadPos Index of executing thread. threadCount Number of executing threads. b Optional, pointer to the bias. stride_b Optional, the stride of b if b is provided. load_b Optional, wrapper to read from b if b is provided. dtype Optional, the dtype of the softmax's output if not float32.\n\nNotes ----- `buf` should be in gpu shared memory, we access it many times.\n\nWe use tx as an int variable in a loop.\n"
+}{}{
+    "source file": "lazylinker_c.py",
+    "line number": "29",
+    "func name": "try_reload",
+    "func arg": "()",
+    "comments": ""
+}{
+    "source file": "linalg.py",
+    "line number": "867",
+    "func name": "gpu_qr",
+    "func arg": "(a, complete)",
+    "comments": "This function performs the QR on GPU.\n\nParameters ---------- complete : bool, optional If `False`, returns only r.\n##### Returns\n* **Q, R **: matrices\n\n"
+}{
+    "source file": "link.py",
+    "line number": "1022",
+    "func name": "WrapLinkerMany",
+    "func arg": "(linkers, wrappers)",
+    "comments": "Variant on WrapLinker that runs a series of wrapper functions instead of just one.\n\n\n"
+}{}{}{}{
+    "source file": "loop_solution_1.py",
+    "line number": "19",
+    "func name": "inner_fct",
+    "func arg": "(prior_result, A)",
+    "comments": ""
+}{
+    "source file": "main.py",
+    "line number": "150",
+    "func name": "main",
+    "func arg": "(modulename)",
+    "comments": ""
+}{
+    "source file": "may_share_memory.py",
+    "line number": "33",
+    "func name": "may_share_memory",
+    "func arg": "(a, b, raise_other_type)",
+    "comments": ""
+}{}{
+    "source file": "mlp_test.py",
+    "line number": "224",
+    "func name": "test_mlp",
+    "func arg": "()",
+    "comments": "Demonstrate stochastic gradient descent optimization for a multilayer perceptron\n\nThis is demonstrated on MNIST.\n\n:type learning_rate: float :param learning_rate: learning rate used (factor for the stochastic gradient\n\n:type n_epochs: int :param n_epochs: maximal number of epochs to run the optimizer\n\n:type dataset: string :param dataset: the path of the MNIST dataset file from http://www.iro.umontreal.ca/~lisa/deep/data/mnist/mnist.pkl.gz\n"
+}{
+    "source file": "mode.py",
+    "line number": "452",
+    "func name": "register_mode",
+    "func arg": "(name, mode)",
+    "comments": "Add a `Mode` which can be referred to by `name` in `function`.\n\n\n"
+}{}{}{
+    "source file": "monitormode.py",
+    "line number": "94",
+    "func name": "detect_nan",
+    "func arg": "(i, node, fn)",
+    "comments": ""
+}{}{
+    "source file": "multinomial16.py",
+    "line number": "494",
+    "func name": "local_gpua_multinomial_wor",
+    "func arg": "(op, context_name, inputs, outputs)",
+    "comments": ""
+}{
+    "source file": "nanguardmode.py",
+    "line number": "153",
+    "func name": "f_compute",
+    "func arg": "(op)",
+    "comments": ""
+}{}{}{
+    "source file": "neighbours18.py",
+    "line number": "717",
+    "func name": "neibs2images",
+    "func arg": "(neibs, neib_shape, original_shape, mode)",
+    "comments": "Function :func:`neibs2images <theano.sandbox.neighbours.neibs2images>` performs the inverse operation of :func:`images2neibs <theano.sandbox.neigbours.neibs2images>`. It inputs the output of :func:`images2neibs <theano.sandbox.neigbours.neibs2images>` and reconstructs its input.\n\nParameters ---------- neibs : 2d tensor Like the one obtained by :func:`images2neibs <theano.sandbox.neigbours.neibs2images>`. neib_shape `neib_shape` that was used in :func:`images2neibs <theano.sandbox.neigbours.neibs2images>`. original_shape Original shape of the 4d tensor given to :func:`images2neibs <theano.sandbox.neigbours.neibs2images>`\n##### Returns\n* **object\n    Reconstructs the input of\n    **: func\n\n* ****: func\n\n* **.. code-block**: \n\n* **.. note**: \n\n"
+}{}{
+    "source file": "nlinalg.py",
+    "line number": "786",
+    "func name": "tensorsolve",
+    "func arg": "(a, b, axes)",
+    "comments": "Theano utilization of numpy.linalg.tensorsolve. Does not run on GPU!\n\nSolve the tensor equation ``a x = b`` for x. It is assumed that all indices of `x` are summed over in the product, together with the rightmost indices of `a`, as is done in, for example, ``tensordot(a, x, axes=len(b.shape))``.\n\nParameters ---------- a : array_like Coefficient tensor, of shape ``b.shape + Q``. `Q`, a tuple, equals the shape of that sub-tensor of `a` consisting of the appropriate number of its rightmost indices, and must be such that ``prod(Q) == prod(b.shape)`` (in which sense `a` is said to be 'square'). b : array_like Right-hand tensor, which can be of any shape. axes : tuple of ints, optional Axes in `a` to reorder to the right, before inversion. If None (default), no reordering is done.\n##### Returns\n* **x **: ndarray, shape Q\n\n"
+}{}{
+    "source file": "nnet19.py",
+    "line number": "2519",
+    "func name": "confusion_matrix",
+    "func arg": "(actual, pred)",
+    "comments": "Computes the confusion matrix of given vectors containing actual observations and predicted observations.\n\nParameters ---------- actual : 1-d tensor variable pred : 1-d tensor variable\n##### Returns\n* **conf_mat **: Confusion matrix of actual and predictions observations as shown below.\n           | Predicted\n\n* **order **: 1-d array of order of entries in rows and columns\n\n"
+}{}{
+    "source file": "op.py",
+    "line number": "1244",
+    "func name": "apply_meth",
+    "func arg": "(tag)",
+    "comments": ""
+}{
+    "source file": "ops.py",
+    "line number": "367",
+    "func name": "spectral_radius_bound",
+    "func arg": "(X, log2_exponent)",
+    "comments": "Returns upper bound on the largest eigenvalue of square symmetrix matrix X.\n\nlog2_exponent must be a positive-valued integer. The larger it is, the slower and tighter the bound. Values up to 5 should usually suffice. The algorithm works by multiplying X by itself this many times.\n\nFrom V.Pan, 1990. \"Estimating the Extremal Eigenvalues of a Symmetric Matrix\", Computers Math Applic. Vol 20 n. 2 pp 17-22. Rq: an efficient algorithm, not used here, is defined in this paper.\n"
+}{
+    "source file": "ops20.py",
+    "line number": "790",
+    "func name": "register_specify_shape_c_code",
+    "func arg": "(typ, code, version, c_support_code_apply)",
+    "comments": "Tell SpecifyShape how to generate C code for a Theano Type.\n\nParameters ---------- typ : Theano type It must be the Theano class itself and not an instance of the class. code : C code Checks the shape and returns a view for the Theano type 'typ'. Use %(iname)s and %(oname)s for the input and output C variable names respectively. %(shape)s is the vector of shape of %(iname)s. Check that its length is good. version A number indicating the version of the code, for cache. c_support_code_apply Extra code.\n"
+}{
+    "source file": "opt_uncanonicalize.py",
+    "line number": "174",
+    "func name": "local_dimshuffle_subtensor",
+    "func arg": "(node)",
+    "comments": "If a subtensor is inside a dimshuffle which only drop broadcastable dimensions, scrap the dimshuffle and index the subtensor with 0\n\nx[i:j, :, k:l].dimshuffle(0, 2) => x[i:j, 0, k:l] if x.broadcastable == (False, True, False)\n"
+}{
+    "source file": "opt_util.py",
+    "line number": "398",
+    "func name": "unpad_dims",
+    "func arg": "(output, input, leftdims, rightdims)",
+    "comments": "Reshapes the output after pad_dims.\n\nThis reverts the padding by `pad_dims`.\n"
+}{
+    "source file": "opt.py",
+    "line number": "2995",
+    "func name": "check_stack_trace",
+    "func arg": "(f_or_fgraph, ops_to_check, bug_print)",
+    "comments": "This function checks if the outputs of specific ops of a compiled graph have a stack.\n\nParameters ---------- f_or_fgraph: theano.compile.function_module.Function or theano.gof.fg.FunctionGraph The compiled function or the function graph to be analysed. ops_to_check: it can be of four different types:\n\n- classes or instances inheriting from theano.gof.Op\n\n- tuple/list of classes or instances inheriting from theano.gof.Op\n\n- string\n\n- function returning a boolean and taking as input an instance of theano.gof.Op.\n\n- if ops_to_check is a string, it should be either 'last' or 'all'. 'last' will check only the last op of the graph while 'all' will check all the ops of the graph.\n\n- if ops_to_check is an op or a tuple/list of ops, the function will check that all the outputs of their occurrences in the graph have a stack trace.\n\n- if ops_to_check is a function, it should take as input a theano.gof.Op and return a boolean indicating if the input op should be checked or not. bug_print: string belonging to {'raise', 'warn', 'ignore'} You can specify the behaviour of the function when the specified ops_to_check are not in the graph of f_or_fgraph: it can either raise an exception, write a warning or simply ignore it.\n##### Returns\n"
+}{
+    "source file": "opt21.py",
+    "line number": "1940",
+    "func name": "local_sampling_dot_csr",
+    "func arg": "(node)",
+    "comments": ""
+}{
+    "source file": "opt22.py",
+    "line number": "9",
+    "func name": "typed_list_inplace_opt",
+    "func arg": "(node)",
+    "comments": ""
+}{
+    "source file": "opt23.py",
+    "line number": "7551",
+    "func name": "local_useless_topk",
+    "func arg": "(node)",
+    "comments": "TopKOp generates two outputs by default This opt removes the useless ones\n\n\n"
+}{
+    "source file": "opt24.py",
+    "line number": "2787",
+    "func name": "local_gpu_ctc",
+    "func arg": "(op, context_name, inputs, outputs)",
+    "comments": ""
+}{
+    "source file": "opt25.py",
+    "line number": "486",
+    "func name": "local_abstractconv_check",
+    "func arg": "(node)",
+    "comments": ""
+}{}{
+    "source file": "ordered_set.py",
+    "line number": "15",
+    "func name": "check_deterministic",
+    "func arg": "(iterable)",
+    "comments": ""
+}{}{}{
+    "source file": "pfunc.py",
+    "line number": "499",
+    "func name": "iter_over_pairs",
+    "func arg": "(pairs)",
+    "comments": "Return an iterator over pairs present in the 'pairs' input.\n\nParameters ---------- pairs : dictionary or iterable The pairs to iterate upon. These may be stored either as (key, value) items in a dictionary, or directly as pairs in any kind of iterable structure.\n##### Returns\n"
+}{
+    "source file": "pkl_utils.py",
+    "line number": "386",
+    "func name": "zipadd",
+    "func arg": "(func, zip_file, name)",
+    "comments": "Calls a function with a file object, saving it to a zip file.\n\nparam func: The function to call. :type func: callable\n\n:param zip_file: The zip file that `func` should write its data to. :type zip_file: :class:`zipfile.ZipFile`\n\n:param name: The name of the file inside of the zipped archive that `func` should save its data to. :type name: str\n"
+}{
+    "source file": "pool.py",
+    "line number": "152",
+    "func name": "pool_3d",
+    "func arg": "(input, ws, ignore_border, stride, pad, mode, ds, st, padding)",
+    "comments": "Downscale the input by a specified factor\n\nTakes as input a N-D tensor, where N >= 3. It downscales the input image by the specified factor, by keeping only the maximum value of non-overlapping patches of size (ws[0],ws[1],ws[2])\n\nParameters ---------- input : N-D theano tensor of input images Input images. Max pooling will be done over the 3 last dimensions. ws : tuple of length 3 or theano vector of ints of size 3 Factor by which to downscale (vertical ws, horizontal ws, depth ws). (2,2,2) will halve the image in each dimension. ignore_border : bool (default None, will print a warning and set to False) When True, (5,5,5) input with ws=(2,2,2) will generate a (2,2,2) output. (3,3,3) otherwise. st : tuple of three ints or theano vector of ints of size 3 Stride size, which is the number of shifts over rows/cols/slices to get the next pool region. If st is None, it is considered equal to ws (no overlap on pooling regions). pad : tuple of two ints or theano vector of ints of size 3 (pad_h, pad_w, pad_d), pad zeros to extend beyond six borders of the images, pad_h is the size of the top and bottom margins, pad_w is the size of the left and right margins, and pad_d is the size of the front and back margins mode : {'max', 'sum', 'average_inc_pad', 'average_exc_pad'} Operation executed on each window. `max` and `sum` always exclude the padding in the computation. `average` gives you the choice to include or exclude it. ds *deprecated*, use parameter ws instead. st *deprecated*, use parameter st instead. padding *deprecated*, use parameter pad instead.\n"
+}{}{
+    "source file": "printing.py",
+    "line number": "1263",
+    "func name": "hex_digest",
+    "func arg": "(x)",
+    "comments": "Returns a short, mostly hexadecimal hash of a numpy ndarray\n\n\n"
+}{}{
+    "source file": "profiling.py",
+    "line number": "154",
+    "func name": "register_profiler_printer",
+    "func arg": "(fct)",
+    "comments": ""
+}{}{}{}{
+    "source file": "raw_random.py",
+    "line number": "908",
+    "func name": "random_make_inplace",
+    "func arg": "(node)",
+    "comments": ""
+}{}{}{
+    "source file": "reindent.py",
+    "line number": "307",
+    "func name": "getlspace",
+    "func arg": "(line)",
+    "comments": ""
+}{
+    "source file": "rng_mrg.py",
+    "line number": "1218",
+    "func name": "mrg_random_make_inplace",
+    "func arg": "(node)",
+    "comments": ""
+}{
+    "source file": "rng_mrg27.py",
+    "line number": "325",
+    "func name": "local_gpua_mrg",
+    "func arg": "(node)",
+    "comments": ""
+}{
+    "source file": "rnn_support.py",
+    "line number": "50",
+    "func name": "bias_weights",
+    "func arg": "(length, param_list, name)",
+    "comments": "theano shared variable for bias unit, given length\n\n\n"
+}{}{
+    "source file": "run_tests_in_batch.py",
+    "line number": "122",
+    "func name": "run",
+    "func arg": "(stdout, stderr, argv, theano_nose, batch_size, time_profile, display_batch_output)",
+    "comments": ""
+}{
+    "source file": "safe_asarray.py",
+    "line number": "13",
+    "func name": "_asarray",
+    "func arg": "(a, dtype, order)",
+    "comments": "Convert the input to a Numpy array.\n\nThis function is almost identical to ``numpy.asarray``, but it should be used instead of its numpy counterpart when a data type is provided in order to perform type conversion if required. The reason is that ``numpy.asarray`` may not actually update the array's data type to the user-provided type. For more information see ticket http://projects.scipy.org/numpy/ticket/870.\n\nIn that case, we check that both dtype have the same string description (byte order, basic type, and number of bytes), and return a view with the desired dtype.\n\nThis function's name starts with a '_' to indicate that it is meant to be used internally. It is imported so as to be available directly through theano._asarray\n"
+}{
+    "source file": "scan_checkpoints.py",
+    "line number": "7",
+    "func name": "scan_checkpoints",
+    "func arg": "(fn, sequences, outputs_info, non_sequences, name, n_steps, save_every_N, padding)",
+    "comments": "Scan function that uses less memory, but is more restrictive.\n\nIn :func:`~theano.scan`, if you compute the gradient of the output with respect to the input, you will have to store the intermediate results at each time step, which can be prohibitively huge. This function allows to do ``save_every_N`` steps of forward computations without storing the intermediate results, and to recompute them during the gradient computation.\n\nNotes ----- Current assumptions:\n\n* Every sequence has the same length. * If ``n_steps`` is specified, it has the same value as the length of any sequence. * The value of ``save_every_N`` divides the number of steps the scan will run without remainder. * Only singly-recurrent and non-recurrent outputs are used. No multiple recurrences. * Only the last timestep of any output will ever be used.\n\nParameters ---------- fn ``fn`` is a function that describes the operations involved in one step of ``scan``. See the documentation of :func:`~theano.scan` for more information.\n\nsequences ``sequences`` is the list of Theano variables or dictionaries describing the sequences ``scan`` has to iterate over. All sequences must be the same length in this version of ``scan``.\n\noutputs_info ``outputs_info`` is the list of Theano variables or dictionaries describing the initial state of the outputs computed recurrently.\n\nnon_sequences ``non_sequences`` is the list of arguments that are passed to ``fn`` at each steps. One can opt to exclude variable used in ``fn`` from this list as long as they are part of the computational graph, though for clarity we encourage not to do so.\n\nn_steps ``n_steps`` is the number of steps to iterate given as an int or Theano scalar (> 0). If any of the input sequences do not have enough elements, scan will raise an error. If n_steps is not provided, ``scan`` will figure out the amount of steps it should run given its input sequences.\n\nsave_every_N ``save_every_N`` is the number of steps to go without storing the computations of ``scan`` (ie they will have to be recomputed during the gradient computation).\n\npadding If the length of the sequences is not a multiple of ``save_every_N``, the sequences will be zero padded to make this version of ``scan`` work properly, but will also result in a memory copy. It can be avoided by setting ``padding`` to False, but you need to make sure the length of the sequences is a multple of ``save_every_N``.\n##### Returns\n* **tuple\n    Tuple of the form ``(outputs, updates)`` as in **: func\n\n* ****: func\n\n"
+}{
+    "source file": "scan_op.py",
+    "line number": "2883",
+    "func name": "profile_printer",
+    "func arg": "(message, compile_time, fct_call_time, apply_time, apply_cimpl, outputs_size, file)",
+    "comments": ""
+}{
+    "source file": "scan_opt.py",
+    "line number": "1904",
+    "func name": "scan_merge_inouts",
+    "func arg": "(node)",
+    "comments": ""
+}{
+    "source file": "scan_perform_ext.py",
+    "line number": "39",
+    "func name": "try_reload",
+    "func arg": "()",
+    "comments": ""
+}{}{}{
+    "source file": "scan_pow.py",
+    "line number": "8",
+    "func name": "inner_fct",
+    "func arg": "(prior_result, A)",
+    "comments": ""
+}{
+    "source file": "scan_pow29.py",
+    "line number": "10",
+    "func name": "inner_fct",
+    "func arg": "(prior_result, A)",
+    "comments": ""
+}{
+    "source file": "scan_utils.py",
+    "line number": "1318",
+    "func name": "forced_replace",
+    "func arg": "(out, x, y)",
+    "comments": "Check all internal values of the graph that compute the variable ``out`` for occurrences of values identical with ``x``. If such occurrences are encountered then they are replaced with variable ``y``.\n\nParameters ---------- out : Theano Variable x : Theano Variable y : Theano Variable\n\nExamples -------- out := sigmoid(wu)*(1-sigmoid(wu)) x := sigmoid(wu) forced_replace(out, x, y) := y*(1-y)\n\nNote ---- When it find a match, it don't continue on the corresponding inputs.\n"
+}{
+    "source file": "scan_views.py",
+    "line number": "162",
+    "func name": "foldr",
+    "func arg": "(fn, sequences, outputs_info, non_sequences, mode, name)",
+    "comments": "Similar behaviour as haskell' foldr.\n\nParameters ---------- fn The function that ``foldr`` applies at each iteration step (see ``scan`` for more info). sequences List of sequences over which ``foldr`` iterates (see ``scan`` for more info). outputs_info List of dictionaries describing the outputs of reduce (see ``scan`` for more info). non_sequences List of arguments passed to `fn`. ``foldr`` will not iterate over these arguments (see ``scan`` for more info). mode See ``scan``. name See ``scan``.\n"
+}{
+    "source file": "scan.py",
+    "line number": "73",
+    "func name": "scan",
+    "func arg": "(fn, sequences, outputs_info, non_sequences, n_steps, truncate_gradient, go_backwards, mode, name, profile, allow_gc, strict, return_list)",
+    "comments": "This function constructs and applies a Scan op to the provided arguments.\n\nParameters ---------- fn ``fn`` is a function that describes the operations involved in one step of ``scan``. ``fn`` should construct variables describing the output of one iteration step. It should expect as input theano variables representing all the slices of the input sequences and previous values of the outputs, as well as all other arguments given to scan as ``non_sequences``. The order in which scan passes these variables to ``fn``\n\nis the following :\n\n* all time slices of the first sequence * all time slices of the second sequence * ... * all time slices of the last sequence * all past slices of the first output * all past slices of the second output * ... * all past slices of the last output * all other arguments (the list given as `non_sequences` to scan)\n\nThe order of the sequences is the same as the one in the list `sequences` given to scan. The order of the outputs is the same as the order of ``outputs_info``. For any sequence or output the order of the time slices is the same as the one in which they have been given as taps. For example if one writes the following :\n\n.. code-block:: python\n\nscan(fn, sequences = [ dict(input= Sequence1, taps = [-3,2,-1]) , Sequence2 , dict(input =\n\nSequence3, taps = 3) ] , outputs_info = [ dict(initial =\n\nOutput1, taps = [-3,-5]) , dict(initial = Output2, taps = None) , Output3 ] , non_sequences = [ Argument1, Argument2])\n\n``fn`` should expect the following arguments in this given order:\n\n#. ``Sequence1[t-3]`` #. ``Sequence1[t+2]`` #. ``Sequence1[t-1]`` #. ``Sequence2[t]`` #. ``Sequence3[t+3]`` #. ``Output1[t-3]`` #. ``Output1[t-5]`` #. ``Output3[t-1]`` #. ``Argument1`` #. ``Argument2``\n\nThe list of ``non_sequences`` can also contain shared variables used in the function, though ``scan`` is able to figure those out on its own so they can be skipped. For the clarity of the code we recommend though to provide them to scan. To some extend ``scan`` can also figure out other ``non sequences`` (not shared) even if not passed to scan (but used by `fn`). A simple example of this would be :\n\n.. code-block:: python\n\nimport theano.tensor as TT W\n\n = TT.matrix() W_2 = W**2 def f(x): return TT.dot(x,W_2)\n\nThe function is expected to return two things. One is a list of outputs ordered in the same order as ``outputs_info``, with the difference that there should be only one output variable per output initial state (even if no tap value is used). Secondly `fn` should return an update dictionary (that tells how to update any shared variable after each iteration step). The dictionary can optionally be given as a list of tuples. There is no constraint on the order of these two list, ``fn`` can return either ``(outputs_list, update_dictionary)`` or ``(update_dictionary, outputs_list)`` or just one of the two (in case the other is empty).\n\nTo use ``scan`` as a while loop, the user needs to change the function ``fn`` such that also a stopping condition is returned. To do so, he/she needs to wrap the condition in an ``until`` class. The condition should be returned as a third element, for example:\n\n.. code-block:: python\n\n... return [y1_t, y2_t], {x:x+1}, theano.scan_module.until(x < 50)\n\nNote that a number of steps (considered in here as the maximum number of steps ) is still required even though a condition is passed (and it is used to allocate memory if needed). = {}):\n\nsequences ``sequences`` is the list of Theano variables or dictionaries describing the sequences ``scan`` has to iterate over. If a sequence is given as wrapped in a dictionary, then a set of optional information can be provided about the sequence. The dictionary should have the following keys:\n\n* ``input`` (*mandatory*) -- Theano variable representing the sequence.\n\n* ``taps`` -- Temporal taps of the sequence required by ``fn``. They are provided as a list of integers, where a value ``k`` impiles that at iteration step ``t`` scan will pass to ``fn`` the slice ``t+k``. Default value is ``[0]``\n\nAny Theano variable in the list ``sequences`` is automatically wrapped into a dictionary where ``taps`` is set to ``[0]``\n\noutputs_info ``outputs_info`` is the list of Theano variables or dictionaries describing the initial state of the outputs computed recurrently. When this initial states are given as dictionary optional information can be provided about the output corresponding to these initial states. The dictionary should have the following keys:\n\n* ``initial`` -- Theano variable that represents the initial state of a given output. In case the output is not computed recursively (think of a map) and does not require an initial state this field can be skipped. Given that (only) the previous time step of the output is used by ``fn``, the initial state **should have the same shape** as the output and **should not involve a downcast** of the data type of the output. If multiple time taps are used, the initial state should have one extra dimension that should cover all the possible taps. For example if we use ``-5``, ``-2`` and ``-1`` as past taps, at step 0, ``fn`` will require (by an abuse of notation) ``output[-5]``, ``output[-2]`` and ``output[-1]``. This will be given by the initial state, which in this case should have the shape (5,)+output.shape. If this variable containing the initial state is called ``init_y`` then ``init_y[0]`` *corresponds to* ``output[-5]``. ``init_y[1]`` *correponds to* ``output[-4]``, ``init_y[2]`` corresponds to ``output[-3]``, ``init_y[3]`` coresponds to ``output[-2]``, ``init_y[4]`` corresponds to ``output[-1]``. While this order might seem strange, it comes natural from splitting an array at a given point. Assume that we have a array ``x``, and we choose ``k`` to be time step ``0``. Then our initial state would be ``x[:k]``, while the output will be ``x[k:]``. Looking at this split, elements in ``x[:k]`` are ordered exactly like those in ``init_y``. * ``taps`` -- Temporal taps of the output that will be pass to ``fn``. They are provided as a list of *negative* integers, where a value ``k`` implies that at iteration step ``t`` scan will pass to ``fn`` the slice ``t+k``.\n\n``scan`` will follow this logic if partial information is given:\n\n* If an output is not wrapped in a dictionary, ``scan`` will wrap it in one assuming that you use only the last step of the output (i.e. it makes your tap value list equal to [-1]). * If you wrap an output in a dictionary and you do not provide any taps but you provide an initial state it will assume that you are using only a tap value of -1. * If you wrap an output in a dictionary but you do not provide any initial state, it assumes that you are not using any form of taps. * If you provide a ``None`` instead of a variable or a empty dictionary ``scan`` assumes that you will not use any taps for this output (like for example in case of a map)\n\nIf ``outputs_info`` is an empty list or None, ``scan`` assumes that no tap is used for any of the outputs. If information is provided just for a subset of the outputs an exception is raised (because there is no convention on how scan should map the provided information to the outputs of ``fn``)\n\nnon_sequences ``non_sequences`` is the list of arguments that are passed to ``fn`` at each steps. One can opt to exclude variable used in ``fn`` from this list as long as they are part of the computational graph, though for clarity we encourage not to do so.\n\nn_steps ``n_steps`` is the number of steps to iterate given as an int or Theano scalar. If any of the input sequences do not have enough elements, scan will raise an error. If the *value is 0* the outputs will have *0 rows*. If n_steps is not provided, ``scan`` will figure out the amount of steps it should run given its input sequences. ``n_steps`` < 0 is not supported anymore.\n\ntruncate_gradient ``truncate_gradient`` is the number of steps to use in truncated BPTT.\n\nIf you compute gradients through a scan op, they are computed using backpropagation through time. By providing a different value then -1, you choose to use truncated BPTT instead of classical BPTT, where you go for only ``truncate_gradient`` number of steps back in time.\n\ngo_backwards ``go_backwards`` is a flag indicating if ``scan`` should go backwards through the sequences. If you think of each sequence as indexed by time, making this flag True would mean that ``scan`` goes back in time, namely that for any sequence it starts from the end and goes towards 0.\n\nname When profiling ``scan``, it is crucial to provide a name for any instance of ``scan``. The profiler will produce an overall profile of your code as well as profiles for the computation of one step of each instance of ``scan``. The ``name`` of the instance appears in those profiles and can greatly help to disambiguate information.\n\nmode It is recommended to leave this argument to None, especially when profiling ``scan`` (otherwise the results are not going to be accurate). If you prefer the computations of one step of ``scan`` to be done differently then the entire function, you can use this parameter to describe how the computations in this loop are done (see ``theano.function`` for details about possible values and their meaning).\n\nprofile Flag or string. If true, or different from the empty string, a profile object will be created and attached to the inner graph of scan. In case ``profile`` is True, the profile object will have the name of the scan instance, otherwise it will have the passed string. Profile object collect (and print) information only when running the inner graph with the new cvm linker ( with default modes, other linkers this argument is useless)\n\nallow_gc Set the value of allow gc for the internal graph of scan.\n\nIf set to None, this will use the value of config.scan.allow_gc.\n\nThe full scan behavior related to allocation is determined by this value and the Theano flag allow_gc. If the flag allow_gc is True (default) and this scan parameter allow_gc is False (default), then we let scan allocate all intermediate memory on the first iteration, those are not garbage collected them during that first iteration (this is determined by the scan allow_gc). This speed up allocation of the following iteration. But we free all those temp allocation at the end of all iterations (this is what the Theano flag allow_gc mean).\n\nIf you use preallocate and this scan is on GPU, the speed up from the scan allow_gc is small. If you are missing memory, disable the scan allow_gc could help you run graph that request much memory.\n\nstrict If true, all the shared variables used in ``fn`` must be provided as a part of ``non_sequences`` or ``sequences``.\n\nreturn_list If True, will always return a list, even if there is only 1 output.\n##### Returns\n"
+}{
+    "source file": "sched.py",
+    "line number": "270",
+    "func name": "key_to_cmp",
+    "func arg": "(key)",
+    "comments": "comparator function based on \"key\" function\n\n\n"
+}{
+    "source file": "setup.py",
+    "line number": "88",
+    "func name": "do_setup",
+    "func arg": "()",
+    "comments": ""
+}{
+    "source file": "shared_randomstreams.py",
+    "line number": "24",
+    "func name": "randomstate_constructor",
+    "func arg": "(value, name, strict, allow_downcast, borrow)",
+    "comments": "SharedVariable Constructor for RandomState.\n\n\n"
+}{
+    "source file": "sharedvalue.py",
+    "line number": "294",
+    "func name": "generic_constructor",
+    "func arg": "(value, name, strict, allow_downcast)",
+    "comments": "SharedVariable Constructor.\n\n\n"
+}{
+    "source file": "sharedvar.py",
+    "line number": "42",
+    "func name": "shared",
+    "func arg": "(value, name, strict, allow_downcast)",
+    "comments": "SharedVariable constructor for scalar values. Default: int64 or float64.\n\nNotes ----- We implement this using 0-d tensors for now.\n"
+}{
+    "source file": "sharedvar30.py",
+    "line number": "14",
+    "func name": "sparse_constructor",
+    "func arg": "(value, name, strict, allow_downcast, borrow, format)",
+    "comments": "SharedVariable Constructor for SparseType.\n\nwriteme\n"
+}{
+    "source file": "sharedvar31.py",
+    "line number": "72",
+    "func name": "scalar_constructor",
+    "func arg": "(value, name, strict, allow_downcast, borrow, target)",
+    "comments": "SharedVariable constructor for scalar values. Default: int64 or float64.\n\nNotes ----- We implement this using 0-d tensors for now.\n\nWe ignore the borrow parameter as we convert ``value`` to an ndarray (this is a new object). This respects the semantic of borrow, as it is a hint to Theano that we can reuse it.\n"
+}{
+    "source file": "sigm.py",
+    "line number": "988",
+    "func name": "local_1msigmoid",
+    "func arg": "(node)",
+    "comments": "1-sigm(x) -> sigm(-x)\n\n\n"
+}{}{
+    "source file": "slinalg.py",
+    "line number": "447",
+    "func name": "kron",
+    "func arg": "(a, b)",
+    "comments": "Kronecker product.\n\nSame as scipy.linalg.kron(a, b).\n\nParameters ---------- a: array_like b: array_like\n##### Returns\n"
+}{}{}{
+    "source file": "sort.py",
+    "line number": "546",
+    "func name": "topk_and_argtopk",
+    "func arg": "(x, kth, axis, sorted, idx_dtype)",
+    "comments": "Returns the results of both topk() and argtopk() in one Op.\n\nSee the respective documentation for details.\n##### Returns\n* **tuple**: (values, indices)\n\n"
+}{
+    "source file": "sort32.py",
+    "line number": "357",
+    "func name": "local_gpua_topkop",
+    "func arg": "(op, ctx_name, inputs, outputs)",
+    "comments": ""
+}{
+    "source file": "sp.py",
+    "line number": "365",
+    "func name": "max_pool",
+    "func arg": "(images, imgshp, maxpoolshp)",
+    "comments": "Implements a max pooling layer\n\nTakes as input a 2D tensor of shape batch_size x img_size and performs max pooling.\n\nMax pooling downsamples by taking the max value in a given area, here defined by maxpoolshp. Outputs a 2D tensor of shape batch_size x output_size.\n\n:param images: 2D tensor containing images on which to apply convolution. Assumed to be of shape batch_size x img_size :param imgshp: tuple containing image dimensions :param maxpoolshp: tuple containing shape of area to max pool over\n\n:return: out1, symbolic result (2D tensor) :return: out2, logical shape of the output\n"
+}{}{
+    "source file": "speed_test_conv.py",
+    "line number": "198",
+    "func name": "speed_multilayer_conv",
+    "func arg": "()",
+    "comments": ""
+}{
+    "source file": "strutil.py",
+    "line number": "56",
+    "func name": "strip_leading_white_space",
+    "func arg": "(line)",
+    "comments": ""
+}{
+    "source file": "subtensor.py",
+    "line number": "2438",
+    "func name": "take",
+    "func arg": "(a, indices, axis, mode)",
+    "comments": ""
+}{
+    "source file": "subtensor33.py",
+    "line number": "486",
+    "func name": "check_and_convert_boolean_masks",
+    "func arg": "(input, idx_list)",
+    "comments": "This function checks if the boolean mask arrays in the index have the right shape and converts them to index arrays by calling nonzero. For each boolean mask, we check if the mask has the same shape as the input. This is enforced in NumPy 0.13.0 and newer, but not by earlier versions. If the size is not the same, this method raises an IndexError.\n\n\n"
+}{
+    "source file": "test_2nd_order_grads.py",
+    "line number": "147",
+    "func name": "test_jacobian_disconnected_inputs",
+    "func arg": "()",
+    "comments": ""
+}{
+    "source file": "test_abstract_conv.py",
+    "line number": "960",
+    "func name": "test_constant_shapes",
+    "func arg": "()",
+    "comments": ""
+}{}{
+    "source file": "test_basic_ops.py",
+    "line number": "562",
+    "func name": "test_gputri",
+    "func arg": "()",
+    "comments": ""
+}{
+    "source file": "test_basic_sympy.py",
+    "line number": "37",
+    "func name": "test_multivar_grad",
+    "func arg": "()",
+    "comments": ""
+}{
+    "source file": "test_basic.py",
+    "line number": "488",
+    "func name": "test_constant",
+    "func arg": "()",
+    "comments": ""
+}{
+    "source file": "test_basic34.py",
+    "line number": "2817",
+    "func name": "structure_function",
+    "func arg": "(f, index)",
+    "comments": "Decorator to structure a function which apply on dense matrix.\n\nHere, the inputs of the function must be dense matrix. The sparse pattern is determined by finding the zeros.\n\n:param index: The index of the parameter from which the function must be structured.\n\n:return: The structured function for its `index` parameter.\n"
+}{
+    "source file": "test_basic35.py",
+    "line number": "32",
+    "func name": "random_lil",
+    "func arg": "(shape, dtype, nnz)",
+    "comments": ""
+}{
+    "source file": "test_basic36.py",
+    "line number": "8792",
+    "func name": "test_symbolic_slice",
+    "func arg": "()",
+    "comments": ""
+}{
+    "source file": "test_blas_c.py",
+    "line number": "29",
+    "func name": "skip_if_blas_ldflags_empty",
+    "func arg": "()",
+    "comments": ""
+}{}{
+    "source file": "test_blas.py",
+    "line number": "239",
+    "func name": "test_gemv_dot_strides",
+    "func arg": "()",
+    "comments": ""
+}{
+    "source file": "test_blas37.py",
+    "line number": "1371",
+    "func name": "matrixmultiply",
+    "func arg": "(a, b)",
+    "comments": ""
+}{}{}{
+    "source file": "test_bn.py",
+    "line number": "474",
+    "func name": "test_batch_normalization_broadcastable",
+    "func arg": "()",
+    "comments": ""
+}{}{}{}{
+    "source file": "test_cc.py",
+    "line number": "389",
+    "func name": "test_shared_input_output",
+    "func arg": "()",
+    "comments": ""
+}{
+    "source file": "test_cgpukernelbase.py",
+    "line number": "61",
+    "func name": "test_cgpukernelbase",
+    "func arg": "()",
+    "comments": ""
+}{
+    "source file": "test_cmodule.py",
+    "line number": "64",
+    "func name": "test_flag_detection",
+    "func arg": "()",
+    "comments": ""
+}{
+    "source file": "test_compiledir.py",
+    "line number": "5",
+    "func name": "test_short_platform",
+    "func arg": "()",
+    "comments": ""
+}{}{}{}{}{
+    "source file": "test_conv3d2d.py",
+    "line number": "102",
+    "func name": "test_conv3d",
+    "func arg": "(border_mode)",
+    "comments": ""
+}{
+    "source file": "test_conv39.py",
+    "line number": "592",
+    "func name": "test_broadcast_grad",
+    "func arg": "()",
+    "comments": ""
+}{}{}{}{
+    "source file": "test_ctc40.py",
+    "line number": "67",
+    "func name": "setup_grad_case",
+    "func arg": "()",
+    "comments": ""
+}{}{
+    "source file": "test_debugmode.py",
+    "line number": "376",
+    "func name": "test_baddestroymap_c",
+    "func arg": "()",
+    "comments": ""
+}{
+    "source file": "test_destroyhandler.py",
+    "line number": "457",
+    "func name": "test_multiple_inplace",
+    "func arg": "()",
+    "comments": ""
+}{
+    "source file": "test_determinism.py",
+    "line number": "19",
+    "func name": "test_determinism_1",
+    "func arg": "()",
+    "comments": ""
+}{}{}{}{
+    "source file": "test_dnn.py",
+    "line number": "2941",
+    "func name": "test_opt_f16_prec32",
+    "func arg": "()",
+    "comments": ""
+}{
+    "source file": "test_elemwise.py",
+    "line number": "384",
+    "func name": "speed_reduce10",
+    "func arg": "()",
+    "comments": ""
+}{
+    "source file": "test_elemwise41.py",
+    "line number": "1323",
+    "func name": "test_not_implemented_elemwise_grad",
+    "func arg": "()",
+    "comments": ""
+}{}{
+    "source file": "test_extra_ops42.py",
+    "line number": "640",
+    "func name": "test_to_one_hot",
+    "func arg": "()",
+    "comments": ""
+}{}{}{}{
+    "source file": "test_flake8.py",
+    "line number": "188",
+    "func name": "check_all_files",
+    "func arg": "(dir_path, pattern)",
+    "comments": "List all .py files under dir_path (theano path), check if they follow flake8 format, save all the error-formatted files into theano_filelist.txt. This function is used for generating the \"whitelist_flake8\" in this file.\n\n\n"
+}{}{}{
+    "source file": "test_function_module.py",
+    "line number": "971",
+    "func name": "test_sync_update",
+    "func arg": "()",
+    "comments": ""
+}{}{
+    "source file": "test_function.py",
+    "line number": "14",
+    "func name": "test_function_dump",
+    "func arg": "()",
+    "comments": ""
+}{
+    "source file": "test_gc.py",
+    "line number": "102",
+    "func name": "test_merge_opt_runtime",
+    "func arg": "()",
+    "comments": ""
+}{}{}{
+    "source file": "test_gradient.py",
+    "line number": "807",
+    "func name": "test_undefined_grad_opt",
+    "func arg": "()",
+    "comments": ""
+}{
+    "source file": "test_graph_opt_caching.py",
+    "line number": "10",
+    "func name": "test_graph_opt_caching",
+    "func arg": "()",
+    "comments": ""
+}{
+    "source file": "test_graph.py",
+    "line number": "184",
+    "func name": "prenode",
+    "func arg": "(obj)",
+    "comments": ""
+}{}{}{}{}{
+    "source file": "test_lazy.py",
+    "line number": "136",
+    "func name": "more_complex_test",
+    "func arg": "()",
+    "comments": ""
+}{
+    "source file": "test_linalg.py",
+    "line number": "633",
+    "func name": "test_lower_triangular_and_cholesky_grad",
+    "func arg": "()",
+    "comments": ""
+}{
+    "source file": "test_linalg44.py",
+    "line number": "159",
+    "func name": "test_matrix_inverse_solve",
+    "func arg": "()",
+    "comments": ""
+}{
+    "source file": "test_link.py",
+    "line number": "198",
+    "func name": "test_container_deepcopy",
+    "func arg": "()",
+    "comments": ""
+}{
+    "source file": "test_may_share_memory.py",
+    "line number": "52",
+    "func name": "test_may_share_memory",
+    "func arg": "()",
+    "comments": ""
+}{
+    "source file": "test_merge.py",
+    "line number": "61",
+    "func name": "test_merge_with_weird_eq",
+    "func arg": "()",
+    "comments": ""
+}{}{
+    "source file": "test_misc45.py",
+    "line number": "14",
+    "func name": "test_nan_guard_mode",
+    "func arg": "()",
+    "comments": ""
+}{
+    "source file": "test_misc46.py",
+    "line number": "76",
+    "func name": "test_deepcopied_type_filter",
+    "func arg": "()",
+    "comments": ""
+}{
+    "source file": "test_mode.py",
+    "line number": "36",
+    "func name": "test_including",
+    "func arg": "()",
+    "comments": ""
+}{}{
+    "source file": "test_monitormode.py",
+    "line number": "71",
+    "func name": "test_not_inplace",
+    "func arg": "()",
+    "comments": ""
+}{
+    "source file": "test_mpi.py",
+    "line number": "90",
+    "func name": "test_mpi_schedule",
+    "func arg": "()",
+    "comments": ""
+}{}{
+    "source file": "test_multinomial.py",
+    "line number": "149",
+    "func name": "test_multinomial_dtypes",
+    "func arg": "()",
+    "comments": ""
+}{
+    "source file": "test_multinomial47.py",
+    "line number": "354",
+    "func name": "test_unpickle_legacy_op",
+    "func arg": "()",
+    "comments": ""
+}{
+    "source file": "test_nanguardmode.py",
+    "line number": "16",
+    "func name": "test_NanGuardMode",
+    "func arg": "()",
+    "comments": ""
+}{}{}{
+    "source file": "test_nlinalg.py",
+    "line number": "408",
+    "func name": "test_trace",
+    "func arg": "()",
+    "comments": ""
+}{
+    "source file": "test_nnet.py",
+    "line number": "204",
+    "func name": "softmax_unittest_template",
+    "func arg": "(dtypeInput)",
+    "comments": ""
+}{
+    "source file": "test_nnet49.py",
+    "line number": "1800",
+    "func name": "test_confusion_matrix",
+    "func arg": "()",
+    "comments": ""
+}{
+    "source file": "test_op.py",
+    "line number": "384",
+    "func name": "test_debug_error_message",
+    "func arg": "()",
+    "comments": ""
+}{
+    "source file": "test_ops.py",
+    "line number": "84",
+    "func name": "test_shape_i_hash",
+    "func arg": "()",
+    "comments": ""
+}{
+    "source file": "test_opt_uncanonicalize.py",
+    "line number": "173",
+    "func name": "test_local_dimshuffle_subtensor",
+    "func arg": "()",
+    "comments": ""
+}{
+    "source file": "test_opt.py",
+    "line number": "158",
+    "func name": "test_sd_csc",
+    "func arg": "()",
+    "comments": ""
+}{
+    "source file": "test_opt50.py",
+    "line number": "761",
+    "func name": "test_crossentropycategorical1hot_lifter",
+    "func arg": "()",
+    "comments": ""
+}{
+    "source file": "test_opt51.py",
+    "line number": "116",
+    "func name": "test_constant_folding",
+    "func arg": "()",
+    "comments": ""
+}{
+    "source file": "test_opt52.py",
+    "line number": "33",
+    "func name": "test_blocksparse_inplace_outer_opt",
+    "func arg": "()",
+    "comments": ""
+}{
+    "source file": "test_opt53.py",
+    "line number": "6838",
+    "func name": "test_local_log_sum_exp3",
+    "func arg": "()",
+    "comments": ""
+}{
+    "source file": "test_opt54.py",
+    "line number": "599",
+    "func name": "test_pre_constant_merge_slice",
+    "func arg": "()",
+    "comments": ""
+}{}{
+    "source file": "test_others.py",
+    "line number": "31",
+    "func name": "test_dump_load",
+    "func arg": "()",
+    "comments": ""
+}{}{
+    "source file": "test_pfunc.py",
+    "line number": "17",
+    "func name": "data_of",
+    "func arg": "(s)",
+    "comments": ""
+}{
+    "source file": "test_pickle_unpickle_theano_fn.py",
+    "line number": "57",
+    "func name": "test_pickle_unpickle_without_reoptimization",
+    "func arg": "()",
+    "comments": ""
+}{
+    "source file": "test_pickle.py",
+    "line number": "53",
+    "func name": "test_unpickle_gpuarray_as_numpy_ndarray_flag2",
+    "func arg": "()",
+    "comments": ""
+}{}{
+    "source file": "test_pool.py",
+    "line number": "185",
+    "func name": "test_pool3d",
+    "func arg": "()",
+    "comments": ""
+}{}{
+    "source file": "test_printing.py",
+    "line number": "727",
+    "func name": "test_subtensor",
+    "func arg": "()",
+    "comments": ""
+}{}{}{
+    "source file": "test_record.py",
+    "line number": "110",
+    "func name": "test_record_mode_bad",
+    "func arg": "()",
+    "comments": ""
+}{
+    "source file": "test_reduction.py",
+    "line number": "63",
+    "func name": "check_if_gpu_reduce_not_in_graph",
+    "func arg": "(theano_function)",
+    "comments": ""
+}{
+    "source file": "test_rng_mrg.py",
+    "line number": "884",
+    "func name": "test_target_parameter",
+    "func arg": "()",
+    "comments": ""
+}{
+    "source file": "test_rng_mrg56.py",
+    "line number": "177",
+    "func name": "test_cpu_target_with_shared_variable",
+    "func arg": "()",
+    "comments": ""
+}{}{}{}{
+    "source file": "test_scan_utils.py",
+    "line number": "11",
+    "func name": "test_equal_compuations",
+    "func arg": "()",
+    "comments": ""
+}{
+    "source file": "test_scan.py",
+    "line number": "5742",
+    "func name": "test_mintap_onestep",
+    "func arg": "()",
+    "comments": ""
+}{}{
+    "source file": "test_sched.py",
+    "line number": "64",
+    "func name": "test_posort",
+    "func arg": "()",
+    "comments": ""
+}{}{}{
+    "source file": "test_sharedvar.py",
+    "line number": "606",
+    "func name": "test_scalar_shared_options",
+    "func arg": "()",
+    "comments": ""
+}{}{
+    "source file": "test_slinalg.py",
+    "line number": "355",
+    "func name": "test_expm_grad_3",
+    "func arg": "()",
+    "comments": ""
+}{}{
+    "source file": "test_sort58.py",
+    "line number": "222",
+    "func name": "test_argsort_grad",
+    "func arg": "()",
+    "comments": ""
+}{}{}{
+    "source file": "test_subtensor.py",
+    "line number": "263",
+    "func name": "test_adv_subtensor",
+    "func arg": "()",
+    "comments": ""
+}{}{
+    "source file": "test_toolbox.py",
+    "line number": "60",
+    "func name": "inputs",
+    "func arg": "()",
+    "comments": ""
+}{
+    "source file": "test_type_other.py",
+    "line number": "19",
+    "func name": "test_none_Constant",
+    "func arg": "()",
+    "comments": ""
+}{
+    "source file": "test_type.py",
+    "line number": "4",
+    "func name": "test_sparse_type",
+    "func arg": "()",
+    "comments": ""
+}{
+    "source file": "test_type60.py",
+    "line number": "184",
+    "func name": "test_set_value_non_contiguous",
+    "func arg": "()",
+    "comments": ""
+}{
+    "source file": "test_type61.py",
+    "line number": "14",
+    "func name": "rand_ranged_matrix",
+    "func arg": "(minimum, maximum, shape)",
+    "comments": ""
+}{
+    "source file": "test_types.py",
+    "line number": "64",
+    "func name": "test_cdata",
+    "func arg": "()",
+    "comments": ""
+}{}{
+    "source file": "test_utils.py",
+    "line number": "10",
+    "func name": "test_hash_from_ndarray",
+    "func arg": "()",
+    "comments": ""
+}{
+    "source file": "test_utils62.py",
+    "line number": "51",
+    "func name": "test_stack_trace",
+    "func arg": "()",
+    "comments": ""
+}{
+    "source file": "test_utils63.py",
+    "line number": "12",
+    "func name": "test_hash_from_sparse",
+    "func arg": "()",
+    "comments": ""
+}{
+    "source file": "test_var.py",
+    "line number": "51",
+    "func name": "test_None_dimShuffle_replace",
+    "func arg": "()",
+    "comments": ""
+}{
+    "source file": "test_vm.py",
+    "line number": "441",
+    "func name": "test_no_recycling",
+    "func arg": "()",
+    "comments": ""
+}{}{
+    "source file": "theano_cache.py",
+    "line number": "44",
+    "func name": "main",
+    "func arg": "()",
+    "comments": ""
+}{
+    "source file": "theano_nose.py",
+    "line number": "203",
+    "func name": "main",
+    "func arg": "()",
+    "comments": ""
+}{}{}{
+    "source file": "type_other.py",
+    "line number": "13",
+    "func name": "as_int_none_variable",
+    "func arg": "(x)",
+    "comments": ""
+}{
+    "source file": "type.py",
+    "line number": "907",
+    "func name": "GpuArray_pickler",
+    "func arg": "(cnda)",
+    "comments": ""
+}{}{
+    "source file": "type65.py",
+    "line number": "704",
+    "func name": "values_eq_approx_always_true",
+    "func arg": "(a, b)",
+    "comments": ""
+}{}{
+    "source file": "type67.py",
+    "line number": "14",
+    "func name": "_is_sparse",
+    "func arg": "(x)",
+    "comments": "Returns ------- boolean True iff x is a L{scipy.sparse.spmatrix} (and not a L{numpy.ndarray}).\n\n\n"
+}{
+    "source file": "unify.py",
+    "line number": "503",
+    "func name": "unify",
+    "func arg": "(a, b)",
+    "comments": ""
+}{
+    "source file": "unittest_tools.py",
+    "line number": "451",
+    "func name": "assertFailure_fast",
+    "func arg": "(f)",
+    "comments": "A Decorator to handle the test cases that are failing when THEANO_FLAGS =cycle_detection='fast'.\n\n\n"
+}{}{}{
+    "source file": "utils.py",
+    "line number": "34",
+    "func name": "shape_of_variables",
+    "func arg": "(fgraph, input_shapes)",
+    "comments": "Compute the numeric shape of all intermediate variables given input shapes.\n\nParameters ---------- fgraph The theano.FunctionGraph in question. input_shapes : dict A dict mapping input to shape.\n##### Returns\n* **shapes **: dict\n    A dict mapping variable to shape\n\n* **.. warning**: \n\n* **>>> y = x[512**: ]; y.name = 'y'\n\n* **>>> d = shape_of_variables(fgraph, {x**: (1024, 1024)})\n\n"
+}{
+    "source file": "utils68.py",
+    "line number": "570",
+    "func name": "hash_from_file",
+    "func arg": "(file_path)",
+    "comments": "Return the SHA256 hash of a file.\n\n\n"
+}{
+    "source file": "utils69.py",
+    "line number": "5",
+    "func name": "hash_from_sparse",
+    "func arg": "(data)",
+    "comments": ""
+}{
+    "source file": "var.py",
+    "line number": "24",
+    "func name": "equal_slices",
+    "func arg": "(s1, s2)",
+    "comments": ""
+}{}{
+    "source file": "versioneer.py",
+    "line number": "1779",
+    "func name": "scan_setup_py",
+    "func arg": "()",
+    "comments": "Validate the contents of setup.py against Versioneer's expectations.\n\n\n"
+}{
+    "source file": "vm.py",
+    "line number": "28",
+    "func name": "calculate_reallocate_info",
+    "func arg": "(order, fgraph, storage_map, compute_map_re, dependencies)",
+    "comments": "WRITEME : explain the parameters\n\n\n"
+}{
+    "source file": "windows.py",
+    "line number": "68",
+    "func name": "output_subprocess_Popen",
+    "func arg": "(command, **params)",
+    "comments": "Calls subprocess_Popen, returning the output, error and exit code in a tuple.\n\n\n"
+}{}

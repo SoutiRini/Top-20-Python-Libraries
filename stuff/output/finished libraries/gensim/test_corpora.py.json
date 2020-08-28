@@ -1,0 +1,7 @@
+{
+    "source file": "test_corpora.py",
+    "line number": "610",
+    "func name": "custom_tokenizer",
+    "func arg": "(content, token_min_len, token_max_len, lower)",
+    "comments": ""
+}

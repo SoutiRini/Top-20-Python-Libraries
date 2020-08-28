@@ -1,0 +1,7 @@
+{
+    "source file": "test_construct172.py",
+    "line number": "21",
+    "func name": "_sprandn",
+    "func arg": "(m, n, density, format, dtype, random_state)",
+    "comments": ""
+}

@@ -1,0 +1,7 @@
+{
+    "source file": "test_mixins.py",
+    "line number": "59",
+    "func name": "_assert_equal_type_and_value",
+    "func arg": "(result, expected, err_msg)",
+    "comments": ""
+}

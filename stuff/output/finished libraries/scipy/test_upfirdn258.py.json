@@ -1,0 +1,7 @@
+{
+    "source file": "test_upfirdn258.py",
+    "line number": "47",
+    "func name": "upfirdn_naive",
+    "func arg": "(x, h, up, down)",
+    "comments": "Naive upfirdn processing in Python.\n\nNote: arg order (x, h) differs to facilitate apply_along_axis use.\n"
+}

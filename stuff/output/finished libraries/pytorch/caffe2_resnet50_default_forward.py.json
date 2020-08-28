@@ -1,0 +1,7 @@
+{
+    "source file": "caffe2_resnet50_default_forward.py",
+    "line number": "9",
+    "func name": "gen_forward_pass_builder_fun",
+    "func arg": "(model, dataset, is_train)",
+    "comments": ""
+}

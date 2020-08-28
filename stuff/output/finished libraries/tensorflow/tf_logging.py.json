@@ -1,0 +1,7 @@
+{
+    "source file": "tf_logging.py",
+    "line number": "324",
+    "func name": "_get_thread_id",
+    "func arg": "()",
+    "comments": "Get id of current thread, suitable for logging as an unsigned quantity.\n\n\n"
+}

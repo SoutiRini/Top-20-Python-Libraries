@@ -1,0 +1,7 @@
+{
+    "source file": "cf_filter.py",
+    "line number": "16",
+    "func name": "cffilter",
+    "func arg": "(x, low, high, drift)",
+    "comments": "Christiano Fitzgerald asymmetric, random walk filter.\n\nParameters ---------- x : array_like The 1 or 2d array to filter. If 2d, variables are assumed to be in columns. low : float Minimum period of oscillations. Features below low periodicity are filtered out. Default is 6 for quarterly data, giving a 1.5 year periodicity. high : float Maximum period of oscillations. Features above high periodicity are filtered out. Default is 32 for quarterly data, giving an 8 year periodicity. drift : bool Whether or not to remove a trend from the data. The trend is estimated as np.arange(nobs)*(x[-1]\n\n- x[0])/(len(x)-1).\n##### Returns\n* **cycle **: array_like\n    The features of x between the periodicities low and high.\n\n* **trend **: array_like\n    The trend in the data with the cycles removed.\n\n* **.. plot**: \n\n"
+}

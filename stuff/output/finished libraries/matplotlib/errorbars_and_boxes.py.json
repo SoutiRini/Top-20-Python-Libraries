@@ -1,0 +1,7 @@
+{
+    "source file": "errorbars_and_boxes.py",
+    "line number": "42",
+    "func name": "make_error_boxes",
+    "func arg": "(ax, xdata, ydata, xerror, yerror, facecolor, edgecolor, alpha)",
+    "comments": ""
+}

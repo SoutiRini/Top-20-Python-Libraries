@@ -1,0 +1,7 @@
+{
+    "source file": "scope.py",
+    "line number": "107",
+    "func name": "EmptyDeviceScope",
+    "func arg": "()",
+    "comments": "Allow users to 'disable' the device scope behaviour (so it can be controlled at a NetDef::DeviceOption level, not overridden at OperatorDef::DeviceOption level).\n\nThis sets the CurrentDeviceScope() to None, so that the field is not set in CreateOperator(...), etc.\n"
+}

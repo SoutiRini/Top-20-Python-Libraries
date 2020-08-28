@@ -1,0 +1,7 @@
+{
+    "source file": "test_figure.py",
+    "line number": "783",
+    "func name": "test_reused_gridspec",
+    "func arg": "()",
+    "comments": "Test that these all use the same gridspec\n\n\n"
+}

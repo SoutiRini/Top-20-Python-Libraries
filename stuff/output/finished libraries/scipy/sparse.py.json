@@ -1,0 +1,7 @@
+{
+    "source file": "sparse.py",
+    "line number": "34",
+    "func name": "poisson2d",
+    "func arg": "(N, dtype, format)",
+    "comments": "Return a sparse matrix for the 2D Poisson problem with standard 5-point finite difference stencil on a square N-by-N grid.\n\n\n"
+}

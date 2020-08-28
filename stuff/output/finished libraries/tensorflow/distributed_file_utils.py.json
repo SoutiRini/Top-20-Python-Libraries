@@ -1,0 +1,7 @@
+{
+    "source file": "distributed_file_utils.py",
+    "line number": "142",
+    "func name": "remove_temp_dir_with_filepath",
+    "func arg": "(filepath, strategy)",
+    "comments": "Removes the temp path for file after writing is finished.\n\n\n##### Args\n* **filepath**: Original filepath that would be used without distribution.\n\n* **strategy**: The tf.distribute strategy object currently used.\n\n"
+}

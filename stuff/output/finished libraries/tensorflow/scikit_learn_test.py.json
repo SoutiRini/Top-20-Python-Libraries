@@ -1,0 +1,7 @@
+{
+    "source file": "scikit_learn_test.py",
+    "line number": "86",
+    "func name": "assert_regression_works",
+    "func arg": "(reg)",
+    "comments": ""
+}

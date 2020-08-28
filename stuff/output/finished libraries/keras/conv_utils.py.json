@@ -1,0 +1,7 @@
+{
+    "source file": "conv_utils.py",
+    "line number": "130",
+    "func name": "deconv_length",
+    "func arg": "(dim_size, stride_size, kernel_size, padding, output_padding, dilation)",
+    "comments": "Determines output length of a transposed convolution given input length.\n\n# Arguments dim_size: Integer, the input length. stride_size: Integer, the stride along the dimension of `dim_size`. kernel_size: Integer, the kernel size along the dimension of `dim_size`. padding: One of `\"same\"`, `\"valid\"`, `\"full\"`. output_padding: Integer, amount of padding along the output dimension, Can be set to `None` in which case the output length is inferred. dilation: dilation rate, integer.\n\n# Returns The output length (integer).\n"
+}

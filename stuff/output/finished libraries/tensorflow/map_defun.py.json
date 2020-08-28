@@ -1,0 +1,7 @@
+{
+    "source file": "map_defun.py",
+    "line number": "26",
+    "func name": "map_defun",
+    "func arg": "(fn, elems, output_dtypes, output_shapes, max_intra_op_parallelism)",
+    "comments": "Map a function on the list of tensors unpacked from `elems` on dimension 0.\n\n\n##### Args\n* **fn**: A function (`function.defun`) that takes a list of tensors and returns\n  another list of tensors. The output list has the same types as\n  output_dtypes. The elements of the output list have the same dimension 0\n  as `elems`, and the remaining dimensions correspond to those of\n  `fn_output_shapes`.\n\n* **elems**: A list of tensors.\n\n* **output_dtypes**: A list of dtypes corresponding to the output types of the\n  function.\n\n* **output_shapes**: A list of `TensorShape`s corresponding to the output shapes\n  from each invocation of the function on slices of inputs.\n\n* **max_intra_op_parallelism**: An integer. If positive, sets the max parallelism\n  limit of each function call to this.\n\n##### Returns\n"
+}

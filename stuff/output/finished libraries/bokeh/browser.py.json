@@ -1,0 +1,7 @@
+{
+    "source file": "browser.py",
+    "line number": "90",
+    "func name": "view",
+    "func arg": "(location, browser, new, autoraise)",
+    "comments": "Open a browser to view the specified location.\n\n\n##### Args\n* **location (str) **: Location to open\n    If location does not begin with \"http\n\n* **browser (str or None) **: what browser to use (default\n\n* **new (str) **: How to open the location. Valid values are\n\n* **autoraise (bool) **: Whether to automatically raise the location\n    in a new browser window (default\n\n##### Returns\n"
+}

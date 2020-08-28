@@ -1,0 +1,7 @@
+{
+    "source file": "hooks.py",
+    "line number": "23",
+    "func name": "dispatch_hook",
+    "func arg": "(key, hooks, hook_data, **kwargs)",
+    "comments": "Dispatches a hook dictionary on a given piece of data.\n\n\n"
+}

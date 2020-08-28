@@ -1,0 +1,7 @@
+{
+    "source file": "row_partition.py",
+    "line number": "1192",
+    "func name": "_merge_tensors",
+    "func arg": "(t1, t2, name, validate)",
+    "comments": "Merge two optional Tensors with equal values into a single Tensor.\n\n\n##### Args\n* **t1**: tf.Tensor or None\n\n* **t2**: tf.Tensor or None\n\n* **name**: A name for the tensors (for error messages)\n\n* **validate**: If true, then check that `t1` is compatible with `t2` (if both are\n  non-None).\n\n##### Returns\n* **A pair `(merged_value, validated)`**: * `merged_value` is `t1` if it is not None; or `t2` otherwise.\n  * `validated` is true if we validated that t1 and t2 are equal (either\n    by adding a check, or because t1 is t2).\n\n"
+}

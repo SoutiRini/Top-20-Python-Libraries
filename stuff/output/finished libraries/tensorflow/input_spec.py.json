@@ -1,0 +1,7 @@
+{
+    "source file": "input_spec.py",
+    "line number": "237",
+    "func name": "to_tensor_spec",
+    "func arg": "(input_spec, default_dtype)",
+    "comments": "Converts a Keras InputSpec object to a TensorSpec.\n\n\n"
+}

@@ -1,0 +1,7 @@
+{
+    "source file": "kde_plot5.py",
+    "line number": "6",
+    "func name": "measure",
+    "func arg": "(n)",
+    "comments": "Measurement model, return two coupled measurements.\n\n\n"
+}

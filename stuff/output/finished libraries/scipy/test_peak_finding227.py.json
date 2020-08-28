@@ -1,0 +1,7 @@
+{
+    "source file": "test_peak_finding227.py",
+    "line number": "574",
+    "func name": "test_unpack_condition_args",
+    "func arg": "()",
+    "comments": "Verify parsing of condition arguments for `scipy.signal.find_peaks` function.\n\n\n"
+}

@@ -1,0 +1,7 @@
+{
+    "source file": "extras.py",
+    "line number": "1080",
+    "func name": "mvnormcdf",
+    "func arg": "(upper, mu, cov, lower, **kwds)",
+    "comments": "multivariate normal cumulative distribution function\n\nThis is a wrapper for scipy.stats.kde.mvn.mvndst which calculates a rectangular integral over a multivariate normal distribution.\n\nParameters ---------- lower, upper : array_like, 1d lower and upper integration limits with length equal to the number of dimensions of the multivariate normal distribution. It can contain -np.inf or np.inf for open integration intervals mu : array_lik, 1d list or array of means cov : array_like, 2d specifies covariance matrix optional keyword parameters to influence integration * maxpts : int, maximum number of function values allowed. This parameter can be used to limit the time. A sensible strategy is to start with `maxpts` = 1000*N, and then increase `maxpts` if ERROR is too large. * abseps : float absolute error tolerance. * releps : float relative error tolerance.\n##### Returns\n* **cdfvalue **: float\n    value of the integral\n\n* **mvstdnormcdf **: location and scale standardized multivariate normal cdf\n\n"
+}

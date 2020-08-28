@@ -1,0 +1,7 @@
+{
+    "source file": "horizontal_barchart_distribution.py",
+    "line number": "32",
+    "func name": "survey",
+    "func arg": "(results, category_names)",
+    "comments": "Parameters ---------- results : dict A mapping from question labels to a list of answers per category. It is assumed all lists contain the same number of entries and that it matches the length of *category_names*. category_names : list of str The category labels.\n\n\n"
+}

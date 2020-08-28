@@ -1,0 +1,7 @@
+{
+    "source file": "isotonic.py",
+    "line number": "80",
+    "func name": "isotonic_regression",
+    "func arg": "(y)",
+    "comments": "Solve the isotonic regression model.\n\nRead more in the :ref:`User Guide <isotonic>`.\n\nParameters ---------- y : array-like of shape (n_samples,) The data.\n\nsample_weight : array-like of shape (n_samples,), default=None Weights on each point of the regression. If None, weight is set to 1 (equal weights).\n\ny_min : float, default=None Lower bound on the lowest predicted value (the minimum value may still be higher). If not set, defaults to -inf.\n\ny_max : float, default=None Upper bound on the highest predicted value (the maximum may still be lower). If not set, defaults to +inf.\n\nincreasing : bool, default=True Whether to compute ``y_`` is increasing (if set to True) or decreasing (if set to False)\n##### Returns\n* **y_ **: list of floats\n    Isotonic fit of y.\n\n"
+}

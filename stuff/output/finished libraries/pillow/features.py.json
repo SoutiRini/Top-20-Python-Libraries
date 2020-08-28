@@ -1,0 +1,7 @@
+{
+    "source file": "features.py",
+    "line number": "216",
+    "func name": "pilinfo",
+    "func arg": "(out, supported_formats)",
+    "comments": "Prints information about this installation of Pillow. This function can be called with ``python -m PIL``.\n\nparam out: The output stream to print to. Defaults to ``sys.stdout`` if ``None``. :param supported_formats: If ``True``, a list of all supported image file formats will be printed.\n"
+}

@@ -1,0 +1,7 @@
+{
+    "source file": "fitpack77.py",
+    "line number": "659",
+    "func name": "splantider",
+    "func arg": "(tck, n)",
+    "comments": "Compute the spline for the antiderivative (integral) of a given spline.\n\nParameters ---------- tck : BSpline instance or a tuple of (t, c, k) Spline whose antiderivative to compute n : int, optional Order of antiderivative to evaluate. Default: 1\n##### Returns\n* **.. versionadded**: \n\n* **although some floating point error accumulates**: \n\n* **Antiderivative can be used to evaluate definite integrals**: \n\n* ****: math\n\n"
+}

@@ -1,0 +1,7 @@
+{
+    "source file": "kdtree89.py",
+    "line number": "1039",
+    "func name": "distance_matrix",
+    "func arg": "(x, y, p, threshold)",
+    "comments": "Compute the distance matrix.\n\n\n##### Returns\n* **result **: (M, N) ndarray\n    Matrix containing the distance from every vector in `x` to every vector\n    in `y`.\n\n"
+}

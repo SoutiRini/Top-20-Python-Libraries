@@ -1,0 +1,7 @@
+{
+    "source file": "functions.py",
+    "line number": "45",
+    "func name": "get_param_info",
+    "func arg": "(sig)",
+    "comments": "Find parameters with defaults and return them.\n\nArguments: sig (Signature) : a function signature\n##### Returns\n* **tuple(list, list) **: parameters with defaults\n\n"
+}

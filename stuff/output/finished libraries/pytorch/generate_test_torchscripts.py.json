@@ -1,0 +1,7 @@
+{
+    "source file": "generate_test_torchscripts.py",
+    "line number": "5",
+    "func name": "scriptAndSave",
+    "func arg": "(module, fileName)",
+    "comments": ""
+}

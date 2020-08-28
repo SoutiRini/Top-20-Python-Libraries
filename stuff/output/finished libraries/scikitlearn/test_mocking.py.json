@@ -1,0 +1,7 @@
+{
+    "source file": "test_mocking.py",
+    "line number": "163",
+    "func name": "test_checking_classifier_methods_to_check",
+    "func arg": "(iris, methods_to_check, predict_method)",
+    "comments": ""
+}

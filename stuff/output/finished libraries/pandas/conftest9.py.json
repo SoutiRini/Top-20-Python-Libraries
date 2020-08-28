@@ -1,0 +1,7 @@
+{
+    "source file": "conftest9.py",
+    "line number": "47",
+    "func name": "check_for_file_leaks",
+    "func arg": "()",
+    "comments": "Fixture to run around every test to ensure that we are not leaking files.\n\nSee also -------- _test_decorators.check_file_leaks\n"
+}

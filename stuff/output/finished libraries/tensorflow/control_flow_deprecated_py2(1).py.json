@@ -1,0 +1,7 @@
+{
+    "source file": "control_flow_deprecated_py2(1).py",
+    "line number": "1152",
+    "func name": "_py_if_stmt",
+    "func arg": "(cond, body, orelse)",
+    "comments": "Overload of if_stmt that executes a Python if statement.\n\n\n"
+}

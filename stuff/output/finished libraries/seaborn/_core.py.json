@@ -1,0 +1,7 @@
+{
+    "source file": "_core.py",
+    "line number": "1274",
+    "func name": "categorical_order",
+    "func arg": "(vector, order)",
+    "comments": "Return a list of unique data values.\n\nDetermine an ordered list of levels in ``values``.\n\nParameters ---------- vector : list, array, Categorical, or Series Vector of \"categorical\" values order : list-like, optional Desired order of category levels to override the order determined from the ``values`` object.\n##### Returns\n* **order **: list\n    Ordered list of category levels not including null values.\n\n"
+}

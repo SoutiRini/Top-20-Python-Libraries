@@ -1,0 +1,7 @@
+{
+    "source file": "input_ops.py",
+    "line number": "68",
+    "func name": "_clone_helper",
+    "func arg": "(op_to_clone, variant_tensor_ops)",
+    "comments": "Helper method that recursively clones `op_to_clone`.\n\n\n##### Args\n* **op_to_clone**: The op we want to clone.\n\n* **variant_tensor_ops**: A list of ops that we have to clone along the way.\n\n##### Returns\n"
+}

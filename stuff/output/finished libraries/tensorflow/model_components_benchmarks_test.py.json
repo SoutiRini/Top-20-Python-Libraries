@@ -1,0 +1,7 @@
+{
+    "source file": "model_components_benchmarks_test.py",
+    "line number": "86",
+    "func name": "run_benchmark",
+    "func arg": "(func, num_iters, execution_mode)",
+    "comments": ""
+}

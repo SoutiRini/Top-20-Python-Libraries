@@ -1,0 +1,7 @@
+{
+    "source file": "checkpoint_utils_test.py",
+    "line number": "42",
+    "func name": "_create_checkpoints",
+    "func arg": "(sess, checkpoint_dir)",
+    "comments": ""
+}

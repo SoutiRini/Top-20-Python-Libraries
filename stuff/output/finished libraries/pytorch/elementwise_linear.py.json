@@ -1,0 +1,7 @@
+{
+    "source file": "elementwise_linear.py",
+    "line number": "44",
+    "func name": "elementwise_linear",
+    "func arg": "(model, **kwargs)",
+    "comments": ""
+}

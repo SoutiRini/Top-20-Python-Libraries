@@ -1,0 +1,7 @@
+{
+    "source file": "image_preprocessing_test.py",
+    "line number": "131",
+    "func name": "get_numpy_center_crop",
+    "func arg": "(images, expected_height, expected_width)",
+    "comments": ""
+}

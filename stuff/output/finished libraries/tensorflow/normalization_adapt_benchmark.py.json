@@ -1,0 +1,7 @@
+{
+    "source file": "normalization_adapt_benchmark.py",
+    "line number": "41",
+    "func name": "reduce_fn",
+    "func arg": "(state, values)",
+    "comments": "tf.data.Dataset-friendly implementation of mean and variance.\n\n\n"
+}

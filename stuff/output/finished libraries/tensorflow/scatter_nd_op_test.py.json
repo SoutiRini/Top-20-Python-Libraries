@@ -1,0 +1,7 @@
+{
+    "source file": "scatter_nd_op_test.py",
+    "line number": "66",
+    "func name": "_NumpyUpdate",
+    "func arg": "(indices, updates, shape)",
+    "comments": ""
+}

@@ -1,0 +1,7 @@
+{
+    "source file": "function_test1.py",
+    "line number": "111",
+    "func name": "_spec_for_value",
+    "func arg": "(value)",
+    "comments": "Returns the (nested) TypeSpec for a value.\n\n\n"
+}

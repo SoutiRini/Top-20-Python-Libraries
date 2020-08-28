@@ -1,0 +1,7 @@
+{
+    "source file": "utils95.py",
+    "line number": "330",
+    "func name": "as_numpy_dataset",
+    "func arg": "(ds, as_pandas, retain_index)",
+    "comments": "Convert a pandas dataset to a NumPy dataset\n\n\n"
+}

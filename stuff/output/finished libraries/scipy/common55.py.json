@@ -1,0 +1,7 @@
+{
+    "source file": "common55.py",
+    "line number": "232",
+    "func name": "electrocardiogram",
+    "func arg": "()",
+    "comments": "Load an electrocardiogram as an example for a 1-D signal.\n\nThe returned signal is a 5 minute long electrocardiogram (ECG), a medical recording of the heart's electrical activity, sampled at 360 Hz.\n##### Returns\n* **ecg **: ndarray\n    The electrocardiogram in millivolt (mV) sampled at 360 Hz.\n\n* **The provided signal is an excerpt (19**: 35 to 24\n\n* **.. _record 208**: https\n\n* **.. versionadded**: \n\n* **.. [1] Moody GB, Mark RG. The impact of the MIT-BIH Arrhythmia Database.\n       IEEE Eng in Med and Biol 20(3)**: 45-50 (May-June 2001).\n       (PMID\n\n* **.. [2] Goldberger AL, Amaral LAN, Glass L, Hausdorff JM, Ivanov PCh,\n       Mark RG, Mietus JE, Moody GB, Peng C-K, Stanley HE. PhysioBank,\n       PhysioToolkit, and PhysioNet**: Components of a New Research Resource\n       for Complex Physiologic Signals. Circulation 101(23)\n\n* **At several points large artifacts disturb the recording, e.g.**: \n\n"
+}

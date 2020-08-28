@@ -1,0 +1,7 @@
+{
+    "source file": "modify_model_interface_lib.py",
+    "line number": "52",
+    "func name": "modify_model_interface",
+    "func arg": "(input_file, output_file, input_type, output_type)",
+    "comments": "Modify a quantized model's interface (input/output) from float to integer.\n\n\n##### Args\n* **input_file**: Full path name to the input tflite file.\n\n* **output_file**: Full path name to the output tflite file.\n\n* **input_type**: Final input interface type.\n\n* **output_type**: Final output interface type.\n\n"
+}

@@ -1,0 +1,7 @@
+{
+    "source file": "test_pickle_unpickle_theano_fn.py",
+    "line number": "57",
+    "func name": "test_pickle_unpickle_without_reoptimization",
+    "func arg": "()",
+    "comments": ""
+}

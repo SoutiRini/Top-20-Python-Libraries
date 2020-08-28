@@ -1,0 +1,7 @@
+{
+    "source file": "resize_nearest_neighbor.py",
+    "line number": "27",
+    "func name": "make_resize_nearest_neighbor_tests",
+    "func arg": "(options)",
+    "comments": "Make a set of tests to do resize_nearest_neighbor.\n\n\n"
+}

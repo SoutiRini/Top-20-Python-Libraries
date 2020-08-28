@@ -1,0 +1,7 @@
+{
+    "source file": "radau.py",
+    "line number": "139",
+    "func name": "predict_factor",
+    "func arg": "(h_abs, h_abs_old, error_norm, error_norm_old)",
+    "comments": "Predict by which factor to increase/decrease the step size.\n\nThe algorithm is described in [1]_.\n\nParameters ---------- h_abs, h_abs_old : float Current and previous values of the step size, `h_abs_old` can be None (see Notes). error_norm, error_norm_old : float Current and previous values of the error norm, `error_norm_old` can be None (see Notes).\n##### Returns\n* **factor **: float\n    Predicted factor.\n\n* **.. [1] E. Hairer, S. P. Norsett G. Wanner, \"Solving Ordinary Differential\n       Equations II**: Stiff and Differential-Algebraic Problems\", Sec. IV.8.\n\n"
+}

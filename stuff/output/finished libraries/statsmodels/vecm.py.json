@@ -1,0 +1,7 @@
+{
+    "source file": "vecm.py",
+    "line number": "526",
+    "func name": "coint_johansen",
+    "func arg": "(endog, det_order, k_ar_diff)",
+    "comments": "Johansen cointegration test of the cointegration rank of a VECM\n\nParameters ---------- endog : array_like (nobs_tot x neqs) Data to test det_order : int * -1\n\n- no deterministic terms * 0\n\n- constant term * 1\n\n- linear trend k_ar_diff : int, nonnegative Number of lagged differences in the model.\n##### Returns\n* **result **: JohansenTestResult\n    An object containing the test's results. The most important attributes\n    of the result class are\n\n"
+}

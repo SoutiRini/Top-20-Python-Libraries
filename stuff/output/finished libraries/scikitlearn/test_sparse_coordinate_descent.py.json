@@ -1,0 +1,7 @@
+{
+    "source file": "test_sparse_coordinate_descent.py",
+    "line number": "293",
+    "func name": "test_sparse_enet_coordinate_descent",
+    "func arg": "()",
+    "comments": "Test that a warning is issued if model does not converge\n\n\n"
+}

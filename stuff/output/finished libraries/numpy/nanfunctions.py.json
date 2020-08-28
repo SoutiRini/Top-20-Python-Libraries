@@ -1,0 +1,7 @@
+{
+    "source file": "nanfunctions.py",
+    "line number": "1570",
+    "func name": "nanstd",
+    "func arg": "(a, axis, dtype, out, ddof, keepdims)",
+    "comments": "Compute the standard deviation along the specified axis, while ignoring NaNs.\n\n\n##### Returns\n* **standard_deviation **: ndarray, see dtype parameter above.\n    If `out` is None, return a new array containing the standard\n    deviation, otherwise return a reference to the output array. If\n    ddof is >= the number of non-NaN elements in a slice or the slice\n    contains only NaNs, then the result for that slice is NaN.\n\n* **deviations from the mean**: ``std = sqrt(mean(abs(x - x.mean())**2))``.\n\n"
+}

@@ -1,0 +1,7 @@
+{
+    "source file": "_normalize1.py",
+    "line number": "114",
+    "func name": "_json_normalize",
+    "func arg": "(data, record_path, meta, meta_prefix, record_prefix, errors, sep, max_level)",
+    "comments": "Normalize semi-structured JSON data into a flat table.\n\nParameters ---------- data : dict or list of dicts Unserialized JSON objects. record_path : str or list of str, default None Path in each object to list of records. If not passed, data will be assumed to be an array of records. meta : list of paths (str or list of str), default None Fields to use as metadata for each record in resulting table. meta_prefix : str, default None If True, prefix records with dotted (?) path, e.g. foo.bar.field if meta is ['foo', 'bar']. record_prefix : str, default None If True, prefix records with dotted (?) path, e.g. foo.bar.field if path to records is ['foo', 'bar']. errors : {'raise', 'ignore'}, default 'raise' Configures error handling.\n\n* 'ignore' : will ignore KeyError if keys listed in meta are not always present. * 'raise' : will raise KeyError if keys listed in meta are not always present. sep : str, default '.' Nested records will generate names separated by sep. e.g., for sep='.', {'foo': {'bar': 0}} -> foo.bar. max_level : int, default None Max number of levels(depth of dict) to normalize. if None, normalizes all levels.\n\n.. versionadded:: 0.25.0\n"
+}

@@ -1,0 +1,7 @@
+{
+    "source file": "fftpack_pseudo_diffs.py",
+    "line number": "49",
+    "func name": "direct_shift",
+    "func arg": "(x, a, period)",
+    "comments": ""
+}

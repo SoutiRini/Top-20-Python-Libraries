@@ -1,0 +1,7 @@
+{
+    "source file": "symbolic_opset12.py",
+    "line number": "100",
+    "func name": "le",
+    "func arg": "(g, input, other)",
+    "comments": ""
+}

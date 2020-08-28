@@ -1,0 +1,7 @@
+{
+    "source file": "neg.py",
+    "line number": "27",
+    "func name": "make_neg_tests",
+    "func arg": "(options)",
+    "comments": "Make a set of tests to do neg.\n\n\n"
+}

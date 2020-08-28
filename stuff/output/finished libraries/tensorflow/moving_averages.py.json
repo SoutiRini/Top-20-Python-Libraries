@@ -1,0 +1,7 @@
+{
+    "source file": "moving_averages.py",
+    "line number": "195",
+    "func name": "_zero_debias",
+    "func arg": "(strategy, unbiased_var, value, decay)",
+    "comments": "Compute the delta required for a debiased Variable.\n\nAll exponential moving averages initialized with Tensors are initialized to 0, and therefore are biased to 0. Variables initialized to 0 and used as EMAs are similarly biased. This function creates the debias updated amount according to a scale factor, as in (Kingma et al., 2015).\n\nTo demonstrate the bias the results from 0-initialization, take an EMA that was initialized to `0` with decay `b`. After `t` timesteps of seeing the constant `c`, the variable have the following value:\n\n``` EMA = 0*b^(t) + c*(1\n\n- b)*b^(t-1) + c*(1\n\n- b)*b^(t-2) + ... = c*(1\n\n- b^t) ```\n\nTo have the true value `c`, we would divide by the scale factor `1\n\n- b^t`.\n\nIn order to perform debiasing, we use two shadow variables. One keeps track of the biased estimate, and the other keeps track of the number of updates that have occurred.\n##### Args\n* **strategy**: `Strategy` used to create and update variables.\n\n* **unbiased_var**: A Variable representing the current value of the unbiased EMA.\n\n* **value**: A Tensor representing the most recent value.\n\n* **decay**: A Tensor representing `1-decay` for the EMA.\n\n##### Returns\n* **ferences**: \n\n* **Adam - A Method for Stochastic Optimization**: [Kingma et al., 2015](https\n\n"
+}

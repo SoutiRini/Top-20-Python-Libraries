@@ -1,0 +1,7 @@
+{
+    "source file": "bspline.py",
+    "line number": "163",
+    "func name": "_zero_triband",
+    "func arg": "(a, lower)",
+    "comments": "Explicitly zero out unused elements of a real symmetric banded matrix.\n\nINPUTS: a\n\n -- a real symmetric banded matrix (either upper or lower hald) lower\n\n -- if True, a is assumed to be the lower half\n"
+}

@@ -1,0 +1,7 @@
+{
+    "source file": "bench.py",
+    "line number": "82",
+    "func name": "compare_functions_2v",
+    "func arg": "(func, nloop, test, xs, nmxs, ys, nmys, xl, nmxl, yl, nmyl)",
+    "comments": ""
+}

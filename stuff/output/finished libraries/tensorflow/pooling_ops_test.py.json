@@ -1,0 +1,7 @@
+{
+    "source file": "pooling_ops_test.py",
+    "line number": "63",
+    "func name": "GetTestConfigs",
+    "func arg": "()",
+    "comments": "Get all the valid tests configs to run.\n\n\n##### Returns\n"
+}

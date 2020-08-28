@@ -1,0 +1,7 @@
+{
+    "source file": "special_matrices.py",
+    "line number": "1195",
+    "func name": "convolution_matrix",
+    "func arg": "(a, n, mode)",
+    "comments": "Construct a convolution matrix.\n\nConstructs the Toeplitz matrix representing one-dimensional convolution [1]_.\n\nSee the notes below for details.\n\nParameters ---------- a : (m,) array_like The 1-D array to convolve. n : int The number of columns in the resulting matrix.\n\nIt gives the length of the input to be convolved with `a`.\n\nThis is analogous to the length of `v` in ``numpy.convolve(a, v)``. mode : str This is analogous to `mode` in ``numpy.convolve(v, a, mode)``. It must be one of ('full', 'valid', 'same'). See below for how `mode` determines the shape of the result.\n##### Returns\n* **A **: (k, n) ndarray\n    The convolution matrix whose row count `k` depends on `mode`\n\n* **toeplitz **: Toeplitz matrix\n\n* **The code**: \n\n* **In the default 'full' mode, the entries of `A` are given by**: \n\n* **``[x, y, z]``.  The convolution matrix has the form**: \n\n* **In 'valid' mode, the entries of `A` are given by**: \n\n* **row.  For input ``[x, y, z]``, this array looks like**: \n\n* **In the 'same' mode, the entries of `A` are given by**: \n\n* **For input ``[x, y, z]``, this array looks like**: \n\n* **.. versionadded**: \n\n* **.. [1] \"Convolution\", https**: //en.wikipedia.org/wiki/Convolution\n\n"
+}

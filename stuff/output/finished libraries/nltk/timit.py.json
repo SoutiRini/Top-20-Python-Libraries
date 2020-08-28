@@ -1,0 +1,7 @@
+{
+    "source file": "timit.py",
+    "line number": "484",
+    "func name": "read_timit_block",
+    "func arg": "(stream)",
+    "comments": "Block reader for timit tagged sentences, which are preceded by a sentence number that will be ignored.\n\n\n"
+}

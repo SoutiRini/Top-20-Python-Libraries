@@ -1,0 +1,7 @@
+{
+    "source file": "internals.py",
+    "line number": "1132",
+    "func name": "raise_unorderable_types",
+    "func arg": "(ordering, a, b)",
+    "comments": ""
+}

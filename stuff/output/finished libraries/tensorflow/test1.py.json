@@ -1,0 +1,7 @@
+{
+    "source file": "test1.py",
+    "line number": "106",
+    "func name": "is_built_with_xla",
+    "func arg": "()",
+    "comments": "Returns whether TensorFlow was built with XLA support.\n\n\n"
+}

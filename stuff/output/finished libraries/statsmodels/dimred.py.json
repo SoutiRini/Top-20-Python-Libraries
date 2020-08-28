@@ -1,0 +1,7 @@
+{
+    "source file": "dimred.py",
+    "line number": "452",
+    "func name": "_grass_opt",
+    "func arg": "(params, fun, grad, maxiter, gtol)",
+    "comments": "Minimize a function on a Grassmann manifold.\n\nParameters ---------- params : array_like Starting value for the optimization. fun : function The function to be minimized. grad : function The gradient of fun. maxiter : int The maximum number of iterations. gtol : float Convergence occurs when the gradient norm falls below this value.\n##### Returns\n* **params **: array_like\n    The minimizing value for the objective function.\n\n* **fval **: float\n    The smallest achieved value of the objective function.\n\n* **cnvrg **: bool\n    True if the algorithm converged to a limit point.\n\n* **http**: //math.mit.edu/~edelman/publications/geometry_of_algorithms.pdf\n\n"
+}

@@ -1,0 +1,7 @@
+{
+    "source file": "type_spec.py",
+    "line number": "590",
+    "func name": "register_type_spec_from_value_converter",
+    "func arg": "(type_object, converter_fn, allow_subclass)",
+    "comments": "Registers a function for converting values with a given type to TypeSpecs.\n\nIf multiple registered `type_object`s match a value, then the most recent registration takes precedence.\n\nCustom converters should not be defined for `CompositeTensor`s; use `CompositeTensor._type_spec` instead.\n##### Args\n* **type_object**: A Python `type` object representing the type of values\n  accepted by `converter_fn`.\n\n* **converter_fn**: A function that takes one argument (an instance of the\n  type represented by `type_object`) and returns a `TypeSpec`.\n\n* **allow_subclass**: If true, then use `isinstance(value, type_object)` to\n  check for matches.  If false, then use `type(value) is type_object`.\n\n"
+}

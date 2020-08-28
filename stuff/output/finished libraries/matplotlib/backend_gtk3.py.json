@@ -1,0 +1,7 @@
+{
+    "source file": "backend_gtk3.py",
+    "line number": "902",
+    "func name": "error_msg_gtk",
+    "func arg": "(msg, parent)",
+    "comments": ""
+}

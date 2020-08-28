@@ -1,0 +1,7 @@
+{
+    "source file": "basevalidators.py",
+    "line number": "203",
+    "func name": "type_str",
+    "func arg": "(v)",
+    "comments": "Return a type string of the form module.name for the input value v\n\n\n"
+}

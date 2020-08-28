@@ -1,0 +1,7 @@
+{
+    "source file": "profiler.py",
+    "line number": "1035",
+    "func name": "build_table",
+    "func arg": "(events, sort_by, header, row_limit, use_cuda, profile_memory)",
+    "comments": "Prints a summary of events (which can be a list of FunctionEvent or FunctionEventAvg).\n\n\n"
+}

@@ -1,0 +1,7 @@
+{
+    "source file": "collocations.py",
+    "line number": "355",
+    "func name": "demo",
+    "func arg": "(scorer, compare_scorer)",
+    "comments": "Finds bigram collocations in the files of the WebText corpus.\n\n\n"
+}

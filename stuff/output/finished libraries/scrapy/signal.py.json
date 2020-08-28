@@ -1,0 +1,7 @@
+{
+    "source file": "signal.py",
+    "line number": "75",
+    "func name": "disconnect_all",
+    "func arg": "(signal, sender)",
+    "comments": "Disconnect all signal handlers. Useful for cleaning up after running tests\n\n\n"
+}

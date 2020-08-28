@@ -1,0 +1,7 @@
+{
+    "source file": "saved_model_benchmark_util.py",
+    "line number": "30",
+    "func name": "save_and_load_benchmark",
+    "func arg": "(app)",
+    "comments": "Util for saved model benchmarks.\n\n\n"
+}

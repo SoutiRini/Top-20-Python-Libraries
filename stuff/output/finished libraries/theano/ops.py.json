@@ -1,0 +1,7 @@
+{
+    "source file": "ops.py",
+    "line number": "367",
+    "func name": "spectral_radius_bound",
+    "func arg": "(X, log2_exponent)",
+    "comments": "Returns upper bound on the largest eigenvalue of square symmetrix matrix X.\n\nlog2_exponent must be a positive-valued integer. The larger it is, the slower and tighter the bound. Values up to 5 should usually suffice. The algorithm works by multiplying X by itself this many times.\n\nFrom V.Pan, 1990. \"Estimating the Extremal Eigenvalues of a Symmetric Matrix\", Computers Math Applic. Vol 20 n. 2 pp 17-22. Rq: an efficient algorithm, not used here, is defined in this paper.\n"
+}

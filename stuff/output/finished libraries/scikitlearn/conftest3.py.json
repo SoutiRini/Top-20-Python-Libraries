@@ -1,0 +1,7 @@
+{
+    "source file": "conftest3.py",
+    "line number": "5",
+    "func name": "pytest_ignore_collect",
+    "func arg": "(path, config)",
+    "comments": ""
+}

@@ -1,0 +1,7 @@
+{
+    "source file": "backend_test.py",
+    "line number": "74",
+    "func name": "compare_two_inputs_op_to_numpy",
+    "func arg": "(keras_op, np_op, input_shape_a, input_shape_b, dtype, keras_args, keras_kwargs, np_args, np_kwargs)",
+    "comments": ""
+}

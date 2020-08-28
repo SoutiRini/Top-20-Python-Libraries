@@ -1,0 +1,7 @@
+{
+    "source file": "test_compression2.py",
+    "line number": "88",
+    "func name": "test_to_json_compression",
+    "func arg": "(compression_only, read_infer, to_infer)",
+    "comments": ""
+}

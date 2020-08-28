@@ -1,0 +1,7 @@
+{
+    "source file": "special_math_ops.py",
+    "line number": "1159",
+    "func name": "_einsum_v2_parse_and_resolve_equation",
+    "func arg": "(equation, input_shapes)",
+    "comments": "Helper which validates einsum equation and resolves input shapes.\n\n\n"
+}

@@ -1,0 +1,7 @@
+{
+    "source file": "style_sheets_reference.py",
+    "line number": "102",
+    "func name": "plot_figure",
+    "func arg": "(style_label)",
+    "comments": "Setup and plot the demonstration figure with a given style.\n\n\n"
+}

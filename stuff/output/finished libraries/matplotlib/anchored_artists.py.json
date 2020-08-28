@@ -1,0 +1,7 @@
+{
+    "source file": "anchored_artists.py",
+    "line number": "107",
+    "func name": "draw_sizebar",
+    "func arg": "(ax)",
+    "comments": "Draw a horizontal bar with length of 0.1 in data coordinates, with a fixed label underneath.\n\n\n"
+}

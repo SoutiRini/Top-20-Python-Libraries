@@ -1,0 +1,7 @@
+{
+    "source file": "ImageColor.py",
+    "line number": "119",
+    "func name": "getcolor",
+    "func arg": "(color, mode)",
+    "comments": "Same as :py:func:`~PIL.ImageColor.getrgb`, but converts the RGB value to a greyscale value if the mode is not color or a palette image. If the string cannot be parsed, this function raises a :py:exc:`ValueError` exception.\n\n.. versionadded:: 1.1.4\n\n:param color: A color string :return: ``(graylevel [, alpha]) or (red, green, blue[, alpha])``\n"
+}

@@ -1,0 +1,7 @@
+{
+    "source file": "test_xarray_input.py",
+    "line number": "124",
+    "func name": "test_color_validator_object",
+    "func arg": "(color_validator, color_object_xarray)",
+    "comments": ""
+}

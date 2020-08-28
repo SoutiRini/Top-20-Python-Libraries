@@ -1,0 +1,7 @@
+{
+    "source file": "ragged_array_ops.py",
+    "line number": "771",
+    "func name": "_cross_internal",
+    "func arg": "(inputs, hashed_output, num_buckets, hash_key, name)",
+    "comments": "Generates feature cross from a list of ragged and dense tensors.\n\n\n"
+}

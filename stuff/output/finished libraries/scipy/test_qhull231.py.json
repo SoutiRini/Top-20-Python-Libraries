@@ -1,0 +1,7 @@
+{
+    "source file": "test_qhull231.py",
+    "line number": "547",
+    "func name": "assert_hulls_equal",
+    "func arg": "(points, facets_1, facets_2)",
+    "comments": ""
+}

@@ -1,0 +1,7 @@
+{
+    "source file": "dist_autograd_test34.py",
+    "line number": "164",
+    "func name": "_run_trainer_torchscript",
+    "func arg": "(rref_t1, t2, ps, rank_diff)",
+    "comments": ""
+}

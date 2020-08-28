@@ -1,0 +1,7 @@
+{
+    "source file": "checkpoint15.py",
+    "line number": "166",
+    "func name": "checkpoint_sequential",
+    "func arg": "(functions, segments, input, **kwargs)",
+    "comments": "A helper function for checkpointing sequential models.\n\nSequential models execute a list of modules/functions in order (sequentially). Therefore, we can divide such a model in various segments and checkpoint each segment. All segments except the last will run in :func:`torch.no_grad` manner, i.e., not storing the intermediate activations. The inputs of each checkpointed segment will be saved for re-running the segment in the backward pass.\n\nSee :func:`~torch.utils.checkpoint.checkpoint` on how checkpointing works.\n\n.. warning:: Checkpointing doesn't work with :func:`torch.autograd.grad`, but only with :func:`torch.autograd.backward`.\n\n.. warning: At least one of the inputs needs to have :code:`requires_grad=True` if grads are needed for model inputs, otherwise the checkpointed part of the model won't have gradients.\n\n.. warning: Since PyTorch 1.4, it allows only one Tensor as the input and intermediate outputs, just like :class:`torch.nn.Sequential`.\n##### Args\n* **functions**: A\n\n* **segments**: Number of chunks to create in the model\n\n* **input**: A Tensor that is input to\n\n* **preserve_rng_state(bool, optional, default=True)**: Omit stashing and restoring\n    the RNG state during each checkpoint.\n\n##### Returns\n* **Output of running **: attr\n\n* **ple**: \n\n"
+}

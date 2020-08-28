@@ -1,0 +1,7 @@
+{
+    "source file": "ufunclike.py",
+    "line number": "200",
+    "func name": "isneginf",
+    "func arg": "(x, out)",
+    "comments": "Test element-wise for negative infinity, return result as bool array.\n\nParameters ---------- x : array_like The input array. out : array_like, optional A location into which the result is stored. If provided, it must have a shape that the input broadcasts to. If not provided or None, a freshly-allocated boolean array is returned.\n##### Returns\n* **out **: ndarray\n    A boolean array with the same dimensions as the input.\n    If second argument is not supplied then a numpy boolean array is\n    returned with values True where the corresponding element of the\n    input is negative infinity and values False where the element of\n    the input is not negative infinity.\n    If a second argument is supplied the result is stored there. If the\n    type of that array is a numeric type the result is represented as\n    zeros and ones, if the type is boolean then as False and True. The\n    return value `out` is then a reference to that array.\n\n"
+}

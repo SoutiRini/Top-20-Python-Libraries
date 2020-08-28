@@ -1,0 +1,7 @@
+{
+    "source file": "artist.py",
+    "line number": "1643",
+    "func name": "kwdoc",
+    "func arg": "(artist)",
+    "comments": "Inspect an `~matplotlib.artist.Artist` class (using `.ArtistInspector`) and return information about its settable properties and their current values.\n\nParameters ---------- artist : `~matplotlib.artist.Artist` or an iterable of `Artist`\\s\n##### Returns\n* **str\n    The settable properties of *artist*, as plain text if\n    **: rc\n\n"
+}

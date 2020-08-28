@@ -1,0 +1,7 @@
+{
+    "source file": "waveforms265.py",
+    "line number": "579",
+    "func name": "unit_impulse",
+    "func arg": "(shape, idx, dtype)",
+    "comments": "Unit impulse signal (discrete delta function) or unit basis vector.\n\nParameters ---------- shape : int or tuple of int Number of samples in the output (1-D), or a tuple that represents the shape of the output (N-D). idx : None or int or tuple of int or 'mid', optional Index at which the value is 1.\n\nIf None, defaults to the 0th element. If ``idx='mid'``, the impulse will be centered at ``shape // 2`` in all dimensions.\n\nIf an int, the impulse will be at `idx` in all dimensions. dtype : data-type, optional The desired data-type for the array, e.g., ``numpy.int8``.\n\nDefault is ``numpy.float64``.\n##### Returns\n* **y **: ndarray\n    Output array containing an impulse signal.\n\n* **.. versionadded**: \n\n* **An impulse at the 0th element (**: math\n\n* **Impulse offset by 2 samples (**: math\n\n* **2-dimensional impulse, centered**: \n\n* **Impulse at (2, 2), using broadcasting**: \n\n* **Plot the impulse response of a 4th-order Butterworth lowpass filter**: \n\n"
+}

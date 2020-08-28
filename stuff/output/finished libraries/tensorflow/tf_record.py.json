@@ -1,0 +1,7 @@
+{
+    "source file": "tf_record.py",
+    "line number": "174",
+    "func name": "tf_record_random_reader",
+    "func arg": "(path)",
+    "comments": "Creates a reader that allows random-access reads from a TFRecords file.\n\nThe created reader object has the following method:\n\n- `read(offset)`, which returns a tuple of `(record, ending_offset)`, where `record` is the TFRecord read at the offset, and `ending_offset` is the ending offset of the read record.\n\nThe method throws a `tf.errors.DataLossError` if data is corrupted at the given offset. The method throws `IndexError` if the offset is out of range for the TFRecords file.\n\n Usage example: ```py reader = tf_record_random_reader(file_path)\n\nrecord_1, offset_1 = reader.read(0)\n\n# 0 is the initial offset. # offset_1 is the ending offset of the 1st record and the starting offset of # the next.\n\nrecord_2, offset_2 = reader.read(offset_1) # offset_2 is the ending offset of the 2nd record and the starting offset of # the next. # We can jump back and read the first record again if so desired. reader.read(0) ```\n##### Args\n* **path**: The path to the TFRecords file.\n\n##### Returns\n"
+}

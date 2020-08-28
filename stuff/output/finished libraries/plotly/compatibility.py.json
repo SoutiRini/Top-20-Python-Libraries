@@ -1,0 +1,7 @@
+{
+    "source file": "compatibility.py",
+    "line number": "187",
+    "func name": "write_graph_objs_graph_objs",
+    "func arg": "(outdir)",
+    "comments": "Write the plotly/graph_objs/graph_objs.py file\n\nThis module just imports everything from the plotly.graph_objs package. We write it for backward compatibility with legacy imports like:\n\nfrom plotly.graph_objs import graph_objs\n\nParameters ---------- outdir : str Root outdir in which the graph_objs package should reside\n##### Returns\n"
+}

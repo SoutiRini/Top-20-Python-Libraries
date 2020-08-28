@@ -1,0 +1,7 @@
+{
+    "source file": "nvtx.py",
+    "line number": "37",
+    "func name": "mark",
+    "func arg": "(msg)",
+    "comments": "Describe an instantaneous event that occurred at some point.\n\nArguments: msg (string): ASCII message to associate with the event.\n"
+}

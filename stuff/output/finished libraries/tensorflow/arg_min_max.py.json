@@ -1,0 +1,7 @@
+{
+    "source file": "arg_min_max.py",
+    "line number": "29",
+    "func name": "make_arg_min_max_tests",
+    "func arg": "(options)",
+    "comments": "Make a set of tests to do arg_max.\n\n\n"
+}

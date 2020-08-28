@@ -1,0 +1,7 @@
+{
+    "source file": "flops_registry.py",
+    "line number": "441",
+    "func name": "_add_n_flops",
+    "func arg": "(graph, node)",
+    "comments": "Compute flops for AddN operation.\n\n\n"
+}

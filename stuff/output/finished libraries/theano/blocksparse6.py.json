@@ -1,0 +1,7 @@
+{
+    "source file": "blocksparse6.py",
+    "line number": "222",
+    "func name": "sparse_block_dot",
+    "func arg": "(W, h, inputIdx, b, outputIdx)",
+    "comments": "Compute the dot product (plus bias) of the specified pieces of vectors and matrices. See SparseBlockGemv to get more information.\n\nThe parameter types are actually their expected shapes relative to each other.\n\nParameters ---------- W : iBlocks, oBlocks, iSize, oSize weight matrix h : batch, iWin, iSize input from lower layer (sparse) inputIdx : batch, iWin indexes of the input blocks b : oBlocks, oSize bias vector outputIdx : batch, oWin indexes of the output blocks\n##### Returns\n"
+}

@@ -1,0 +1,7 @@
+{
+    "source file": "axes_divider1.py",
+    "line number": "746",
+    "func name": "make_axes_area_auto_adjustable",
+    "func arg": "(ax, use_axes, pad, adjust_dirs)",
+    "comments": ""
+}

@@ -1,0 +1,7 @@
+{
+    "source file": "patches.py",
+    "line number": "2786",
+    "func name": "_point_along_a_line",
+    "func arg": "(x0, y0, x1, y1, d)",
+    "comments": "Return the point on the line connecting (*x0*, *y0*) -- (*x1*, *y1*) whose distance from (*x0*, *y0*) is *d*.\n\n\n"
+}

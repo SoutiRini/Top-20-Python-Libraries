@@ -1,0 +1,7 @@
+{
+    "source file": "regularized_covariance.py",
+    "line number": "89",
+    "func name": "_calc_approx_inv_cov",
+    "func arg": "(nodewise_row_l, nodewise_weight_l)",
+    "comments": "calculates the approximate inverse covariance matrix\n\nParameters ---------- nodewise_row_l : list A list of array-like object where each object corresponds to the nodewise_row values for the corresponding variable, should be length p. nodewise_weight_l : list A list of scalars where each scalar corresponds to the nodewise_weight value for the corresponding variable, should be length p.\n##### Returns\n"
+}

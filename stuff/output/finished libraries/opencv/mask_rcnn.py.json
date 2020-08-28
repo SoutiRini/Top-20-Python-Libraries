@@ -1,0 +1,7 @@
+{
+    "source file": "mask_rcnn.py",
+    "line number": "53",
+    "func name": "drawBox",
+    "func arg": "(frame, classId, conf, left, top, right, bottom)",
+    "comments": ""
+}

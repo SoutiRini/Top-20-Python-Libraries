@@ -1,0 +1,7 @@
+{
+    "source file": "clapack_scrub.py",
+    "line number": "268",
+    "func name": "scrubSource",
+    "func arg": "(source, nsteps, verbose)",
+    "comments": ""
+}

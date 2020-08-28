@@ -1,0 +1,7 @@
+{
+    "source file": "bench_function_base.py",
+    "line number": "96",
+    "func name": "memoize",
+    "func arg": "(f)",
+    "comments": ""
+}

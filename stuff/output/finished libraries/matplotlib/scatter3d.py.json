@@ -1,0 +1,7 @@
+{
+    "source file": "scatter3d.py",
+    "line number": "16",
+    "func name": "randrange",
+    "func arg": "(n, vmin, vmax)",
+    "comments": "Helper function to make an array of random numbers having shape (n, ) with each number distributed Uniform(vmin, vmax).\n\n\n"
+}

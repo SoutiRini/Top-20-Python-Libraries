@@ -1,0 +1,7 @@
+{
+    "source file": "nkjp.py",
+    "line number": "17",
+    "func name": "_parse_args",
+    "func arg": "(fun)",
+    "comments": "Wraps function arguments: if fileids not specified then function set NKJPCorpusReader paths.\n\n\n"
+}

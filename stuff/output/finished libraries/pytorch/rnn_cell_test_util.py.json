@@ -1,0 +1,7 @@
+{
+    "source file": "rnn_cell_test_util.py",
+    "line number": "20",
+    "func name": "_prepare_rnn",
+    "func arg": "(t, n, dim_in, create_rnn, outputs_with_grads, forget_bias, memory_optim, forward_only, drop_states, T, two_d_initial_states, dim_out, num_states, **kwargs)",
+    "comments": ""
+}

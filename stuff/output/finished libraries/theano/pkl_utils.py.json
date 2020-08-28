@@ -1,0 +1,7 @@
+{
+    "source file": "pkl_utils.py",
+    "line number": "386",
+    "func name": "zipadd",
+    "func arg": "(func, zip_file, name)",
+    "comments": "Calls a function with a file object, saving it to a zip file.\n\nparam func: The function to call. :type func: callable\n\n:param zip_file: The zip file that `func` should write its data to. :type zip_file: :class:`zipfile.ZipFile`\n\n:param name: The name of the file inside of the zipped archive that `func` should save its data to. :type name: str\n"
+}

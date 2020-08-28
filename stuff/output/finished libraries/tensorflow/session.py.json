@@ -1,0 +1,7 @@
+{
+    "source file": "session.py",
+    "line number": "573",
+    "func name": "_name_list",
+    "func arg": "(tensor_list)",
+    "comments": "Utility function for transitioning to the new session API.\n\n\n##### Args\n* **tensor_list**: a list of `Tensor`s.\n\n##### Returns\n"
+}

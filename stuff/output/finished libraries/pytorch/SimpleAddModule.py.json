@@ -1,0 +1,7 @@
+{
+    "source file": "SimpleAddModule.py",
+    "line number": "5",
+    "func name": "add_tensors_loop",
+    "func arg": "(x, y)",
+    "comments": ""
+}

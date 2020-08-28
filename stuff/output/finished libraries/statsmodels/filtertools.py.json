@@ -1,0 +1,7 @@
+{
+    "source file": "filtertools.py",
+    "line number": "302",
+    "func name": "miso_lfilter",
+    "func arg": "(ar, ma, x, useic)",
+    "comments": "Filter multiple time series into a single time series.\n\nUses a convolution to merge inputs, and then lfilter to produce output.\n\nParameters ---------- ar : array_like The coefficients of autoregressive lag polynomial including lag zero, ar(L) in the expression ar(L)y_t. ma : array_like, same ndim as x, currently 2d The coefficient of the moving average lag polynomial, ma(L) in ma(L)x_t. x : array_like The 2-d input data series, time in rows, variables in columns. useic : bool Flag indicating whether to use initial conditions.\n##### Returns\n* **y **: ndarray\n    The filtered output series.\n\n* **inp **: ndarray, 1d\n    The combined input series.\n\n* **miso_lfilter find array y such that**: ar(L)y_t = ma(L)x_t\n\n"
+}

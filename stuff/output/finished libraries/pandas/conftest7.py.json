@@ -1,0 +1,7 @@
+{
+    "source file": "conftest7.py",
+    "line number": "5",
+    "func name": "orient",
+    "func arg": "(request)",
+    "comments": "Fixture for orients excluding the table format.\n\n\n"
+}

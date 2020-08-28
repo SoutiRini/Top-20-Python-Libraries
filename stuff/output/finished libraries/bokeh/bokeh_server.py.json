@@ -1,0 +1,7 @@
+{
+    "source file": "bokeh_server.py",
+    "line number": "62",
+    "func name": "update_data",
+    "func arg": "(attrname, old, new)",
+    "comments": ""
+}

@@ -1,0 +1,7 @@
+{
+    "source file": "test_utils_any2vec.py",
+    "line number": "25",
+    "func name": "save_dict_to_word2vec_formated_file",
+    "func arg": "(fname, word2vec_dict)",
+    "comments": ""
+}

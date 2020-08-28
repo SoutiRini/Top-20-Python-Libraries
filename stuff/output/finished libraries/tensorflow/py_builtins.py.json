@@ -1,0 +1,7 @@
+{
+    "source file": "py_builtins.py",
+    "line number": "627",
+    "func name": "_py_sorted",
+    "func arg": "(iterable, key, reverse)",
+    "comments": ""
+}

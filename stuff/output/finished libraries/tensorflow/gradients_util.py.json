@@ -1,0 +1,7 @@
+{
+    "source file": "gradients_util.py",
+    "line number": "925",
+    "func name": "_AggregatedGrads",
+    "func arg": "(grads, op, gradient_uid, loop_state, aggregation_method)",
+    "comments": "Get the aggregated gradients for op.\n\n\n##### Args\n* **grads**: The map of memoized gradients.\n\n* **op**: The op to get gradients for.\n\n* **gradient_uid**: A unique identifier within the graph indicating\n  which invocation of gradients is being executed. Used to cluster\n  ops for compilation.\n\n* **loop_state**: An object for maintaining the state of the while loops in the\n            graph. It is of type ControlFlowState. None if the graph\n            contains no while loops.\n\n* **aggregation_method**: Specifies the method used to combine gradient terms.\n  Accepted values are constants defined in the class `AggregationMethod`.\n\n##### Returns\n"
+}

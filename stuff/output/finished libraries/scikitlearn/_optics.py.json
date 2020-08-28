@@ -1,0 +1,7 @@
+{
+    "source file": "_optics.py",
+    "line number": "902",
+    "func name": "_extract_xi_labels",
+    "func arg": "(ordering, clusters)",
+    "comments": "Extracts the labels from the clusters returned by `_xi_cluster`. We rely on the fact that clusters are stored with the smaller clusters coming before the larger ones.\n\nParameters ---------- ordering : array-like of shape (n_samples,) The ordering of points calculated by OPTICS\n\nclusters : array-like of shape (n_clusters, 2) List of clusters i.e. (start, end) tuples, as returned by `_xi_cluster`.\n##### Returns\n* **labels **: ndarray of shape (n_samples,)\n\n"
+}

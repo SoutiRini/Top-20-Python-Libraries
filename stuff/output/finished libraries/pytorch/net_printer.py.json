@@ -1,0 +1,7 @@
+{
+    "source file": "net_printer.py",
+    "line number": "409",
+    "func name": "debug_net",
+    "func arg": "(net)",
+    "comments": "Given a Net, produce another net that logs info about the operator call before each operator execution. Use for debugging purposes.\n\n\n"
+}

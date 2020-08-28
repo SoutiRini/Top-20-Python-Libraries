@@ -1,0 +1,7 @@
+{
+    "source file": "test_ops1.py",
+    "line number": "26",
+    "func name": "start_shift",
+    "func arg": "(request)",
+    "comments": "Fixture for generating intervals of different types from a start value and a shift value that can be added to start to generate an endpoint.\n\n\n"
+}

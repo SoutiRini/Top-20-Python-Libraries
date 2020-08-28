@@ -1,0 +1,7 @@
+{
+    "source file": "helpers.py",
+    "line number": "1108",
+    "func name": "is_ip",
+    "func arg": "(value)",
+    "comments": "Determine if the given string is an IP address.\n\nparam value: value to check :type value: str\n\n:return: True if string is an IP address :rtype: bool\n"
+}

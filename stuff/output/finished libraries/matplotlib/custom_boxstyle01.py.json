@@ -1,0 +1,7 @@
+{
+    "source file": "custom_boxstyle01.py",
+    "line number": "28",
+    "func name": "custom_box_style",
+    "func arg": "(x0, y0, width, height, mutation_size, mutation_aspect)",
+    "comments": "Given the location and size of the box, return the path of the box around it.\n\nRotation is automatically taken care of.\n\nParameters ---------- x0, y0, width, height : float Box location and size. mutation_size : float Mutation reference scale, typically the text font size. mutation_aspect Mutation aspect ratio.\n"
+}

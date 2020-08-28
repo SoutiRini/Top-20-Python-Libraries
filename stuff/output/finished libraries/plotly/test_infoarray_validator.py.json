@@ -1,0 +1,7 @@
+{
+    "source file": "test_infoarray_validator.py",
+    "line number": "579",
+    "func name": "test_validator_rejection_number_free_2d_element_value",
+    "func arg": "(val, invalid_inds, validator_number_free_2d)",
+    "comments": ""
+}

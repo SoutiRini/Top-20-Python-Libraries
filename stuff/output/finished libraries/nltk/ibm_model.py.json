@@ -1,0 +1,7 @@
+{
+    "source file": "ibm_model.py",
+    "line number": "47",
+    "func name": "longest_target_sentence_length",
+    "func arg": "(sentence_aligned_corpus)",
+    "comments": "param sentence_aligned_corpus: Parallel corpus under consideration :type sentence_aligned_corpus: list(AlignedSent) :return: Number of words in the longest target language sentence of ``sentence_aligned_corpus``\n\n\n"
+}

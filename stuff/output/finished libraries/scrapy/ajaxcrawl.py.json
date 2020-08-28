@@ -1,0 +1,7 @@
+{
+    "source file": "ajaxcrawl.py",
+    "line number": "70",
+    "func name": "_has_ajaxcrawlable_meta",
+    "func arg": "(text)",
+    "comments": ">>> _has_ajaxcrawlable_meta('<html><head><meta name=\"fragment\"  content=\"!\"/></head><body></body></html>') True >>> _has_ajaxcrawlable_meta(\"<html><head><meta name='fragment' content='!'></head></html>\") True >>> _has_ajaxcrawlable_meta('<html><head><!--<meta name=\"fragment\"  content=\"!\"/>--></head><body></body></html>') False >>> _has_ajaxcrawlable_meta('<html></html>') False\n\n\n"
+}

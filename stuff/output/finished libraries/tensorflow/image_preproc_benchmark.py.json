@@ -1,0 +1,7 @@
+{
+    "source file": "image_preproc_benchmark.py",
+    "line number": "78",
+    "func name": "image_augmentation",
+    "func arg": "(inputs, batch_size)",
+    "comments": "image augmentation.\n\n\n"
+}

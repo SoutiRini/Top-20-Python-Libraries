@@ -1,0 +1,7 @@
+{
+    "source file": "extending.py",
+    "line number": "76",
+    "func name": "bounded_uints",
+    "func arg": "(lb, ub, n, state)",
+    "comments": ""
+}

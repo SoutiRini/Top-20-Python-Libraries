@@ -1,0 +1,7 @@
+{
+    "source file": "orc1.py",
+    "line number": "14",
+    "func name": "read_orc",
+    "func arg": "(path, columns, **kwargs)",
+    "comments": "Load an ORC object from the file path, returning a DataFrame.\n\n.. versionadded:: 1.0.0\n\nParameters ---------- path : str, path object or file-like object Any valid string path is acceptable. The string could be a URL. Valid URL schemes include http, ftp, s3, and file. For file URLs, a host is expected. A local file could be: ``file://localhost/path/to/table.orc``.\n\nIf you want to pass in a path object, pandas accepts any ``os.PathLike``.\n\nBy file-like object, we refer to objects with a ``read()`` method, such as a file handler (e.g. via builtin ``open`` function) or ``StringIO``. columns : list, default None If not None, only these columns will be read from the file. **kwargs Any additional kwargs are passed to pyarrow.\n##### Returns\n"
+}

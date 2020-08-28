@@ -1,0 +1,7 @@
+{
+    "source file": "csr_sparse_matrix_ops_test.py",
+    "line number": "63",
+    "func name": "twist_matrix",
+    "func arg": "(matrix, permutation_indices)",
+    "comments": "Permute the rows and columns of a 2D or (batched) 3D Tensor.\n\n\n"
+}

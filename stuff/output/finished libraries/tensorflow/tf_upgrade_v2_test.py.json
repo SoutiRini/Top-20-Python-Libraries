@@ -1,0 +1,7 @@
+{
+    "source file": "tf_upgrade_v2_test.py",
+    "line number": "60",
+    "func name": "get_func_and_args_from_str",
+    "func arg": "(call_str)",
+    "comments": "Parse call string to get function and argument names.\n\n\n##### Args\n* **call_str**: Call string must be in the form\n\n##### Returns\n"
+}

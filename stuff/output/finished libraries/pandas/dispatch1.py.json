@@ -1,0 +1,7 @@
+{
+    "source file": "dispatch1.py",
+    "line number": "96",
+    "func name": "dispatch_to_extension_op",
+    "func arg": "(op, left, right)",
+    "comments": "Assume that left or right is a Series backed by an ExtensionArray, apply the operator defined by op.\n\nParameters ---------- op : binary operator left : ExtensionArray or np.ndarray right : object\n##### Returns\n"
+}

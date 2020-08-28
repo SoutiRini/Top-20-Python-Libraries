@@ -1,0 +1,7 @@
+{
+    "source file": "symbolic_opset7.py",
+    "line number": "37",
+    "func name": "min",
+    "func arg": "(g, dim_or_y, keepdim)",
+    "comments": ""
+}

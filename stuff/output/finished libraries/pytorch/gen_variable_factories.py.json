@@ -1,0 +1,7 @@
+{
+    "source file": "gen_variable_factories.py",
+    "line number": "60",
+    "func name": "process_function",
+    "func arg": "(decl, has_tensor_options)",
+    "comments": ""
+}

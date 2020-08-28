@@ -1,0 +1,7 @@
+{
+    "source file": "composite_tensor.py",
+    "line number": "94",
+    "func name": "replace_composites_with_components",
+    "func arg": "(structure)",
+    "comments": "Recursively replaces CompositeTensors with their components.\n\n\n##### Args\n* **structure**: A `nest`-compatible structure, possibly containing composite\n  tensors.\n\n##### Returns\n"
+}

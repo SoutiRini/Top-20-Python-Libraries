@@ -1,0 +1,7 @@
+{
+    "source file": "BlpImagePlugin.py",
+    "line number": "160",
+    "func name": "decode_dxt5",
+    "func arg": "(data)",
+    "comments": "input: one \"row\" of data (i.e. will produce 4 * width pixels)\n\n\n"
+}

@@ -1,0 +1,7 @@
+{
+    "source file": "nest1.py",
+    "line number": "1405",
+    "func name": "list_to_tuple",
+    "func arg": "(structure)",
+    "comments": "Replace all lists with tuples.\n\nThe fork of nest that tf.data uses treats lists as single elements, while tf.nest treats them as structures to recurse into. Keras has chosen to adopt the latter convention, and must therefore deeply replace all lists with tuples before passing structures to Dataset.from_generator.\n##### Args\n* **structure**: A nested structure to be remapped.\n\n##### Returns\n"
+}

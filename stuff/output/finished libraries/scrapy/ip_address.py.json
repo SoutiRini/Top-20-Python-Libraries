@@ -1,0 +1,7 @@
+{
+    "source file": "ip_address.py",
+    "line number": "16",
+    "func name": "createResolver",
+    "func arg": "(servers, resolvconf, hosts)",
+    "comments": ""
+}

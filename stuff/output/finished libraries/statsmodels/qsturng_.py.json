@@ -1,0 +1,7 @@
+{
+    "source file": "qsturng_.py",
+    "line number": "845",
+    "func name": "psturng",
+    "func arg": "(q, r, v)",
+    "comments": "Evaluates the probability from 0 to q for a studentized range having v degrees of freedom and r samples.\n\nParameters ---------- q : (scalar, array_like) quantile value of Studentized Range q >= 0. r : (scalar, array_like) The number of samples r >= 2 and r <= 200 (values over 200 are permitted but not recommended) v : (scalar, array_like) The sample degrees of freedom if p >= .9: v >=1 and v >= inf else: v >=2 and v >= inf\n##### Returns\n* **p **: (scalar, array_like)\n    1. - area from zero to q under the Studentized Range\n    distribution. When v == 1, p is bound between .001\n    and .1, when v > 1, p is bound between .001 and .9.\n    Values between .5 and .9 are 1st order appoximations.\n\n"
+}

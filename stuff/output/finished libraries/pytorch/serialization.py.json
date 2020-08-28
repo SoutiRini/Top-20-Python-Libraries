@@ -1,0 +1,7 @@
+{
+    "source file": "serialization.py",
+    "line number": "861",
+    "func name": "_is_torchscript_zip",
+    "func arg": "(zip_file)",
+    "comments": ""
+}

@@ -1,0 +1,7 @@
+{
+    "source file": "test_sparse_pca.py",
+    "line number": "194",
+    "func name": "test_spca_n_components_",
+    "func arg": "(SPCA, n_components)",
+    "comments": ""
+}

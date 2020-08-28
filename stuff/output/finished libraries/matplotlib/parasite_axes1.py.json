@@ -1,0 +1,7 @@
+{
+    "source file": "parasite_axes1.py",
+    "line number": "413",
+    "func name": "host_subplot",
+    "func arg": "(**kwargs)",
+    "comments": "Create a subplot that can act as a host to parasitic axes.\n\nParameters ---------- figure : `matplotlib.figure.Figure` Figure to which the subplot will be added. Defaults to the current figure `.pyplot.gcf()`.\n\n*args, **kwargs Will be passed on to the underlying ``Axes`` object creation.\n"
+}

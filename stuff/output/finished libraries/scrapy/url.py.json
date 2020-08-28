@@ -1,0 +1,7 @@
+{
+    "source file": "url.py",
+    "line number": "136",
+    "func name": "strip_url",
+    "func arg": "(url, strip_credentials, strip_default_port, origin_only, strip_fragment)",
+    "comments": "Strip URL string from some of its components\n\n- ``strip_credentials`` removes \"user:password@\"\n\n- ``strip_default_port`` removes \":80\" (resp. \":443\", \":21\") from http:// (resp. https://, ftp://) URLs\n\n- ``origin_only`` replaces path component with \"/\", also dropping query and fragment components ; it also strips credentials\n\n- ``strip_fragment`` drops any #fragment component\n"
+}

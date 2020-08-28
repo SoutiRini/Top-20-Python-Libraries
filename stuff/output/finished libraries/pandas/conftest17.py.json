@@ -1,0 +1,7 @@
+{
+    "source file": "conftest17.py",
+    "line number": "76",
+    "func name": "wide_multi_index",
+    "func arg": "()",
+    "comments": "Return a MultiIndex that is wider than the display (>80 characters).\n\n\n"
+}

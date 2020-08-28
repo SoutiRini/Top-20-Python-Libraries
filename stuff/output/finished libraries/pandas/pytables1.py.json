@@ -1,0 +1,7 @@
+{
+    "source file": "pytables1.py",
+    "line number": "617",
+    "func name": "maybe_expression",
+    "func arg": "(s)",
+    "comments": "loose checking if s is a pytables-acceptable expression\n\n\n"
+}

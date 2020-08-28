@@ -1,0 +1,7 @@
+{
+    "source file": "_bayesian_mixture.py",
+    "line number": "38",
+    "func name": "_log_wishart_norm",
+    "func arg": "(degrees_of_freedom, log_det_precisions_chol, n_features)",
+    "comments": "Compute the log of the Wishart distribution normalization term.\n\nParameters ---------- degrees_of_freedom : array-like of shape (n_components,) The number of degrees of freedom on the covariance Wishart distributions.\n\nlog_det_precision_chol : array-like of shape (n_components,) The determinant of the precision matrix for each component.\n\nn_features : int The number of features.\n\nReturn ------ log_wishart_norm : array-like of shape (n_components,) The log normalization of the Wishart distribution.\n"
+}

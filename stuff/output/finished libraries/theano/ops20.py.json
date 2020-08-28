@@ -1,0 +1,7 @@
+{
+    "source file": "ops20.py",
+    "line number": "790",
+    "func name": "register_specify_shape_c_code",
+    "func arg": "(typ, code, version, c_support_code_apply)",
+    "comments": "Tell SpecifyShape how to generate C code for a Theano Type.\n\nParameters ---------- typ : Theano type It must be the Theano class itself and not an instance of the class. code : C code Checks the shape and returns a view for the Theano type 'typ'. Use %(iname)s and %(oname)s for the input and output C variable names respectively. %(shape)s is the vector of shape of %(iname)s. Check that its length is good. version A number indicating the version of the code, for cache. c_support_code_apply Extra code.\n"
+}

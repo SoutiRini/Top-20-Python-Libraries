@@ -1,0 +1,7 @@
+{
+    "source file": "basic1.py",
+    "line number": "4075",
+    "func name": "dot",
+    "func arg": "(x, y)",
+    "comments": "Operation for efficiently calculating the dot product when one or all operands is sparse. Supported format are CSC and CSR. The output of the operation is dense.\n\nParameters ---------- x Sparse or dense matrix variable. y Sparse or dense matrix variable.\n##### Returns\n"
+}

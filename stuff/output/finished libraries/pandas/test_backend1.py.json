@@ -1,0 +1,7 @@
+{
+    "source file": "test_backend1.py",
+    "line number": "99",
+    "func name": "test_extra_kinds_ok",
+    "func arg": "(monkeypatch, restore_backend)",
+    "comments": ""
+}

@@ -1,0 +1,7 @@
+{
+    "source file": "data.py",
+    "line number": "663",
+    "func name": "handle_data",
+    "func arg": "(endog, exog, missing, hasconst, **kwargs)",
+    "comments": ""
+}

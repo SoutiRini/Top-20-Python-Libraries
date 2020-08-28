@@ -1,0 +1,7 @@
+{
+    "source file": "ImageMath.py",
+    "line number": "228",
+    "func name": "eval",
+    "func arg": "(expression, _dict, **kw)",
+    "comments": "Evaluates an image expression.\n\nparam expression: A string containing a Python-style expression. :param options: Values to add to the evaluation context.\n\nYou can either use a dictionary, or one or more keyword arguments. :return: The evaluated expression. This is usually an image object, but can also be an integer, a floating point value, or a pixel tuple, depending on the expression.\n"
+}

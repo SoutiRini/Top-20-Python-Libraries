@@ -1,0 +1,7 @@
+{
+    "source file": "tensorboard_exporter.py",
+    "line number": "342",
+    "func name": "ops_to_graph_def",
+    "func arg": "(ops, shapes, **kwargs)",
+    "comments": ""
+}

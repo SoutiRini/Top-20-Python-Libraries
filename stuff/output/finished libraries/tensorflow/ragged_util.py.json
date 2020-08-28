@@ -1,0 +1,7 @@
+{
+    "source file": "ragged_util.py",
+    "line number": "70",
+    "func name": "repeat_ranges",
+    "func arg": "(params, splits, repeats)",
+    "comments": "Repeats each range of `params` (as specified by `splits`) `repeats` times.\n\nLet the `i`th range of `params` be defined as `params[splits[i]:splits[i + 1]]`.\n\nThen this function returns a tensor containing range 0 repeated `repeats[0]` times, followed by range 1 repeated `repeats[1]`, ..., followed by the last range repeated `repeats[-1]` times.\n##### Args\n* **params**: The `Tensor` whose values should be repeated.\n\n* **splits**: A splits tensor indicating the ranges of `params` that should be\n  repeated.\n\n* **repeats**: The number of times each range should be repeated.  Supports\n  broadcasting from a scalar value.\n\n##### Returns\n* **## Example**: \n\n"
+}

@@ -1,0 +1,7 @@
+{
+    "source file": "core2.py",
+    "line number": "8136",
+    "func name": "append",
+    "func arg": "(a, b, axis)",
+    "comments": "Append values to the end of an array.\n\n.. versionadded:: 1.9.0\n\nParameters ---------- a : array_like Values are appended to a copy of this array. b : array_like These values are appended to a copy of `a`.\n\nIt must be of the correct shape (the same shape as `a`, excluding `axis`).\n\nIf `axis` is not specified, `b` can be any shape and will be flattened before use. axis : int, optional The axis along which `v` are appended.\n\nIf `axis` is not given, both `a` and `b` are flattened before use.\n##### Returns\n* **append **: MaskedArray\n    A copy of `a` with `b` appended to `axis`.  Note that `append`\n    does not occur in-place\n\n* **numpy.append **: Equivalent function in the top-level NumPy module.\n\n"
+}

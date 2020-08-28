@@ -1,0 +1,7 @@
+{
+    "source file": "ragged_functional_ops.py",
+    "line number": "97",
+    "func name": "_replace_ragged_with_flat_values",
+    "func arg": "(value, nested_splits_lists)",
+    "comments": "Replace RaggedTensors with their flat_values, and record their splits.\n\n\n##### Args\n* **value**: The value that should be transformed by replacing `RaggedTensors`.\n\n* **nested_splits_lists**: An output parameter used to record the `nested_splits`\n  for any `RaggedTensors` that were replaced.\n\n##### Returns\n"
+}

@@ -1,0 +1,7 @@
+{
+    "source file": "affine_image.py",
+    "line number": "31",
+    "func name": "do_plot",
+    "func arg": "(ax, Z, transform)",
+    "comments": ""
+}

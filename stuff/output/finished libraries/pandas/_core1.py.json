@@ -1,0 +1,7 @@
+{
+    "source file": "_core1.py",
+    "line number": "1645",
+    "func name": "_get_plot_backend",
+    "func arg": "(backend)",
+    "comments": "Return the plotting backend to use (e.g. `pandas.plotting._matplotlib`).\n\nThe plotting system of pandas has been using matplotlib, but the idea here is that it can also work with other third-party backends. In the future, this function will return the backend from a pandas option, and all the rest of the code in this file will use the backend specified there for the plotting.\n\nThe backend is imported lazily, as matplotlib is a soft dependency, and pandas can be used without it being installed.\n"
+}

@@ -1,0 +1,7 @@
+{
+    "source file": "tf_upgrade_v2.py",
+    "line number": "2596",
+    "func name": "_string_split_rtype_transformer",
+    "func arg": "(parent, node, full_name, name, logs)",
+    "comments": "Update tf.strings.split arguments: result_type, source.\n\n\n"
+}

@@ -1,0 +1,7 @@
+{
+    "source file": "blas.py",
+    "line number": "410",
+    "func name": "get_blas_funcs",
+    "func arg": "(names, arrays, dtype, ilp64)",
+    "comments": "Return available BLAS function objects from names.\n\nArrays are used to determine the optimal prefix of BLAS routines.\n\nParameters ---------- names : str or sequence of str Name(s) of BLAS functions without type prefix.\n\narrays : sequence of ndarrays, optional Arrays can be given to determine optimal prefix of BLAS routines. If not given, double-precision routines will be used, otherwise the most generic type in arrays will be used.\n\ndtype : str or dtype, optional Data-type specifier. Not used if `arrays` is non-empty.\n\nilp64 : {True, False, 'preferred'}, optional Whether to return ILP64 routine variant. Choosing 'preferred' returns ILP64 routine if available, and otherwise the 32-bit routine. Default: False\n##### Returns\n* **funcs **: list\n    List containing the found function(s).\n\n"
+}

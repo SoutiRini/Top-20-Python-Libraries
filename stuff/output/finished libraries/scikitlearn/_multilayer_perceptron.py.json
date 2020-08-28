@@ -1,0 +1,7 @@
+{
+    "source file": "_multilayer_perceptron.py",
+    "line number": "37",
+    "func name": "_pack",
+    "func arg": "(coefs_, intercepts_)",
+    "comments": "Pack the parameters into a single vector.\n\n\n"
+}

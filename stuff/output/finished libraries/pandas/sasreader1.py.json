@@ -1,0 +1,7 @@
+{
+    "source file": "sasreader1.py",
+    "line number": "7",
+    "func name": "read_sas",
+    "func arg": "(filepath_or_buffer, format, index, encoding, chunksize, iterator)",
+    "comments": "Read SAS files stored as either XPORT or SAS7BDAT format files.\n\nParameters ---------- filepath_or_buffer : str, path object or file-like object Any valid string path is acceptable. The string could be a URL. Valid URL schemes include http, ftp, s3, and file. For file URLs, a host is expected. A local file could be: ``file://localhost/path/to/table.sas``.\n\nIf you want to pass in a path object, pandas accepts any ``os.PathLike``.\n\nBy file-like object, we refer to objects with a ``read()`` method, such as a file handler (e.g. via builtin ``open`` function) or ``StringIO``. format : str {'xport', 'sas7bdat'} or None If None, file format is inferred from file extension. If 'xport' or 'sas7bdat', uses the corresponding format. index : identifier of index column, defaults to None Identifier of column that should be used as index of the DataFrame. encoding : str, default is None Encoding for text data.\n\nIf None, text data are stored as raw bytes. chunksize : int Read file `chunksize` lines at a time, returns iterator. iterator : bool, defaults to False If True, returns an iterator for reading the file incrementally.\n##### Returns\n"
+}

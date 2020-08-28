@@ -1,0 +1,7 @@
+{
+    "source file": "demo_floating_axes.py",
+    "line number": "88",
+    "func name": "setup_axes3",
+    "func arg": "(fig, rect)",
+    "comments": "Sometimes, things like axis_direction need to be adjusted.\n\n\n"
+}

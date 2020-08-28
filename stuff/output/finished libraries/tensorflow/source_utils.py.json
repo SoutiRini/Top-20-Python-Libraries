@@ -1,0 +1,7 @@
+{
+    "source file": "source_utils.py",
+    "line number": "324",
+    "func name": "annotate_source_against_profile",
+    "func arg": "(profile_data, source_file_path, node_name_filter, op_type_filter, min_line, max_line)",
+    "comments": "Annotate a Python source file with profiling information at each line.\n\n(The annotation doesn't change the source file itself.)\n##### Args\n* **profile_data**: (`list` of `ProfileDatum`) A list of `ProfileDatum`.\n\n* **source_file_path**: (`str`) Path to the source file being annotated.\n\n* **node_name_filter**: Regular expression to filter by node name.\n\n* **op_type_filter**: Regular expression to filter by op type.\n\n* **min_line**: (`None` or `int`) The 1-based line to start annotate the source\n  file from (inclusive).\n\n* **max_line**: (`None` or `int`) The 1-based line number to end the annotation\n  at (exclusive).\n\n##### Returns\n"
+}

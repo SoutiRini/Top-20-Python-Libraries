@@ -1,0 +1,7 @@
+{
+    "source file": "session_ops.py",
+    "line number": "291",
+    "func name": "_get_handle_deleter",
+    "func arg": "(graph, deleter_key, handle)",
+    "comments": "Return a deletion subgraph for this handle.\n\n\n"
+}

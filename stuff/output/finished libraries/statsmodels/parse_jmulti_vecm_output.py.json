@@ -1,0 +1,7 @@
+{
+    "source file": "parse_jmulti_vecm_output.py",
+    "line number": "107",
+    "func name": "load_results_jmulti",
+    "func arg": "(dataset)",
+    "comments": "Parameters ---------- dataset : module A data module in the statsmodels/datasets directory that defines a __str__() method returning the dataset's name. dt_s_list : list A list of strings where each string represents a combination of deterministic terms.\n\n\n##### Returns\n* **result **: dict\n    A dict (keys\n\n"
+}

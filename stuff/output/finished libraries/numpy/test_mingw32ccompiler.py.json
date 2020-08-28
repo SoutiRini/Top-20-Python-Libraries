@@ -1,0 +1,7 @@
+{
+    "source file": "test_mingw32ccompiler.py",
+    "line number": "10",
+    "func name": "test_build_import",
+    "func arg": "()",
+    "comments": "Test the mingw32ccompiler.build_import_library, which builds a `python.a` from the MSVC `python.lib`\n\n\n"
+}

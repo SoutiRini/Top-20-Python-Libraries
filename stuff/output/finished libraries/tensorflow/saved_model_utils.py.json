@@ -1,0 +1,7 @@
+{
+    "source file": "saved_model_utils.py",
+    "line number": "96",
+    "func name": "get_meta_graph_def",
+    "func arg": "(saved_model_dir, tag_set)",
+    "comments": "Gets MetaGraphDef from SavedModel.\n\n\n##### Args\n* **saved_model_dir**: Directory containing the SavedModel to inspect.\n\n* **tag_set**: Group of tag(s) of the MetaGraphDef to load, in string format,\n    separated by ','. The empty string tag is ignored so that passing ''\n    means the empty tag set. For tag-set contains multiple tags, all tags\n    must be passed in.\n\n##### Returns\n"
+}

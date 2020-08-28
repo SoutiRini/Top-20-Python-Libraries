@@ -1,0 +1,7 @@
+{
+    "source file": "multi_worker_testing_utils.py",
+    "line number": "52",
+    "func name": "get_mnist_model",
+    "func arg": "(input_shape)",
+    "comments": "Define a deterministically-initialized CNN model for MNIST testing.\n\n\n"
+}

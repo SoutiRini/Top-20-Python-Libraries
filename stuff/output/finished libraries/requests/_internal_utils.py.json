@@ -1,0 +1,7 @@
+{
+    "source file": "_internal_utils.py",
+    "line number": "30",
+    "func name": "unicode_is_ascii",
+    "func arg": "(u_string)",
+    "comments": "Determine if unicode string only contains ASCII characters.\n\nparam str u_string: unicode string to check. Must be unicode and not Python 2 `str`. :rtype: bool\n"
+}

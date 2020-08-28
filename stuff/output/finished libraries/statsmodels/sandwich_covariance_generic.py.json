@@ -1,0 +1,7 @@
+{
+    "source file": "sandwich_covariance_generic.py",
+    "line number": "118",
+    "func name": "S_white",
+    "func arg": "(x, d)",
+    "comments": "simple white heteroscedasticity robust covariance note: calculating this way is very inefficient, just for cross-checking\n\n\n"
+}

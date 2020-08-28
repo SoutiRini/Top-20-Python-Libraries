@@ -1,0 +1,7 @@
+{
+    "source file": "data_workers_test.py",
+    "line number": "27",
+    "func name": "dummy_fetcher_rnn",
+    "func arg": "(fetcher_id, batch_size)",
+    "comments": ""
+}

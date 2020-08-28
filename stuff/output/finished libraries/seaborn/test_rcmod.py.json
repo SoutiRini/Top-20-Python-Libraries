@@ -1,0 +1,7 @@
+{
+    "source file": "test_rcmod.py",
+    "line number": "263",
+    "func name": "has_verdana",
+    "func arg": "()",
+    "comments": "Helper to verify if Verdana font is present\n\n\n"
+}

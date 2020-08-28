@@ -1,0 +1,7 @@
+{
+    "source file": "categorical.py",
+    "line number": "329",
+    "func name": "_kl_categorical_categorical",
+    "func arg": "(a, b, name)",
+    "comments": "Calculate the batched KL divergence KL(a || b) with a and b Categorical.\n\n\n##### Args\n* **a**: instance of a Categorical distribution object.\n\n* **b**: instance of a Categorical distribution object.\n\n* **name**: (optional) Name to use for created operations.\n  default is \"kl_categorical_categorical\".\n\n##### Returns\n"
+}

@@ -1,0 +1,7 @@
+{
+    "source file": "_regression1.py",
+    "line number": "865",
+    "func name": "mean_gamma_deviance",
+    "func arg": "(y_true, y_pred)",
+    "comments": "Mean Gamma deviance regression loss.\n\nGamma deviance is equivalent to the Tweedie deviance with the power parameter `power=2`. It is invariant to scaling of the target variable, and measures relative errors.\n\nRead more in the :ref:`User Guide <mean_tweedie_deviance>`.\n\nParameters ---------- y_true : array-like of shape (n_samples,) Ground truth (correct) target values. Requires y_true > 0.\n\ny_pred : array-like of shape (n_samples,) Estimated target values. Requires y_pred > 0.\n\nsample_weight : array-like of shape (n_samples,), default=None Sample weights.\n##### Returns\n* **loss **: float\n    A non-negative floating point value (the best value is 0.0).\n\n"
+}

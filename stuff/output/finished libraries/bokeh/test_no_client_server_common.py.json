@@ -1,0 +1,7 @@
+{
+    "source file": "test_no_client_server_common.py",
+    "line number": "37",
+    "func name": "test_no_client_server_common",
+    "func arg": "()",
+    "comments": "Basic usage of Bokeh should not result in any client/server code being imported. This test ensures that importing basic modules does not bring in bokeh.client or bokeh.server.\n\n\n"
+}

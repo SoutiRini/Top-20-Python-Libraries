@@ -1,0 +1,7 @@
+{
+    "source file": "test_numpy1.py",
+    "line number": "236",
+    "func name": "test_setitem_preserves_views",
+    "func arg": "()",
+    "comments": ""
+}

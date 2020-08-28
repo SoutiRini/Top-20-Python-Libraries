@@ -1,0 +1,7 @@
+{
+    "source file": "test_voting.py",
+    "line number": "541",
+    "func name": "test_voting_verbose",
+    "func arg": "(estimator, capsys)",
+    "comments": ""
+}

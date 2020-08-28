@@ -1,0 +1,7 @@
+{
+    "source file": "imdb.py",
+    "line number": "166",
+    "func name": "get_word_index",
+    "func arg": "(path)",
+    "comments": "Retrieves a dict mapping words to their index in the IMDB dataset.\n\nArguments: path: where to cache the data (relative to `~/.keras/dataset`).\n##### Returns\n"
+}

@@ -1,0 +1,7 @@
+{
+    "source file": "validation.py",
+    "line number": "1342",
+    "func name": "_check_fit_params",
+    "func arg": "(X, fit_params, indices)",
+    "comments": "Check and validate the parameters passed during `fit`.\n\nParameters ---------- X : array-like of shape (n_samples, n_features) Data array.\n\nfit_params : dict Dictionary containing the parameters passed at fit.\n\nindices : array-like of shape (n_samples,), default=None Indices to be selected if the parameter has the same size as `X`.\n##### Returns\n* **fit_params_validated **: dict\n    Validated parameters. We ensure that the values support indexing.\n\n"
+}

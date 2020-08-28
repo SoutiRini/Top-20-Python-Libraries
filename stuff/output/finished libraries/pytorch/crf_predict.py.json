@@ -1,0 +1,7 @@
+{
+    "source file": "crf_predict.py",
+    "line number": "17",
+    "func name": "apply_crf",
+    "func arg": "(init_net, net, transitions, predictions, num_classes)",
+    "comments": ""
+}

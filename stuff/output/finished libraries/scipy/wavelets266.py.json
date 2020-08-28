@@ -1,0 +1,7 @@
+{
+    "source file": "wavelets266.py",
+    "line number": "389",
+    "func name": "cwt",
+    "func arg": "(data, wavelet, widths, dtype, **kwargs)",
+    "comments": "Continuous wavelet transform.\n\nPerforms a continuous wavelet transform on `data`, using the `wavelet` function. A CWT performs a convolution with `data` using the `wavelet` function, which is characterized by a width parameter and length parameter. The `wavelet` function is allowed to be complex.\n\nParameters ---------- data : (N,) ndarray data on which to perform the transform. wavelet : function Wavelet function, which should take 2 arguments. The first argument is the number of points that the returned vector will have (len(wavelet(length,width)) == length). The second is a width parameter, defining the size of the wavelet (e.g. standard deviation of a gaussian). See `ricker`, which satisfies these requirements. widths : (M,) sequence Widths to use for transform. dtype : data-type, optional The desired data type of output. Defaults to ``float64`` if the output of `wavelet` is real and ``complex128`` if it is complex.\n\n.. versionadded:: 1.4.0\n\nkwargs Keyword arguments passed to wavelet function.\n\n.. versionadded:: 1.4.0\n##### Returns\n* **cwt**: (M, N) ndarray\n    Will have shape of (len(widths), len(data)).\n\n* **.. versionadded**: \n\n* ****: \n\n"
+}

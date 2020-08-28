@@ -1,0 +1,7 @@
+{
+    "source file": "tools.py",
+    "line number": "1861",
+    "func name": "prepare_trend_data",
+    "func arg": "(polynomial_trend, k_trend, nobs, offset)",
+    "comments": ""
+}

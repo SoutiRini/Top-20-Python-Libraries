@@ -1,0 +1,7 @@
+{
+    "source file": "contrast.py",
+    "line number": "743",
+    "func name": "wald_test_noncent_generic",
+    "func arg": "(params, r_matrix, value, cov_params, diff, joint)",
+    "comments": "noncentrality parameter for a wald test\n\nThe null hypothesis is ``diff = r_matrix @ params\n\n- value = 0``\n\nParameters ---------- params : ndarray parameters of the model at which to evaluate noncentrality. This can be estimated parameters or parameters under an alternative. r_matrix : ndarray Restriction matrix or contrasts for the Null hypothesis\n\nvalue : None or ndarray Value of the linear combination of parameters under the null hypothesis. If value is None, then it will be replace by zero. cov_params : ndarray covariance matrix of the parameter estimates diff : None or ndarray If diff is not None, then it will be used instead of ``diff = r_matrix @ params\n\n- value`` joint : bool If joint is True, then the noncentrality parameter for the joint hypothesis will be returned. If joint is True, then an array of noncentrality parameters will be returned, where elements correspond to rows of the restriction matrix. This correspond to the `t_test` in models and is not a quadratic form.\n##### Returns\n* **nc **: float or ndarray\n    Noncentrality parameter for Wald tests, correspondig to `wald_test`\n    or `t_test` depending on whether `joint` is true or not.\n    It needs to be divided by nobs to obtain effect size.\n\n* **Status **: experimental, API will likely change\n\n"
+}

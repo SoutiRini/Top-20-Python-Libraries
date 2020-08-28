@@ -1,0 +1,7 @@
+{
+    "source file": "linesearch.py",
+    "line number": "823",
+    "func name": "_nonmonotone_line_search_cheng",
+    "func arg": "(f, x_k, d, f_k, C, Q, eta, gamma, tau_min, tau_max, nu)",
+    "comments": "Nonmonotone line search from [1]\n\nParameters ---------- f : callable Function returning a tuple ``(f, F)`` where ``f`` is the value of a merit function and ``F`` the residual. x_k : ndarray Initial position. d : ndarray Search direction. f_k : float Initial merit function value. C, Q : float Control parameters. On the first iteration, give values Q=1.0, C=f_k eta : float Allowed merit function increase, see [1]_ nu, gamma, tau_min, tau_max : float, optional Search parameters, see [1]_\n##### Returns\n* **alpha **: float\n    Step length\n\n* **xp **: ndarray\n    Next position\n\n* **fp **: float\n    Merit function value at next position\n\n* **Fp **: ndarray\n    Residual at next position\n\n* **C **: float\n    New value for the control parameter C\n\n* **Q **: float\n    New value for the control parameter Q\n\n"
+}

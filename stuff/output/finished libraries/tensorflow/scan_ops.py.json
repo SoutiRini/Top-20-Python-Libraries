@@ -1,0 +1,7 @@
+{
+    "source file": "scan_ops.py",
+    "line number": "158",
+    "func name": "scan",
+    "func arg": "(initial_state, scan_func)",
+    "comments": "A transformation that scans a function across an input dataset.\n\nThis transformation is a stateful relative of `tf.data.Dataset.map`. In addition to mapping `scan_func` across the elements of the input dataset, `scan()` accumulates one or more state tensors, whose initial values are `initial_state`.\n##### Args\n* **initial_state**: A nested structure of tensors, representing the initial state\n  of the accumulator.\n\n* **scan_func**: A function that maps `(old_state, input_element)` to\n  `(new_state, output_element)`. It must take two arguments and return a\n  pair of nested structures of tensors. The `new_state` must match the\n  structure of `initial_state`.\n\n##### Returns\n"
+}

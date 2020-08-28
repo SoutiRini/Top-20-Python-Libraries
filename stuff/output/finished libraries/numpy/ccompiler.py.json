@@ -1,0 +1,7 @@
+{
+    "source file": "ccompiler.py",
+    "line number": "765",
+    "func name": "gen_lib_options",
+    "func arg": "(compiler, library_dirs, runtime_library_dirs, libraries)",
+    "comments": ""
+}

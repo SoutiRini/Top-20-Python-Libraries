@@ -1,0 +1,7 @@
+{
+    "source file": "cache_zenodo_svg.py",
+    "line number": "49",
+    "func name": "_get_xdg_cache_dir",
+    "func arg": "()",
+    "comments": "Return the XDG cache directory.\n\nSee https://standards.freedesktop.org/basedir-spec/basedir-spec-latest.html\n"
+}

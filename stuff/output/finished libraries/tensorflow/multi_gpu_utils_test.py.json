@@ -1,0 +1,7 @@
+{
+    "source file": "multi_gpu_utils_test.py",
+    "line number": "32",
+    "func name": "check_if_compatible_devices",
+    "func arg": "(gpus)",
+    "comments": ""
+}

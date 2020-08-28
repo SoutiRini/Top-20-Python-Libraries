@@ -1,0 +1,7 @@
+{
+    "source file": "tpu_cluster_resolver1.py",
+    "line number": "40",
+    "func name": "is_running_in_gce",
+    "func arg": "()",
+    "comments": ""
+}

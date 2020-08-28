@@ -1,0 +1,7 @@
+{
+    "source file": "test_text.py",
+    "line number": "685",
+    "func name": "test_fontproperties_kwarg_precedence",
+    "func arg": "()",
+    "comments": "Test that kwargs take precedence over fontproperties defaults.\n\n\n"
+}

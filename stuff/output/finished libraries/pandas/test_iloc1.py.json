@@ -1,0 +1,7 @@
+{
+    "source file": "test_iloc1.py",
+    "line number": "167",
+    "func name": "test_getitem_iloc",
+    "func arg": "(multiindex_dataframe_random_data)",
+    "comments": ""
+}

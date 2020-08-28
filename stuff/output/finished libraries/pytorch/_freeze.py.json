@@ -1,0 +1,7 @@
+{
+    "source file": "_freeze.py",
+    "line number": "13",
+    "func name": "freeze",
+    "func arg": "(mod, preserved_attrs)",
+    "comments": "Freezing a :class:`ScriptModule` will clone it and attempt to inline the cloned module's submodules, parameters, and attributes as constants in the TorchScript IR Graph. By default, `forward` will be preserved, as well as attributes & methods specified in `preserved_attrs`. Additionally, any attribute that is modified within a preserved method will be preserved.\n\nFreezing currently only accepts ScriptModules that are in eval mode.\n\nArguments: mod (:class:`ScriptModule`): a module to be frozen\n\npreserved_attrs (Optional[List[str]]): a list of attributes to preserve in addition to the forward method.\n##### Attributes\n##### Returns\n* **Frozen **: class\n\n* **ple (Freezing a simple module with a Parameter)**: \n\n* **estcode**: \n\n* **class MyModule(torch.nn.Module)**: def __init__(self, N, M)\n\n* **class MyModule2(torch.nn.Module)**: def __init__(self)\n\n* ****: \n\n"
+}

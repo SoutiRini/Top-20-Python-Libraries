@@ -1,0 +1,7 @@
+{
+    "source file": "extmath.py",
+    "line number": "788",
+    "func name": "stable_cumsum",
+    "func arg": "(arr, axis, rtol, atol)",
+    "comments": "Use high precision for cumsum and check that final value matches sum\n\nParameters ---------- arr : array-like To be cumulatively summed as flat axis : int, optional Axis along which the cumulative sum is computed. The default (None) is to compute the cumsum over the flattened array. rtol : float Relative tolerance, see ``np.allclose`` atol : float Absolute tolerance, see ``np.allclose``\n"
+}

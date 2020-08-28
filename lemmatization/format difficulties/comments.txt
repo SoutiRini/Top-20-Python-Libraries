@@ -1,0 +1,1193 @@
+"Two-dimensional, size-mutable, potentially heterogeneous tabular data.
+    Data structure also contains labeled axes (rows and columns).
+    Arithmetic operations align on both row and column labels. Can be
+    thought of as a dict-like container for Series objects. The primary
+    pandas data structure.
+    Parameters
+    ----------
+    data : ndarray (structured or homogeneous), Iterable, dict, or DataFrame
+        Dict can contain Series, arrays, constants, or list-like objects.
+        .. versionchanged:: 0.23.0
+           If data is a dict, column order follows insertion-order for
+           Python 3.6 and later.
+        .. versionchanged:: 0.25.0
+           If data is a list of dicts, column order follows insertion-order
+           for Python 3.6 and later.
+    index : Index or array-like
+        Index to use for resulting frame. Will default to RangeIndex if
+        no indexing information part of input data and no index provided.
+    columns : Index or array-like
+        Column labels to use for resulting frame. Will default to
+        RangeIndex (0, 1, 2, ..., n) if no column labels are provided.
+    dtype : dtype, default None
+        Data type to force. Only a single dtype is allowed. If None, infer.
+    copy : bool, default False
+        Copy data from inputs. Only affects DataFrame / 2d ndarray input.
+    See Also
+    --------
+    DataFrame.from_records : Constructor from tuples, also record arrays.
+    DataFrame.from_dict : From dicts of Series, arrays, or dicts.
+    read_csv
+    read_table
+    read_clipboard
+    Examples
+    --------
+    Constructing DataFrame from a dictionary.
+    >>> d = {'col1': [1, 2], 'col2': [3, 4]}
+    >>> df = pd.DataFrame(data=d)
+    >>> df
+       col1  col2
+    0     1     3
+    1     2     4
+    Notice that the inferred dtype is int64.
+    >>> df.dtypes
+    col1    int64
+    col2    int64
+    dtype: object
+    To enforce a single dtype:
+    >>> df = pd.DataFrame(data=d, dtype=np.int8)
+    >>> df.dtypes
+    col1    int8
+    col2    int8
+    dtype: object
+    Constructing DataFrame from numpy ndarray:
+    >>> df2 = pd.DataFrame(np.array([[1, 2, 3], [4, 5, 6], [7, 8, 9]]),
+    ...                    columns=['a', 'b', 'c'])
+    >>> df2
+       a  b  c
+    0  1  2  3
+    1  4  5  6
+    2  7  8  9"
+"Concatenate pandas objects along a particular axis with optional set logic
+    along the other axes.
+    Can also add a layer of hierarchical indexing on the concatenation axis,
+    which may be useful if the labels are the same (or overlapping) on
+    the passed axis number.
+    Parameters
+    ----------
+    objs : a sequence or mapping of Series or DataFrame objects
+        If a dict is passed, the sorted keys will be used as the `keys`
+        argument, unless it is passed, in which case the values will be
+        selected (see below). Any None objects will be dropped silently unless
+        they are all None in which case a ValueError will be raised.
+    axis : {0/'index', 1/'columns'}, default 0
+        The axis to concatenate along.
+    join : {'inner', 'outer'}, default 'outer'
+        How to handle indexes on other axis (or axes).
+    ignore_index : bool, default False
+        If True, do not use the index values along the concatenation axis. The
+        resulting axis will be labeled 0, ..., n - 1. This is useful if you are
+        concatenating objects where the concatenation axis does not have
+        meaningful indexing information. Note the index values on the other
+        axes are still respected in the join.
+    keys : sequence, default None
+        If multiple levels passed, should contain tuples. Construct
+        hierarchical index using the passed keys as the outermost level.
+    levels : list of sequences, default None
+        Specific levels (unique values) to use for constructing a
+        MultiIndex. Otherwise they will be inferred from the keys.
+    names : list, default None
+        Names for the levels in the resulting hierarchical index.
+    verify_integrity : bool, default False
+        Check whether the new concatenated axis contains duplicates. This can
+        be very expensive relative to the actual data concatenation.
+    sort : bool, default False
+        Sort non-concatenation axis if it is not already aligned when `join`
+        is 'outer'.
+        This has no effect when ``join='inner'``, which already preserves
+        the order of the non-concatenation axis.
+        .. versionadded:: 0.23.0
+        .. versionchanged:: 1.0.0
+           Changed to not sort by default.
+    copy : bool, default True
+        If False, do not copy data unnecessarily.
+    Returns
+    -------
+    object, type of objs
+        When concatenating all ``Series`` along the index (axis=0), a
+        ``Series`` is returned. When ``objs`` contains at least one
+        ``DataFrame``, a ``DataFrame`` is returned. When concatenating along
+        the columns (axis=1), a ``DataFrame`` is returned.
+    See Also
+    --------
+    Series.append : Concatenate Series.
+    DataFrame.append : Concatenate DataFrames.
+    DataFrame.join : Join DataFrames using indexes.
+    DataFrame.merge : Merge DataFrames by indexes or columns.
+    Notes
+    -----
+    The keys, levels, and names arguments are all optional.
+    A walkthrough of how this method fits in with other tools for combining
+    pandas objects can be found `here
+    <https://pandas.pydata.org/pandas-docs/stable/user_guide/merging.html>`__.
+    Examples
+    --------
+    Combine two ``Series``.
+    >>> s1 = pd.Series(['a', 'b'])
+    >>> s2 = pd.Series(['c', 'd'])
+    >>> pd.concat([s1, s2])
+    0    a
+    1    b
+    0    c
+    1    d
+    dtype: object
+    Clear the existing index and reset it in the result
+    by setting the ``ignore_index`` option to ``True``.
+    >>> pd.concat([s1, s2], ignore_index=True)
+    0    a
+    1    b
+    2    c
+    3    d
+    dtype: object
+    Add a hierarchical index at the outermost level of
+    the data with the ``keys`` option.
+    >>> pd.concat([s1, s2], keys=['s1', 's2'])
+    s1  0    a
+        1    b
+    s2  0    c
+        1    d
+    dtype: object
+    Label the index keys you create with the ``names`` option.
+    >>> pd.concat([s1, s2], keys=['s1', 's2'],
+    ...           names=['Series name', 'Row ID'])
+    Series name  Row ID
+    s1           0         a
+                 1         b
+    s2           0         c
+                 1         d
+    dtype: object
+    Combine two ``DataFrame`` objects with identical columns.
+    >>> df1 = pd.DataFrame([['a', 1], ['b', 2]],
+    ...                    columns=['letter', 'number'])
+    >>> df1
+      letter  number
+    0      a       1
+    1      b       2
+    >>> df2 = pd.DataFrame([['c', 3], ['d', 4]],
+    ...                    columns=['letter', 'number'])
+    >>> df2
+      letter  number
+    0      c       3
+    1      d       4
+    >>> pd.concat([df1, df2])
+      letter  number
+    0      a       1
+    1      b       2
+    0      c       3
+    1      d       4
+    Combine ``DataFrame`` objects with overlapping columns
+    and return everything. Columns outside the intersection will
+    be filled with ``NaN`` values.
+    >>> df3 = pd.DataFrame([['c', 3, 'cat'], ['d', 4, 'dog']],
+    ...                    columns=['letter', 'number', 'animal'])
+    >>> df3
+      letter  number animal
+    0      c       3    cat
+    1      d       4    dog
+    >>> pd.concat([df1, df3], sort=False)
+      letter  number animal
+    0      a       1    NaN
+    1      b       2    NaN
+    0      c       3    cat
+    1      d       4    dog
+    Combine ``DataFrame`` objects with overlapping columns
+    and return only those that are shared by passing ``inner`` to
+    the ``join`` keyword argument.
+    >>> pd.concat([df1, df3], join=""inner"")
+      letter  number
+    0      a       1
+    1      b       2
+    0      c       3
+    1      d       4
+    Combine ``DataFrame`` objects horizontally along the x axis by
+    passing in ``axis=1``.
+    >>> df4 = pd.DataFrame([['bird', 'polly'], ['monkey', 'george']],
+    ...                    columns=['animal', 'name'])
+    >>> pd.concat([df1, df4], axis=1)
+      letter  number  animal    name
+    0      a       1    bird   polly
+    1      b       2  monkey  george
+    Prevent the result from including duplicate index values with the
+    ``verify_integrity`` option.
+    >>> df5 = pd.DataFrame([1], index=['a'])
+    >>> df5
+       0
+    a  1
+    >>> df6 = pd.DataFrame([2], index=['a'])
+    >>> df6
+       0
+    a  2
+    >>> pd.concat([df5, df6], verify_integrity=True)
+    Traceback (most recent call last):
+        ...
+    ValueError: Indexes have overlapping values: ['a']"
+"Detect missing values for an array-like object.
+    This function takes a scalar or array-like object and indicates
+    whether values are missing (``NaN`` in numeric arrays, ``None`` or ``NaN``
+    in object arrays, ``NaT`` in datetimelike).
+    Parameters
+    ----------
+    obj : scalar or array-like
+        Object to check for null or missing values.
+    Returns
+    -------
+    bool or array-like of bool
+        For scalar input, returns a scalar boolean.
+        For array input, returns an array of boolean indicating whether each
+        corresponding element is missing.
+    See Also
+    --------
+    notna : Boolean inverse of pandas.isna.
+    Series.isna : Detect missing values in a Series.
+    DataFrame.isna : Detect missing values in a DataFrame.
+    Index.isna : Detect missing values in an Index.
+    Examples
+    --------
+    Scalar arguments (including strings) result in a scalar boolean.
+    >>> pd.isna('dog')
+    False
+    >>> pd.isna(pd.NA)
+    True
+    >>> pd.isna(np.nan)
+    True
+    ndarrays result in an ndarray of booleans.
+    >>> array = np.array([[1, np.nan, 3], [4, 5, np.nan]])
+    >>> array
+    array([[ 1., nan,  3.],
+           [ 4.,  5., nan]])
+    >>> pd.isna(array)
+    array([[False,  True, False],
+           [False, False,  True]])
+    For indexes, an ndarray of booleans is returned.
+    >>> index = pd.DatetimeIndex([""2017-07-05"", ""2017-07-06"", None,
+    ...                           ""2017-07-08""])
+    >>> index
+    DatetimeIndex(['2017-07-05', '2017-07-06', 'NaT', '2017-07-08'],
+                  dtype='datetime64[ns]', freq=None)
+    >>> pd.isna(index)
+    array([False, False,  True, False])
+    For Series and DataFrame, the same type is returned, containing booleans.
+    >>> df = pd.DataFrame([['ant', 'bee', 'cat'], ['dog', None, 'fly']])
+    >>> df
+         0     1    2
+    0  ant   bee  cat
+    1  dog  None  fly
+    >>> pd.isna(df)
+           0      1      2
+    0  False  False  False
+    1  False   True  False
+    >>> pd.isna(df[1])
+    0    False
+    1     True
+    Name: 1, dtype: bool"
+"Detect non-missing values for an array-like object.
+    This function takes a scalar or array-like object and indicates
+    whether values are valid (not missing, which is ``NaN`` in numeric
+    arrays, ``None`` or ``NaN`` in object arrays, ``NaT`` in datetimelike).
+    Parameters
+    ----------
+    obj : array-like or object value
+        Object to check for *not* null or *non*-missing values.
+    Returns
+    -------
+    bool or array-like of bool
+        For scalar input, returns a scalar boolean.
+        For array input, returns an array of boolean indicating whether each
+        corresponding element is valid.
+    See Also
+    --------
+    isna : Boolean inverse of pandas.notna.
+    Series.notna : Detect valid values in a Series.
+    DataFrame.notna : Detect valid values in a DataFrame.
+    Index.notna : Detect valid values in an Index.
+    Examples
+    --------
+    Scalar arguments (including strings) result in a scalar boolean.
+    >>> pd.notna('dog')
+    True
+    >>> pd.notna(pd.NA)
+    False
+    >>> pd.notna(np.nan)
+    False
+    ndarrays result in an ndarray of booleans.
+    >>> array = np.array([[1, np.nan, 3], [4, 5, np.nan]])
+    >>> array
+    array([[ 1., nan,  3.],
+           [ 4.,  5., nan]])
+    >>> pd.notna(array)
+    array([[ True, False,  True],
+           [ True,  True, False]])
+    For indexes, an ndarray of booleans is returned.
+    >>> index = pd.DatetimeIndex([""2017-07-05"", ""2017-07-06"", None,
+    ...                          ""2017-07-08""])
+    >>> index
+    DatetimeIndex(['2017-07-05', '2017-07-06', 'NaT', '2017-07-08'],
+                  dtype='datetime64[ns]', freq=None)
+    >>> pd.notna(index)
+    array([ True,  True, False,  True])
+    For Series and DataFrame, the same type is returned, containing booleans.
+    >>> df = pd.DataFrame([['ant', 'bee', 'cat'], ['dog', None, 'fly']])
+    >>> df
+         0     1    2
+    0  ant   bee  cat
+    1  dog  None  fly
+    >>> pd.notna(df)
+          0      1     2
+    0  True   True  True
+    1  True  False  True
+    >>> pd.notna(df[1])
+    0     True
+    1    False
+    Name: 1, dtype: bool"
+"Convert argument to datetime.
+    Parameters
+    ----------
+    arg : int, float, str, datetime, list, tuple, 1-d array, Series DataFrame/dict-like
+        The object to convert to a datetime.
+    errors : {'ignore', 'raise', 'coerce'}, default 'raise'
+        - If 'raise', then invalid parsing will raise an exception.
+        - If 'coerce', then invalid parsing will be set as NaT.
+        - If 'ignore', then invalid parsing will return the input.
+    dayfirst : bool, default False
+        Specify a date parse order if `arg` is str or its list-likes.
+        If True, parses dates with the day first, eg 10/11/12 is parsed as
+        2012-11-10.
+        Warning: dayfirst=True is not strict, but will prefer to parse
+        with day first (this is a known bug, based on dateutil behavior).
+    yearfirst : bool, default False
+        Specify a date parse order if `arg` is str or its list-likes.
+        - If True parses dates with the year first, eg 10/11/12 is parsed as
+          2010-11-12.
+        - If both dayfirst and yearfirst are True, yearfirst is preceded (same
+          as dateutil).
+        Warning: yearfirst=True is not strict, but will prefer to parse
+        with year first (this is a known bug, based on dateutil behavior).
+    utc : bool, default None
+        Return UTC DatetimeIndex if True (converting any tz-aware
+        datetime.datetime objects as well).
+    format : str, default None
+        The strftime to parse time, eg ""%d/%m/%Y"", note that ""%f"" will parse
+        all the way up to nanoseconds.
+        See strftime documentation for more information on choices:
+        https://docs.python.org/3/library/datetime.html#strftime-and-strptime-behavior.
+    exact : bool, True by default
+        Behaves as:
+        - If True, require an exact format match.
+        - If False, allow the format to match anywhere in the target string.
+    unit : str, default 'ns'
+        The unit of the arg (D,s,ms,us,ns) denote the unit, which is an
+        integer or float number. This will be based off the origin.
+        Example, with unit='ms' and origin='unix' (the default), this
+        would calculate the number of milliseconds to the unix epoch start.
+    infer_datetime_format : bool, default False
+        If True and no `format` is given, attempt to infer the format of the
+        datetime strings, and if it can be inferred, switch to a faster
+        method of parsing them. In some cases this can increase the parsing
+        speed by ~5-10x.
+    origin : scalar, default 'unix'
+        Define the reference date. The numeric values would be parsed as number
+        of units (defined by `unit`) since this reference date.
+        - If 'unix' (or POSIX) time; origin is set to 1970-01-01.
+        - If 'julian', unit must be 'D', and origin is set to beginning of
+          Julian Calendar. Julian day number 0 is assigned to the day starting
+          at noon on January 1, 4713 BC.
+        - If Timestamp convertible, origin is set to Timestamp identified by
+          origin.
+    cache : bool, default True
+        If True, use a cache of unique, converted dates to apply the datetime
+        conversion. May produce significant speed-up when parsing duplicate
+        date strings, especially ones with timezone offsets. The cache is only
+        used when there are at least 50 values. The presence of out-of-bounds
+        values will render the cache unusable and may slow down parsing.
+        .. versionadded:: 0.23.0
+        .. versionchanged:: 0.25.0
+            - changed default value from False to True.
+    Returns
+    -------
+    datetime
+        If parsing succeeded.
+        Return type depends on input:
+        - list-like: DatetimeIndex
+        - Series: Series of datetime64 dtype
+        - scalar: Timestamp
+        In case when it is not possible to return designated types (e.g. when
+        any element of input is before Timestamp.min or after Timestamp.max)
+        return will have datetime.datetime type (or corresponding
+        array/Series).
+    See Also
+    --------
+    DataFrame.astype : Cast argument to a specified dtype.
+    to_timedelta : Convert argument to timedelta.
+    convert_dtypes : Convert dtypes.
+    Examples
+    --------
+    Assembling a datetime from multiple columns of a DataFrame. The keys can be
+    common abbreviations like ['year', 'month', 'day', 'minute', 'second',
+    'ms', 'us', 'ns']) or plurals of the same
+    >>> df = pd.DataFrame({'year': [2015, 2016],
+    ...                    'month': [2, 3],
+    ...                    'day': [4, 5]})
+    >>> pd.to_datetime(df)
+    0   2015-02-04
+    1   2016-03-05
+    dtype: datetime64[ns]
+    If a date does not meet the `timestamp limitations
+    <https://pandas.pydata.org/pandas-docs/stable/user_guide/timeseries.html
+    #timeseries-timestamp-limits>`_, passing errors='ignore'
+    will return the original input instead of raising any exception.
+    Passing errors='coerce' will force an out-of-bounds date to NaT,
+    in addition to forcing non-dates (or non-parseable dates) to NaT.
+    >>> pd.to_datetime('13000101', format='%Y%m%d', errors='ignore')
+    datetime.datetime(1300, 1, 1, 0, 0)
+    >>> pd.to_datetime('13000101', format='%Y%m%d', errors='coerce')
+    NaT
+    Passing infer_datetime_format=True can often-times speedup a parsing
+    if its not an ISO8601 format exactly, but in a regular format.
+    >>> s = pd.Series(['3/11/2000', '3/12/2000', '3/13/2000'] * 1000)
+    >>> s.head()
+    0    3/11/2000
+    1    3/12/2000
+    2    3/13/2000
+    3    3/11/2000
+    4    3/12/2000
+    dtype: object
+    >>> %timeit pd.to_datetime(s, infer_datetime_format=True)  # doctest: +SKIP
+    100 loops, best of 3: 10.4 ms per loop
+    >>> %timeit pd.to_datetime(s, infer_datetime_format=False)  # doctest: +SKIP
+    1 loop, best of 3: 471 ms per loop
+    Using a unix epoch time
+    >>> pd.to_datetime(1490195805, unit='s')
+    Timestamp('2017-03-22 15:16:45')
+    >>> pd.to_datetime(1490195805433502912, unit='ns')
+    Timestamp('2017-03-22 15:16:45.433502912')
+    .. warning:: For float arg, precision rounding might happen. To prevent
+        unexpected behavior use a fixed-width exact type.
+    Using a non-unix epoch origin
+    >>> pd.to_datetime([1, 2, 3], unit='D',
+    ...                origin=pd.Timestamp('1960-01-01'))
+    DatetimeIndex(['1960-01-02', '1960-01-03', '1960-01-04'], \
+dtype='datetime64[ns]', freq=None)"
+"One-dimensional ndarray with axis labels (including time series).
+    Labels need not be unique but must be a hashable type. The object
+    supports both integer- and label-based indexing and provides a host of
+    methods for performing operations involving the index. Statistical
+    methods from ndarray have been overridden to automatically exclude
+    missing data (currently represented as NaN).
+    Operations between Series (+, -, /, *, **) align values based on their
+    associated index values-- they need not be the same length. The result
+    index will be the sorted union of the two indexes.
+    Parameters
+    ----------
+    data : array-like, Iterable, dict, or scalar value
+        Contains data stored in Series.
+        .. versionchanged:: 0.23.0
+           If data is a dict, argument order is maintained for Python 3.6
+           and later.
+    index : array-like or Index (1d)
+        Values must be hashable and have the same length as `data`.
+        Non-unique index values are allowed. Will default to
+        RangeIndex (0, 1, 2, ..., n) if not provided. If both a dict and index
+        sequence are used, the index will override the keys found in the
+        dict.
+    dtype : str, numpy.dtype, or ExtensionDtype, optional
+        Data type for the output Series. If not specified, this will be
+        inferred from `data`.
+        See the :ref:`user guide <basics.dtypes>` for more usages.
+    name : str, optional
+        The name to give to the Series.
+    copy : bool, default False
+        Copy input data."
+Read a comma-separated values (csv) file into DataFrame.
+"Load pickled pandas object (or any object) from file.
+    .. warning::
+       Loading pickled data received from untrusted sources can be
+       unsafe. See `here <https://docs.python.org/3/library/pickle.html>`__.
+    Parameters
+    ----------
+    filepath_or_buffer : str, path object or file-like object
+        File path, URL, or buffer where the pickled object will be loaded from.
+        .. versionchanged:: 1.0.0
+           Accept URL. URL is not limited to S3 and GCS.
+    compression : {'infer', 'gzip', 'bz2', 'zip', 'xz', None}, default 'infer'
+        If 'infer' and 'path_or_url' is path-like, then detect compression from
+        the following extensions: '.gz', '.bz2', '.zip', or '.xz' (otherwise no
+        compression) If 'infer' and 'path_or_url' is not path-like, then use
+        None (= no decompression).
+    Returns
+    -------
+    unpickled : same type as object stored in file
+    See Also
+    --------
+    DataFrame.to_pickle : Pickle (serialize) DataFrame object to file.
+    Series.to_pickle : Pickle (serialize) Series object to file.
+    read_hdf : Read HDF5 file into a DataFrame.
+    read_sql : Read SQL query or database table into a DataFrame.
+    read_parquet : Load a parquet object, returning a DataFrame.
+    Notes
+    -----
+    read_pickle is only guaranteed to be backwards compatible to pandas 0.20.3.
+    Examples
+    --------
+    >>> original_df = pd.DataFrame({""foo"": range(5), ""bar"": range(5, 10)})
+    >>> original_df
+       foo  bar
+    0    0    5
+    1    1    6
+    2    2    7
+    3    3    8
+    4    4    9
+    >>> pd.to_pickle(original_df, ""./dummy.pkl"")
+    >>> unpickled_df = pd.read_pickle(""./dummy.pkl"")
+    >>> unpickled_df
+       foo  bar
+    0    0    5
+    1    1    6
+    2    2    7
+    3    3    8
+    4    4    9
+    >>> import os
+    >>> os.remove(""./dummy.pkl"")"
+"Convert a JSON string to pandas object.
+    Parameters
+    ----------
+    path_or_buf : a valid JSON str, path object or file-like object
+        Any valid string path is acceptable. The string could be a URL. Valid
+        URL schemes include http, ftp, s3, and file. For file URLs, a host is
+        expected. A local file could be:
+        ``file://localhost/path/to/table.json``.
+        If you want to pass in a path object, pandas accepts any
+        ``os.PathLike``.
+        By file-like object, we refer to objects with a ``read()`` method,
+        such as a file handler (e.g. via builtin ``open`` function)
+        or ``StringIO``.
+    orient : str
+        Indication of expected JSON string format.
+        Compatible JSON strings can be produced by ``to_json()`` with a
+        corresponding orient value.
+        The set of possible orients is:
+        - ``'split'`` : dict like
+          ``{index -> [index], columns -> [columns], data -> [values]}``
+        - ``'records'`` : list like
+          ``[{column -> value}, ... , {column -> value}]``
+        - ``'index'`` : dict like ``{index -> {column -> value}}``
+        - ``'columns'`` : dict like ``{column -> {index -> value}}``
+        - ``'values'`` : just the values array
+        The allowed and default values depend on the value
+        of the `typ` parameter.
+        * when ``typ == 'series'``,
+          - allowed orients are ``{'split','records','index'}``
+          - default is ``'index'``
+          - The Series index must be unique for orient ``'index'``.
+        * when ``typ == 'frame'``,
+          - allowed orients are ``{'split','records','index',
+            'columns','values', 'table'}``
+          - default is ``'columns'``
+          - The DataFrame index must be unique for orients ``'index'`` and
+            ``'columns'``.
+          - The DataFrame columns must be unique for orients ``'index'``,
+            ``'columns'``, and ``'records'``.
+        .. versionadded:: 0.23.0
+           'table' as an allowed value for the ``orient`` argument
+    typ : {'frame', 'series'}, default 'frame'
+        The type of object to recover.
+    dtype : bool or dict, default None
+        If True, infer dtypes; if a dict of column to dtype, then use those;
+        if False, then don't infer dtypes at all, applies only to the data.
+        For all ``orient`` values except ``'table'``, default is True.
+        .. versionchanged:: 0.25.0
+           Not applicable for ``orient='table'``.
+    convert_axes : bool, default None
+        Try to convert the axes to the proper dtypes.
+        For all ``orient`` values except ``'table'``, default is True.
+        .. versionchanged:: 0.25.0
+           Not applicable for ``orient='table'``.
+    convert_dates : bool or list of str, default True
+        List of columns to parse for dates. If True, then try to parse
+        datelike columns. A column label is datelike if
+        * it ends with ``'_at'``,
+        * it ends with ``'_time'``,
+        * it begins with ``'timestamp'``,
+        * it is ``'modified'``, or
+        * it is ``'date'``.
+    keep_default_dates : bool, default True
+        If parsing dates, then parse the default datelike columns.
+    numpy : bool, default False
+        Direct decoding to numpy arrays. Supports numeric data only, but
+        non-numeric column and index labels are supported. Note also that the
+        JSON ordering MUST be the same for each term if numpy=True.
+        .. deprecated:: 1.0.0
+    precise_float : bool, default False
+        Set to enable usage of higher precision (strtod) function when
+        decoding string to double values. Default (False) is to use fast but
+        less precise builtin functionality.
+    date_unit : str, default None
+        The timestamp unit to detect if converting dates. The default behaviour
+        is to try and detect the correct precision, but if this is not desired
+        then pass one of 's', 'ms', 'us' or 'ns' to force parsing only seconds,
+        milliseconds, microseconds or nanoseconds respectively.
+    encoding : str, default is 'utf-8'
+        The encoding to use to decode py3 bytes.
+    lines : bool, default False
+        Read the file as a json object per line.
+    chunksize : int, optional
+        Return JsonReader object for iteration.
+        See the `line-delimited json docs
+        <https://pandas.pydata.org/pandas-docs/stable/user_guide/io.html#line-delimited-json>`_
+        for more information on ``chunksize``.
+        This can only be passed if `lines=True`.
+        If this is None, the file will be read into memory all at once.
+        .. versionadded:: 0.21.0
+    compression : {'infer', 'gzip', 'bz2', 'zip', 'xz', None}, default 'infer'
+        For on-the-fly decompression of on-disk data. If 'infer', then use
+        gzip, bz2, zip or xz if path_or_buf is a string ending in
+        '.gz', '.bz2', '.zip', or 'xz', respectively, and no decompression
+        otherwise. If using 'zip', the ZIP file must contain only one data
+        file to be read in. Set to None for no decompression.
+        .. versionadded:: 0.21.0
+    Returns
+    -------
+    Series or DataFrame
+        The type returned depends on the value of `typ`.
+    See Also
+    --------
+    DataFrame.to_json : Convert a DataFrame to a JSON string.
+    Series.to_json : Convert a Series to a JSON string.
+    Notes
+    -----
+    Specific to ``orient='table'``, if a :class:`DataFrame` with a literal
+    :class:`Index` name of `index` gets written with :func:`to_json`, the
+    subsequent read operation will incorrectly set the :class:`Index` name to
+    ``None``. This is because `index` is also used by :func:`DataFrame.to_json`
+    to denote a missing :class:`Index` name, and the subsequent
+    :func:`read_json` operation cannot distinguish between the two. The same
+    limitation is encountered with a :class:`MultiIndex` and any names
+    beginning with ``'level_'``.
+    Examples
+    --------
+    >>> df = pd.DataFrame([['a', 'b'], ['c', 'd']],
+    ...                   index=['row 1', 'row 2'],
+    ...                   columns=['col 1', 'col 2'])
+    Encoding/decoding a Dataframe using ``'split'`` formatted JSON:
+    >>> df.to_json(orient='split')
+    '{""columns"":[""col 1"",""col 2""],
+      ""index"":[""row 1"",""row 2""],
+      ""data"":[[""a"",""b""],[""c"",""d""]]}'
+    >>> pd.read_json(_, orient='split')
+          col 1 col 2
+    row 1     a     b
+    row 2     c     d
+    Encoding/decoding a Dataframe using ``'index'`` formatted JSON:
+    >>> df.to_json(orient='index')
+    '{""row 1"":{""col 1"":""a"",""col 2"":""b""},""row 2"":{""col 1"":""c"",""col 2"":""d""}}'
+    >>> pd.read_json(_, orient='index')
+          col 1 col 2
+    row 1     a     b
+    row 2     c     d
+    Encoding/decoding a Dataframe using ``'records'`` formatted JSON.
+    Note that index labels are not preserved with this encoding.
+    >>> df.to_json(orient='records')
+    '[{""col 1"":""a"",""col 2"":""b""},{""col 1"":""c"",""col 2"":""d""}]'
+    >>> pd.read_json(_, orient='records')
+      col 1 col 2
+    0     a     b
+    1     c     d
+    Encoding with Table Schema
+    >>> df.to_json(orient='table')
+    '{""schema"": {""fields"": [{""name"": ""index"", ""type"": ""string""},
+                            {""name"": ""col 1"", ""type"": ""string""},
+                            {""name"": ""col 2"", ""type"": ""string""}],
+                    ""primaryKey"": ""index"",
+                    ""pandas_version"": ""0.20.0""},
+        ""data"": [{""index"": ""row 1"", ""col 1"": ""a"", ""col 2"": ""b""},
+                {""index"": ""row 2"", ""col 1"": ""c"", ""col 2"": ""d""}]}'"
+"Type for categorical data with the categories and orderedness
+    .. versionchanged:: 0.21.0
+    Parameters
+    ----------
+    categories : sequence, optional
+        Must be unique, and must not contain any nulls.
+    ordered : bool, default False
+    Attributes
+    ----------
+    categories
+    ordered
+    Methods
+    -------
+    None
+    Notes
+    -----
+    This class is useful for specifying the type of a ``Categorical``
+    independent of the values. See :ref:`categorical.categoricaldtype`
+    for more.
+    Examples
+    --------
+    >>> t = CategoricalDtype(categories=['b', 'a'], ordered=True)
+    >>> pd.Series(['a', 'b', 'a', 'c'], dtype=t)
+    0      a
+    1      b
+    2      a
+    3    NaN
+    dtype: category
+    Categories (2, object): [b < a]
+    See Also
+    --------
+    pandas.Categorical
+    """"""
+    # TODO: Document public vs. private API
+    name = 'category'
+    type = CategoricalDtypeType
+    kind = 'O'
+    str = '|O08'
+    base = np.dtype('O')
+    _metadata = ['categories', 'ordered']
+    _cache = {}
+
+    def __init__(self, categories=None, ordered=None):
+        self._finalize(categories, ordered, fastpath=False)
+
+    @classmethod
+    def _from_fastpath(cls, categories=None, ordered=None):
+        self = cls.__new__(cls)
+        self._finalize(categories, ordered, fastpath=True)
+        return self
+
+    @classmethod
+    def _from_categorical_dtype(cls, dtype, categories=None, ordered=None):
+        if categories is ordered is None:
+            return dtype
+        if categories is None:
+            categories = dtype.categories
+        if ordered is None:
+            ordered = dtype.ordered
+        return cls(categories, ordered)
+
+    def _finalize(self, categories, ordered, fastpath=False):
+
+        if ordered is not None:
+            self.validate_ordered(ordered)
+
+        if categories is not None:
+            categories = self.validate_categories(categories,
+                                                  fastpath=fastpath)
+
+        self._categories = categories
+        self._ordered = ordered
+
+    def __setstate__(self, state):
+        self._categories = state.pop('categories', None)
+        self._ordered = state.pop('ordered', False)
+
+    def __hash__(self):
+        # _hash_categories returns a uint64, so use the negative
+        # space for when we have unknown categories to avoid a conflict
+        if self.categories is None:
+            if self.ordered:
+                return -1
+            else:
+                return -2
+        # We *do* want to include the real self.ordered here
+        return int(self._hash_categories(self.categories, self.ordered))
+
+    def __eq__(self, other):
+        """"""
+        Rules for CDT equality:
+        1) Any CDT is equal to the string 'category'
+        2) Any CDT is equal to a CDT with categories=None regardless of ordered
+        3) A CDT with ordered=True is only equal to another CDT with
+           ordered=True and identical categories in the same order
+        4) A CDT with ordered={False, None} is only equal to another CDT with
+           ordered={False, None} and identical categories, but same order is
+           not required. There is no distinction between False/None.
+        5) Any other comparison returns False
+        """"""
+        if isinstance(other, compat.string_types):
+            return other == self.name
+
+        if not (hasattr(other, 'ordered') and hasattr(other, 'categories')):
+            return False
+        elif self.categories is None or other.categories is None:
+            # We're forced into a suboptimal corner thanks to math and
+            # backwards compatibility. We require that `CDT(...) == 'category'`
+            # for all CDTs **including** `CDT(None, ...)`. Therefore, *all*
+            # CDT(., .) = CDT(None, False) and *all*
+            # CDT(., .) = CDT(None, True).
+            return True
+        elif self.ordered or other.ordered:
+            # At least one has ordered=True; equal if both have ordered=True
+            # and the same values for categories in the same order.
+            return ((self.ordered == other.ordered) and
+                    self.categories.equals(other.categories))
+        else:
+            # Neither has ordered=True; equal if both have the same categories,
+            # but same order is not necessary.  There is no distinction between
+            # ordered=False and ordered=None: CDT(., False) and CDT(., None)
+            # will be equal if they have the same categories.
+            return hash(self) == hash(other)
+
+    def __repr__(self):
+        tpl = u'CategoricalDtype(categories={}ordered={})'
+        if self.categories is None:
+            data = u""None, ""
+        else:
+            data = self.categories._format_data(name=self.__class__.__name__)
+        return tpl.format(data, self.ordered)
+
+    @staticmethod
+    def _hash_categories(categories, ordered=True):
+        from pandas.core.util.hashing import (
+            hash_array, _combine_hash_arrays, hash_tuples
+        )
+
+        if len(categories) and isinstance(categories[0], tuple):
+            # assumes if any individual category is a tuple, then all our. ATM
+            # I don't really want to support just some of the categories being
+            # tuples.
+            categories = list(categories)  # breaks if a np.array of categories
+            cat_array = hash_tuples(categories)
+        else:
+            if categories.dtype == 'O':
+                types = [type(x) for x in categories]
+                if not len(set(types)) == 1:
+                    # TODO: hash_array doesn't handle mixed types. It casts
+                    # everything to a str first, which means we treat
+                    # {'1', '2'} the same as {'1', 2}
+                    # find a better solution
+                    cat_array = np.array([hash(x) for x in categories])
+                    hashed = hash((tuple(categories), ordered))
+                    return hashed
+            cat_array = hash_array(np.asarray(categories), categorize=False)
+        if ordered:
+            cat_array = np.vstack([
+                cat_array, np.arange(len(cat_array), dtype=cat_array.dtype)
+            ])
+        else:
+            cat_array = [cat_array]
+        hashed = _combine_hash_arrays(iter(cat_array),
+                                      num_items=len(cat_array))
+        if len(hashed) == 0:
+            # bug in Numpy<1.12 for length 0 arrays. Just return the correct
+            # value of 0
+            return 0
+        else:
+            return np.bitwise_xor.reduce(hashed)
+
+    @classmethod
+    def construct_from_string(cls, string):
+        """""" attempt to construct this type from a string, raise a TypeError if
+        it's not possible """"""
+        try:
+            if string == 'category':
+                return cls()
+        except:
+            pass
+
+        raise TypeError(""cannot construct a CategoricalDtype"")
+
+    @staticmethod
+    def validate_ordered(ordered):
+        """"""
+        Validates that we have a valid ordered parameter. If
+        it is not a boolean, a TypeError will be raised.
+        Parameters
+        ----------
+        ordered : object
+            The parameter to be verified.
+        Raises
+        ------
+        TypeError
+            If 'ordered' is not a boolean.
+        """"""
+        from pandas.core.dtypes.common import is_bool
+        if not is_bool(ordered):
+            raise TypeError(""'ordered' must either be 'True' or 'False'"")
+
+    @staticmethod
+    def validate_categories(categories, fastpath=False):
+        """"""
+        Validates that we have good categories
+        Parameters
+        ----------
+        categories : array-like
+        fastpath : bool
+            Whether to skip nan and uniqueness checks
+        Returns
+        -------
+        categories : Index
+        """"""
+        from pandas import Index
+
+        if not isinstance(categories, ABCIndexClass):
+            categories = Index(categories, tupleize_cols=False)
+
+        if not fastpath:
+
+            if categories.hasnans:
+                raise ValueError('Categorial categories cannot be null')
+
+            if not categories.is_unique:
+                raise ValueError('Categorical categories must be unique')
+
+        if isinstance(categories, ABCCategoricalIndex):
+            categories = categories.categories
+
+        return categories
+
+    def update_dtype(self, dtype):
+        """"""
+        Returns a CategoricalDtype with categories and ordered taken from dtype
+        if specified, otherwise falling back to self if unspecified
+        Parameters
+        ----------
+        dtype : CategoricalDtype
+        Returns
+        -------
+        new_dtype : CategoricalDtype
+        """"""
+        if isinstance(dtype, compat.string_types) and dtype == 'category':
+            # dtype='category' should not change anything
+            return self
+        elif not self.is_dtype(dtype):
+            msg = ('a CategoricalDtype must be passed to perform an update, '
+                   'got {dtype!r}').format(dtype=dtype)
+            raise ValueError(msg)
+
+        # dtype is CDT: keep current categories/ordered if None
+        new_categories = dtype.categories
+        if new_categories is None:
+            new_categories = self.categories
+
+        new_ordered = dtype.ordered
+        if new_ordered is None:
+            new_ordered = self.ordered
+
+        return CategoricalDtype(new_categories, new_ordered)
+
+    @property
+    def categories(self):
+        """"""
+        An ``Index`` containing the unique categories allowed."
+"Convert argument to a numeric type.
+    The default return dtype is `float64` or `int64`
+    depending on the data supplied. Use the `downcast` parameter
+    to obtain other dtypes.
+    Please note that precision loss may occur if really large numbers
+    are passed in. Due to the internal limitations of `ndarray`, if
+    numbers smaller than `-9223372036854775808` (np.iinfo(np.int64).min)
+    or larger than `18446744073709551615` (np.iinfo(np.uint64).max) are
+    passed in, it is very likely they will be converted to float so that
+    they can stored in an `ndarray`. These warnings apply similarly to
+    `Series` since it internally leverages `ndarray`.
+    Parameters
+    ----------
+    arg : scalar, list, tuple, 1-d array, or Series
+    errors : {'ignore', 'raise', 'coerce'}, default 'raise'
+        - If 'raise', then invalid parsing will raise an exception.
+        - If 'coerce', then invalid parsing will be set as NaN.
+        - If 'ignore', then invalid parsing will return the input.
+    downcast : {'integer', 'signed', 'unsigned', 'float'}, default None
+        If not None, and if the data has been successfully cast to a
+        numerical dtype (or if the data was numeric to begin with),
+        downcast that resulting data to the smallest numerical dtype
+        possible according to the following rules:
+        - 'integer' or 'signed': smallest signed int dtype (min.: np.int8)
+        - 'unsigned': smallest unsigned int dtype (min.: np.uint8)
+        - 'float': smallest float dtype (min.: np.float32)
+        As this behaviour is separate from the core conversion to
+        numeric values, any errors raised during the downcasting
+        will be surfaced regardless of the value of the 'errors' input.
+        In addition, downcasting will only occur if the size
+        of the resulting data's dtype is strictly larger than
+        the dtype it is to be cast to, so if none of the dtypes
+        checked satisfy that specification, no downcasting will be
+        performed on the data.
+    Returns
+    -------
+    ret : numeric if parsing succeeded.
+        Return type depends on input.  Series if Series, otherwise ndarray.
+    See Also
+    --------
+    DataFrame.astype : Cast argument to a specified dtype.
+    to_datetime : Convert argument to datetime.
+    to_timedelta : Convert argument to timedelta.
+    numpy.ndarray.astype : Cast a numpy array to a specified type.
+    convert_dtypes : Convert dtypes.
+    Examples
+    --------
+    Take separate series and convert to numeric, coercing when told to
+    >>> s = pd.Series(['1.0', '2', -3])
+    >>> pd.to_numeric(s)
+    0    1.0
+    1    2.0
+    2   -3.0
+    dtype: float64
+    >>> pd.to_numeric(s, downcast='float')
+    0    1.0
+    1    2.0
+    2   -3.0
+    dtype: float32
+    >>> pd.to_numeric(s, downcast='signed')
+    0    1
+    1    2
+    2   -3
+    dtype: int8
+    >>> s = pd.Series(['apple', '1.0', '2', -3])
+    >>> pd.to_numeric(s, errors='ignore')
+    0    apple
+    1      1.0
+    2        2
+    3       -3
+    dtype: object
+    >>> pd.to_numeric(s, errors='coerce')
+    0    NaN
+    1    1.0
+    2    2.0
+    3   -3.0
+    dtype: float64"
+"Convert categorical variable into dummy/indicator variables.
+    Parameters
+    ----------
+    data : array-like, Series, or DataFrame
+        Data of which to get dummy indicators.
+    prefix : str, list of str, or dict of str, default None
+        String to append DataFrame column names.
+        Pass a list with length equal to the number of columns
+        when calling get_dummies on a DataFrame. Alternatively, `prefix`
+        can be a dictionary mapping column names to prefixes.
+    prefix_sep : str, default '_'
+        If appending prefix, separator/delimiter to use. Or pass a
+        list or dictionary as with `prefix`.
+    dummy_na : bool, default False
+        Add a column to indicate NaNs, if False NaNs are ignored.
+    columns : list-like, default None
+        Column names in the DataFrame to be encoded.
+        If `columns` is None then all the columns with
+        `object` or `category` dtype will be converted.
+    sparse : bool, default False
+        Whether the dummy-encoded columns should be backed by
+        a :class:`SparseArray` (True) or a regular NumPy array (False).
+    drop_first : bool, default False
+        Whether to get k-1 dummies out of k categorical levels by removing the
+        first level.
+    dtype : dtype, default np.uint8
+        Data type for new columns. Only a single dtype is allowed.
+        .. versionadded:: 0.23.0
+    Returns
+    -------
+    DataFrame
+        Dummy-coded data.
+    See Also
+    --------
+    Series.str.get_dummies : Convert Series to dummy codes.
+    Examples
+    --------
+    >>> s = pd.Series(list('abca'))
+    >>> pd.get_dummies(s)
+       a  b  c
+    0  1  0  0
+    1  0  1  0
+    2  0  0  1
+    3  1  0  0
+    >>> s1 = ['a', 'b', np.nan]
+    >>> pd.get_dummies(s1)
+       a  b
+    0  1  0
+    1  0  1
+    2  0  0
+    >>> pd.get_dummies(s1, dummy_na=True)
+       a  b  NaN
+    0  1  0    0
+    1  0  1    0
+    2  0  0    1
+    >>> df = pd.DataFrame({'A': ['a', 'b', 'a'], 'B': ['b', 'a', 'c'],
+    ...                    'C': [1, 2, 3]})
+    >>> pd.get_dummies(df, prefix=['col1', 'col2'])
+       C  col1_a  col1_b  col2_a  col2_b  col2_c
+    0  1       1       0       0       1       0
+    1  2       0       1       1       0       0
+    2  3       1       0       0       0       1
+    >>> pd.get_dummies(pd.Series(list('abcaa')))
+       a  b  c
+    0  1  0  0
+    1  0  1  0
+    2  0  0  1
+    3  1  0  0
+    4  1  0  0
+    >>> pd.get_dummies(pd.Series(list('abcaa')), drop_first=True)
+       b  c
+    0  0  0
+    1  1  0
+    2  0  1
+    3  0  0
+    4  0  0
+    >>> pd.get_dummies(pd.Series(list('abc')), dtype=float)
+         a    b    c
+    0  1.0  0.0  0.0
+    1  0.0  1.0  0.0
+    2  0.0  0.0  1.0"
+"Convert structured or record ndarray to DataFrame.
+        Parameters
+        ----------
+        data : ndarray (structured dtype), list of tuples, dict, or DataFrame
+        index : str, list of fields, array-like
+            Field of array to use as the index, alternately a specific set of
+            input labels to use.
+        exclude : sequence, default None
+            Columns or fields to exclude.
+        columns : sequence, default None
+            Column names to use. If the passed data do not have names
+            associated with them, this argument provides names for the
+            columns. Otherwise this argument indicates the order of the columns
+            in the result (any names not found in the data will become all-NA
+            columns).
+        coerce_float : bool, default False
+            Attempt to convert values of non-string, non-numeric objects (like
+            decimal.Decimal) to floating point, useful for SQL result sets.
+        nrows : int, default None
+            Number of rows to read if data is an iterator.
+        Returns
+        -------
+        DataFrame"
+"Quantile-based discretization function.
+    Discretize variable into equal-sized buckets based on rank or based
+    on sample quantiles. For example 1000 values for 10 quantiles would
+    produce a Categorical object indicating quantile membership for each data point.
+    Parameters
+    ----------
+    x : 1d ndarray or Series
+    q : int or list-like of int
+        Number of quantiles. 10 for deciles, 4 for quartiles, etc. Alternately
+        array of quantiles, e.g. [0, .25, .5, .75, 1.] for quartiles.
+    labels : array or False, default None
+        Used as labels for the resulting bins. Must be of the same length as
+        the resulting bins. If False, return only integer indicators of the
+        bins. If True, raises an error.
+    retbins : bool, optional
+        Whether to return the (bins, labels) or not. Can be useful if bins
+        is given as a scalar.
+    precision : int, optional
+        The precision at which to store and display the bins labels.
+    duplicates : {default 'raise', 'drop'}, optional
+        If bin edges are not unique, raise ValueError or drop non-uniques.
+    Returns
+    -------
+    out : Categorical or Series or array of integers if labels is False
+        The return type (Categorical or Series) depends on the input: a Series
+        of type category if input is a Series else Categorical. Bins are
+        represented as categories when categorical data is returned.
+    bins : ndarray of floats
+        Returned only if `retbins` is True.
+    Notes
+    -----
+    Out of bounds values will be NA in the resulting Categorical object
+    Examples
+    --------
+    >>> pd.qcut(range(5), 4)
+    ... # doctest: +ELLIPSIS
+    [(-0.001, 1.0], (-0.001, 1.0], (1.0, 2.0], (2.0, 3.0], (3.0, 4.0]]
+    Categories (4, interval[float64]): [(-0.001, 1.0] < (1.0, 2.0] ...
+    >>> pd.qcut(range(5), 3, labels=[""good"", ""medium"", ""bad""])
+    ... # doctest: +SKIP
+    [good, good, medium, bad, bad]
+    Categories (3, object): [good < medium < bad]
+    >>> pd.qcut(range(5), 4, labels=False)
+    array([0, 0, 1, 2, 3])"

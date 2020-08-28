@@ -1,0 +1,7 @@
+{
+    "source file": "penalized.py",
+    "line number": "437",
+    "func name": "coef_restriction_diffseq",
+    "func arg": "(n_coeffs, degree, n_vars, position, base_idx)",
+    "comments": ""
+}

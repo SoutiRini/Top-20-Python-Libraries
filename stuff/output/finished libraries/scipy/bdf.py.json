@@ -1,0 +1,7 @@
+{
+    "source file": "bdf.py",
+    "line number": "36",
+    "func name": "solve_bdf_system",
+    "func arg": "(fun, t_new, y_predict, c, psi, LU, solve_lu, scale, tol)",
+    "comments": "Solve the algebraic system resulting from BDF method.\n\n\n"
+}

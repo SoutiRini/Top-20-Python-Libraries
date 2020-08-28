@@ -1,0 +1,7 @@
+{
+    "source file": "tgrep.py",
+    "line number": "1022",
+    "func name": "tgrep_nodes",
+    "func arg": "(pattern, trees, search_leaves)",
+    "comments": "Return the tree nodes in the trees which match the given pattern.\n\nparam pattern: a tgrep search pattern :type pattern: str or output of tgrep_compile() :param trees: a sequence of NLTK trees (usually ParentedTrees) :type trees: iter(ParentedTree) or iter(Tree) :param search_leaves: whether ot return matching leaf nodes :type search_leaves: bool :rtype: iter(tree nodes)\n"
+}

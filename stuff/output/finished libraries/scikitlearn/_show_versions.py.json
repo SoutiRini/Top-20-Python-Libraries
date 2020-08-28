@@ -1,0 +1,7 @@
+{
+    "source file": "_show_versions.py",
+    "line number": "76",
+    "func name": "show_versions",
+    "func arg": "()",
+    "comments": "Print useful debugging information\"\n\n.. versionadded:: 0.20\n"
+}

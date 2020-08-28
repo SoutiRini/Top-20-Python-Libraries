@@ -1,0 +1,7 @@
+{
+    "source file": "frontend41.py",
+    "line number": "736",
+    "func name": "find_before",
+    "func arg": "(ctx, pos, substr, offsets)",
+    "comments": ""
+}

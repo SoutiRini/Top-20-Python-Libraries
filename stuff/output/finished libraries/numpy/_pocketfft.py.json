@@ -1,0 +1,7 @@
+{
+    "source file": "_pocketfft.py",
+    "line number": "1360",
+    "func name": "irfft2",
+    "func arg": "(a, s, axes, norm)",
+    "comments": "Compute the 2-dimensional inverse FFT of a real array.\n\nParameters ---------- a : array_like The input array s : sequence of ints, optional Shape of the real output to the inverse FFT. axes : sequence of ints, optional The axes over which to compute the inverse fft. Default is the last two axes. norm : {\"backward\", \"ortho\", \"forward\"}, optional .. versionadded:: 1.10.0\n\nNormalization mode (see `numpy.fft`). Default is \"backward\". Indicates which direction of the forward/backward pair of transforms is scaled and with what normalization factor.\n\n.. versionadded:: 1.20.0\n\nThe \"backward\", \"forward\" values were added.\n##### Returns\n* **out **: ndarray\n    The result of the inverse real 2-D FFT.\n\n* **irfftn **: Compute the inverse of the N-dimensional FFT of real input.\n\n"
+}

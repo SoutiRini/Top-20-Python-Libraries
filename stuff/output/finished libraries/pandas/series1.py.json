@@ -1,0 +1,7 @@
+{
+    "source file": "series1.py",
+    "line number": "104",
+    "func name": "_coerce_method",
+    "func arg": "(converter)",
+    "comments": "Install the scalar coercion methods.\n\n\n"
+}

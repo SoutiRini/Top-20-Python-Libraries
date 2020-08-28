@@ -1,0 +1,7 @@
+{
+    "source file": "package_info.py",
+    "line number": "32",
+    "func name": "package_info",
+    "func arg": "()",
+    "comments": "Get the versions of Gensim and its dependencies, the location where Gensim is installed and platform on which the system is running.\n\n\n##### Returns\n"
+}

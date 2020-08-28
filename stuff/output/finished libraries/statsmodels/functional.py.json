@@ -1,0 +1,7 @@
+{
+    "source file": "functional.py",
+    "line number": "767",
+    "func name": "banddepth",
+    "func arg": "(data, method)",
+    "comments": "Calculate the band depth for a set of functional curves.\n\nBand depth is an order statistic for functional data (see `fboxplot`), with a higher band depth indicating larger \"centrality\".\n\nIn analog to scalar data, the functional curve with highest band depth is called the median curve, and the band made up from the first N/2 of N curves is the 50% central region.\n\nParameters ---------- data : ndarray The vectors of functions to create a functional boxplot from. The first axis is the function index, the second axis the one along which the function is defined.\n\nSo ``data[0, :]`` is the first functional curve. method : {'MBD', 'BD2'}, optional Whether to use the original band depth (with J=2) of [1]_ or the modified band depth.\n\nSee Notes for details.\n##### Returns\n* **.. [3] Y. Sun, M. G. Gentonb and D. W. Nychkac, \"Exact fast computation\n       of band depth for large functional datasets**: How quickly can one\n       million curves be ranked?\", Journal for the Rapid Dissemination\n       of Statistics Research, vol. 1, pp. 68-74, 2012.\n\n"
+}

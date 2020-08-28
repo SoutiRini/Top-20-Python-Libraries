@@ -1,0 +1,7 @@
+{
+    "source file": "variables1.py",
+    "line number": "29",
+    "func name": "ldu",
+    "func arg": "(load_v, name)",
+    "comments": "Load variable operator that returns Undefined when failing to evaluate.\n\nNote: the name (\"load or return undefined\") is abbreviated to minimize the amount of clutter in generated code.\n\nThis variant of `ld` is useful when loading symbols that may be undefined at runtime, such as composite symbols, and whether they are defined or not cannot be determined statically. For example `d['a']` is undefined when `d` is an empty dict.\n##### Args\n* **load_v**: Lambda that executes the actual read.\n\n* **name**: Human-readable name of the symbol being read.\n\n##### Returns\n"
+}

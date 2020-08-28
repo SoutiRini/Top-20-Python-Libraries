@@ -1,0 +1,7 @@
+{
+    "source file": "utils.py",
+    "line number": "2102",
+    "func name": "effective_n_jobs",
+    "func arg": "(n_jobs)",
+    "comments": "Determines the number of jobs can run in parallel.\n\nJust like in sklearn, passing n_jobs=-1 means using all available CPU cores.\n\nParameters ---------- n_jobs : int Number of workers requested by caller.\n##### Returns\n"
+}

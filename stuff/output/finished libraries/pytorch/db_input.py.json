@@ -1,0 +1,7 @@
+{
+    "source file": "db_input.py",
+    "line number": "8",
+    "func name": "db_input",
+    "func arg": "(model, blobs_out, batch_size, db, db_type)",
+    "comments": ""
+}

@@ -1,0 +1,7 @@
+{
+    "source file": "test_network1.py",
+    "line number": "49",
+    "func name": "tips_df",
+    "func arg": "(datapath)",
+    "comments": "DataFrame with the tips dataset.\n\n\n"
+}

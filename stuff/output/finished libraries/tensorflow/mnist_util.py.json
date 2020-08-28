@@ -1,0 +1,7 @@
+{
+    "source file": "mnist_util.py",
+    "line number": "49",
+    "func name": "_prepare_label",
+    "func arg": "(y)",
+    "comments": "Conerts labels to one-hot encoding.\n\n\n"
+}

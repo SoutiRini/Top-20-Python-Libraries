@@ -1,0 +1,7 @@
+{
+    "source file": "doc2vec1.py",
+    "line number": "271",
+    "func name": "train_document_dm_concat",
+    "func arg": "(model, doc_words, doctag_indexes, alpha, work, neu1, learn_doctags, learn_words, learn_hidden, word_vectors, word_locks, doctag_vectors, doctag_locks)",
+    "comments": "Update distributed memory model (\"PV-DM\") by training on a single document, using a concatenation of the context window word vectors (rather than a sum or average).\n\nCalled internally from `Doc2Vec.train()` and `Doc2Vec.infer_vector()`.\n\nThe document is provided as `doc_words`, a list of word tokens which are looked up in the model's vocab dictionary, and `doctag_indexes`, which provide indexes into the doctag_vectors array.\n\nAny of `learn_doctags', `learn_words`, and `learn_hidden` may be set False to prevent learning-updates to those respective model weights, as if using the (partially-)frozen model to infer other compatible vectors.\n\nThis is the non-optimized, Python version. If you have a C compiler, gensim will use the optimized version from doc2vec_inner instead.\n"
+}

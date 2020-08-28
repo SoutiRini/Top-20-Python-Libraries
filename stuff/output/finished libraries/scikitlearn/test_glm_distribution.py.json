@@ -1,0 +1,7 @@
+{
+    "source file": "test_glm_distribution.py",
+    "line number": "93",
+    "func name": "test_deviance_derivative",
+    "func arg": "(family)",
+    "comments": "Test deviance derivative for different families.\n\n\n"
+}

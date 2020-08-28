@@ -1,0 +1,7 @@
+{
+    "source file": "tensor_array_ops_test1.py",
+    "line number": "65",
+    "func name": "_make_ta",
+    "func arg": "(size, name, dtype, infer_shape)",
+    "comments": ""
+}

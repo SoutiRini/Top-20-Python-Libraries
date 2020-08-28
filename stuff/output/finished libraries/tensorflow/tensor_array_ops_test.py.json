@@ -1,0 +1,7 @@
+{
+    "source file": "tensor_array_ops_test.py",
+    "line number": "42",
+    "func name": "_make_converter",
+    "func arg": "(dtype)",
+    "comments": ""
+}

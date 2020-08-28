@@ -1,0 +1,7 @@
+{
+    "source file": "test_lbfgsb_setulb.py",
+    "line number": "69",
+    "func name": "test_setulb_floatround",
+    "func arg": "()",
+    "comments": "test if setulb() violates bounds\n\nchecks for violation due to floating point rounding error\n"
+}

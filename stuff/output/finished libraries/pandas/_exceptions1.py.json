@@ -1,0 +1,7 @@
+{
+    "source file": "_exceptions1.py",
+    "line number": "6",
+    "func name": "rewrite_exception",
+    "func arg": "(old_name, new_name)",
+    "comments": "Rewrite the message of an exception.\n\n\n"
+}

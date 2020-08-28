@@ -1,0 +1,7 @@
+{
+    "source file": "regressionplots.py",
+    "line number": "1190",
+    "func name": "added_variable_resids",
+    "func arg": "(results, focus_exog, resid_type, use_glm_weights, fit_kwargs)",
+    "comments": "Residualize the endog variable and a 'focus' exog variable in a regression model with respect to the other exog variables.\n\nParameters ---------- results : regression results instance A fitted model including the focus exog and all other predictors of interest. focus_exog : {int, str} The column of results.model.exog or a variable name that is to be residualized against the other predictors. resid_type : str The type of residuals to use for the dependent variable.\n\nIf None, uses `resid_deviance` for GLM/GEE and `resid` otherwise. use_glm_weights : bool Only used if the model is a GLM or GEE.\n\nIf True, the residuals for the focus predictor are computed using WLS, with the weights obtained from the IRLS calculations for fitting the GLM.\n\nIf False, unweighted regression is used. fit_kwargs : dict, optional Keyword arguments to be passed to fit when refitting the model.\n##### Returns\n* **endog_resid **: array_like\n    The residuals for the original exog\n\n* **focus_exog_resid **: array_like\n    The residuals for the focus predictor\n\n"
+}

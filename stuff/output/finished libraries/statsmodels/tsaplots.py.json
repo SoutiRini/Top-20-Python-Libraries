@@ -1,0 +1,7 @@
+{
+    "source file": "tsaplots.py",
+    "line number": "358",
+    "func name": "quarter_plot",
+    "func arg": "(x, dates, ylabel, ax)",
+    "comments": "Seasonal plot of quarterly data\n\nParameters ---------- x : array_like Seasonal data to plot. If dates is None, x must be a pandas object with a PeriodIndex or DatetimeIndex with a monthly frequency. dates : array_like, optional If `x` is not a pandas object, then dates must be supplied. ylabel : str, optional The label for the y-axis. Will attempt to use the `name` attribute of the Series. ax : matplotlib.axes, optional Existing axes instance.\n##### Returns\n* **>>> dates = pd.to_datetime(list(map(lambda x**: '-'.join(x) + '-1',\n\n* **.. plot**: \n\n"
+}

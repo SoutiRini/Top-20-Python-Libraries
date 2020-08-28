@@ -1,0 +1,7 @@
+{
+    "source file": "movstat.py",
+    "line number": "208",
+    "func name": "movmoment",
+    "func arg": "(x, k, windowsize, lag)",
+    "comments": "non-central moment\n\nParameters ---------- x : ndarray time series data windsize : int window size lag : 'lagged', 'centered', or 'leading' location of window relative to current position\n##### Returns\n* **mk **: ndarray\n    k-th moving non-central moment, with same shape as x\n\n"
+}

@@ -1,0 +1,7 @@
+{
+    "source file": "misc1.py",
+    "line number": "403",
+    "func name": "autocorrelation_plot",
+    "func arg": "(series, ax, **kwds)",
+    "comments": ""
+}

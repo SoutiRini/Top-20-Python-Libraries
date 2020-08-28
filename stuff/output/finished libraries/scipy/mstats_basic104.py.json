@@ -1,0 +1,7 @@
+{
+    "source file": "mstats_basic104.py",
+    "line number": "2973",
+    "func name": "brunnermunzel",
+    "func arg": "(x, y, alternative, distribution)",
+    "comments": "Computes the Brunner-Munzel test on samples x and y\n\nMissing values in `x` and/or `y` are discarded.\n\nParameters ---------- x, y : array_like Array of samples, should be one-dimensional. alternative :\n\n'less', 'two-sided', or 'greater', optional Whether to get the p-value for the one-sided hypothesis ('less' or 'greater') or for the two-sided hypothesis ('two-sided'). Defaults value is 'two-sided' . distribution: 't' or 'normal', optional Whether to get the p-value by t-distribution or by standard normal distribution. Defaults value is 't' .\n##### Returns\n* **statistic **: float\n    The Brunner-Munzer W statistic.\n\n* **pvalue **: float\n    p-value assuming an t distribution. One-sided or\n    two-sided, depending on the choice of `alternative` and `distribution`.\n\n* **mannwhitneyu **: Mann-Whitney rank test on two samples.\n\n"
+}

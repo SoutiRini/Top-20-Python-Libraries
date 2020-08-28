@@ -1,0 +1,7 @@
+{
+    "source file": "axes_rgb1.py",
+    "line number": "60",
+    "func name": "imshow_rgb",
+    "func arg": "(ax, r, g, b, **kwargs)",
+    "comments": ""
+}

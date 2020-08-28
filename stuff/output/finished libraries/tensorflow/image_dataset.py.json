@@ -1,0 +1,7 @@
+{
+    "source file": "image_dataset.py",
+    "line number": "227",
+    "func name": "path_to_image",
+    "func arg": "(path, image_size, num_channels, interpolation)",
+    "comments": ""
+}

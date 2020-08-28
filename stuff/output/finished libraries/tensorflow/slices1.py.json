@@ -1,0 +1,7 @@
+{
+    "source file": "slices1.py",
+    "line number": "143",
+    "func name": "_py_set_item",
+    "func arg": "(target, i, x)",
+    "comments": "Overload of set_item that executes a Python list modification.\n\n\n"
+}

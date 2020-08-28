@@ -1,0 +1,7 @@
+{
+    "source file": "test_file_msp.py",
+    "line number": "83",
+    "func name": "test_cannot_save_wrong_mode",
+    "func arg": "(tmp_path)",
+    "comments": ""
+}

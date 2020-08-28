@@ -1,0 +1,7 @@
+{
+    "source file": "test_afm.py",
+    "line number": "132",
+    "func name": "test_malformed_header",
+    "func arg": "(afm_data, caplog)",
+    "comments": ""
+}

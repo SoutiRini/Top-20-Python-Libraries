@@ -1,0 +1,7 @@
+{
+    "source file": "compare.py",
+    "line number": "36",
+    "func name": "cds_data_almost_equal",
+    "func arg": "(data1, data2, rtol, atol)",
+    "comments": "Compares data dictionaries containing floats, lists and arrays Also supports nested lists and arrays\n\n\n"
+}

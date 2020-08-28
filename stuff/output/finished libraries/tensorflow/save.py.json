@@ -1,0 +1,7 @@
+{
+    "source file": "save.py",
+    "line number": "138",
+    "func name": "load_model",
+    "func arg": "(filepath, custom_objects, compile, options)",
+    "comments": "Loads a model saved via `model.save()`.\n\nUsage:\n\n>>> model = tf.keras.Sequential([ ...\n\n\n\n tf.keras.layers.Dense(5, input_shape=(3,)), ...\n\n\n\n tf.keras.layers.Softmax()]) >>> model.save('/tmp/model') >>> loaded_model = tf.keras.models.load_model('/tmp/model') >>> x = tf.random.uniform((10, 3)) >>> assert np.allclose(model.predict(x), loaded_model.predict(x))\n\nNote that the model weights may have different scoped names after being loaded. Scoped names include the model/layer names, such as `\"dense_1/kernel:0\"`. It is recommended that you use the layer properties to access specific variables, e.g. `model.get_layer(\"dense_1\").kernel`.\n\nArguments: filepath: One of the following:\n\n- String or `pathlib.Path` object, path to the saved model\n\n- `h5py.File` object from which to load the model custom_objects: Optional dictionary mapping names (strings) to custom classes or functions to be considered during deserialization. compile: Boolean, whether to compile the model after loading. options: Optional `tf.saved_model.LoadOptions` object that specifies options for loading from SavedModel.\n##### Returns\n"
+}

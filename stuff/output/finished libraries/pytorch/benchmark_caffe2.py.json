@@ -1,0 +1,7 @@
+{
+    "source file": "benchmark_caffe2.py",
+    "line number": "197",
+    "func name": "generate_c2_gradient_test",
+    "func arg": "(configs, c2_bench_op)",
+    "comments": "This function creates Caffe2 op test based on the given operator\n\n\n"
+}

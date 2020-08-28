@@ -1,0 +1,7 @@
+{
+    "source file": "prune.py",
+    "line number": "1271",
+    "func name": "_compute_norm",
+    "func arg": "(t, n, dim)",
+    "comments": "Compute the L_n-norm across all entries in tensor `t` along all dimension except for the one identified by dim. Example: if `t` is of shape, say, 3x2x4 and dim=2 (the last dim), then norm will have Size [4], and each entry will represent the `L_n`-norm computed using the 3x2=6 entries for each of the 4 channels.\n\n\n##### Args\n* **t (torch.Tensor)**: tensor representing the parameter to prune\n\n* **n (int, float, inf, -inf, 'fro', 'nuc')**: See documentation of valid\n    entries for argument p in torch.norm\n\n* **dim (int)**: dim identifying the channels to prune\n\n##### Returns\n* **norm (torch.Tensor)**: L_n norm computed across all dimensions except\n    for `dim`. By construction, `norm.shape = t.shape[-1]`.\n\n"
+}

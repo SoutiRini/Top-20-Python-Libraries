@@ -1,0 +1,7 @@
+{
+    "source file": "while_v2.py",
+    "line number": "1302",
+    "func name": "_set_read_only_resource_inputs_attr",
+    "func arg": "(op, branch_graphs)",
+    "comments": "Sets the list of resource inputs which are read-only.\n\nThis is used by AutomaticControlDependencies.\n##### Args\n* **op**: While Operation.\n\n* **branch_graphs**: List of branch FuncGraphs.\n\n"
+}

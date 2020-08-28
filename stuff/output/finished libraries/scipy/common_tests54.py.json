@@ -1,0 +1,7 @@
+{
+    "source file": "common_tests54.py",
+    "line number": "312",
+    "func name": "check_rvs_broadcast",
+    "func arg": "(distfunc, distname, allargs, shape, shape_only, otype)",
+    "comments": ""
+}

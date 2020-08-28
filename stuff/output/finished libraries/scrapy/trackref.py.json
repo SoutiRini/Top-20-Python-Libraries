@@ -1,0 +1,7 @@
+{
+    "source file": "trackref.py",
+    "line number": "64",
+    "func name": "iter_all",
+    "func arg": "(class_name)",
+    "comments": "Iterate over all objects of the same class by its class name\n\n\n"
+}

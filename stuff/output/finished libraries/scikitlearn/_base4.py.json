@@ -1,0 +1,7 @@
+{
+    "source file": "_base4.py",
+    "line number": "134",
+    "func name": "_average_multiclass_ovo_score",
+    "func arg": "(binary_metric, y_true, y_score, average)",
+    "comments": "Average one-versus-one scores for multiclass classification.\n\nUses the binary metric for one-vs-one multiclass classification, where the score is computed according to the Hand & Till (2001) algorithm.\n\nParameters ---------- binary_metric : callable The binary metric function to use that accepts the following as input y_true_target : array, shape = [n_samples_target] Some sub-array of y_true for a pair of classes designated positive and negative in the one-vs-one scheme. y_score_target : array, shape = [n_samples_target] Scores corresponding to the probability estimates of a sample belonging to the designated positive class label\n\ny_true : array-like of shape (n_samples,) True multiclass labels.\n\ny_score : array-like of shape (n_samples, n_classes) Target scores corresponding to probability estimates of a sample belonging to a particular class\n\naverage : {'macro', 'weighted'}, default='macro' Determines the type of averaging performed on the pairwise binary metric scores ``'macro'``: Calculate metrics for each label, and find their unweighted mean. This does not take label imbalance into account. Classes are assumed to be uniformly distributed. ``'weighted'``: Calculate metrics for each label, taking into account the prevalence of the classes.\n##### Returns\n* **score **: float\n    Average of the pairwise binary metric scores\n\n"
+}

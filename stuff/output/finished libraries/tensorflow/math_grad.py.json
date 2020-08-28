@@ -1,0 +1,7 @@
+{
+    "source file": "math_grad.py",
+    "line number": "1985",
+    "func name": "_NextAfterGrad",
+    "func arg": "(op, grad)",
+    "comments": "Returns gradient of nextafter(x1, x2) with respect to x1 and x2.\n\n\n"
+}

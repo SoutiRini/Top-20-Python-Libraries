@@ -1,0 +1,547 @@
+{}{}{
+    "source file": "ajaxcrawl.py",
+    "line number": "70",
+    "func name": "_has_ajaxcrawlable_meta",
+    "func arg": "(text)",
+    "comments": ">>> _has_ajaxcrawlable_meta('<html><head><meta name=\"fragment\"  content=\"!\"/></head><body></body></html>') True >>> _has_ajaxcrawlable_meta(\"<html><head><meta name='fragment' content='!'></head></html>\") True >>> _has_ajaxcrawlable_meta('<html><head><!--<meta name=\"fragment\"  content=\"!\"/>--></head><body></body></html>') False >>> _has_ajaxcrawlable_meta('<html></html>') False\n\n\n"
+}{}{}{}{}{
+    "source file": "benchserver.py",
+    "line number": "30",
+    "func name": "_getarg",
+    "func arg": "(request, name, default, type)",
+    "comments": ""
+}{
+    "source file": "boto.py",
+    "line number": "6",
+    "func name": "is_botocore",
+    "func arg": "()",
+    "comments": ""
+}{}{}{
+    "source file": "cmdline.py",
+    "line number": "156",
+    "func name": "_run_command_profiled",
+    "func arg": "(cmd, args, opts)",
+    "comments": ""
+}{
+    "source file": "common.py",
+    "line number": "1",
+    "func name": "obsolete_setter",
+    "func arg": "(setter, attrname)",
+    "comments": ""
+}{
+    "source file": "common1.py",
+    "line number": "10",
+    "func name": "wrap_loader_context",
+    "func arg": "(function, context)",
+    "comments": "Wrap functions that receive loader_context to contain the context \"pre-loaded\" and expose a interface that receives only one argument\n\n\n"
+}{
+    "source file": "conf.py",
+    "line number": "129",
+    "func name": "feed_process_params_from_cli",
+    "func arg": "(settings, output, output_format)",
+    "comments": "Receives feed export params (from the 'crawl' or 'runspider' commands), checks for inconsistencies in their quantities and returns a dictionary suitable to be used as the FEEDS setting.\n\n\n"
+}{
+    "source file": "conf2.py",
+    "line number": "315",
+    "func name": "maybe_skip_member",
+    "func arg": "(app, what, name, obj, skip, options)",
+    "comments": ""
+}{
+    "source file": "conftest.py",
+    "line number": "53",
+    "func name": "only_asyncio",
+    "func arg": "(request, reactor_pytest)",
+    "comments": ""
+}{
+    "source file": "conftest3.py",
+    "line number": "17",
+    "func name": "setup",
+    "func arg": "(namespace)",
+    "comments": ""
+}{
+    "source file": "console.py",
+    "line number": "92",
+    "func name": "start_python_console",
+    "func arg": "(namespace, banner, shells)",
+    "comments": "Start Python console bound to the given namespace. Readline support and tab completion will be used on Unix, if available.\n\n\n"
+}{}{}{
+    "source file": "cookies4.py",
+    "line number": "84",
+    "func name": "potential_domain_matches",
+    "func arg": "(domain)",
+    "comments": "Potential domain matches for a cookie\n\n>>> potential_domain_matches('www.example.com') ['www.example.com', 'example.com', '.www.example.com', '.example.com']\n"
+}{}{}{
+    "source file": "crawl5.py",
+    "line number": "27",
+    "func name": "_get_method",
+    "func arg": "(method, spider)",
+    "comments": ""
+}{}{
+    "source file": "curl.py",
+    "line number": "37",
+    "func name": "curl_to_request_kwargs",
+    "func arg": "(curl_command, ignore_unknown_options)",
+    "comments": "Convert a cURL command syntax to Request kwargs.\n\nparam str curl_command: string containing the curl command :param bool ignore_unknown_options: If true, only a warning is emitted when cURL options are unknown. Otherwise raises an error. (default: True) :return: dictionary of Request kwargs\n"
+}{}{}{}{}{
+    "source file": "decorators.py",
+    "line number": "38",
+    "func name": "inthread",
+    "func arg": "(func)",
+    "comments": "Decorator to call a function in a thread and return a deferred with the result\n\n\n"
+}{}{}{}{}{}{
+    "source file": "defer.py",
+    "line number": "161",
+    "func name": "maybeDeferred_coro",
+    "func arg": "(f, **kw)",
+    "comments": "Copy of defer.maybeDeferred that also converts coroutines to Deferreds.\n\n\n"
+}{
+    "source file": "deprecate.py",
+    "line number": "146",
+    "func name": "method_is_overridden",
+    "func arg": "(subclass, base_class, method_name)",
+    "comments": "Return True if a method named ``method_name`` of a ``base_class`` is overridden in a ``subclass``.\n\n>>> class Base: ...\n\n\n\n def foo(self): ...\n\n\n\n\n\n\n\n pass >>> class Sub1(Base): ...\n\n\n\n pass >>> class Sub2(Base): ...\n\n\n\n def foo(self): ...\n\n\n\n\n\n\n\n pass >>> class Sub3(Sub1): ...\n\n\n\n def foo(self): ...\n\n\n\n\n\n\n\n pass >>> class Sub4(Sub2): ...\n\n\n\n pass >>> method_is_overridden(Sub1, Base, 'foo') False >>> method_is_overridden(Sub2, Base, 'foo') True >>> method_is_overridden(Sub3, Base, 'foo') True >>> method_is_overridden(Sub4, Base, 'foo') True\n"
+}{}{
+    "source file": "display.py",
+    "line number": "25",
+    "func name": "pprint",
+    "func arg": "(obj, **kwargs)",
+    "comments": ""
+}{}{
+    "source file": "dummydbm.py",
+    "line number": "17",
+    "func name": "open",
+    "func arg": "(file, flag, mode)",
+    "comments": "Open or create a dummy database compatible.\n\nArguments ``flag`` and ``mode`` are ignored.\n"
+}{}{}{}{
+    "source file": "engine7.py",
+    "line number": "47",
+    "func name": "print_engine_status",
+    "func arg": "(engine)",
+    "comments": ""
+}{}{}{}{}{}{}{}{}{}{}{
+    "source file": "form.py",
+    "line number": "175",
+    "func name": "_get_clickable",
+    "func arg": "(clickdata, form)",
+    "comments": "Returns the clickable element specified in clickdata, if the latter is given. If not, it returns the first clickable element found\n\n\n"
+}{}{
+    "source file": "ftp8.py",
+    "line number": "21",
+    "func name": "ftp_store_file",
+    "func arg": "()",
+    "comments": "Opens a FTP connection with passed credentials,sets current directory to the directory extracted from given path, then uploads the file to server\n\n\n"
+}{
+    "source file": "genspider.py",
+    "line number": "14",
+    "func name": "sanitize_module_name",
+    "func arg": "(module_name)",
+    "comments": "Sanitize the given module name, by replacing dashes and points with underscores and prefixing it with a letter if it doesn't start with one\n\n\n"
+}{
+    "source file": "gz.py",
+    "line number": "58",
+    "func name": "gzip_magic_number",
+    "func arg": "(response)",
+    "comments": ""
+}{}{}{}{
+    "source file": "http9.py",
+    "line number": "20",
+    "func name": "decode_chunked_transfer",
+    "func arg": "(chunked_body)",
+    "comments": "Parsed body received with chunked transfer encoding, and return the decoded body.\n\nFor more info see: https://en.wikipedia.org/wiki/Chunked_transfer_encoding\n"
+}{}{
+    "source file": "http11.py",
+    "line number": "187",
+    "func name": "tunnel_request_data",
+    "func arg": "(host, port, proxy_auth_header)",
+    "comments": "Return binary content of a CONNECT request.\n\n>>> from scrapy.utils.python import to_unicode as s >>> s(tunnel_request_data(\"example.com\", 8080)) 'CONNECT example.com:8080 HTTP/1.1\\r\\nHost: example.com:8080\\r\\n\\r\\n' >>> s(tunnel_request_data(\"example.com\", 8080, b\"123\")) 'CONNECT example.com:8080 HTTP/1.1\\r\\nHost: example.com:8080\\r\\nProxy-Authorization: 123\\r\\n\\r\\n' >>> s(tunnel_request_data(b\"example.com\", \"8090\")) 'CONNECT example.com:8090 HTTP/1.1\\r\\nHost: example.com:8090\\r\\n\\r\\n'\n"
+}{}{}{
+    "source file": "httpcache10.py",
+    "line number": "367",
+    "func name": "rfc1123_to_epoch",
+    "func arg": "(date_str)",
+    "comments": ""
+}{}{}{
+    "source file": "httpobj.py",
+    "line number": "10",
+    "func name": "urlparse_cached",
+    "func arg": "(request_or_response)",
+    "comments": "Return urlparse.urlparse caching the result, where the argument can be a Request or Response object\n\n\n"
+}{}{}{}{}{
+    "source file": "ip_address.py",
+    "line number": "16",
+    "func name": "createResolver",
+    "func arg": "(servers, resolvconf, hosts)",
+    "comments": ""
+}{}{
+    "source file": "iterators.py",
+    "line number": "129",
+    "func name": "_body_or_str",
+    "func arg": "(obj, unicode)",
+    "comments": ""
+}{
+    "source file": "job.py",
+    "line number": "4",
+    "func name": "job_dir",
+    "func arg": "(settings)",
+    "comments": ""
+}{}{}{
+    "source file": "linkfix.py",
+    "line number": "18",
+    "func name": "main",
+    "func arg": "()",
+    "comments": ""
+}{}{
+    "source file": "log.py",
+    "line number": "187",
+    "func name": "logformatter_adapter",
+    "func arg": "(logkws)",
+    "comments": "Helper that takes the dictionary output from the methods in LogFormatter and adapts it into a tuple of positional arguments for logger.log calls, handling backward compatibility as well.\n\n\n"
+}{}{}{
+    "source file": "lxmlhtml.py",
+    "line number": "36",
+    "func name": "_canonicalize_link_url",
+    "func arg": "(link)",
+    "comments": ""
+}{
+    "source file": "mail.py",
+    "line number": "24",
+    "func name": "_to_bytes_or_none",
+    "func arg": "(text)",
+    "comments": ""
+}{}{}{}{}{}{}{
+    "source file": "misc.py",
+    "line number": "213",
+    "func name": "warn_on_generator_with_return_value",
+    "func arg": "(spider, callable)",
+    "comments": "Logs a warning if a callable is a generator function and includes a 'return' statement with a value different than None\n\n\n"
+}{
+    "source file": "mockserver.py",
+    "line number": "259",
+    "func name": "ssl_context_factory",
+    "func arg": "(keyfile, certfile, cipher_string)",
+    "comments": ""
+}{}{}{}{}{}{
+    "source file": "ossignal.py",
+    "line number": "12",
+    "func name": "install_shutdown_handlers",
+    "func arg": "(function, override_sigint)",
+    "comments": "Install the given function as a signal handler for all common shutdown signals (such as SIGINT, SIGTERM, etc). If override_sigint is ``False`` the SIGINT handler won't be install if there is already a handler in place (e.g.  Pdb)\n\n\n"
+}{}{}{}{
+    "source file": "pqueues.py",
+    "line number": "9",
+    "func name": "_path_safe",
+    "func arg": "(text)",
+    "comments": "Return a filesystem-safe version of a string ``text``\n\n>>> _path_safe('simple.org').startswith('simple.org') True >>> _path_safe('dash-underscore_.org').startswith('dash-underscore_.org') True >>> _path_safe('some@symbol?').startswith('some_symbol_') True\n"
+}{}{
+    "source file": "project.py",
+    "line number": "61",
+    "func name": "get_project_settings",
+    "func arg": "()",
+    "comments": ""
+}{}{
+    "source file": "python.py",
+    "line number": "311",
+    "func name": "global_object_name",
+    "func arg": "(obj)",
+    "comments": "Return full name of a global object.\n\n>>> from scrapy import Request >>> global_object_name(Request) 'scrapy.http.request.Request'\n"
+}{}{}{
+    "source file": "reactor.py",
+    "line number": "81",
+    "func name": "is_asyncio_reactor_installed",
+    "func arg": "()",
+    "comments": ""
+}{}{
+    "source file": "referer.py",
+    "line number": "269",
+    "func name": "_load_policy_class",
+    "func arg": "(policy, warning_only)",
+    "comments": "Expect a string for the path to the policy class, otherwise try to interpret the string as a standard value from https://www.w3.org/TR/referrer-policy/#referrer-policies\n\n\n"
+}{
+    "source file": "regex.py",
+    "line number": "15",
+    "func name": "clean_link",
+    "func arg": "(link_text)",
+    "comments": "Remove leading and trailing whitespace and punctuation\n\n\n"
+}{
+    "source file": "reqser.py",
+    "line number": "95",
+    "func name": "_get_method",
+    "func arg": "(obj, name)",
+    "comments": ""
+}{
+    "source file": "request.py",
+    "line number": "95",
+    "func name": "referer_str",
+    "func arg": "(request)",
+    "comments": "Return Referer HTTP header suitable for logging.\n\n\n"
+}{}{
+    "source file": "response.py",
+    "line number": "63",
+    "func name": "open_in_browser",
+    "func arg": "(response, _openfunc)",
+    "comments": "Open the given response in a local web browser, populating the <base> tag for external links to work\n\n\n"
+}{}{}{}{
+    "source file": "robotstxt13.py",
+    "line number": "11",
+    "func name": "decode_robotstxt",
+    "func arg": "(robotstxt_body, spider, to_native_str_type)",
+    "comments": ""
+}{}{
+    "source file": "runspider.py",
+    "line number": "10",
+    "func name": "_import_file",
+    "func arg": "(filepath)",
+    "comments": ""
+}{
+    "source file": "s3.py",
+    "line number": "10",
+    "func name": "_get_boto_connection",
+    "func arg": "()",
+    "comments": ""
+}{}{}{
+    "source file": "scrapydocs.py",
+    "line number": "135",
+    "func name": "rev_role",
+    "func arg": "(name, rawtext, text, lineno, inliner, options, content)",
+    "comments": ""
+}{}{}{}{}{
+    "source file": "setup.py",
+    "line number": "10",
+    "func name": "has_environment_marker_platform_impl_support",
+    "func arg": "()",
+    "comments": "Code extracted from 'pytest/setup.py' https://github.com/pytest-dev/pytest/blob/7538680c/setup.py#L31\n\nThe first known release to support environment marker with range operators it is 18.5, see: https://setuptools.readthedocs.io/en/latest/history.html#id235\n"
+}{}{}{
+    "source file": "shell16.py",
+    "line number": "164",
+    "func name": "_request_deferred",
+    "func arg": "(request)",
+    "comments": "Wrap a request inside a Deferred.\n\nThis function is harmful, do not use it until you know what you are doing.\n\nThis returns a Deferred whose first pair of callbacks are the request callback and errback. The Deferred also triggers when the request callback/errback is executed (i.e. when the request is downloaded)\n\nWARNING: Do not call request.replace() until after the deferred is called.\n"
+}{
+    "source file": "signal.py",
+    "line number": "75",
+    "func name": "disconnect_all",
+    "func arg": "(signal, sender)",
+    "comments": "Disconnect all signal handlers. Useful for cleaning up after running tests\n\n\n"
+}{}{}{}{
+    "source file": "sitemap.py",
+    "line number": "40",
+    "func name": "sitemap_urls_from_robots",
+    "func arg": "(robots_text, base_url)",
+    "comments": "Return an iterator over all sitemap urls contained in the given robots.txt file\n\n\n"
+}{
+    "source file": "sitemap17.py",
+    "line number": "93",
+    "func name": "iterloc",
+    "func arg": "(it, alt)",
+    "comments": ""
+}{
+    "source file": "spider.py",
+    "line number": "46",
+    "func name": "spidercls_for_request",
+    "func arg": "(spider_loader, request, default_spidercls, log_none, log_multiple)",
+    "comments": "Return a spider class that handles the given Request.\n\nThis will look for the spiders that can handle the given request (using the spider loader) and return a Spider class if (and only if) there is only one Spider able to handle the Request.\n\nIf multiple spiders (or no spider) are found, it will return the default_spidercls passed. It can optionally log if multiple or no spiders are found.\n"
+}{}{}{}{}{}{}{
+    "source file": "spidermw.py",
+    "line number": "21",
+    "func name": "_fname",
+    "func arg": "(f)",
+    "comments": ""
+}{}{}{
+    "source file": "squeues.py",
+    "line number": "82",
+    "func name": "_pickle_serialize",
+    "func arg": "(obj)",
+    "comments": ""
+}{
+    "source file": "ssl.py",
+    "line number": "57",
+    "func name": "get_openssl_version",
+    "func arg": "()",
+    "comments": ""
+}{
+    "source file": "startproject.py",
+    "line number": "26",
+    "func name": "_make_writable",
+    "func arg": "(path)",
+    "comments": ""
+}{}{}{}{}{
+    "source file": "template.py",
+    "line number": "24",
+    "func name": "string_camelcase",
+    "func arg": "(string)",
+    "comments": "Convert a word  to its CamelCase version and remove invalid chars\n\n>>> string_camelcase('lost-pound') 'LostPound'\n\n>>> string_camelcase('missing_images') 'MissingImages'\n"
+}{}{}{
+    "source file": "test_command_parse.py",
+    "line number": "10",
+    "func name": "_textmode",
+    "func arg": "(bstr)",
+    "comments": "Normalize input the same as writing to a file and reading from it in text mode\n\n\n"
+}{}{}{
+    "source file": "test_commands.py",
+    "line number": "128",
+    "func name": "get_permissions_dict",
+    "func arg": "(path, renamings, ignore)",
+    "comments": ""
+}{}{}{}{}{
+    "source file": "test_downloader_handlers.py",
+    "line number": "174",
+    "func name": "closeConnection",
+    "func arg": "(request)",
+    "comments": ""
+}{}{}{
+    "source file": "test_downloadermiddleware_decompression.py",
+    "line number": "9",
+    "func name": "_test_data",
+    "func arg": "(formats)",
+    "comments": ""
+}{}{}{}{}{}{}{}{}{}{}{}{}{}{
+    "source file": "test_engine.py",
+    "line number": "120",
+    "func name": "start_test_site",
+    "func arg": "(debug)",
+    "comments": ""
+}{}{}{}{}{}{
+    "source file": "test_http_request.py",
+    "line number": "1218",
+    "func name": "_qs",
+    "func arg": "(req, encoding, to_unicode)",
+    "comments": ""
+}{}{}{}{}{
+    "source file": "test_loader_deprecated.py",
+    "line number": "670",
+    "func name": "function_processor_upper",
+    "func arg": "(iterable)",
+    "comments": ""
+}{
+    "source file": "test_loader.py",
+    "line number": "528",
+    "func name": "function_processor_upper",
+    "func arg": "(iterable)",
+    "comments": ""
+}{}{}{}{}{
+    "source file": "test_pipeline_files.py",
+    "line number": "503",
+    "func name": "_prepare_request_object",
+    "func arg": "(item_url, flags)",
+    "comments": ""
+}{
+    "source file": "test_pipeline_images.py",
+    "line number": "410",
+    "func name": "_create_image",
+    "func arg": "(format, **kw)",
+    "comments": ""
+}{
+    "source file": "test_pipeline_media.py",
+    "line number": "18",
+    "func name": "_mocked_download_func",
+    "func arg": "(request, info)",
+    "comments": ""
+}{}{
+    "source file": "test_proxy_connect.py",
+    "line number": "55",
+    "func name": "_wrong_credentials",
+    "func arg": "(proxy_url)",
+    "comments": ""
+}{}{}{}{}{
+    "source file": "test_robotstxt_interface.py",
+    "line number": "23",
+    "func name": "protego_available",
+    "func arg": "()",
+    "comments": ""
+}{
+    "source file": "test_scheduler.py",
+    "line number": "223",
+    "func name": "_is_scheduling_fair",
+    "func arg": "(enqueued_slots, dequeued_slots)",
+    "comments": "We enqueued same number of requests for every slot. Assert correct order, e.g.\n\n>>> enqueued = ['a', 'b', 'c'] * 2 >>> correct = ['a', 'c', 'b', 'b', 'a', 'c'] >>> incorrect = ['a', 'a', 'b', 'c', 'c', 'b'] >>> _is_scheduling_fair(enqueued, correct) True >>> _is_scheduling_fair(enqueued, incorrect) False\n"
+}{}{}{}{}{
+    "source file": "test_spidermiddleware_httperror.py",
+    "line number": "52",
+    "func name": "_responses",
+    "func arg": "(request, status_codes)",
+    "comments": ""
+}{}{}{}{}{}{}{
+    "source file": "test_squeues.py",
+    "line number": "30",
+    "func name": "nonserializable_object_test",
+    "func arg": "()",
+    "comments": ""
+}{}{}{}{}{}{}{}{}{
+    "source file": "test_utils_defer.py",
+    "line number": "58",
+    "func name": "eb1",
+    "func arg": "(failure, arg1, arg2)",
+    "comments": ""
+}{}{}{}{}{}{}{
+    "source file": "test_utils_project.py",
+    "line number": "51",
+    "func name": "set_env",
+    "func arg": "(**update)",
+    "comments": ""
+}{}{
+    "source file": "test_utils_reqser.py",
+    "line number": "147",
+    "func name": "private_handle_error",
+    "func arg": "(failure)",
+    "comments": ""
+}{}{}{}{}{}{}{}{}{
+    "source file": "test_utils_url.py",
+    "line number": "220",
+    "func name": "create_skipped_scheme_t",
+    "func arg": "(args)",
+    "comments": ""
+}{
+    "source file": "test_webclient.py",
+    "line number": "39",
+    "func name": "getPage",
+    "func arg": "(url, contextFactory, response_transform, **kwargs)",
+    "comments": "Adapted version of twisted.web.client.getPage\n\n\n"
+}{
+    "source file": "test.py",
+    "line number": "131",
+    "func name": "mock_google_cloud_storage",
+    "func arg": "()",
+    "comments": "Creates autospec mocks for google-cloud-storage Client, Bucket and Blob classes and set their proper return values.\n\n\n"
+}{}{
+    "source file": "testsite.py",
+    "line number": "29",
+    "func name": "test_site",
+    "func arg": "()",
+    "comments": ""
+}{
+    "source file": "text.py",
+    "line number": "252",
+    "func name": "_url_from_selector",
+    "func arg": "(sel)",
+    "comments": ""
+}{}{}{
+    "source file": "trackref.py",
+    "line number": "64",
+    "func name": "iter_all",
+    "func arg": "(class_name)",
+    "comments": "Iterate over all objects of the same class by its class name\n\n\n"
+}{}{}{}{
+    "source file": "unified.py",
+    "line number": "20",
+    "func name": "_response_from_text",
+    "func arg": "(text, st)",
+    "comments": ""
+}{
+    "source file": "url.py",
+    "line number": "136",
+    "func name": "strip_url",
+    "func arg": "(url, strip_credentials, strip_default_port, origin_only, strip_fragment)",
+    "comments": "Strip URL string from some of its components\n\n- ``strip_credentials`` removes \"user:password@\"\n\n- ``strip_default_port`` removes \":80\" (resp. \":443\", \":21\") from http:// (resp. https://, ftp://) URLs\n\n- ``origin_only`` replaces path component with \"/\", also dropping query and fragment components ; it also strips credentials\n\n- ``strip_fragment`` drops any #fragment component\n"
+}{}{}{}{
+    "source file": "versions.py",
+    "line number": "15",
+    "func name": "scrapy_components_versions",
+    "func arg": "()",
+    "comments": ""
+}{}{
+    "source file": "webclient.py",
+    "line number": "28",
+    "func name": "_parse",
+    "func arg": "(url)",
+    "comments": "Return tuple of (scheme, netloc, host, port, path), all in bytes except for port which is int. Assume url is from Request.url, which was passed via safe_url_string and is ascii-only.\n\n\n"
+}{}

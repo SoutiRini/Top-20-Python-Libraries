@@ -1,0 +1,7 @@
+{
+    "source file": "test_sort_values_level_as_str1.py",
+    "line number": "67",
+    "func name": "test_sort_column_level_and_index_label",
+    "func arg": "(df_none, df_idx, sort_names, ascending)",
+    "comments": ""
+}

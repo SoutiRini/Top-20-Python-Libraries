@@ -1,0 +1,7 @@
+{
+    "source file": "fp16_help.py",
+    "line number": "30",
+    "func name": "write_w",
+    "func arg": "(dtype)",
+    "comments": "Return the function name to write data.\n\nThis should be used like this::\n\ncode = 'res = %s(oval)' % (write_w(output_type),)\n"
+}

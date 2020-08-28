@@ -1,0 +1,7 @@
+{
+    "source file": "ragged_string_ops.py",
+    "line number": "924",
+    "func name": "_nrows",
+    "func arg": "(tensor, out_type)",
+    "comments": ""
+}

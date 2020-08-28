@@ -1,0 +1,7 @@
+{
+    "source file": "tools1.py",
+    "line number": "694",
+    "func name": "get_config_plotly_server_url",
+    "func arg": "()",
+    "comments": "Function to get the .config file's 'plotly_domain' without importing the chart_studio package.  This property is needed to compute the default value of the plotly.js config plotlyServerURL, so it is independent of the chart_studio integration and still needs to live in\n\n\n##### Returns\n"
+}

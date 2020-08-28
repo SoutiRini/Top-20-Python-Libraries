@@ -1,0 +1,7 @@
+{
+    "source file": "fromnumeric.py",
+    "line number": "3694",
+    "func name": "alltrue",
+    "func arg": "(**kwargs)",
+    "comments": "Check if all elements of input array are true.\n\nSee Also -------- numpy.all : Equivalent function; see for details.\n"
+}

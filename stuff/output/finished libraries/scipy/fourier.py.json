@@ -1,0 +1,7 @@
+{
+    "source file": "fourier.py",
+    "line number": "251",
+    "func name": "fourier_shift",
+    "func arg": "(input, shift, n, axis, output)",
+    "comments": "Multidimensional Fourier shift filter.\n\nThe array is multiplied with the Fourier transform of a shift operation.\n\nParameters ---------- input : array_like The input array. shift : float or sequence The size of the box used for filtering. If a float, `shift` is the same for all axes. If a sequence, `shift` has to contain one value for each axis. n : int, optional If `n` is negative (default), then the input is assumed to be the result of a complex fft. If `n` is larger than or equal to zero, the input is assumed to be the result of a real fft, and `n` gives the length of the array before transformation along the real transform direction. axis : int, optional The axis of the real transform. output : ndarray, optional If given, the result of shifting the input is placed in this array. None is returned in this case.\n##### Returns\n* **fourier_shift **: ndarray\n    The shifted input.\n\n"
+}

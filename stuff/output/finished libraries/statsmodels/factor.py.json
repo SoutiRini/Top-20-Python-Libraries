@@ -1,0 +1,7 @@
+{
+    "source file": "factor.py",
+    "line number": "38",
+    "func name": "_check_args_2",
+    "func arg": "(endog, n_factor, corr, nobs, k_endog)",
+    "comments": ""
+}

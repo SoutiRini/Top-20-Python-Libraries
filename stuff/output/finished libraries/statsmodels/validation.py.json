@@ -1,0 +1,7 @@
+{
+    "source file": "validation.py",
+    "line number": "415",
+    "func name": "dict_like",
+    "func arg": "(value, name, optional, strict)",
+    "comments": "Check if dict_like (dict, Mapping) or raise if not\n\nParameters ---------- value : object Value to verify name : str Variable name for exceptions optional : bool Flag indicating whether None is allowed strict : bool If True, then only allow dict. If False, allow any Mapping-like object.\n##### Returns\n* **converted **: dict_like\n    value\n\n"
+}

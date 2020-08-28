@@ -1,0 +1,7 @@
+{
+    "source file": "checkpoint.py",
+    "line number": "818",
+    "func name": "epoch_limiter",
+    "func arg": "(job, num_epochs)",
+    "comments": "Creates a task that will output True when a given number of epochs has finished.\n\n\n"
+}

@@ -1,0 +1,7 @@
+{
+    "source file": "sp.py",
+    "line number": "365",
+    "func name": "max_pool",
+    "func arg": "(images, imgshp, maxpoolshp)",
+    "comments": "Implements a max pooling layer\n\nTakes as input a 2D tensor of shape batch_size x img_size and performs max pooling.\n\nMax pooling downsamples by taking the max value in a given area, here defined by maxpoolshp. Outputs a 2D tensor of shape batch_size x output_size.\n\n:param images: 2D tensor containing images on which to apply convolution. Assumed to be of shape batch_size x img_size :param imgshp: tuple containing image dimensions :param maxpoolshp: tuple containing shape of area to max pool over\n\n:return: out1, symbolic result (2D tensor) :return: out2, logical shape of the output\n"
+}

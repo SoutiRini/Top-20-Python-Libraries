@@ -1,0 +1,7 @@
+{
+    "source file": "fusion.py",
+    "line number": "17",
+    "func name": "fuse_conv_bn_weights",
+    "func arg": "(conv_w, conv_b, bn_rm, bn_rv, bn_eps, bn_w, bn_b)",
+    "comments": ""
+}

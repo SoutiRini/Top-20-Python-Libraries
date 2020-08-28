@@ -1,0 +1,7 @@
+{
+    "source file": "mixture_rvs.py",
+    "line number": "185",
+    "func name": "mv_mixture_rvs",
+    "func arg": "(prob, size, dist, nvars, **kwargs)",
+    "comments": "Sample from a mixture of multivariate distributions.\n\nParameters ---------- prob : array_like Probability of sampling from each distribution in dist size : int The length of the returned sample. dist : array_like An iterable of distributions instances with callable method rvs. nvargs : int dimension of the multivariate distribution, could be inferred instead kwargs : tuple of dicts, optional ignored\n\nExamples -------- Say we want 2000 random variables from mixture of normals with two multivariate normal distributions, and we want to sample from the first with probability .4 and the second with probability .6.\n\nimport statsmodels.sandbox.distributions.mv_normal as mvd\n\ncov3 = np.array([[ 1.\n\n,\n\n0.5 ,\n\n0.75], [ 0.5 ,\n\n1.5 ,\n\n0.6 ], [ 0.75,\n\n0.6 ,\n\n2.\n\n]])\n\nmu = np.array([-1, 0.0, 2.0]) mu2 = np.array([4, 2.0, 2.0]) mvn3 = mvd.MVNormal(mu, cov3) mvn32 = mvd.MVNormal(mu2, cov3/2., 4) rvs = mix.mv_mixture_rvs([0.4, 0.6], 2000, [mvn3, mvn32], 3)\n"
+}

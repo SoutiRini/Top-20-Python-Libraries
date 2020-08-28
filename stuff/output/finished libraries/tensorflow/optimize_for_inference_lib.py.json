@@ -1,0 +1,7 @@
+{
+    "source file": "optimize_for_inference_lib.py",
+    "line number": "419",
+    "func name": "fuse_resize_and_conv",
+    "func arg": "(input_graph_def, output_node_names)",
+    "comments": "Merges preceding resize and mirror pad ops into a specialized convolution.\n\nThere's a common pattern of enlarging the input to a convolution using a resize operation, and also using MirrorPad to extend the boundaries to that zero edge pixels don't bleed inwards when convolving. This routine looks for that pattern of operations, and fuses them together into a Conv2DWithResizeOp.\n##### Args\n* **input_graph_def**: A GraphDef containing a model.\n\n* **output_node_names**: A list of names of the nodes that produce the final\n  results.\n\n##### Returns\n"
+}

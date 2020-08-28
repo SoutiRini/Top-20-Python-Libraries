@@ -1,0 +1,7 @@
+{
+    "source file": "util4.py",
+    "line number": "126",
+    "func name": "cosine_distance",
+    "func arg": "(u, v)",
+    "comments": "Returns 1 minus the cosine of the angle between vectors v and u. This is equal to 1 - (u.v / |u||v|).\n\n\n"
+}

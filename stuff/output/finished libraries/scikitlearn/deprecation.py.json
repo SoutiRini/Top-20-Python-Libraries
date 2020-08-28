@@ -1,0 +1,7 @@
+{
+    "source file": "deprecation.py",
+    "line number": "115",
+    "func name": "_is_deprecated",
+    "func arg": "(func)",
+    "comments": "Helper to check if func is wrapped by our deprecated decorator\n\n\n"
+}

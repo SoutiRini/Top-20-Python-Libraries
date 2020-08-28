@@ -1,0 +1,7 @@
+{
+    "source file": "plot_schema.py",
+    "line number": "9",
+    "func name": "retrieve",
+    "func arg": "(sha1, **kwargs)",
+    "comments": "Retrieve the most up-to-date copy of the plot-schema wrt the given hash.\n\nparam (str) sha1: The last-known hash of the plot-schema (or ''). :returns: (requests.Response) Returns response directly from requests.\n"
+}

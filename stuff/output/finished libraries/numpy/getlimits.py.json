@@ -1,0 +1,7 @@
+{
+    "source file": "getlimits.py",
+    "line number": "284",
+    "func name": "_discovered_machar",
+    "func arg": "(ftype)",
+    "comments": "Create MachAr instance with found information on float types\n\n\n"
+}

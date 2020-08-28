@@ -1,0 +1,7 @@
+{
+    "source file": "conv_activation.py",
+    "line number": "151",
+    "func name": "make_conv_relu1_tests",
+    "func arg": "(options)",
+    "comments": "Make a set of tests to do conv_relu1.\n\n\n"
+}

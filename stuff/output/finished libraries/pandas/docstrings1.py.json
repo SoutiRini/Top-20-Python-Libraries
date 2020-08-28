@@ -1,0 +1,7 @@
+{
+    "source file": "docstrings1.py",
+    "line number": "7",
+    "func name": "_make_flex_doc",
+    "func arg": "(op_name, typ)",
+    "comments": "Make the appropriate substitutions for the given operation and class-typ into either _flex_doc_SERIES or _flex_doc_FRAME to return the docstring to attach to a generated method.\n\nParameters ---------- op_name : str {'__add__', '__sub__', ... '__eq__', '__ne__', ...} typ : str {series, 'dataframe']}\n##### Returns\n* **doc **: str\n\n"
+}

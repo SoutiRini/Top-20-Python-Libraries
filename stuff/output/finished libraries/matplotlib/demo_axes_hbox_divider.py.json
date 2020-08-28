@@ -1,0 +1,7 @@
+{
+    "source file": "demo_axes_hbox_divider.py",
+    "line number": "15",
+    "func name": "make_heights_equal",
+    "func arg": "(fig, rect, ax1, ax2, pad)",
+    "comments": ""
+}

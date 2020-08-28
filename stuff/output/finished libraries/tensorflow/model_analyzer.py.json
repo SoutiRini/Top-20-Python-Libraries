@@ -1,0 +1,7 @@
+{
+    "source file": "model_analyzer.py",
+    "line number": "24",
+    "func name": "GenerateModelReport",
+    "func arg": "(metagraph, assume_valid_feeds, debug)",
+    "comments": "Report what's known statically about each node in the provided metagraph.\n\n\n##### Args\n* **metagraph**: A TensorFlow MetaGraphDef.\n\n* **assume_valid_feeds**: If True, assume that the shape of the fed nodes is valid\n\n* **debug**: Add some information useful for debugging.\n\n##### Returns\n"
+}

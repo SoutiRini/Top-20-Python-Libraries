@@ -1,0 +1,7 @@
+{
+    "source file": "json_encoder.py",
+    "line number": "91",
+    "func name": "serialize_json",
+    "func arg": "(obj, pretty, indent, **kwargs)",
+    "comments": "Return a serialized JSON representation of objects, suitable to send to BokehJS.\n\nThis function is typically used to serialize single python objects in the manner expected by BokehJS. In particular, many datetime values are automatically normalized to an expected format. Some Bokeh objects can also be passed, but note that Bokeh models are typically properly serialized in the context of an entire Bokeh document.\n\nThe resulting JSON always has sorted keys. By default. the output is as compact as possible unless pretty output or indentation is requested.\n##### Args\n* **obj (obj) **: the object to serialize to JSON format\n\n* **pretty (bool, optional) **: Whether to generate prettified output. If ``True``, spaces are\n    added after added after separators, and indentation and newlines\n    are applied. (default\n\n* **indent (int or None, optional) **: Amount of indentation to use in generated JSON output. If ``None``\n    then no indentation is used, unless pretty output is enabled,\n    in which case two spaces are used. (default\n\n* **additional keyword arguments are passed to ``json.dumps``, except for\n that  are computed internally, and cannot be overridden**: \n\n* **ples**: \n\n* **.. code-block**: \n\n"
+}

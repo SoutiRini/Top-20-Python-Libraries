@@ -1,0 +1,7 @@
+{
+    "source file": "multivariate_tools.py",
+    "line number": "184",
+    "func name": "cc_stats",
+    "func arg": "(x1, x2, demean)",
+    "comments": "MANOVA statistics based on canonical correlation coefficient\n\nCalculates Pillai's Trace, Wilk's Lambda, Hotelling's Trace and Roy's Largest Root.\n\nParameters ---------- x1, x2 : ndarrays, 2_D two 2-dimensional data arrays, observations in rows, variables in columns demean : bool If demean is true, then the mean is subtracted from each variable.\n##### Returns\n* **res **: dict\n    Dictionary containing the test statistics.\n\n* **missing**: F-statistics and p-values\n\n* **TODO**: should return a results class instead\n\n"
+}

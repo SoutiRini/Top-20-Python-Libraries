@@ -1,0 +1,7 @@
+{
+    "source file": "linalg.py",
+    "line number": "116",
+    "func name": "matrix_sqrt",
+    "func arg": "(mat, inverse, full, nullspace, threshold)",
+    "comments": "matrix square root for symmetric matrices\n\nUsage is for decomposing a covariance function S into a square root R such that\n\nR' R = S if inverse is False, or R' R = pinv(S) if inverse is True\n\nParameters ---------- mat : array_like, 2-d square symmetric square matrix for which square root or inverse square root is computed. There is no checking for whether the matrix is symmetric. A warning is issued if some singular values are negative, i.e. below the negative of the threshold. inverse : bool If False (default), then the matrix square root is returned. If inverse is True, then the matrix square root of the inverse matrix is returned. full : bool If full is False (default, then the square root has reduce number of rows if the matrix is singular, i.e. has singular values below the threshold. nullspace: bool If nullspace is true, then the matrix square root of the null space of the matrix is returned. threshold : float Singular values below the threshold are dropped.\n##### Returns\n* **msqrt **: ndarray\n    matrix square root or square root of inverse matrix.\n\n"
+}

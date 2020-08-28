@@ -1,0 +1,7 @@
+{
+    "source file": "dcgan.py",
+    "line number": "15",
+    "func name": "weights_init",
+    "func arg": "(m)",
+    "comments": ""
+}

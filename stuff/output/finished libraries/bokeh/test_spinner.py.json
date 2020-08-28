@@ -1,0 +1,7 @@
+{
+    "source file": "test_spinner.py",
+    "line number": "59",
+    "func name": "enter_value_in_spinner",
+    "func arg": "(driver, el, value, del_prev)",
+    "comments": ""
+}

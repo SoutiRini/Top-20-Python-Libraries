@@ -1,0 +1,7 @@
+{
+    "source file": "reaching_definitions.py",
+    "line number": "279",
+    "func name": "resolve",
+    "func arg": "(node, source_info, graphs, definition_factory)",
+    "comments": "Resolves reaching definitions for each symbol.\n\n\n##### Args\n* **node**: ast.AST\n\n* **source_info**: transformer.SourceInfo\n\n* **graphs**: Dict[ast.FunctionDef, cfg.Graph]\n\n* **definition_factory**: Callable[[], Definition]\n\n##### Returns\n"
+}

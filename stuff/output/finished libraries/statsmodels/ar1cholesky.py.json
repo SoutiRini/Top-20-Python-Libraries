@@ -1,0 +1,7 @@
+{
+    "source file": "ar1cholesky.py",
+    "line number": "11",
+    "func name": "tiny2zero",
+    "func arg": "(x, eps)",
+    "comments": "replace abs values smaller than eps by zero, makes copy\n\n\n"
+}

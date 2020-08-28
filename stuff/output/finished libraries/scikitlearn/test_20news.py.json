@@ -1,0 +1,7 @@
+{
+    "source file": "test_20news.py",
+    "line number": "83",
+    "func name": "test_20news_normalization",
+    "func arg": "(fetch_20newsgroups_vectorized_fxt)",
+    "comments": ""
+}

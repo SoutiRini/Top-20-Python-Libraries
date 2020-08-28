@@ -1,0 +1,7 @@
+{
+    "source file": "find_deprecated_escaped_characters.py",
+    "line number": "12",
+    "func name": "main",
+    "func arg": "(root)",
+    "comments": "Find deprecated escape sequences.\n\nChecks for deprecated escape sequences in ``*.py files``. If `root` is a file, that file is checked, if `root` is a directory all ``*.py`` files found in a recursive descent are checked.\n\nIf a deprecated escape sequence is found, the file and line where found is printed. Note that for multiline strings the line where the string ends is printed and the error(s) are somewhere in the body of the string.\n\nParameters ---------- root : str File or directory to check.\n##### Returns\n"
+}

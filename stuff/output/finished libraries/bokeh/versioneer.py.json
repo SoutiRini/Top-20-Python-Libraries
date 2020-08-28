@@ -1,0 +1,7 @@
+{
+    "source file": "versioneer.py",
+    "line number": "1777",
+    "func name": "scan_setup_py",
+    "func arg": "()",
+    "comments": "Validate the contents of setup.py against Versioneer's expectations.\n\n\n"
+}

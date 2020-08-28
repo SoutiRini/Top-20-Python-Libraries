@@ -1,0 +1,7 @@
+{
+    "source file": "keras_tensor.py",
+    "line number": "295",
+    "func name": "keras_tensor_from_tensor",
+    "func arg": "(x)",
+    "comments": "Convert a traced (composite)tensor to a representative KerasTensor.\n\n\n"
+}

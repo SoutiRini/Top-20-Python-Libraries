@@ -1,0 +1,7 @@
+{
+    "source file": "gmm.py",
+    "line number": "1630",
+    "func name": "spec_hausman",
+    "func arg": "(params_e, params_i, cov_params_e, cov_params_i, dof)",
+    "comments": "Hausmans specification test\n\nParameters ---------- params_e : ndarray efficient and consistent under Null hypothesis, inconsistent under alternative hypothesis params_i: ndarray consistent under Null hypothesis, consistent under alternative hypothesis cov_params_e : ndarray, 2d covariance matrix of parameter estimates for params_e cov_params_i : ndarray, 2d covariance matrix of parameter estimates for params_i\n\nexample instrumental variables OLS estimator is `e`, IV estimator is `i`\n\n Notes -----\n\nTodos,Issues\n\n- check dof calculations and verify for linear case\n\n- check one-sided hypothesis\n\n References ---------- Greene section 5.5 p.82/83\n"
+}

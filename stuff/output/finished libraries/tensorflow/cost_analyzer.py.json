@@ -1,0 +1,7 @@
+{
+    "source file": "cost_analyzer.py",
+    "line number": "52",
+    "func name": "GenerateMemoryReport",
+    "func arg": "(metagraph, detailed_report, cluster)",
+    "comments": "Analyze the peak memory usage for the provided metagraph.\n\n\n##### Args\n* **metagraph**: A TensorFlow MetaGraphDef.\n\n* **detailed_report**: print the live tensors in addition to the peak memory\n  usage.\n\n* **cluster**: Analyze the memory using the specified cluster, or the local\n  machine if no cluster was specified.\n\n##### Returns\n"
+}

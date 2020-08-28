@@ -1,0 +1,7 @@
+{
+    "source file": "test_bicluster2.py",
+    "line number": "39",
+    "func name": "test_consensus_score_issue2445",
+    "func arg": "()",
+    "comments": "Different number of biclusters in A and B\n\n\n"
+}

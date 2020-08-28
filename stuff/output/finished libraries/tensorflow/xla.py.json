@@ -1,0 +1,7 @@
+{
+    "source file": "xla.py",
+    "line number": "459",
+    "func name": "scatter",
+    "func arg": "(operand, scatter_indices, updates, update_computation, dimension_numbers, indices_are_sorted, name)",
+    "comments": ""
+}

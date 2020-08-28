@@ -1,0 +1,7 @@
+{
+    "source file": "test_exact_diffuse_filtering.py",
+    "line number": "1002",
+    "func name": "test_nondiagonal_obs_cov",
+    "func arg": "(reset_randomstate)",
+    "comments": ""
+}

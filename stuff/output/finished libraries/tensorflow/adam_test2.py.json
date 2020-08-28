@@ -1,0 +1,7 @@
+{
+    "source file": "adam_test2.py",
+    "line number": "37",
+    "func name": "adam_update_numpy",
+    "func arg": "(param, g_t, t, m, v, alpha, beta1, beta2, epsilon)",
+    "comments": ""
+}

@@ -1,0 +1,7 @@
+{
+    "source file": "unicode_decode_op_test.py",
+    "line number": "86",
+    "func name": "_make_sparse_tensor",
+    "func arg": "(indices, values, dense_shape, dtype)",
+    "comments": ""
+}

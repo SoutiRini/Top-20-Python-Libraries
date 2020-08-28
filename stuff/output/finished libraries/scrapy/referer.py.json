@@ -1,0 +1,7 @@
+{
+    "source file": "referer.py",
+    "line number": "269",
+    "func name": "_load_policy_class",
+    "func arg": "(policy, warning_only)",
+    "comments": "Expect a string for the path to the policy class, otherwise try to interpret the string as a standard value from https://www.w3.org/TR/referrer-policy/#referrer-policies\n\n\n"
+}

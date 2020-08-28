@@ -1,0 +1,7 @@
+{
+    "source file": "test_sgd.py",
+    "line number": "1582",
+    "func name": "test_SGDClassifier_fit_for_all_backends",
+    "func arg": "(backend)",
+    "comments": ""
+}

@@ -1,0 +1,7 @@
+{
+    "source file": "zero_out_grad_2.py",
+    "line number": "28",
+    "func name": "_zero_out_grad",
+    "func arg": "(op, grad)",
+    "comments": "The gradients for `zero_out`.\n\n\n##### Args\n* **op**: The `zero_out` `Operation` that we are differentiating, which we can use\n  to find the inputs and outputs of the original op.\n\n* **grad**: Gradient with respect to the output of the `zero_out` op.\n\n##### Returns\n"
+}

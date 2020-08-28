@@ -1,0 +1,7 @@
+{
+    "source file": "_util1.py",
+    "line number": "205",
+    "func name": "_pop_header_name",
+    "func arg": "(row, index_col)",
+    "comments": "Pop the header name for MultiIndex parsing.\n\nParameters ---------- row : list The data row to parse for the header name. index_col : int, list The index columns for our data. Assumed to be non-null.\n##### Returns\n* **header_name **: str\n    The extracted header name.\n\n* **trimmed_row **: list\n    The original data row with the header name removed.\n\n"
+}

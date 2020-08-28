@@ -1,0 +1,7 @@
+{
+    "source file": "dropout37.py",
+    "line number": "9",
+    "func name": "dropout",
+    "func arg": "(model, blob_in, blob_out, use_cudnn, **kwargs)",
+    "comments": "dropout\n\n\n"
+}

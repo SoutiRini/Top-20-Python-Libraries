@@ -1,0 +1,7 @@
+{
+    "source file": "svgfig.py",
+    "line number": "2514",
+    "func name": "unumber",
+    "func arg": "(x)",
+    "comments": "Converts numbers to a Unicode string, taking advantage of special Unicode characters to make nice minus signs and scientific notation.\n\n\n"
+}

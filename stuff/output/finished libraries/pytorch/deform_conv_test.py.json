@@ -1,0 +1,7 @@
+{
+    "source file": "deform_conv_test.py",
+    "line number": "72",
+    "func name": "_conv_2d_shuffle_offsets",
+    "func arg": "(batch_size, kernel, dims, num_deformable_group, input_channels, output_channels)",
+    "comments": ""
+}

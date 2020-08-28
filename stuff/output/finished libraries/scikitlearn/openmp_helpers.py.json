@@ -1,0 +1,7 @@
+{
+    "source file": "openmp_helpers.py",
+    "line number": "47",
+    "func name": "check_openmp_support",
+    "func arg": "()",
+    "comments": "Check whether OpenMP test code can be compiled and run\n\n\n"
+}

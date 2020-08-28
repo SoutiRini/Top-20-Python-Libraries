@@ -1,0 +1,7 @@
+{
+    "source file": "conftest13.py",
+    "line number": "29",
+    "func name": "s3_resource",
+    "func arg": "(tips_file, jsonl_file)",
+    "comments": "Fixture for mocking S3 interaction.\n\nThe primary bucket name is \"pandas-test\". The following datasets are loaded.\n\n- tips.csv\n\n- tips.csv.gz\n\n- tips.csv.bz2\n\n- items.jsonl\n\nA private bucket \"cant_get_it\" is also created. The boto3 s3 resource is yielded by the fixture.\n"
+}

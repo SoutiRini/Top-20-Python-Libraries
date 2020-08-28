@@ -1,0 +1,7 @@
+{
+    "source file": "feature_column1.py",
+    "line number": "678",
+    "func name": "split_sequence_columns",
+    "func arg": "(feature_columns)",
+    "comments": "Split a list of _TPUEmbeddingColumn into sequence and non-sequence columns.\n\nFor use in a TPUEstimator model_fn function. E.g.\n\ndef model_fn(features): sequence_columns, feature_columns = ( tf.tpu.feature_column.split_sequence_columns(feature_columns)) input = tf.feature_column.input_layer( features=features, feature_columns=feature_columns) sequence_features, sequence_lengths = ( tf.contrib.feature_column.sequence_input_layer( features=features, feature_columns=sequence_columns))\n##### Args\n* **feature_columns**: A list of _TPUEmbeddingColumns to split.\n\n##### Returns\n"
+}

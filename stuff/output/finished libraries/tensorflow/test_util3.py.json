@@ -1,0 +1,7 @@
+{
+    "source file": "test_util3.py",
+    "line number": "72",
+    "func name": "evaluate_tflite_model",
+    "func arg": "(tflite_model, input_ndarrays)",
+    "comments": "Evaluates the provided tf.lite model with the given input ndarrays.\n\n\n##### Args\n* **tflite_model**: bytes. The serialized tf.lite model.\n\n* **input_ndarrays**: A list of NumPy arrays to feed as input to the model.\n\n##### Returns\n"
+}

@@ -1,0 +1,7 @@
+{
+    "source file": "stateless_random_ops_tes1.py",
+    "line number": "38",
+    "func name": "invert_philox",
+    "func arg": "(key, value)",
+    "comments": "Invert the Philox bijection.\n\n\n"
+}

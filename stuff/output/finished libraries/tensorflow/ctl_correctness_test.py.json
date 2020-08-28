@@ -1,0 +1,7 @@
+{
+    "source file": "ctl_correctness_test.py",
+    "line number": "162",
+    "func name": "iteration_outside_func",
+    "func arg": "(initial_weights, dataset, optimizer_fn, iteration_type, strategy, sync_batchnorm)",
+    "comments": "Helper function to test iterating over data outside a tf.function.\n\n\n"
+}

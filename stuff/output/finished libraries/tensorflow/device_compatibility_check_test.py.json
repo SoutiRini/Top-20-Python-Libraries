@@ -1,0 +1,7 @@
+{
+    "source file": "device_compatibility_check_test.py",
+    "line number": "29",
+    "func name": "device_details",
+    "func arg": "(device_name, compute_capability)",
+    "comments": ""
+}

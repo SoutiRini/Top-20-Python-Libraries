@@ -1,0 +1,7 @@
+{
+    "source file": "multiclass1.py",
+    "line number": "491",
+    "func name": "_partial_fit_ovo_binary",
+    "func arg": "(estimator, X, y, i, j)",
+    "comments": "Partially fit a single binary estimator(one-vs-one).\n\n\n"
+}

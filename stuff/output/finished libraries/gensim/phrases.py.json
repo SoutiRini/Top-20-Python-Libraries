@@ -1,0 +1,7 @@
+{
+    "source file": "phrases.py",
+    "line number": "758",
+    "func name": "pseudocorpus",
+    "func arg": "(source_vocab, sep, common_terms)",
+    "comments": "Feeds `source_vocab`'s compound keys back to it, to discover phrases.\n\nParameters ---------- source_vocab : iterable of list of str Tokens vocabulary. sep : str Separator element. common_terms : set, optional Immutable set of stopwords.\n\nYields ------ list of str Phrase.\n"
+}

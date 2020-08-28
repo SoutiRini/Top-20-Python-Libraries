@@ -1,0 +1,7 @@
+{
+    "source file": "_constraints.py",
+    "line number": "344",
+    "func name": "fit_constrained_wrap",
+    "func arg": "(model, constraints, start_params, **fit_kwds)",
+    "comments": "fit_constraint that returns a results instance\n\nThis is a development version for fit_constrained methods or fit_constrained as standalone function.\n\nIt will not work correctly for all models because creating a new results instance is not standardized for use outside the `fit` methods, and might need adjustements for this.\n\nThis is the prototype for the fit_constrained method that has been added to Poisson and GLM.\n"
+}

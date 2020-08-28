@@ -1,0 +1,7 @@
+{
+    "source file": "fourier.py",
+    "line number": "121",
+    "func name": "dct_matrix",
+    "func arg": "(rows, cols, unitary)",
+    "comments": "Return a (rows x cols) matrix implementing a discrete cosine transform.\n\nThis algorithm is adapted from Dan Ellis' Rastmat spec2cep.m, lines 15-20.\n"
+}

@@ -1,0 +1,7 @@
+{
+    "source file": "demo.py",
+    "line number": "324",
+    "func name": "get_exog",
+    "func arg": "(N, num_nonconst_covariates, cor_length)",
+    "comments": "Returns an exog array with correlations determined by cor_length. The covariance matrix of exog will have (asymptotically, as :math:'N\\to\\inf') .. math:: Cov[i,j] = \\exp(-|i-j| / cor_length)\n\nHigher cor_length makes the problem more ill-posed, and easier to screw up with noise. BEWARE:\n\nWith very long correlation lengths, you often get a singular KKT matrix (during the l1_cvxopt_cp fit)\n"
+}

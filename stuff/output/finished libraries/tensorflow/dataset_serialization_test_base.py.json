@@ -1,0 +1,7 @@
+{
+    "source file": "dataset_serialization_test_base.py",
+    "line number": "41",
+    "func name": "remove_variants",
+    "func arg": "(get_next_op)",
+    "comments": "Remove variants from a nest structure, so sess.run will execute.\n\n\n"
+}

@@ -1,0 +1,7 @@
+{
+    "source file": "doxygen_scan.py",
+    "line number": "40",
+    "func name": "scan_class_methods",
+    "func arg": "(c, c_name, files_dict)",
+    "comments": ""
+}

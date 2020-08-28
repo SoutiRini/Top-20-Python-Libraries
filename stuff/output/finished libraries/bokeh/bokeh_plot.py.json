@@ -1,0 +1,7 @@
+{
+    "source file": "bokeh_plot.py",
+    "line number": "226",
+    "func name": "_process_script",
+    "func arg": "(source, filename, env, js_name, use_relative_paths)",
+    "comments": ""
+}

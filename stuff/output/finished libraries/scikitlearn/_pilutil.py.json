@@ -1,0 +1,7 @@
+{
+    "source file": "_pilutil.py",
+    "line number": "451",
+    "func name": "imresize",
+    "func arg": "(arr, size, interp, mode)",
+    "comments": "Resize an image.\n\nThis function is only available if Python Imaging Library (PIL) is installed.\n\n.. warning::\n\nThis function uses `bytescale` under the hood to rescale images to use the full (0, 255) range if ``mode`` is one of ``None, 'L', 'P', 'l'``. It will also cast data for 2-D images to ``uint32`` for ``mode=None`` (which is the default).\n\nParameters ---------- arr : ndarray The array of image to be resized. size : int, float or tuple * int\n\n\n\n- Percentage of current size. * float\n\n- Fraction of current size. * tuple\n\n- Size of the output image (height, width).\n\ninterp : str, optional Interpolation to use for re-sizing ('nearest', 'lanczos', 'bilinear', 'bicubic' or 'cubic'). mode : str, optional The PIL image mode ('P', 'L', etc.) to convert `arr` before resizing. If ``mode=None`` (the default), 2-D images will be treated like ``mode='L'``, i.e. casting to long integer.\n\nFor 3-D and 4-D arrays, `mode` will be set to ``'RGB'`` and ``'RGBA'`` respectively.\n##### Returns\n* **imresize **: ndarray\n    The resized array of image.\n\n* **toimage **: Implicitly used to convert `arr` according to `mode`.\n\n* **scipy.ndimage.zoom **: More generic implementation that does not use PIL.\n\n"
+}

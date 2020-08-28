@@ -1,0 +1,7 @@
+{
+    "source file": "_ops.py",
+    "line number": "17",
+    "func name": "dl_open_guard",
+    "func arg": "()",
+    "comments": "Context manager to set the RTLD_GLOBAL dynamic linker flag while we open a shared library to load custom operators.\n\n\n"
+}

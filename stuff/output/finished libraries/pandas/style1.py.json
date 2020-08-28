@@ -1,0 +1,7 @@
+{
+    "source file": "style1.py",
+    "line number": "13",
+    "func name": "_get_standard_colors",
+    "func arg": "(num_colors, colormap, color_type, color)",
+    "comments": ""
+}

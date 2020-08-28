@@ -1,0 +1,7 @@
+{
+    "source file": "tools92.py",
+    "line number": "255",
+    "func name": "locscale_grad",
+    "func arg": "(y, loc, scale, dlldy)",
+    "comments": "derivative of log-likelihood with respect to location and scale\n\nParameters ---------- y : array_like data points of random variable at which loglike is evaluated loc : float location parameter of distribution scale : float scale parameter of distribution dlldy : function derivative of loglikelihood fuction wrt. random variable x args : array_like shape parameters of log-likelihood function\n##### Returns\n* **dlldloc **: ndarray\n    derivative of loglikelihood wrt location evaluated at the\n    points given in y\n\n* **dlldscale **: ndarray\n    derivative of loglikelihood wrt scale evaluated at the\n    points given in y\n\n"
+}

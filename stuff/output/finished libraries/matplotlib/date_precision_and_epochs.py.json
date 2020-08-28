@@ -1,0 +1,7 @@
+{
+    "source file": "date_precision_and_epochs.py",
+    "line number": "28",
+    "func name": "_reset_epoch_for_tutorial",
+    "func arg": "()",
+    "comments": "Users (and downstream libraries) should not use the private method of resetting the epoch.\n\n\n"
+}

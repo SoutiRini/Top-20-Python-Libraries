@@ -1,0 +1,7 @@
+{
+    "source file": "common_methods_invocations.py",
+    "line number": "1201",
+    "func name": "exclude_tensor_method",
+    "func arg": "(name, test_name)",
+    "comments": ""
+}

@@ -1,0 +1,7 @@
+{
+    "source file": "loss_scale1.py",
+    "line number": "421",
+    "func name": "get",
+    "func arg": "(identifier)",
+    "comments": "Get a loss scale object.\n\n\n"
+}

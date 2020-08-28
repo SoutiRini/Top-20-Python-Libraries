@@ -1,0 +1,7 @@
+{
+    "source file": "byteordercodes.py",
+    "line number": "20",
+    "func name": "to_numpy_code",
+    "func arg": "(code)",
+    "comments": "Convert various order codings to NumPy format.\n\nParameters ---------- code : str The code to convert. It is converted to lower case before parsing. Legal values are: 'little', 'big', 'l', 'b', 'le', 'be', '<', '>', 'native', '=', 'swapped', 's'.\n##### Returns\n* **out_code **: {'<', '>'}\n    Here '<' is the numpy dtype code for little endian,\n    and '>' is the code for big endian.\n\n"
+}

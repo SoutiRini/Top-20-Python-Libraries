@@ -1,0 +1,7 @@
+{
+    "source file": "test_real_transforms234.py",
+    "line number": "142",
+    "func name": "naive_dst4",
+    "func arg": "(x, norm)",
+    "comments": "Calculate textbook definition version of DST-IV.\n\n\n"
+}

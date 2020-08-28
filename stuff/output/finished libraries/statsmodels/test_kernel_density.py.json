@@ -1,0 +1,7 @@
+{
+    "source file": "test_kernel_density.py",
+    "line number": "422",
+    "func name": "test_all_kernels",
+    "func arg": "(kernel, reset_randomstate)",
+    "comments": ""
+}

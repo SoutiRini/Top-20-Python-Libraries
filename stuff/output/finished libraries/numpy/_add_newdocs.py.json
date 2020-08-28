@@ -1,0 +1,7 @@
+{
+    "source file": "_add_newdocs.py",
+    "line number": "6242",
+    "func name": "add_newdoc_for_scalar_type",
+    "func arg": "(obj, fixed_aliases, doc)",
+    "comments": ""
+}

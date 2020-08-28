@@ -1,0 +1,7 @@
+{
+    "source file": "_encode.py",
+    "line number": "96",
+    "func name": "_check_unknown",
+    "func arg": "(values, known_values, return_mask)",
+    "comments": "Helper function to check for unknowns in values to be encoded.\n\nUses pure python method for object dtype, and numpy method for all other dtypes.\n\nParameters ---------- values : array Values to check for unknowns. known_values : array Known values. Must be unique. return_mask : bool, default=False If True, return a mask of the same shape as `values` indicating the valid values.\n##### Returns\n* **diff **: list\n    The unique values present in `values` and not in `know_values`.\n\n* **valid_mask **: boolean array\n    Additionally returned if ``return_mask=True``.\n\n"
+}

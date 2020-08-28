@@ -1,0 +1,7 @@
+{
+    "source file": "image_input_op_test.py",
+    "line number": "238",
+    "func name": "run_test",
+    "func arg": "(size_tuple, means, stds, label_type, num_labels, is_test, scale_jitter_type, color_jitter, color_lighting, dc, validator, output1, output2_size)",
+    "comments": ""
+}

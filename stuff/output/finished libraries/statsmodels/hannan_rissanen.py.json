@@ -1,0 +1,7 @@
+{
+    "source file": "hannan_rissanen.py",
+    "line number": "18",
+    "func name": "hannan_rissanen",
+    "func arg": "(endog, ar_order, ma_order, demean, initial_ar_order, unbiased)",
+    "comments": "Estimate ARMA parameters using Hannan-Rissanen procedure.\n\nParameters ---------- endog : array_like Input time series array, assumed to be stationary. ar_order : int Autoregressive order ma_order : int Moving average order demean : bool, optional Whether to estimate and remove the mean from the process prior to fitting the ARMA coefficients. Default is True. initial_ar_order : int, optional Order of long autoregressive process used for initial computation of residuals. unbiased: bool, optional Whether or not to apply the bias correction step. Default is True if the estimated coefficients from the previous step imply a stationary and invertible process and False otherwise.\n##### Returns\n* **parameters **: SARIMAXParams object\n\n* **other_results **: Bunch\n    Includes three components\n\n* **possible. See test_hannan_rissanen**: \n\n"
+}

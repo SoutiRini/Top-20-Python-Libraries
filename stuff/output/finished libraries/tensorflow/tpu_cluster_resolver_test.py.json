@@ -1,0 +1,7 @@
+{
+    "source file": "tpu_cluster_resolver_test.py",
+    "line number": "95",
+    "func name": "mock_not_running_in_gce_urlopen",
+    "func arg": "(cls, **kwargs)",
+    "comments": ""
+}

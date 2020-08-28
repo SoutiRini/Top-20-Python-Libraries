@@ -1,0 +1,7 @@
+{
+    "source file": "patheffects.py",
+    "line number": "166",
+    "func name": "_subclass_with_normal",
+    "func arg": "(effect_class)",
+    "comments": "Create a PathEffect class combining *effect_class* and a normal draw.\n\n\n"
+}

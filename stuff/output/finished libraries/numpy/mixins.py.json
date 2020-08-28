@@ -1,0 +1,7 @@
+{
+    "source file": "mixins.py",
+    "line number": "51",
+    "func name": "_unary_method",
+    "func arg": "(ufunc, name)",
+    "comments": "Implement a unary special method with a ufunc.\n\n\n"
+}

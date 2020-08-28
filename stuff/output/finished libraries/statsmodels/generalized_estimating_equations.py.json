@@ -1,0 +1,7 @@
+{
+    "source file": "generalized_estimating_equations.py",
+    "line number": "2489",
+    "func name": "_score_test_submodel",
+    "func arg": "(par, sub)",
+    "comments": "Return transformation matrices for design matrices.\n\nParameters ---------- par : instance The parent model sub : instance The sub-model\n"
+}

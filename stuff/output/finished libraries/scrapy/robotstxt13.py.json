@@ -1,0 +1,7 @@
+{
+    "source file": "robotstxt13.py",
+    "line number": "11",
+    "func name": "decode_robotstxt",
+    "func arg": "(robotstxt_body, spider, to_native_str_type)",
+    "comments": ""
+}

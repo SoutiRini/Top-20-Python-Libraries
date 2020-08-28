@@ -1,0 +1,7 @@
+{
+    "source file": "relu6.py",
+    "line number": "28",
+    "func name": "make_relu6_tests",
+    "func arg": "(options)",
+    "comments": "Make a set of tests to do relu6.\n\n\n"
+}

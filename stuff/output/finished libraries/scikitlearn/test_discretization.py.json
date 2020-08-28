@@ -1,0 +1,7 @@
+{
+    "source file": "test_discretization.py",
+    "line number": "316",
+    "func name": "test_32_equal_64",
+    "func arg": "(input_dtype, encode)",
+    "comments": ""
+}

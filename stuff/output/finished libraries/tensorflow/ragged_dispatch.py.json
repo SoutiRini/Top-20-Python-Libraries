@@ -1,0 +1,7 @@
+{
+    "source file": "ragged_dispatch.py",
+    "line number": "591",
+    "func name": "ragged_op_list",
+    "func arg": "(tf_version)",
+    "comments": "Returns a string listing operators that have dispathers registered.\n\n\n"
+}

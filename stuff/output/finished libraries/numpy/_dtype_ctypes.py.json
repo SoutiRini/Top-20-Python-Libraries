@@ -1,0 +1,7 @@
+{
+    "source file": "_dtype_ctypes.py",
+    "line number": "100",
+    "func name": "dtype_from_ctypes_type",
+    "func arg": "(t)",
+    "comments": "Construct a dtype object from a ctypes type\n\n\n"
+}

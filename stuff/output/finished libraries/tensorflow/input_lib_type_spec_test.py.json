@@ -1,0 +1,7 @@
+{
+    "source file": "input_lib_type_spec_test.py",
+    "line number": "409",
+    "func name": "_check_type_spec_structure",
+    "func arg": "(x)",
+    "comments": "Verifies that `x` has the same structure as its `TypeSpec`.\n\n\n"
+}

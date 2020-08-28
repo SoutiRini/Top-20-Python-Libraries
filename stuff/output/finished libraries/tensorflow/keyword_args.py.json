@@ -1,0 +1,7 @@
+{
+    "source file": "keyword_args.py",
+    "line number": "27",
+    "func name": "keyword_args_only",
+    "func arg": "(func)",
+    "comments": "Decorator for marking specific function accepting keyword args only.\n\nThis decorator raises a `ValueError` if the input `func` is called with any non-keyword args. This prevents the caller from providing the arguments in wrong order.\n##### Args\n* **func**: The function or method needed to be decorated.\n\n##### Returns\n"
+}

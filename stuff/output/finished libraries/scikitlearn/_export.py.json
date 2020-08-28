@@ -1,0 +1,7 @@
+{
+    "source file": "_export.py",
+    "line number": "819",
+    "func name": "export_text",
+    "func arg": "(decision_tree)",
+    "comments": "Build a text report showing the rules of a decision tree.\n\nNote that backwards compatibility may not be supported.\n\nParameters ---------- decision_tree : object The decision tree estimator to be exported. It can be an instance of DecisionTreeClassifier or DecisionTreeRegressor.\n\nfeature_names : list of str, default=None A list of length n_features containing the feature names. If None generic names will be used (\"feature_0\", \"feature_1\", ...).\n\nmax_depth : int, default=10 Only the first max_depth levels of the tree are exported. Truncated branches will be marked with \"...\".\n\nspacing : int, default=3 Number of spaces between edges. The higher it is, the wider the result.\n\ndecimals : int, default=2 Number of decimal digits to display.\n\nshow_weights : bool, default=False If true the classification weights will be exported on each leaf. The classification weights are the number of samples each class.\n##### Returns\n* **report **: string\n    Text summary of all the rules in the decision tree.\n\n* **|   |--- class**: 0\n\n* **|   |   |--- class**: 2\n\n"
+}

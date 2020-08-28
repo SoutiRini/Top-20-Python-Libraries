@@ -1,0 +1,7 @@
+{
+    "source file": "printing2.py",
+    "line number": "497",
+    "func name": "format_object_attrs",
+    "func arg": "(obj, include_dtype)",
+    "comments": "Return a list of tuples of the (attr, formatted_value) for common attrs, including dtype, name, length\n\nParameters ---------- obj : object must be iterable include_dtype : bool If False, dtype won't be in the returned list\n##### Returns\n"
+}

@@ -1,0 +1,7 @@
+{
+    "source file": "test_compat1.py",
+    "line number": "11",
+    "func name": "pytables_hdf5_file",
+    "func arg": "()",
+    "comments": "Use PyTables to create a simple HDF5 file.\n\n\n"
+}

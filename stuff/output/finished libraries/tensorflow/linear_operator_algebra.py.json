@@ -1,0 +1,7 @@
+{
+    "source file": "linear_operator_algebra.py",
+    "line number": "172",
+    "func name": "inverse",
+    "func arg": "(lin_op_a, name)",
+    "comments": "Get the Inverse associated to lin_op_a.\n\n\n##### Args\n* **lin_op_a**: The LinearOperator to decompose.\n\n* **name**: Name to use for this operation.\n\n##### Returns\n"
+}

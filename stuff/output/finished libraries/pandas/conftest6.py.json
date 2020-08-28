@@ -1,0 +1,7 @@
+{
+    "source file": "conftest6.py",
+    "line number": "306",
+    "func name": "frame_of_index_cols",
+    "func arg": "()",
+    "comments": "Fixture for DataFrame of columns that can be used for indexing\n\nColumns are ['A', 'B', 'C', 'D', 'E', ('tuple', 'as', 'label')]; 'A' & 'B' contain duplicates (but are jointly unique), the rest are unique.\n\nA\n\n\n\n\n\nB\n\nC\n\n\n\n\n\n\n\n D\n\n\n\n\n\n\n\n E\n\n(tuple, as, label) 0\n\nfoo\n\n\n\none\n\na\n\n0.608477 -0.012500\n\n\n\n\n\n\n\n\n\n -1.664297 1\n\nfoo\n\n\n\ntwo\n\nb -0.633460\n\n0.249614\n\n\n\n\n\n\n\n\n\n -0.364411 2\n\nfoo\n\nthree\n\nc\n\n0.615256\n\n2.154968\n\n\n\n\n\n\n\n\n\n -0.834666 3\n\nbar\n\n\n\none\n\nd\n\n0.234246\n\n1.085675\n\n\n\n\n\n\n\n\n\n\n\n0.718445 4\n\nbar\n\n\n\ntwo\n\ne\n\n0.533841 -0.005702\n\n\n\n\n\n\n\n\n\n -3.533912\n"
+}

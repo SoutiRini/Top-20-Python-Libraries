@@ -1,0 +1,7 @@
+{
+    "source file": "run_cuda_memcheck.py",
+    "line number": "82",
+    "func name": "is_cpu_only",
+    "func arg": "(name)",
+    "comments": ""
+}

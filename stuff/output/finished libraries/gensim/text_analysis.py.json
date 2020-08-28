@@ -1,0 +1,7 @@
+{
+    "source file": "text_analysis.py",
+    "line number": "26",
+    "func name": "_ids_to_words",
+    "func arg": "(ids, dictionary)",
+    "comments": "Convert an iterable of ids to their corresponding words using a dictionary. Abstract away the differences between the HashDictionary and the standard one.\n\nParameters ---------- ids: dict Dictionary of ids and their words. dictionary: :class:`~gensim.corpora.dictionary.Dictionary` Input gensim dictionary\n##### Returns\n* **.. sourcecode**: \n\n"
+}

@@ -1,0 +1,7 @@
+{
+    "source file": "test_svm.py",
+    "line number": "1254",
+    "func name": "test_custom_kernel_not_array_input",
+    "func arg": "(Estimator)",
+    "comments": "Test using a custom kernel that is not fed with array-like for floats\n\n\n"
+}

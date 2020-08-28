@@ -1,0 +1,7 @@
+{
+    "source file": "construction2.py",
+    "line number": "590",
+    "func name": "create_series_with_explicit_dtype",
+    "func arg": "(data, index, dtype, name, copy, fastpath, dtype_if_empty)",
+    "comments": "Helper to pass an explicit dtype when instantiating an empty Series.\n\nThis silences a DeprecationWarning described in GitHub-17261.\n\nParameters ---------- data : Mirrored from Series.__init__ index : Mirrored from Series.__init__ dtype : Mirrored from Series.__init__ name : Mirrored from Series.__init__ copy : Mirrored from Series.__init__ fastpath : Mirrored from Series.__init__ dtype_if_empty : str, numpy.dtype, or ExtensionDtype This dtype will be passed explicitly if an empty Series will be instantiated.\n##### Returns\n"
+}

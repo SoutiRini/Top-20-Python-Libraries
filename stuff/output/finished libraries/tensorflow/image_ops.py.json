@@ -1,0 +1,7 @@
+{
+    "source file": "image_ops.py",
+    "line number": "243",
+    "func name": "_image_projective_transform_grad",
+    "func arg": "(op, grad)",
+    "comments": "Computes the gradient for ImageProjectiveTransform.\n\n\n"
+}

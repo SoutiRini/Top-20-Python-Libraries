@@ -1,0 +1,7 @@
+{
+    "source file": "multioutput.py",
+    "line number": "44",
+    "func name": "_partial_fit_estimator",
+    "func arg": "(estimator, X, y, classes, sample_weight, first_time)",
+    "comments": ""
+}

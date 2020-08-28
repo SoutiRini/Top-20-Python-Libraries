@@ -1,0 +1,7 @@
+{
+    "source file": "squeeze_transpose.py",
+    "line number": "27",
+    "func name": "make_squeeze_transpose_tests",
+    "func arg": "(options)",
+    "comments": "Make a set of tests to do squeeze followed by transpose.\n\n\n"
+}

@@ -1,0 +1,7 @@
+{
+    "source file": "system_info_lib.py",
+    "line number": "146",
+    "func name": "gather_platform_info",
+    "func arg": "()",
+    "comments": "Gather platform info.\n\n\n"
+}

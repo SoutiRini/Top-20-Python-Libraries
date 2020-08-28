@@ -1,0 +1,7 @@
+{
+    "source file": "analyzer_cli_test.py",
+    "line number": "514",
+    "func name": "create_analyzer_cli",
+    "func arg": "(dump)",
+    "comments": "Create an analyzer CLI.\n\n\n##### Args\n* **dump**: A `DebugDumpDir` object to base the analyzer CLI on.\n\n##### Returns\n"
+}

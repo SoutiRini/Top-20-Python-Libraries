@@ -1,0 +1,7 @@
+{
+    "source file": "indexed_slices.py",
+    "line number": "394",
+    "func name": "_indexed_slices_to_tensor",
+    "func arg": "(value, dtype, name, as_ref)",
+    "comments": "Converts an IndexedSlices object `value` to a Tensor.\n\nNOTE(mrry): This function is potentially expensive.\n##### Args\n* **value**: An ops.IndexedSlices object.\n\n* **dtype**: The dtype of the Tensor to be returned.\n\n* **name**: Optional name to use for the returned Tensor.\n\n* **as_ref**: True if a ref is requested.\n\n##### Returns\n"
+}

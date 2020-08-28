@@ -1,0 +1,7 @@
+{
+    "source file": "signature_def_utils.py",
+    "line number": "78",
+    "func name": "clear_signature_defs",
+    "func arg": "(tflite_model)",
+    "comments": "Clears SignatureDefs from the Metadata of a TfLite flatbuffer buffer.\n\n\n##### Args\n* **tflite_model**: TFLite model buffer to remove signature_defs.\n\n##### Returns\n* **buffer**: A TFLite model binary identical to model buffer with\n  no SignatureDef metadata.\n\n"
+}

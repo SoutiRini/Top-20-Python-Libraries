@@ -1,0 +1,7 @@
+{
+    "source file": "device_compatibility_check.py",
+    "line number": "135",
+    "func name": "log_device_compatibility_check",
+    "func arg": "(policy_name)",
+    "comments": "Logs a compatibility check if the devices support the policy.\n\nCurrently only logs for the policy mixed_float16. A log is shown only the first time this function is called.\n##### Args\n* **policy_name**: The name of the dtype policy.\n\n"
+}

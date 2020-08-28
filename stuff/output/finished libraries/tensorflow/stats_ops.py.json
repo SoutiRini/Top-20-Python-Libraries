@@ -1,0 +1,7 @@
+{
+    "source file": "stats_ops.py",
+    "line number": "75",
+    "func name": "latency_stats",
+    "func arg": "(tag)",
+    "comments": "Records the latency of producing each element of the input dataset.\n\nTo consume the statistics, associate a `StatsAggregator` with the output dataset.\n##### Args\n* **tag**: String. All statistics recorded by the returned transformation will\n  be associated with the given `tag`.\n\n##### Returns\n"
+}

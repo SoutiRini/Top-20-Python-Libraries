@@ -1,0 +1,7 @@
+{
+    "source file": "colorbar2.py",
+    "line number": "1651",
+    "func name": "colorbar_factory",
+    "func arg": "(cax, mappable, **kwargs)",
+    "comments": "Create a colorbar on the given axes for the given mappable.\n\n.. note:: This is a low-level function to turn an existing axes into a colorbar axes.\n\nTypically, you'll want to use `~.Figure.colorbar` instead, which automatically handles creation and placement of a suitable axes as well.\n\nParameters ---------- cax : `~matplotlib.axes.Axes` The `~.axes.Axes` to turn into a colorbar. mappable : `~matplotlib.cm.ScalarMappable` The mappable to be described by the colorbar. **kwargs Keyword arguments are passed to the respective colorbar class.\n##### Returns\n"
+}

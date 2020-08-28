@@ -1,0 +1,7 @@
+{
+    "source file": "test_backend_cairo.py",
+    "line number": "12",
+    "func name": "test_patch_alpha_coloring",
+    "func arg": "(fig_test, fig_ref)",
+    "comments": "Test checks that the patch and collection are rendered with the specified alpha values in their facecolor and edgecolor.\n\n\n"
+}

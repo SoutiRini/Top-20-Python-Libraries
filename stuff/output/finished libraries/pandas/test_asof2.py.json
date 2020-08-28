@@ -1,0 +1,7 @@
+{
+    "source file": "test_asof2.py",
+    "line number": "9",
+    "func name": "date_range_frame",
+    "func arg": "()",
+    "comments": "Fixture for DataFrame of ints with date_range index\n\nColumns are ['A', 'B'].\n"
+}

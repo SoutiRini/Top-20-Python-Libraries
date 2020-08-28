@@ -1,0 +1,7 @@
+{
+    "source file": "origin_info.py",
+    "line number": "271",
+    "func name": "resolve_entity",
+    "func arg": "(node, source, entity)",
+    "comments": "Like resolve, but extracts the context information from an entity.\n\n\n"
+}

@@ -1,0 +1,7 @@
+{
+    "source file": "test_zeros.py",
+    "line number": "740",
+    "func name": "test_gh9551_raise_error_if_disp_true",
+    "func arg": "()",
+    "comments": "Test that if disp is true then zero derivative raises RuntimeError\n\n\n"
+}

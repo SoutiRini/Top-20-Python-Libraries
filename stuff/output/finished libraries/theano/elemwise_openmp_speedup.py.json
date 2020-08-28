@@ -1,0 +1,7 @@
+{
+    "source file": "elemwise_openmp_speedup.py",
+    "line number": "20",
+    "func name": "runScript",
+    "func arg": "(N)",
+    "comments": ""
+}

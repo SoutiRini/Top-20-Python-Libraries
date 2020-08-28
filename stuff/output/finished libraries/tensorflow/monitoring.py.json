@@ -1,0 +1,7 @@
+{
+    "source file": "monitoring.py",
+    "line number": "484",
+    "func name": "monitored_timer",
+    "func arg": "(cell)",
+    "comments": "A function decorator for adding MonitoredTimer support.\n\nArguments: cell: the cell associated with the time metric that will be inremented.\n##### Returns\n"
+}

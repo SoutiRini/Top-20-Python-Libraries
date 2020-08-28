@@ -1,0 +1,7 @@
+{
+    "source file": "image.py",
+    "line number": "1659",
+    "func name": "thumbnail",
+    "func arg": "(infile, thumbfile, scale, interpolation, preview)",
+    "comments": "Make a thumbnail of image in *infile* with output filename *thumbfile*.\n\nSee :doc:`/gallery/misc/image_thumbnail_sgskip`.\n\nParameters ---------- infile : str or file-like The image file. Matplotlib relies on Pillow_ for image reading, and thus supports a wide range of file formats, including PNG, JPG, TIFF and others.\n\n.. _Pillow: https://python-pillow.org/\n\nthumbfile : str or file-like The thumbnail filename.\n\nscale : float, default: 0.1 The scale factor for the thumbnail.\n\ninterpolation : str, default: 'bilinear' The interpolation scheme used in the resampling. See the *interpolation* parameter of `~.Axes.imshow` for possible values.\n\npreview : bool, default: False If True, the default backend (presumably a user interface backend) will be used which will cause a figure to be raised if `~matplotlib.pyplot.show` is called.\n\nIf it is False, the figure is created using `.FigureCanvasBase` and the drawing backend is selected as `.Figure.savefig` would normally do.\n##### Returns\n"
+}

@@ -1,0 +1,7 @@
+{
+    "source file": "pool_test.py",
+    "line number": "99",
+    "func name": "pool_direct",
+    "func arg": "(input, window_shape, pooling_type, padding, dilation_rate, strides, data_format)",
+    "comments": "Numpy implementation of pooling.\n\nThis is intended for testing only, and therefore isn't particularly efficient.\n\nSee tensorflow.nn.pool.\n##### Args\n* **input**: numpy array of rank N+2.\n\n* **window_shape**: Sequence of N ints >= 1.\n\n* **pooling_type**: either \"MAX\" or \"AVG\".\n\n* **padding**: either \"SAME\" or \"VALID\".\n\n* **dilation_rate**: Sequence of N ints >= 1.\n\n* **strides**: Sequence of N ints >= 1.\n\n* **data_format**: If specified and starts with \"NC\", indicates that second\n  dimension, rather than the last dimension, specifies the channel.\n\n##### Returns\n"
+}

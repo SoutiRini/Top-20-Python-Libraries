@@ -1,0 +1,7 @@
+{
+    "source file": "resnet50_test.py",
+    "line number": "76",
+    "func name": "events_from_logdir",
+    "func arg": "(logdir)",
+    "comments": "Returns all events in the single eventfile in logdir.\n\n\n##### Args\n* **logdir**: The directory in which the single event file is sought.\n\n##### Returns\n"
+}

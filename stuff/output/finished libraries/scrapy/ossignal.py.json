@@ -1,0 +1,7 @@
+{
+    "source file": "ossignal.py",
+    "line number": "12",
+    "func name": "install_shutdown_handlers",
+    "func arg": "(function, override_sigint)",
+    "comments": "Install the given function as a signal handler for all common shutdown signals (such as SIGINT, SIGTERM, etc). If override_sigint is ``False`` the SIGINT handler won't be install if there is already a handler in place (e.g.  Pdb)\n\n\n"
+}

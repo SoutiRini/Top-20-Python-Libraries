@@ -1,0 +1,7 @@
+{
+    "source file": "templates.py",
+    "line number": "279",
+    "func name": "replace_as_expression",
+    "func arg": "(template, **replacements)",
+    "comments": "Variant of replace that generates expressions, instead of code blocks.\n\n\n"
+}

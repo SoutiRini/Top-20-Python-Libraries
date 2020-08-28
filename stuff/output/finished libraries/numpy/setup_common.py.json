@@ -1,0 +1,7 @@
+{
+    "source file": "setup_common.py",
+    "line number": "413",
+    "func name": "check_for_right_shift_internal_compiler_error",
+    "func arg": "(cmd)",
+    "comments": "On our arm CI, this fails with an internal compilation error\n\nThe failure looks like the following, and can be reproduced on ARM64 GCC 5.4:\n\n<source>: In function 'right_shift': <source>:4:20: internal compiler error: in expand_shift_1, at expmed.c:2349 ip1[i] = ip1[i] >> in2; ^ Please submit a full bug report, with preprocessed source if appropriate. See <http://gcc.gnu.org/bugs.html> for instructions. Compiler returned: 1\n\nThis function returns True if this compiler bug is present, and we need to turn off optimization for the function\n"
+}

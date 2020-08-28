@@ -1,0 +1,7 @@
+{
+    "source file": "summary.py",
+    "line number": "684",
+    "func name": "mesh",
+    "func arg": "(tag, vertices, colors, faces, config_dict, display_name, description)",
+    "comments": "Outputs a merged `Summary` protocol buffer with a mesh/point cloud.\n\n\n##### Args\n* **tag**: A name for this summary operation.\n\n* **vertices**: Tensor of shape `[dim_1, ..., dim_n, 3]` representing the 3D\n  coordinates of vertices.\n\n* **faces**: Tensor of shape `[dim_1, ..., dim_n, 3]` containing indices of\n  vertices within each triangle.\n\n* **colors**: Tensor of shape `[dim_1, ..., dim_n, 3]` containing colors for each\n  vertex.\n\n* **display_name**: If set, will be used as the display name in TensorBoard.\n  Defaults to `name`.\n\n* **description**: A longform readable description of the summary data. Markdown\n  is supported.\n\n* **config_dict**: Dictionary with ThreeJS classes names and configuration.\n\n##### Returns\n"
+}

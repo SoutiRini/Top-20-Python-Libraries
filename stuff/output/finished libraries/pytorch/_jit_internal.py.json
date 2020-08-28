@@ -1,0 +1,7 @@
+{
+    "source file": "_jit_internal.py",
+    "line number": "807",
+    "func name": "_disable_emit_hooks_decorator",
+    "func arg": "(_DecoratorContextManager)",
+    "comments": ""
+}

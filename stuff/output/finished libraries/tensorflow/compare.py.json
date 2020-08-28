@@ -1,0 +1,7 @@
+{
+    "source file": "compare.py",
+    "line number": "203",
+    "func name": "ProtoEq",
+    "func arg": "(a, b)",
+    "comments": "Compares two proto2 objects for equality.\n\nRecurses into nested messages. Uses list (not set) semantics for comparing repeated fields, ie duplicates and order matter.\n##### Args\n* **a**: A proto2 message or a primitive.\n\n* **b**: A proto2 message or a primitive.\n\n##### Returns\n"
+}

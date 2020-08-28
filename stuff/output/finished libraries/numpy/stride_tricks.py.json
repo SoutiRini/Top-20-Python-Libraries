@@ -1,0 +1,7 @@
+{
+    "source file": "stride_tricks.py",
+    "line number": "205",
+    "func name": "broadcast_arrays",
+    "func arg": "()",
+    "comments": "Broadcast any number of arrays against each other.\n\nParameters ---------- `*args` : array_likes The arrays to broadcast.\n\nsubok : bool, optional If True, then sub-classes will be passed-through, otherwise the returned arrays will be forced to be a base-class array (default).\n##### Returns\n* **broadcasted **: list of arrays\n    These arrays are views on the original arrays.  They are typically\n    not contiguous.  Furthermore, more than one element of a\n    broadcasted array may refer to a single memory location. If you need\n    to write to the arrays, make copies first. While you can set the\n    ``writable`` flag True, writing to a single output value may end up\n    changing more than one location in the output array.\n    .. deprecated\n\n"
+}

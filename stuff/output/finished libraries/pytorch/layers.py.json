@@ -1,0 +1,7 @@
+{
+    "source file": "layers.py",
+    "line number": "234",
+    "func name": "is_request_only_scalar",
+    "func arg": "(scalar)",
+    "comments": ""
+}

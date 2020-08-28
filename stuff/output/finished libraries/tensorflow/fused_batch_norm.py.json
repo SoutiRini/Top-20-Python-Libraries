@@ -1,0 +1,7 @@
+{
+    "source file": "fused_batch_norm.py",
+    "line number": "27",
+    "func name": "make_fused_batch_norm_tests",
+    "func arg": "(options)",
+    "comments": "Make a set of tests to do fused_batch_norm.\n\n\n"
+}

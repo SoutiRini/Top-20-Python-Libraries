@@ -1,0 +1,7 @@
+{
+    "source file": "autocast_variable.py",
+    "line number": "474",
+    "func name": "_maybe_wrap",
+    "func arg": "(variable, wrap)",
+    "comments": "Creates an AutoCastVariable that wraps another variable if applicable.\n\nThis function is used to wrap the return value of AutoCastVariable.assign. Unfortunately MirroredVariable.assign will (incorrectly) return a Mirrored value instead of a MirroredVariable. So we cannot properly wrap it in an AutoCastVariable. We return the original variable in that case.\n##### Args\n* **variable**: A tf.Variable or op.\n\n* **wrap**: A boolean to define whether to wrap the variable in an\n  AutoCastVariable or not.\n\n##### Returns\n"
+}

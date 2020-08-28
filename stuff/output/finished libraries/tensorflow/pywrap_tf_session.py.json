@@ -1,0 +1,7 @@
+{
+    "source file": "pywrap_tf_session.py",
+    "line number": "65",
+    "func name": "TF_Reset",
+    "func arg": "(target, containers, config)",
+    "comments": ""
+}

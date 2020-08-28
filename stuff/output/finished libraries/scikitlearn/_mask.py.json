@@ -1,0 +1,7 @@
+{
+    "source file": "_mask.py",
+    "line number": "7",
+    "func name": "_get_mask",
+    "func arg": "(X, value_to_mask)",
+    "comments": "Compute the boolean mask X == value_to_mask.\n\n\n"
+}

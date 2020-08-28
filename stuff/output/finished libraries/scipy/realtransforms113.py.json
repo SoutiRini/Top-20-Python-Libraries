@@ -1,0 +1,7 @@
+{
+    "source file": "realtransforms113.py",
+    "line number": "60",
+    "func name": "_r2rn",
+    "func arg": "(forward, transform, x, type, s, axes, norm, overwrite_x, workers)",
+    "comments": "Forward or backward nd DCT/DST\n\nParameters ---------- forward: bool Transform direction (determines type and normalisation) transform: {pypocketfft.dct, pypocketfft.dst} The transform to perform\n"
+}

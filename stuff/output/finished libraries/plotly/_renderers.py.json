@@ -1,0 +1,7 @@
+{
+    "source file": "_renderers.py",
+    "line number": "351",
+    "func name": "show",
+    "func arg": "(fig, renderer, validate, **kwargs)",
+    "comments": "Show a figure using either the default renderer(s) or the renderer(s) specified by the renderer argument\n\nParameters ---------- fig: dict of Figure The Figure object or figure dict to display\n\nrenderer: str or None (default None) A string containing the names of one or more registered renderers (separated by '+' characters) or None.\n\nIf None, then the default renderers specified in plotly.io.renderers.default are used.\n\nvalidate: bool (default True) True if the figure should be validated before being shown, False otherwise.\n##### Returns\n"
+}

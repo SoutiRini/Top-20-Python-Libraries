@@ -1,0 +1,7 @@
+{
+    "source file": "_six.py",
+    "line number": "77",
+    "func name": "bind_method",
+    "func arg": "(fn, obj, obj_type)",
+    "comments": ""
+}

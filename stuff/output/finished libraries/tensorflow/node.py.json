@@ -1,0 +1,7 @@
+{
+    "source file": "node.py",
+    "line number": "277",
+    "func name": "_serialize_keras_tensor",
+    "func arg": "(t)",
+    "comments": "Serializes a single Tensor passed to `call`.\n\n\n"
+}

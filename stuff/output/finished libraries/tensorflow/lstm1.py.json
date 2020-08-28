@@ -1,0 +1,7 @@
+{
+    "source file": "lstm1.py",
+    "line number": "140",
+    "func name": "BuildLSTMLayer",
+    "func arg": "(batch_size, seq_length, num_inputs, num_nodes)",
+    "comments": "Builds a single LSTM layer with random weights and inputs.\n\n\n##### Args\n* **batch_size**: Inputs are fed in batches of this size.\n\n* **seq_length**: The sequence length to unroll the LSTM layer.\n\n* **num_inputs**: Dimension of inputs that are fed into each LSTM cell.\n\n* **num_nodes**: The number of nodes in each LSTM cell.\n\n##### Returns\n"
+}

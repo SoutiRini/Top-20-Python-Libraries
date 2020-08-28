@@ -1,0 +1,7 @@
+{
+    "source file": "slinalg.py",
+    "line number": "447",
+    "func name": "kron",
+    "func arg": "(a, b)",
+    "comments": "Kronecker product.\n\nSame as scipy.linalg.kron(a, b).\n\nParameters ---------- a: array_like b: array_like\n##### Returns\n"
+}

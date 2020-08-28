@@ -1,0 +1,7 @@
+{
+    "source file": "template.py",
+    "line number": "24",
+    "func name": "string_camelcase",
+    "func arg": "(string)",
+    "comments": "Convert a word  to its CamelCase version and remove invalid chars\n\n>>> string_camelcase('lost-pound') 'LostPound'\n\n>>> string_camelcase('missing_images') 'MissingImages'\n"
+}

@@ -1,0 +1,7 @@
+{
+    "source file": "bayes_update.py",
+    "line number": "19",
+    "func name": "beta_pdf",
+    "func arg": "(x, a, b)",
+    "comments": ""
+}

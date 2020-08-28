@@ -1,0 +1,7 @@
+{
+    "source file": "ex_generic_mle.py",
+    "line number": "22",
+    "func name": "probitloglike",
+    "func arg": "(params, endog, exog)",
+    "comments": "Log likelihood for the probit\n\n\n"
+}

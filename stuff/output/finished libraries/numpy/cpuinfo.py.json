@@ -1,0 +1,7 @@
+{
+    "source file": "cpuinfo.py",
+    "line number": "54",
+    "func name": "key_value_from_command",
+    "func arg": "(cmd, sep, successful_status, stacklevel)",
+    "comments": ""
+}

@@ -1,0 +1,7 @@
+{
+    "source file": "test_texmanager.py",
+    "line number": "5",
+    "func name": "test_fontconfig_preamble",
+    "func arg": "()",
+    "comments": "Test that the preamble is included in _fontconfig\n\n\n"
+}

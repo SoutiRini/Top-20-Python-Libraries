@@ -1,0 +1,7 @@
+{
+    "source file": "dist_autograd_test.py",
+    "line number": "26",
+    "func name": "fork_add",
+    "func arg": "(t1, t2, dst)",
+    "comments": ""
+}

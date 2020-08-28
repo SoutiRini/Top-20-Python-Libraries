@@ -1,0 +1,7 @@
+{
+    "source file": "test_reduction.py",
+    "line number": "63",
+    "func name": "check_if_gpu_reduce_not_in_graph",
+    "func arg": "(theano_function)",
+    "comments": ""
+}

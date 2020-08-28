@@ -1,0 +1,7 @@
+{
+    "source file": "expr1.py",
+    "line number": "286",
+    "func name": "add_ops",
+    "func arg": "(op_classes)",
+    "comments": "Decorator to add default implementation of ops.\n\n\n"
+}

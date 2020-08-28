@@ -1,0 +1,7 @@
+{
+    "source file": "random.py",
+    "line number": "153",
+    "func name": "initial_seed",
+    "func arg": "()",
+    "comments": "Returns the current random seed of the current GPU.\n\n.. warning:: This function eagerly initializes CUDA.\n"
+}

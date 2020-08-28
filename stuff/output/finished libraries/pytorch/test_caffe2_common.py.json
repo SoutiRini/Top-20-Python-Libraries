@@ -1,0 +1,7 @@
+{
+    "source file": "test_caffe2_common.py",
+    "line number": "27",
+    "func name": "run_generated_test",
+    "func arg": "(model_file, data_dir, device)",
+    "comments": ""
+}

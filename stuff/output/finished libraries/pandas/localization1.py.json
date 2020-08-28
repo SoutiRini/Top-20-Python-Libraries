@@ -1,0 +1,7 @@
+{
+    "source file": "localization1.py",
+    "line number": "105",
+    "func name": "get_locales",
+    "func arg": "(prefix, normalize, locale_getter)",
+    "comments": "Get all the locales that are available on the system.\n\nParameters ---------- prefix : str If not ``None`` then return only those locales with the prefix provided. For example to get all English language locales (those that start with ``\"en\"``), pass ``prefix=\"en\"``. normalize : bool Call ``locale.normalize`` on the resulting list of available locales. If ``True``, only locales that can be set without throwing an ``Exception`` are returned. locale_getter : callable The function to use to retrieve the current locales. This should return a string with each locale separated by a newline character.\n##### Returns\n* **locales **: list of strings\n    A list of locale strings that can be set with ``locale.setlocale()``.\n    For example\n\n"
+}

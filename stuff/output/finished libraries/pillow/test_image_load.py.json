@@ -1,0 +1,7 @@
+{
+    "source file": "test_image_load.py",
+    "line number": "35",
+    "func name": "test_contextmanager_non_exclusive_fp",
+    "func arg": "()",
+    "comments": ""
+}

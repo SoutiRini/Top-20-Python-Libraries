@@ -1,0 +1,7 @@
+{
+    "source file": "_generate_pyx18.py",
+    "line number": "679",
+    "func name": "make_all",
+    "func arg": "(blas_signature_file, lapack_signature_file, blas_name, lapack_name, blas_fortran_name, lapack_fortran_name, blas_header_name, lapack_header_name)",
+    "comments": ""
+}

@@ -1,0 +1,7 @@
+{
+    "source file": "concat1.py",
+    "line number": "452",
+    "func name": "_concat_sparse",
+    "func arg": "(to_concat, axis, typs)",
+    "comments": "provide concatenation of an sparse/dense array of arrays each of which is a single dtype\n\nParameters ---------- to_concat : array of arrays axis : axis to provide concatenation typs : set of to_concat dtypes\n##### Returns\n"
+}

@@ -1,0 +1,7 @@
+{
+    "source file": "_base.py",
+    "line number": "88",
+    "func name": "_process_plot_format",
+    "func arg": "(fmt)",
+    "comments": "Convert a MATLAB style color/line style format string to a (*linestyle*, *marker*, *color*) tuple.\n\nExample format strings include:\n\n* 'ko': black circles * '.b': blue dots * 'r--': red dashed lines * 'C2--': the third color in the color cycle, dashed lines\n\nSee Also -------- matplotlib.Line2D.lineStyles, matplotlib.colors.cnames All possible styles and color format strings.\n"
+}

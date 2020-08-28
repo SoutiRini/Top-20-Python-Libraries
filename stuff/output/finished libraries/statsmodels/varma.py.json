@@ -1,0 +1,7 @@
+{
+    "source file": "varma.py",
+    "line number": "77",
+    "func name": "VARMA",
+    "func arg": "(x, B, C, const)",
+    "comments": "multivariate linear filter\n\nx (TxK) B (PxKxK)\n\nxhat(t,i) = sum{_p}sum{_k} { x(t-P:t,:) .* B(:,:,i) } + sum{_q}sum{_k} { e(t-Q:t,:) .* C(:,:,i) }for all i = 0,K-1\n"
+}

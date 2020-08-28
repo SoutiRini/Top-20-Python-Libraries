@@ -1,0 +1,7 @@
+{
+    "source file": "common_v1.py",
+    "line number": "49",
+    "func name": "do_test",
+    "func arg": "(create_signature, canonicalize, show_debug_info)",
+    "comments": "Runs test.\n\n1. Performs absl and tf \"main\"-like initialization that must run before almost anything else. 2. Converts signature_def_map to SavedModel V1 3. Converts SavedModel V1 to MLIR 4. Prints the textual MLIR to stdout (it is expected that the caller will have FileCheck checks in its file to check this output).\n\nThis is only for use by the MLIR SavedModel importer tests.\n##### Args\n* **create_signature**: A functor that return signature_def_map, init_op and\n  assets_collection. signature_def_map is a map from string key to\n  signature_def. The key will be used as function name in the resulting\n  MLIR.\n\n* **canonicalize**: If true, canonicalizer will be run on the resulting MLIR.\n\n* **show_debug_info**: If true, shows debug locations in the resulting MLIR.\n\n"
+}

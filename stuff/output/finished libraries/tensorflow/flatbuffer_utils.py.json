@@ -1,0 +1,7 @@
+{
+    "source file": "flatbuffer_utils.py",
+    "line number": "130",
+    "func name": "randomize_weights",
+    "func arg": "(model, random_seed)",
+    "comments": "Randomize weights in a model.\n\n\n##### Args\n* **model**: The model in which to randomize weights.\n\n* **random_seed**: The input to the random number generator (default value is 0).\n\n"
+}

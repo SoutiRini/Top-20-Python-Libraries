@@ -1,0 +1,7 @@
+{
+    "source file": "sort_ops.py",
+    "line number": "200",
+    "func name": "_ascending_sort",
+    "func arg": "(values, axis, return_argsort)",
+    "comments": ""
+}

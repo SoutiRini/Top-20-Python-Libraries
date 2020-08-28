@@ -1,0 +1,7 @@
+{
+    "source file": "openblas_support.py",
+    "line number": "261",
+    "func name": "test_version",
+    "func arg": "(expected_version, ilp64)",
+    "comments": "Assert that expected OpenBLAS version is actually available via SciPy\n\n\n"
+}

@@ -1,0 +1,7 @@
+{
+    "source file": "tick-locators.py",
+    "line number": "16",
+    "func name": "setup",
+    "func arg": "(ax, title)",
+    "comments": "Set up common parameters for the Axes in the example.\n\n\n"
+}

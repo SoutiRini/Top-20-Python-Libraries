@@ -1,0 +1,7 @@
+{
+    "source file": "op_deps_processor.py",
+    "line number": "67",
+    "func name": "convert",
+    "func arg": "(fname, graph, output_template, op_template, op_dep_template)",
+    "comments": ""
+}

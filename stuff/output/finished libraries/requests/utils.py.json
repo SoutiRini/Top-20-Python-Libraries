@@ -1,0 +1,7 @@
+{
+    "source file": "utils.py",
+    "line number": "970",
+    "func name": "rewind_body",
+    "func arg": "(prepared_request)",
+    "comments": "Move file pointer back to its recorded starting position so it can be read again on redirect.\n\n\n"
+}

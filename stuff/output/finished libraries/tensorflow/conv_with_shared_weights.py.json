@@ -1,0 +1,7 @@
+{
+    "source file": "conv_with_shared_weights.py",
+    "line number": "28",
+    "func name": "make_conv_with_shared_weights_tests",
+    "func arg": "(options)",
+    "comments": "Make a test where 2 Conv ops shared the same constant weight tensor.\n\n\n"
+}

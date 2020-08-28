@@ -1,0 +1,7 @@
+{
+    "source file": "test_file_png.py",
+    "line number": "48",
+    "func name": "roundtrip",
+    "func arg": "(im, **options)",
+    "comments": ""
+}

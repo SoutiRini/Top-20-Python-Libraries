@@ -1,0 +1,7 @@
+{
+    "source file": "neon_depthwise_conv_op_test.py",
+    "line number": "56",
+    "func name": "CheckGradConfigsToTest",
+    "func arg": "()",
+    "comments": "Iterator for different convolution shapes, strides and paddings.\n\ncompute_gradient_error() is very expensive. So the configs should be relatively small.\n\nYields: Tuple (input_size, filter_size, out_size, stride, padding), the depthwise convolution parameters.\n"
+}

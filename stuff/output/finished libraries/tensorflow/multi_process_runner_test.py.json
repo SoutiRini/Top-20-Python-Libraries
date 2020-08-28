@@ -1,0 +1,7 @@
+{
+    "source file": "multi_process_runner_test.py",
+    "line number": "67",
+    "func name": "proc_func_that_sets_global",
+    "func arg": "(val)",
+    "comments": ""
+}

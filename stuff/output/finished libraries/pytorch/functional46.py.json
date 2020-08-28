@@ -1,0 +1,7 @@
+{
+    "source file": "functional46.py",
+    "line number": "588",
+    "func name": "upsample_nearest",
+    "func arg": "(input, size, scale_factor)",
+    "comments": "Upsamples the input, using nearest neighbours' pixel values.\n\n.. warning:: This function is deprecated in favor of :func:`torch.nn.quantized.functional.interpolate`. This is equivalent with ``nn.quantized.functional.interpolate(..., mode='nearest')``.\n\n.. note:: The input quantization parameters propagate to the output.\n\n.. note:: Only 2D inputs are supported\n##### Args\n* **input (Tensor)**: quantized input\n\n* **size (int or Tuple[int, int] or Tuple[int, int, int])**: output spatial\n    size.\n\n* **scale_factor (int)**: multiplier for spatial size. Has to be an integer.\n\n"
+}

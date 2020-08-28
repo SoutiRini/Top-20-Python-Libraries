@@ -1,0 +1,7 @@
+{
+    "source file": "transformations.py",
+    "line number": "55",
+    "func name": "fuseConvBN",
+    "func arg": "(net)",
+    "comments": ""
+}

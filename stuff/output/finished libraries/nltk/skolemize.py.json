@@ -1,0 +1,7 @@
+{
+    "source file": "skolemize.py",
+    "line number": "135",
+    "func name": "to_cnf",
+    "func arg": "(first, second)",
+    "comments": "Convert this split disjunction to conjunctive normal form (CNF)\n\n\n"
+}

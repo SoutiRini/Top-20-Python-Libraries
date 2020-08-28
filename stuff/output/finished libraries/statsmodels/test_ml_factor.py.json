@@ -1,0 +1,7 @@
+{
+    "source file": "test_ml_factor.py",
+    "line number": "146",
+    "func name": "test_2factor",
+    "func arg": "()",
+    "comments": "# R code: r = 0.4 p = 6 ii = seq(0, p-1) ii = outer(ii, ii, \"-\") ii = abs(ii) cm = r^ii factanal(covmat=cm, factors=2)\n\n\n"
+}

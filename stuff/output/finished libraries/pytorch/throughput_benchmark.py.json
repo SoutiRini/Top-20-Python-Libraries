@@ -1,0 +1,7 @@
+{
+    "source file": "throughput_benchmark.py",
+    "line number": "5",
+    "func name": "format_time",
+    "func arg": "(time_us, time_ms, time_s)",
+    "comments": "Defines how to format time\n\n\n"
+}

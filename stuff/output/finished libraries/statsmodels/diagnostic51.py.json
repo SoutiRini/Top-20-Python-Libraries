@@ -1,0 +1,7 @@
+{
+    "source file": "diagnostic51.py",
+    "line number": "1778",
+    "func name": "breaks_cusumolsresid",
+    "func arg": "(resid, ddof)",
+    "comments": "Cusum test for parameter stability based on ols residuals.\n\nParameters ---------- resid : ndarray An array of residuals from an OLS estimation. ddof : int The number of parameters in the OLS estimation, used as degrees of freedom correction for error variance.\n##### Returns\n* **sup_b **: float\n    The test statistic, maximum of absolute value of scaled cumulative OLS\n    residuals.\n\n* **pval **: float\n    Probability of observing the data under the null hypothesis of no\n    structural change, based on asymptotic distribution which is a Brownian\n    Bridge\n\n* **crit**: list\n    The tabulated critical values, for alpha = 1%, 5% and 10%.\n\n* **Tested against R**: structchange.\n\n* **Not clear**: Assumption 2 in Ploberger, Kramer assumes that exog x have\n\n* **Econometrica 60, no. 2 (March 1992)**: 271-285.\n\n"
+}

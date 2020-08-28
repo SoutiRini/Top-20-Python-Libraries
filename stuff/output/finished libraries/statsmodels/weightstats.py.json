@@ -1,0 +1,7 @@
+{
+    "source file": "weightstats.py",
+    "line number": "1445",
+    "func name": "ztost",
+    "func arg": "(x1, low, upp, x2, usevar, ddof)",
+    "comments": "Equivalence test based on normal distribution\n\nParameters ---------- x1 : array_like one sample or first sample for 2 independent samples low, upp : float equivalence interval low < m1\n\n- m2 < upp x1 : array_like or None second sample for 2 independent samples test. If None, then a one-sample test is performed. usevar : str, 'pooled' If `pooled`, then the standard deviation of the samples is assumed to be the same. Only `pooled` is currently implemented.\n##### Returns\n* **pvalue **: float\n    pvalue of the non-equivalence test\n\n* **t1, pv1 **: tuple of floats\n    test statistic and pvalue for lower threshold test\n\n* **t2, pv2 **: tuple of floats\n    test statistic and pvalue for upper threshold test\n\n"
+}

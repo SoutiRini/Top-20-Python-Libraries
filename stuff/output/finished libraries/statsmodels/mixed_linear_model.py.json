@@ -1,0 +1,7 @@
+{
+    "source file": "mixed_linear_model.py",
+    "line number": "2848",
+    "func name": "_handle_missing",
+    "func arg": "(data, groups, formula, re_formula, vc_formula)",
+    "comments": ""
+}

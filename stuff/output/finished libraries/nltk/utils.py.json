@@ -1,0 +1,7 @@
+{
+    "source file": "utils.py",
+    "line number": "40",
+    "func name": "skipIf",
+    "func arg": "(condition, reason)",
+    "comments": "Skip a test if the condition is true.\n\n\n"
+}

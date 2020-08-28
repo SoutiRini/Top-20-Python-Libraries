@@ -1,0 +1,7 @@
+{
+    "source file": "debug_grappler_test.py",
+    "line number": "37",
+    "func name": "_grappler_enabled_session_config",
+    "func arg": "()",
+    "comments": "Constructs a Session config proto that explicitly enables Grappler.\n\n\n##### Returns\n"
+}

@@ -1,0 +1,7 @@
+{
+    "source file": "_plotutils32.py",
+    "line number": "150",
+    "func name": "voronoi_plot_2d",
+    "func arg": "(vor, ax, **kw)",
+    "comments": "Plot the given Voronoi diagram in 2-D\n\nParameters ---------- vor : scipy.spatial.Voronoi instance Diagram to plot ax : matplotlib.axes.Axes instance, optional Axes to plot on show_points: bool, optional Add the Voronoi points to the plot. show_vertices : bool, optional Add the Voronoi vertices to the plot. line_colors : string, optional Specifies the line color for polygon boundaries line_width : float, optional Specifies the line width for polygon boundaries line_alpha: float, optional Specifies the line alpha for polygon boundaries point_size: float, optional Specifies the size of points\n##### Returns\n* **fig **: matplotlib.figure.Figure instance\n    Figure for the plot\n\n* **Set of point**: \n\n* **Voronoi diagram of the points**: \n\n* **using `voronoi_plot_2d` for visualisation**: \n\n* **using `voronoi_plot_2d` for visualisation with enhancements**: \n\n"
+}

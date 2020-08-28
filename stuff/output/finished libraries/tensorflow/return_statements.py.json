@@ -1,0 +1,7 @@
+{
+    "source file": "return_statements.py",
+    "line number": "392",
+    "func name": "transform",
+    "func arg": "(node, ctx, default_to_null_return)",
+    "comments": "Ensure a function has only a single return, at the end.\n\n\n"
+}

@@ -1,0 +1,7 @@
+{
+    "source file": "summarizer.py",
+    "line number": "382",
+    "func name": "summarize",
+    "func arg": "(text, ratio, word_count, split)",
+    "comments": "Get a summarized version of the given text.\n\nThe output summary will consist of the most representative sentences and will be returned as a string, divided by newlines.\n\nNote ---- The input should be a string, and must be longer than :const:`~gensim.summarization.summarizer.INPUT_MIN_LENGTH` sentences for the summary to make sense. The text will be split into sentences using the split_sentences method in the :mod:`gensim.summarization.texcleaner` module. Note that newlines divide sentences.\n\n Parameters ---------- text : str Given text. ratio : float, optional Number between 0 and 1 that determines the proportion of the number of sentences of the original text to be chosen for the summary. word_count : int or None, optional Determines how many words will the output contain. If both parameters are provided, the ratio will be ignored. split : bool, optional If True, list of sentences will be returned. Otherwise joined strings will bwe returned.\n##### Returns\n"
+}

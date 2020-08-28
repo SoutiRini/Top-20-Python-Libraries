@@ -1,0 +1,7 @@
+{
+    "source file": "wrap_function.py",
+    "line number": "633",
+    "func name": "function_from_graph_def",
+    "func arg": "(graph_def, inputs, outputs)",
+    "comments": "Creates a ConcreteFunction from a GraphDef.\n\n\n##### Args\n* **graph_def**: A GraphDef to make a function out of.\n\n* **inputs**: A Tensor name or nested structure of names in `graph_def` which\n  should be inputs to the function.\n\n* **outputs**: A Tensor name or nested structure of names in `graph_def` which\n  should be outputs of the function.\n\n##### Returns\n"
+}

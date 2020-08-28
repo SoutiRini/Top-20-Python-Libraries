@@ -1,0 +1,7 @@
+{
+    "source file": "linear_model.py",
+    "line number": "1437",
+    "func name": "burg",
+    "func arg": "(endog, order, demean)",
+    "comments": "Compute Burg's AP(p) parameter estimator.\n\nParameters ---------- endog : array_like The endogenous variable. order : int, optional Order of the AR.\n\nDefault is 1. demean : bool, optional Flag indicating to subtract the mean from endog before estimation.\n##### Returns\n* **rho **: ndarray\n    The AR(p) coefficients computed using Burg's algorithm.\n\n* **sigma2 **: float\n    The estimate of the residual variance.\n\n* **yule_walker **: Estimate AR parameters using the Yule-Walker method.\n\n"
+}

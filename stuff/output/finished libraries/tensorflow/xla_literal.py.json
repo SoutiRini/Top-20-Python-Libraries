@@ -1,0 +1,7 @@
+{
+    "source file": "xla_literal.py",
+    "line number": "85",
+    "func name": "ConvertNumpyArrayToLiteral",
+    "func arg": "(value)",
+    "comments": "Converts a Numpy array or a nested tuple thereof to an XLA literal.\n\n\n"
+}

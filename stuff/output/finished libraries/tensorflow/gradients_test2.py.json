@@ -1,0 +1,7 @@
+{
+    "source file": "gradients_test2.py",
+    "line number": "332",
+    "func name": "create_fc_per_eg_jacobians",
+    "func arg": "(batch_size, activation_size, num_layers)",
+    "comments": ""
+}

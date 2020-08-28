@@ -1,0 +1,7 @@
+{
+    "source file": "topology.py",
+    "line number": "36",
+    "func name": "_tpu_host_device_name",
+    "func arg": "(job, task)",
+    "comments": "Returns the device name for the CPU device on `task` of `job`.\n\n\n"
+}

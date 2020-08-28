@@ -1,0 +1,7 @@
+{
+    "source file": "cwise_ops_test.py",
+    "line number": "68",
+    "func name": "_default_tolerance",
+    "func arg": "(dtype)",
+    "comments": "Returns a sensible default tolerance for comparing results of a given type.\n\n\n##### Args\n* **dtype**: A datatype.\n\n"
+}

@@ -1,0 +1,7 @@
+{
+    "source file": "embedding_ops.py",
+    "line number": "1002",
+    "func name": "_prune_invalid_weights",
+    "func arg": "(sparse_ids, sparse_weights)",
+    "comments": "Prune invalid weights (< 0) from the input ids and weights.\n\n\n"
+}

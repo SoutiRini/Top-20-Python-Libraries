@@ -1,0 +1,7 @@
+{
+    "source file": "callbacks_test.py",
+    "line number": "1730",
+    "func name": "list_summaries",
+    "func arg": "(logdir)",
+    "comments": "Read all summaries under the logdir into a `_SummaryFile`.\n\n\n##### Args\n* **logdir**: A path to a directory that contains zero or more event\n  files, either as direct children or in transitive subdirectories.\n  Summaries in these events must only contain old-style scalars,\n  images, and histograms. Non-summary events, like `graph_def`s, are\n  ignored.\n\n##### Returns\n"
+}

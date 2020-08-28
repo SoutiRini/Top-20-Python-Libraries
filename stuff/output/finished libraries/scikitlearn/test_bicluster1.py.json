@@ -1,0 +1,7 @@
+{
+    "source file": "test_bicluster1.py",
+    "line number": "269",
+    "func name": "test_n_jobs_deprecated",
+    "func arg": "(klass, n_jobs)",
+    "comments": ""
+}

@@ -1,0 +1,7 @@
+{
+    "source file": "convert_saved_model.py",
+    "line number": "155",
+    "func name": "freeze_saved_model",
+    "func arg": "(saved_model_dir, input_arrays, input_shapes, output_arrays, tag_set, signature_key)",
+    "comments": "Converts a SavedModel to a frozen graph.\n\n\n##### Args\n* **saved_model_dir**: SavedModel directory to convert.\n\n* **input_arrays**: List of input tensors to freeze graph with. Uses input arrays\n  from SignatureDef when none are provided.\n\n* **input_shapes**: Dict of strings representing input tensor names to list of\n  integers representing input shapes (e.g., {\"foo\"\n\n* **output_arrays**: List of output tensors to freeze graph with. Uses output\n  arrays from SignatureDef when none are provided.\n\n* **tag_set**: Set of tags identifying the MetaGraphDef within the SavedModel to\n  analyze. All tags in the tag set must be present.\n\n* **signature_key**: Key identifying SignatureDef containing inputs and outputs.\n\n##### Returns\n* **frozen_graph_def**: Frozen GraphDef.\n\n* **in_tensors**: List of input tensors for the graph.\n\n* **out_tensors**: List of output tensors for the graph.\n\n* **graph**: `Graph` object.\n\n"
+}

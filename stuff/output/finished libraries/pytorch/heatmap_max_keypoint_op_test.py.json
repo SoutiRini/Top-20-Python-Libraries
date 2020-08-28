@@ -1,0 +1,7 @@
+{
+    "source file": "heatmap_max_keypoint_op_test.py",
+    "line number": "31",
+    "func name": "c10_op_ref",
+    "func arg": "(maps, rois)",
+    "comments": ""
+}

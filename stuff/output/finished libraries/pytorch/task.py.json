@@ -1,0 +1,7 @@
+{
+    "source file": "task.py",
+    "line number": "407",
+    "func name": "final_output",
+    "func arg": "(blob_or_record)",
+    "comments": "Adds an output to the current Task, or if no task is active, create a dummy task that returns the given blob or record to the client. This will return the value of the blob or record when the last task of the TaskGroup for a given node finishes.\n\n\n"
+}

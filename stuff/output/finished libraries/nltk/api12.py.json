@@ -1,0 +1,7 @@
+{
+    "source file": "api12.py",
+    "line number": "270",
+    "func name": "_check_alignment",
+    "func arg": "(num_words, num_mots, alignment)",
+    "comments": "Check whether the alignments are legal.\n\nparam num_words: the number of source language words :type num_words: int :param num_mots: the number of target language words :type num_mots: int :param alignment: alignment to be checked :type alignment: Alignment :raise IndexError: if alignment falls outside the sentence\n"
+}

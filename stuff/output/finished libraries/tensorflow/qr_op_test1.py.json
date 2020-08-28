@@ -1,0 +1,7 @@
+{
+    "source file": "qr_op_test1.py",
+    "line number": "176",
+    "func name": "_GetQrGradOpTest",
+    "func arg": "(dtype_, shape_, full_matrices_)",
+    "comments": ""
+}

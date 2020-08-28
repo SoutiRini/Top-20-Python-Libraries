@@ -1,0 +1,7 @@
+{
+    "source file": "csc64.py",
+    "line number": "236",
+    "func name": "isspmatrix_csc",
+    "func arg": "(x)",
+    "comments": "Is x of csc_matrix type?\n\nParameters ---------- x object to check for being a csc matrix\n##### Returns\n"
+}

@@ -1,0 +1,7 @@
+{
+    "source file": "generalized_additive_model.py",
+    "line number": "976",
+    "func name": "make_augmented_matrix",
+    "func arg": "(endog, exog, penalty_matrix, weights)",
+    "comments": "augment endog, exog and weights with stochastic restriction matrix\n\nParameters ---------- endog : ndarray response or endogenous variable exog : ndarray design matrix, matrix of exogenous or explanatory variables penalty_matrix : ndarray, 2-Dim square penality matrix for quadratic penalization weights : ndarray weights for WLS\n##### Returns\n* **endog_aug **: ndarray\n    augmented response variable\n\n* **exog_aug **: ndarray\n    augmented design matrix\n\n* **weights_aug **: ndarray\n    augmented weights for WLS\n\n"
+}

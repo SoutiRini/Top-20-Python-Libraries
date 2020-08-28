@@ -1,0 +1,7 @@
+{
+    "source file": "op_def_registry.py",
+    "line number": "59",
+    "func name": "sync",
+    "func arg": "()",
+    "comments": "No-op. Used to synchronize the contents of the Python registry with C++.\n\n\n"
+}

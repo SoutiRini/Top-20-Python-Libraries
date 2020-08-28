@@ -1,0 +1,7 @@
+{
+    "source file": "graph_to_function_def.py",
+    "line number": "122",
+    "func name": "graph_to_function_def",
+    "func arg": "(graph, operations, inputs, outputs, out_names)",
+    "comments": "Returns `graph` as a `FunctionDef` protocol buffer.\n\nThis method creates a [`FunctionDef`]( https://www.tensorflow.org/code/tensorflow/core/framework/function.proto) protocol buffer that contains all the ops in `operations`.\n\nThe operations become the body of the function.\n\nThe arguments `inputs` and `outputs` will be listed as the inputs and outputs tensors of the function.\n\nThey must be lists of tensors present in the graph.\n\nThe lists can optionally be empty.\n##### Args\n* **graph**: Graph.\n\n* **operations**: the operations to put in the function. Must be a subset of\n the operations in the graph.\n\n* **inputs**: List of tensors. Inputs to the function.\n\n* **outputs**: List of tensors. Outputs of the function.\n\n* **out_names**: Optional list of string names for the outputs.\n\n##### Returns\n"
+}

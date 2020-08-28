@@ -1,0 +1,7 @@
+{
+    "source file": "model_helper.py",
+    "line number": "496",
+    "func name": "ExtractPredictorNet",
+    "func arg": "(net_proto, input_blobs, output_blobs, device, renames, disabled_inputs)",
+    "comments": "Takes a model net for training and returns a net which can be used for prediction. For example, all gradient operators and input operators are removed. @param net_proto protobuf of the net you want to process (net.Proto()) @param input_blobs list/set of blob names that are the inputs of predictor @param output_blobs list/set of blob names that are outputs of predictor @param device optional device option that is assigned @param renames dictionary of blob name to a new name (optional) @param disabled_inputs optional set of blobs that are 'switched off'. This will cause branches with those blobs as inputs to be removed\n\n\n"
+}

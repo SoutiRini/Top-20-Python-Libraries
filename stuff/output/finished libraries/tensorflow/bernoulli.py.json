@@ -1,0 +1,7 @@
+{
+    "source file": "bernoulli.py",
+    "line number": "170",
+    "func name": "_kl_bernoulli_bernoulli",
+    "func arg": "(a, b, name)",
+    "comments": "Calculate the batched KL divergence KL(a || b) with a and b Bernoulli.\n\n\n##### Args\n* **a**: instance of a Bernoulli distribution object.\n\n* **b**: instance of a Bernoulli distribution object.\n\n* **name**: (optional) Name to use for created operations.\n  default is \"kl_bernoulli_bernoulli\".\n\n##### Returns\n"
+}

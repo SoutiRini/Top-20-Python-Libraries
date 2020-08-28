@@ -1,0 +1,7 @@
+{
+    "source file": "tape.py",
+    "line number": "224",
+    "func name": "could_possibly_record",
+    "func arg": "()",
+    "comments": "Returns True if any tape is active.\n\n\n"
+}

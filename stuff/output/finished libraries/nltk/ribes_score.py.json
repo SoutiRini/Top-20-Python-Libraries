@@ -1,0 +1,7 @@
+{
+    "source file": "ribes_score.py",
+    "line number": "297",
+    "func name": "spearman_rho",
+    "func arg": "(worder, normalize)",
+    "comments": "Calculates the Spearman's Rho correlation coefficient given the *worder* list of word alignment from word_rank_alignment(), using the formula\n\nrho = 1\n\n- sum(d**2) / choose(len(worder)+1, 3)\n\nGiven that d is the sum of difference between the *worder* list of indices and the original word indices from the reference sentence.\n\nUsing the (H0,R0) and (H5, R5) example from the paper\n\n>>> worder =\n\n[7, 8, 9, 10, 6, 0, 1, 2, 3, 4, 5] >>> round(spearman_rho(worder, normalize=False), 3) -0.591 >>> round(spearman_rho(worder), 3) 0.205\n\n:param worder: The worder list output from word_rank_alignment :param type: list(int)\n"
+}

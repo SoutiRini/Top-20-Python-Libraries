@@ -1,0 +1,7 @@
+{
+    "source file": "sas_xport1.py",
+    "line number": "196",
+    "func name": "_parse_float_vec",
+    "func arg": "(vec)",
+    "comments": "Parse a vector of float values representing IBM 8 byte floats into native 8 byte floats.\n\n\n"
+}

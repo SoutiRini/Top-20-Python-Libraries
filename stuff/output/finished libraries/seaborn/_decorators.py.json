@@ -1,0 +1,7 @@
+{
+    "source file": "_decorators.py",
+    "line number": "50",
+    "func name": "share_init_params_with_map",
+    "func arg": "(cls)",
+    "comments": "Make cls.map a classmethod with same signature as cls.__init__.\n\n\n"
+}

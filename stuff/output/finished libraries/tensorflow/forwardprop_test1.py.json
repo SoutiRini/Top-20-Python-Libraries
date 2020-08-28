@@ -1,0 +1,7 @@
+{
+    "source file": "forwardprop_test1.py",
+    "line number": "124",
+    "func name": "_test_gradients",
+    "func arg": "(testcase, f, primals, order, delta, rtol, atol)",
+    "comments": "Tests forward/backward jacobians of `f`'s [0, `order`)-order gradients.\n\n\n"
+}

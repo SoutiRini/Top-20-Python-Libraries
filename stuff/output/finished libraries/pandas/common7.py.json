@@ -1,0 +1,7 @@
+{
+    "source file": "common7.py",
+    "line number": "30",
+    "func name": "_unpack_zerodim_and_defer",
+    "func arg": "(method, name)",
+    "comments": "Boilerplate for pandas conventions in arithmetic and comparison methods.\n\nEnsure method returns NotImplemented when operating against \"senior\" classes.\n\nEnsure zero-dimensional ndarrays are always unpacked.\n\nParameters ---------- method : binary method name : str\n##### Returns\n"
+}

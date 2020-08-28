@@ -1,0 +1,7 @@
+{
+    "source file": "densenet.py",
+    "line number": "366",
+    "func name": "decode_predictions",
+    "func arg": "(preds, top)",
+    "comments": ""
+}

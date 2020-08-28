@@ -1,0 +1,7 @@
+{
+    "source file": "regexp.py",
+    "line number": "1366",
+    "func name": "demo",
+    "func arg": "()",
+    "comments": "A demonstration for the ``RegexpChunkParser`` class.  A single text is parsed with four different chunk parsers, using a variety of rules and strategies.\n\n\n"
+}

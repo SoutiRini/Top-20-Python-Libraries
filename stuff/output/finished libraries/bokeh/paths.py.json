@@ -1,0 +1,7 @@
+{
+    "source file": "paths.py",
+    "line number": "47",
+    "func name": "bokehjsdir",
+    "func arg": "(dev)",
+    "comments": "Get the location of the bokehjs source files. If dev is True, the files in bokehjs/build are preferred. Otherwise uses the files in bokeh/server/static.\n\n\n"
+}

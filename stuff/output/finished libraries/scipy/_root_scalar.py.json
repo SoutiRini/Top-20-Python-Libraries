@@ -1,0 +1,7 @@
+{
+    "source file": "_root_scalar.py",
+    "line number": "442",
+    "func name": "_root_scalar_bisect_doc",
+    "func arg": "()",
+    "comments": "Options ------- args : tuple, optional Extra arguments passed to the objective function. xtol : float, optional Tolerance (absolute) for termination. rtol : float, optional Tolerance (relative) for termination. maxiter : int, optional Maximum number of iterations. options: dict, optional Specifies any method-specific options not covered above.\n\n\n"
+}

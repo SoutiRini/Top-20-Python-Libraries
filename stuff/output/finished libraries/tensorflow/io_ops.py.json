@@ -1,0 +1,7 @@
+{
+    "source file": "io_ops.py",
+    "line number": "75",
+    "func name": "_restore_slice",
+    "func arg": "(file_pattern, tensor_name, shape_and_slice, tensor_type, name, preferred_shard)",
+    "comments": "Restore a tensor slice from a set of files with a given pattern.\n\nExample usage: RestoreSlice(\"/foo/bar-?????-of-?????\", \"w\", \"10 10 0,2:-\", DT_FLOAT)\n##### Args\n* **file_pattern**: the file pattern used to match a set of checkpoint files.\n\n* **tensor_name**: the name of the tensor to restore.\n\n* **shape_and_slice**: the shape-and-slice spec of the slice.\n\n* **tensor_type**: the type of the tensor to restore.\n\n* **name**: string.  Optional name for the op.\n\n* **preferred_shard**: Int. Optional shard to open first in the checkpoint file.\n\n##### Returns\n"
+}

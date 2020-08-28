@@ -1,0 +1,7 @@
+{
+    "source file": "is_tfrt_test_true.py",
+    "line number": "28",
+    "func name": "is_tfrt_enabled",
+    "func arg": "()",
+    "comments": "Returns true to state TFRT should be enabled for Tensorflow tests.\n\n\n"
+}

@@ -1,0 +1,7 @@
+{
+    "source file": "test_plot.py",
+    "line number": "348",
+    "func name": "generate_private_sharing_and_public_world_readable_precedence",
+    "func arg": "()",
+    "comments": "Test that call signature arguments applied through _plot_option_logic overwrite options supplied through py.sign_in which overwrite options set through tls.set_config\n\n\n"
+}

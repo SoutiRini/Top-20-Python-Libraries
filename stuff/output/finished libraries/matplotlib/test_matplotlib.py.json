@@ -1,0 +1,7 @@
+{
+    "source file": "test_matplotlib.py",
+    "line number": "28",
+    "func name": "test_use_doc_standard_backends",
+    "func arg": "()",
+    "comments": "Test that the standard backends mentioned in the docstring of matplotlib.use() are the same as in matplotlib.rcsetup.\n\n\n"
+}

@@ -1,0 +1,7 @@
+{
+    "source file": "test_util2.py",
+    "line number": "76",
+    "func name": "create_identity_with_nan_gradients_fn",
+    "func arg": "(have_nan_gradients)",
+    "comments": "Returns a function that optionally has NaN gradients.\n\nThis serves as a hook to introduce NaN gradients to a model. This returns an identity function. The identity's gradient function will check if the boolean tensor `have_nan_gradients` is True. If so, the gradient will be NaN. Otherwise, the gradient will also be the identity.\n##### Args\n* **have_nan_gradients**: A scalar boolean tensor. If True, gradients will be NaN.\n  Otherwise, the gradient function is the identity function.\n\n##### Returns\n"
+}

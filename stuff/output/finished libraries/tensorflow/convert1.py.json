@@ -1,0 +1,7 @@
+{
+    "source file": "convert1.py",
+    "line number": "38",
+    "func name": "partial_shape_to_tensor",
+    "func arg": "(shape_like)",
+    "comments": "Returns a `tf.Tensor` that represents the given shape.\n\n\n##### Args\n* **shape_like**: A value that can be converted to a `tf.TensorShape` or a\n  `tf.Tensor`.\n\n##### Returns\n"
+}

@@ -1,0 +1,7 @@
+{
+    "source file": "datetimelike2.py",
+    "line number": "1690",
+    "func name": "maybe_infer_freq",
+    "func arg": "(freq)",
+    "comments": "Comparing a DateOffset to the string \"infer\" raises, so we need to be careful about comparisons.  Make a dummy variable `freq_infer` to signify the case where the given freq is \"infer\" and set freq to None to avoid comparison trouble later on.\n\nParameters ---------- freq : {DateOffset, None, str}\n##### Returns\n* **freq **: {DateOffset, None}\n\n* **freq_infer **: bool\n\n"
+}

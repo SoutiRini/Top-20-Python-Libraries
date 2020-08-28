@@ -1,0 +1,7 @@
+{
+    "source file": "parsing_config.py",
+    "line number": "879",
+    "func name": "_build_ragged_tensors",
+    "func arg": "(serialized_shape, ragged_values, ragged_row_splits, ragged_inner_splits)",
+    "comments": "Builds RaggedTensors from the outputs of a parse op.\n\n\n"
+}

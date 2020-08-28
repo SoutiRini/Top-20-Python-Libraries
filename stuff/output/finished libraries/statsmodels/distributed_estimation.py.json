@@ -1,0 +1,7 @@
+{
+    "source file": "distributed_estimation.py",
+    "line number": "328",
+    "func name": "_helper_fit_partition",
+    "func arg": "(pnum, endog, exog, fit_kwds, init_kwds_e)",
+    "comments": "handles the model fitting for each machine. NOTE: this is primarily handled outside of DistributedModel because joblib cannot handle class methods.\n\nParameters ---------- self : DistributedModel class instance An instance of DistributedModel. pnum : scalar index of current partition. endog : array_like endogenous data for current partition. exog : array_like exogenous data for current partition. fit_kwds : dict-like Keywords needed for the model fitting. init_kwds_e : dict-like Additional init_kwds to add for each partition.\n##### Returns\n"
+}

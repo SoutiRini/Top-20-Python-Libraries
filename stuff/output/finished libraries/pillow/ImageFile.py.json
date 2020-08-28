@@ -1,0 +1,7 @@
+{
+    "source file": "ImageFile.py",
+    "line number": "546",
+    "func name": "_safe_read",
+    "func arg": "(fp, size)",
+    "comments": "Reads large blocks in a safe way.  Unlike fp.read(n), this function doesn't trust the user.  If the requested size is larger than SAFEBLOCK, the file is read block by block.\n\nparam fp: File handle.\n\nMust implement a <b>read</b> method. :param size: Number of bytes to read. :returns: A string containing up to <i>size</i> bytes of data.\n"
+}

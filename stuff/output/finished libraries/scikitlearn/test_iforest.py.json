@@ -1,0 +1,7 @@
+{
+    "source file": "test_iforest.py",
+    "line number": "315",
+    "func name": "test_iforest_with_uniform_data",
+    "func arg": "()",
+    "comments": "Test whether iforest predicts inliers when using uniform data\n\n\n"
+}

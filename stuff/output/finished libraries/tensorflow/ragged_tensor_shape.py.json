@@ -1,0 +1,7 @@
+{
+    "source file": "ragged_tensor_shape.py",
+    "line number": "601",
+    "func name": "_ragged_tile_axis",
+    "func arg": "(rt_input, axis, repeats, row_splits_dtype)",
+    "comments": "Tile a dimension of a RaggedTensor to match a ragged shape.\n\n\n"
+}

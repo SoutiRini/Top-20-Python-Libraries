@@ -1,0 +1,7 @@
+{
+    "source file": "test_assert_frame_equal1.py",
+    "line number": "217",
+    "func name": "test_frame_equal_unicode",
+    "func arg": "(df1, df2, msg, by_blocks_fixture, obj_fixture)",
+    "comments": ""
+}

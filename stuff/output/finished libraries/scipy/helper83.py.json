@@ -1,0 +1,7 @@
+{
+    "source file": "helper83.py",
+    "line number": "201",
+    "func name": "get_workers",
+    "func arg": "()",
+    "comments": "Returns the default number of workers within the current context\n\nExamples -------- >>> from scipy import fft >>> fft.get_workers() 1 >>> with fft.set_workers(4): ...\n\n\n\n fft.get_workers() 4\n"
+}

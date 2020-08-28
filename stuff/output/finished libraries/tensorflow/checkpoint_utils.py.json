@@ -1,0 +1,7 @@
+{
+    "source file": "checkpoint_utils.py",
+    "line number": "481",
+    "func name": "_collect_partitioned_variable",
+    "func arg": "(name, all_vars)",
+    "comments": "Returns list of `tf.Variable` that comprise the partitioned variable.\n\n\n"
+}

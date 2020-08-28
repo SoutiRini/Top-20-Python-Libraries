@@ -1,0 +1,7 @@
+{
+    "source file": "lsq_problems.py",
+    "line number": "467",
+    "func name": "extract_lsq_problems",
+    "func arg": "()",
+    "comments": "Extract all least squares problems in this file for benchmarking.\n\n\n##### Returns\n"
+}

@@ -1,0 +1,7 @@
+{
+    "source file": "callback_manager.py",
+    "line number": "174",
+    "func name": "_check_callback",
+    "func arg": "(callback, fargs, what)",
+    "comments": "Bokeh-internal function to check callback signature\n\n\n"
+}

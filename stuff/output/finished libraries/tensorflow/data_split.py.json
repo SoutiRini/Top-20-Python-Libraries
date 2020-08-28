@@ -1,0 +1,7 @@
+{
+    "source file": "data_split.py",
+    "line number": "51",
+    "func name": "split_data",
+    "func arg": "(data, train_ratio, valid_ratio)",
+    "comments": "Splits data into train, validation and test according to ratio.\n\n\n"
+}

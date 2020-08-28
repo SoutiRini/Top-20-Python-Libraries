@@ -1,0 +1,7 @@
+{
+    "source file": "profiler_analysis_pb2_grpc.py",
+    "line number": "96",
+    "func name": "add_ProfileAnalysisServicer_to_server",
+    "func arg": "(servicer, server)",
+    "comments": ""
+}

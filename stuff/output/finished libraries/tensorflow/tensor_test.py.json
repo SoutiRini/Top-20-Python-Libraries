@@ -1,0 +1,7 @@
+{
+    "source file": "tensor_test.py",
+    "line number": "44",
+    "func name": "_create_tensor",
+    "func arg": "(value, device, dtype)",
+    "comments": ""
+}

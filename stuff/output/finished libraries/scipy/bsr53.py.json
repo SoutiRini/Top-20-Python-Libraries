@@ -1,0 +1,7 @@
+{
+    "source file": "bsr53.py",
+    "line number": "692",
+    "func name": "isspmatrix_bsr",
+    "func arg": "(x)",
+    "comments": "Is x of a bsr_matrix type?\n\nParameters ---------- x object to check for being a bsr matrix\n##### Returns\n"
+}

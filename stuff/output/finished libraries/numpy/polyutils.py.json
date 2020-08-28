@@ -1,0 +1,7 @@
+{
+    "source file": "polyutils.py",
+    "line number": "762",
+    "func name": "_deprecate_as_int",
+    "func arg": "(x, desc)",
+    "comments": "Like `operator.index`, but emits a deprecation warning when passed a float\n\nParameters ---------- x : int-like, or float with integral value Value to interpret as an integer desc : str description to include in any error message\n"
+}

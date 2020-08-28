@@ -1,0 +1,7 @@
+{
+    "source file": "decorators.py",
+    "line number": "477",
+    "func name": "_image_directories",
+    "func arg": "(func)",
+    "comments": "Compute the baseline and result image directories for testing *func*.\n\nFor test module ``foo.bar.test_baz``, the baseline directory is at ``foo/bar/baseline_images/test_baz`` and the result directory at ``$(pwd)/result_images/test_baz``.\n\nThe result directory is created if it doesn't exist.\n"
+}

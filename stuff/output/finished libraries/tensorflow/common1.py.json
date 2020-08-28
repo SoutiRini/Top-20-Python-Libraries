@@ -1,0 +1,7 @@
+{
+    "source file": "common1.py",
+    "line number": "43",
+    "func name": "do_test",
+    "func arg": "(create_module_fn, exported_names, show_debug_info)",
+    "comments": "Runs test.\n\n1. Performs absl and tf \"main\"-like initialization that must run before almost anything else. 2. Converts `tf.Module` to SavedModel 3. Converts SavedModel to MLIR 4. Prints the textual MLIR to stdout (it is expected that the caller will have FileCheck checks in its file to check this output).\n\nThis is only for use by the MLIR SavedModel importer tests.\n##### Args\n* **create_module_fn**: A callable taking no arguments, which returns the\n  `tf.Module` to be converted and printed.\n\n* **exported_names**: A set of exported names for the MLIR converter (default is\n  \"export all\").\n\n* **show_debug_info**: If true, shows debug locations in the resulting MLIR.\n\n"
+}

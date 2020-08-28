@@ -1,0 +1,7 @@
+{
+    "source file": "earleychart.py",
+    "line number": "508",
+    "func name": "demo",
+    "func arg": "(print_times, print_grammar, print_trees, trace, sent, numparses)",
+    "comments": "A demonstration of the Earley parsers.\n\n\n"
+}

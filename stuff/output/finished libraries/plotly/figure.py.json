@@ -1,0 +1,7 @@
+{
+    "source file": "figure.py",
+    "line number": "601",
+    "func name": "write_figure_classes",
+    "func arg": "(outdir, trace_node, data_validator, layout_validator, frame_validator, subplot_nodes, layout_array_nodes)",
+    "comments": "Construct source code for the Figure and FigureWidget classes and write to graph_objs/_figure.py and graph_objs/_figurewidget.py respectively\n\nParameters ---------- outdir : str Root outdir in which the graph_objs package should reside trace_node : PlotlyNode Root trace node (the node that is the parent of all of the individual trace nodes like bar, scatter, etc.) data_validator : BaseDataValidator DataValidator instance layout_validator : CompoundValidator LayoutValidator instance frame_validator : CompoundArrayValidator FrameValidator instance subplot_nodes: list of PlotlyNode List of names of all of the layout subplot properties layout_array_nodes: list of PlotlyNode List of array nodes under layout that can be positioned using xref/yref\n##### Returns\n"
+}

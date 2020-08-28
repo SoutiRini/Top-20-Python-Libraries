@@ -1,0 +1,7 @@
+{
+    "source file": "beta.py",
+    "line number": "383",
+    "func name": "_kl_beta_beta",
+    "func arg": "(d1, d2, name)",
+    "comments": "Calculate the batchwise KL divergence KL(d1 || d2) with d1 and d2 Beta.\n\n\n##### Args\n* **d1**: instance of a Beta distribution object.\n\n* **d2**: instance of a Beta distribution object.\n\n* **name**: (optional) Name to use for created operations.\n  default is \"kl_beta_beta\".\n\n##### Returns\n"
+}

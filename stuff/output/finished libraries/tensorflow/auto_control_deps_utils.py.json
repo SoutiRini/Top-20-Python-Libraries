@@ -1,0 +1,7 @@
+{
+    "source file": "auto_control_deps_utils.py",
+    "line number": "155",
+    "func name": "_input_index",
+    "func arg": "(op, handle)",
+    "comments": "Returns the index of `handle` in `op.inputs`.\n\n\n##### Args\n* **op**: Operation.\n\n* **handle**: Resource handle.\n\n##### Returns\n"
+}

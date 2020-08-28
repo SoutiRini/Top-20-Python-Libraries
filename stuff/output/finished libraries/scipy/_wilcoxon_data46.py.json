@@ -1,0 +1,7 @@
+{
+    "source file": "_wilcoxon_data46.py",
+    "line number": "37",
+    "func name": "_generate_wilcoxon_exact_table_fast",
+    "func arg": "(N)",
+    "comments": "Same functionality as _generate_wilcoxon_exact_table, but about 20% faster, but harder to follow.\n\n\n"
+}

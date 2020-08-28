@@ -1,0 +1,7 @@
+{
+    "source file": "setup.py",
+    "line number": "247",
+    "func name": "process_tempita",
+    "func arg": "(source_name)",
+    "comments": "Runs pyx.in files through tempita is needed\n\n\n"
+}

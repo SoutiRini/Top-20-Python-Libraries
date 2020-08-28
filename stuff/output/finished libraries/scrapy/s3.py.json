@@ -1,0 +1,7 @@
+{
+    "source file": "s3.py",
+    "line number": "10",
+    "func name": "_get_boto_connection",
+    "func arg": "()",
+    "comments": ""
+}

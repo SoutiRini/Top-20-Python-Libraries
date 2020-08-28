@@ -1,0 +1,7 @@
+{
+    "source file": "test_doc2vec.py",
+    "line number": "752",
+    "func name": "read_su_sentiment_rotten_tomatoes",
+    "func arg": "(dirname, lowercase)",
+    "comments": "Read and return documents from the Stanford Sentiment Treebank corpus (Rotten Tomatoes reviews), from http://nlp.Stanford.edu/sentiment/\n\nInitialize the corpus from a given directory, where http://nlp.stanford.edu/~socherr/stanfordSentimentTreebank.zip has been expanded. It's not too big, so compose entirely into memory.\n"
+}

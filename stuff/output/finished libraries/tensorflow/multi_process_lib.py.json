@@ -1,0 +1,7 @@
+{
+    "source file": "multi_process_lib.py",
+    "line number": "50",
+    "func name": "initialized",
+    "func arg": "()",
+    "comments": "Returns whether the module is initialized.\n\n\n"
+}

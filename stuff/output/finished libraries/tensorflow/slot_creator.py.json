@@ -1,0 +1,7 @@
+{
+    "source file": "slot_creator.py",
+    "line number": "177",
+    "func name": "create_zeros_slot",
+    "func arg": "(primary, name, dtype, colocate_with_primary)",
+    "comments": "Create a slot initialized to 0 with same shape as the primary object.\n\n\n##### Args\n* **primary**: The primary `Variable` or `Tensor`.\n\n* **name**: Name to use for the slot variable.\n\n* **dtype**: Type of the slot variable.  Defaults to the type of `primary`.\n\n* **colocate_with_primary**: Boolean.  If True the slot is located\n  on the same device as `primary`.\n\n##### Returns\n"
+}

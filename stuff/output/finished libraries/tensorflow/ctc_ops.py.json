@@ -1,0 +1,7 @@
+{
+    "source file": "ctc_ops.py",
+    "line number": "1429",
+    "func name": "_get_dim",
+    "func arg": "(tensor, i)",
+    "comments": "Get value of tensor shape[i] preferring static value if available.\n\n\n"
+}

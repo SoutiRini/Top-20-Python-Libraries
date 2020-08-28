@@ -1,0 +1,7 @@
+{
+    "source file": "control_flow_util.py",
+    "line number": "366",
+    "func name": "GetWhileContext",
+    "func arg": "(op)",
+    "comments": "Get the WhileContext to which this op belongs.\n\n\n"
+}

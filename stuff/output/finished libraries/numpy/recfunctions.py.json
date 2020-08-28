@@ -1,0 +1,7 @@
+{
+    "source file": "recfunctions.py",
+    "line number": "1582",
+    "func name": "rec_join",
+    "func arg": "(key, r1, r2, jointype, r1postfix, r2postfix, defaults)",
+    "comments": "Join arrays `r1` and `r2` on keys. Alternative to join_by, that always returns a np.recarray.\n\nSee Also -------- join_by : equivalent function\n"
+}

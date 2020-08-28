@@ -1,0 +1,7 @@
+{
+    "source file": "structure.py",
+    "line number": "407",
+    "func name": "type_spec_from_value",
+    "func arg": "(element, use_fallback)",
+    "comments": "Creates a type specification for the given value.\n\n\n##### Args\n* **element**: The element to create the type specification for.\n\n* **use_fallback**: Whether to fall back to converting the element to a tensor\n  in order to compute its `TypeSpec`.\n\n##### Returns\n"
+}

@@ -1,0 +1,7 @@
+{
+    "source file": "checkpoint_utils_test1.py",
+    "line number": "63",
+    "func name": "_create_partition_checkpoints",
+    "func arg": "(sess, checkpoint_dir)",
+    "comments": ""
+}

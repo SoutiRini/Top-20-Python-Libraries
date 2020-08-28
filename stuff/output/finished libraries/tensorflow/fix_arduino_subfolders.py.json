@@ -1,0 +1,7 @@
+{
+    "source file": "fix_arduino_subfolders.py",
+    "line number": "124",
+    "func name": "parse_args",
+    "func arg": "()",
+    "comments": "Converts the raw arguments into accessible flags.\n\n\n"
+}

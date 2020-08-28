@@ -1,0 +1,7 @@
+{
+    "source file": "ImageTk.py",
+    "line number": "284",
+    "func name": "_show",
+    "func arg": "(image, title)",
+    "comments": "Helper for the Image.show method.\n\n\n"
+}

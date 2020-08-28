@@ -1,0 +1,7 @@
+{
+    "source file": "prefetching_ops.py",
+    "line number": "260",
+    "func name": "map_on_gpu",
+    "func arg": "(map_func)",
+    "comments": "Maps `map_func` across the elements of this dataset.\n\nNOTE: This is a highly experimental version of `tf.data.Dataset.map` that runs `map_func` on GPU. It must be used after applying the `tf.data.experimental.copy_to_device` transformation with a GPU device argument.\n##### Args\n* **map_func**: A function mapping a nested structure of tensors (having shapes\n  and types defined by `self.output_shapes` and `self.output_types`) to\n  another nested structure of tensors.\n\n##### Returns\n"
+}

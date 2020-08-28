@@ -1,0 +1,7 @@
+{
+    "source file": "mlp_test.py",
+    "line number": "224",
+    "func name": "test_mlp",
+    "func arg": "()",
+    "comments": "Demonstrate stochastic gradient descent optimization for a multilayer perceptron\n\nThis is demonstrated on MNIST.\n\n:type learning_rate: float :param learning_rate: learning rate used (factor for the stochastic gradient\n\n:type n_epochs: int :param n_epochs: maximal number of epochs to run the optimizer\n\n:type dataset: string :param dataset: the path of the MNIST dataset file from http://www.iro.umontreal.ca/~lisa/deep/data/mnist/mnist.pkl.gz\n"
+}

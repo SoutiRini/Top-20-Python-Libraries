@@ -1,0 +1,7 @@
+{
+    "source file": "publish.py",
+    "line number": "67",
+    "func name": "upload_deployment_tarball",
+    "func arg": "(config, system)",
+    "comments": ""
+}

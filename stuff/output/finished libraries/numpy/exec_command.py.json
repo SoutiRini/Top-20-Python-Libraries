@@ -1,0 +1,7 @@
+{
+    "source file": "exec_command.py",
+    "line number": "306",
+    "func name": "_quote_arg",
+    "func arg": "(arg)",
+    "comments": "Quote the argument for safe use in a shell command line.\n\n\n"
+}

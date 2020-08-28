@@ -1,0 +1,7 @@
+{
+    "source file": "tricontour.py",
+    "line number": "292",
+    "func name": "tricontourf",
+    "func arg": "(ax, **kwargs)",
+    "comments": "%(_tricontour_doc)s\n\nantialiased : bool, default: True Whether to use antialiasing.\n\nNotes ----- `.tricontourf` fills intervals that are closed at the top; that is, for boundaries *z1* and *z2*, the filled region is::\n\nz1 < Z <= z2\n\nexcept for the lowest interval, which is closed on both sides (i.e. it includes the lowest value).\n"
+}

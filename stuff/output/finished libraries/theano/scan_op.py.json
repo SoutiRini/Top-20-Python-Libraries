@@ -1,0 +1,7 @@
+{
+    "source file": "scan_op.py",
+    "line number": "2883",
+    "func name": "profile_printer",
+    "func arg": "(message, compile_time, fct_call_time, apply_time, apply_cimpl, outputs_size, file)",
+    "comments": ""
+}

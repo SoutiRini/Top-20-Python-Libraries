@@ -1,0 +1,7 @@
+{
+    "source file": "interactive_tester.py",
+    "line number": "222",
+    "func name": "logger",
+    "func arg": "(error_array, name)",
+    "comments": "Log errors by appending to a .txt file.  The name and directory the file is saved into is provided by the name and log_dir args.\n\n\n"
+}

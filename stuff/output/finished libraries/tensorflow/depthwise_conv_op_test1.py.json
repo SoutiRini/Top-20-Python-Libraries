@@ -1,0 +1,7 @@
+{
+    "source file": "depthwise_conv_op_test1.py",
+    "line number": "234",
+    "func name": "CheckGradConfigsToTestExplicit",
+    "func arg": "()",
+    "comments": "Iterator for different convolution shapes, strides and explicit paddings.\n\ncompute_gradient_error() is very expensive. So the configs should be relatively small.\n##### Returns\n"
+}

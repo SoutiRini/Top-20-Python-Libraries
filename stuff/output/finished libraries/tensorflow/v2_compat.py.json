@@ -1,0 +1,7 @@
+{
+    "source file": "v2_compat.py",
+    "line number": "82",
+    "func name": "disable_v2_behavior",
+    "func arg": "()",
+    "comments": "Disables TensorFlow 2.x behaviors.\n\nThis function can be called at the beginning of the program (before `Tensors`, `Graphs` or other structures have been created, and before devices have been initialized. It switches all global behaviors that are different between TensorFlow 1.x and 2.x to behave as intended for 1.x.\n\nUser can call this function to disable 2.x behavior during complex migrations.\n"
+}

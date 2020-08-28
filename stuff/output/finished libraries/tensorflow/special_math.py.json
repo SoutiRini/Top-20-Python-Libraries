@@ -1,0 +1,7 @@
+{
+    "source file": "special_math.py",
+    "line number": "429",
+    "func name": "log_cdf_laplace",
+    "func arg": "(x, name)",
+    "comments": "Log Laplace distribution function.\n\nThis function calculates `Log[L(x)]`, where `L(x)` is the cumulative distribution function of the Laplace distribution, i.e.\n\n```L(x) := 0.5 * int_{-infty}^x e^{-|t|} dt```\n\nFor numerical accuracy, `L(x)` is computed in different ways depending on `x`,\n\n``` x <= 0: Log[L(x)] = Log[0.5] + x, which is exact\n\n0 < x: Log[L(x)] = Log[1\n\n- 0.5 * e^{-x}], which is exact ```\n##### Args\n* **x**: `Tensor` of type `float32`, `float64`.\n\n* **name**: Python string. A name for the operation (default=\"log_ndtr\").\n\n##### Returns\n"
+}

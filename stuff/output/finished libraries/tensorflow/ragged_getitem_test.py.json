@@ -1,0 +1,7 @@
+{
+    "source file": "ragged_getitem_test.py",
+    "line number": "50",
+    "func name": "_make_tensor_slice_spec",
+    "func arg": "(slice_spec, use_constant)",
+    "comments": "Wraps all integers in an extended slice spec w/ a tensor.\n\nThis function is used to help test slicing when the slice spec contains tensors, rather than integers.\n##### Args\n* **slice_spec**: The extended slice spec.\n\n* **use_constant**: If true, then wrap each integer with a tf.constant.  If false,\n  then wrap each integer with a tf.placeholder.\n\n##### Returns\n"
+}

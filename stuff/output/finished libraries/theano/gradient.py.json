@@ -1,0 +1,7 @@
+{
+    "source file": "gradient.py",
+    "line number": "2234",
+    "func name": "grad_scale",
+    "func arg": "(x, multiplier)",
+    "comments": "This op scale or inverse the gradient in the backpropagation.\n\nParameters ---------- x: The variable we want its gradient inputs scale multiplier: Scale of the gradient\n\nExamples -------- >>> x = theano.tensor.fscalar() >>> fx = theano.tensor.sin(x) >>> fp = theano.tensor.grad(fx, wrt=x) >>> fprime = theano.function([x], fp) >>> print(fprime(2))\n\n# doctest: +ELLIPSIS -0.416... >>> f_inverse=grad_scale(fx, -1.) >>> fpp = theano.tensor.grad(f_inverse, wrt=x) >>> fpprime = theano.function([x], fpp) >>> print(fpprime(2))\n\n# doctest: +ELLIPSIS 0.416...\n"
+}

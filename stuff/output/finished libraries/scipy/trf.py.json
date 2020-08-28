@@ -1,0 +1,7 @@
+{
+    "source file": "trf.py",
+    "line number": "401",
+    "func name": "trf_no_bounds",
+    "func arg": "(fun, jac, x0, f0, J0, ftol, xtol, gtol, max_nfev, x_scale, loss_function, tr_solver, tr_options, verbose)",
+    "comments": ""
+}

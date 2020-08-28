@@ -1,0 +1,7 @@
+{
+    "source file": "missing3.py",
+    "line number": "136",
+    "func name": "dispatch_fill_zeros",
+    "func arg": "(op, left, right, result)",
+    "comments": "Call fill_zeros with the appropriate fill value depending on the operation, with special logic for divmod and rdivmod.\n\nParameters ---------- op : function (operator.add, operator.div, ...) left : object (np.ndarray for non-reversed ops) right : object (np.ndarray for reversed ops) result : ndarray\n##### Returns\n* **result **: np.ndarray\n\n"
+}

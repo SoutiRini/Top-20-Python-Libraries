@@ -1,0 +1,7 @@
+{
+    "source file": "load1.py",
+    "line number": "606",
+    "func name": "load_internal",
+    "func arg": "(export_dir, tags, options, loader_cls)",
+    "comments": "Loader implementation.\n\n\n"
+}

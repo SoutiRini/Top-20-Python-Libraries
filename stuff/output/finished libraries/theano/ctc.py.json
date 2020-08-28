@@ -1,0 +1,7 @@
+{
+    "source file": "ctc.py",
+    "line number": "177",
+    "func name": "local_gpu_ctc_no_grad",
+    "func arg": "(node)",
+    "comments": ""
+}

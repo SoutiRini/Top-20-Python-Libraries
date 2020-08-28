@@ -1,0 +1,7 @@
+{
+    "source file": "childes.py",
+    "line number": "567",
+    "func name": "demo",
+    "func arg": "(corpus_root)",
+    "comments": "The CHILDES corpus should be manually downloaded and saved to ``[NLTK_Data_Dir]/corpora/childes/``\n\n\n"
+}

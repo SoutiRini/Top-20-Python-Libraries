@@ -1,0 +1,7 @@
+{
+    "source file": "barchart.py",
+    "line number": "34",
+    "func name": "autolabel",
+    "func arg": "(rects)",
+    "comments": "Attach a text label above each bar in *rects*, displaying its height.\n\n\n"
+}

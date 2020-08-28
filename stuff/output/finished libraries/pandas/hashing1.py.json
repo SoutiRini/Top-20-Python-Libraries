@@ -1,0 +1,7 @@
+{
+    "source file": "hashing1.py",
+    "line number": "327",
+    "func name": "_hash_scalar",
+    "func arg": "(val, encoding, hash_key)",
+    "comments": "Hash scalar value.\n\nParameters ---------- val : scalar encoding : str, default \"utf8\" hash_key : str, default _default_hash_key\n##### Returns\n"
+}

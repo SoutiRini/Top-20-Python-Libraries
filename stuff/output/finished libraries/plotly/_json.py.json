@@ -1,0 +1,7 @@
+{
+    "source file": "_json.py",
+    "line number": "156",
+    "func name": "read_json",
+    "func arg": "(file, output_type, skip_invalid)",
+    "comments": "Construct a figure from the JSON contents of a local file or readable Python object\n\nParameters ---------- file: str or readable A string containing the path to a local file or a read-able Python object (e.g. an open file descriptor)\n\noutput_type: type or str (default 'Figure') The output figure type or type name. One of:\n\ngraph_objs.Figure, 'Figure', graph_objs.FigureWidget, 'FigureWidget'\n\nskip_invalid: bool (default False) False if invalid figure properties should result in an exception. True if invalid figure properties should be silently ignored.\n##### Returns\n"
+}

@@ -1,0 +1,7 @@
+{
+    "source file": "parallel_plot.py",
+    "line number": "13",
+    "func name": "parallel_plot",
+    "func arg": "(df, color, palette)",
+    "comments": "From a dataframe create a parallel coordinate plot\n\n\n"
+}

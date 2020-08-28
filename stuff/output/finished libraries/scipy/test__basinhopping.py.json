@@ -1,0 +1,7 @@
+{
+    "source file": "test__basinhopping.py",
+    "line number": "58",
+    "func name": "myTakeStep2",
+    "func arg": "(x)",
+    "comments": "redo RandomDisplacement in function form without the attribute stepsize to make sure everything still works ok\n\n\n"
+}

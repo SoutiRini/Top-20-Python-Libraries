@@ -1,0 +1,7 @@
+{
+    "source file": "utils9.py",
+    "line number": "337",
+    "func name": "image_to_base64",
+    "func arg": "(image)",
+    "comments": "Convert a matplotlib image to a base64 png representation\n\nParameters ---------- image : matplotlib image object The image to be converted.\n##### Returns\n* **image_base64 **: string\n    The UTF8-encoded base64 string representation of the png image.\n\n"
+}

@@ -1,0 +1,7 @@
+{
+    "source file": "test_help.py",
+    "line number": "28",
+    "func name": "test_idna_with_version_attribute",
+    "func arg": "(mocker)",
+    "comments": "Verify we're actually setting idna version when it should be available.\n\n\n"
+}

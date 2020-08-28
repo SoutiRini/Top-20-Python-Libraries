@@ -1,0 +1,7 @@
+{
+    "source file": "patch_doc.py",
+    "line number": "102",
+    "func name": "process_document_events",
+    "func arg": "(events, use_buffers)",
+    "comments": "Create a JSON string describing a patch to be applied as well as any optional buffers.\n\n\n##### Args\n* **events **: list of events to be translated into patches\n\n##### Returns\n* **str, list **: JSON string which can be applied to make the given updates to obj\n  as well as any optional buffers\n\n"
+}

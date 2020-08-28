@@ -1,0 +1,7 @@
+{
+    "source file": "l1_cvxopt.py",
+    "line number": "180",
+    "func name": "_hessian_wrapper",
+    "func arg": "(hess, x, z, k_params)",
+    "comments": "Wraps the hessian up in the form for cvxopt.\n\ncvxopt wants the hessian of the objective function and the constraints. Since our constraints are linear, this part is all zeros.\n"
+}

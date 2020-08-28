@@ -1,0 +1,7 @@
+{
+    "source file": "tensor_array_grad.py",
+    "line number": "243",
+    "func name": "_TensorArraySplitGrad",
+    "func arg": "(op, flow)",
+    "comments": "Gradient for TensorArraySplit.\n\n\n##### Args\n* **op**: Forward TensorArraySplit op.\n\n* **flow**: Gradient `Tensor` flow to TensorArraySplit.\n\n##### Returns\n"
+}

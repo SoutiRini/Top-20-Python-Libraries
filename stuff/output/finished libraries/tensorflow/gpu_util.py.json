@@ -1,0 +1,7 @@
+{
+    "source file": "gpu_util.py",
+    "line number": "35",
+    "func name": "compute_capability_from_device_desc",
+    "func arg": "(device_attrs)",
+    "comments": "Returns the GpuInfo given a DeviceAttributes proto.\n\n\n##### Args\n* **device_attrs**: A DeviceAttributes proto.\n\n##### Returns\n"
+}

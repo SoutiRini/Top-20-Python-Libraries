@@ -1,0 +1,7 @@
+{
+    "source file": "box_with_nms_limit_op_test.py",
+    "line number": "51",
+    "func name": "gen_multiple_boxes",
+    "func arg": "(centers, scores, count, num_classes)",
+    "comments": ""
+}

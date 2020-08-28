@@ -1,0 +1,7 @@
+{
+    "source file": "hypothesis_test_util.py",
+    "line number": "366",
+    "func name": "runOpOnInput",
+    "func arg": "(device_option, op, inputs, input_device_options)",
+    "comments": ""
+}

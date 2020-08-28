@@ -1,0 +1,7 @@
+{
+    "source file": "conv8.py",
+    "line number": "1789",
+    "func name": "gen_conv_code_unroll_batch_kern",
+    "func arg": "(d, unroll_bsize, unroll_ksize)",
+    "comments": "c_code for ConvOp that unroll the batch size loop.\n\n\n"
+}

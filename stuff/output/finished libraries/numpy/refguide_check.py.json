@@ -1,0 +1,7 @@
+{
+    "source file": "refguide_check.py",
+    "line number": "1103",
+    "func name": "main",
+    "func arg": "(argv)",
+    "comments": "Validates the docstrings of all the pre decided set of modules for errors and docstring standards.\n\n\n"
+}

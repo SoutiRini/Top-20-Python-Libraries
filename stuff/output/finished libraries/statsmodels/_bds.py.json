@@ -1,0 +1,7 @@
+{
+    "source file": "_bds.py",
+    "line number": "166",
+    "func name": "bds",
+    "func arg": "(x, max_dim, epsilon, distance)",
+    "comments": "BDS Test Statistic for Independence of a Time Series\n\nParameters ---------- x : ndarray Observations of time series for which bds statistics is calculated. max_dim : int The maximum embedding dimension. epsilon : {float, None}, optional The threshold distance to use in calculating the correlation sum. distance : float, optional Specifies the distance multiplier to use when computing the test statistic if epsilon is omitted.\n##### Returns\n* **bds_stat **: float\n    The BDS statistic.\n\n* **pvalue **: float\n    The p-values associated with the BDS statistic.\n\n* **required to calculate the m-histories**: \n\n"
+}

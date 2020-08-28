@@ -1,0 +1,7 @@
+{
+    "source file": "auth.py",
+    "line number": "28",
+    "func name": "_basic_auth_str",
+    "func arg": "(username, password)",
+    "comments": "Returns a Basic Auth string.\n\n\n"
+}

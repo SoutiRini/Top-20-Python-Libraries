@@ -1,0 +1,7 @@
+{
+    "source file": "spectacle_presentations.py",
+    "line number": "29",
+    "func name": "update",
+    "func arg": "(fid, content)",
+    "comments": "Completely update the writable.\n\n\n"
+}

@@ -1,0 +1,7 @@
+{
+    "source file": "decorator.py",
+    "line number": "321",
+    "func name": "dispatch_on",
+    "func arg": "()",
+    "comments": "Factory of decorators turning a function into a generic function dispatching on the given arguments.\n\n\n"
+}

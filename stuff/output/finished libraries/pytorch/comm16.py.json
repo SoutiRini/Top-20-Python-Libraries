@@ -1,0 +1,7 @@
+{
+    "source file": "comm16.py",
+    "line number": "195",
+    "func name": "gather",
+    "func arg": "(tensors, dim, destination)",
+    "comments": "Gathers tensors from multiple GPU devices.\n\nArguments: tensors (Iterable[Tensor]): an iterable of tensors to gather. Tensor sizes in all dimensions other than :attr:`dim` have to match. dim (int, optional): a dimension along which the tensors will be concatenated. Default: ``0``. destination (torch.device, str, or int, optional): the output device. Can be CPU or CUDA. Default: the current CUDA device. out (Tensor, optional, keyword-only): the tensor to store gather result. Its sizes must match those of :attr:`tensors`, except for :attr:`dim`, where the size must equal ``sum(tensor.size(dim) for tensor in tensors)``. Can be on CPU or CUDA.\n\n.. note:: :attr:`destination` must not be specified when :attr:`out` is specified.\n##### Returns\n* **- If **: attr\n\n"
+}

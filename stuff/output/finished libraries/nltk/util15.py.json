@@ -1,0 +1,7 @@
+{
+    "source file": "util15.py",
+    "line number": "140",
+    "func name": "guess_path",
+    "func arg": "(pth)",
+    "comments": "If the path is not absolute, guess that it is a subdirectory of the user's home directory.\n\nparam str pth: The pathname of the directory where files of tweets should be written\n"
+}

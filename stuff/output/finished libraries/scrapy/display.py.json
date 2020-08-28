@@ -1,0 +1,7 @@
+{
+    "source file": "display.py",
+    "line number": "25",
+    "func name": "pprint",
+    "func arg": "(obj, **kwargs)",
+    "comments": ""
+}

@@ -1,0 +1,7 @@
+{
+    "source file": "ImageShow.py",
+    "line number": "46",
+    "func name": "show",
+    "func arg": "(image, title, **options)",
+    "comments": "Display a given image.\n\nparam image: An image object. :param title: Optional title. Not all viewers can display the title. :param \\**options: Additional viewer options. :returns: ``True`` if a suitable viewer was found, ``False`` otherwise.\n"
+}

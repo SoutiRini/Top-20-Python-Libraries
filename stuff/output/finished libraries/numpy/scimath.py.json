@@ -1,0 +1,7 @@
+{
+    "source file": "scimath.py",
+    "line number": "554",
+    "func name": "arctanh",
+    "func arg": "(x)",
+    "comments": "Compute the inverse hyperbolic tangent of `x`.\n\nReturn the \"principal value\" (for a description of this, see `numpy.arctanh`) of `arctanh(x)`. For real `x` such that `abs(x) < 1`, this is a real number.\n\nIf `abs(x) > 1`, or if `x` is complex, the result is complex. Finally, `x = 1` returns``inf`` and `x=-1` returns ``-inf``.\n\nParameters ---------- x : array_like The value(s) whose arctanh is (are) required.\n##### Returns\n* **out **: ndarray or scalar\n   The inverse hyperbolic tangent(s) of the `x` value(s). If `x` was\n   a scalar so is `out`, otherwise an array is returned.\n\n* **>>> with suppress_warnings() as sup**: \n\n"
+}

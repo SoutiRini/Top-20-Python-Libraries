@@ -1,0 +1,7 @@
+{
+    "source file": "spectral154.py",
+    "line number": "1981",
+    "func name": "_median_bias",
+    "func arg": "(n)",
+    "comments": "Returns the bias of the median of a set of periodograms relative to the mean.\n\nSee arXiv:gr-qc/0509116 Appendix B for details.\n\nParameters ---------- n : int Numbers of periodograms being averaged.\n##### Returns\n* **bias **: float\n    Calculated bias.\n\n"
+}

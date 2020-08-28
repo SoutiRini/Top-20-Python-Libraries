@@ -1,0 +1,7 @@
+{
+    "source file": "layer_norm_op_test.py",
+    "line number": "41",
+    "func name": "_layer_norm_grad_ref",
+    "func arg": "(axis, gout_full, norm, mean_full, stdev_full, X_full)",
+    "comments": ""
+}

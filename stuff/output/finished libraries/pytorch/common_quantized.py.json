@@ -1,0 +1,7 @@
+{
+    "source file": "common_quantized.py",
+    "line number": "129",
+    "func name": "qengine_is_qnnpack",
+    "func arg": "()",
+    "comments": ""
+}

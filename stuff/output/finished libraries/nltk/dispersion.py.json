@@ -1,0 +1,7 @@
+{
+    "source file": "dispersion.py",
+    "line number": "13",
+    "func name": "dispersion_plot",
+    "func arg": "(text, words, ignore_case, title)",
+    "comments": "Generate a lexical dispersion plot.\n\nparam text: The source text :type text: list(str) or enum(str) :param words: The target words :type words: list of str :param ignore_case: flag to set if case should be ignored when searching text :type ignore_case: bool\n"
+}

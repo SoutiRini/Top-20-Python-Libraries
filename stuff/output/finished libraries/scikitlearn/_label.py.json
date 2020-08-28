@@ -1,0 +1,7 @@
+{
+    "source file": "_label.py",
+    "line number": "614",
+    "func name": "_inverse_binarize_thresholding",
+    "func arg": "(y, output_type, classes, threshold)",
+    "comments": "Inverse label binarization transformation using thresholding.\n\n\n"
+}

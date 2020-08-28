@@ -1,0 +1,7 @@
+{
+    "source file": "deprecation.py",
+    "line number": "51",
+    "func name": "deprecated",
+    "func arg": "(since_or_msg, old, new, extra)",
+    "comments": "Issue a nicely formatted deprecation warning.\n\n\n"
+}

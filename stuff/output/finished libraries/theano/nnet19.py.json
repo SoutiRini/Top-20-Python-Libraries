@@ -1,0 +1,7 @@
+{
+    "source file": "nnet19.py",
+    "line number": "2519",
+    "func name": "confusion_matrix",
+    "func arg": "(actual, pred)",
+    "comments": "Computes the confusion matrix of given vectors containing actual observations and predicted observations.\n\nParameters ---------- actual : 1-d tensor variable pred : 1-d tensor variable\n##### Returns\n* **conf_mat **: Confusion matrix of actual and predictions observations as shown below.\n           | Predicted\n\n* **order **: 1-d array of order of entries in rows and columns\n\n"
+}

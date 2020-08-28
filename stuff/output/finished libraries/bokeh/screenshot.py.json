@@ -1,0 +1,7 @@
+{
+    "source file": "screenshot.py",
+    "line number": "56",
+    "func name": "_run_in_browser",
+    "func arg": "(engine, url, local_wait, global_wait)",
+    "comments": "wait is in milliseconds\n\n\n"
+}

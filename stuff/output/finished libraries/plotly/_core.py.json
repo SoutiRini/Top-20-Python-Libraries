@@ -1,0 +1,7 @@
+{
+    "source file": "_core.py",
+    "line number": "2068",
+    "func name": "init_figure",
+    "func arg": "(args, subplot_type, frame_list, nrows, ncols, col_labels, row_labels)",
+    "comments": ""
+}

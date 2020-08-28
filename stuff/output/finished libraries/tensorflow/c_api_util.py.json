@@ -1,0 +1,7 @@
+{
+    "source file": "c_api_util.py",
+    "line number": "238",
+    "func name": "new_tf_operations",
+    "func arg": "(graph)",
+    "comments": "Generator that yields newly-added TF_Operations in `graph`.\n\nSpecifically, yields TF_Operations that don't have associated Operations in `graph`. This is useful for processing nodes added by the C API.\n##### Args\n* **graph**: Graph\n\n* **elds**: \n\n"
+}

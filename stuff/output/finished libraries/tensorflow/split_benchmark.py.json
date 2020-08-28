@@ -1,0 +1,7 @@
+{
+    "source file": "split_benchmark.py",
+    "line number": "34",
+    "func name": "build_graph",
+    "func arg": "(device, input_shape, output_sizes, axis)",
+    "comments": "Build a graph containing a sequence of split operations.\n\n\n##### Args\n* **device**: string, the device to run on.\n\n* **input_shape**: shape of the input tensor.\n\n* **output_sizes**: size of each output along axis.\n\n* **axis**: axis to be split along.\n\n##### Returns\n"
+}

@@ -1,0 +1,7 @@
+{
+    "source file": "device_util.py",
+    "line number": "130",
+    "func name": "local_devices_from_num_gpus",
+    "func arg": "(num_gpus)",
+    "comments": "Returns device strings for local GPUs or CPU.\n\n\n"
+}

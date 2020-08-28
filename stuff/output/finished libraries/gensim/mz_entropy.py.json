@@ -1,0 +1,7 @@
+{
+    "source file": "mz_entropy.py",
+    "line number": "133",
+    "func name": "__analytic_entropy",
+    "func arg": "(blocksize, n_blocks, n_words)",
+    "comments": ""
+}

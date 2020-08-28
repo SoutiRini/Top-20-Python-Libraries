@@ -1,0 +1,7 @@
+{
+    "source file": "ops.py",
+    "line number": "6982",
+    "func name": "set_int_list_attr",
+    "func arg": "(op, attr_name, ints)",
+    "comments": "TF internal method used to set a list(int) attribute in the node_def.\n\n\n"
+}

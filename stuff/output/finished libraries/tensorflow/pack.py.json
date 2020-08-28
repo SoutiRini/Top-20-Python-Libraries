@@ -1,0 +1,7 @@
+{
+    "source file": "pack.py",
+    "line number": "28",
+    "func name": "make_pack_tests",
+    "func arg": "(options)",
+    "comments": "Make a set of tests to do stack.\n\n\n"
+}

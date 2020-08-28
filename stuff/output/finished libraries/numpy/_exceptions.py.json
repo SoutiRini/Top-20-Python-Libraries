@@ -1,0 +1,7 @@
+{
+    "source file": "_exceptions.py",
+    "line number": "17",
+    "func name": "_display_as_base",
+    "func arg": "(cls)",
+    "comments": "A decorator that makes an exception class look like its base.\n\nWe use this to hide subclasses that are implementation details\n\n- the user should catch the base type, which is what the traceback will show them.\n\nClasses decorated with this decorator are subject to removal without a deprecation warning.\n"
+}

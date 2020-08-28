@@ -1,0 +1,7 @@
+{
+    "source file": "pandas.py",
+    "line number": "136",
+    "func name": "to_numpy",
+    "func arg": "(po)",
+    "comments": "Workaround legacy pandas lacking to_numpy\n\nParameters ---------- po : Pandas obkect\n##### Returns\n"
+}

@@ -1,0 +1,7 @@
+{
+    "source file": "python_object_to_proto_visitor.py",
+    "line number": "191",
+    "func name": "_IsProtoClass",
+    "func arg": "(obj)",
+    "comments": "Returns whether the passed obj is a Protocol Buffer class.\n\n\n"
+}

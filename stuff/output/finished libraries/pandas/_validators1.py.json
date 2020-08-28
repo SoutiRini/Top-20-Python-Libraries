@@ -1,0 +1,7 @@
+{
+    "source file": "_validators1.py",
+    "line number": "349",
+    "func name": "validate_percentile",
+    "func arg": "(q)",
+    "comments": "Validate percentiles (used by describe and quantile).\n\nThis function checks if the given float oriterable of floats is a valid percentile otherwise raises a ValueError.\n\nParameters ---------- q: float or iterable of floats A single percentile or an iterable of percentiles.\n##### Returns\n"
+}

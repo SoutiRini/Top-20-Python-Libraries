@@ -1,0 +1,7 @@
+{
+    "source file": "tpu_feed.py",
+    "line number": "110",
+    "func name": "tag_sharding_attribute_for_dequeued_tensors",
+    "func arg": "(dequeues, dims)",
+    "comments": "Tags appropriate XLA sharding attribute to the dequeued tensors.\n\n\n##### Args\n* **dequeues**: A list of dequeued tensors on TPU.\n\n* **dims**: A list of integer describes how the tensor is partitioned.\n\n##### Returns\n"
+}

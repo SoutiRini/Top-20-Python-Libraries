@@ -1,0 +1,7 @@
+{
+    "source file": "punkt.py",
+    "line number": "1651",
+    "func name": "demo",
+    "func arg": "(text, tok_cls, train_cls)",
+    "comments": "Builds a punkt model and applies it to the same text\n\n\n"
+}

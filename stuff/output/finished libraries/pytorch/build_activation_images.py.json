@@ -1,0 +1,7 @@
+{
+    "source file": "build_activation_images.py",
+    "line number": "51",
+    "func name": "plot_function",
+    "func arg": "(function, **args)",
+    "comments": "Plot a function on the current plot. The additional arguments may be used to specify color, alpha, etc.\n\n\n"
+}

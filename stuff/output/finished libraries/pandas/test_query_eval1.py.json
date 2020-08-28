@@ -1,0 +1,7 @@
+{
+    "source file": "test_query_eval1.py",
+    "line number": "28",
+    "func name": "skip_if_no_pandas_parser",
+    "func arg": "(parser)",
+    "comments": ""
+}

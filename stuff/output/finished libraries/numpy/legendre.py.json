@@ -1,0 +1,7 @@
+{
+    "source file": "legendre.py",
+    "line number": "1577",
+    "func name": "legweight",
+    "func arg": "(x)",
+    "comments": "Weight function of the Legendre polynomials.\n\nThe weight function is :math:`1` and the interval of integration is :math:`[-1, 1]`. The Legendre polynomials are orthogonal, but not normalized, with respect to this weight function.\n\nParameters ---------- x : array_like Values at which the weight function will be computed.\n##### Returns\n* **w **: ndarray\n   The weight function at `x`.\n\n* **.. versionadded**: \n\n"
+}

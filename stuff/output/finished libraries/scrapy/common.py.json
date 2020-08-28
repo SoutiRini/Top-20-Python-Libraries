@@ -1,0 +1,7 @@
+{
+    "source file": "common.py",
+    "line number": "1",
+    "func name": "obsolete_setter",
+    "func arg": "(setter, attrname)",
+    "comments": ""
+}

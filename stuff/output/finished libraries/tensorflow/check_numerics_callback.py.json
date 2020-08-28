@@ -1,0 +1,7 @@
+{
+    "source file": "check_numerics_callback.py",
+    "line number": "448",
+    "func name": "disable_check_numerics",
+    "func arg": "()",
+    "comments": "Disable the eager/graph unified numerics checking mechanism.\n\nThis method can be used after a call to `tf.debugging.enable_check_numerics()` to disable the numerics-checking mechanism that catches infinity and NaN values output by ops executed eagerly or in tf.function-compiled graphs.\n\nThis method is idempotent. Calling it multiple times has the same effect as calling it once.\n\nThis method takes effect only on the thread in which it is called.\n"
+}

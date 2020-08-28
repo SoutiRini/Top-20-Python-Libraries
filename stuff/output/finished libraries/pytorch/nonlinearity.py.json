@@ -1,0 +1,7 @@
+{
+    "source file": "nonlinearity.py",
+    "line number": "39",
+    "func name": "tanh",
+    "func arg": "(model, blob_in, blob_out, use_cudnn, order, **kwargs)",
+    "comments": "Tanh.\n\n\n"
+}

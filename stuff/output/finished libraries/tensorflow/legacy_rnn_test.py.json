@@ -1,0 +1,7 @@
+{
+    "source file": "legacy_rnn_test.py",
+    "line number": "373",
+    "func name": "get_test_data",
+    "func arg": "(train_samples, test_samples, input_shape, num_classes)",
+    "comments": ""
+}

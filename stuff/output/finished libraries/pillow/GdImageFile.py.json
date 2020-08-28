@@ -1,0 +1,7 @@
+{
+    "source file": "GdImageFile.py",
+    "line number": "73",
+    "func name": "open",
+    "func arg": "(fp, mode)",
+    "comments": "Load texture from a GD image file.\n\nparam filename: GD file name, or an opened file handle. :param mode: Optional mode.\n\nIn this version, if the mode argument is given, it must be \"r\". :returns: An image instance. :raises OSError: If the image could not be read.\n"
+}

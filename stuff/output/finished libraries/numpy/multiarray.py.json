@@ -1,0 +1,7 @@
+{
+    "source file": "multiarray.py",
+    "line number": "1600",
+    "func name": "datetime_as_string",
+    "func arg": "(arr, unit, timezone, casting)",
+    "comments": "datetime_as_string(arr, unit=None, timezone='naive', casting='same_kind')\n\nConvert an array of datetimes into an array of strings.\n\nParameters ---------- arr : array_like of datetime64 The array of UTC timestamps to format. unit : str One of None, 'auto', or a :ref:`datetime unit <arrays.dtypes.dateunits>`. timezone : {'naive', 'UTC', 'local'} or tzinfo Timezone information to use when displaying the datetime. If 'UTC', end with a Z to indicate UTC time. If 'local', convert to the local timezone first, and suffix with a +-#### timezone offset. If a tzinfo object, then do as with 'local', but use the specified timezone. casting : {'no', 'equiv', 'safe', 'same_kind', 'unsafe'} Casting to allow when changing between datetime units.\n##### Returns\n* **str_arr **: ndarray\n    An array of strings the same shape as `arr`.\n\n* **>>> d = np.arange('2002-10-27T04**: 30', 4*60, 60, dtype='M8[m]')\n\n* **array(['2002-10-27T04**: 30\n\n* **array(['2002-10-27T00**: 30-0400', '2002-10-27T01\n\n* **Traceback (most recent call last)**: ...\n\n* **TypeError**: Cannot create a datetime string as units 'h' from a NumPy\n\n"
+}

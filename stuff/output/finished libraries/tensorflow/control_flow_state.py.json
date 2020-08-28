@@ -1,0 +1,7 @@
+{
+    "source file": "control_flow_state.py",
+    "line number": "834",
+    "func name": "ZerosLike",
+    "func arg": "(op, index)",
+    "comments": "Create zeros_like for the specified output of an op.\n\n\n"
+}

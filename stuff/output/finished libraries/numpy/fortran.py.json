@@ -1,0 +1,7 @@
+{
+    "source file": "fortran.py",
+    "line number": "103",
+    "func name": "getDependencies",
+    "func arg": "(filename)",
+    "comments": "For a Fortran source file, return a list of routines declared as EXTERNAL in it.\n\n\n"
+}

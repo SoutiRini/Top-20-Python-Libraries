@@ -1,0 +1,7 @@
+{
+    "source file": "test_multi.py",
+    "line number": "435",
+    "func name": "test_null_constrained",
+    "func arg": "(estimate_mean, estimate_scale, estimate_prob)",
+    "comments": ""
+}

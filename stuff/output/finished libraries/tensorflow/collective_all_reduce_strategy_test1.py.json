@@ -1,0 +1,7 @@
+{
+    "source file": "collective_all_reduce_strategy_test1.py",
+    "line number": "54",
+    "func name": "create_test_objects",
+    "func arg": "(cluster_spec, task_type, task_id, num_gpus)",
+    "comments": ""
+}

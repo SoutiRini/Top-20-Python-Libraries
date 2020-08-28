@@ -1,0 +1,7 @@
+{
+    "source file": "rdparser_app.py",
+    "line number": "1021",
+    "func name": "app",
+    "func arg": "()",
+    "comments": "Create a recursive descent parser demo, using a simple grammar and text.\n\n\n"
+}

@@ -1,0 +1,7 @@
+{
+    "source file": "cross_device_ops_test.py",
+    "line number": "109",
+    "func name": "_make_mirrored_indexed_slices",
+    "func arg": "(devices, values, indices, dense_shape)",
+    "comments": ""
+}

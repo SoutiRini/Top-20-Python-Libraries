@@ -1,0 +1,7 @@
+{
+    "source file": "figure.py",
+    "line number": "2804",
+    "func name": "figaspect",
+    "func arg": "(arg)",
+    "comments": "Calculate the width and height for a figure with a specified aspect ratio.\n\nWhile the height is taken from :rc:`figure.figsize`, the width is adjusted to match the desired aspect ratio. Additionally, it is ensured that the width is in the range [4., 16.] and the height is in the range [2., 16.]. If necessary, the default height is adjusted to ensure this.\n\nParameters ---------- arg : float or 2d array If a float, this defines the aspect ratio (i.e. the ratio height / width). In case of an array the aspect ratio is number of rows / number of columns, so that the array could be fitted in the figure undistorted.\n##### Returns\n* **Make a figure twice as tall as it is wide**: \n\n* **Make a figure with the proper aspect for an array**: \n\n"
+}

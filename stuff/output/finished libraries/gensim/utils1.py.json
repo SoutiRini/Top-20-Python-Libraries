@@ -1,0 +1,7 @@
+{
+    "source file": "utils1.py",
+    "line number": "148",
+    "func name": "temporary_file",
+    "func arg": "(name)",
+    "comments": "This context manager creates file `name` in temporary directory and returns its full path. Temporary directory with included files will deleted at the end of context. Note, it won't create file.\n\nParameters ---------- name : str Filename.\n\nYields ------ str Path to file `name` in temporary directory.\n\nExamples -------- This example demonstrates that created temporary directory (and included files) will deleted at the end of context.\n\n.. sourcecode:: pycon\n\n>>> import os >>> from gensim.test.utils import temporary_file >>> with temporary_file(\"temp.txt\") as tf, open(tf, 'w') as outfile: ...\n\n\n\n outfile.write(\"my extremely useful information\") ...\n\n\n\n print(\"Is this file exists? {}\".format(os.path.exists(tf))) ...\n\n\n\n print(\"Is this folder exists? {}\".format(os.path.exists(os.path.dirname(tf)))) Is this file exists? True Is this folder exists? True >>> >>> print(\"Is this file exists? {}\".format(os.path.exists(tf))) Is this file exists? False >>> print(\"Is this folder exists? {}\".format(os.path.exists(os.path.dirname(tf)))) Is this folder exists? False\n"
+}

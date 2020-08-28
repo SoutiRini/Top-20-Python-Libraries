@@ -1,0 +1,7 @@
+{
+    "source file": "multilinear.py",
+    "line number": "225",
+    "func name": "multigroup",
+    "func arg": "(pvals, groups, exact, keep_all, alpha)",
+    "comments": "Test if the given groups are different from the total partition.\n\nGiven a boolean array test if each group has a proportion of positives different than the complexive proportion. The test can be done as an exact Fisher test or approximated as a Chi squared test for more speed.\n\nParameters ---------- pvals: pandas series of boolean the significativity of the variables under analysis groups: dict of list the name of each category of variables under exam. each one is a list of the variables included exact: bool, optional If True (default) use the fisher exact test, otherwise use the chi squared test for contingencies tables. For high number of elements in the array the fisher test can be significantly slower than the chi squared. keep_all: bool, optional if False it will drop those groups where the fraction of positive is below the expected result. If True (default) it will keep all the significant results. alpha: float, optional the significativity level for the pvalue correction on the whole set of groups (not inside the groups themselves).\n##### Returns\n* **result_df**: pandas dataframe\n    for each group returns\n\n* **>>> url = \"https**: //raw.githubusercontent.com/vincentarelbundock/\"\n\n"
+}

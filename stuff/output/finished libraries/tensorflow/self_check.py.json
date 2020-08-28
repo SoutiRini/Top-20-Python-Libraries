@@ -1,0 +1,7 @@
+{
+    "source file": "self_check.py",
+    "line number": "34",
+    "func name": "preload_check",
+    "func arg": "()",
+    "comments": "Raises an exception if the environment is not correctly configured.\n\n\n"
+}

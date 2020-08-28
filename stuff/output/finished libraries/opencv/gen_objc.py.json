@@ -1,0 +1,7 @@
+{
+    "source file": "gen_objc.py",
+    "line number": "1231",
+    "func name": "sanitize_documentation_string",
+    "func arg": "(doc, type)",
+    "comments": ""
+}

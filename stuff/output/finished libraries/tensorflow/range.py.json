@@ -1,0 +1,7 @@
+{
+    "source file": "range.py",
+    "line number": "27",
+    "func name": "make_range_tests",
+    "func arg": "(options)",
+    "comments": "Make a set of tests to do range.\n\n\n"
+}

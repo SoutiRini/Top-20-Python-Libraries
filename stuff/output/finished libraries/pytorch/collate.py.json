@@ -1,0 +1,7 @@
+{
+    "source file": "collate.py",
+    "line number": "42",
+    "func name": "default_collate",
+    "func arg": "(batch)",
+    "comments": "Puts each data field into a tensor with outer dimension batch size\n\n\n"
+}

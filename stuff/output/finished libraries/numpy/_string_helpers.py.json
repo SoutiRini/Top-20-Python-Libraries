@@ -1,0 +1,7 @@
+{
+    "source file": "_string_helpers.py",
+    "line number": "72",
+    "func name": "english_capitalize",
+    "func arg": "(s)",
+    "comments": "Apply English case rules to convert the first character of an ASCII string to upper case.\n\nThis is an internal utility function to replace calls to str.capitalize() such that we can avoid changing behavior with changing locales.\n\nParameters ---------- s : str\n##### Returns\n* **capitalized **: str\n\n"
+}

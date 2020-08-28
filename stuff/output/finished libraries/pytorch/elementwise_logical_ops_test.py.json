@@ -1,0 +1,7 @@
+{
+    "source file": "elementwise_logical_ops_test.py",
+    "line number": "19",
+    "func name": "rowmux",
+    "func arg": "(select_vec, left, right)",
+    "comments": ""
+}

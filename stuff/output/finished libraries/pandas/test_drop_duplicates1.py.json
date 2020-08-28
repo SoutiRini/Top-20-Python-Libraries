@@ -1,0 +1,7 @@
+{
+    "source file": "test_drop_duplicates1.py",
+    "line number": "37",
+    "func name": "test_drop_duplicates_bool",
+    "func arg": "(keep, expected)",
+    "comments": ""
+}

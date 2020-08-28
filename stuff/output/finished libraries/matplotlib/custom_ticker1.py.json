@@ -1,0 +1,7 @@
+{
+    "source file": "custom_ticker1.py",
+    "line number": "19",
+    "func name": "millions",
+    "func arg": "(x, pos)",
+    "comments": "The two args are the value and tick position.\n\n\n"
+}

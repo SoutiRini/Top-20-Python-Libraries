@@ -1,0 +1,7 @@
+{
+    "source file": "clang_format_utils.py",
+    "line number": "84",
+    "func name": "get_and_check_clang_format",
+    "func arg": "(verbose)",
+    "comments": "Download a platform-appropriate clang-format binary if one doesn't already exist at the expected location and verify that it is the right binary by checking its SHA1 hash against the expected hash.\n\n\n"
+}

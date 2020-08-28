@@ -1,0 +1,7 @@
+{
+    "source file": "_doc.py",
+    "line number": "545",
+    "func name": "make_docstring",
+    "func arg": "(fn, override_dict, append_dict)",
+    "comments": ""
+}

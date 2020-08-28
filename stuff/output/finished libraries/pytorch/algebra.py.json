@@ -1,0 +1,7 @@
+{
+    "source file": "algebra.py",
+    "line number": "21",
+    "func name": "batch_mat_mul",
+    "func arg": "(model, blob_in, blob_out, enable_tensor_core, **kwargs)",
+    "comments": ""
+}

@@ -1,0 +1,7 @@
+{
+    "source file": "cobyla.py",
+    "line number": "183",
+    "func name": "_minimize_cobyla",
+    "func arg": "(fun, x0, args, constraints, rhobeg, tol, maxiter, disp, catol, **unknown_options)",
+    "comments": "Minimize a scalar function of one or more variables using the Constrained Optimization BY Linear Approximation (COBYLA) algorithm.\n\nOptions ------- rhobeg : float Reasonable initial changes to the variables. tol : float Final accuracy in the optimization (not precisely guaranteed). This is a lower bound on the size of the trust region. disp : bool Set to True to print convergence messages. If False, `verbosity` is ignored as set to 0. maxiter : int Maximum number of function evaluations. catol : float Tolerance (absolute) for constraint violations\n"
+}

@@ -1,0 +1,7 @@
+{
+    "source file": "linear_operator_block_lower_triangular_test.py",
+    "line number": "38",
+    "func name": "_block_lower_triangular_dense",
+    "func arg": "(expected_shape, blocks)",
+    "comments": "Convert a list of blocks into a dense blockwise lower-triangular matrix.\n\n\n"
+}

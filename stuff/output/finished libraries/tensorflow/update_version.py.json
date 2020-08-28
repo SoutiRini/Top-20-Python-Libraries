@@ -1,0 +1,7 @@
+{
+    "source file": "update_version.py",
+    "line number": "265",
+    "func name": "main",
+    "func arg": "()",
+    "comments": "This script updates all instances of version in the tensorflow directory.\n\nRequirements: version: The version tag OR nightly: Create a nightly tag with current date\n"
+}

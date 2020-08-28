@@ -1,0 +1,7 @@
+{
+    "source file": "_huber.py",
+    "line number": "17",
+    "func name": "_huber_loss_and_gradient",
+    "func arg": "(w, X, y, epsilon, alpha, sample_weight)",
+    "comments": "Returns the Huber loss and the gradient.\n\nParameters ---------- w : ndarray, shape (n_features + 1,) or (n_features + 2,) Feature vector. w[:n_features] gives the coefficients w[-1] gives the scale factor and if the intercept is fit w[-2] gives the intercept factor.\n\nX : ndarray, shape (n_samples, n_features) Input data.\n\ny : ndarray, shape (n_samples,) Target vector.\n\nepsilon : float Robustness of the Huber estimator.\n\nalpha : float Regularization parameter.\n\nsample_weight : ndarray, shape (n_samples,), optional Weight assigned to each sample.\n##### Returns\n"
+}

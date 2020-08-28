@@ -1,0 +1,7 @@
+{
+    "source file": "polys3d.py",
+    "line number": "19",
+    "func name": "polygon_under_graph",
+    "func arg": "(xlist, ylist)",
+    "comments": "Construct the vertex list which defines the polygon filling the space under the (xlist, ylist) line graph.  Assumes the xs are in ascending order.\n\n\n"
+}

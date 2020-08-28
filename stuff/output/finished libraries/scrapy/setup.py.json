@@ -1,0 +1,7 @@
+{
+    "source file": "setup.py",
+    "line number": "10",
+    "func name": "has_environment_marker_platform_impl_support",
+    "func arg": "()",
+    "comments": "Code extracted from 'pytest/setup.py' https://github.com/pytest-dev/pytest/blob/7538680c/setup.py#L31\n\nThe first known release to support environment marker with range operators it is 18.5, see: https://setuptools.readthedocs.io/en/latest/history.html#id235\n"
+}

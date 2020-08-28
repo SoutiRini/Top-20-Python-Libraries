@@ -1,0 +1,7 @@
+{
+    "source file": "sparsefuncs.py",
+    "line number": "519",
+    "func name": "csc_median_axis_0",
+    "func arg": "(X)",
+    "comments": "Find the median across axis 0 of a CSC matrix. It is equivalent to doing np.median(X, axis=0).\n\nParameters ---------- X : CSC sparse matrix, shape (n_samples, n_features) Input data.\n##### Returns\n* **median **: ndarray, shape (n_features,)\n    Median.\n\n"
+}

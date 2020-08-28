@@ -1,0 +1,7 @@
+{
+    "source file": "mode.py",
+    "line number": "452",
+    "func name": "register_mode",
+    "func arg": "(name, mode)",
+    "comments": "Add a `Mode` which can be referred to by `name` in `function`.\n\n\n"
+}

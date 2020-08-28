@@ -1,0 +1,7 @@
+{
+    "source file": "kernelized_utils.py",
+    "line number": "90",
+    "func name": "exact_laplacian_kernel",
+    "func arg": "(x, y, stddev)",
+    "comments": "Computes exact Laplacian kernel value(s) for tensors x and y using stddev.\n\nThe Laplacian kernel for vectors u, v is defined as follows: K(u, v) = exp(-||u-v|| / stddev) where the norm is the l1-norm. x, y can be either vectors or matrices. If they are vectors, they must have the same dimension. If they are matrices, they must have the same number of columns. In the latter case, the method returns (as a matrix) K(u, v) values for all pairs (u, v) where u is a row from x and v is a row from y.\n##### Args\n* **x**: a tensor of rank 1 or 2. It's shape should be either [dim] or [m, dim].\n\n* **y**: a tensor of rank 1 or 2. It's shape should be either [dim] or [n, dim].\n\n* **stddev**: The width of the Gaussian kernel.\n\n##### Returns\n"
+}

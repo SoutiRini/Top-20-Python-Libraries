@@ -1,0 +1,7 @@
+{
+    "source file": "bokeh_jinja.py",
+    "line number": "104",
+    "func name": "setup",
+    "func arg": "(app)",
+    "comments": "Required Sphinx extension setup function.\n\n\n"
+}

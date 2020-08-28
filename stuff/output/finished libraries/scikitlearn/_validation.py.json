@@ -1,0 +1,7 @@
+{
+    "source file": "_validation.py",
+    "line number": "1543",
+    "func name": "_aggregate_score_dicts",
+    "func arg": "(scores)",
+    "comments": "Aggregate the list of dict to dict of np ndarray\n\nThe aggregated output of _aggregate_score_dicts will be a list of dict of form [{'prec': 0.1, 'acc':1.0}, {'prec': 0.1, 'acc':1.0}, ...] Convert it to a dict of array {'prec': np.array([0.1 ...]), ...}\n\nParameters ----------\n\nscores : list of dict List of dicts of the scores for all scorers. This is a flat list, assumed originally to be of row major order.\n\nExample -------\n\n>>> scores = [{'a': 1, 'b':10}, {'a': 2, 'b':2}, {'a': 3, 'b':3}, ...\n\n\n\n\n\n\n\n\n\n {'a': 10, 'b': 10}]\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n # doctest: +SKIP >>> _aggregate_score_dicts(scores)\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n# doctest: +SKIP {'a': array([1, 2, 3, 10]), 'b': array([10, 2, 3, 10])}\n"
+}

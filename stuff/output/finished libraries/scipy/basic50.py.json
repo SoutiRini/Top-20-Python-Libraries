@@ -1,0 +1,7 @@
+{
+    "source file": "basic50.py",
+    "line number": "272",
+    "func name": "r2r_fftpack",
+    "func arg": "(forward, x, n, axis, norm, overwrite_x)",
+    "comments": "FFT of a real sequence, returning fftpack half complex format\n\n\n"
+}

@@ -1,0 +1,7 @@
+{
+    "source file": "axes_zoom_effect.py",
+    "line number": "81",
+    "func name": "zoom_effect02",
+    "func arg": "(ax1, ax2, **kwargs)",
+    "comments": "ax1 : the main axes ax1 : the zoomed axes\n\nSimilar to zoom_effect01.\n\nThe xmin & xmax will be taken from the ax1.viewLim.\n"
+}

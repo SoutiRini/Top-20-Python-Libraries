@@ -1,0 +1,7 @@
+{
+    "source file": "test_neighbors.py",
+    "line number": "1687",
+    "func name": "test_auto_algorithm",
+    "func arg": "(X, metric, metric_params, expected_algo)",
+    "comments": ""
+}

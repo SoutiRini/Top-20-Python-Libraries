@@ -1,0 +1,7 @@
+{
+    "source file": "tfidfmodel.py",
+    "line number": "220",
+    "func name": "smartirs_normalize",
+    "func arg": "(x, norm_scheme, return_norm)",
+    "comments": "Normalize a vector using the normalization scheme specified in `norm_scheme`.\n\nParameters ---------- x : numpy.ndarray The tf-idf vector. norm_scheme : {'n', 'c'} Document length normalization scheme. return_norm : bool, optional Return the length of `x` as well?\n##### Returns\n"
+}

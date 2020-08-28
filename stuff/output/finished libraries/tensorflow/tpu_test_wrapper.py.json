@@ -1,0 +1,7 @@
+{
+    "source file": "tpu_test_wrapper.py",
+    "line number": "146",
+    "func name": "run_user_main",
+    "func arg": "(wrapped_test_module)",
+    "comments": "Runs the \"if __name__ == '__main__'\" at the bottom of a module.\n\nTensorFlow practice is to have a main if at the bottom of the module which might call an API compat function before calling test.main().\n\nSince this is a statement, not a function, we can't cleanly reference it, but we can inspect it from the user module and run it in the context of that module so all imports and variables are available to it.\n##### Args\n* **wrapped_test_module**: The user-provided test code to run.\n\n"
+}

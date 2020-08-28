@@ -1,0 +1,7 @@
+{
+    "source file": "array_ops.py",
+    "line number": "5815",
+    "func name": "repeat",
+    "func arg": "(input, repeats, axis, name)",
+    "comments": "Repeat elements of `input`.\n\nSee also `tf.concat`, `tf.stack`, `tf.tile`.\n##### Args\n* **input**: An `N`-dimensional Tensor.\n\n* **repeats**: An 1-D `int` Tensor. The number of repetitions for each element.\n  repeats is broadcasted to fit the shape of the given axis. `len(repeats)`\n  must equal `input.shape[axis]` if axis is not None.\n\n* **axis**: An int. The axis along which to repeat values. By default (axis=None),\n  use the flattened input array, and return a flat output array.\n\n* **name**: A name for the operation.\n\n##### Returns\n* **ample usage**: \n\n* **f.Tensor**: shape=(8,), dtype=int32,\n\n"
+}

@@ -1,0 +1,7 @@
+{
+    "source file": "mio4.py",
+    "line number": "421",
+    "func name": "arr_to_2d",
+    "func arg": "(arr, oned_as)",
+    "comments": "Make ``arr`` exactly two dimensional\n\nIf `arr` has more than 2 dimensions, raise a ValueError\n\nParameters ---------- arr : array oned_as : {'row', 'column'}, optional Whether to reshape 1-D vectors as row vectors or column vectors. See documentation for ``matdims`` for more detail\n##### Returns\n* **arr2d **: array\n   2-D version of the array\n\n"
+}

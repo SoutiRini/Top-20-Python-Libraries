@@ -1,0 +1,7 @@
+{
+    "source file": "test_pytorch_onnx_caffe2.py",
+    "line number": "2430",
+    "func name": "setup_rnn_tests",
+    "func arg": "()",
+    "comments": ""
+}

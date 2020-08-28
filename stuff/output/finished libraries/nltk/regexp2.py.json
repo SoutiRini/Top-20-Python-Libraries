@@ -1,0 +1,7 @@
+{
+    "source file": "regexp2.py",
+    "line number": "204",
+    "func name": "regexp_tokenize",
+    "func arg": "(text, pattern, gaps, discard_empty, flags)",
+    "comments": "Return a tokenized copy of *text*.  See :class:`.RegexpTokenizer` for descriptions of the arguments.\n\n\n"
+}

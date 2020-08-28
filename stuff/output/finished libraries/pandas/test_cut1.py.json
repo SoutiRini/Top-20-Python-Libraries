@@ -1,0 +1,7 @@
+{
+    "source file": "test_cut1.py",
+    "line number": "620",
+    "func name": "test_cut_nullable_integer",
+    "func arg": "(bins, right, include_lowest)",
+    "comments": ""
+}

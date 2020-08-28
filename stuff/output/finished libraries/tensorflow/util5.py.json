@@ -1,0 +1,7 @@
+{
+    "source file": "util5.py",
+    "line number": "1354",
+    "func name": "parent_frame_arguments",
+    "func arg": "()",
+    "comments": "Returns parent frame arguments.\n\nWhen called inside a function, returns a dictionary with the caller's function arguments. These are positional arguments and keyword arguments (**kwargs), while variable arguments (*varargs) are excluded.\n\nWhen called at global scope, this will return an empty dictionary, since there are no arguments.\n\nWARNING: If caller function argument names are overloaded before invoking this method, then values will reflect the overloaded value. For this reason, we recommend calling `parent_frame_arguments` at the beginning of the function.\n"
+}

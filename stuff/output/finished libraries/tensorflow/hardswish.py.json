@@ -1,0 +1,7 @@
+{
+    "source file": "hardswish.py",
+    "line number": "47",
+    "func name": "make_hardswish_tests",
+    "func arg": "(options)",
+    "comments": "Make a set of tests to do hardswish.\n\n\n"
+}

@@ -1,0 +1,7 @@
+{
+    "source file": "dia69.py",
+    "line number": "408",
+    "func name": "isspmatrix_dia",
+    "func arg": "(x)",
+    "comments": "Is x of dia_matrix type?\n\nParameters ---------- x object to check for being a dia matrix\n##### Returns\n"
+}

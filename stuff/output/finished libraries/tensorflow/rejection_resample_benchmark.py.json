@@ -1,0 +1,7 @@
+{
+    "source file": "rejection_resample_benchmark.py",
+    "line number": "31",
+    "func name": "_time_resampling",
+    "func arg": "(data_np, target_dist, init_dist, num_to_sample)",
+    "comments": ""
+}

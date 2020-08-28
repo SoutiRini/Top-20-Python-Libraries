@@ -1,0 +1,7 @@
+{
+    "source file": "test_morphology.py",
+    "line number": "39",
+    "func name": "test_binary_closing_noninteger_brute_force_passes_when_true",
+    "func arg": "()",
+    "comments": ""
+}

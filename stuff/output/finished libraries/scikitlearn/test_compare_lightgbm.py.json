@@ -1,0 +1,7 @@
+{
+    "source file": "test_compare_lightgbm.py",
+    "line number": "155",
+    "func name": "test_same_predictions_multiclass_classification",
+    "func arg": "(seed, min_samples_leaf, n_samples, max_leaf_nodes)",
+    "comments": ""
+}

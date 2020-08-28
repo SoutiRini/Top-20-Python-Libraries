@@ -1,0 +1,7 @@
+{
+    "source file": "dct_ops_test.py",
+    "line number": "123",
+    "func name": "_np_dct4",
+    "func arg": "(signals, n, norm)",
+    "comments": "Computes the DCT-IV manually with NumPy.\n\n\n"
+}

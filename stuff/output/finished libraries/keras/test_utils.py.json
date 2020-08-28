@@ -1,0 +1,7 @@
+{
+    "source file": "test_utils.py",
+    "line number": "41",
+    "func name": "layer_test",
+    "func arg": "(layer_cls, kwargs, input_shape, input_dtype, input_data, expected_output, expected_output_dtype, fixed_batch_size)",
+    "comments": "Test routine for a layer with a single input tensor and single output tensor.\n\n\n"
+}

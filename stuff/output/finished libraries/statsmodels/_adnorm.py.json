@@ -1,0 +1,7 @@
+{
+    "source file": "_adnorm.py",
+    "line number": "76",
+    "func name": "normal_ad",
+    "func arg": "(x, axis)",
+    "comments": "Anderson-Darling test for normal distribution unknown mean and variance.\n\nParameters ---------- x : array_like The data array. axis : int The axis to perform the test along.\n##### Returns\n* **ad2 **: float\n    Anderson Darling test statistic.\n\n* **pval **: float\n    The pvalue for hypothesis that the data comes from a normal\n    distribution with unknown mean and variance.\n\n"
+}

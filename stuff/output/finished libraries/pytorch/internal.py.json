@@ -1,0 +1,7 @@
+{
+    "source file": "internal.py",
+    "line number": "204",
+    "func name": "_start_record_function",
+    "func arg": "(exec_type, func_name, current_worker_name, dest_worker_name)",
+    "comments": "This function should be called from RPC/RRef functions to create a RecordFunction object for profiling. This function also runs the before callbacks that start the profiling, though the user is responsible for running the appropriate callbacks when the function to be profiled finishes.\n\nArguments: exec_type (RPCExecMode): Type of RPC/RRef call func_name (str): Name of function being profiled. current_worker_name (str): Name of current worker. dest_worker_name (str): Name of the destination worker.\n##### Returns\n"
+}

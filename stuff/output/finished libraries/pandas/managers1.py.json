@@ -1,0 +1,7 @@
+{
+    "source file": "managers1.py",
+    "line number": "1988",
+    "func name": "concatenate_block_managers",
+    "func arg": "(mgrs_indexers, axes, concat_axis, copy)",
+    "comments": "Concatenate block managers into one.\n\nParameters ---------- mgrs_indexers : list of (BlockManager, {axis: indexer,...}) tuples axes : list of Index concat_axis : int copy : bool\n"
+}

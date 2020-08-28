@@ -1,0 +1,7 @@
+{
+    "source file": "data_flow_grad.py",
+    "line number": "50",
+    "func name": "_DynamicStitchGrads",
+    "func arg": "(op, grad)",
+    "comments": "Gradients for DynamicStitch and ParallelDynamicStitch.\n\n\n"
+}

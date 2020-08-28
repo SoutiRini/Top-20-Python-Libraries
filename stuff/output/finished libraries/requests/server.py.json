@@ -1,0 +1,7 @@
+{
+    "source file": "server.py",
+    "line number": "8",
+    "func name": "consume_socket_content",
+    "func arg": "(sock, timeout)",
+    "comments": ""
+}

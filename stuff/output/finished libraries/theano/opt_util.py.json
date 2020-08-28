@@ -1,0 +1,7 @@
+{
+    "source file": "opt_util.py",
+    "line number": "398",
+    "func name": "unpad_dims",
+    "func arg": "(output, input, leftdims, rightdims)",
+    "comments": "Reshapes the output after pad_dims.\n\nThis reverts the padding by `pad_dims`.\n"
+}

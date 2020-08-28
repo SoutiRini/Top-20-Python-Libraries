@@ -1,0 +1,7 @@
+{
+    "source file": "mrecords.py",
+    "line number": "736",
+    "func name": "addfield",
+    "func arg": "(mrecord, newfield, newfieldname)",
+    "comments": "Adds a new field to the masked record array\n\nUses `newfield` as data and `newfieldname` as name. If `newfieldname` is None, the new field name is set to 'fi', where `i` is the number of existing fields.\n"
+}

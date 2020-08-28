@@ -1,0 +1,7 @@
+{
+    "source file": "test_quantized_op.py",
+    "line number": "99",
+    "func name": "_get_random_tensor_and_q_params",
+    "func arg": "(shapes, rand_scale, torch_type)",
+    "comments": ""
+}

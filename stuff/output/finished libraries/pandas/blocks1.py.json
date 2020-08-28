@@ -1,0 +1,7 @@
+{
+    "source file": "blocks1.py",
+    "line number": "3139",
+    "func name": "_putmask_smart",
+    "func arg": "(v, mask, n)",
+    "comments": "Return a new ndarray, try to preserve dtype if possible.\n\nParameters ---------- v : `values`, updated in-place (array like) mask : np.ndarray Applies to both sides (array like). n : `new values` either scalar or an array like aligned with `values`\n##### Returns\n* **values **: ndarray with updated values\n    this *may* be a copy of the original\n\n"
+}

@@ -1,0 +1,7 @@
+{
+    "source file": "_lambertw.py",
+    "line number": "4",
+    "func name": "lambertw",
+    "func arg": "(z, k, tol)",
+    "comments": "lambertw(z, k=0, tol=1e-8)\n\nLambert W function.\n\nThe Lambert W function `W(z)` is defined as the inverse function of ``w * exp(w)``. In other words, the value of ``W(z)`` is such that ``z = W(z) * exp(W(z))`` for any complex number ``z``.\n\nThe Lambert W function is a multivalued function with infinitely many branches. Each branch gives a separate solution of the equation ``z = w exp(w)``. Here, the branches are indexed by the integer `k`.\n\nParameters ---------- z : array_like Input argument. k : int, optional Branch index. tol : float, optional Evaluation tolerance.\n##### Returns\n* **w **: array\n    `w` will have the same shape as `z`.\n\n* **All branches are supported by `lambertw`**: \n\n* **The Lambert W function has two partially real branches**: the\n\n* **wrightomega **: the Wright Omega function\n\n* **.. [1] https**: //en.wikipedia.org/wiki/Lambert_W_function\n\n* **.. [2] Corless et al, \"On the Lambert W function\", Adv. Comp. Math. 5\n   (1996) 329-359.\n   https**: //cs.uwaterloo.ca/research/tr/1993/03/W.pdf\n\n* **The Lambert W function is the inverse of ``w exp(w)``**: \n\n* **Any branch gives a valid inverse**: \n\n* **tower **: math\n\n* **>>> def tower(z, n)**: \n\n* **...     if n == 0**: \n\n"
+}

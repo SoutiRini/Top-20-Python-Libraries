@@ -1,0 +1,7 @@
+{
+    "source file": "sort.py",
+    "line number": "546",
+    "func name": "topk_and_argtopk",
+    "func arg": "(x, kth, axis, sorted, idx_dtype)",
+    "comments": "Returns the results of both topk() and argtopk() in one Op.\n\nSee the respective documentation for details.\n##### Returns\n* **tuple**: (values, indices)\n\n"
+}

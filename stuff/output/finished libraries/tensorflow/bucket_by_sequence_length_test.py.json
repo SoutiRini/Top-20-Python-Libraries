@@ -1,0 +1,7 @@
+{
+    "source file": "bucket_by_sequence_length_test.py",
+    "line number": "66",
+    "func name": "_get_record_shape",
+    "func arg": "(sparse)",
+    "comments": ""
+}

@@ -1,0 +1,7 @@
+{
+    "source file": "module.py",
+    "line number": "323",
+    "func name": "_flatten_module",
+    "func arg": "(module, recursive, predicate, attribute_traversal_key, attributes_to_ignore, with_path, module_path, seen)",
+    "comments": "Implementation of `flatten`.\n\n\n"
+}

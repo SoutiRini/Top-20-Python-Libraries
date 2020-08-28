@@ -1,0 +1,7 @@
+{
+    "source file": "symbolic_opset8.py",
+    "line number": "277",
+    "func name": "full_like",
+    "func arg": "(g, input, fill_value, dtype, layout, device, pin_memory, memory_format)",
+    "comments": ""
+}

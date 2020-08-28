@@ -1,0 +1,7 @@
+{
+    "source file": "cli.py",
+    "line number": "46",
+    "func name": "tokenize_file",
+    "func arg": "(language, preserve_line, processes, encoding, delimiter)",
+    "comments": "This command tokenizes text stream using nltk.word_tokenize\n\n\n"
+}

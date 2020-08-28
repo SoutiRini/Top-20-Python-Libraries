@@ -1,0 +1,7 @@
+{
+    "source file": "usage.py",
+    "line number": "212",
+    "func name": "my_plotter",
+    "func arg": "(ax, data1, data2, param_dict)",
+    "comments": "A helper function to make a graph\n\nParameters ---------- ax : Axes The axes to draw to\n\ndata1 : array The x data\n\ndata2 : array The y data\n\nparam_dict : dict Dictionary of kwargs to pass to ax.plot\n##### Returns\n* **out **: list\n    list of artists added\n\n"
+}

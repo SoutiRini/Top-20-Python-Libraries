@@ -1,0 +1,7 @@
+{
+    "source file": "_datasource.py",
+    "line number": "156",
+    "func name": "open",
+    "func arg": "(path, mode, destpath, encoding, newline)",
+    "comments": "Open `path` with `mode` and return the file object.\n\nIf ``path`` is an URL, it will be downloaded, stored in the `DataSource` `destpath` directory and opened from there.\n\nParameters ---------- path : str Local file path or URL to open. mode : str, optional Mode to open `path`. Mode 'r' for reading, 'w' for writing, 'a' to append. Available modes depend on the type of object specified by path.\n\nDefault is 'r'. destpath : str, optional Path to the directory where the source file gets downloaded to for use.\n\nIf `destpath` is None, a temporary directory will be created. The default path is the current directory. encoding : {None, str}, optional Open text file with given encoding. The default encoding will be what `io.open` uses. newline : {None, str}, optional Newline to use when reading text file.\n##### Returns\n* **out **: file object\n    The opened file.\n\n"
+}

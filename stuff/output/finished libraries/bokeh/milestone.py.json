@@ -1,0 +1,7 @@
+{
+    "source file": "milestone.py",
+    "line number": "291",
+    "func name": "main",
+    "func arg": "(milestone, log_level, verbose, check_only, section_only, allow_closed)",
+    "comments": "Generates a bokeh changelog which includes the given milestone.\n\nRequires that you set GITHUB_TOKEN to your GitHub API Token. Exit code 2 indicates there was a verification problem whereas exit code 1 indicates a general error in the script. Otherwise you can expect an exit code of 0 for success.\n"
+}

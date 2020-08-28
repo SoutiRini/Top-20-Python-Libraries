@@ -1,0 +1,7 @@
+{
+    "source file": "data_structures1.py",
+    "line number": "1070",
+    "func name": "_set_tuple_item",
+    "func arg": "(list_object, index_string, value)",
+    "comments": ""
+}

@@ -1,0 +1,7 @@
+{
+    "source file": "rnn_test.py",
+    "line number": "685",
+    "func name": "rnn_long_sequence_benchmark",
+    "func arg": "(batch_size, seqlen, num_units, dynamic, swap_memory, nn)",
+    "comments": ""
+}

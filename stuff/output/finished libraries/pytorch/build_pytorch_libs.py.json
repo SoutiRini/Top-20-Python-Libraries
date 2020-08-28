@@ -1,0 +1,7 @@
+{
+    "source file": "build_pytorch_libs.py",
+    "line number": "51",
+    "func name": "build_caffe2",
+    "func arg": "(version, cmake_python_library, build_python, rerun_cmake, cmake_only, cmake)",
+    "comments": ""
+}

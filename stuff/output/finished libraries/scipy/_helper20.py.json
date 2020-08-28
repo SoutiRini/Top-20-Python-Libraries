@@ -1,0 +1,7 @@
+{
+    "source file": "_helper20.py",
+    "line number": "69",
+    "func name": "_init_nd_shape_and_axes",
+    "func arg": "(x, shape, axes)",
+    "comments": "Handle shape and axes arguments for N-D transforms.\n\n\n##### Returns\n* **shape **: array\n    The shape of the result. It is a 1-D integer array.\n\n* **axes **: array\n    The shape of the result. It is a 1-D integer array.\n\n"
+}

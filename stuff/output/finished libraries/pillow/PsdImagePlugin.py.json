@@ -1,0 +1,7 @@
+{
+    "source file": "PsdImagePlugin.py",
+    "line number": "256",
+    "func name": "_maketile",
+    "func arg": "(file, mode, bbox, channels)",
+    "comments": ""
+}

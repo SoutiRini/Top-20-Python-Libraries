@@ -1,0 +1,7 @@
+{
+    "source file": "transpose_benchmark.py",
+    "line number": "34",
+    "func name": "build_graph",
+    "func arg": "(device, input_shape, perm, datatype, num_iters)",
+    "comments": "builds a graph containing a sequence of conv2d operations.\n\n\n##### Args\n* **device**: String, the device to run on.\n\n* **input_shape**: Shape of the input tensor.\n\n* **perm**: A list of ints with the same length as input tensor's dimension.\n\n* **datatype**: numpy data type of the input tensor.\n\n* **num_iters**: number of iterations to run transpose.\n\n##### Returns\n"
+}

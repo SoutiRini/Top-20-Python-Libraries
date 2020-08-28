@@ -1,0 +1,7 @@
+{
+    "source file": "misc.py",
+    "line number": "213",
+    "func name": "warn_on_generator_with_return_value",
+    "func arg": "(spider, callable)",
+    "comments": "Logs a warning if a callable is a generator function and includes a 'return' statement with a value different than None\n\n\n"
+}

@@ -1,0 +1,7 @@
+{
+    "source file": "test_from_template.py",
+    "line number": "39",
+    "func name": "test_from_template",
+    "func arg": "()",
+    "comments": "Regression test for gh-10712.\n\n\n"
+}

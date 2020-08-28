@@ -1,0 +1,7 @@
+{
+    "source file": "loss_scale_test.py",
+    "line number": "101",
+    "func name": "_get_example_iter",
+    "func arg": "(inputs)",
+    "comments": ""
+}

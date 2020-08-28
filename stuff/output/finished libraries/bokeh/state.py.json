@@ -1,0 +1,7 @@
+{
+    "source file": "state.py",
+    "line number": "213",
+    "func name": "curstate",
+    "func arg": "()",
+    "comments": "Return the current State object\n\n\n##### Returns\n* **State **: the current default State object\n\n"
+}

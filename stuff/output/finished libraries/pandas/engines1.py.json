@@ -1,0 +1,7 @@
+{
+    "source file": "engines1.py",
+    "line number": "20",
+    "func name": "_check_ne_builtin_clash",
+    "func arg": "(expr)",
+    "comments": "Attempt to prevent foot-shooting in a helpful way.\n\nParameters ---------- terms : Term Terms can contain\n"
+}

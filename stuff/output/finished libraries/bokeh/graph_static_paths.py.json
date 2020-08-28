@@ -1,0 +1,7 @@
+{
+    "source file": "graph_static_paths.py",
+    "line number": "32",
+    "func name": "bezier",
+    "func arg": "(start, end, control, steps)",
+    "comments": ""
+}

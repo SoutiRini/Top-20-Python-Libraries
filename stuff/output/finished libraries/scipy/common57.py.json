@@ -1,0 +1,7 @@
+{
+    "source file": "common57.py",
+    "line number": "723",
+    "func name": "scale_for_robust_loss_function",
+    "func arg": "(J, f, rho)",
+    "comments": "Scale Jacobian and residuals for a robust loss function.\n\nArrays are modified in place.\n"
+}

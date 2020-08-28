@@ -1,0 +1,7 @@
+{
+    "source file": "cli_test_utils.py",
+    "line number": "48",
+    "func name": "assert_array_lines_close",
+    "func arg": "(test, expected_array, array_lines)",
+    "comments": "Assert that the array value represented by lines is close to expected.\n\nNote that the shape of the array represented by the `array_lines` is ignored.\n##### Args\n* **test**: An instance of TensorFlowTestCase.\n\n* **expected_array**: Expected value of the array.\n\n* **array_lines**: A list of strings representing the array.\n  E.g., \"array([[ 1.0, 2.0 ], [ 3.0, 4.0 ]])\"\n  Assumes that values are separated by commas, parentheses, brackets, \"|\"\n  characters and whitespace.\n\n"
+}

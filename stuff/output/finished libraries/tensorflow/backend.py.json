@@ -1,0 +1,7 @@
+{
+    "source file": "backend.py",
+    "line number": "6275",
+    "func name": "maybe_convert_to_ragged",
+    "func arg": "(is_ragged_input, output, nested_row_lengths)",
+    "comments": "Converts any ragged input back to its initial structure.\n\n\n"
+}

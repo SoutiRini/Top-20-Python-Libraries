@@ -1,0 +1,7 @@
+{
+    "source file": "github_stats.py",
+    "line number": "94",
+    "func name": "report",
+    "func arg": "(issues, show_urls)",
+    "comments": "Summary report about a list of issues, printing number and title.\n\n\n"
+}

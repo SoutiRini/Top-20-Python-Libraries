@@ -1,0 +1,7 @@
+{
+    "source file": "rte.py",
+    "line number": "40",
+    "func name": "norm",
+    "func arg": "(value_string)",
+    "comments": "Normalize the string value in an RTE pair's ``value`` or ``entailment`` attribute as an integer (1, 0).\n\nparam value_string: the label used to classify a text/hypothesis pair :type value_string: str :rtype: int\n"
+}

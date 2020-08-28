@@ -1,0 +1,7 @@
+{
+    "source file": "test_pandas_series_input.py",
+    "line number": "176",
+    "func name": "test_data_array_validator_dates",
+    "func arg": "(data_array_validator, datetime_pandas, dates_array)",
+    "comments": ""
+}

@@ -1,0 +1,7 @@
+{
+    "source file": "chi2_fitting.py",
+    "line number": "130",
+    "func name": "chi2",
+    "func arg": "(pars)",
+    "comments": "Cost function.\n\n\n"
+}

@@ -1,0 +1,7 @@
+{
+    "source file": "opt24.py",
+    "line number": "2787",
+    "func name": "local_gpu_ctc",
+    "func arg": "(op, context_name, inputs, outputs)",
+    "comments": ""
+}

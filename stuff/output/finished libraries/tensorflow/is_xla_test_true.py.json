@@ -1,0 +1,7 @@
+{
+    "source file": "is_xla_test_true.py",
+    "line number": "27",
+    "func name": "is_xla_enabled",
+    "func arg": "()",
+    "comments": "Returns true to state XLA should be enabled for Tensorflow tests.\n\n\n"
+}

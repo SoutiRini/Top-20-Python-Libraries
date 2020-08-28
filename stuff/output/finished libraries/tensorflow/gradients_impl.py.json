@@ -1,0 +1,7 @@
+{
+    "source file": "gradients_impl.py",
+    "line number": "444",
+    "func name": "HessiansV2",
+    "func arg": "(ys, xs, gate_gradients, aggregation_method, name)",
+    "comments": "Constructs the Hessian of sum of `ys` with respect to `x` in `xs`.\n\n`hessians()` adds ops to the graph to output the Hessian matrix of `ys` with respect to `xs`.\n\nIt returns a list of `Tensor` of length `len(xs)` where each tensor is the Hessian of `sum(ys)`.\n\nThe Hessian is a matrix of second-order partial derivatives of a scalar tensor (see https://en.wikipedia.org/wiki/Hessian_matrix for more details).\n##### Args\n* **ys**: A `Tensor` or list of tensors to be differentiated.\n\n* **xs**: A `Tensor` or list of tensors to be used for differentiation.\n\n* **gate_gradients**: See `gradients()` documentation for details.\n\n* **aggregation_method**: See `gradients()` documentation for details.\n\n* **name**: Optional name to use for grouping all the gradient ops together.\n  defaults to 'hessians'.\n\n##### Returns\n"
+}

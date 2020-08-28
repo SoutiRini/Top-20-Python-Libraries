@@ -1,0 +1,7 @@
+{
+    "source file": "preprocessing.py",
+    "line number": "34",
+    "func name": "padded_everygram_pipeline",
+    "func arg": "(order, text)",
+    "comments": "Default preprocessing for a sequence of sentences.\n\nCreates two iterators:\n\n- sentences padded and turned into sequences of `nltk.util.everygrams`\n\n- sentences padded as above and chained together for a flat stream of words\n\n:param order: Largest ngram length produced by `everygrams`. :param text: Text to iterate over. Expected to be an iterable of sentences: Iterable[Iterable[str]] :return: iterator over text as ngrams, iterator over text as vocabulary data\n"
+}

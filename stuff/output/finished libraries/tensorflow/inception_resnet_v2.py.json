@@ -1,0 +1,7 @@
+{
+    "source file": "inception_resnet_v2.py",
+    "line number": "387",
+    "func name": "decode_predictions",
+    "func arg": "(preds, top)",
+    "comments": ""
+}

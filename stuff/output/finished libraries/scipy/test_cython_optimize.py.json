@@ -1,0 +1,7 @@
+{
+    "source file": "test_cython_optimize.py",
+    "line number": "86",
+    "func name": "test_brentq_full_output",
+    "func arg": "()",
+    "comments": ""
+}

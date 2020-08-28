@@ -1,0 +1,7 @@
+{
+    "source file": "base3.py",
+    "line number": "34",
+    "func name": "try_cast_to_ea",
+    "func arg": "(cls_or_instance, obj, dtype)",
+    "comments": "Call to `_from_sequence` that returns the object unchanged on Exception.\n\nParameters ---------- cls_or_instance : ExtensionArray subclass or instance obj : arraylike Values to pass to cls._from_sequence dtype : ExtensionDtype, optional\n##### Returns\n"
+}

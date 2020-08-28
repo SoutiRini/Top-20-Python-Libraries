@@ -1,0 +1,7 @@
+{
+    "source file": "utils108.py",
+    "line number": "20",
+    "func name": "_ntuple_from_first",
+    "func arg": "(n)",
+    "comments": "Converts the argument to a tuple of size n with the first element repeated.\n\n\n"
+}

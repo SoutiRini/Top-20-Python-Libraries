@@ -1,0 +1,7 @@
+{
+    "source file": "pipeline.py",
+    "line number": "1016",
+    "func name": "make_union",
+    "func arg": "()",
+    "comments": "Construct a FeatureUnion from the given transformers.\n\nThis is a shorthand for the FeatureUnion constructor; it does not require, and does not permit, naming the transformers. Instead, they will be given names automatically based on their types. It also does not allow weighting.\n\nParameters ---------- *transformers : list of estimators\n\nn_jobs : int, default=None Number of jobs to run in parallel. ``None`` means 1 unless in a :obj:`joblib.parallel_backend` context. ``-1`` means using all processors. See :term:`Glossary <n_jobs>` for more details.\n\n.. versionchanged:: v0.20 `n_jobs` default changed from 1 to None\n\nverbose : bool, default=False If True, the time elapsed while fitting each transformer will be printed as it is completed.\n##### Returns\n* **f **: FeatureUnion\n\n* **sklearn.pipeline.FeatureUnion **: Class for concatenating the results\n    of multiple transformer objects.\n\n"
+}

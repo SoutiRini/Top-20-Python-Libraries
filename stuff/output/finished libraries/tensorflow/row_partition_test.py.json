@@ -1,0 +1,7 @@
+{
+    "source file": "row_partition_test.py",
+    "line number": "864",
+    "func name": "_assert_row_partition_equal",
+    "func arg": "(test_class, actual, expected)",
+    "comments": ""
+}

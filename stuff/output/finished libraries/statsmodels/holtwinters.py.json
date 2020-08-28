@@ -1,0 +1,7 @@
+{
+    "source file": "holtwinters.py",
+    "line number": "212",
+    "func name": "_holt_win_mul_add_dam",
+    "func arg": "(x, xi, p, y, l, b, s, m, n, max_seen)",
+    "comments": "Multiplicative and Multiplicative Damped with Additive Seasonal Minimization Function (M,A) & (M,Ad)\n\n\n"
+}

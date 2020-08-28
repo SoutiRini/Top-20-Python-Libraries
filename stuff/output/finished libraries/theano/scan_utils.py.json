@@ -1,0 +1,7 @@
+{
+    "source file": "scan_utils.py",
+    "line number": "1318",
+    "func name": "forced_replace",
+    "func arg": "(out, x, y)",
+    "comments": "Check all internal values of the graph that compute the variable ``out`` for occurrences of values identical with ``x``. If such occurrences are encountered then they are replaced with variable ``y``.\n\nParameters ---------- out : Theano Variable x : Theano Variable y : Theano Variable\n\nExamples -------- out := sigmoid(wu)*(1-sigmoid(wu)) x := sigmoid(wu) forced_replace(out, x, y) := y*(1-y)\n\nNote ---- When it find a match, it don't continue on the corresponding inputs.\n"
+}

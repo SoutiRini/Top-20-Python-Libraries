@@ -1,0 +1,1155 @@
+{"function":
+[{
+    "source file": "aline.py",
+    "line number": "1264",
+    "func name": "demo",
+    "func arg": "()",
+    "comments": "A demonstration of the result of aligning phonetic sequences used in Kondrak's (2002) dissertation.\n\n\n"
+},{
+    "source file": "all.py",
+    "line number": "14",
+    "func name": "additional_tests",
+    "func arg": "()",
+    "comments": ""
+},{
+    "source file": "api6.py",
+    "line number": "59",
+    "func name": "_weighted_choice",
+    "func arg": "(population, weights, random_generator)",
+    "comments": "Like random.choice, but with weights.\n\nHeavily inspired by python 3.6 `random.choices`.\n"
+},{
+    "source file": "api12.py",
+    "line number": "270",
+    "func name": "_check_alignment",
+    "func arg": "(num_words, num_mots, alignment)",
+    "comments": "Check whether the alignments are legal.\n\nparam num_words: the number of source language words :type num_words: int :param num_mots: the number of target language words :type num_mots: int :param alignment: alignment to be checked :type alignment: Alignment :raise IndexError: if alignment falls outside the sentence\n"
+},{
+    "source file": "babelfish.py",
+    "line number": "9",
+    "func name": "babelize_shell",
+    "func arg": "()",
+    "comments": ""
+},{
+    "source file": "bleu_score.py",
+    "line number": "355",
+    "func name": "brevity_penalty",
+    "func arg": "(closest_ref_len, hyp_len)",
+    "comments": "Calculate brevity penalty.\n\nAs the modified n-gram precision still has the problem from the short length sentence, brevity penalty is used to modify the overall BLEU score according to length.\n\nAn example from the paper. There are three references with length 12, 15 and 17. And a concise hypothesis of the length 12. The brevity penalty is 1.\n\n>>> reference1 = list('aaaaaaaaaaaa')\n\n\n\n\n\n# i.e. ['a'] * 12 >>> reference2 = list('aaaaaaaaaaaaaaa')\n\n # i.e. ['a'] * 15 >>> reference3 = list('aaaaaaaaaaaaaaaaa') # i.e. ['a'] * 17 >>> hypothesis = list('aaaaaaaaaaaa')\n\n\n\n\n\n# i.e. ['a'] * 12 >>> references = [reference1, reference2, reference3] >>> hyp_len = len(hypothesis) >>> closest_ref_len =\n\nclosest_ref_length(references, hyp_len) >>> brevity_penalty(closest_ref_len, hyp_len) 1.0\n\nIn case a hypothesis translation is shorter than the references, penalty is applied.\n\n>>> references = [['a'] * 28, ['a'] * 28] >>> hypothesis = ['a'] * 12 >>> hyp_len = len(hypothesis) >>> closest_ref_len =\n\nclosest_ref_length(references, hyp_len) >>> brevity_penalty(closest_ref_len, hyp_len) 0.2635971381157267\n\nThe length of the closest reference is used to compute the penalty. If the length of a hypothesis is 12, and the reference lengths are 13 and 2, the penalty is applied because the hypothesis length (12) is less then the closest reference length (13).\n\n>>> references = [['a'] * 13, ['a'] * 2] >>> hypothesis = ['a'] * 12 >>> hyp_len = len(hypothesis) >>> closest_ref_len =\n\nclosest_ref_length(references, hyp_len) >>> brevity_penalty(closest_ref_len, hyp_len) # doctest: +ELLIPSIS 0.9200...\n\nThe brevity penalty doesn't depend on reference order. More importantly, when two reference sentences are at the same distance, the shortest reference sentence length is used.\n\n>>> references = [['a'] * 13, ['a'] * 11] >>> hypothesis = ['a'] * 12 >>> hyp_len = len(hypothesis) >>> closest_ref_len =\n\nclosest_ref_length(references, hyp_len) >>> bp1 = brevity_penalty(closest_ref_len, hyp_len) >>> hyp_len = len(hypothesis) >>> closest_ref_len =\n\nclosest_ref_length(reversed(references), hyp_len) >>> bp2 = brevity_penalty(closest_ref_len, hyp_len) >>> bp1 == bp2 == 1 True\n\nA test example from mteval-v13a.pl (starting from the line 705):\n\n>>> references = [['a'] * 11, ['a'] * 8] >>> hypothesis = ['a'] * 7 >>> hyp_len = len(hypothesis) >>> closest_ref_len =\n\nclosest_ref_length(references, hyp_len) >>> brevity_penalty(closest_ref_len, hyp_len) # doctest: +ELLIPSIS 0.8668...\n\n>>> references = [['a'] * 11, ['a'] * 8, ['a'] * 6, ['a'] * 7] >>> hypothesis = ['a'] * 7 >>> hyp_len = len(hypothesis) >>> closest_ref_len =\n\nclosest_ref_length(references, hyp_len) >>> brevity_penalty(closest_ref_len, hyp_len) 1.0\n\n:param hyp_len: The length of the hypothesis for a single sentence OR the sum of all the hypotheses' lengths for a corpus :type hyp_len: int :param closest_ref_len: The length of the closest reference for a single hypothesis OR the sum of all the closest references for every hypotheses. :type closest_ref_len: int :return: BLEU's brevity penalty. :rtype: float\n"
+},{
+    "source file": "bllip.py",
+    "line number": "303",
+    "func name": "setup_module",
+    "func arg": "(module)",
+    "comments": ""
+},{
+    "source file": "bnc.py",
+    "line number": "141",
+    "func name": "_all_xmlwords_in",
+    "func arg": "(elt, result)",
+    "comments": ""
+},{
+    "source file": "book.py",
+    "line number": "204",
+    "func name": "sents",
+    "func arg": "()",
+    "comments": ""
+},{
+    "source file": "brill.py",
+    "line number": "171",
+    "func name": "describe_template_sets",
+    "func arg": "()",
+    "comments": "Print the available template sets in this demo, with a short description\"\n\n\n"
+},{
+    "source file": "casual.py",
+    "line number": "335",
+    "func name": "casual_tokenize",
+    "func arg": "(text, preserve_case, reduce_len, strip_handles)",
+    "comments": "Convenience function for wrapping the tokenizer.\n\n\n"
+},{
+    "source file": "cfg.py",
+    "line number": "812",
+    "func name": "demo3",
+    "func arg": "()",
+    "comments": ""
+},{
+    "source file": "chart.py",
+    "line number": "474",
+    "func name": "demo",
+    "func arg": "()",
+    "comments": ""
+},{
+    "source file": "chart1.py",
+    "line number": "1733",
+    "func name": "demo",
+    "func arg": "(choice, print_times, print_grammar, print_trees, trace, sent, numparses)",
+    "comments": "A demonstration of the chart parsers.\n\n\n"
+},{
+    "source file": "chartparser_app.py",
+    "line number": "2529",
+    "func name": "app",
+    "func arg": "()",
+    "comments": ""
+},{
+    "source file": "chasen.py",
+    "line number": "157",
+    "func name": "test",
+    "func arg": "()",
+    "comments": ""
+},{
+    "source file": "chat80.py",
+    "line number": "845",
+    "func name": "sql_demo",
+    "func arg": "()",
+    "comments": "Print out every row from the 'city.db' database.\n\n\n"
+},{
+    "source file": "childes_fixt.py",
+    "line number": "4",
+    "func name": "setup_module",
+    "func arg": "(module)",
+    "comments": ""
+},{
+    "source file": "childes.py",
+    "line number": "567",
+    "func name": "demo",
+    "func arg": "(corpus_root)",
+    "comments": "The CHILDES corpus should be manually downloaded and saved to ``[NLTK_Data_Dir]/corpora/childes/``\n\n\n"
+},{
+    "source file": "chomsky.py",
+    "line number": "122",
+    "func name": "generate_chomsky",
+    "func arg": "(times, line_length)",
+    "comments": ""
+},{
+    "source file": "chrf_score.py",
+    "line number": "155",
+    "func name": "corpus_chrf",
+    "func arg": "(references, hypotheses, min_len, max_len, beta, ignore_whitespace)",
+    "comments": "Calculates the corpus level CHRF (Character n-gram F-score), it is the macro-averaged value of the sentence/segment level CHRF score.\n\nThis implementation of CHRF only supports a single reference at the moment.\n\n>>> ref1 = str('It is a guide to action that ensures that the military ' ...\n\n\n\n\n\n\n\n\n\n\n\n'will forever heed Party commands').split() >>> ref2 = str('It is the guiding principle which guarantees the military ' ...\n\n\n\n\n\n\n\n\n\n\n\n'forces always being under the command of the Party').split() >>> >>> hyp1 = str('It is a guide to action which ensures that the military ' ...\n\n\n\n\n\n\n\n\n\n\n\n'always obeys the commands of the party').split() >>> hyp2 = str('It is to insure the troops forever hearing the activity ' ...\n\n\n\n\n\n\n\n\n\n\n\n'guidebook that party direct') >>> corpus_chrf([ref1, ref2, ref1, ref2], [hyp1, hyp2, hyp2, hyp1]) # doctest: +ELLIPSIS 0.3910...\n\n:param references: a corpus of list of reference sentences, w.r.t. hypotheses :type references: list(list(str)) :param hypotheses: a list of hypothesis sentences :type hypotheses: list(list(str)) :param min_len: The minimum order of n-gram this function should extract. :type min_len: int :param max_len: The maximum order of n-gram this function should extract. :type max_len: int :param beta: the parameter to assign more importance to recall over precision :type beta: float :param ignore_whitespace: ignore whitespace characters in scoring :type ignore_whitespace: bool :return: the sentence level CHRF score. :rtype: float\n"
+},{
+    "source file": "chunkparser_app.py",
+    "line number": "1496",
+    "func name": "app",
+    "func arg": "()",
+    "comments": ""
+},{
+    "source file": "classify_fixt.py",
+    "line number": "5",
+    "func name": "setup_module",
+    "func arg": "(module)",
+    "comments": ""
+},{
+    "source file": "cli.py",
+    "line number": "46",
+    "func name": "tokenize_file",
+    "func arg": "(language, preserve_line, processes, encoding, delimiter)",
+    "comments": "This command tokenizes text stream using nltk.word_tokenize\n\n\n"
+},{
+    "source file": "cmudict.py",
+    "line number": "90",
+    "func name": "read_cmudict_block",
+    "func arg": "(stream)",
+    "comments": ""
+},{
+    "source file": "collocations_app.py",
+    "line number": "432",
+    "func name": "app",
+    "func arg": "()",
+    "comments": ""
+},{
+    "source file": "collocations.py",
+    "line number": "355",
+    "func name": "demo",
+    "func arg": "(scorer, compare_scorer)",
+    "comments": "Finds bigram collocations in the files of the WebText corpus.\n\n\n"
+},{
+    "source file": "combinator.py",
+    "line number": "334",
+    "func name": "backwardTConstraint",
+    "func arg": "(left, right)",
+    "comments": ""
+},{
+    "source file": "common.py",
+    "line number": "238",
+    "func name": "_write_to_file",
+    "func arg": "(object_fields, items, entity_fields, writer)",
+    "comments": ""
+},{
+    "source file": "compat.py",
+    "line number": "38",
+    "func name": "py3_data",
+    "func arg": "(init_func)",
+    "comments": ""
+},{
+    "source file": "concordance_app.py",
+    "line number": "702",
+    "func name": "app",
+    "func arg": "()",
+    "comments": ""
+},{
+    "source file": "confusionmatrix.py",
+    "line number": "205",
+    "func name": "demo",
+    "func arg": "()",
+    "comments": ""
+},{
+    "source file": "cooper_storage.py",
+    "line number": "92",
+    "func name": "demo",
+    "func arg": "()",
+    "comments": ""
+},{
+    "source file": "corenlp.py",
+    "line number": "772",
+    "func name": "teardown_module",
+    "func arg": "(module)",
+    "comments": ""
+},{
+    "source file": "data.py",
+    "line number": "859",
+    "func name": "_open",
+    "func arg": "(resource_url)",
+    "comments": "Helper function that returns an open file object for a resource, given its resource URL.  If the given resource URL uses the \"nltk:\" protocol, or uses no protocol, then use ``nltk.data.find`` to find its path, and open it with the given mode; if the resource URL uses the 'file' protocol, then open the file with the given mode; otherwise, delegate to ``urllib2.urlopen``.\n\ntype resource_url: str :param resource_url: A URL specifying where the resource should be loaded from.\n\nThe default protocol is \"nltk:\", which searches for the file in the the NLTK data package.\n"
+},{
+    "source file": "decisiontree.py",
+    "line number": "343",
+    "func name": "demo",
+    "func arg": "()",
+    "comments": ""
+},{
+    "source file": "decorators.py",
+    "line number": "221",
+    "func name": "memoize",
+    "func arg": "(func)",
+    "comments": ""
+},{
+    "source file": "demo.py",
+    "line number": "418",
+    "func name": "corpus_size",
+    "func arg": "(seqs)",
+    "comments": ""
+},{
+    "source file": "dependencygraph.py",
+    "line number": "644",
+    "func name": "cycle_finding_demo",
+    "func arg": "()",
+    "comments": ""
+},{
+    "source file": "discourse_fixt.py",
+    "line number": "6",
+    "func name": "setup_module",
+    "func arg": "(module)",
+    "comments": ""
+},{
+    "source file": "discourse.py",
+    "line number": "643",
+    "func name": "demo",
+    "func arg": "()",
+    "comments": ""
+},{
+    "source file": "dispersion.py",
+    "line number": "13",
+    "func name": "dispersion_plot",
+    "func arg": "(text, words, ignore_case, title)",
+    "comments": "Generate a lexical dispersion plot.\n\nparam text: The source text :type text: list(str) or enum(str) :param words: The target words :type words: list of str :param ignore_case: flag to set if case should be ignored when searching text :type ignore_case: bool\n"
+},{
+    "source file": "distance.py",
+    "line number": "453",
+    "func name": "demo",
+    "func arg": "()",
+    "comments": ""
+},{
+    "source file": "downloader.py",
+    "line number": "2484",
+    "func name": "update",
+    "func arg": "()",
+    "comments": ""
+},{
+    "source file": "drt_glue_demo.py",
+    "line number": "534",
+    "func name": "demo",
+    "func arg": "()",
+    "comments": ""
+},{
+    "source file": "drt.py",
+    "line number": "1427",
+    "func name": "test_draw",
+    "func arg": "()",
+    "comments": ""
+},{
+    "source file": "earleychart.py",
+    "line number": "508",
+    "func name": "demo",
+    "func arg": "(print_times, print_grammar, print_trees, trace, sent, numparses)",
+    "comments": "A demonstration of the Earley parsers.\n\n\n"
+},{
+    "source file": "eliza.py",
+    "line number": "332",
+    "func name": "demo",
+    "func arg": "()",
+    "comments": ""
+},{
+    "source file": "em.py",
+    "line number": "179",
+    "func name": "demo",
+    "func arg": "()",
+    "comments": "Non-interactive demonstration of the clusterers with simple 2-D data.\n\n\n"
+},{
+    "source file": "erroranalysis.py",
+    "line number": "14",
+    "func name": "error_list",
+    "func arg": "(train_sents, test_sents)",
+    "comments": "Returns a list of human-readable strings indicating the errors in the given tagging of the corpus.\n\nparam train_sents: The correct tagging of the corpus :type train_sents: list(tuple) :param test_sents: The tagged corpus :type test_sents: list(tuple)\n"
+},{
+    "source file": "evaluate1.py",
+    "line number": "803",
+    "func name": "demo",
+    "func arg": "(num, trace)",
+    "comments": "Run exists demos.\n\n- num = 1: propositional logic demo\n\n- num = 2: first order model demo (only if trace is set)\n\n- num = 3: first order sentences demo\n\n- num = 4: satisfaction of open formulas demo\n\n- any other value: run all the demos\n\n:param trace: trace = 1, or trace = 2 for more verbose tracing\n"
+},{
+    "source file": "featstruct.py",
+    "line number": "2736",
+    "func name": "demo",
+    "func arg": "(trace)",
+    "comments": "Just for testing\n\n\n"
+},{
+    "source file": "featurechart.py",
+    "line number": "655",
+    "func name": "run_profile",
+    "func arg": "()",
+    "comments": ""
+},{
+    "source file": "framenet.py",
+    "line number": "3327",
+    "func name": "demo",
+    "func arg": "()",
+    "comments": ""
+},{
+    "source file": "gaac.py",
+    "line number": "140",
+    "func name": "demo",
+    "func arg": "()",
+    "comments": "Non-interactive demonstration of the clusterers with simple 2-D data.\n\n\n"
+},{
+    "source file": "gale_church.py",
+    "line number": "255",
+    "func name": "parse_token_stream",
+    "func arg": "(stream, soft_delimiter, hard_delimiter)",
+    "comments": "Parses a stream of tokens and splits it into sentences (using C{soft_delimiter} tokens) and blocks (using C{hard_delimiter} tokens) for use with the L{align_texts} function.\n\n\n"
+},{
+    "source file": "gdfa.py",
+    "line number": "12",
+    "func name": "grow_diag_final_and",
+    "func arg": "(srclen, trglen, e2f, f2e)",
+    "comments": "This module symmetrisatizes the source-to-target and target-to-source word alignment output and produces, aka. GDFA algorithm (Koehn, 2005).\n\nStep 1: Find the intersection of the bidirectional alignment.\n\nStep 2: Search for additional neighbor alignment points to be added, given these criteria: (i) neighbor alignments points are not in the intersection and (ii) neighbor alignments are in the union.\n\nStep 3: Add all other alignment points thats not in the intersection, not in the neighboring alignments that met the criteria but in the original foward/backward alignment outputs.\n\n>>> forw = ('0-0 2-1 9-2 21-3 10-4 7-5 11-6 9-7 12-8 1-9 3-10 ' ...\n\n\n\n\n\n\n\n '4-11 17-12 17-13 25-14 13-15 24-16 11-17 28-18') >>> back = ('0-0 1-9 2-9 3-10 4-11 5-12 6-6 7-5 8-6 9-7 10-4 ' ...\n\n\n\n\n\n\n\n '11-6 12-8 13-12 15-12 17-13 18-13 19-12 20-13 ' ...\n\n\n\n\n\n\n\n '21-3 22-12 23-14 24-17 25-15 26-17 27-18 28-18') >>> srctext = (\"\u3053\u306e \u3088\u3046 \u306a \u30cf\u30ed\u30fc \u767d\u8272 \u308f\u3044 \u661f \u306e \uff2c \u95a2\u6570 \" ...\n\n\n\n\n\n\n\n\n\n\n\n\"\u306f \uff2c \u3068 \u5171 \u306b \u4e0d\u9023\u7d9a \u306b \u5897\u52a0 \u3059\u308b \u3053\u3068 \u304c \" ...\n\n\n\n\n\n\n\n\n\n\n\n\"\u671f\u5f85 \u3055 \u308c\u308b \u3053\u3068 \u3092 \u793a\u3057 \u305f \u3002\") >>> trgtext = (\"Therefore , we expect that the luminosity function \" ...\n\n\n\n\n\n\n\n\n\n\n\n\"of such halo white dwarfs increases discontinuously \" ...\n\n\n\n\n\n\n\n\n\n\n\n\"with the luminosity .\") >>> srclen = len(srctext.split()) >>> trglen = len(trgtext.split()) >>> >>> gdfa = grow_diag_final_and(srclen, trglen, forw, back) >>> gdfa == sorted(set([(28, 18), (6, 6), (24, 17), (2, 1), (15, 12), (13, 12), ...\n\n\n\n\n\n\n\n (2, 9), (3, 10), (26, 17), (25, 15), (8, 6), (9, 7), (20, ...\n\n\n\n\n\n\n\n 13), (18, 13), (0, 0), (10, 4), (13, 15), (23, 14), (7, 5), ...\n\n\n\n\n\n\n\n (25, 14), (1, 9), (17, 13), (4, 11), (11, 17), (9, 2), (22, ...\n\n\n\n\n\n\n\n 12), (27, 18), (24, 16), (21, 3), (19, 12), (17, 12), (5, ...\n\n\n\n\n\n\n\n 12), (11, 6), (12, 8)])) True\n\nReferences: Koehn, P., A. Axelrod, A. Birch, C. Callison, M. Osborne, and D. Talbot. 2005. Edinburgh System Description for the 2005 IWSLT Speech Translation Evaluation. In MT Eval Workshop.\n\n:type srclen: int :param srclen: the number of tokens in the source language :type trglen: int :param trglen: the number of tokens in the target language :type e2f: str :param e2f: the forward word alignment outputs from source-to-target language (in pharaoh output format) :type f2e: str :param f2e: the backward word alignment outputs from target-to-source language (in pharaoh output format) :rtype: set(tuple(int)) :return: the symmetrized alignment points from the GDFA algorithm\n"
+},{
+    "source file": "generate.py",
+    "line number": "78",
+    "func name": "demo",
+    "func arg": "(N)",
+    "comments": ""
+},{
+    "source file": "gensim_fixt.py",
+    "line number": "4",
+    "func name": "setup_module",
+    "func arg": "(module)",
+    "comments": ""
+},{
+    "source file": "gleu_score.py",
+    "line number": "87",
+    "func name": "corpus_gleu",
+    "func arg": "(list_of_references, hypotheses, min_len, max_len)",
+    "comments": "Calculate a single corpus-level GLEU score (aka. system-level GLEU) for all the hypotheses and their respective references.\n\nInstead of averaging the sentence level GLEU scores (i.e. macro-average precision), Wu et al. (2016) sum up the matching tokens and the max of hypothesis and reference tokens for each sentence, then compute using the aggregate values.\n\nFrom Mike Schuster (via email): \"For the corpus, we just add up the two statistics n_match and n_all = max(n_all_output, n_all_target) for all sentences, then calculate gleu_score = n_match / n_all, so it is not just a mean of the sentence gleu scores (in our case, longer sentences count more, which I think makes sense as they are more difficult to translate).\"\n\n>>> hyp1 = ['It', 'is', 'a', 'guide', 'to', 'action', 'which', ...\n\n\n\n\n\n\n\n 'ensures', 'that', 'the', 'military', 'always', ...\n\n\n\n\n\n\n\n 'obeys', 'the', 'commands', 'of', 'the', 'party'] >>> ref1a = ['It', 'is', 'a', 'guide', 'to', 'action', 'that', ...\n\n\n\n\n\n\n\n\n\n'ensures', 'that', 'the', 'military', 'will', 'forever', ...\n\n\n\n\n\n\n\n\n\n'heed', 'Party', 'commands'] >>> ref1b = ['It', 'is', 'the', 'guiding', 'principle', 'which', ...\n\n\n\n\n\n\n\n\n\n'guarantees', 'the', 'military', 'forces', 'always', ...\n\n\n\n\n\n\n\n\n\n'being', 'under', 'the', 'command', 'of', 'the', 'Party'] >>> ref1c = ['It', 'is', 'the', 'practical', 'guide', 'for', 'the', ...\n\n\n\n\n\n\n\n\n\n'army', 'always', 'to', 'heed', 'the', 'directions', ...\n\n\n\n\n\n\n\n\n\n'of', 'the', 'party']\n\n>>> hyp2 = ['he', 'read', 'the', 'book', 'because', 'he', 'was', ...\n\n\n\n\n\n\n\n 'interested', 'in', 'world', 'history'] >>> ref2a = ['he', 'was', 'interested', 'in', 'world', 'history', ...\n\n\n\n\n\n\n\n\n\n'because', 'he', 'read', 'the', 'book']\n\n>>> list_of_references = [[ref1a, ref1b, ref1c], [ref2a]] >>> hypotheses = [hyp1, hyp2] >>> corpus_gleu(list_of_references, hypotheses) # doctest: +ELLIPSIS 0.5673...\n\nThe example below show that corpus_gleu() is different from averaging sentence_gleu() for hypotheses\n\n>>> score1 = sentence_gleu([ref1a], hyp1) >>> score2 = sentence_gleu([ref2a], hyp2) >>> (score1 + score2) / 2 # doctest: +ELLIPSIS 0.6144...\n\n:param list_of_references: a list of reference sentences, w.r.t. hypotheses :type list_of_references: list(list(list(str))) :param hypotheses: a list of hypothesis sentences :type hypotheses: list(list(str)) :param min_len: The minimum order of n-gram this function should extract. :type min_len: int :param max_len: The maximum order of n-gram this function should extract. :type max_len: int :return: The corpus-level GLEU score. :rtype: float\n"
+},{
+    "source file": "glue.py",
+    "line number": "781",
+    "func name": "demo",
+    "func arg": "(show_example)",
+    "comments": ""
+},{
+    "source file": "gluesemantics_malt_fixt.py",
+    "line number": "4",
+    "func name": "setup_module",
+    "func arg": "(module)",
+    "comments": ""
+},{
+    "source file": "grammar.py",
+    "line number": "1703",
+    "func name": "demo",
+    "func arg": "()",
+    "comments": ""
+},{
+    "source file": "help.py",
+    "line number": "45",
+    "func name": "_format_tagset",
+    "func arg": "(tagset, tagpattern)",
+    "comments": ""
+},{
+    "source file": "hmm.py",
+    "line number": "1308",
+    "func name": "demo_bw",
+    "func arg": "()",
+    "comments": ""
+},{
+    "source file": "hole.py",
+    "line number": "327",
+    "func name": "hole_readings",
+    "func arg": "(sentence, grammar_filename, verbose)",
+    "comments": ""
+},{
+    "source file": "hunpos.py",
+    "line number": "143",
+    "func name": "setup_module",
+    "func arg": "(module)",
+    "comments": ""
+},{
+    "source file": "ibm_model.py",
+    "line number": "47",
+    "func name": "longest_target_sentence_length",
+    "func arg": "(sentence_aligned_corpus)",
+    "comments": "param sentence_aligned_corpus: Parallel corpus under consideration :type sentence_aligned_corpus: list(AlignedSent) :return: Number of words in the longest target language sentence of ``sentence_aligned_corpus``\n\n\n"
+},{
+    "source file": "iesha.py",
+    "line number": "155",
+    "func name": "demo",
+    "func arg": "()",
+    "comments": ""
+},{
+    "source file": "inference_fixt.py",
+    "line number": "4",
+    "func name": "setup_module",
+    "func arg": "(module)",
+    "comments": ""
+},{
+    "source file": "internals.py",
+    "line number": "1132",
+    "func name": "raise_unorderable_types",
+    "func arg": "(ordering, a, b)",
+    "comments": ""
+},{
+    "source file": "ipipan.py",
+    "line number": "14",
+    "func name": "_parse_args",
+    "func arg": "(fun)",
+    "comments": ""
+},{
+    "source file": "jsontags.py",
+    "line number": "25",
+    "func name": "register_tag",
+    "func arg": "(cls)",
+    "comments": "Decorates a class to register it's json tag.\n\n\n"
+},{
+    "source file": "kmeans.py",
+    "line number": "195",
+    "func name": "demo",
+    "func arg": "()",
+    "comments": ""
+},{
+    "source file": "knbc.py",
+    "line number": "178",
+    "func name": "test",
+    "func arg": "()",
+    "comments": ""
+},{
+    "source file": "lexicon.py",
+    "line number": "292",
+    "func name": "parseLexicon",
+    "func arg": "(lex_str)",
+    "comments": ""
+},{
+    "source file": "lfg.py",
+    "line number": "214",
+    "func name": "demo_read_depgraph",
+    "func arg": "()",
+    "comments": ""
+},{
+    "source file": "lin.py",
+    "line number": "161",
+    "func name": "demo",
+    "func arg": "()",
+    "comments": ""
+},{
+    "source file": "linearlogic.py",
+    "line number": "472",
+    "func name": "demo",
+    "func arg": "()",
+    "comments": ""
+},{
+    "source file": "logic.py",
+    "line number": "47",
+    "func name": "compute_substitution_semantics",
+    "func arg": "(function, argument)",
+    "comments": ""
+},{
+    "source file": "logic1.py",
+    "line number": "2049",
+    "func name": "printtype",
+    "func arg": "(ex)",
+    "comments": ""
+},{
+    "source file": "mace.py",
+    "line number": "377",
+    "func name": "demo",
+    "func arg": "()",
+    "comments": ""
+},{
+    "source file": "malt.py",
+    "line number": "84",
+    "func name": "find_malt_model",
+    "func arg": "(model_filename)",
+    "comments": "A module to find pre-trained MaltParser model.\n\n\n"
+},{
+    "source file": "mapping.py",
+    "line number": "117",
+    "func name": "map_tag",
+    "func arg": "(source, target, source_tag)",
+    "comments": "Maps the tag from the source tagset to the target tagset.\n\n>>> map_tag('en-ptb', 'universal', 'VBZ') 'VERB' >>> map_tag('en-ptb', 'universal', 'VBP') 'VERB' >>> map_tag('en-ptb', 'universal', '``') '.'\n"
+},{
+    "source file": "maxent.py",
+    "line number": "1567",
+    "func name": "demo",
+    "func arg": "()",
+    "comments": ""
+},{
+    "source file": "megam.py",
+    "line number": "161",
+    "func name": "call_megam",
+    "func arg": "(args)",
+    "comments": "Call the ``megam`` binary with the given arguments.\n\n\n"
+},{
+    "source file": "meteor_score.py",
+    "line number": "360",
+    "func name": "meteor_score",
+    "func arg": "(references, hypothesis, preprocess, stemmer, wordnet, alpha, beta, gamma)",
+    "comments": "Calculates METEOR score for hypothesis with multiple references as described in \"Meteor: An Automatic Metric for MT Evaluation with HighLevels of Correlation with Human Judgments\" by Alon Lavie and Abhaya Agarwal, in Proceedings of ACL. http://www.cs.cmu.edu/~alavie/METEOR/pdf/Lavie-Agarwal-2007-METEOR.pdf\n\nIn case of multiple references the best score is chosen. This method iterates over single_meteor_score and picks the best pair among all the references for a given hypothesis\n\n>>> hypothesis1 = 'It is a guide to action which ensures that the military always obeys the commands of the party' >>> hypothesis2 = 'It is to insure the troops forever hearing the activity guidebook that party direct'\n\n>>> reference1 = 'It is a guide to action that ensures that the military will forever heed Party commands' >>> reference2 = 'It is the guiding principle which guarantees the military forces always being under the command of the Party' >>> reference3 = 'It is the practical guide for the army always to heed the directions of the party'\n\n>>> round(meteor_score([reference1, reference2, reference3], hypothesis1),4) 0.7398\n\nIf there is no words match during the alignment the method returns the score as 0. We can safely\n\nreturn a zero instead of raising a division by zero error as no match usually implies a bad translation.\n\n>>> round(meteor_score(['this is a cat'], 'non matching hypothesis'),4) 0.0\n\n:param references: reference sentences :type references: list(str) :param hypothesis: a hypothesis sentence :type hypothesis: str :param preprocess: preprocessing function (default str.lower) :type preprocess: method :param stemmer: nltk.stem.api.StemmerI object (default PorterStemmer()) :type stemmer: nltk.stem.api.StemmerI or any class that implements a stem method :param wordnet: a wordnet corpus reader object (default nltk.corpus.wordnet) :type wordnet: WordNetCorpusReader :param alpha: parameter for controlling relative weights of precision and recall. :type alpha: float :param beta: parameter for controlling shape of penalty as a function of as a function of fragmentation. :type beta: float :param gamma: relative weight assigned to fragmentation penality. :type gamma: float :return: The sentence-level METEOR score. :rtype: float\n"
+},{
+    "source file": "metrics.py",
+    "line number": "11",
+    "func name": "alignment_error_rate",
+    "func arg": "(reference, hypothesis, possible)",
+    "comments": "Return the Alignment Error Rate (AER) of an alignment with respect to a \"gold standard\" reference alignment. Return an error rate between 0.0 (perfect alignment) and 1.0 (no alignment).\n\n>>> from nltk.translate import Alignment >>> ref = Alignment([(0, 0), (1, 1), (2, 2)]) >>> test = Alignment([(0, 0), (1, 2), (2, 1)]) >>> alignment_error_rate(ref, test) # doctest: +ELLIPSIS 0.6666666666666667\n\n:type reference: Alignment :param reference: A gold standard alignment (sure alignments) :type hypothesis: Alignment :param hypothesis: A hypothesis alignment (aka. candidate alignments) :type possible: Alignment or None :param possible: A gold standard reference of possible alignments (defaults to *reference* if None) :rtype: float or None\n"
+},{
+    "source file": "mte.py",
+    "line number": "12",
+    "func name": "xpath",
+    "func arg": "(root, path, ns)",
+    "comments": ""
+},{
+    "source file": "naivebayes.py",
+    "line number": "249",
+    "func name": "demo",
+    "func arg": "()",
+    "comments": ""
+},{
+    "source file": "named_entity.py",
+    "line number": "310",
+    "func name": "build_model",
+    "func arg": "(fmt)",
+    "comments": ""
+},{
+    "source file": "nemo_app.py",
+    "line number": "153",
+    "func name": "app",
+    "func arg": "()",
+    "comments": ""
+},{
+    "source file": "nist_score.py",
+    "line number": "174",
+    "func name": "nist_length_penalty",
+    "func arg": "(ref_len, hyp_len)",
+    "comments": "Calculates the NIST length penalty, from Eq. 3 in Doddington (2002)\n\npenalty = exp( beta * log( min( len(hyp)/len(ref) , 1.0 )))\n\nwhere,\n\n`beta` is chosen to make the brevity penalty factor = 0.5 when the no. of words in the system output (hyp) is 2/3 of the average no. of words in the reference translation (ref)\n\nThe NIST penalty is different from BLEU's such that it minimize the impact of the score of small variations in the length of a translation. See Fig. 4 in\n\nDoddington (2002)\n"
+},{
+    "source file": "nkjp.py",
+    "line number": "17",
+    "func name": "_parse_args",
+    "func arg": "(fun)",
+    "comments": "Wraps function arguments: if fileids not specified then function set NKJPCorpusReader paths.\n\n\n"
+},{
+    "source file": "nonmonotonic_fixt.py",
+    "line number": "4",
+    "func name": "setup_module",
+    "func arg": "(module)",
+    "comments": ""
+},{
+    "source file": "nonmonotonic.py",
+    "line number": "551",
+    "func name": "demo",
+    "func arg": "()",
+    "comments": ""
+},{
+    "source file": "nonprojectivedependencyparser.py",
+    "line number": "737",
+    "func name": "rule_based_demo",
+    "func arg": "()",
+    "comments": ""
+},{
+    "source file": "paice.py",
+    "line number": "343",
+    "func name": "demo",
+    "func arg": "()",
+    "comments": "Demonstration of the module.\n\n\n"
+},{
+    "source file": "pchart.py",
+    "line number": "431",
+    "func name": "demo",
+    "func arg": "(choice, draw_parses, print_parses)",
+    "comments": "A demonstration of the probabilistic parsers.  The user is prompted to select which demo to run, and how many parses should be found; and then each parser is run on the same demo, and a summary of the results are displayed.\n\n\n"
+},{
+    "source file": "perceptron.py",
+    "line number": "358",
+    "func name": "_get_pretrain_model",
+    "func arg": "()",
+    "comments": ""
+},{
+    "source file": "phrase_based.py",
+    "line number": "89",
+    "func name": "phrase_extraction",
+    "func arg": "(srctext, trgtext, alignment, max_phrase_length)",
+    "comments": "Phrase extraction algorithm extracts all consistent phrase pairs from a word-aligned sentence pair.\n\nThe idea is to loop over all possible source language (e) phrases and find the minimal foreign phrase (f) that matches each of them. Matching is done by identifying all alignment points for the source phrase and finding the shortest foreign phrase that includes all the foreign counterparts for the source words.\n\nIn short, a phrase alignment has to (a) contain all alignment points for all covered words (b) contain at least one alignment point\n\n>>> srctext = \"michael assumes that he will stay in the house\" >>> trgtext = \"michael geht davon aus , dass er im haus bleibt\" >>> alignment = [(0,0), (1,1), (1,2), (1,3), (2,5), (3,6), (4,9), ... (5,9), (6,7), (7,7), (8,8)] >>> phrases = phrase_extraction(srctext, trgtext, alignment) >>> for i in sorted(phrases): ...\n\n\n\nprint(i) ... ((0, 1), (0, 1), 'michael', 'michael') ((0, 2), (0, 4), 'michael assumes', 'michael geht davon aus') ((0, 2), (0, 5), 'michael assumes', 'michael geht davon aus ,') ((0, 3), (0, 6), 'michael assumes that', 'michael geht davon aus , dass') ((0, 4), (0, 7), 'michael assumes that he', 'michael geht davon aus , dass er') ((0, 9), (0, 10), 'michael assumes that he will stay in the house', 'michael geht davon aus , dass er im haus bleibt') ((1, 2), (1, 4), 'assumes', 'geht davon aus') ((1, 2), (1, 5), 'assumes', 'geht davon aus ,') ((1, 3), (1, 6), 'assumes that', 'geht davon aus , dass') ((1, 4), (1, 7), 'assumes that he', 'geht davon aus , dass er') ((1, 9), (1, 10), 'assumes that he will stay in the house', 'geht davon aus , dass er im haus bleibt') ((2, 3), (4, 6), 'that', ', dass') ((2, 3), (5, 6), 'that', 'dass') ((2, 4), (4, 7), 'that he', ', dass er') ((2, 4), (5, 7), 'that he', 'dass er') ((2, 9), (4, 10), 'that he will stay in the house', ', dass er im haus bleibt') ((2, 9), (5, 10), 'that he will stay in the house', 'dass er im haus bleibt') ((3, 4), (6, 7), 'he', 'er') ((3, 9), (6, 10), 'he will stay in the house', 'er im haus bleibt') ((4, 6), (9, 10), 'will stay', 'bleibt') ((4, 9), (7, 10), 'will stay in the house', 'im haus bleibt') ((6, 8), (7, 8), 'in the', 'im') ((6, 9), (7, 9), 'in the house', 'im haus') ((8, 9), (8, 9), 'house', 'haus')\n\n:type srctext: str :param srctext: The sentence string from the source language. :type trgtext: str :param trgtext: The sentence string from the target language. :type alignment: list(tuple) :param alignment: The word alignment outputs as list of tuples, where the first elements of tuples are the source words' indices and second elements are the target words' indices. This is also the output format of nltk.translate.ibm1 :rtype: list(tuple) :return: A list of tuples, each element in a list is a phrase and each phrase is a tuple made up of (i) its source location, (ii) its target location, (iii) the source phrase and (iii) the target phrase. The phrase list of tuples represents all the possible phrases extracted from the word alignments. :type max_phrase_length: int :param max_phrase_length: maximal phrase length, if 0 or not specified it is set to a length of the longer sentence (srctext or trgtext).\n"
+},{
+    "source file": "porter.py",
+    "line number": "678",
+    "func name": "demo",
+    "func arg": "()",
+    "comments": "A demonstration of the porter stemmer on a sample from the Penn Treebank corpus.\n\n\n"
+},{
+    "source file": "portuguese_en_fixt.py",
+    "line number": "5",
+    "func name": "setup_module",
+    "func arg": "(module)",
+    "comments": ""
+},{
+    "source file": "positivenaivebayes.py",
+    "line number": "177",
+    "func name": "demo",
+    "func arg": "()",
+    "comments": ""
+},{
+    "source file": "preprocessing.py",
+    "line number": "34",
+    "func name": "padded_everygram_pipeline",
+    "func arg": "(order, text)",
+    "comments": "Default preprocessing for a sequence of sentences.\n\nCreates two iterators:\n\n- sentences padded and turned into sequences of `nltk.util.everygrams`\n\n- sentences padded as above and chained together for a flat stream of words\n\n:param order: Largest ngram length produced by `everygrams`. :param text: Text to iterate over. Expected to be an iterable of sentences: Iterable[Iterable[str]] :return: iterator over text as ngrams, iterator over text as vocabulary data\n"
+},{
+    "source file": "probability_fixt.py",
+    "line number": "8",
+    "func name": "setup_module",
+    "func arg": "(module)",
+    "comments": ""
+},{
+    "source file": "probability.py",
+    "line number": "2530",
+    "func name": "gt_demo",
+    "func arg": "()",
+    "comments": ""
+},{
+    "source file": "projectivedependencyparser.py",
+    "line number": "695",
+    "func name": "projective_prob_parse_demo",
+    "func arg": "()",
+    "comments": "A demo showing the training and use of a projective dependency parser.\n\n\n"
+},{
+    "source file": "prover9.py",
+    "line number": "493",
+    "func name": "demo",
+    "func arg": "()",
+    "comments": ""
+},{
+    "source file": "punkt.py",
+    "line number": "1651",
+    "func name": "demo",
+    "func arg": "(text, tok_cls, train_cls)",
+    "comments": "Builds a punkt model and applies it to the same text\n\n\n"
+},{
+    "source file": "rdparser_app.py",
+    "line number": "1021",
+    "func name": "app",
+    "func arg": "()",
+    "comments": "Create a recursive descent parser demo, using a simple grammar and text.\n\n\n"
+},{
+    "source file": "recursivedescent.py",
+    "line number": "657",
+    "func name": "demo",
+    "func arg": "()",
+    "comments": "A demonstration of the recursive descent parser.\n\n\n"
+},{
+    "source file": "regexp.py",
+    "line number": "1366",
+    "func name": "demo",
+    "func arg": "()",
+    "comments": "A demonstration for the ``RegexpChunkParser`` class.  A single text is parsed with four different chunk parsers, using a variety of rules and strategies.\n\n\n"
+},{
+    "source file": "regexp2.py",
+    "line number": "204",
+    "func name": "regexp_tokenize",
+    "func arg": "(text, pattern, gaps, discard_empty, flags)",
+    "comments": "Return a tokenized copy of *text*.  See :class:`.RegexpTokenizer` for descriptions of the arguments.\n\n\n"
+},{
+    "source file": "relextract.py",
+    "line number": "516",
+    "func name": "ne_chunked",
+    "func arg": "()",
+    "comments": ""
+},{
+    "source file": "resolution.py",
+    "line number": "750",
+    "func name": "demo",
+    "func arg": "()",
+    "comments": ""
+},{
+    "source file": "ribes_score.py",
+    "line number": "297",
+    "func name": "spearman_rho",
+    "func arg": "(worder, normalize)",
+    "comments": "Calculates the Spearman's Rho correlation coefficient given the *worder* list of word alignment from word_rank_alignment(), using the formula\n\nrho = 1\n\n- sum(d**2) / choose(len(worder)+1, 3)\n\nGiven that d is the sum of difference between the *worder* list of indices and the original word indices from the reference sentence.\n\nUsing the (H0,R0) and (H5, R5) example from the paper\n\n>>> worder =\n\n[7, 8, 9, 10, 6, 0, 1, 2, 3, 4, 5] >>> round(spearman_rho(worder, normalize=False), 3) -0.591 >>> round(spearman_rho(worder), 3) 0.205\n\n:param worder: The worder list output from word_rank_alignment :param type: list(int)\n"
+},{
+    "source file": "rte_classify.py",
+    "line number": "155",
+    "func name": "rte_classifier",
+    "func arg": "(algorithm)",
+    "comments": ""
+},{
+    "source file": "rte.py",
+    "line number": "40",
+    "func name": "norm",
+    "func arg": "(value_string)",
+    "comments": "Normalize the string value in an RTE pair's ``value`` or ``entailment`` attribute as an integer (1, 0).\n\nparam value_string: the label used to classify a text/hypothesis pair :type value_string: str :rtype: int\n"
+},{
+    "source file": "rude.py",
+    "line number": "120",
+    "func name": "demo",
+    "func arg": "()",
+    "comments": ""
+},{
+    "source file": "scikitlearn.py",
+    "line number": "124",
+    "func name": "setup_module",
+    "func arg": "(module)",
+    "comments": ""
+},{
+    "source file": "scores.py",
+    "line number": "208",
+    "func name": "demo",
+    "func arg": "()",
+    "comments": ""
+},{
+    "source file": "segmentation_fixt.py",
+    "line number": "5",
+    "func name": "setup_module",
+    "func arg": "(module)",
+    "comments": ""
+},{
+    "source file": "segmentation.py",
+    "line number": "226",
+    "func name": "setup_module",
+    "func arg": "(module)",
+    "comments": ""
+},{
+    "source file": "semantics_fixt.py",
+    "line number": "4",
+    "func name": "setup_module",
+    "func arg": "(module)",
+    "comments": ""
+},{
+    "source file": "semcor.py",
+    "line number": "225",
+    "func name": "_all_xmlwords_in",
+    "func arg": "(elt, result)",
+    "comments": ""
+},{
+    "source file": "senna.py",
+    "line number": "182",
+    "func name": "setup_module",
+    "func arg": "(module)",
+    "comments": ""
+},{
+    "source file": "senna1.py",
+    "line number": "141",
+    "func name": "setup_module",
+    "func arg": "(module)",
+    "comments": ""
+},{
+    "source file": "senseval.py",
+    "line number": "172",
+    "func name": "_fixXML",
+    "func arg": "(text)",
+    "comments": "Fix the various issues with Senseval pseudo-XML.\n\n\n"
+},{
+    "source file": "shiftreduce.py",
+    "line number": "450",
+    "func name": "demo",
+    "func arg": "()",
+    "comments": "A demonstration of the shift-reduce parser.\n\n\n"
+},{
+    "source file": "simple.py",
+    "line number": "139",
+    "func name": "line_tokenize",
+    "func arg": "(text, blanklines)",
+    "comments": ""
+},{
+    "source file": "skolemize.py",
+    "line number": "135",
+    "func name": "to_cnf",
+    "func arg": "(first, second)",
+    "comments": "Convert this split disjunction to conjunctive normal form (CNF)\n\n\n"
+},{
+    "source file": "smoothing.py",
+    "line number": "16",
+    "func name": "_count_non_zero_vals",
+    "func arg": "(dictionary)",
+    "comments": ""
+},{
+    "source file": "snowball.py",
+    "line number": "5867",
+    "func name": "demo",
+    "func arg": "()",
+    "comments": "This function provides a demonstration of the Snowball stemmers.\n\nAfter invoking this function and specifying a language, it stems an excerpt of the Universal Declaration of Human Rights (which is a part of the NLTK corpus collection) and then prints out the original and the stemmed text.\n"
+},{
+    "source file": "sort.py",
+    "line number": "153",
+    "func name": "demo",
+    "func arg": "()",
+    "comments": ""
+},{
+    "source file": "spearman.py",
+    "line number": "52",
+    "func name": "ranks_from_scores",
+    "func arg": "(scores, rank_gap)",
+    "comments": "Given a sequence of (key, score) tuples, yields each key with an increasing rank, tying with previous key's rank if the difference between their scores is less than rank_gap. Suitable for use as an argument to ``spearman_correlation``.\n\n\n"
+},{
+    "source file": "srparser_app.py",
+    "line number": "892",
+    "func name": "app",
+    "func arg": "()",
+    "comments": "Create a shift reduce parser app, using a simple grammar and text.\n\n\n"
+},{
+    "source file": "stanford_segmenter.py",
+    "line number": "299",
+    "func name": "setup_module",
+    "func arg": "(module)",
+    "comments": ""
+},{
+    "source file": "stanford.py",
+    "line number": "477",
+    "func name": "setup_module",
+    "func arg": "(module)",
+    "comments": ""
+},{
+    "source file": "stanford1.py",
+    "line number": "238",
+    "func name": "setup_module",
+    "func arg": "(module)",
+    "comments": ""
+},{
+    "source file": "stanford2.py",
+    "line number": "121",
+    "func name": "setup_module",
+    "func arg": "(module)",
+    "comments": ""
+},{
+    "source file": "suntsu.py",
+    "line number": "135",
+    "func name": "demo",
+    "func arg": "()",
+    "comments": ""
+},{
+    "source file": "table.py",
+    "line number": "1136",
+    "func name": "demo",
+    "func arg": "()",
+    "comments": ""
+},{
+    "source file": "tableau.py",
+    "line number": "708",
+    "func name": "demo",
+    "func arg": "()",
+    "comments": ""
+},{
+    "source file": "tadm.py",
+    "line number": "102",
+    "func name": "encoding_demo",
+    "func arg": "()",
+    "comments": ""
+},{
+    "source file": "test_classify.py",
+    "line number": "48",
+    "func name": "test_tadm",
+    "func arg": "()",
+    "comments": ""
+},{
+    "source file": "test_collocations.py",
+    "line number": "12",
+    "func name": "close_enough",
+    "func arg": "(x, y)",
+    "comments": "Verify that two sequences of n-gram association values are within _EPSILON of each other.\n\n\n"
+},{
+    "source file": "test_concordance.py",
+    "line number": "15",
+    "func name": "stdout_redirect",
+    "func arg": "(where)",
+    "comments": ""
+},{
+    "source file": "test_hmm.py",
+    "line number": "80",
+    "func name": "setup_module",
+    "func arg": "(module)",
+    "comments": ""
+},{
+    "source file": "test_json2csv_corpus.py",
+    "line number": "23",
+    "func name": "are_files_identical",
+    "func arg": "(filename1, filename2, debug)",
+    "comments": "Compare two files, ignoring carriage returns.\n\n\n"
+},{
+    "source file": "test_models.py",
+    "line number": "24",
+    "func name": "_prepare_test_data",
+    "func arg": "(ngram_order)",
+    "comments": ""
+},{
+    "source file": "test_seekable_unicode_stream_reader.py",
+    "line number": "136",
+    "func name": "teardown_module",
+    "func arg": "(module)",
+    "comments": ""
+},{
+    "source file": "test_tag.py",
+    "line number": "23",
+    "func name": "setup_module",
+    "func arg": "(module)",
+    "comments": ""
+},{
+    "source file": "text.py",
+    "line number": "729",
+    "func name": "demo",
+    "func arg": "()",
+    "comments": ""
+},{
+    "source file": "textcat.py",
+    "line number": "145",
+    "func name": "demo",
+    "func arg": "()",
+    "comments": ""
+},{
+    "source file": "texttiling.py",
+    "line number": "462",
+    "func name": "demo",
+    "func arg": "(text)",
+    "comments": ""
+},{
+    "source file": "tgrep.py",
+    "line number": "1022",
+    "func name": "tgrep_nodes",
+    "func arg": "(pattern, trees, search_leaves)",
+    "comments": "Return the tree nodes in the trees which match the given pattern.\n\nparam pattern: a tgrep search pattern :type pattern: str or output of tgrep_compile() :param trees: a sequence of NLTK trees (usually ParentedTrees) :type trees: iter(ParentedTree) or iter(Tree) :param search_leaves: whether ot return matching leaf nodes :type search_leaves: bool :rtype: iter(tree nodes)\n"
+},{
+    "source file": "timit.py",
+    "line number": "484",
+    "func name": "read_timit_block",
+    "func arg": "(stream)",
+    "comments": "Block reader for timit tagged sentences, which are preceded by a sentence number that will be ignored.\n\n\n"
+},{
+    "source file": "tnt.py",
+    "line number": "521",
+    "func name": "demo3",
+    "func arg": "()",
+    "comments": ""
+},{
+    "source file": "toolbox.py",
+    "line number": "500",
+    "func name": "demo",
+    "func arg": "()",
+    "comments": ""
+},{
+    "source file": "transitionparser.py",
+    "line number": "650",
+    "func name": "demo",
+    "func arg": "()",
+    "comments": ">>> from nltk.parse import DependencyGraph, DependencyEvaluator >>> from nltk.parse.transitionparser import TransitionParser, Configuration, Transition >>> gold_sent = DependencyGraph(\"\"\" ... Economic  JJ     2      ATT ... news  NN     3       SBJ ... has       VBD       0       ROOT ... little      JJ      5       ATT ... effect   NN     3       OBJ ... on     IN      5       ATT ... financial       JJ       8       ATT ... markets    NNS      6       PC ... .    .      3       PU ... \"\"\")\n\n>>> conf = Configuration(gold_sent)\n\n###################### Check the Initial Feature ########################\n\n>>> print(', '.join(conf.extract_features())) STK_0_POS_TOP, BUF_0_FORM_Economic, BUF_0_LEMMA_Economic, BUF_0_POS_JJ, BUF_1_FORM_news, BUF_1_POS_NN, BUF_2_POS_VBD, BUF_3_POS_JJ\n\n###################### Check The Transition ####################### Check the Initialized Configuration >>> print(conf) Stack : [0]\n\nBuffer : [1, 2, 3, 4, 5, 6, 7, 8, 9]\n\n Arcs : []\n\nA. Do some transition checks for ARC-STANDARD\n\n>>> operation = Transition('arc-standard') >>> operation.shift(conf) >>> operation.left_arc(conf, \"ATT\") >>> operation.shift(conf) >>> operation.left_arc(conf,\"SBJ\") >>> operation.shift(conf) >>> operation.shift(conf) >>> operation.left_arc(conf, \"ATT\") >>> operation.shift(conf) >>> operation.shift(conf) >>> operation.shift(conf) >>> operation.left_arc(conf, \"ATT\")\n\nMiddle Configuration and Features Check >>> print(conf) Stack : [0, 3, 5, 6]\n\nBuffer : [8, 9]\n\n Arcs : [(2, 'ATT', 1), (3, 'SBJ', 2), (5, 'ATT', 4), (8, 'ATT', 7)]\n\n>>> print(', '.join(conf.extract_features())) STK_0_FORM_on, STK_0_LEMMA_on, STK_0_POS_IN, STK_1_POS_NN, BUF_0_FORM_markets, BUF_0_LEMMA_markets, BUF_0_POS_NNS, BUF_1_FORM_., BUF_1_POS_., BUF_0_LDEP_ATT\n\n>>> operation.right_arc(conf, \"PC\") >>> operation.right_arc(conf, \"ATT\") >>> operation.right_arc(conf, \"OBJ\") >>> operation.shift(conf) >>> operation.right_arc(conf, \"PU\") >>> operation.right_arc(conf, \"ROOT\") >>> operation.shift(conf)\n\nTerminated Configuration Check >>> print(conf) Stack : [0]\n\nBuffer : []\n\n Arcs : [(2, 'ATT', 1), (3, 'SBJ', 2), (5, 'ATT', 4), (8, 'ATT', 7), (6, 'PC', 8), (5, 'ATT', 6), (3, 'OBJ', 5), (3, 'PU', 9), (0, 'ROOT', 3)]\n\n B. Do some transition checks for ARC-EAGER\n\n>>> conf = Configuration(gold_sent) >>> operation = Transition('arc-eager') >>> operation.shift(conf) >>> operation.left_arc(conf,'ATT') >>> operation.shift(conf) >>> operation.left_arc(conf,'SBJ') >>> operation.right_arc(conf,'ROOT') >>> operation.shift(conf) >>> operation.left_arc(conf,'ATT') >>> operation.right_arc(conf,'OBJ') >>> operation.right_arc(conf,'ATT') >>> operation.shift(conf) >>> operation.left_arc(conf,'ATT') >>> operation.right_arc(conf,'PC') >>> operation.reduce(conf) >>> operation.reduce(conf) >>> operation.reduce(conf) >>> operation.right_arc(conf,'PU') >>> print(conf) Stack : [0, 3, 9]\n\nBuffer : []\n\n Arcs : [(2, 'ATT', 1), (3, 'SBJ', 2), (0, 'ROOT', 3), (5, 'ATT', 4), (3, 'OBJ', 5), (5, 'ATT', 6), (8, 'ATT', 7), (6, 'PC', 8), (3, 'PU', 9)]\n\n###################### Check The Training Function #######################\n\nA. Check the ARC-STANDARD training >>> import tempfile >>> import os >>> input_file = tempfile.NamedTemporaryFile(prefix='transition_parse.train', dir=tempfile.gettempdir(), delete=False)\n\n>>> parser_std = TransitionParser('arc-standard') >>> print(', '.join(parser_std._create_training_examples_arc_std([gold_sent], input_file))) Number of training examples : 1 Number of valid (projective) examples : 1 SHIFT, LEFTARC:ATT, SHIFT, LEFTARC:SBJ, SHIFT, SHIFT, LEFTARC:ATT, SHIFT, SHIFT, SHIFT, LEFTARC:ATT, RIGHTARC:PC, RIGHTARC:ATT, RIGHTARC:OBJ, SHIFT, RIGHTARC:PU, RIGHTARC:ROOT, SHIFT\n\n>>> parser_std.train([gold_sent],'temp.arcstd.model', verbose=False) Number of training examples : 1 Number of valid (projective) examples : 1 >>> remove(input_file.name)\n\nB. Check the ARC-EAGER training\n\n>>> input_file = tempfile.NamedTemporaryFile(prefix='transition_parse.train', dir=tempfile.gettempdir(),delete=False) >>> parser_eager = TransitionParser('arc-eager') >>> print(', '.join(parser_eager._create_training_examples_arc_eager([gold_sent], input_file))) Number of training examples : 1 Number of valid (projective) examples : 1 SHIFT, LEFTARC:ATT, SHIFT, LEFTARC:SBJ, RIGHTARC:ROOT, SHIFT, LEFTARC:ATT, RIGHTARC:OBJ, RIGHTARC:ATT, SHIFT, LEFTARC:ATT, RIGHTARC:PC, REDUCE, REDUCE, REDUCE, RIGHTARC:PU\n\n>>> parser_eager.train([gold_sent],'temp.arceager.model', verbose=False) Number of training examples : 1 Number of valid (projective) examples : 1\n\n>>> remove(input_file.name)\n\n###################### Check The Parsing Function ########################\n\nA. Check the ARC-STANDARD parser\n\n>>> result = parser_std.parse([gold_sent], 'temp.arcstd.model') >>> de = DependencyEvaluator(result, [gold_sent]) >>> de.eval() >= (0, 0) True\n\nB. Check the ARC-EAGER parser >>> result = parser_eager.parse([gold_sent], 'temp.arceager.model') >>> de = DependencyEvaluator(result, [gold_sent]) >>> de.eval() >= (0, 0) True\n\nRemove test temporary files >>> remove('temp.arceager.model') >>> remove('temp.arcstd.model')\n\nNote that result is very poor because of only one training example.\n"
+},{
+    "source file": "tree.py",
+    "line number": "1705",
+    "func name": "demo",
+    "func arg": "()",
+    "comments": "A demonstration showing how Trees and Trees can be used.  This demonstration creates a Tree, and loads a Tree from the Treebank corpus, and shows the results of calling several of their methods.\n\n\n"
+},{
+    "source file": "treeprettyprinter.py",
+    "line number": "586",
+    "func name": "test",
+    "func arg": "()",
+    "comments": "Do some tree drawing tests.\n\n\n"
+},{
+    "source file": "treetransforms.py",
+    "line number": "281",
+    "func name": "demo",
+    "func arg": "()",
+    "comments": "A demonstration showing how each tree transform can be used.\n\n\n"
+},{
+    "source file": "twitter_demo.py",
+    "line number": "248",
+    "func name": "expand_tweetids_demo",
+    "func arg": "()",
+    "comments": "Given a file object containing a list of Tweet IDs, fetch the corresponding full Tweets, if available.\n\n\n"
+},{
+    "source file": "util.py",
+    "line number": "838",
+    "func name": "parallelize_preprocess",
+    "func arg": "(func, iterator, processes, progress_bar)",
+    "comments": ""
+},{
+    "source file": "util2.py",
+    "line number": "595",
+    "func name": "demo",
+    "func arg": "()",
+    "comments": ""
+},{
+    "source file": "util3.py",
+    "line number": "332",
+    "func name": "check_megam_config",
+    "func arg": "()",
+    "comments": "Checks whether the MEGAM binary is configured.\n\n\n"
+},{
+    "source file": "util4.py",
+    "line number": "126",
+    "func name": "cosine_distance",
+    "func arg": "(u, v)",
+    "comments": "Returns 1 minus the cosine of the angle between vectors v and u. This is equal to 1 - (u.v / |u||v|).\n\n\n"
+},{
+    "source file": "util5.py",
+    "line number": "138",
+    "func name": "_make_bound_method",
+    "func arg": "(func)",
+    "comments": "Magic for creating bound methods (used for _unload).\n\n\n"
+},{
+    "source file": "util6.py",
+    "line number": "845",
+    "func name": "tagged_treebank_para_block_reader",
+    "func arg": "(stream)",
+    "comments": ""
+},{
+    "source file": "util7.py",
+    "line number": "2519",
+    "func name": "demo",
+    "func arg": "()",
+    "comments": "A simple demonstration showing how to use canvas widgets.\n\n\n"
+},{
+    "source file": "util8.py",
+    "line number": "15",
+    "func name": "log_base2",
+    "func arg": "(score)",
+    "comments": "Convenience function for computing logarithms with base 2.\n\n\n"
+},{
+    "source file": "util9.py",
+    "line number": "196",
+    "func name": "extract_test_sentences",
+    "func arg": "(string, comment_chars, encoding)",
+    "comments": "Parses a string with one test sentence per line. Lines can optionally begin with: - a bool, saying if the sentence is grammatical or not, or - an int, giving the number of parse trees is should have, The result information is followed by a colon, and then the sentence. Empty lines and lines beginning with a comment char are ignored.\n\nreturn: a list of tuple of sentences and expected results, where a sentence is a list of str, and a result is None, or bool, or int\n\n:param comment_chars: ``str`` of possible comment characters. :param encoding: the encoding of the string, if it is binary\n"
+},{
+    "source file": "util10.py",
+    "line number": "179",
+    "func name": "demo",
+    "func arg": "()",
+    "comments": ""
+},{
+    "source file": "util11.py",
+    "line number": "784",
+    "func name": "demo_vader_tweets",
+    "func arg": "(n_instances, output)",
+    "comments": "Classify 10000 positive and negative tweets using Vader approach.\n\nparam n_instances: the number of total tweets that have to be classified. :param output: the output file where results have to be reported.\n"
+},{
+    "source file": "util12.py",
+    "line number": "16",
+    "func name": "prefix_replace",
+    "func arg": "(original, old, new)",
+    "comments": "Replaces the old prefix of the original string by a new suffix :param original: string :param old: string :param new: string :return: string\n\n\n"
+},{
+    "source file": "util13.py",
+    "line number": "61",
+    "func name": "untag",
+    "func arg": "(tagged_sentence)",
+    "comments": "Given a tagged sentence, return an untagged version of that sentence.  I.e., return a list containing the first element of each tuple in *tagged_sentence*.\n\n>>> from nltk.tag.util import untag >>> untag([('John', 'NNP'), ('saw', 'VBD'), ('Mary', 'NNP')]) ['John', 'saw', 'Mary']\n"
+},{
+    "source file": "util14.py",
+    "line number": "257",
+    "func name": "align_tokens",
+    "func arg": "(tokens, sentence)",
+    "comments": "This module attempt to find the offsets of the tokens in *s*, as a sequence of ``(start, end)`` tuples, given the tokens and also the source string.\n\n>>> from nltk.tokenize import TreebankWordTokenizer >>> from nltk.tokenize.util import align_tokens >>> s = str(\"The plane, bound for St Petersburg, crashed in Egypt's \" ... \"Sinai desert just 23 minutes after take-off from Sharm el-Sheikh \" ... \"on Saturday.\") >>> tokens = TreebankWordTokenizer().tokenize(s) >>> expected = [(0, 3), (4, 9), (9, 10), (11, 16), (17, 20), (21, 23), ... (24, 34), (34, 35), (36, 43), (44, 46), (47, 52), (52, 54), ... (55, 60), (61, 67), (68, 72), (73, 75), (76, 83), (84, 89), ... (90, 98), (99, 103), (104, 109), (110, 119), (120, 122), ... (123, 131), (131, 132)] >>> output = list(align_tokens(tokens, s)) >>> len(tokens) == len(expected) == len(output)\n\n# Check that length of tokens and tuples are the same. True >>> expected == list(align_tokens(tokens, s))\n\n# Check that the output is as expected. True >>> tokens == [s[start:end] for start, end in output]\n\n# Check that the slices of the string corresponds to the tokens. True\n\n:param tokens: The list of strings that are the result of tokenization :type tokens: list(str) :param sentence: The original string :type sentence: str :rtype: list(tuple(int,int))\n"
+},{
+    "source file": "util15.py",
+    "line number": "140",
+    "func name": "guess_path",
+    "func arg": "(pth)",
+    "comments": "If the path is not absolute, guess that it is a subdirectory of the user's home directory.\n\nparam str pth: The pathname of the directory where files of tweets should be written\n"
+},{
+    "source file": "utils.py",
+    "line number": "40",
+    "func name": "skipIf",
+    "func arg": "(condition, reason)",
+    "comments": "Skip a test if the condition is true.\n\n\n"
+},{
+    "source file": "viterbi.py",
+    "line number": "331",
+    "func name": "demo",
+    "func arg": "()",
+    "comments": "A demonstration of the probabilistic parsers.  The user is prompted to select which demo to run, and how many parses should be found; and then each parser is run on the same demo, and a summary of the results are displayed.\n\n\n"
+},{
+    "source file": "vocabulary.py",
+    "line number": "34",
+    "func name": "_string_lookup",
+    "func arg": "(word, vocab)",
+    "comments": "Looks up one word in the vocabulary.\n\n\n"
+},{
+    "source file": "weka.py",
+    "line number": "70",
+    "func name": "_check_weka_version",
+    "func arg": "(jar)",
+    "comments": ""
+},{
+    "source file": "wordfinder.py",
+    "line number": "118",
+    "func name": "word_finder",
+    "func arg": "()",
+    "comments": ""
+},{
+    "source file": "wordfreq_app.py",
+    "line number": "27",
+    "func name": "app",
+    "func arg": "()",
+    "comments": ""
+},{
+    "source file": "wordnet_app.py",
+    "line number": "974",
+    "func name": "app",
+    "func arg": "()",
+    "comments": ""
+},{
+    "source file": "wordnet_fixt.py",
+    "line number": "4",
+    "func name": "teardown_module",
+    "func arg": "(module)",
+    "comments": ""
+},{
+    "source file": "wordnet.py",
+    "line number": "2167",
+    "func name": "teardown_module",
+    "func arg": "(module)",
+    "comments": ""
+},{
+    "source file": "wordnet1.py",
+    "line number": "46",
+    "func name": "teardown_module",
+    "func arg": "(module)",
+    "comments": ""
+},{
+    "source file": "wsd.py",
+    "line number": "13",
+    "func name": "lesk",
+    "func arg": "(context_sentence, ambiguous_word, pos, synsets)",
+    "comments": "Return a synset for an ambiguous word in a context.\n\nparam iter context_sentence: The context sentence where the ambiguous word occurs, passed as an iterable of words. :param str ambiguous_word: The ambiguous word that requires WSD. :param str pos: A specified Part-of-Speech (POS). :param iter synsets: Possible synsets of the ambiguous word. :return: ``lesk_sense`` The Synset() object with the highest signature overlaps.\n\nThis function is an implementation of the original Lesk algorithm (1986) [1].\n\nUsage example::\n\n>>> lesk(['I', 'went', 'to', 'the', 'bank', 'to', 'deposit', 'money', '.'], 'bank', 'n') Synset('savings_bank.n.02')\n\n[1] Lesk, Michael. \"Automatic sense disambiguation using machine readable dictionaries: how to tell a pine cone from an ice cream cone.\" Proceedings of the 5th Annual International Conference on Systems Documentation. ACM, 1986. http://dl.acm.org/citation.cfm?id=318728\n"
+},{
+    "source file": "zen.py",
+    "line number": "324",
+    "func name": "demo",
+    "func arg": "()",
+    "comments": ""
+}]
+}

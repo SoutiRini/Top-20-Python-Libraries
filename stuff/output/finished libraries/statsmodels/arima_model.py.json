@@ -1,0 +1,7 @@
+{
+    "source file": "arima_model.py",
+    "line number": "457",
+    "func name": "_check_estimable",
+    "func arg": "(nobs, n_params)",
+    "comments": ""
+}

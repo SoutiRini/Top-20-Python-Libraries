@@ -1,0 +1,7 @@
+{
+    "source file": "collective_ops.py",
+    "line number": "174",
+    "func name": "broadcast_recv",
+    "func arg": "(shape, dtype, group_size, group_key, instance_key, communication_hint, timeout)",
+    "comments": "Receives a broadcasts tensor, across devices.\n\n\n##### Args\n* **shape**: Shape of the tensor to be received.\n\n* **dtype**: Type of the tensor to be received.\n\n* **group_size**: one plus the number of receiving tensors, i.e. the total\n  number of devices participating.  Each tensor must reside on a\n  different device.\n\n* **group_key**: an integer identifying the group of devices.\n\n* **instance_key**: an integer identifying the participating group of Ops.\n\n* **communication_hint**: preferred collective communication.  The implementation\n  may fall back to another mechanism.  Options include `auto`, `ring`, and\n  `nccl`.\n\n* **timeout**: If set to a non zero, set a completion timeout to detect staleness.\n  If the timer goes off, a DeadlineExceededError is raised.\n  The timeout value in seconds. This feature is experimental.\n\n##### Returns\n"
+}

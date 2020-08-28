@@ -1,0 +1,7 @@
+{
+    "source file": "context_managers.py",
+    "line number": "27",
+    "func name": "control_dependency_on_returns",
+    "func arg": "(return_value)",
+    "comments": "Create a TF control dependency on the return values of a function.\n\nIf the function had no return value, a no-op context is returned.\n##### Args\n* **return_value**: The return value to set as control dependency.\n\n##### Returns\n"
+}

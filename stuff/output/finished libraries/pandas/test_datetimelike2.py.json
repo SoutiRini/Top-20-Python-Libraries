@@ -1,0 +1,7 @@
+{
+    "source file": "test_datetimelike2.py",
+    "line number": "1475",
+    "func name": "_check_plot_works",
+    "func arg": "(f, freq, series, **kwargs)",
+    "comments": ""
+}

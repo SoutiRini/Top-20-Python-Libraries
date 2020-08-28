@@ -1,0 +1,7 @@
+{
+    "source file": "gbq1.py",
+    "line number": "190",
+    "func name": "to_gbq",
+    "func arg": "(dataframe, destination_table, project_id, chunksize, reauth, if_exists, auth_local_webserver, table_schema, location, progress_bar, credentials, verbose, private_key)",
+    "comments": ""
+}

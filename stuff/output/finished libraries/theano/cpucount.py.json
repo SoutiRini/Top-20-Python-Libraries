@@ -1,0 +1,7 @@
+{
+    "source file": "cpucount.py",
+    "line number": "37",
+    "func name": "cpuCount",
+    "func arg": "()",
+    "comments": "Returns the number of CPUs in the system\n\n\n"
+}

@@ -1,0 +1,7 @@
+{
+    "source file": "device_lib.py",
+    "line number": "25",
+    "func name": "list_local_devices",
+    "func arg": "(session_config)",
+    "comments": "List the available devices available in the local process.\n\n\n##### Args\n* **session_config**: a session config proto or None to use the default config.\n\n##### Returns\n"
+}

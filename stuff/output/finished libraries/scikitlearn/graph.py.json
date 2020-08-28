@@ -1,0 +1,7 @@
+{
+    "source file": "graph.py",
+    "line number": "23",
+    "func name": "single_source_shortest_path_length",
+    "func arg": "(graph, source)",
+    "comments": "Return the shortest path length from source to all reachable nodes.\n\n\n##### Returns\n* **graph **: sparse matrix or 2D array (preferably LIL matrix)\n    Adjacency matrix of the graph\n\n* **source **: integer\n   Starting node for path\n\n* **cutoff **: integer, optional\n    Depth to stop the search - only\n    paths of length <= cutoff are returned.\n\n"
+}

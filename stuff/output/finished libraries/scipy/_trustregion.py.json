@@ -1,0 +1,7 @@
+{
+    "source file": "_trustregion.py",
+    "line number": "100",
+    "func name": "_minimize_trust_region",
+    "func arg": "(fun, x0, args, jac, hess, hessp, subproblem, initial_trust_radius, max_trust_radius, eta, gtol, maxiter, disp, return_all, callback, inexact, **unknown_options)",
+    "comments": "Minimization of scalar function of one or more variables using a trust-region algorithm.\n\nOptions for the trust-region algorithm are: initial_trust_radius : float Initial trust radius. max_trust_radius : float Never propose steps that are longer than this value. eta : float Trust region related acceptance stringency for proposed steps. gtol : float Gradient norm must be less than `gtol` before successful termination. maxiter : int Maximum number of iterations to perform. disp : bool If True, print convergence message. inexact : bool Accuracy to solve subproblems. If True requires less nonlinear iterations, but more vector products. Only effective for method trust-krylov.\n\nThis function is called by the `minimize` function. It is not supposed to be called directly.\n"
+}

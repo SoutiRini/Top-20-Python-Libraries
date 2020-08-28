@@ -1,0 +1,7 @@
+{
+    "source file": "chart1.py",
+    "line number": "1733",
+    "func name": "demo",
+    "func arg": "(choice, print_times, print_grammar, print_trees, trace, sent, numparses)",
+    "comments": "A demonstration of the chart parsers.\n\n\n"
+}

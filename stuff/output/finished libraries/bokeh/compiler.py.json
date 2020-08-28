@@ -1,0 +1,7 @@
+{
+    "source file": "compiler.py",
+    "line number": "495",
+    "func name": "_bundle_models",
+    "func arg": "(custom_models)",
+    "comments": "Create a JavaScript bundle with selected `models`.\n\n\n"
+}

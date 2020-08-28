@@ -1,0 +1,7 @@
+{
+    "source file": "test_quantized_tensor.py",
+    "line number": "66",
+    "func name": "get_supported_device_types",
+    "func arg": "()",
+    "comments": ""
+}

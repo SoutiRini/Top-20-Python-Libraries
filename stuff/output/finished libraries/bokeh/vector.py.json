@@ -1,0 +1,7 @@
+{
+    "source file": "vector.py",
+    "line number": "9",
+    "func name": "streamlines",
+    "func arg": "(x, y, u, v, density)",
+    "comments": "Return streamlines of a vector flow.\n\n* x and y are 1d arrays defining an *evenly spaced* grid. * u and v are 2d arrays (shape [y,x]) giving velocities. * density controls the closeness of the streamlines.\n"
+}

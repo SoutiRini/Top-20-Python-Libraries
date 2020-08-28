@@ -1,0 +1,7 @@
+{
+    "source file": "batch_norm_benchmark.py",
+    "line number": "117",
+    "func name": "print_difference",
+    "func arg": "(mode, t1, t2)",
+    "comments": "Print the difference in timing between two runs.\n\n\n"
+}

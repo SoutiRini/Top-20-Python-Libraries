@@ -1,0 +1,7 @@
+{
+    "source file": "tile1.py",
+    "line number": "592",
+    "func name": "_infer_precision",
+    "func arg": "(base_precision, bins)",
+    "comments": "Infer an appropriate precision for _round_frac\n\n\n"
+}

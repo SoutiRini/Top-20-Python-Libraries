@@ -1,0 +1,7 @@
+{
+    "source file": "stack_op_test.py",
+    "line number": "34",
+    "func name": "np_split_squeeze",
+    "func arg": "(array, axis)",
+    "comments": ""
+}

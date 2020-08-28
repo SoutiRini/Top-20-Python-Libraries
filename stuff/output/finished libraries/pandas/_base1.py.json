@@ -1,0 +1,7 @@
+{
+    "source file": "_base1.py",
+    "line number": "271",
+    "func name": "read_excel",
+    "func arg": "(io, sheet_name, header, names, index_col, usecols, squeeze, dtype, engine, converters, true_values, false_values, skiprows, nrows, na_values, keep_default_na, verbose, parse_dates, date_parser, thousands, comment, skipfooter, convert_float, mangle_dupe_cols, **kwds)",
+    "comments": ""
+}

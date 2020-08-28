@@ -1,0 +1,7 @@
+{
+    "source file": "expecttest.py",
+    "line number": "99",
+    "func name": "replace_string_literal",
+    "func arg": "(src, lineno, new_string)",
+    "comments": "Replace a triple quoted string literal with new contents. Only handles printable ASCII correctly at the moment.  This will preserve the quote style of the original string, and makes a best effort to preserve raw-ness (unless it is impossible to do so.)\n\n\n##### Returns\n"
+}

@@ -1,0 +1,7 @@
+{
+    "source file": "test_normalize1.py",
+    "line number": "117",
+    "func name": "max_level_test_input_data",
+    "func arg": "()",
+    "comments": "input data to test json_normalize with max_level param\n\n\n"
+}

@@ -1,0 +1,7 @@
+{
+    "source file": "interpreter.py",
+    "line number": "131",
+    "func name": "load_delegate",
+    "func arg": "(library, options)",
+    "comments": "Returns loaded Delegate object.\n\n\n##### Args\n* **library**: Name of shared library containing the\n  [TfLiteDelegate](https\n\n* **options**: Dictionary of options that are required to load the delegate. All\n  keys and values in the dictionary should be convertible to str. Consult\n  the documentation of the specific delegate for required and legal options.\n  (default None)\n\n##### Returns\n"
+}

@@ -1,0 +1,7 @@
+{
+    "source file": "mio5_params.py",
+    "line number": "169",
+    "func name": "_convert_codecs",
+    "func arg": "(template, byte_order)",
+    "comments": "Convert codec template mapping to byte order\n\nSet codecs not on this system to None\n\nParameters ---------- template : mapping key, value are respectively codec name, and root name for codec (without byte order suffix) byte_order : {'<', '>'} code for little or big endian\n##### Returns\n* **codecs **: dict\n   key, value are name, codec (as in .encode(codec))\n\n"
+}

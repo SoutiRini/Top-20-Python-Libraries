@@ -1,0 +1,7 @@
+{
+    "source file": "debug_gradients.py",
+    "line number": "372",
+    "func name": "gradient_values_from_dump",
+    "func arg": "(grad_debugger, x_tensor, dump)",
+    "comments": "Find gradient values from a `DebugDumpDir` object.\n\n\n##### Args\n* **grad_debugger**: the `tf_debug.GradientsDebugger` instance to be used.\n\n* **x_tensor**: (`tf.Tensor`, `tf.Variable` or `str`) The x-tensor object or its\n  name. x-tensor refers to the independent `tf.Tensor`, i.e., the tensor\n  on the denominator of the differentiation.\n\n* **dump**: A `tfdbg.DebugDumpDir` object.\n\n##### Returns\n* **If this `GradientsDebugger` instance has the gradient tensor of `x_tensor`\n  registered**: a list of `numpy.ndarray` representing the value of the\n  gradient tensor from `dump`. The list could be empty, if the gradient\n  tensor is not executed in the `tf.Session.run()` call that generated\n  the `dump`. The list could also contain multiple values of the gradient\n  tensor, e.g., if gradient tensor is computed repeatedly in a\n  `tf.while_loop` during the run that generated the `dump`.\n\n"
+}

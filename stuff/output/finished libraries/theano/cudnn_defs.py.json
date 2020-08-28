@@ -1,0 +1,7 @@
+{
+    "source file": "cudnn_defs.py",
+    "line number": "322",
+    "func name": "get_definitions",
+    "func arg": "(cudnn_version)",
+    "comments": "Return cuDNN definitions to be used by Theano for the given cuDNN version.\n\n``cudnn_version`` must be None or an integer (typically the version returned by :func:`theano.gpuarray.dnn.version`). if None, return definitions for the\n\nmost recent supported cuDNN version.\n"
+}

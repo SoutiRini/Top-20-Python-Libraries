@@ -1,0 +1,7 @@
+{
+    "source file": "update-models-from-caffe2.py",
+    "line number": "199",
+    "func name": "onnx_verify",
+    "func arg": "(onnx_model, inputs, ref_outputs)",
+    "comments": ""
+}

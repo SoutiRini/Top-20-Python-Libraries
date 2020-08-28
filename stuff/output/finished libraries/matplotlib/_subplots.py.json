@@ -1,0 +1,7 @@
+{
+    "source file": "_subplots.py",
+    "line number": "229",
+    "func name": "_picklable_subplot_class_constructor",
+    "func arg": "(axes_class)",
+    "comments": "Stub factory that returns an empty instance of the appropriate subplot class when called with an axes class. This is purely to allow pickling of Axes and Subplots.\n\n\n"
+}

@@ -1,0 +1,7 @@
+{
+    "source file": "model_analyzer1.py",
+    "line number": "385",
+    "func name": "advise",
+    "func arg": "(graph, run_meta, options)",
+    "comments": "Auto profile and advise.\n\nBuilds profiles and automatically check anomalies of various aspects. For more details: https://github.com/tensorflow/tensorflow/tree/master/tensorflow/core/profiler/README.md\n##### Args\n* **graph**: tf.Graph. If None and eager execution is not enabled, use\n    default graph.\n\n* **run_meta**: optional tensorflow.RunMetadata proto. It is necessary to\n    to support run time information profiling, such as time and memory.\n\n* **options**: see ALL_ADVICE example above. Default checks everything.\n\n"
+}

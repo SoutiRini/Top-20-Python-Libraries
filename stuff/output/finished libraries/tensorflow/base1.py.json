@@ -1,0 +1,7 @@
+{
+    "source file": "base1.py",
+    "line number": "501",
+    "func name": "no_automatic_dependency_tracking_scope",
+    "func arg": "(obj)",
+    "comments": "A context that disables automatic dependency tracking when assigning attrs.\n\nObjects that inherit from Autotrackable automatically creates dependencies to trackable objects through attribute assignments, and wraps data structures (lists or dicts) with trackable classes. This scope may be used to temporarily disable this behavior. This works similar to the decorator `no_automatic_dependency_tracking`.\n\nExample usage: ``` model = tf.keras.Model() model.arr1 = []\n\n# Creates a ListWrapper object with no_automatic_dependency_tracking_scope(model): model.arr2 = []\n\n# Creates a regular, untracked python list ```\n##### Args\n* **obj**: A trackable object.\n\n* **elds**: \n\n"
+}

@@ -1,0 +1,7 @@
+{
+    "source file": "constant.py",
+    "line number": "31",
+    "func name": "make_constant_tests",
+    "func arg": "(options)",
+    "comments": "Make a set of tests to do constant ops.\n\n\n"
+}

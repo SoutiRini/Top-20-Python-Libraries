@@ -1,0 +1,7 @@
+{
+    "source file": "timedeltas3.py",
+    "line number": "436",
+    "func name": "timedelta_range",
+    "func arg": "(start, end, periods, freq, name, closed)",
+    "comments": "Return a fixed frequency TimedeltaIndex, with day as the default frequency.\n\nParameters ---------- start : str or timedelta-like, default None Left bound for generating timedeltas. end : str or timedelta-like, default None Right bound for generating timedeltas. periods : int, default None Number of periods to generate. freq : str or DateOffset, default 'D' Frequency strings can have multiples, e.g. '5H'. name : str, default None Name of the resulting TimedeltaIndex. closed : str, default None Make the interval closed with respect to the given frequency to the 'left', 'right', or both sides (None).\n##### Returns\n* **rng **: TimedeltaIndex\n\n* **<https**: //pandas.pydata.org/pandas-docs/stable/user_guide/timeseries.html#offset-aliases>`__.\n\n* **TimedeltaIndex(['1 days 00**: 00\n\n"
+}

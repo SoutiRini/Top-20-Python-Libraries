@@ -1,0 +1,7 @@
+{
+    "source file": "arima_process.py",
+    "line number": "585",
+    "func name": "deconvolve",
+    "func arg": "(num, den, n)",
+    "comments": "Deconvolves divisor out of signal, division of polynomials for n terms\n\ncalculates den^{-1} * num\n\nParameters ---------- num : array_like signal or lag polynomial denom : array_like coefficients of lag polynomial (linear filter) n : None or int number of terms of quotient\n##### Returns\n* **quot **: ndarray\n    quotient or filtered series\n\n* **rem **: ndarray\n    remainder\n\n"
+}

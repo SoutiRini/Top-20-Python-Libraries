@@ -1,0 +1,7 @@
+{
+    "source file": "blas.py",
+    "line number": "1870",
+    "func name": "local_inplace_gpuagemmbatch",
+    "func arg": "(node, inputs)",
+    "comments": ""
+}

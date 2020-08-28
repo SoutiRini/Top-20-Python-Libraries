@@ -1,0 +1,7 @@
+{
+    "source file": "common9.py",
+    "line number": "464",
+    "func name": "get_rename_function",
+    "func arg": "(mapper)",
+    "comments": "Returns a function that will map names/labels, dependent if mapper is a dict, Series or just a function.\n\n\n"
+}

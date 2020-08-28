@@ -1,0 +1,7 @@
+{
+    "source file": "_mean_shift.py",
+    "line number": "192",
+    "func name": "get_bin_seeds",
+    "func arg": "(X, bin_size, min_bin_freq)",
+    "comments": "Finds seeds for mean_shift.\n\nFinds seeds by first binning data onto a grid whose lines are spaced bin_size apart, and then choosing those bins with at least min_bin_freq points.\n\nParameters ----------\n\nX : array-like of shape (n_samples, n_features) Input points, the same points that will be used in mean_shift.\n\nbin_size : float Controls the coarseness of the binning. Smaller values lead to more seeding (which is computationally more expensive). If you're not sure how to set this, set it to the value of the bandwidth used in clustering.mean_shift.\n\nmin_bin_freq : int, default=1 Only bins with at least min_bin_freq will be selected as seeds. Raising this value decreases the number of seeds found, which makes mean_shift computationally cheaper.\n##### Returns\n* **bin_seeds **: array-like of shape (n_samples, n_features)\n    Points used as initial kernel positions in clustering.mean_shift.\n\n"
+}

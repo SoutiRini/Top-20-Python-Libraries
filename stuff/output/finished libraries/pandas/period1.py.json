@@ -1,0 +1,7 @@
+{
+    "source file": "period1.py",
+    "line number": "852",
+    "func name": "period_range",
+    "func arg": "(start, end, periods, freq, name)",
+    "comments": "Return a fixed frequency PeriodIndex.\n\nThe day (calendar) is the default frequency.\n\nParameters ---------- start : str or period-like, default None Left bound for generating periods. end : str or period-like, default None Right bound for generating periods. periods : int, default None Number of periods to generate. freq : str or DateOffset, optional Frequency alias. By default the freq is taken from `start` or `end` if those are Period objects. Otherwise, the default is ``\"D\"`` for daily frequency. name : str, default None Name of the resulting PeriodIndex.\n##### Returns\n* **Of the three parameters**: ``start``, ``end``, and ``periods``, exactly two\n\n* **<https**: //pandas.pydata.org/pandas-docs/stable/user_guide/timeseries.html#offset-aliases>`__.\n\n"
+}

@@ -1,0 +1,7 @@
+{
+    "source file": "configparser.py",
+    "line number": "416",
+    "func name": "BoolParam",
+    "func arg": "(default, is_valid, allow_override)",
+    "comments": ""
+}

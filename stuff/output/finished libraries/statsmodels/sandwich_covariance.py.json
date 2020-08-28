@@ -1,0 +1,7 @@
+{
+    "source file": "sandwich_covariance.py",
+    "line number": "801",
+    "func name": "cov_nw_groupsum",
+    "func arg": "(results, nlags, time, weights_func, use_correction)",
+    "comments": "Driscoll and Kraay Panel robust covariance matrix\n\nRobust covariance matrix for panel data of Driscoll and Kraay.\n\nAssumes we have a panel of time series where the time index is available. The time index is assumed to represent equal spaced periods. At least one observation per period is required.\n\nParameters ---------- results : result instance result of a regression, uses results.model.exog and results.resid TODO: this should use wexog instead nlags : int or None Highest lag to include in kernel window. Currently, no default because the optimal length will depend on the number of observations per cross-sectional unit. time : ndarray of int this should contain the coding for the time period of each observation. time periods should be integers in range(maxT) where maxT is obs of i weights_func : callable weights_func is called with nlags as argument to get the kernel weights. default are Bartlett weights use_correction : 'cluster' or 'hac' or False If False, then no small sample correction is used. If 'hac' (default), then the same correction as in single time series, cov_hac is used. If 'cluster', then the same correction as in cov_cluster is used.\n##### Returns\n* **cov **: ndarray, (k_vars, k_vars)\n    HAC robust covariance matrix for parameter estimates\n\n* **Warning**: \n\n"
+}

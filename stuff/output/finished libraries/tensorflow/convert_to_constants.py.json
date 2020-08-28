@@ -1,0 +1,7 @@
+{
+    "source file": "convert_to_constants.py",
+    "line number": "1113",
+    "func name": "convert_variables_to_constants_from_session_graph",
+    "func arg": "(session, graph_def, output_node_names, variable_names_allowlist, variable_names_blacklist)",
+    "comments": "Replaces all the variables in a graph with constants of the same values.\n\nThis function works similarly to convert_variables_to_constants_v2, but it retrieves the constant values from a Session instead of from a ConcreteFunction. This is useful when converting graphs generated from TensorFlow V1, where ConcreteFunctions are not available. This also differs from graph_util.convert_variables_to_constants in that it supports resource variables when V2 control flow constructions are present.\n##### Args\n* **session**: Active TensorFlow session containing the variables.\n\n* **graph_def**: A GraphDef to convert.\n\n* **output_node_names**: List of name strings for the result nodes of the graph.\n\n* **variable_names_allowlist**: The set of variable names to convert (by default,\n  all variables are converted).\n\n* **variable_names_blacklist**: The set of variable names to omit converting to\n  constants.\n\n##### Returns\n"
+}

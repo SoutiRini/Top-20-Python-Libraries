@@ -1,0 +1,7 @@
+{
+    "source file": "scale.py",
+    "line number": "670",
+    "func name": "_get_scale_docs",
+    "func arg": "()",
+    "comments": "Helper function for generating docstrings related to scales.\n\n\n"
+}

@@ -1,0 +1,7 @@
+{
+    "source file": "function_wrappers.py",
+    "line number": "114",
+    "func name": "with_function_scope",
+    "func arg": "(thunk, scope_name, options)",
+    "comments": "Inline version of the FunctionScope context manager.\n\n\n"
+}

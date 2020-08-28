@@ -1,0 +1,7 @@
+{
+    "source file": "build_framework.py",
+    "line number": "52",
+    "func name": "getXCodeSetting",
+    "func arg": "(var, projectdir)",
+    "comments": ""
+}

@@ -1,0 +1,7 @@
+{
+    "source file": "try_treewalker.py",
+    "line number": "46",
+    "func name": "branch2",
+    "func arg": "(tree)",
+    "comments": "walking a tree bottom-up based on dictionary\n\n\n"
+}

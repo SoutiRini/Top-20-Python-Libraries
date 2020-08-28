@@ -1,0 +1,7 @@
+{
+    "source file": "test_plot_partial_dependence.py",
+    "line number": "498",
+    "func name": "test_plot_partial_dependence_multiclass_error",
+    "func arg": "(pyplot, params, err_msg)",
+    "comments": ""
+}

@@ -1,0 +1,7 @@
+{
+    "source file": "tf_decorator.py",
+    "line number": "200",
+    "func name": "unwrap",
+    "func arg": "(maybe_tf_decorator)",
+    "comments": "Unwraps an object into a list of TFDecorators and a final target.\n\n\n##### Args\n* **maybe_tf_decorator**: Any callable object.\n\n##### Returns\n"
+}

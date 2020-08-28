@@ -1,0 +1,7 @@
+{
+    "source file": "test_system_info.py",
+    "line number": "64",
+    "func name": "have_compiler",
+    "func arg": "()",
+    "comments": "Return True if there appears to be an executable compiler\n\n\n"
+}

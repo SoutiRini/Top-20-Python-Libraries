@@ -1,0 +1,7 @@
+{
+    "source file": "matmul_registrations.py",
+    "line number": "208",
+    "func name": "_matmul_linear_operator_circulant_circulant",
+    "func arg": "(linop_a, linop_b)",
+    "comments": ""
+}

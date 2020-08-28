@@ -1,0 +1,7 @@
+{
+    "source file": "kde_plot4.py",
+    "line number": "8",
+    "func name": "my_kde_bandwidth",
+    "func arg": "(obj, fac)",
+    "comments": "We use Scott's Rule, multiplied by a constant factor.\n\n\n"
+}

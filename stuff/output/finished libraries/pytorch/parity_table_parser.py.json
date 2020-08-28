@@ -1,0 +1,7 @@
+{
+    "source file": "parity_table_parser.py",
+    "line number": "32",
+    "func name": "parse_parity_tracker_table",
+    "func arg": "(file_path)",
+    "comments": ""
+}

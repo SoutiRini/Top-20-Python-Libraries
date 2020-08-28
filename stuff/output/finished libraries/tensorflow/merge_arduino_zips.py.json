@@ -1,0 +1,7 @@
+{
+    "source file": "merge_arduino_zips.py",
+    "line number": "39",
+    "func name": "parse_args",
+    "func arg": "()",
+    "comments": "Converts the raw arguments into accessible flags.\n\n\n"
+}

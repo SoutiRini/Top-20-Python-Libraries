@@ -1,0 +1,7 @@
+{
+    "source file": "inference1.py",
+    "line number": "395",
+    "func name": "is_sequence",
+    "func arg": "(obj)",
+    "comments": "Check if the object is a sequence of objects. String types are not included as sequences here.\n\nParameters ---------- obj : The object to check\n##### Returns\n* **is_sequence **: bool\n    Whether `obj` is a sequence of objects.\n\n"
+}

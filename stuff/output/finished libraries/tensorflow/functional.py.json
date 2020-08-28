@@ -1,0 +1,7 @@
+{
+    "source file": "functional.py",
+    "line number": "1244",
+    "func name": "get_network_config",
+    "func arg": "(network, serialize_layer_fn)",
+    "comments": "Builds the config, which consists of the node graph and serialized layers.\n\n\n##### Args\n* **network**: A Network object.\n\n* **serialize_layer_fn**: Function used to serialize layers.\n\n##### Returns\n"
+}

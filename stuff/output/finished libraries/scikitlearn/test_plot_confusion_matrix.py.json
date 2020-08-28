@@ -1,0 +1,7 @@
+{
+    "source file": "test_plot_confusion_matrix.py",
+    "line number": "308",
+    "func name": "test_default_labels",
+    "func arg": "(pyplot, display_labels, expected_labels)",
+    "comments": ""
+}

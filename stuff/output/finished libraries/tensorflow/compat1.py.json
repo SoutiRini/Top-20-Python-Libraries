@@ -1,0 +1,7 @@
+{
+    "source file": "compat1.py",
+    "line number": "183",
+    "func name": "path_to_bytes",
+    "func arg": "(path)",
+    "comments": "Converts input which is a `PathLike` object to `bytes`.\n\nConverts from any python constant representation of a `PathLike` object or `str` to bytes.\n##### Args\n* **path**: An object that can be converted to path representation.\n\n##### Returns\n* **age**: \n\n"
+}

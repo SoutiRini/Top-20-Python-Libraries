@@ -1,0 +1,7 @@
+{
+    "source file": "timeseries.py",
+    "line number": "202",
+    "func name": "sequences_from_indices",
+    "func arg": "(array, indices_ds, start_index, end_index)",
+    "comments": ""
+}

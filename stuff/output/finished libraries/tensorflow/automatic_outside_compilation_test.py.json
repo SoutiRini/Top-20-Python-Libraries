@@ -1,0 +1,7 @@
+{
+    "source file": "automatic_outside_compilation_test.py",
+    "line number": "133",
+    "func name": "mnist_model",
+    "func arg": "(input_shape)",
+    "comments": "Creates a MNIST model.\n\n\n"
+}

@@ -1,0 +1,7 @@
+{
+    "source file": "opt.py",
+    "line number": "2995",
+    "func name": "check_stack_trace",
+    "func arg": "(f_or_fgraph, ops_to_check, bug_print)",
+    "comments": "This function checks if the outputs of specific ops of a compiled graph have a stack.\n\nParameters ---------- f_or_fgraph: theano.compile.function_module.Function or theano.gof.fg.FunctionGraph The compiled function or the function graph to be analysed. ops_to_check: it can be of four different types:\n\n- classes or instances inheriting from theano.gof.Op\n\n- tuple/list of classes or instances inheriting from theano.gof.Op\n\n- string\n\n- function returning a boolean and taking as input an instance of theano.gof.Op.\n\n- if ops_to_check is a string, it should be either 'last' or 'all'. 'last' will check only the last op of the graph while 'all' will check all the ops of the graph.\n\n- if ops_to_check is an op or a tuple/list of ops, the function will check that all the outputs of their occurrences in the graph have a stack trace.\n\n- if ops_to_check is a function, it should take as input a theano.gof.Op and return a boolean indicating if the input op should be checked or not. bug_print: string belonging to {'raise', 'warn', 'ignore'} You can specify the behaviour of the function when the specified ops_to_check are not in the graph of f_or_fgraph: it can either raise an exception, write a warning or simply ignore it.\n##### Returns\n"
+}

@@ -1,0 +1,7 @@
+{
+    "source file": "lifecycle.py",
+    "line number": "200",
+    "func name": "currency",
+    "func arg": "(x, pos)",
+    "comments": "The two args are the value and tick position\n\n\n"
+}

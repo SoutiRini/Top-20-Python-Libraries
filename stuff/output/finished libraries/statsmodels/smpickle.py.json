@@ -1,0 +1,7 @@
+{
+    "source file": "smpickle.py",
+    "line number": "20",
+    "func name": "load_pickle",
+    "func arg": "(fname)",
+    "comments": "Load a previously saved object\n\n.. warning::\n\nLoading pickled models is not secure against erroneous or maliciously constructed data. Never unpickle data received from an untrusted or unauthenticated source.\n\nParameters ---------- fname : str Filename to unpickle\n\nNotes ----- This method can be used to load *both* models and results.\n"
+}

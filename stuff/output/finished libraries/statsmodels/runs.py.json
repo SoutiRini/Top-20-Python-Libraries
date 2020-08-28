@@ -1,0 +1,7 @@
+{
+    "source file": "runs.py",
+    "line number": "564",
+    "func name": "symmetry_bowker",
+    "func arg": "(table)",
+    "comments": "Test for symmetry of a (k, k) square contingency table\n\nThis is an extension of the McNemar test to test the Null hypothesis that the contingency table is symmetric around the main diagonal, that is\n\nn_{i, j} = n_{j, i}\n\nfor all i, j\n\nParameters ---------- table : array_like, 2d, (k, k) a square contingency table that contains the count for k categories in rows and columns.\n##### Returns\n* **statistic **: float\n    chisquare test statistic\n\n* **p-value **: float\n    p-value of the test statistic based on chisquare distribution\n\n* **df **: int\n    degrees of freedom of the chisquare distribution\n\n"
+}

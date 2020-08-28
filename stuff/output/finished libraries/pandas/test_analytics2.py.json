@@ -1,0 +1,7 @@
+{
+    "source file": "test_analytics2.py",
+    "line number": "229",
+    "func name": "assert_bool_op_api",
+    "func arg": "(opname, bool_frame_with_na, float_string_frame, has_bool_only)",
+    "comments": "Check that API for boolean operator opname works as advertised on frame\n\nParameters ---------- opname : string Name of the operator to test on frame float_frame : DataFrame DataFrame with columns of type float float_string_frame : DataFrame DataFrame with both float and string columns has_bool_only : bool, default False Whether the method \"opname\" has the kwarg \"bool_only\"\n"
+}

@@ -1,0 +1,7 @@
+{
+    "source file": "mkldnn.py",
+    "line number": "182",
+    "func name": "to_mkldnn",
+    "func arg": "(module)",
+    "comments": ""
+}

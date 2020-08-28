@@ -1,0 +1,7 @@
+{
+    "source file": "np_dtypes.py",
+    "line number": "104",
+    "func name": "default_float_type",
+    "func arg": "()",
+    "comments": "Gets the default float type.\n\n\n##### Returns\n"
+}

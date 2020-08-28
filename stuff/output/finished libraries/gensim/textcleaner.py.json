@@ -1,0 +1,7 @@
+{
+    "source file": "textcleaner.py",
+    "line number": "286",
+    "func name": "tokenize_by_word",
+    "func arg": "(text)",
+    "comments": "Tokenize input text. Before tokenizing transforms text to lower case and removes accentuation and acronyms set :const:`~gensim.summarization.textcleaner.AB_ACRONYM_LETTERS`.\n\nParameters ---------- text : str Given text.\n##### Returns\n* **.. sourcecode**: \n\n"
+}

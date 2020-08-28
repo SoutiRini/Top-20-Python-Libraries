@@ -1,0 +1,7 @@
+{
+    "source file": "data.py",
+    "line number": "859",
+    "func name": "_open",
+    "func arg": "(resource_url)",
+    "comments": "Helper function that returns an open file object for a resource, given its resource URL.  If the given resource URL uses the \"nltk:\" protocol, or uses no protocol, then use ``nltk.data.find`` to find its path, and open it with the given mode; if the resource URL uses the 'file' protocol, then open the file with the given mode; otherwise, delegate to ``urllib2.urlopen``.\n\ntype resource_url: str :param resource_url: A URL specifying where the resource should be loaded from.\n\nThe default protocol is \"nltk:\", which searches for the file in the the NLTK data package.\n"
+}

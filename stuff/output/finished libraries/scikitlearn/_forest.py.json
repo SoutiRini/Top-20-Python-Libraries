@@ -1,0 +1,7 @@
+{
+    "source file": "_forest.py",
+    "line number": "459",
+    "func name": "_accumulate_prediction",
+    "func arg": "(predict, X, out, lock)",
+    "comments": "This is a utility function for joblib's Parallel.\n\nIt can't go locally in ForestClassifier or ForestRegressor, because joblib complains that it cannot pickle it when placed there.\n"
+}

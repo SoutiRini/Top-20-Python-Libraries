@@ -1,0 +1,7 @@
+{
+    "source file": "device_spec.py",
+    "line number": "42",
+    "func name": "_as_device_str_or_none",
+    "func arg": "(device_type)",
+    "comments": ""
+}

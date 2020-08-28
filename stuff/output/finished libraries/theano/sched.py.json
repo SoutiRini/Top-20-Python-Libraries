@@ -1,0 +1,7 @@
+{
+    "source file": "sched.py",
+    "line number": "270",
+    "func name": "key_to_cmp",
+    "func arg": "(key)",
+    "comments": "comparator function based on \"key\" function\n\n\n"
+}

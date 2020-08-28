@@ -1,0 +1,7 @@
+{
+    "source file": "records.py",
+    "line number": "955",
+    "func name": "array",
+    "func arg": "(obj, dtype, shape, offset, strides, formats, names, titles, aligned, byteorder, copy)",
+    "comments": "Construct a record array from a wide-variety of objects.\n\nA general-purpose record array constructor that dispatches to the appropriate `recarray` creation function based on the inputs (see Notes).\n\nParameters ---------- obj: any Input object. See Notes for details on how various input types are treated. dtype: data-type, optional Valid dtype for array. shape: int or tuple of ints, optional Shape of each array. offset: int, optional Position in the file or buffer to start reading from. strides: tuple of ints, optional Buffer (`buf`) is interpreted according to these strides (strides define how many bytes each array element, row, column, etc. occupy in memory). formats, names, titles, aligned, byteorder : If `dtype` is ``None``, these arguments are passed to `numpy.format_parser` to construct a dtype. See that function for detailed documentation. copy: bool, optional Whether to copy the input object (True), or to use a reference instead. This option only applies when the input is an ndarray or recarray. Defaults to True.\n##### Returns\n"
+}

@@ -1,0 +1,7 @@
+{
+    "source file": "ex_pandas.py",
+    "line number": "47",
+    "func name": "plot_acf_multiple",
+    "func arg": "(ys, lags)",
+    "comments": "\n\n\n"
+}

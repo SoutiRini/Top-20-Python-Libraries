@@ -1,0 +1,7 @@
+{
+    "source file": "compile_utils.py",
+    "line number": "630",
+    "func name": "apply_mask",
+    "func arg": "(y_p, sw, mask)",
+    "comments": "Applies any mask on predictions to sample weights.\n\n\n"
+}

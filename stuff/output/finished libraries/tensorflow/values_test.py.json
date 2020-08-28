@@ -1,0 +1,7 @@
+{
+    "source file": "values_test.py",
+    "line number": "2137",
+    "func name": "_make_index_slices",
+    "func arg": "(values, indices, dense_shape)",
+    "comments": ""
+}

@@ -1,0 +1,7 @@
+{
+    "source file": "adam_test1.py",
+    "line number": "102",
+    "func name": "get_beta_accumulators",
+    "func arg": "(opt, dtype)",
+    "comments": ""
+}

@@ -1,0 +1,7 @@
+{
+    "source file": "reactor.py",
+    "line number": "81",
+    "func name": "is_asyncio_reactor_installed",
+    "func arg": "()",
+    "comments": ""
+}

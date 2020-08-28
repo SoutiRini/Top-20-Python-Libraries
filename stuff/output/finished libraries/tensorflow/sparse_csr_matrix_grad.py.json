@@ -1,0 +1,7 @@
+{
+    "source file": "sparse_csr_matrix_grad.py",
+    "line number": "226",
+    "func name": "_SparseMatrixMulGrad",
+    "func arg": "(op, grad)",
+    "comments": "Gradient for sparse_matrix_mul op.\n\n\n"
+}

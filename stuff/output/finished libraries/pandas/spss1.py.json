@@ -1,0 +1,7 @@
+{
+    "source file": "spss1.py",
+    "line number": "11",
+    "func name": "read_spss",
+    "func arg": "(path, usecols, convert_categoricals)",
+    "comments": "Load an SPSS file from the file path, returning a DataFrame.\n\n.. versionadded:: 0.25.0\n\nParameters ---------- path : string or Path File path. usecols : list-like, optional Return a subset of the columns. If None, return all columns. convert_categoricals : bool, default is True Convert categorical columns into pd.Categorical.\n##### Returns\n"
+}

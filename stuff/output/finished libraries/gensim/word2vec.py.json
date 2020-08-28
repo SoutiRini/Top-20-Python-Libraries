@@ -1,0 +1,7 @@
+{
+    "source file": "word2vec.py",
+    "line number": "1628",
+    "func name": "_assign_binary_codes",
+    "func arg": "(vocab)",
+    "comments": "Appends a binary code to each vocab term.\n\nParameters ---------- vocab : dict A dictionary of :class:`gensim.models.word2vec.Vocab` objects.\n\nNotes ----- Expects each term to have an .index attribute that contains the order in which the term was added to the vocabulary.\n\nE.g. term.index == 0 means the term was added to the vocab first.\n\nSets the .code and .point attributes of each node. Each code is a numpy.array containing 0s and 1s. Each point is an integer.\n"
+}

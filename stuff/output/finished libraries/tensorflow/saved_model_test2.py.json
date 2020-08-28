@@ -1,0 +1,7 @@
+{
+    "source file": "saved_model_test2.py",
+    "line number": "70",
+    "func name": "_run_signature",
+    "func arg": "(session, meta_graph_def, inputs, signature_key)",
+    "comments": ""
+}

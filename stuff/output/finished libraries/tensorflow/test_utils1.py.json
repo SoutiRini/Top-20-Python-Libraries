@@ -1,0 +1,7 @@
+{
+    "source file": "test_utils1.py",
+    "line number": "71",
+    "func name": "RunWithWarmup",
+    "func arg": "(sess, op_to_run, feed_dict, options, run_metadata)",
+    "comments": "Runs a graph a few times to ensure that its clusters are compiled.\n\n\n"
+}

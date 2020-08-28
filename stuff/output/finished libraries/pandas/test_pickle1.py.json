@@ -1,0 +1,7 @@
+{
+    "source file": "test_pickle1.py",
+    "line number": "482",
+    "func name": "test_pickle_s3url_roundtrip",
+    "func arg": "(monkeypatch, mockurl)",
+    "comments": ""
+}

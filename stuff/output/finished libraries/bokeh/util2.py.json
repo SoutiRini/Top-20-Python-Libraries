@@ -1,0 +1,7 @@
+{
+    "source file": "util2.py",
+    "line number": "65",
+    "func name": "websocket_url_for_server_url",
+    "func arg": "(url)",
+    "comments": "Convert an ``http(s)`` URL for a Bokeh server websocket endpoint into the appropriate ``ws(s)`` URL\n\n\n##### Args\n* **url (str)**: An ``http(s)`` URL\n\n##### Returns\n* **str**: The corresponding ``ws(s)`` URL ending in ``/ws``\n\n"
+}

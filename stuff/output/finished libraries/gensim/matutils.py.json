@@ -1,0 +1,7 @@
+{
+    "source file": "matutils.py",
+    "line number": "1170",
+    "func name": "qr_destroy",
+    "func arg": "(la)",
+    "comments": "Get QR decomposition of `la[0]`.\n\nParameters ---------- la : list of numpy.ndarray Run QR decomposition on the first elements of `la`. Must not be empty.\n##### Returns\n* **(numpy.ndarray, numpy.ndarray)\n    Matrices **: math\n\n"
+}

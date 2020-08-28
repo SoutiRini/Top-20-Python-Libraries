@@ -1,0 +1,7 @@
+{
+    "source file": "tools93.py",
+    "line number": "111",
+    "func name": "validate_basic",
+    "func arg": "(params, length, allow_infnan, title)",
+    "comments": "Validate parameter vector for basic correctness.\n\nParameters ---------- params : array_like Array of parameters to validate. length : int Expected length of the parameter vector. allow_infnan : bool, optional Whether or not to allow `params` to contain -np.Inf, np.Inf, and np.nan. Default is False. title : str, optional Description of the parameters (e.g. \"autoregressive\") to use in error messages.\n##### Returns\n* **params **: ndarray\n    Array of validated parameters.\n\n"
+}

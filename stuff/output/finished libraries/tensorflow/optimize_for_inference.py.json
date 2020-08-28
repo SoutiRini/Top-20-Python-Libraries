@@ -1,0 +1,7 @@
+{
+    "source file": "optimize_for_inference.py",
+    "line number": "110",
+    "func name": "parse_args",
+    "func arg": "()",
+    "comments": "Parses command line arguments.\n\n\n"
+}

@@ -1,0 +1,7 @@
+{
+    "source file": "toco_from_protos_test.py",
+    "line number": "30",
+    "func name": "TensorName",
+    "func arg": "(x)",
+    "comments": "Get the canonical (non foo:0 name).\n\n\n"
+}

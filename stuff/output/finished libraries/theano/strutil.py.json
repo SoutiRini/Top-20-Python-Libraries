@@ -1,0 +1,7 @@
+{
+    "source file": "strutil.py",
+    "line number": "56",
+    "func name": "strip_leading_white_space",
+    "func arg": "(line)",
+    "comments": ""
+}

@@ -1,0 +1,7 @@
+{
+    "source file": "python.py",
+    "line number": "66",
+    "func name": "with_metaclass",
+    "func arg": "(meta)",
+    "comments": "Create a base class with a metaclass.\n\n\n"
+}

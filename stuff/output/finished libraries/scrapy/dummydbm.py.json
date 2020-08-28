@@ -1,0 +1,7 @@
+{
+    "source file": "dummydbm.py",
+    "line number": "17",
+    "func name": "open",
+    "func arg": "(file, flag, mode)",
+    "comments": "Open or create a dummy database compatible.\n\nArguments ``flag`` and ``mode`` are ignored.\n"
+}

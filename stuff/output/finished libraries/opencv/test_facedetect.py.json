@@ -1,0 +1,7 @@
+{
+    "source file": "test_facedetect.py",
+    "line number": "13",
+    "func name": "detect",
+    "func arg": "(img, cascade)",
+    "comments": ""
+}

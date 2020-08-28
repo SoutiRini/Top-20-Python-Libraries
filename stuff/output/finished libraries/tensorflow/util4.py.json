@@ -1,0 +1,7 @@
+{
+    "source file": "util4.py",
+    "line number": "238",
+    "func name": "get_total_loss",
+    "func arg": "(add_regularization_losses, name, scope)",
+    "comments": "Returns a tensor whose value represents the total loss.\n\nIn particular, this adds any losses you have added with `tf.add_loss()` to any regularization losses that have been added by regularization parameters on layers constructors e.g. `tf.layers`. Be very sure to use this if you are constructing a loss_op manually. Otherwise regularization arguments on `tf.layers` methods will not function.\n##### Args\n* **add_regularization_losses**: A boolean indicating whether or not to use the\n  regularization losses in the sum.\n\n* **name**: The name of the returned tensor.\n\n* **scope**: An optional scope name for filtering the losses to return. Note that\n  this filters the losses added with `tf.add_loss()` as well as the\n  regularization losses to that scope.\n\n##### Returns\n"
+}

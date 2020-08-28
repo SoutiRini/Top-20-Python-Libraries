@@ -1,0 +1,7 @@
+{
+    "source file": "auto_mixed_precision_test.py",
+    "line number": "318",
+    "func name": "_example_noninlined_funcdef",
+    "func arg": "(features)",
+    "comments": "Computes the Swish activation function: `x * sigmoid(x)`.\n\n\n"
+}

@@ -1,0 +1,7 @@
+{
+    "source file": "backend_registry.py",
+    "line number": "174",
+    "func name": "_tensorpipe_init_backend_handler",
+    "func arg": "(store, name, rank, world_size, rpc_backend_options)",
+    "comments": ""
+}

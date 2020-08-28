@@ -1,0 +1,7 @@
+{
+    "source file": "tf_should_use.py",
+    "line number": "216",
+    "func name": "should_use_result",
+    "func arg": "(fn, warn_in_eager, error_in_function)",
+    "comments": "Function wrapper that ensures the function's output is used.\n\nIf the output is not used, a `logging.error` is logged.\n\nIf `error_in_function` is set, then a `RuntimeError` will be raised at the end of function tracing if the output is not used by that point.\n\nAn output is marked as used if any of its attributes are read, modified, or updated.\n\nExamples when the output is a `Tensor` include:\n\n- Using it in any capacity (e.g. `y = t + 0`, `sess.run(t)`)\n\n- Accessing a property (e.g. getting `t.name` or `t.op`).\n\n- Calling `t.mark_used()`.\n\nNote, certain behaviors cannot be tracked\n\n- for these the object may not be marked as used.\n\nExamples include:\n\n- `t != 0`.\n\nIn this case, comparison is done on types / ids.\n\n- `isinstance(t, tf.Tensor)`.\n\nSimilar to above.\n##### Args\n* **fn**: The function to wrap.\n\n* **warn_in_eager**: Whether to create warnings in Eager as well.\n\n* **error_in_function**: Whether to raise an error when creating a tf.function.\n\n##### Returns\n"
+}

@@ -1,0 +1,7 @@
+{
+    "source file": "helper82.py",
+    "line number": "99",
+    "func name": "_good_shape",
+    "func arg": "(x, shape, axes)",
+    "comments": "Ensure that shape argument is valid for scipy.fftpack\n\nscipy.fftpack does not support len(shape) < x.ndim when axes is not given.\n"
+}

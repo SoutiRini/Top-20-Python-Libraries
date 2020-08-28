@@ -1,0 +1,7 @@
+{
+    "source file": "lib2def.py",
+    "line number": "96",
+    "func name": "output_def",
+    "func arg": "(dlist, flist, header, file)",
+    "comments": "Outputs the final DEF file to a file defaulting to stdout.\n\noutput_def(dlist, flist, header, file = sys.stdout)\n"
+}

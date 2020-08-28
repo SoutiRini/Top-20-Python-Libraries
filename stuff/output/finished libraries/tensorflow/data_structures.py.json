@@ -1,0 +1,7 @@
+{
+    "source file": "data_structures.py",
+    "line number": "348",
+    "func name": "_py_list_stack",
+    "func arg": "(list_, opts)",
+    "comments": "Overload of list_stack that executes a Python list append.\n\n\n"
+}

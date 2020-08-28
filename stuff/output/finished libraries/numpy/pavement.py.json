@@ -1,0 +1,7 @@
+{
+    "source file": "pavement.py",
+    "line number": "245",
+    "func name": "write_release",
+    "func arg": "(options)",
+    "comments": "Write the README files.\n\nTwo README files are generated from the release notes, one in ``rst`` markup for the general release, the other in ``md`` markup for the github release notes.\n\nParameters ---------- options : Set by ``task`` decorator.\n"
+}

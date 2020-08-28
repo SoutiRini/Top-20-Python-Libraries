@@ -1,0 +1,7 @@
+{
+    "source file": "spfun_stats.py",
+    "line number": "42",
+    "func name": "multigammaln",
+    "func arg": "(a, d)",
+    "comments": "Returns the log of multivariate gamma, also sometimes called the generalized gamma.\n\nParameters ---------- a : ndarray The multivariate gamma is computed for each item of `a`. d : int The dimension of the space of integration.\n##### Returns\n* **res **: ndarray\n    The values of the log multivariate gamma at the given points `a`.\n\n* **.. math**: \n\n* **with the condition **: math\n\n* **scalar**: the integrand only is multivariate, the argument is not (the\n\n"
+}

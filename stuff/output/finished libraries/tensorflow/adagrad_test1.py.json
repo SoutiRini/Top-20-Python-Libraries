@@ -1,0 +1,7 @@
+{
+    "source file": "adagrad_test1.py",
+    "line number": "51",
+    "func name": "sparse_adagrad_update_numpy",
+    "func arg": "(param, accum, gindexs, gvalues, lr, epsilon)",
+    "comments": ""
+}

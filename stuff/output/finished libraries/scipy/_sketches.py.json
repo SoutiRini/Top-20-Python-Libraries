@@ -1,0 +1,7 @@
+{
+    "source file": "_sketches.py",
+    "line number": "55",
+    "func name": "clarkson_woodruff_transform",
+    "func arg": "(input_matrix, sketch_size, seed)",
+    "comments": "\" Applies a Clarkson-Woodruff Transform/sketch to the input matrix.\n\nGiven an input_matrix ``A`` of size ``(n, d)``, compute a matrix ``A'`` of size (sketch_size, d) so that\n\n.. math:: \\|Ax\\| \\approx \\|A'x\\|\n\nwith high probability via the Clarkson-Woodruff Transform, otherwise known as the CountSketch matrix.\n\nParameters ---------- input_matrix: array_like Input matrix, of shape ``(n, d)``. sketch_size: int Number of rows for the sketch. seed : None or int or `numpy.random.RandomState` instance, optional This parameter defines the ``RandomState`` object to use for drawing random variates. If None (or ``np.random``), the global ``np.random`` state is used. If integer, it is used to seed the local ``RandomState`` instance. Default is None.\n##### Returns\n* **A' **: array_like\n    Sketch of the input matrix ``A``, of size ``(sketch_size, d)``.\n\n* **.. math**: \n\n* **This implementation takes advantage of sparsity**: computing\n\n* **Given a big dense matrix ``A``**: \n\n* **regression of **: math\n\n* **>>> SA, Sb = SAb[**: ,\n\n"
+}

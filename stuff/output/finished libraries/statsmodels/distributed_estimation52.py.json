@@ -1,0 +1,7 @@
+{
+    "source file": "distributed_estimation52.py",
+    "line number": "32",
+    "func name": "_endog_gen",
+    "func arg": "(endog, partitions)",
+    "comments": "partitions endog data\n\n\n"
+}

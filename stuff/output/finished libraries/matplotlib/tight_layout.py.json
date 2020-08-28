@@ -1,0 +1,7 @@
+{
+    "source file": "tight_layout.py",
+    "line number": "212",
+    "func name": "get_tight_layout_figure",
+    "func arg": "(fig, axes_list, subplotspec_list, renderer, pad, h_pad, w_pad, rect)",
+    "comments": "Return subplot parameters for tight-layouted-figure with specified padding.\n\nParameters ---------- fig : Figure axes_list : list of Axes subplotspec_list : list of `.SubplotSpec` The subplotspecs of each axes. renderer : renderer pad : float Padding between the figure edge and the edges of subplots, as a fraction of the font size. h_pad, w_pad : float Padding (height/width) between edges of adjacent subplots.\n\nDefaults to *pad*. rect : Tuple[float, float, float, float], optional (left, bottom, right, top) rectangle in normalized figure coordinates that the whole subplots area (including labels) will fit into. Defaults to using the entire figure.\n##### Returns\n"
+}

@@ -1,0 +1,7 @@
+{
+    "source file": "__config__.py",
+    "line number": "15",
+    "func name": "parallel_info",
+    "func arg": "()",
+    "comments": "Returns detailed string with parallelization settings\n\n\n"
+}

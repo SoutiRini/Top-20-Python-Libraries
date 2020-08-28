@@ -1,0 +1,7 @@
+{
+    "source file": "is_mlir_bridge_test_true.py",
+    "line number": "28",
+    "func name": "is_mlir_bridge_enabled",
+    "func arg": "()",
+    "comments": "Returns true to if MLIR bridge should be enabled for tests.\n\n\n"
+}

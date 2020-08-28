@@ -1,0 +1,7 @@
+{
+    "source file": "jit_test.py",
+    "line number": "82",
+    "func name": "MetadataHasXlaRunOp",
+    "func arg": "(run_metadata)",
+    "comments": "Returns true if there are XlaRun kernels in run_metadata's timeline.\n\n\n"
+}

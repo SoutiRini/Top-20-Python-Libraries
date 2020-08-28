@@ -1,0 +1,7 @@
+{
+    "source file": "window_ops_test.py",
+    "line number": "44",
+    "func name": "_scipy_raised_cosine",
+    "func arg": "(length, symmetric, a, b)",
+    "comments": "A simple implementation of a raised cosine window that matches SciPy.\n\nhttps://en.wikipedia.org/wiki/Window_function#Hann_window https://github.com/scipy/scipy/blob/v0.14.0/scipy/signal/windows.py#L615\n##### Args\n* **length**: The window length.\n\n* **symmetric**: Whether to create a symmetric window.\n\n* **a**: The alpha parameter of the raised cosine window.\n\n* **b**: The beta parameter of the raised cosine window.\n\n##### Returns\n"
+}

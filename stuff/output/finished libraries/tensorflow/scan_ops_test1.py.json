@@ -1,0 +1,7 @@
+{
+    "source file": "scan_ops_test1.py",
+    "line number": "44",
+    "func name": "handle_options",
+    "func arg": "(func, x, axis, exclusive, reverse)",
+    "comments": "Adds tf options to numpy scan ops.\n\n\n"
+}

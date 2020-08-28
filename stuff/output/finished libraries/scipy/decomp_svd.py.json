@@ -1,0 +1,7 @@
+{
+    "source file": "decomp_svd.py",
+    "line number": "391",
+    "func name": "subspace_angles",
+    "func arg": "(A, B)",
+    "comments": "Compute the subspace angles between two matrices.\n\nParameters ---------- A : (M, N) array_like The first input array. B : (M, K) array_like The second input array.\n##### Returns\n* **angles **: ndarray, shape (min(N, K),)\n    The subspace angles between the column spaces of `A` and `B` in\n    descending order.\n\n* **.. versionadded**: \n\n* **.. [1] Knyazev A, Argentati M (2002) Principal Angles between Subspaces\n       in an A-Based Scalar Product**: Algorithms and Perturbation\n       Estimates. SIAM J. Sci. Comput. 23\n\n* **the suspace angle to be **: math\n\n* **>>> np.rad2deg(subspace_angles(H[**: ,\n\n* **And the subspace angle of a matrix to itself should be zero**: \n\n* **>>> subspace_angles(H[**: ,\n\n* **The angles between non-orthogonal subspaces are in between these extremes**: \n\n* **>>> np.rad2deg(subspace_angles(x[**: ,\n\n"
+}

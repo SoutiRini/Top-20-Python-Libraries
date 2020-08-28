@@ -1,0 +1,7 @@
+{
+    "source file": "test_california_housing.py",
+    "line number": "30",
+    "func name": "test_pandas_dependency_message",
+    "func arg": "(fetch_california_housing_fxt, hide_available_pandas)",
+    "comments": ""
+}

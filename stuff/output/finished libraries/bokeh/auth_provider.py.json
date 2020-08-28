@@ -1,0 +1,7 @@
+{
+    "source file": "auth_provider.py",
+    "line number": "284",
+    "func name": "probably_relative_url",
+    "func arg": "(url)",
+    "comments": "Return True if a URL is not one of the common absolute URL formats.\n\nArguments: url (str): a URL string\n##### Returns\n"
+}

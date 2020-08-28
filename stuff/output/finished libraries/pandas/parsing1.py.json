@@ -1,0 +1,7 @@
+{
+    "source file": "parsing1.py",
+    "line number": "162",
+    "func name": "tokenize_string",
+    "func arg": "(source)",
+    "comments": "Tokenize a Python source code string.\n\nParameters ---------- source : str The Python source code string.\n##### Returns\n* **tok_generator **: Iterator[Tuple[int, str]]\n    An iterator yielding all tokens with only toknum and tokval (Tuple[ing, str]).\n\n"
+}

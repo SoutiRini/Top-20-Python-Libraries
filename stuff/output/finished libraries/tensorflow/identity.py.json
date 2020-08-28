@@ -1,0 +1,7 @@
+{
+    "source file": "identity.py",
+    "line number": "29",
+    "func name": "make_identity_tests",
+    "func arg": "(options)",
+    "comments": "Make a set of tests to do identity.\n\n\n"
+}

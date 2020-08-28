@@ -1,0 +1,7 @@
+{
+    "source file": "textbox.py",
+    "line number": "28",
+    "func name": "submit",
+    "func arg": "(expression)",
+    "comments": "Update the plotted function to the new math *expression*.\n\n*expression* is a string using \"t\" as its independent variable, e.g. \"t ** 3\".\n"
+}

@@ -1,0 +1,7 @@
+{
+    "source file": "build.py",
+    "line number": "150",
+    "func name": "update_hash_manifest",
+    "func arg": "(config, system)",
+    "comments": ""
+}

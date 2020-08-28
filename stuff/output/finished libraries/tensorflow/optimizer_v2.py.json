@@ -1,0 +1,7 @@
+{
+    "source file": "optimizer_v2.py",
+    "line number": "1308",
+    "func name": "_get_slot_key_from_var",
+    "func arg": "(var, slot_name)",
+    "comments": "Get the slot key for the variable: var_name/slot_name.\n\n\n"
+}

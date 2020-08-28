@@ -1,0 +1,7 @@
+{
+    "source file": "vocabulary.py",
+    "line number": "34",
+    "func name": "_string_lookup",
+    "func arg": "(word, vocab)",
+    "comments": "Looks up one word in the vocabulary.\n\n\n"
+}

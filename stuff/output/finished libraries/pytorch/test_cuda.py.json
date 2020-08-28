@@ -1,0 +1,7 @@
+{
+    "source file": "test_cuda.py",
+    "line number": "81",
+    "func name": "get_cycles_per_ms",
+    "func arg": "()",
+    "comments": "Approximate number of cycles per millisecond for torch.cuda._sleep\n\n\n"
+}

@@ -1,0 +1,7 @@
+{
+    "source file": "framework.py",
+    "line number": "119",
+    "func name": "_check_type",
+    "func arg": "(obj, expected_types)",
+    "comments": "Check if an object is of the expected type.\n\n\n##### Args\n* **obj**: The object being checked.\n\n* **expected_types**: (`type` or an iterable of `type`s) The expected `type`(s)\n  of obj.\n\n"
+}

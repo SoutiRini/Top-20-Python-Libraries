@@ -1,0 +1,7 @@
+{
+    "source file": "ctc_decoder_ops_test.py",
+    "line number": "41",
+    "func name": "flatten",
+    "func arg": "(list_of_lists)",
+    "comments": "Flatten one level of nesting.\n\n\n"
+}

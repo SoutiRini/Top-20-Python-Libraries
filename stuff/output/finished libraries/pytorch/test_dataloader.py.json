@@ -1,0 +1,7 @@
+{
+    "source file": "test_dataloader.py",
+    "line number": "2015",
+    "func name": "worker_set_affinity",
+    "func arg": "(_)",
+    "comments": ""
+}

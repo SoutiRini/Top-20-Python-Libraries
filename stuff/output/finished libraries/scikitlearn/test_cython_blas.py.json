@@ -1,0 +1,7 @@
+{
+    "source file": "test_cython_blas.py",
+    "line number": "214",
+    "func name": "test_gemm",
+    "func arg": "(dtype, opA, transA, opB, transB, order)",
+    "comments": ""
+}

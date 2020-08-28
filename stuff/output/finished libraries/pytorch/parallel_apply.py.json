@@ -1,0 +1,7 @@
+{
+    "source file": "parallel_apply.py",
+    "line number": "22",
+    "func name": "parallel_apply",
+    "func arg": "(modules, inputs, kwargs_tup, devices)",
+    "comments": "Applies each `module` in :attr:`modules` in parallel on arguments contained in :attr:`inputs` (positional) and :attr:`kwargs_tup` (keyword) on each of :attr:`devices`.\n\n\n##### Args\n* **modules (Module)**: modules to be parallelized\n\n* **inputs (tensor)**: inputs to the modules\n\n* **devices (list of int or torch.device)**: CUDA devices\n\n* **r**: `devices` (if given) should all have same length. Moreover, each\n\n* **ent of **: attr\n\n"
+}

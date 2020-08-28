@@ -1,0 +1,7 @@
+{
+    "source file": "scatter_nd.py",
+    "line number": "28",
+    "func name": "make_scatter_nd_tests",
+    "func arg": "(options)",
+    "comments": "Make a set of tests to do scatter_nd.\n\n\n"
+}

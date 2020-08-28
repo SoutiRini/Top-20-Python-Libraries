@@ -1,0 +1,7 @@
+{
+    "source file": "WalImageFile.py",
+    "line number": "32",
+    "func name": "open",
+    "func arg": "(filename)",
+    "comments": "Load texture from a Quake2 WAL texture file.\n\nBy default, a Quake2 standard palette is attached to the texture. To override the palette, use the :py:func:`PIL.Image.Image.putpalette()` method.\n\n:param filename: WAL file name, or an opened file handle. :returns: An image instance.\n"
+}

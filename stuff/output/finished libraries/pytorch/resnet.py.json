@@ -1,0 +1,7 @@
+{
+    "source file": "resnet.py",
+    "line number": "405",
+    "func name": "create_resnet50",
+    "func arg": "(model, data, num_input_channels, num_labels, label, is_test, no_loss, no_bias, conv1_kernel, conv1_stride, final_avg_kernel)",
+    "comments": ""
+}

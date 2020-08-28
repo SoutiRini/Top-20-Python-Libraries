@@ -1,0 +1,7 @@
+{
+    "source file": "test_linesearch.py",
+    "line number": "46",
+    "func name": "assert_fp_equal",
+    "func arg": "(x, y, err_msg, nulp)",
+    "comments": "Assert two arrays are equal, up to some floating-point rounding error\n\n\n"
+}

@@ -1,0 +1,7 @@
+{
+    "source file": "bijector_test_util.py",
+    "line number": "163",
+    "func name": "assert_bijective_and_finite",
+    "func arg": "(bijector, x, y, event_ndims, atol, rtol, sess)",
+    "comments": "Assert that forward/inverse (along with jacobians) are inverses and finite.\n\nIt is recommended to use x and y values that are very very close to the edge of the Bijector's domain.\n##### Args\n* **bijector**: A Bijector instance.\n\n* **x**: np.array of values in the domain of bijector.forward.\n\n* **y**: np.array of values in the domain of bijector.inverse.\n\n* **event_ndims**: Integer describing the number of event dimensions this bijector\n  operates on.\n\n* **atol**: Absolute tolerance.\n\n* **rtol**: Relative tolerance.\n\n* **sess**: TensorFlow session.  Defaults to the default session.\n\n"
+}

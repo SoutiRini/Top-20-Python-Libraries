@@ -1,0 +1,7 @@
+{
+    "source file": "common_device_type.py",
+    "line number": "683",
+    "func name": "skipCUDAIfNoCudnn",
+    "func arg": "(fn)",
+    "comments": ""
+}

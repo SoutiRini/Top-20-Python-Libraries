@@ -1,0 +1,7 @@
+{
+    "source file": "execute.py",
+    "line number": "287",
+    "func name": "args_to_mixed_eager_tensors",
+    "func arg": "(lists, ctx)",
+    "comments": "Converts a list of same-length lists of values to eager tensors.\n\n\n"
+}

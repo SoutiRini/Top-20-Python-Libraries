@@ -1,0 +1,7 @@
+{
+    "source file": "_backend3.py",
+    "line number": "151",
+    "func name": "skip_backend",
+    "func arg": "(backend)",
+    "comments": "Context manager to skip a backend within a fixed scope.\n\nWithin the context of a ``with`` statement, the given backend will not be called. This covers backends registered both locally and globally. Upon exit, the backend will again be considered.\n\nParameters ---------- backend: {object, 'scipy'} The backend to skip. Can either be a ``str`` containing the name of a known backend {'scipy'} or an object that implements the uarray protocol.\n\nExamples -------- >>> import scipy.fft as fft >>> fft.fft([1])\n\n# Calls default SciPy backend array([1.+0.j]) >>> with fft.skip_backend('scipy'):\n\n# We explicitly skip the SciPy backend ...\n\n\n\n fft.fft([1])\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n # leaving no implementation available Traceback (most recent call last): ... BackendNotImplementedError: No selected backends had an implementation ...\n"
+}

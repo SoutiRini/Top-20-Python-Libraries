@@ -1,0 +1,7 @@
+{
+    "source file": "fully_connected_fp16_test.py",
+    "line number": "16",
+    "func name": "mse",
+    "func arg": "(x, xh)",
+    "comments": ""
+}

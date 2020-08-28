@@ -1,0 +1,7 @@
+{
+    "source file": "api1.py",
+    "line number": "284",
+    "func name": "all_indexes_same",
+    "func arg": "(indexes)",
+    "comments": "Determine if all indexes contain the same elements.\n\nParameters ---------- indexes : list of Index objects\n##### Returns\n"
+}

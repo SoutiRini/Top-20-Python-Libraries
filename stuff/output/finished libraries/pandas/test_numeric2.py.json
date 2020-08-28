@@ -1,0 +1,7 @@
+{
+    "source file": "test_numeric2.py",
+    "line number": "618",
+    "func name": "test_non_coerce_uint64_conflict",
+    "func arg": "(errors, exp)",
+    "comments": ""
+}

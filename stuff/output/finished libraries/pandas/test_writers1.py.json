@@ -1,0 +1,7 @@
+{
+    "source file": "test_writers1.py",
+    "line number": "35",
+    "func name": "set_engine",
+    "func arg": "(engine, ext)",
+    "comments": "Fixture to set engine for use in each test case.\n\nRather than requiring `engine=...` to be provided explicitly as an argument in each test, this fixture sets a global option to dictate which engine should be used to write Excel files. After executing the test it rolls back said change to the global option.\n"
+}

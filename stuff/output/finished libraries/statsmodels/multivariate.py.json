@@ -1,0 +1,7 @@
+{
+    "source file": "multivariate.py",
+    "line number": "88",
+    "func name": "multivariate_t_rvs",
+    "func arg": "(m, S, df, n)",
+    "comments": "generate random variables of multivariate t distribution\n\nParameters ---------- m : array_like mean of random variable, length determines dimension of random variable S : array_like square array of covariance\n\nmatrix df : int or float degrees of freedom n : int number of observations, return random array will be (n, len(m))\n##### Returns\n* **rvs **: ndarray, (n, len(m))\n    each row is an independent draw of a multivariate t distributed\n    random variable\n\n"
+}

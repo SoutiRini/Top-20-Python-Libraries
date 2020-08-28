@@ -1,0 +1,7 @@
+{
+    "source file": "test_statstools.py",
+    "line number": "167",
+    "func name": "test_durbin_watson_pandas",
+    "func arg": "(reset_randomstate)",
+    "comments": ""
+}

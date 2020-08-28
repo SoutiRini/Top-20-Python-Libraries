@@ -1,0 +1,7 @@
+{
+    "source file": "test_validation.py",
+    "line number": "174",
+    "func name": "test_silence_remove_warning_that_is_not_in_silencers_is_ok",
+    "func arg": "(mock_warn, mock_error)",
+    "comments": ""
+}

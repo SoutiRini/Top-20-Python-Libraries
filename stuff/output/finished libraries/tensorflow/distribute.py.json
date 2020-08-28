@@ -1,0 +1,7 @@
+{
+    "source file": "distribute.py",
+    "line number": "132",
+    "func name": "replicate",
+    "func arg": "(dataset, devices)",
+    "comments": "A transformation that replicates `dataset` onto a list of devices.\n\n\n##### Args\n* **dataset**: A `tf.data.Dataset` object.\n\n* **devices**: A list of devices to replicate the dataset on.\n\n##### Returns\n"
+}

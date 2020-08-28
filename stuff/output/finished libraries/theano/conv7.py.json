@@ -1,0 +1,7 @@
+{
+    "source file": "conv7.py",
+    "line number": "21",
+    "func name": "conv2d",
+    "func arg": "(input, filters, image_shape, filter_shape, border_mode, subsample, **kargs)",
+    "comments": "signal.conv.conv2d performs a basic 2D convolution of the input with the given filters. The input parameter can be a single 2D image or a 3D tensor, containing a set of images. Similarly, filters can be a single 2D filter or a 3D tensor, corresponding to a set of 2D filters.\n\nShape parameters are optional and will result in faster execution.\n\nParameters ---------- input\n\n : Symbolic theano tensor for images to be filtered. Dimensions: ([num_images], image height, image width) filters : Symbolic theano tensor for convolution filter(s). Dimensions: ([num_filters], filter height, filter width) border_mode: {'valid', 'full'} See scipy.signal.convolve2d. subsample Factor by which to subsample output. image_shape : tuple of length 2 or 3 ([num_images,] image height, image width). filter_shape : tuple of length 2 or 3 ([num_filters,] filter height, filter width). kwargs See theano.tensor.nnet.conv.conv2d.\n##### Returns\n"
+}

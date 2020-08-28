@@ -1,0 +1,7 @@
+{
+    "source file": "deprecate.py",
+    "line number": "146",
+    "func name": "method_is_overridden",
+    "func arg": "(subclass, base_class, method_name)",
+    "comments": "Return True if a method named ``method_name`` of a ``base_class`` is overridden in a ``subclass``.\n\n>>> class Base: ...\n\n\n\n def foo(self): ...\n\n\n\n\n\n\n\n pass >>> class Sub1(Base): ...\n\n\n\n pass >>> class Sub2(Base): ...\n\n\n\n def foo(self): ...\n\n\n\n\n\n\n\n pass >>> class Sub3(Sub1): ...\n\n\n\n def foo(self): ...\n\n\n\n\n\n\n\n pass >>> class Sub4(Sub2): ...\n\n\n\n pass >>> method_is_overridden(Sub1, Base, 'foo') False >>> method_is_overridden(Sub2, Base, 'foo') True >>> method_is_overridden(Sub3, Base, 'foo') True >>> method_is_overridden(Sub4, Base, 'foo') True\n"
+}

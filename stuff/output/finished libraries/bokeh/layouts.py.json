@@ -1,0 +1,7 @@
+{
+    "source file": "layouts.py",
+    "line number": "599",
+    "func name": "_chunks",
+    "func arg": "(l, ncols)",
+    "comments": "Yield successive n-sized chunks from list, l.\n\n\n"
+}

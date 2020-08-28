@@ -1,0 +1,7 @@
+{
+    "source file": "_testing.py",
+    "line number": "140",
+    "func name": "check_predict_types",
+    "func arg": "(results)",
+    "comments": "Check that the `predict` method of the given results object produces the correct output type.\n\nParameters ---------- results : Results\n"
+}

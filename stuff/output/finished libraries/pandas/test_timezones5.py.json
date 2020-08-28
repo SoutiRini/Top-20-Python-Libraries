@@ -1,0 +1,7 @@
+{
+    "source file": "test_timezones5.py",
+    "line number": "97",
+    "func name": "test_infer_tz_mismatch",
+    "func arg": "(infer_setup, ordered)",
+    "comments": ""
+}

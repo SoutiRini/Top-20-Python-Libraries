@@ -1,0 +1,7 @@
+{
+    "source file": "contrast_tools.py",
+    "line number": "418",
+    "func name": "groupmean_d",
+    "func arg": "(x, d)",
+    "comments": "groupmeans using dummy variables\n\nParameters ---------- x : array_like, ndim data array, tested for 1,2 and 3 dimensions d : ndarray, 1d dummy variable, needs to have the same length as x in axis 0.\n##### Returns\n* **groupmeans **: ndarray, ndim-1\n    means for each group along axis 0, the levels\n    of the groups are the last axis\n\n"
+}

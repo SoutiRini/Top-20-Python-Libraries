@@ -1,0 +1,7 @@
+{
+    "source file": "stackplot_demo.py",
+    "line number": "52",
+    "func name": "gaussian_mixture",
+    "func arg": "(x, n)",
+    "comments": "Return a random mixture of *n* Gaussians, evaluated at positions *x*.\n\n\n"
+}

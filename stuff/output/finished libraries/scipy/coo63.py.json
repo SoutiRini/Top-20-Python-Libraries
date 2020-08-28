@@ -1,0 +1,7 @@
+{
+    "source file": "coo63.py",
+    "line number": "595",
+    "func name": "isspmatrix_coo",
+    "func arg": "(x)",
+    "comments": "Is x of coo_matrix type?\n\nParameters ---------- x object to check for being a coo matrix\n##### Returns\n"
+}

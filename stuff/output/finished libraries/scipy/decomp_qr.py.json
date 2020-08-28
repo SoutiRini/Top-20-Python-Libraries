@@ -1,0 +1,7 @@
+{
+    "source file": "decomp_qr.py",
+    "line number": "323",
+    "func name": "rq",
+    "func arg": "(a, overwrite_a, lwork, mode, check_finite)",
+    "comments": "Compute RQ decomposition of a matrix.\n\nCalculate the decomposition ``A = R Q`` where Q is unitary/orthogonal and R upper triangular.\n\nParameters ---------- a : (M, N) array_like Matrix to be decomposed overwrite_a : bool, optional Whether data in a is overwritten (may improve performance) lwork : int, optional Work array size, lwork >= a.shape[1]. If None or -1, an optimal size is computed. mode : {'full', 'r', 'economic'}, optional Determines what information is to be returned: either both Q and R ('full', default), only R ('r') or both Q and R but computed in economy-size ('economic', see Notes). check_finite : bool, optional Whether to check that the input matrix contains only finite numbers. Disabling may give a performance gain, but may result in problems (crashes, non-termination) if the inputs do contain infinities or NaNs.\n##### Returns\n* **R **: float or complex ndarray\n    Of shape (M, N) or (M, K) for ``mode='economic'``. ``K = min(M, N)``.\n\n* **Q **: float or complex ndarray\n    Of shape (N, N) or (K, N) for ``mode='economic'``. Not returned\n    if ``mode='r'``.\n\n"
+}

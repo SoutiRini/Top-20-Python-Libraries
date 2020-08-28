@@ -1,0 +1,7 @@
+{
+    "source file": "console1.py",
+    "line number": "77",
+    "func name": "in_ipython_frontend",
+    "func arg": "()",
+    "comments": "Check if we're inside an an IPython zmq frontend.\n\n\n##### Returns\n"
+}

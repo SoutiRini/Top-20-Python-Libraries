@@ -1,0 +1,7 @@
+{
+    "source file": "utils2.py",
+    "line number": "138",
+    "func name": "request",
+    "func arg": "(method, url, **kwargs)",
+    "comments": "Central place to make any api v2 api request.\n\nparam (str) method: The request method ('get', 'put', 'delete', ...). :param (str) url: The full api url to make the request to. :param kwargs: These are passed along (but possibly mutated) to requests. :return: (requests.Response) The response directly from requests.\n"
+}

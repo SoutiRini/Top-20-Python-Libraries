@@ -1,0 +1,7 @@
+{
+    "source file": "common3.py",
+    "line number": "44",
+    "func name": "assert_invalid_comparison",
+    "func arg": "(left, right, box)",
+    "comments": "Assert that comparison operations with mismatched types behave correctly.\n\nParameters ---------- left : np.ndarray, ExtensionArray, Index, or Series right : object box : {pd.DataFrame, pd.Series, pd.Index, tm.to_array}\n"
+}

@@ -1,0 +1,7 @@
+{
+    "source file": "hist1.py",
+    "line number": "344",
+    "func name": "hist_frame",
+    "func arg": "(data, column, by, grid, xlabelsize, xrot, ylabelsize, yrot, ax, sharex, sharey, figsize, layout, bins, **kwds)",
+    "comments": ""
+}

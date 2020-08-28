@@ -1,0 +1,7 @@
+{
+    "source file": "test_fontconfig_pattern.py",
+    "line number": "47",
+    "func name": "test_fontconfig_str",
+    "func arg": "()",
+    "comments": "Test FontProperties string conversions for correctness.\n\n\n"
+}

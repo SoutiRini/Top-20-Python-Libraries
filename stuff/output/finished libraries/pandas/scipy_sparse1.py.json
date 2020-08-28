@@ -1,0 +1,7 @@
+{
+    "source file": "scipy_sparse1.py",
+    "line number": "115",
+    "func name": "_coo_to_sparse_series",
+    "func arg": "(A, dense_index)",
+    "comments": "Convert a scipy.sparse.coo_matrix to a SparseSeries.\n\nParameters ---------- A : scipy.sparse.coo.coo_matrix dense_index : bool, default False\n##### Returns\n"
+}

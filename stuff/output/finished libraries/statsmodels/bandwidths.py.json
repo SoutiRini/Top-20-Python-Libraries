@@ -1,0 +1,7 @@
+{
+    "source file": "bandwidths.py",
+    "line number": "153",
+    "func name": "select_bandwidth",
+    "func arg": "(x, bw, kernel)",
+    "comments": "Selects bandwidth for a selection rule bw\n\nthis is a wrapper around existing bandwidth selection rules\n\nParameters ---------- x : array_like Array for which to get the bandwidth bw : str name of bandwidth selection rule, currently supported are: %s kernel : not used yet\n##### Returns\n* **bw **: float\n    The estimate of the bandwidth\n\n"
+}

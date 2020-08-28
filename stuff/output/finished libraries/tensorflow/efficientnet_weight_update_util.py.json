@@ -1,0 +1,7 @@
+{
+    "source file": "efficientnet_weight_update_util.py",
+    "line number": "300",
+    "func name": "check_match",
+    "func arg": "(keras_block, tf_block, keras_weight_names, tf_weight_names, model_name_tf)",
+    "comments": "Check if the weights in h5 and ckpt match.\n\nwe match each name from keras_weight_names that is in keras_block and check if there is 1-1 correspondence to names from tf_weight_names that is in tf_block\n##### Args\n* **keras_block**: str, the block name for keras implementation (e.g. 'block1a')\n\n* **tf_block**: str, the block name for tf implementation (e.g. 'blocks_0')\n\n* **keras_weight_names**: list of str, weight names in keras implementation\n\n* **tf_weight_names**: list of str, weight names in tf implementation\n\n* **model_name_tf**: str, the name of model in ckpt.\n\n"
+}

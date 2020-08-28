@@ -1,0 +1,7 @@
+{
+    "source file": "load_v1_in_v2.py",
+    "line number": "260",
+    "func name": "load",
+    "func arg": "(export_dir, tags)",
+    "comments": "Load a v1-style SavedModel as an object.\n\n\n"
+}

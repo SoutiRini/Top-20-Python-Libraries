@@ -1,0 +1,7 @@
+{
+    "source file": "custom_training_loop_gradient_test.py",
+    "line number": "34",
+    "func name": "get_dataset_from_tensor_slices",
+    "func arg": "(inp_array)",
+    "comments": ""
+}

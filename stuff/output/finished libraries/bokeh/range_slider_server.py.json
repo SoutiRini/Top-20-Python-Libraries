@@ -1,0 +1,7 @@
+{
+    "source file": "range_slider_server.py",
+    "line number": "23",
+    "func name": "slider_change",
+    "func arg": "(attr, old, new)",
+    "comments": ""
+}

@@ -1,0 +1,7 @@
+{
+    "source file": "backprop_util.py",
+    "line number": "25",
+    "func name": "IsTrainable",
+    "func arg": "(tensor_or_dtype)",
+    "comments": ""
+}

@@ -1,0 +1,7 @@
+{
+    "source file": "optimizer61.py",
+    "line number": "1953",
+    "func name": "build_rms_prop",
+    "func arg": "(model, base_learning_rate, max_gradient_norm, allow_lr_injection, **kwargs)",
+    "comments": ""
+}

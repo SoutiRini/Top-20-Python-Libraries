@@ -1,0 +1,7 @@
+{
+    "source file": "conf20.py",
+    "line number": "371",
+    "func name": "patched_make_field",
+    "func arg": "(types, domain, items, **kw)",
+    "comments": ""
+}

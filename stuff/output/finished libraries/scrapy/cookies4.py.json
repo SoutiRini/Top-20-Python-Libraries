@@ -1,0 +1,7 @@
+{
+    "source file": "cookies4.py",
+    "line number": "84",
+    "func name": "potential_domain_matches",
+    "func arg": "(domain)",
+    "comments": "Potential domain matches for a cookie\n\n>>> potential_domain_matches('www.example.com') ['www.example.com', 'example.com', '.www.example.com', '.example.com']\n"
+}

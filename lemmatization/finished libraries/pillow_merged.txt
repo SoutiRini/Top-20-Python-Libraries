@@ -1,0 +1,1309 @@
+{}{
+    "source file": "_binary.py",
+    "line number": "91",
+    "func name": "o32be",
+    "func arg": "(i)",
+    "comments": ""
+}{}{
+    "source file": "_util.py",
+    "line number": "21",
+    "func name": "isDirectory",
+    "func arg": "(f)",
+    "comments": ""
+}{}{}{
+    "source file": "BdfFontFile.py",
+    "line number": "39",
+    "func name": "bdf_char",
+    "func arg": "(f)",
+    "comments": ""
+}{
+    "source file": "bench_cffi_access.py",
+    "line number": "43",
+    "func name": "test_direct",
+    "func arg": "()",
+    "comments": ""
+}{
+    "source file": "BlpImagePlugin.py",
+    "line number": "160",
+    "func name": "decode_dxt5",
+    "func arg": "(data)",
+    "comments": "input: one \"row\" of data (i.e. will produce 4 * width pixels)\n\n\n"
+}{
+    "source file": "BmpImagePlugin.py",
+    "line number": "304",
+    "func name": "_save",
+    "func arg": "(im, fp, filename, bitmap_header)",
+    "comments": ""
+}{
+    "source file": "BufrStubImagePlugin.py",
+    "line number": "61",
+    "func name": "_save",
+    "func arg": "(im, fp, filename)",
+    "comments": ""
+}{
+    "source file": "build_prepare.py",
+    "line number": "454",
+    "func name": "build_pillow",
+    "func arg": "()",
+    "comments": ""
+}{}{
+    "source file": "check_fli_overflow.py",
+    "line number": "6",
+    "func name": "test_fli_overflow",
+    "func arg": "()",
+    "comments": ""
+}{}{
+    "source file": "check_imaging_leaks.py",
+    "line number": "37",
+    "func name": "test_leak_getlist",
+    "func arg": "()",
+    "comments": ""
+}{}{
+    "source file": "check_j2k_leaks.py",
+    "line number": "30",
+    "func name": "test_leak_save",
+    "func arg": "()",
+    "comments": ""
+}{
+    "source file": "check_j2k_overflow.py",
+    "line number": "5",
+    "func name": "test_j2k_overflow",
+    "func arg": "(tmp_path)",
+    "comments": ""
+}{}{
+    "source file": "check_jpeg_leaks.py",
+    "line number": "184",
+    "func name": "test_base_save",
+    "func arg": "()",
+    "comments": "base case: MB 20.99^           :::::         :::::::::::::::::::::::::::::::::::::::::::@::: |         ##: : ::::::@::::::: :::: :::: : : : : : : :::::::::::: :::@::: |         # : : :: :: @:: :::: :::: :::: : : : : : : :::::::::::: :::@::: |         # : : :: :: @:: :::: :::: :::: : : : : : : :::::::::::: :::@::: |         # : : :: :: @:: :::: :::: :::: : : : : : : :::::::::::: :::@::: |       @@# : : :: :: @:: :::: :::: :::: : : : : : : :::::::::::: :::@::: |       @ # : : :: :: @:: :::: :::: :::: : : : : : : :::::::::::: :::@::: |       @ # : : :: :: @:: :::: :::: :::: : : : : : : :::::::::::: :::@::: |     @@@ # : : :: :: @:: :::: :::: :::: : : : : : : :::::::::::: :::@::: |     @ @ # : : :: :: @:: :::: :::: :::: : : : : : : :::::::::::: :::@::: |    @@ @ # : : :: :: @:: :::: :::: :::: : : : : : : :::::::::::: :::@::: |    @@ @ # : : :: :: @:: :::: :::: :::: : : : : : : :::::::::::: :::@::: |    @@ @ # : : :: :: @:: :::: :::: :::: : : : : : : :::::::::::: :::@::: |    @@ @ # : : :: :: @:: :::: :::: :::: : : : : : : :::::::::::: :::@::: |    @@ @ # : : :: :: @:: :::: :::: :::: : : : : : : :::::::::::: :::@::: | :@@@@ @ # : : :: :: @:: :::: :::: :::: : : : : : : :::::::::::: :::@::: | :@ @@ @ # : : :: :: @:: :::: :::: :::: : : : : : : :::::::::::: :::@::: | :@ @@ @ # : : :: :: @:: :::: :::: :::: : : : : : : :::::::::::: :::@::: | :@ @@ @ # : : :: :: @:: :::: :::: :::: : : : : : : :::::::::::: :::@::: | :@ @@ @ # : : :: :: @:: :::: :::: :::: : : : : : : :::::::::::: :::@::: 0 +----------------------------------------------------------------------->Gi 0                                                                   7.882\n\n\n"
+}{
+    "source file": "check_large_memory_numpy.py",
+    "line number": "37",
+    "func name": "test_2gpx",
+    "func arg": "(tmp_path)",
+    "comments": "failed prepatch\n\n\n"
+}{
+    "source file": "check_large_memory.py",
+    "line number": "45",
+    "func name": "test_size_greater_than_int",
+    "func arg": "()",
+    "comments": ""
+}{
+    "source file": "check_libtiff_segfault.py",
+    "line number": "7",
+    "func name": "test_libtiff_segfault",
+    "func arg": "()",
+    "comments": "This test should not segfault. It will on Pillow <= 3.1.0 and libtiff >= 4.0.0\n\n\n"
+}{
+    "source file": "check_png_dos.py",
+    "line number": "38",
+    "func name": "test_dos_total_memory",
+    "func arg": "()",
+    "comments": ""
+}{}{
+    "source file": "conf.py",
+    "line number": "315",
+    "func name": "setup",
+    "func arg": "(app)",
+    "comments": ""
+}{}{
+    "source file": "conftest1.py",
+    "line number": "4",
+    "func name": "pytest_report_header",
+    "func arg": "(config)",
+    "comments": ""
+}{}{}{
+    "source file": "CurImagePlugin.py",
+    "line number": "25",
+    "func name": "_accept",
+    "func arg": "(prefix)",
+    "comments": ""
+}{
+    "source file": "DcxImagePlugin.py",
+    "line number": "31",
+    "func name": "_accept",
+    "func arg": "(prefix)",
+    "comments": ""
+}{
+    "source file": "DdsImagePlugin.py",
+    "line number": "272",
+    "func name": "_validate",
+    "func arg": "(prefix)",
+    "comments": ""
+}{
+    "source file": "DdsImagePlugin1.py",
+    "line number": "173",
+    "func name": "_validate",
+    "func arg": "(prefix)",
+    "comments": ""
+}{
+    "source file": "EpsImagePlugin.py",
+    "line number": "347",
+    "func name": "_save",
+    "func arg": "(im, fp, filename, eps)",
+    "comments": "EPS Writer for the Python Imaging Library.\n\n\n"
+}{}{
+    "source file": "features.py",
+    "line number": "216",
+    "func name": "pilinfo",
+    "func arg": "(out, supported_formats)",
+    "comments": "Prints information about this installation of Pillow. This function can be called with ``python -m PIL``.\n\nparam out: The output stream to print to. Defaults to ``sys.stdout`` if ``None``. :param supported_formats: If ``True``, a list of all supported image file formats will be printed.\n"
+}{
+    "source file": "FitsStubImagePlugin.py",
+    "line number": "64",
+    "func name": "_save",
+    "func arg": "(im, fp, filename)",
+    "comments": ""
+}{
+    "source file": "FliImagePlugin.py",
+    "line number": "26",
+    "func name": "_accept",
+    "func arg": "(prefix)",
+    "comments": ""
+}{
+    "source file": "FontFile.py",
+    "line number": "25",
+    "func name": "puti16",
+    "func arg": "(fp, values)",
+    "comments": "Write network order (big-endian) 16-bit sequence\n\n\n"
+}{
+    "source file": "FpxImagePlugin.py",
+    "line number": "42",
+    "func name": "_accept",
+    "func arg": "(prefix)",
+    "comments": ""
+}{
+    "source file": "FtexImagePlugin.py",
+    "line number": "101",
+    "func name": "_validate",
+    "func arg": "(prefix)",
+    "comments": ""
+}{
+    "source file": "GbrImagePlugin.py",
+    "line number": "31",
+    "func name": "_accept",
+    "func arg": "(prefix)",
+    "comments": ""
+}{
+    "source file": "GdImageFile.py",
+    "line number": "73",
+    "func name": "open",
+    "func arg": "(fp, mode)",
+    "comments": "Load texture from a GD image file.\n\nparam filename: GD file name, or an opened file handle. :param mode: Optional mode.\n\nIn this version, if the mode argument is given, it must be \"r\". :returns: An image instance. :raises OSError: If the image could not be read.\n"
+}{
+    "source file": "GifImagePlugin.py",
+    "line number": "842",
+    "func name": "getdata",
+    "func arg": "(im, offset, **params)",
+    "comments": "Legacy Method\n\nReturn a list of strings representing this image. The first string is a local image header, the rest contains encoded image data.\n\n:param im: Image object :param offset: Tuple of (x, y) pixels. Defaults to (0,0) :param \\**params: E.g. duration or other encoder info parameters :returns: List of Bytes containing gif encoded frame data\n"
+}{
+    "source file": "GimpGradientFile.py",
+    "line number": "58",
+    "func name": "sphere_decreasing",
+    "func arg": "(middle, pos)",
+    "comments": ""
+}{}{
+    "source file": "GribStubImagePlugin.py",
+    "line number": "62",
+    "func name": "_save",
+    "func arg": "(im, fp, filename)",
+    "comments": ""
+}{
+    "source file": "Hdf5StubImagePlugin.py",
+    "line number": "61",
+    "func name": "_save",
+    "func arg": "(im, fp, filename)",
+    "comments": ""
+}{
+    "source file": "helper.py",
+    "line number": "286",
+    "func name": "is_mingw",
+    "func arg": "()",
+    "comments": ""
+}{
+    "source file": "IcnsImagePlugin.py",
+    "line number": "305",
+    "func name": "_save",
+    "func arg": "(im, fp, filename)",
+    "comments": "Saves the image as a series of PNG files, that are then converted to a .icns file using the macOS command line utility 'iconutil'.\n\nmacOS only.\n"
+}{
+    "source file": "IcoImagePlugin.py",
+    "line number": "82",
+    "func name": "_accept",
+    "func arg": "(prefix)",
+    "comments": ""
+}{
+    "source file": "Image.py",
+    "line number": "3242",
+    "func name": "_apply_env_variables",
+    "func arg": "(env)",
+    "comments": ""
+}{
+    "source file": "ImageChops.py",
+    "line number": "314",
+    "func name": "offset",
+    "func arg": "(image, xoffset, yoffset)",
+    "comments": "Returns a copy of the image where data has been offset by the given distances. Data wraps around the edges. If **yoffset** is omitted, it is assumed to be equal to **xoffset**.\n\nparam xoffset: The horizontal distance. :param yoffset: The vertical distance.\n\nIf omitted, both distances are set to the same value. :rtype: :py:class:`~PIL.Image.Image`\n"
+}{
+    "source file": "ImageCms.py",
+    "line number": "985",
+    "func name": "versions",
+    "func arg": "()",
+    "comments": "(pyCMS) Fetches versions.\n\n\n"
+}{
+    "source file": "ImageColor.py",
+    "line number": "119",
+    "func name": "getcolor",
+    "func arg": "(color, mode)",
+    "comments": "Same as :py:func:`~PIL.ImageColor.getrgb`, but converts the RGB value to a greyscale value if the mode is not color or a palette image. If the string cannot be parsed, this function raises a :py:exc:`ValueError` exception.\n\n.. versionadded:: 1.1.4\n\n:param color: A color string :return: ``(graylevel [, alpha]) or (red, green, blue[, alpha])``\n"
+}{
+    "source file": "ImageDraw.py",
+    "line number": "559",
+    "func name": "_color_diff",
+    "func arg": "(color1, color2)",
+    "comments": "Uses 1-norm distance to calculate difference between two values.\n\n\n"
+}{}{}{
+    "source file": "ImageFile.py",
+    "line number": "546",
+    "func name": "_safe_read",
+    "func arg": "(fp, size)",
+    "comments": "Reads large blocks in a safe way.  Unlike fp.read(n), this function doesn't trust the user.  If the requested size is larger than SAFEBLOCK, the file is read block by block.\n\nparam fp: File handle.\n\nMust implement a <b>read</b> method. :param size: Number of bytes to read. :returns: A string containing up to <i>size</i> bytes of data.\n"
+}{}{
+    "source file": "ImageFont.py",
+    "line number": "721",
+    "func name": "load_default",
+    "func arg": "()",
+    "comments": "Load a \"better than nothing\" default font.\n\n.. versionadded:: 1.1.4\n\n:return: A font object.\n"
+}{
+    "source file": "ImageGrab.py",
+    "line number": "71",
+    "func name": "grabclipboard",
+    "func arg": "()",
+    "comments": ""
+}{
+    "source file": "ImageMath.py",
+    "line number": "228",
+    "func name": "eval",
+    "func arg": "(expression, _dict, **kw)",
+    "comments": "Evaluates an image expression.\n\nparam expression: A string containing a Python-style expression. :param options: Values to add to the evaluation context.\n\nYou can either use a dictionary, or one or more keyword arguments. :return: The evaluated expression. This is usually an image object, but can also be an integer, a floating point value, or a pixel tuple, depending on the expression.\n"
+}{
+    "source file": "ImageMode.py",
+    "line number": "33",
+    "func name": "getmode",
+    "func arg": "(mode)",
+    "comments": "Gets a mode descriptor for the given mode.\n\n\n"
+}{}{
+    "source file": "ImageOps.py",
+    "line number": "531",
+    "func name": "exif_transpose",
+    "func arg": "(image)",
+    "comments": "If an image has an EXIF Orientation tag, return a new image that is transposed accordingly. Otherwise, return a copy of the image.\n\nparam image: The image to transpose. :return: An image.\n"
+}{
+    "source file": "ImagePalette.py",
+    "line number": "198",
+    "func name": "load",
+    "func arg": "(filename)",
+    "comments": ""
+}{}{
+    "source file": "ImageQt.py",
+    "line number": "185",
+    "func name": "toqpixmap",
+    "func arg": "(im)",
+    "comments": ""
+}{
+    "source file": "ImageSequence.py",
+    "line number": "56",
+    "func name": "all_frames",
+    "func arg": "(im, func)",
+    "comments": "Applies a given function to all frames in an image or a list of images. The frames are returned as a list of separate images.\n\nparam im: An image, or a list of images. :param func: The function to apply to all of the image frames. :returns: A list of images.\n"
+}{
+    "source file": "ImageShow.py",
+    "line number": "46",
+    "func name": "show",
+    "func arg": "(image, title, **options)",
+    "comments": "Display a given image.\n\nparam image: An image object. :param title: Optional title. Not all viewers can display the title. :param \\**options: Additional viewer options. :returns: ``True`` if a suitable viewer was found, ``False`` otherwise.\n"
+}{}{
+    "source file": "ImageTk.py",
+    "line number": "284",
+    "func name": "_show",
+    "func arg": "(image, title)",
+    "comments": "Helper for the Image.show method.\n\n\n"
+}{}{}{
+    "source file": "ImImagePlugin.py",
+    "line number": "340",
+    "func name": "_save",
+    "func arg": "(im, fp, filename)",
+    "comments": ""
+}{}{
+    "source file": "IptcImagePlugin.py",
+    "line number": "176",
+    "func name": "getiptcinfo",
+    "func arg": "(im)",
+    "comments": "Get IPTC information from TIFF, JPEG, or IPTC file.\n\nparam im: An image containing IPTC data. :returns: A dictionary containing IPTC information, or None if no IPTC information block was found.\n"
+}{
+    "source file": "Jpeg2KImagePlugin.py",
+    "line number": "246",
+    "func name": "_save",
+    "func arg": "(im, fp, filename)",
+    "comments": ""
+}{
+    "source file": "JpegImagePlugin.py",
+    "line number": "780",
+    "func name": "jpeg_factory",
+    "func arg": "(fp, filename)",
+    "comments": ""
+}{}{
+    "source file": "McIdasImagePlugin.py",
+    "line number": "24",
+    "func name": "_accept",
+    "func arg": "(s)",
+    "comments": ""
+}{
+    "source file": "MicImagePlugin.py",
+    "line number": "28",
+    "func name": "_accept",
+    "func arg": "(prefix)",
+    "comments": ""
+}{}{
+    "source file": "MpoImagePlugin.py",
+    "line number": "29",
+    "func name": "_save",
+    "func arg": "(im, fp, filename)",
+    "comments": ""
+}{
+    "source file": "MspImagePlugin.py",
+    "line number": "160",
+    "func name": "_save",
+    "func arg": "(im, fp, filename)",
+    "comments": ""
+}{}{
+    "source file": "PalmImagePlugin.py",
+    "line number": "113",
+    "func name": "_save",
+    "func arg": "(im, fp, filename)",
+    "comments": ""
+}{}{
+    "source file": "PcfFontFile.py",
+    "line number": "47",
+    "func name": "sz",
+    "func arg": "(s, o)",
+    "comments": ""
+}{
+    "source file": "PcxImagePlugin.py",
+    "line number": "130",
+    "func name": "_save",
+    "func arg": "(im, fp, filename)",
+    "comments": ""
+}{
+    "source file": "PdfImagePlugin.py",
+    "line number": "48",
+    "func name": "_save",
+    "func arg": "(im, fp, filename, save_all)",
+    "comments": ""
+}{
+    "source file": "PdfParser.py",
+    "line number": "322",
+    "func name": "pdf_repr",
+    "func arg": "(x)",
+    "comments": ""
+}{
+    "source file": "PixarImagePlugin.py",
+    "line number": "29",
+    "func name": "_accept",
+    "func arg": "(prefix)",
+    "comments": ""
+}{
+    "source file": "PngImagePlugin.py",
+    "line number": "1325",
+    "func name": "getchunks",
+    "func arg": "(im, **params)",
+    "comments": "Return a list of PNG chunks representing this image.\n\n\n"
+}{
+    "source file": "PpmImagePlugin.py",
+    "line number": "123",
+    "func name": "_save",
+    "func arg": "(im, fp, filename)",
+    "comments": ""
+}{
+    "source file": "PsdImagePlugin.py",
+    "line number": "256",
+    "func name": "_maketile",
+    "func arg": "(file, mode, bbox, channels)",
+    "comments": ""
+}{}{
+    "source file": "PyAccess.py",
+    "line number": "347",
+    "func name": "new",
+    "func arg": "(img, readonly)",
+    "comments": ""
+}{
+    "source file": "selftest.py",
+    "line number": "22",
+    "func name": "testimage",
+    "func arg": "()",
+    "comments": "PIL lets you create in-memory images with various pixel types\n\n>>> from PIL import Image, ImageDraw, ImageFilter, ImageMath >>> im = Image.new(\"1\", (128, 128)) # monochrome >>> _info(im) (None, '1', (128, 128)) >>> _info(Image.new(\"L\", (128, 128))) # grayscale (luminance) (None, 'L', (128, 128)) >>> _info(Image.new(\"P\", (128, 128))) # palette (None, 'P', (128, 128)) >>> _info(Image.new(\"RGB\", (128, 128))) # truecolor (None, 'RGB', (128, 128)) >>> _info(Image.new(\"I\", (128, 128))) # 32-bit integer (None, 'I', (128, 128)) >>> _info(Image.new(\"F\", (128, 128))) # 32-bit floating point (None, 'F', (128, 128))\n\nOr open existing files:\n\n>>> with Image.open(\"Tests/images/hopper.gif\") as im: ...\n\n\n\n _info(im) ('GIF', 'P', (128, 128)) >>> _info(Image.open(\"Tests/images/hopper.ppm\")) ('PPM', 'RGB', (128, 128)) >>> try: ...\n\n_info(Image.open(\"Tests/images/hopper.jpg\")) ... except OSError as v: ...\n\nprint(v) ('JPEG', 'RGB', (128, 128))\n\nPIL doesn't actually load the image data until it's needed, or you call the \"load\" method:\n\n>>> im = Image.open(\"Tests/images/hopper.ppm\") >>> print(im.im) # internal image attribute None >>> a = im.load() >>> type(im.im) # doctest: +ELLIPSIS <... '...ImagingCore'>\n\nYou can apply many different operations on images.\n\nMost operations return a new image:\n\n>>> im = Image.open(\"Tests/images/hopper.ppm\") >>> _info(im.convert(\"L\")) (None, 'L', (128, 128)) >>> _info(im.copy()) (None, 'RGB', (128, 128)) >>> _info(im.crop((32, 32, 96, 96))) (None, 'RGB', (64, 64)) >>> _info(im.filter(ImageFilter.BLUR)) (None, 'RGB', (128, 128)) >>> im.getbands() ('R', 'G', 'B') >>> im.getbbox() (0, 0, 128, 128) >>> len(im.getdata()) 16384 >>> im.getextrema() ((0, 255), (0, 255), (0, 255)) >>> im.getpixel((0, 0)) (20, 20, 70) >>> len(im.getprojection()) 2 >>> len(im.histogram()) 768 >>> '%.7f' % im.entropy() '8.8212866' >>> _info(im.point(list(range(256))*3)) (None, 'RGB', (128, 128)) >>> _info(im.resize((64, 64))) (None, 'RGB', (64, 64)) >>> _info(im.rotate(45)) (None, 'RGB', (128, 128)) >>> [_info(ch) for ch in im.split()] [(None, 'L', (128, 128)), (None, 'L', (128, 128)), (None, 'L', (128, 128))] >>> len(im.convert(\"1\").tobitmap()) 10456 >>> len(im.tobytes()) 49152 >>> _info(im.transform((512, 512), Image.AFFINE, (1,0,0,0,1,0))) (None, 'RGB', (512, 512)) >>> _info(im.transform((512, 512), Image.EXTENT, (32,32,96,96))) (None, 'RGB', (512, 512))\n\nThe ImageDraw module lets you draw stuff in raster images:\n\n>>> im = Image.new(\"L\", (128, 128), 64) >>> d = ImageDraw.ImageDraw(im) >>> d.line((0, 0, 128, 128), fill=128) >>> d.line((0, 128, 128, 0), fill=128) >>> im.getextrema() (64, 128)\n\nIn 1.1.4, you can specify colors in a number of ways:\n\n>>> xy = 0, 0, 128, 128 >>> im = Image.new(\"RGB\", (128, 128), 0) >>> d = ImageDraw.ImageDraw(im) >>> d.rectangle(xy, \"#f00\") >>> im.getpixel((0, 0)) (255, 0, 0) >>> d.rectangle(xy, \"#ff0000\") >>> im.getpixel((0, 0)) (255, 0, 0) >>> d.rectangle(xy, \"rgb(255,0,0)\") >>> im.getpixel((0, 0)) (255, 0, 0) >>> d.rectangle(xy, \"rgb(100%,0%,0%)\") >>> im.getpixel((0, 0)) (255, 0, 0) >>> d.rectangle(xy, \"hsl(0, 100%, 50%)\") >>> im.getpixel((0, 0)) (255, 0, 0) >>> d.rectangle(xy, \"red\") >>> im.getpixel((0, 0)) (255, 0, 0)\n\nIn 1.1.6, you can use the ImageMath module to do image calculations.\n\n>>> im = ImageMath.eval(\"float(im + 20)\", im=im.convert(\"L\")) >>> im.mode, im.size ('F', (128, 128))\n\nPIL can do many other things, but I'll leave that for another day.\n\nIf you're curious, check the handbook, available from:\n\nhttp://www.pythonware.com\n\nCheers /F\n"
+}{
+    "source file": "setup.py",
+    "line number": "859",
+    "func name": "debug_build",
+    "func arg": "()",
+    "comments": ""
+}{
+    "source file": "SgiImagePlugin.py",
+    "line number": "124",
+    "func name": "_save",
+    "func arg": "(im, fp, filename)",
+    "comments": ""
+}{
+    "source file": "SpiderImagePlugin.py",
+    "line number": "283",
+    "func name": "_save_spider",
+    "func arg": "(im, fp, filename)",
+    "comments": ""
+}{
+    "source file": "SunImagePlugin.py",
+    "line number": "24",
+    "func name": "_accept",
+    "func arg": "(prefix)",
+    "comments": ""
+}{}{
+    "source file": "test_000_sanity.py",
+    "line number": "5",
+    "func name": "test_sanity",
+    "func arg": "()",
+    "comments": ""
+}{
+    "source file": "test_binary.py",
+    "line number": "17",
+    "func name": "test_big_endian",
+    "func arg": "()",
+    "comments": ""
+}{
+    "source file": "test_bmp_reference.py",
+    "line number": "58",
+    "func name": "test_good",
+    "func arg": "()",
+    "comments": "These should all work. There's a set of target files in the html directory that we can compare against.\n\n\n"
+}{
+    "source file": "test_box_blur.py",
+    "line number": "248",
+    "func name": "test_three_passes",
+    "func arg": "()",
+    "comments": ""
+}{}{
+    "source file": "test_core_resources.py",
+    "line number": "22",
+    "func name": "test_reset_stats",
+    "func arg": "()",
+    "comments": ""
+}{}{
+    "source file": "test_features.py",
+    "line number": "116",
+    "func name": "test_pilinfo",
+    "func arg": "()",
+    "comments": ""
+}{
+    "source file": "test_file_apng.py",
+    "line number": "524",
+    "func name": "test_apng_save_blend",
+    "func arg": "(tmp_path)",
+    "comments": ""
+}{
+    "source file": "test_file_blp.py",
+    "line number": "18",
+    "func name": "test_load_blp2_dxt1a",
+    "func arg": "()",
+    "comments": ""
+}{
+    "source file": "test_file_bmp.py",
+    "line number": "129",
+    "func name": "test_rgba_bitfields",
+    "func arg": "()",
+    "comments": ""
+}{
+    "source file": "test_file_bufrstub.py",
+    "line number": "39",
+    "func name": "test_save",
+    "func arg": "(tmp_path)",
+    "comments": ""
+}{
+    "source file": "test_file_container.py",
+    "line number": "125",
+    "func name": "test_readlines",
+    "func arg": "()",
+    "comments": ""
+}{
+    "source file": "test_file_cur.py",
+    "line number": "17",
+    "func name": "test_invalid_file",
+    "func arg": "()",
+    "comments": ""
+}{
+    "source file": "test_file_dcx.py",
+    "line number": "85",
+    "func name": "test_seek_too_far",
+    "func arg": "()",
+    "comments": ""
+}{
+    "source file": "test_file_dds.py",
+    "line number": "159",
+    "func name": "test_unimplemented_pixel_format",
+    "func arg": "()",
+    "comments": ""
+}{
+    "source file": "test_file_eps.py",
+    "line number": "250",
+    "func name": "test_emptyline",
+    "func arg": "()",
+    "comments": ""
+}{
+    "source file": "test_file_fitsstub.py",
+    "line number": "37",
+    "func name": "test_save",
+    "func arg": "()",
+    "comments": ""
+}{
+    "source file": "test_file_fli.py",
+    "line number": "120",
+    "func name": "test_seek",
+    "func arg": "()",
+    "comments": ""
+}{
+    "source file": "test_file_fpx.py",
+    "line number": "21",
+    "func name": "test_fpx_invalid_number_of_bands",
+    "func arg": "()",
+    "comments": ""
+}{
+    "source file": "test_file_ftex.py",
+    "line number": "12",
+    "func name": "test_load_dxt1",
+    "func arg": "()",
+    "comments": ""
+}{
+    "source file": "test_file_gbr.py",
+    "line number": "20",
+    "func name": "test_multiple_load_operations",
+    "func arg": "()",
+    "comments": ""
+}{
+    "source file": "test_file_gd.py",
+    "line number": "18",
+    "func name": "test_invalid_file",
+    "func arg": "()",
+    "comments": ""
+}{
+    "source file": "test_file_gif.py",
+    "line number": "824",
+    "func name": "test_extents",
+    "func arg": "()",
+    "comments": ""
+}{
+    "source file": "test_file_gimpgradient.py",
+    "line number": "113",
+    "func name": "test_load_1_3_via_imagepalette",
+    "func arg": "()",
+    "comments": ""
+}{
+    "source file": "test_file_gimppalette.py",
+    "line number": "22",
+    "func name": "test_get_palette",
+    "func arg": "()",
+    "comments": ""
+}{
+    "source file": "test_file_gribstub.py",
+    "line number": "39",
+    "func name": "test_save",
+    "func arg": "(tmp_path)",
+    "comments": ""
+}{
+    "source file": "test_file_hdf5stub.py",
+    "line number": "37",
+    "func name": "test_save",
+    "func arg": "()",
+    "comments": ""
+}{
+    "source file": "test_file_icns.py",
+    "line number": "137",
+    "func name": "test_not_an_icns_file",
+    "func arg": "()",
+    "comments": ""
+}{
+    "source file": "test_file_ico.py",
+    "line number": "98",
+    "func name": "test_draw_reloaded",
+    "func arg": "(tmp_path)",
+    "comments": ""
+}{
+    "source file": "test_file_im.py",
+    "line number": "109",
+    "func name": "test_number",
+    "func arg": "()",
+    "comments": ""
+}{
+    "source file": "test_file_iptc.py",
+    "line number": "57",
+    "func name": "test_dump",
+    "func arg": "()",
+    "comments": ""
+}{}{
+    "source file": "test_file_jpeg2k.py",
+    "line number": "225",
+    "func name": "test_parser_feed",
+    "func arg": "()",
+    "comments": ""
+}{}{}{
+    "source file": "test_file_mcidas.py",
+    "line number": "14",
+    "func name": "test_valid_file",
+    "func arg": "()",
+    "comments": ""
+}{
+    "source file": "test_file_mic.py",
+    "line number": "53",
+    "func name": "test_invalid_file",
+    "func arg": "()",
+    "comments": ""
+}{
+    "source file": "test_file_mpo.py",
+    "line number": "207",
+    "func name": "test_save",
+    "func arg": "()",
+    "comments": ""
+}{
+    "source file": "test_file_msp.py",
+    "line number": "83",
+    "func name": "test_cannot_save_wrong_mode",
+    "func arg": "(tmp_path)",
+    "comments": ""
+}{
+    "source file": "test_file_palm.py",
+    "line number": "78",
+    "func name": "test_rgb_oserror",
+    "func arg": "(tmp_path)",
+    "comments": ""
+}{
+    "source file": "test_file_pcd.py",
+    "line number": "4",
+    "func name": "test_load_raw",
+    "func arg": "()",
+    "comments": ""
+}{
+    "source file": "test_file_pcx.py",
+    "line number": "134",
+    "func name": "test_break_padding",
+    "func arg": "(tmp_path)",
+    "comments": ""
+}{
+    "source file": "test_file_pdf.py",
+    "line number": "277",
+    "func name": "test_pdf_append_to_bytesio",
+    "func arg": "()",
+    "comments": ""
+}{
+    "source file": "test_file_pixar.py",
+    "line number": "21",
+    "func name": "test_invalid_file",
+    "func arg": "()",
+    "comments": ""
+}{
+    "source file": "test_file_png.py",
+    "line number": "48",
+    "func name": "roundtrip",
+    "func arg": "(im, **options)",
+    "comments": ""
+}{
+    "source file": "test_file_ppm.py",
+    "line number": "71",
+    "func name": "test_mimetypes",
+    "func arg": "(tmp_path)",
+    "comments": ""
+}{
+    "source file": "test_file_psd.py",
+    "line number": "122",
+    "func name": "test_combined_larger_than_size",
+    "func arg": "()",
+    "comments": ""
+}{
+    "source file": "test_file_sgi.py",
+    "line number": "95",
+    "func name": "test_unsupported_mode",
+    "func arg": "(tmp_path)",
+    "comments": ""
+}{
+    "source file": "test_file_spider.py",
+    "line number": "154",
+    "func name": "test_odd_size",
+    "func arg": "()",
+    "comments": ""
+}{
+    "source file": "test_file_sun.py",
+    "line number": "38",
+    "func name": "test_others",
+    "func arg": "()",
+    "comments": ""
+}{
+    "source file": "test_file_tar.py",
+    "line number": "40",
+    "func name": "test_contextmanager",
+    "func arg": "()",
+    "comments": ""
+}{
+    "source file": "test_file_tga.py",
+    "line number": "190",
+    "func name": "test_save_l_transparency",
+    "func arg": "(tmp_path)",
+    "comments": ""
+}{
+    "source file": "test_file_tiff_metadata.py",
+    "line number": "348",
+    "func name": "test_too_many_entries",
+    "func arg": "()",
+    "comments": ""
+}{}{
+    "source file": "test_file_wal.py",
+    "line number": "4",
+    "func name": "test_open",
+    "func arg": "()",
+    "comments": ""
+}{
+    "source file": "test_file_webp_alpha.py",
+    "line number": "95",
+    "func name": "test_write_unsupported_mode_PA",
+    "func arg": "(tmp_path)",
+    "comments": "Saving a palette-based file with transparency to WebP format should work, and be similar to the original file.\n\n\n"
+}{
+    "source file": "test_file_webp_animated.py",
+    "line number": "160",
+    "func name": "test_seek_errors",
+    "func arg": "()",
+    "comments": ""
+}{
+    "source file": "test_file_webp_lossless.py",
+    "line number": "10",
+    "func name": "test_write_lossless_rgb",
+    "func arg": "(tmp_path)",
+    "comments": ""
+}{
+    "source file": "test_file_webp_metadata.py",
+    "line number": "105",
+    "func name": "test_write_animated_metadata",
+    "func arg": "(tmp_path)",
+    "comments": ""
+}{}{
+    "source file": "test_file_wmf.py",
+    "line number": "72",
+    "func name": "test_save",
+    "func arg": "(tmp_path)",
+    "comments": ""
+}{
+    "source file": "test_file_xbm.py",
+    "line number": "73",
+    "func name": "test_hotspot",
+    "func arg": "(tmp_path)",
+    "comments": ""
+}{
+    "source file": "test_file_xpm.py",
+    "line number": "27",
+    "func name": "test_load_read",
+    "func arg": "()",
+    "comments": ""
+}{
+    "source file": "test_file_xvthumb.py",
+    "line number": "31",
+    "func name": "test_invalid_file",
+    "func arg": "()",
+    "comments": ""
+}{
+    "source file": "test_font_bdf.py",
+    "line number": "15",
+    "func name": "test_invalid_file",
+    "func arg": "()",
+    "comments": ""
+}{}{
+    "source file": "test_font_pcf_charsets.py",
+    "line number": "119",
+    "func name": "test_textsize_cp1250",
+    "func arg": "(request, tmp_path)",
+    "comments": ""
+}{
+    "source file": "test_font_pcf.py",
+    "line number": "86",
+    "func name": "test_high_characters",
+    "func arg": "(request, tmp_path)",
+    "comments": ""
+}{
+    "source file": "test_format_hsv.py",
+    "line number": "123",
+    "func name": "test_hsv_to_rgb",
+    "func arg": "()",
+    "comments": ""
+}{
+    "source file": "test_format_lab.py",
+    "line number": "33",
+    "func name": "test_red",
+    "func arg": "()",
+    "comments": ""
+}{}{
+    "source file": "test_image_array.py",
+    "line number": "28",
+    "func name": "test_fromarray",
+    "func arg": "()",
+    "comments": ""
+}{
+    "source file": "test_image_convert.py",
+    "line number": "244",
+    "func name": "test_matrix_identity",
+    "func arg": "()",
+    "comments": ""
+}{
+    "source file": "test_image_copy.py",
+    "line number": "37",
+    "func name": "test_copy_zero",
+    "func arg": "()",
+    "comments": ""
+}{
+    "source file": "test_image_crop.py",
+    "line number": "94",
+    "func name": "test_crop_zero",
+    "func arg": "()",
+    "comments": ""
+}{
+    "source file": "test_image_draft.py",
+    "line number": "69",
+    "func name": "test_several_drafts",
+    "func arg": "()",
+    "comments": ""
+}{
+    "source file": "test_image_entropy.py",
+    "line number": "4",
+    "func name": "test_entropy",
+    "func arg": "()",
+    "comments": ""
+}{
+    "source file": "test_image_filter.py",
+    "line number": "134",
+    "func name": "test_consistency_5x5",
+    "func arg": "()",
+    "comments": ""
+}{
+    "source file": "test_image_frombytes.py",
+    "line number": "14",
+    "func name": "test_not_implemented",
+    "func arg": "()",
+    "comments": ""
+}{
+    "source file": "test_image_fromqimage.py",
+    "line number": "57",
+    "func name": "test_sanity_p",
+    "func arg": "(test_images)",
+    "comments": ""
+}{
+    "source file": "test_image_getbands.py",
+    "line number": "4",
+    "func name": "test_getbands",
+    "func arg": "()",
+    "comments": ""
+}{
+    "source file": "test_image_getbbox.py",
+    "line number": "12",
+    "func name": "test_bbox",
+    "func arg": "()",
+    "comments": ""
+}{
+    "source file": "test_image_getcolors.py",
+    "line number": "40",
+    "func name": "test_pack",
+    "func arg": "()",
+    "comments": ""
+}{
+    "source file": "test_image_getdata.py",
+    "line number": "15",
+    "func name": "test_roundtrip",
+    "func arg": "()",
+    "comments": ""
+}{
+    "source file": "test_image_getextrema.py",
+    "line number": "21",
+    "func name": "test_true_16",
+    "func arg": "()",
+    "comments": ""
+}{
+    "source file": "test_image_getim.py",
+    "line number": "4",
+    "func name": "test_sanity",
+    "func arg": "()",
+    "comments": ""
+}{
+    "source file": "test_image_getpalette.py",
+    "line number": "4",
+    "func name": "test_palette",
+    "func arg": "()",
+    "comments": ""
+}{
+    "source file": "test_image_getprojection.py",
+    "line number": "6",
+    "func name": "test_sanity",
+    "func arg": "()",
+    "comments": ""
+}{
+    "source file": "test_image_histogram.py",
+    "line number": "4",
+    "func name": "test_histogram",
+    "func arg": "()",
+    "comments": ""
+}{
+    "source file": "test_image_load.py",
+    "line number": "35",
+    "func name": "test_contextmanager_non_exclusive_fp",
+    "func arg": "()",
+    "comments": ""
+}{
+    "source file": "test_image_mode.py",
+    "line number": "50",
+    "func name": "test_properties",
+    "func arg": "()",
+    "comments": ""
+}{}{
+    "source file": "test_image_point.py",
+    "line number": "45",
+    "func name": "test_f_mode",
+    "func arg": "()",
+    "comments": ""
+}{
+    "source file": "test_image_putalpha.py",
+    "line number": "41",
+    "func name": "test_readonly",
+    "func arg": "()",
+    "comments": ""
+}{
+    "source file": "test_image_putdata.py",
+    "line number": "81",
+    "func name": "test_array_F",
+    "func arg": "()",
+    "comments": ""
+}{
+    "source file": "test_image_putpalette.py",
+    "line number": "35",
+    "func name": "test_imagepalette",
+    "func arg": "()",
+    "comments": ""
+}{
+    "source file": "test_image_quantize.py",
+    "line number": "66",
+    "func name": "test_quantize_dither_diff",
+    "func arg": "()",
+    "comments": ""
+}{
+    "source file": "test_image_reduce.py",
+    "line number": "258",
+    "func name": "test_jpeg2k",
+    "func arg": "()",
+    "comments": ""
+}{}{
+    "source file": "test_image_resize.py",
+    "line number": "139",
+    "func name": "gradients_image",
+    "func arg": "()",
+    "comments": ""
+}{
+    "source file": "test_image_rotate.py",
+    "line number": "135",
+    "func name": "test_alpha_rotate_with_fill",
+    "func arg": "()",
+    "comments": ""
+}{
+    "source file": "test_image_split.py",
+    "line number": "47",
+    "func name": "test_split_open",
+    "func arg": "(tmp_path)",
+    "comments": ""
+}{
+    "source file": "test_image_thumbnail.py",
+    "line number": "121",
+    "func name": "test_reducing_gap_for_DCT_scaling",
+    "func arg": "()",
+    "comments": ""
+}{
+    "source file": "test_image_tobitmap.py",
+    "line number": "6",
+    "func name": "test_sanity",
+    "func arg": "()",
+    "comments": ""
+}{
+    "source file": "test_image_tobytes.py",
+    "line number": "4",
+    "func name": "test_sanity",
+    "func arg": "()",
+    "comments": ""
+}{}{
+    "source file": "test_image_transpose.py",
+    "line number": "139",
+    "func name": "test_roundtrip",
+    "func arg": "()",
+    "comments": ""
+}{
+    "source file": "test_image.py",
+    "line number": "792",
+    "func name": "mock_encode",
+    "func arg": "()",
+    "comments": ""
+}{
+    "source file": "test_imagechops.py",
+    "line number": "408",
+    "func name": "test_logical",
+    "func arg": "()",
+    "comments": ""
+}{
+    "source file": "test_imagecms.py",
+    "line number": "529",
+    "func name": "test_auxiliary_channels_isolated",
+    "func arg": "()",
+    "comments": ""
+}{
+    "source file": "test_imagecolor.py",
+    "line number": "160",
+    "func name": "test_rounding_errors",
+    "func arg": "()",
+    "comments": ""
+}{
+    "source file": "test_imagedraw.py",
+    "line number": "1057",
+    "func name": "test_same_color_outline",
+    "func arg": "()",
+    "comments": ""
+}{
+    "source file": "test_imagedraw2.py",
+    "line number": "229",
+    "func name": "test_flush",
+    "func arg": "()",
+    "comments": ""
+}{
+    "source file": "test_imageenhance.py",
+    "line number": "42",
+    "func name": "test_alpha",
+    "func arg": "()",
+    "comments": ""
+}{}{
+    "source file": "test_imagefont_bitmap.py",
+    "line number": "14",
+    "func name": "test_similar",
+    "func arg": "()",
+    "comments": ""
+}{
+    "source file": "test_imagefont.py",
+    "line number": "742",
+    "func name": "test_render_mono_size",
+    "func arg": "()",
+    "comments": ""
+}{
+    "source file": "test_imagefontctl.py",
+    "line number": "198",
+    "func name": "test_language",
+    "func arg": "()",
+    "comments": ""
+}{}{
+    "source file": "test_imagemath.py",
+    "line number": "183",
+    "func name": "test_logical_not_equal",
+    "func arg": "()",
+    "comments": ""
+}{
+    "source file": "test_imagemorph.py",
+    "line number": "326",
+    "func name": "test_wrong_mode",
+    "func arg": "()",
+    "comments": ""
+}{
+    "source file": "test_imageops_usm.py",
+    "line number": "77",
+    "func name": "test_blur_accuracy",
+    "func arg": "(test_images)",
+    "comments": ""
+}{
+    "source file": "test_imageops.py",
+    "line number": "305",
+    "func name": "test_autocontrast_cutoff",
+    "func arg": "()",
+    "comments": ""
+}{
+    "source file": "test_imagepalette.py",
+    "line number": "147",
+    "func name": "test_invalid_palette",
+    "func arg": "()",
+    "comments": ""
+}{}{
+    "source file": "test_imageqt.py",
+    "line number": "58",
+    "func name": "test_image",
+    "func arg": "()",
+    "comments": ""
+}{
+    "source file": "test_imagesequence.py",
+    "line number": "85",
+    "func name": "test_all_frames",
+    "func arg": "()",
+    "comments": ""
+}{
+    "source file": "test_imageshow.py",
+    "line number": "60",
+    "func name": "test_viewers",
+    "func arg": "()",
+    "comments": ""
+}{
+    "source file": "test_imagestat.py",
+    "line number": "46",
+    "func name": "test_constant",
+    "func arg": "()",
+    "comments": ""
+}{
+    "source file": "test_imagetk.py",
+    "line number": "81",
+    "func name": "test_bitmapimage",
+    "func arg": "()",
+    "comments": ""
+}{}{}{
+    "source file": "test_lib_image.py",
+    "line number": "5",
+    "func name": "test_setmode",
+    "func arg": "()",
+    "comments": ""
+}{}{
+    "source file": "test_locale.py",
+    "line number": "24",
+    "func name": "test_sanity",
+    "func arg": "()",
+    "comments": ""
+}{
+    "source file": "test_main.py",
+    "line number": "6",
+    "func name": "test_main",
+    "func arg": "()",
+    "comments": ""
+}{
+    "source file": "test_map.py",
+    "line number": "30",
+    "func name": "test_ysize",
+    "func arg": "()",
+    "comments": ""
+}{
+    "source file": "test_mode_i16.py",
+    "line number": "96",
+    "func name": "test_convert",
+    "func arg": "()",
+    "comments": ""
+}{
+    "source file": "test_numpy.py",
+    "line number": "227",
+    "func name": "test_no_resource_warning_for_numpy_array",
+    "func arg": "()",
+    "comments": ""
+}{
+    "source file": "test_pdfparser.py",
+    "line number": "96",
+    "func name": "test_pdf_repr",
+    "func arg": "()",
+    "comments": ""
+}{
+    "source file": "test_pickle.py",
+    "line number": "85",
+    "func name": "test_pickle_tell",
+    "func arg": "()",
+    "comments": ""
+}{
+    "source file": "test_psdraw.py",
+    "line number": "47",
+    "func name": "test_stdout",
+    "func arg": "()",
+    "comments": ""
+}{
+    "source file": "test_pyroma.py",
+    "line number": "7",
+    "func name": "test_pyroma",
+    "func arg": "()",
+    "comments": ""
+}{}{
+    "source file": "test_qt_image_toqimage.py",
+    "line number": "53",
+    "func name": "test_segfault",
+    "func arg": "()",
+    "comments": ""
+}{}{
+    "source file": "test_sgi_crash.py",
+    "line number": "10",
+    "func name": "test_crashes",
+    "func arg": "(test_file)",
+    "comments": ""
+}{}{
+    "source file": "test_tiff_ifdrational.py",
+    "line number": "46",
+    "func name": "test_ifd_rational_save",
+    "func arg": "(tmp_path)",
+    "comments": ""
+}{
+    "source file": "test_uploader.py",
+    "line number": "10",
+    "func name": "check_upload_similar",
+    "func arg": "()",
+    "comments": ""
+}{
+    "source file": "test_util.py",
+    "line number": "64",
+    "func name": "test_deferred_error",
+    "func arg": "()",
+    "comments": ""
+}{}{
+    "source file": "TgaImagePlugin.py",
+    "line number": "166",
+    "func name": "_save",
+    "func arg": "(im, fp, filename)",
+    "comments": ""
+}{
+    "source file": "TiffImagePlugin.py",
+    "line number": "1854",
+    "func name": "_save_all",
+    "func arg": "(im, fp, filename)",
+    "comments": ""
+}{
+    "source file": "TiffTags.py",
+    "line number": "359",
+    "func name": "_populate",
+    "func arg": "()",
+    "comments": ""
+}{
+    "source file": "WalImageFile.py",
+    "line number": "32",
+    "func name": "open",
+    "func arg": "(filename)",
+    "comments": "Load texture from a Quake2 WAL texture file.\n\nBy default, a Quake2 standard palette is attached to the texture. To override the palette, use the :py:func:`PIL.Image.Image.putpalette()` method.\n\n:param filename: WAL file name, or an opened file handle. :returns: An image instance.\n"
+}{
+    "source file": "WebPImagePlugin.py",
+    "line number": "309",
+    "func name": "_save",
+    "func arg": "(im, fp, filename)",
+    "comments": ""
+}{
+    "source file": "WmfImagePlugin.py",
+    "line number": "161",
+    "func name": "_save",
+    "func arg": "(im, fp, filename)",
+    "comments": ""
+}{
+    "source file": "XbmImagePlugin.py",
+    "line number": "69",
+    "func name": "_save",
+    "func arg": "(im, fp, filename)",
+    "comments": ""
+}{
+    "source file": "XpmImagePlugin.py",
+    "line number": "27",
+    "func name": "_accept",
+    "func arg": "(prefix)",
+    "comments": ""
+}{
+    "source file": "XVThumbImagePlugin.py",
+    "line number": "35",
+    "func name": "_accept",
+    "func arg": "(prefix)",
+    "comments": ""
+}

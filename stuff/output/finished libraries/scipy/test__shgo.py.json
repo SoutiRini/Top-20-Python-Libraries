@@ -1,0 +1,7 @@
+{
+    "source file": "test__shgo.py",
+    "line number": "279",
+    "func name": "run_test",
+    "func arg": "(test, args, test_atol, n, iters, callback, minimizer_kwargs, options, sampling_method)",
+    "comments": ""
+}

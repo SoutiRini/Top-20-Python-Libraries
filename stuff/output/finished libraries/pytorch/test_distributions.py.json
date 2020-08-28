@@ -1,0 +1,7 @@
+{
+    "source file": "test_distributions.py",
+    "line number": "91",
+    "func name": "is_all_nan",
+    "func arg": "(tensor)",
+    "comments": "Checks if all entries of a tensor is nan.\n\n\n"
+}

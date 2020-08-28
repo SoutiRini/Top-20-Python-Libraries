@@ -1,0 +1,7 @@
+{
+    "source file": "generic1.py",
+    "line number": "2057",
+    "func name": "_recast_datetimelike_result",
+    "func arg": "(result)",
+    "comments": "If we have date/time like in the original, then coerce dates as we are stacking can easily have object dtypes here.\n\nParameters ---------- result : DataFrame\n##### Returns\n"
+}

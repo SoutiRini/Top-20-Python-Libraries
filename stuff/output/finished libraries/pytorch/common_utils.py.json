@@ -1,0 +1,7 @@
+{
+    "source file": "common_utils.py",
+    "line number": "1702",
+    "func name": "_assertGradAndGradgradChecks",
+    "func arg": "(test_case, apply_fn, inputs)",
+    "comments": ""
+}

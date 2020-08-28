@@ -1,0 +1,7 @@
+{
+    "source file": "cardinality.py",
+    "line number": "72",
+    "func name": "assert_cardinality",
+    "func arg": "(expected_cardinality)",
+    "comments": "Asserts the cardinality of the input dataset.\n\nNOTE: The following assumes that \"examples.tfrecord\" contains 42 records.\n\n>>> dataset = tf.data.TFRecordDataset(\"examples.tfrecord\") >>> cardinality = tf.data.experimental.cardinality(dataset) >>> print((cardinality == tf.data.experimental.UNKNOWN_CARDINALITY).numpy()) True >>> dataset = dataset.apply(tf.data.experimental.assert_cardinality(42)) >>> print(tf.data.experimental.cardinality(dataset).numpy()) 42\n##### Args\n* **expected_cardinality**: The expected cardinality of the input dataset.\n\n##### Returns\n"
+}

@@ -1,0 +1,7 @@
+{
+    "source file": "common2.py",
+    "line number": "234",
+    "func name": "draw_keypoints",
+    "func arg": "(vis, keypoints, color)",
+    "comments": ""
+}

@@ -1,0 +1,7 @@
+{
+    "source file": "_threadsafety.py",
+    "line number": "48",
+    "func name": "non_reentrant",
+    "func arg": "(err_msg)",
+    "comments": "Decorate a function with a threading lock and prevent reentrant calls.\n\n\n"
+}

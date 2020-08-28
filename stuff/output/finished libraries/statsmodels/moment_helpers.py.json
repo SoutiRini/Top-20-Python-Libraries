@@ -1,0 +1,7 @@
+{
+    "source file": "moment_helpers.py",
+    "line number": "287",
+    "func name": "se_cov",
+    "func arg": "(cov)",
+    "comments": "get standard deviation from covariance matrix\n\njust a shorthand function np.sqrt(np.diag(cov))\n\nParameters ---------- cov : array_like, square covariance matrix\n##### Returns\n* **std **: ndarray\n    standard deviation from diagonal of cov\n\n"
+}

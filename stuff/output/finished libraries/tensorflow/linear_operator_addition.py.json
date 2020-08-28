@@ -1,0 +1,7 @@
+{
+    "source file": "linear_operator_addition.py",
+    "line number": "410",
+    "func name": "_type",
+    "func arg": "(operator)",
+    "comments": "Returns the type name constant (e.g. _TRIL) for operator.\n\n\n"
+}

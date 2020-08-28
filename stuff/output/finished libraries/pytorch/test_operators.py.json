@@ -1,0 +1,7 @@
+{
+    "source file": "test_operators.py",
+    "line number": "35",
+    "func name": "export_to_pb",
+    "func arg": "(model, inputs, **kwargs)",
+    "comments": ""
+}

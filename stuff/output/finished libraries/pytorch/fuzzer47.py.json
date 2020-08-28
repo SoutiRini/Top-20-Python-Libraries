@@ -1,0 +1,7 @@
+{
+    "source file": "fuzzer47.py",
+    "line number": "169",
+    "func name": "prod",
+    "func arg": "(values, base)",
+    "comments": "np.prod can overflow, so for sizes the product should be done in Python.\n\nEven though np.prod type promotes to int64, it can still overflow in which case the negative value will pass the size check and OOM when attempting to actually allocate the Tensor.\n"
+}

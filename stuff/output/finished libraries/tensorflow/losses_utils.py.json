@@ -1,0 +1,7 @@
+{
+    "source file": "losses_utils.py",
+    "line number": "281",
+    "func name": "cast_losses_to_common_dtype",
+    "func arg": "(losses)",
+    "comments": "Cast a list of losses to a common dtype.\n\nIf any loss is floating-point, they will all be casted to the most-precise floating-point loss. Otherwise the losses are not casted. We also skip casting losses if there are any complex losses.\n##### Args\n* **losses**: A list of losses.\n\n##### Returns\n"
+}

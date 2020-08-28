@@ -1,0 +1,7 @@
+{
+    "source file": "rnn_grad.py",
+    "line number": "24",
+    "func name": "_block_lstm_grad",
+    "func arg": "(op)",
+    "comments": "Gradient for the BlockLSTM op.\n\n\n"
+}

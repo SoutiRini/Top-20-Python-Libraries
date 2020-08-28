@@ -1,0 +1,7 @@
+{
+    "source file": "text_intro.py",
+    "line number": "357",
+    "func name": "formatoddticks",
+    "func arg": "(x, pos)",
+    "comments": "Format odd tick positions.\n\n\n"
+}

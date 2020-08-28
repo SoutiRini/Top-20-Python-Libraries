@@ -1,0 +1,7 @@
+{
+    "source file": "_norm28.py",
+    "line number": "20",
+    "func name": "norm",
+    "func arg": "(x, ord, axis)",
+    "comments": "Norm of a sparse matrix\n\nThis function is able to return one of seven different matrix norms, depending on the value of the ``ord`` parameter.\n\nParameters ---------- x : a sparse matrix Input sparse matrix. ord : {non-zero int, inf, -inf, 'fro'}, optional Order of the norm (see table under ``Notes``). inf means numpy's `inf` object. axis : {int, 2-tuple of ints, None}, optional If `axis` is an integer, it specifies the axis of `x` along which to compute the vector norms.\n\nIf `axis` is a 2-tuple, it specifies the axes that hold 2-D matrices, and the matrix norms of these matrices are computed.\n\nIf `axis` is None then either a vector norm (when `x` is 1-D) or a matrix norm (when `x` is 2-D) is returned.\n##### Returns\n* **n **: float or ndarray\n\n* **https**: //github.com/numpy/numpy/blob/master/numpy/linalg/linalg.py\n\n* **The following norms can be calculated**: \n\n* **The Frobenius norm is given by [1]_**: \n\n"
+}

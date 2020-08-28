@@ -1,0 +1,7 @@
+{
+    "source file": "hipify_python.py",
+    "line number": "817",
+    "func name": "hipify",
+    "func arg": "(project_directory, show_detailed, extensions, output_directory, includes, extra_files, out_of_place_only, ignores, show_progress, hip_clang_launch, is_pytorch_extension, clean_ctx)",
+    "comments": ""
+}

@@ -1,0 +1,7 @@
+{
+    "source file": "conf.py",
+    "line number": "129",
+    "func name": "feed_process_params_from_cli",
+    "func arg": "(settings, output, output_format)",
+    "comments": "Receives feed export params (from the 'crawl' or 'runspider' commands), checks for inconsistencies in their quantities and returns a dictionary suitable to be used as the FEEDS setting.\n\n\n"
+}

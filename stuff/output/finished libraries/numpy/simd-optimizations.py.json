@@ -1,0 +1,7 @@
+{
+    "source file": "simd-optimizations.py",
+    "line number": "114",
+    "func name": "features_table_diff",
+    "func arg": "(arch, cc, cc_vs, pretty_name, **kwargs)",
+    "comments": ""
+}

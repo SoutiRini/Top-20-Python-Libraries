@@ -1,0 +1,7 @@
+{
+    "source file": "resnet50_graph_test.py",
+    "line number": "39",
+    "func name": "random_batch",
+    "func arg": "(batch_size)",
+    "comments": ""
+}

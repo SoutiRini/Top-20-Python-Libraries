@@ -1,0 +1,7 @@
+{
+    "source file": "sharedvalue.py",
+    "line number": "294",
+    "func name": "generic_constructor",
+    "func arg": "(value, name, strict, allow_downcast)",
+    "comments": "SharedVariable Constructor.\n\n\n"
+}

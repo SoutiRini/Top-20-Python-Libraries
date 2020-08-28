@@ -1,0 +1,7 @@
+{
+    "source file": "atmodel.py",
+    "line number": "128",
+    "func name": "construct_author2doc",
+    "func arg": "(doc2author)",
+    "comments": "Make a mapping from author IDs to document IDs.\n\nParameters ---------- doc2author: dict of (int, list of str) Mapping of document id to authors.\n##### Returns\n"
+}

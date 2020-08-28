@@ -1,0 +1,7 @@
+{
+    "source file": "eager_microbenchmarks_test.py",
+    "line number": "30",
+    "func name": "_run_benchmark",
+    "func arg": "(func, num_iters, execution_mode)",
+    "comments": ""
+}

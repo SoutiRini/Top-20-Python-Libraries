@@ -1,0 +1,7 @@
+{
+    "source file": "contour1.py",
+    "line number": "636",
+    "func name": "_find_closest_point_on_path",
+    "func arg": "(lc, point)",
+    "comments": "Parameters ---------- lc : coordinates of vertices point : coordinates of test point\n\n\n"
+}

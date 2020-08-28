@@ -1,0 +1,7 @@
+{
+    "source file": "mel_ops_test.py",
+    "line number": "57",
+    "func name": "spectrogram_to_mel_matrix",
+    "func arg": "(num_mel_bins, num_spectrogram_bins, audio_sample_rate, lower_edge_hertz, upper_edge_hertz, unused_dtype)",
+    "comments": "Return a matrix that can post-multiply spectrogram rows to make mel.\n\nCopied from https://github.com/tensorflow/models/blob/master/research/audioset/mel_features.py.\n##### Args\n* **num_mel_bins**: How many bands in the resulting mel spectrum.  This is\n  the number of columns in the output matrix.\n\n* **num_spectrogram_bins**: How many bins there are in the source spectrogram\n  data, which is understood to be fft_size/2 + 1, i.e. the spectrogram\n  only contains the nonredundant FFT bins.\n\n* **audio_sample_rate**: Samples per second of the audio at the input to the\n  spectrogram. We need this to figure out the actual frequencies for\n  each spectrogram bin, which dictates how they are mapped into mel.\n\n* **lower_edge_hertz**: Lower bound on the frequencies to be included in the mel\n  spectrum.  This corresponds to the lower edge of the lowest triangular\n  band.\n\n* **upper_edge_hertz**: The desired top edge of the highest frequency band.\n\n##### Returns\n"
+}

@@ -1,0 +1,7 @@
+{
+    "source file": "feature_column_v2_test.py",
+    "line number": "2983",
+    "func name": "_assert_sparse_tensor_value",
+    "func arg": "(test_case, expected, actual)",
+    "comments": ""
+}

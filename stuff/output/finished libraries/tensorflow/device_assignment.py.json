@@ -1,0 +1,7 @@
+{
+    "source file": "device_assignment.py",
+    "line number": "316",
+    "func name": "device_assignment",
+    "func arg": "(topology, computation_shape, computation_stride, num_replicas)",
+    "comments": "Computes a device_assignment of a computation across a TPU topology.\n\nAttempts to choose a compact grid of cores for locality.\n##### Args\n* **topology**: A `Topology` object that describes the TPU cluster topology.\n  To obtain a TPU topology, evaluate the `Tensor` returned by\n  `initialize_system` using `Session.run`. Either a serialized\n  `TopologyProto` or a `Topology` object may be passed. Note\n\n* **computation_shape**: A rank 1 int32 numpy array with size equal to the\n  topology rank, describing the shape of the computation's block of cores.\n  If None, the `computation_shape` is `[1] * topology_rank`.\n\n* **computation_stride**: A rank 1 int32 numpy array of size `topology_rank`,\n  describing the inter-core spacing of the `computation_shape` cores in the\n  TPU topology. If None, the `computation_stride` is `[1] * topology_rank`.\n\n* **num_replicas**: The number of computation replicas to run. The replicas will\n  be packed into the free spaces of the topology.\n\n##### Returns\n"
+}

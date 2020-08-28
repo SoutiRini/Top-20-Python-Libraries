@@ -1,0 +1,7 @@
+{
+    "source file": "normalize_op_test.py",
+    "line number": "61",
+    "func name": "_GetNormalizeOpTest",
+    "func arg": "(dtype_, shape_, ord_, axis_)",
+    "comments": ""
+}

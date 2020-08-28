@@ -1,0 +1,7 @@
+{
+    "source file": "d3viz.py",
+    "line number": "119",
+    "func name": "d3write",
+    "func arg": "(fct, path, **kwargs)",
+    "comments": "Convert Theano graph to pydot graph and write to dot file.\n\nParameters ---------- fct : theano.compile.function_module.Function A compiled Theano function, variable, apply or a list of variables. path: str Path to output file\n\nNotes ----- This function accepts extra parameters which will be forwarded to :class:`theano.d3viz.formatting.PyDotFormatter`.\n"
+}

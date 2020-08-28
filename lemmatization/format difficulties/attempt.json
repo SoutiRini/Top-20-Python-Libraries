@@ -1,0 +1,32 @@
+[
+    {
+    "func1": {
+        "source file: ": "debughelpers.py",
+        "line number: ": "74",
+        "func name: ": "attach_enctype_error_multidict",
+        "func arg: ": "(request)",
+        "comments: ": "Since Flask 0.8 we're monkeypatching the files object in case a request is detected that does not use multipart form data but the files object is accessed.\n\n\n"
+    },
+    "func2": {
+        "source file: ": "debughelpers.py",
+        "line number: ": "95",
+        "func name: ": "_dump_loader_info",
+        "func arg: ": "(loader)",
+        "comments: ": ""
+    },
+    "func3": {
+        "source file: ": "debughelpers.py",
+        "line number: ": "112",
+        "func name: ": "explain_template_loading_attempts",
+        "func arg: ": "(app, template, attempts)",
+        "comments: ": "This should help developers understand what failed\n\n\n"
+    },
+    "func4": {
+        "source file: ": "debughelpers.py",
+        "line number: ": "160",
+        "func name: ": "explain_ignored_app_run",
+        "func arg: ": "()",
+        "comments: ": ""
+    }
+}
+]

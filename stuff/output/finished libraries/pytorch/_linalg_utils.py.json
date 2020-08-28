@@ -1,0 +1,7 @@
+{
+    "source file": "_linalg_utils.py",
+    "line number": "91",
+    "func name": "symeig",
+    "func arg": "(A, largest, eigenvectors)",
+    "comments": "Return eigenpairs of A with specified ordering.\n\n\n"
+}

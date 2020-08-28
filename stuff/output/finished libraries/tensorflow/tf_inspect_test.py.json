@@ -1,0 +1,7 @@
+{
+    "source file": "tf_inspect_test.py",
+    "line number": "52",
+    "func name": "test_decorated_function_with_defaults",
+    "func arg": "(a, b, c)",
+    "comments": "Test Decorated Function With Defaults Docstring.\n\n\n"
+}

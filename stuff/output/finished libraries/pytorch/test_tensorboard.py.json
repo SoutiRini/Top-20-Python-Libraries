@@ -1,0 +1,7 @@
+{
+    "source file": "test_tensorboard.py",
+    "line number": "535",
+    "func name": "write_proto",
+    "func arg": "(str_to_compare, function_ptr)",
+    "comments": ""
+}

@@ -1,0 +1,7 @@
+{
+    "source file": "imperative_grad.py",
+    "line number": "33",
+    "func name": "imperative_grad",
+    "func arg": "(tape, target, sources, output_gradients, sources_raw, unconnected_gradients)",
+    "comments": "Computes gradients from the imperatively defined tape on top of the stack.\n\nWorks by filtering the tape, computing how many downstream usages are of each tensor and entry, and repeatedly applying backward functions until we have gradients for all sources.\n##### Args\n* **tape**: the gradient tape which stores the trace.\n\n* **target**: either a Tensor or list of Tensors to be differentiated.\n\n* **sources**: list of Tensors for which we want gradients\n\n* **output_gradients**: if not None, a list of gradient provided for each Target,\n or None if we are to use the target's computed downstream gradient.\n\n* **sources_raw**: if not None, a list of the source python objects from which the\n sources were generated. Should have the same length as sources. Only needs\n to be populated if unconnected_gradients is 'zero'.\n\n* **unconnected_gradients**: determines the value returned if the target and\n sources are unconnected. When 'none' the value returned is None wheras when\n 'zero' a zero tensor in the same shape as the sources is returned.\n\n##### Returns\n"
+}

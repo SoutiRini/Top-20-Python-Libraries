@@ -1,0 +1,7 @@
+{
+    "source file": "util6.py",
+    "line number": "116",
+    "func name": "_shares_exec_prefix",
+    "func arg": "(basedir)",
+    "comments": "Whether a give base directory is on the system exex prefix\n\n\n"
+}

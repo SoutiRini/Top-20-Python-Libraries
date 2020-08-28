@@ -1,0 +1,7 @@
+{
+    "source file": "caffe_translator.py",
+    "line number": "871",
+    "func name": "TranslateReduction",
+    "func arg": "(layer, pretrained_blobs, is_test, **kwargs)",
+    "comments": ""
+}

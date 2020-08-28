@@ -1,0 +1,7 @@
+{
+    "source file": "evaluate1.py",
+    "line number": "803",
+    "func name": "demo",
+    "func arg": "(num, trace)",
+    "comments": "Run exists demos.\n\n- num = 1: propositional logic demo\n\n- num = 2: first order model demo (only if trace is set)\n\n- num = 3: first order sentences demo\n\n- num = 4: satisfaction of open formulas demo\n\n- any other value: run all the demos\n\n:param trace: trace = 1, or trace = 2 for more verbose tracing\n"
+}

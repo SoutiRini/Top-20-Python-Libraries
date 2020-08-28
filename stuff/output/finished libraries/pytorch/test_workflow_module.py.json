@@ -1,0 +1,7 @@
+{
+    "source file": "test_workflow_module.py",
+    "line number": "1041",
+    "func name": "_get_buffer_ids",
+    "func arg": "(module)",
+    "comments": "Object addresses stay constant if and only if all modifications are in-place\n\n\n"
+}

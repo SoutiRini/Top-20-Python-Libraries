@@ -1,0 +1,7 @@
+{
+    "source file": "inset_locator1.py",
+    "line number": "604",
+    "func name": "mark_inset",
+    "func arg": "(parent_axes, inset_axes, loc1, loc2, **kwargs)",
+    "comments": "Draw a box to mark the location of an area represented by an inset axes.\n\nThis function draws a box in *parent_axes* at the bounding box of *inset_axes*, and shows a connection with the inset axes by drawing lines at the corners, giving a \"zoomed in\" effect.\n\nParameters ---------- parent_axes : `matplotlib.axes.Axes` Axes which contains the area of the inset axes.\n\ninset_axes : `matplotlib.axes.Axes` The inset axes.\n\nloc1, loc2 : {1, 2, 3, 4} Corners to use for connecting the inset axes and the area in the parent axes.\n\n**kwargs Patch properties for the lines and box drawn:\n\n%(Patch)s\n##### Returns\n* **pp **: `matplotlib.patches.Patch`\n    The patch drawn to represent the area of the inset axes.\n\n* **p1, p2 **: `matplotlib.patches.Patch`\n    The patches connecting two corners of the inset axes and its area.\n\n"
+}

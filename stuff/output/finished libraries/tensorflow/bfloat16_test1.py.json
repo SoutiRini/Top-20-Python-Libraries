@@ -1,0 +1,7 @@
+{
+    "source file": "bfloat16_test1.py",
+    "line number": "35",
+    "func name": "float_values",
+    "func arg": "()",
+    "comments": "Returns values that should round trip exactly to float and back.\n\n\n"
+}

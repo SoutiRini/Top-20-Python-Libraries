@@ -1,0 +1,7 @@
+{
+    "source file": "meta_analysis.py",
+    "line number": "695",
+    "func name": "_fit_tau_iter_mm",
+    "func arg": "(eff, var_eff, tau2_start, atol, maxiter)",
+    "comments": "iterated method of moment estimate of between random effect variance\n\nThis repeatedly estimates tau, updating weights in each iteration see two-step estimators in DerSimonian and Kacker 2007\n\nParameters ---------- eff : ndarray effect sizes var_eff : ndarray variance of effect sizes tau2_start : float starting value for iteration atol : float, default: 1e-5 convergence tolerance for change in tau2 estimate between iterations maxiter : int maximum number of iterations\n##### Returns\n* **tau2 **: float\n    estimate of random effects variance tau squared\n\n* **converged **: bool\n    True if iteration has converged.\n\n"
+}

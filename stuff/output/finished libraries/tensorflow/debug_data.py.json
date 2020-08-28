@@ -1,0 +1,7 @@
+{
+    "source file": "debug_data.py",
+    "line number": "257",
+    "func name": "device_path_to_device_name",
+    "func arg": "(device_dir)",
+    "comments": "Parse device name from device path.\n\n\n##### Args\n* **device_dir**: (str) a directory name for the device.\n\n##### Returns\n"
+}

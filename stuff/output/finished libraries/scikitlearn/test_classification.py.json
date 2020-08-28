@@ -1,0 +1,7 @@
+{
+    "source file": "test_classification.py",
+    "line number": "2266",
+    "func name": "test_balanced_accuracy_score",
+    "func arg": "(y_true, y_pred)",
+    "comments": ""
+}

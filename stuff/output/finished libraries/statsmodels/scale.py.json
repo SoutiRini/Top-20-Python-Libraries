@@ -1,0 +1,7 @@
+{
+    "source file": "scale.py",
+    "line number": "18",
+    "func name": "mad",
+    "func arg": "(a, c, axis, center)",
+    "comments": "The Median Absolute Deviation along given axis of an array\n\nParameters ---------- a : array_like Input array. c : float, optional The normalization constant.\n\nDefined as scipy.stats.norm.ppf(3/4.), which is approximately .6745. axis : int, optional The default is 0. Can also be None. center : callable or float If a callable is provided, such as the default `np.median` then it is expected to be called center(a). The axis argument will be applied via np.apply_over_axes. Otherwise, provide a float.\n##### Returns\n* **mad **: float\n    `mad` = median(abs(`a` - center))/`c`\n\n"
+}

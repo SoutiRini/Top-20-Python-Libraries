@@ -1,0 +1,7 @@
+{
+    "source file": "extra_ops.py",
+    "line number": "462",
+    "func name": "local_gpua_cumop",
+    "func arg": "(op, ctx_name, inputs, outputs)",
+    "comments": ""
+}

@@ -1,0 +1,7 @@
+{
+    "source file": "opt_uncanonicalize.py",
+    "line number": "174",
+    "func name": "local_dimshuffle_subtensor",
+    "func arg": "(node)",
+    "comments": "If a subtensor is inside a dimshuffle which only drop broadcastable dimensions, scrap the dimshuffle and index the subtensor with 0\n\nx[i:j, :, k:l].dimshuffle(0, 2) => x[i:j, 0, k:l] if x.broadcastable == (False, True, False)\n"
+}

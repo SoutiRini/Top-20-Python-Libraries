@@ -1,0 +1,7 @@
+{
+    "source file": "miobase.py",
+    "line number": "395",
+    "func name": "arr_to_chars",
+    "func arg": "(arr)",
+    "comments": "Convert string array to char array\n\n\n"
+}

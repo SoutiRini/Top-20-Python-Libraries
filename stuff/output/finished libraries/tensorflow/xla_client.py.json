@@ -1,0 +1,7 @@
+{
+    "source file": "xla_client.py",
+    "line number": "687",
+    "func name": "heap_profile",
+    "func arg": "(client)",
+    "comments": "Returns a gzipped pprof protocol buffer containing a heap profile.\n\n\n"
+}

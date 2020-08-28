@@ -1,0 +1,7 @@
+{
+    "source file": "gamma.py",
+    "line number": "318",
+    "func name": "_kl_gamma_gamma",
+    "func arg": "(g0, g1, name)",
+    "comments": "Calculate the batched KL divergence KL(g0 || g1) with g0 and g1 Gamma.\n\n\n##### Args\n* **g0**: instance of a Gamma distribution object.\n\n* **g1**: instance of a Gamma distribution object.\n\n* **name**: (optional) Name to use for created operations.\n  Default is \"kl_gamma_gamma\".\n\n##### Returns\n* **kl_gamma_gamma**: `Tensor`. The batchwise KL(g0 || g1).\n\n"
+}

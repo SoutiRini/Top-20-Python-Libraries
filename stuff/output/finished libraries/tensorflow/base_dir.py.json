@@ -1,0 +1,7 @@
+{
+    "source file": "base_dir.py",
+    "line number": "29",
+    "func name": "get_base_dirs_and_prefixes",
+    "func arg": "(code_url_prefix)",
+    "comments": "Returns the base_dirs and code_prefixes for OSS TensorFlow api gen.\n\n\n"
+}

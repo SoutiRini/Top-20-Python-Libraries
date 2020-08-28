@@ -1,0 +1,7 @@
+{
+    "source file": "kernels.py",
+    "line number": "36",
+    "func name": "get_registered_kernels_for_op",
+    "func arg": "(name)",
+    "comments": "Returns a KernelList proto of registered kernels for a given op.\n\n\n##### Args\n* **name**: A string representing the name of the op whose kernels to retrieve.\n\n"
+}

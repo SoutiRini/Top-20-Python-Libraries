@@ -1,0 +1,7 @@
+{
+    "source file": "art3d.py",
+    "line number": "791",
+    "func name": "_zalpha",
+    "func arg": "(colors, zs)",
+    "comments": "Modify the alphas of the color list according to depth.\n\n\n"
+}

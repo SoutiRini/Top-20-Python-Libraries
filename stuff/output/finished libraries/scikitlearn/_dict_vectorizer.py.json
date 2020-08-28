@@ -1,0 +1,7 @@
+{
+    "source file": "_dict_vectorizer.py",
+    "line number": "17",
+    "func name": "_tosequence",
+    "func arg": "(X)",
+    "comments": "Turn X into a sequence or ndarray, avoiding a copy if possible.\n\n\n"
+}

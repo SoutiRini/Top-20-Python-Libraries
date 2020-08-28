@@ -1,0 +1,7 @@
+{
+    "source file": "widgets2.py",
+    "line number": "21",
+    "func name": "do_event",
+    "func arg": "(tool, etype, button, xdata, ydata, key, step)",
+    "comments": "Trigger an event\n\nParameters ---------- tool : matplotlib.widgets.RectangleSelector etype the event to trigger xdata : int x coord of mouse in data coords ydata : int y coord of mouse in data coords button : int or str button pressed None, 1, 2, 3, 'up', 'down' (up and down are used for scroll events) key the key depressed when the mouse event triggered (see :class:`KeyEvent`) step : int number of scroll steps (positive for 'up', negative for 'down')\n"
+}

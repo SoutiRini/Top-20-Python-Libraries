@@ -1,0 +1,7 @@
+{
+    "source file": "validators.py",
+    "line number": "236",
+    "func name": "write_data_validator_py",
+    "func arg": "(outdir, base_trace_node)",
+    "comments": "Construct and write out the DataValidator (this is the validator that inputs a list of traces)\n\nParameters ---------- outdir : str Root outdir in which the top-level validators package should reside base_trace_node : PlotlyNode PlotlyNode that is the parent of all of the individual trace nodes\n##### Returns\n"
+}

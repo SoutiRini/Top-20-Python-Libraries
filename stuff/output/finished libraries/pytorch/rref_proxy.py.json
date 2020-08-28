@@ -1,0 +1,7 @@
+{
+    "source file": "rref_proxy.py",
+    "line number": "8",
+    "func name": "_invoke_rpc",
+    "func arg": "(rref, rpc_api, func_name, **kwargs)",
+    "comments": ""
+}

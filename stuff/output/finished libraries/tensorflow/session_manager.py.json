@@ -1,0 +1,7 @@
+{
+    "source file": "session_manager.py",
+    "line number": "515",
+    "func name": "_ready",
+    "func arg": "(op, sess, msg)",
+    "comments": "Checks if the model is ready or not, as determined by op.\n\n\n##### Args\n* **op**: An op, either _ready_op or _ready_for_local_init_op, which defines the\n  readiness of the model.\n\n* **sess**: A `Session`.\n\n* **msg**: A message to log to warning if not ready\n\n##### Returns\n"
+}

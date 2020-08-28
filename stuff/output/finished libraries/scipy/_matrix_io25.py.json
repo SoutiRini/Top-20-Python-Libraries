@@ -1,0 +1,7 @@
+{
+    "source file": "_matrix_io25.py",
+    "line number": "75",
+    "func name": "load_npz",
+    "func arg": "(file)",
+    "comments": "Load a sparse matrix from a file using ``.npz`` format.\n\nParameters ---------- file : str or file-like object Either the file name (string) or an open file (file-like object) where the data will be loaded.\n##### Returns\n* **result **: csc_matrix, csr_matrix, bsr_matrix, dia_matrix or coo_matrix\n    A sparse matrix containing the loaded data.\n\n"
+}

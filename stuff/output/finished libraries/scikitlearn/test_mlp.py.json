@@ -1,0 +1,7 @@
+{
+    "source file": "test_mlp.py",
+    "line number": "759",
+    "func name": "test_mlp_param_dtypes",
+    "func arg": "(dtype, Estimator)",
+    "comments": ""
+}

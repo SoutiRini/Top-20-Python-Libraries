@@ -1,0 +1,7 @@
+{
+    "source file": "test_extmath.py",
+    "line number": "701",
+    "func name": "test_safe_sparse_dot_dense_output",
+    "func arg": "(dense_output)",
+    "comments": ""
+}

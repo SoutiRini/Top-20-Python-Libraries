@@ -1,0 +1,7 @@
+{
+    "source file": "tf_inspect.py",
+    "line number": "405",
+    "func name": "stack",
+    "func arg": "(context)",
+    "comments": "TFDecorator-aware replacement for inspect.stack.\n\n\n"
+}

@@ -1,0 +1,7 @@
+{
+    "source file": "tpu_strategy.py",
+    "line number": "1228",
+    "func name": "_set_last_step_outputs",
+    "func arg": "(ctx, last_step_tensor_outputs)",
+    "comments": "Sets the last step outputs on the given context.\n\n\n"
+}

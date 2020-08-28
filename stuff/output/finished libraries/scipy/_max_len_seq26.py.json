@@ -1,0 +1,7 @@
+{
+    "source file": "_max_len_seq26.py",
+    "line number": "22",
+    "func name": "max_len_seq",
+    "func arg": "(nbits, state, length, taps)",
+    "comments": "Maximum length sequence (MLS) generator.\n\nParameters ---------- nbits : int Number of bits to use. Length of the resulting sequence will be ``(2**nbits)\n\n- 1``. Note that generating long sequences (e.g., greater than ``nbits == 16``) can take a long time. state : array_like, optional If array, must be of length ``nbits``, and will be cast to binary (bool) representation. If None, a seed of ones will be used, producing a repeatable representation. If ``state`` is all zeros, an error is raised as this is invalid. Default: None. length : int, optional Number of samples to compute. If None, the entire length ``(2**nbits)\n\n- 1`` is computed. taps : array_like, optional Polynomial taps to use (e.g., ``[7, 6, 1]`` for an 8-bit sequence). If None, taps will be automatically selected (for up to ``nbits == 32``).\n##### Returns\n* **seq **: array\n    Resulting MLS sequence of 0's and 1's.\n\n* **state **: array\n    The final state of the shift register.\n\n* **The algorithm for MLS generation is generically described in**: https\n\n* **option listed for each value of ``nbits`` in**: http\n\n* **.. versionadded**: \n\n* **MLS uses binary convention**: \n\n* **MLS has a white spectrum (except for DC)**: \n\n* **Circular autocorrelation of MLS is an impulse**: \n\n* **Linear autocorrelation of MLS is approximately an impulse**: \n\n"
+}

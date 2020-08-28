@@ -1,0 +1,7 @@
+{
+    "source file": "correctness_test.py",
+    "line number": "43",
+    "func name": "multi_input_functional",
+    "func arg": "()",
+    "comments": "Functional Model that adds its inputs and then adds a bias.\n\n\n"
+}

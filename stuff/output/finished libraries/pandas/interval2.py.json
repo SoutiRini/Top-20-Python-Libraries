@@ -1,0 +1,7 @@
+{
+    "source file": "interval2.py",
+    "line number": "1337",
+    "func name": "maybe_convert_platform_interval",
+    "func arg": "(values)",
+    "comments": "Try to do platform conversion, with special casing for IntervalArray. Wrapper around maybe_convert_platform that alters the default return dtype in certain cases to be compatible with IntervalArray.  For example, empty lists return with integer dtype instead of object dtype, which is prohibited for IntervalArray.\n\nParameters ---------- values : array-like\n##### Returns\n"
+}

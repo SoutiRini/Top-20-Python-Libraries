@@ -1,0 +1,7 @@
+{
+    "source file": "elastic_net.py",
+    "line number": "272",
+    "func name": "_opt_1d",
+    "func arg": "(func, grad, hess, model, start, L1_wt, tol, check_step)",
+    "comments": "One-dimensional helper for elastic net.\n\nParameters ---------- func : function A smooth function of a single variable to be optimized with L1 penaty. grad : function The gradient of `func`. hess : function The Hessian of `func`. model : statsmodels model The model being fit. start : real A starting value for the function argument L1_wt : non-negative real The weight for the L1 penalty function. tol : non-negative real A convergence threshold. check_step : bool If True, check that the first step is an improvement and use bisection if it is not.\n\nIf False, return after the first step regardless.\n\nNotes ----- ``func``, ``grad``, and ``hess`` have argument signature (x, model), where ``x`` is a point in the parameter space and ``model`` is the model being fit.\n\nIf the log-likelihood for the model is exactly quadratic, the global minimum is returned in one step.\n\nOtherwise numerical bisection is used.\n##### Returns\n"
+}

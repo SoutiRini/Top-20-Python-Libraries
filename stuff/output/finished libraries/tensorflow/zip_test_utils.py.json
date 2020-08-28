@@ -1,0 +1,7 @@
+{
+    "source file": "zip_test_utils.py",
+    "line number": "262",
+    "func name": "make_zip_of_tests",
+    "func arg": "(options, test_parameters, make_graph, make_test_inputs, extra_toco_options, use_frozen_graph, expected_tf_failures)",
+    "comments": "Helper to make a zip file of a bunch of TensorFlow models.\n\nThis does a cartesian product of the dictionary of test_parameters and calls make_graph() for each item in the cartesian product set. If the graph is built successfully, then make_test_inputs() is called to build expected input/output value pairs. The model is then converted to tflite with toco, and the examples are serialized with the tflite model into a zip file (2 files per item in the cartesian product set).\n##### Args\n* **options**: An Options instance.\n\n* **test_parameters**: Dictionary mapping to lists for each parameter.\n  e.g. `{\"strides\"\n\n* **make_graph**: function that takes current parameters and returns tuple\n  `[input1, input2, ...], [output1, output2, ...]`\n\n* **make_test_inputs**: function taking `curr_params`, `session`, `input_tensors`,\n  `output_tensors` and returns tuple `(input_values, output_values)`.\n\n* **extra_toco_options**: Additional toco options.\n\n* **use_frozen_graph**: Whether or not freeze graph before toco converter.\n\n* **expected_tf_failures**: Number of times tensorflow is expected to fail in\n  executing the input graphs. In some cases it is OK for TensorFlow to fail\n  because the one or more combination of parameters is invalid.\n\n"
+}

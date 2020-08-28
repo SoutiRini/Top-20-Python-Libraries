@@ -1,0 +1,7 @@
+{
+    "source file": "windows267.py",
+    "line number": "2020",
+    "func name": "get_window",
+    "func arg": "(window, Nx, fftbins)",
+    "comments": "Return a window of a given length and type.\n\nParameters ---------- window : string, float, or tuple The type of window to create. See below for more details. Nx : int The number of samples in the window. fftbins : bool, optional If True (default), create a \"periodic\" window, ready to use with `ifftshift` and be multiplied by the result of an FFT (see also :func:`~scipy.fft.fftfreq`). If False, create a \"symmetric\" window, for use in filter design.\n##### Returns\n* **Window types**: \n\n"
+}

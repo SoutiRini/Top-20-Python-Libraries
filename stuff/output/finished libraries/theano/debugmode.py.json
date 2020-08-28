@@ -1,0 +1,7 @@
+{
+    "source file": "debugmode.py",
+    "line number": "1238",
+    "func name": "_check_preallocated_output",
+    "func arg": "(node, thunk, prealloc_modes, def_val, storage_map, r_vals, dr_vals, perform, active_order_set, inplace_outs, init_outputs)",
+    "comments": "Try to apply thunk() on different output storages.\n\n\n"
+}

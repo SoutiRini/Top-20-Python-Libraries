@@ -1,0 +1,7 @@
+{
+    "source file": "call_trees.py",
+    "line number": "211",
+    "func name": "transform",
+    "func arg": "(node, ctx)",
+    "comments": "Transform function call to the compiled counterparts.\n\n\n##### Args\n* **node**: AST\n\n* **ctx**: EntityContext\n\n##### Returns\n* **A tuple (node, new_names)**: node\n\n"
+}

@@ -1,0 +1,7 @@
+{
+    "source file": "test_serialization.py",
+    "line number": "414",
+    "func name": "test_transform_column_source_data_with_buffers",
+    "func arg": "(pd, cols, dt1, dt2)",
+    "comments": ""
+}

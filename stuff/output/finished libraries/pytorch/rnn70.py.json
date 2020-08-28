@@ -1,0 +1,7 @@
+{
+    "source file": "rnn70.py",
+    "line number": "44",
+    "func name": "init_dropout_state",
+    "func arg": "(dropout, train, dropout_seed, dropout_state)",
+    "comments": ""
+}

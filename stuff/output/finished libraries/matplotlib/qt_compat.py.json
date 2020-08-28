@@ -1,0 +1,7 @@
+{
+    "source file": "qt_compat.py",
+    "line number": "207",
+    "func name": "_setDevicePixelRatioF",
+    "func arg": "(obj, val)",
+    "comments": "Call obj.setDevicePixelRatioF(val) with graceful fallback for older Qt.\n\nThis can be replaced by the direct call when we require Qt>=5.6.\n"
+}

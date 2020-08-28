@@ -1,0 +1,7 @@
+{
+    "source file": "learning_rate_schedule.py",
+    "line number": "1002",
+    "func name": "deserialize",
+    "func arg": "(config, custom_objects)",
+    "comments": ""
+}

@@ -1,0 +1,7 @@
+{
+    "source file": "buildbot_filter.py",
+    "line number": "6",
+    "func name": "filter_output",
+    "func arg": "(fd_in)",
+    "comments": ""
+}

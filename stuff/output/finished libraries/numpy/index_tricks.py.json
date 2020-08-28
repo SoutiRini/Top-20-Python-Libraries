@@ -1,0 +1,7 @@
+{
+    "source file": "index_tricks.py",
+    "line number": "965",
+    "func name": "diag_indices_from",
+    "func arg": "(arr)",
+    "comments": "Return the indices to access the main diagonal of an n-dimensional array.\n\nSee `diag_indices` for full details.\n\nParameters ---------- arr : array, at least 2-D\n\nSee Also -------- diag_indices\n\nNotes ----- .. versionadded:: 1.4.0\n"
+}

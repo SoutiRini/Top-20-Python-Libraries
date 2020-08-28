@@ -1,0 +1,7 @@
+{
+    "source file": "test_enumerated_validator.py",
+    "line number": "147",
+    "func name": "test_rejection_by_element_aok",
+    "func arg": "(val, validator_aok_re)",
+    "comments": ""
+}

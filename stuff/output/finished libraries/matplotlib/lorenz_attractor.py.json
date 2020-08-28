@@ -1,0 +1,7 @@
+{
+    "source file": "lorenz_attractor.py",
+    "line number": "21",
+    "func name": "lorenz",
+    "func arg": "(x, y, z, s, r, b)",
+    "comments": "Given: x, y, z: a point of interest in three dimensional space s, r, b: parameters defining the lorenz attractor Returns: x_dot, y_dot, z_dot: values of the lorenz attractor's partial derivatives at the point x, y, z\n\n\n"
+}

@@ -1,0 +1,7 @@
+{
+    "source file": "genspider.py",
+    "line number": "14",
+    "func name": "sanitize_module_name",
+    "func arg": "(module_name)",
+    "comments": "Sanitize the given module name, by replacing dashes and points with underscores and prefixing it with a letter if it doesn't start with one\n\n\n"
+}

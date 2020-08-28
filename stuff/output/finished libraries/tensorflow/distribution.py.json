@@ -1,0 +1,7 @@
+{
+    "source file": "distribution.py",
+    "line number": "132",
+    "func name": "_convert_to_tensor",
+    "func arg": "(value, name, preferred_dtype)",
+    "comments": "Converts to tensor avoiding an eager bug that loses float precision.\n\n\n"
+}

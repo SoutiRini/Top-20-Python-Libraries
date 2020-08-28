@@ -1,0 +1,7 @@
+{
+    "source file": "conftest1.py",
+    "line number": "4",
+    "func name": "pytest_report_header",
+    "func arg": "(config)",
+    "comments": ""
+}

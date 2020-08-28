@@ -1,0 +1,7 @@
+{
+    "source file": "dist_dependence_measures.py",
+    "line number": "464",
+    "func name": "distance_correlation",
+    "func arg": "(x, y)",
+    "comments": "Distance correlation.\n\nCalculate the empirical distance correlation as described in [1]_. This statistic is analogous to product-moment correlation and describes the dependence between `x` and `y`, which are random vectors of arbitrary length. The statistics' values range between 0 (implies independence) and 1 (implies complete dependence).\n\nParameters ---------- x : array_like, 1-D or 2-D If `x` is 1-D than it is assumed to be a vector of observations of a single random variable. If `x` is 2-D than the rows should be observations and the columns are treated as the components of a random vector, i.e., each column represents a different component of the random vector `x`. y : array_like, 1-D or 2-D Same as `x`, but only the number of observation has to match that of `x`. If `y` is 2-D note that the number of columns of `y` (i.e., the number of components in the random vector) does not need to match the number of columns in `x`.\n##### Returns\n"
+}

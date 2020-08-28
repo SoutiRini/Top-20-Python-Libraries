@@ -1,0 +1,7 @@
+{
+    "source file": "np_array_ops.py",
+    "line number": "1667",
+    "func name": "_getitem",
+    "func arg": "(slice_spec)",
+    "comments": "Implementation of ndarray.__getitem__.\n\n\n"
+}

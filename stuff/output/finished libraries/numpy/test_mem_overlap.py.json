@@ -1,0 +1,7 @@
+{
+    "source file": "test_mem_overlap.py",
+    "line number": "576",
+    "func name": "assert_copy_equivalent",
+    "func arg": "(operation, args, out, **kwargs)",
+    "comments": "Check that operation(*args, out=out) produces results equivalent to out[...] = operation(*args, out=out.copy())\n\n\n"
+}

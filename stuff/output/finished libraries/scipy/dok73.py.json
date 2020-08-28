@@ -1,0 +1,7 @@
+{
+    "source file": "dok73.py",
+    "line number": "430",
+    "func name": "isspmatrix_dok",
+    "func arg": "(x)",
+    "comments": "Is x of dok_matrix type?\n\nParameters ---------- x object to check for being a dok matrix\n##### Returns\n"
+}

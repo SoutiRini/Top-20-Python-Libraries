@@ -1,0 +1,7 @@
+{
+    "source file": "control_flow_ops.py",
+    "line number": "3691",
+    "func name": "from_control_flow_context_def",
+    "func arg": "(context_def, import_scope)",
+    "comments": "Deserializes `context_def` into the appropriate ControlFlowContext.\n\n\n##### Args\n* **context_def**: ControlFlowContextDef proto\n\n* **import_scope**: Optional `string`. Name scope to add.\n\n##### Returns\n"
+}

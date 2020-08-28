@@ -1,0 +1,7 @@
+{
+    "source file": "_rotation_spline36.py",
+    "line number": "192",
+    "func name": "_create_block_3_diagonal_matrix",
+    "func arg": "(A, B, d)",
+    "comments": "Create a 3-diagonal block matrix as banded.\n\nThe matrix has the following structure:\n\nDB... ADB.. .ADB. ..ADB ...AD\n\nThe blocks A, B and D are 3-by-3 matrices. The D matrices has the form d * I.\n\nParameters ---------- A : ndarray, shape (n, 3, 3) Stack of A blocks. B : ndarray, shape (n, 3, 3) Stack of B blocks. d : ndarray, shape (n + 1,) Values for diagonal blocks.\n##### Returns\n"
+}

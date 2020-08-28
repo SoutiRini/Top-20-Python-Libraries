@@ -1,0 +1,7 @@
+{
+    "source file": "grpc_debug_test_server.py",
+    "line number": "428",
+    "func name": "_poll_server_till_success",
+    "func arg": "(max_attempts, sleep_per_poll_sec, debug_server_url, dump_dir, server, gpu_memory_fraction)",
+    "comments": "Poll server until success or exceeding max polling count.\n\n\n##### Args\n* **max_attempts**: (int) How many times to poll at maximum\n\n* **sleep_per_poll_sec**: (float) How many seconds to sleep for after each\n  unsuccessful poll.\n\n* **debug_server_url**: (str) gRPC URL to the debug server.\n\n* **dump_dir**: (str) Dump directory to look for files in. If None, will directly\n  check data from the server object.\n\n* **server**: The server object.\n\n* **gpu_memory_fraction**: (float) Fraction of GPU memory to be\n  allocated for the Session used in server polling.\n\n##### Returns\n"
+}

@@ -1,0 +1,7 @@
+{
+    "source file": "test_predictor.py",
+    "line number": "49",
+    "func name": "test_infinite_values_and_thresholds",
+    "func arg": "(threshold, expected_predictions)",
+    "comments": ""
+}

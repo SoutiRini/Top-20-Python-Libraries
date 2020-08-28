@@ -1,0 +1,7 @@
+{
+    "source file": "control_ops.py",
+    "line number": "21",
+    "func name": "loop",
+    "func arg": "(model, cond_blob, external_blobs, loop_model, cond_model)",
+    "comments": "Loop\n\n\n"
+}

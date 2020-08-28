@@ -1,0 +1,7 @@
+{
+    "source file": "conftest21.py",
+    "line number": "27",
+    "func name": "object_series",
+    "func arg": "()",
+    "comments": "Fixture for Series of dtype object with Index of unique strings\n\n\n"
+}

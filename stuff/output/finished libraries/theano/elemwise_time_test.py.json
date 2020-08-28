@@ -1,0 +1,7 @@
+{
+    "source file": "elemwise_time_test.py",
+    "line number": "34",
+    "func name": "ElemwiseOpTime",
+    "func arg": "(N, script, loops)",
+    "comments": ""
+}

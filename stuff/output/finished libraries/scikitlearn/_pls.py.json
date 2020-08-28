@@ -1,0 +1,7 @@
+{
+    "source file": "_pls.py",
+    "line number": "112",
+    "func name": "_center_scale_xy",
+    "func arg": "(X, Y, scale)",
+    "comments": "Center X, Y and scale if the scale parameter==True\n\n\n##### Returns\n"
+}

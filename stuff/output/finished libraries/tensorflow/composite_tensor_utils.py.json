@@ -1,0 +1,7 @@
+{
+    "source file": "composite_tensor_utils.py",
+    "line number": "113",
+    "func name": "append_composite_tensor",
+    "func arg": "(target, to_append)",
+    "comments": "Helper function to append composite tensors to each other in the 0 axis.\n\nIn order to support batching within a fit/evaluate/predict call, we need to be able to aggregate within a CompositeTensor. Unfortunately, the CT API currently does not make this easy\n\n- especially in V1 mode, where we're working with CompositeTensor Value objects that have no connection with the CompositeTensors that created them.\n\nArguments: target: CompositeTensor or CompositeTensor value object that will be appended to. to_append: CompositeTensor or CompositeTensor value object to append to. 'target'.\n##### Returns\n"
+}

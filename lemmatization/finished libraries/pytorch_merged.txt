@@ -1,0 +1,3229 @@
+{
+    "source file": "__config__.py",
+    "line number": "15",
+    "func name": "parallel_info",
+    "func arg": "()",
+    "comments": "Returns detailed string with parallelization settings\n\n\n"
+}{
+    "source file": "__main__.py",
+    "line number": "179",
+    "func name": "main",
+    "func arg": "()",
+    "comments": ""
+}{
+    "source file": "__main__1.py",
+    "line number": "19",
+    "func name": "main",
+    "func arg": "()",
+    "comments": ""
+}{
+    "source file": "__sym_init__.py",
+    "line number": "9",
+    "func name": "_parseFile",
+    "func arg": "(filename)",
+    "comments": ""
+}{
+    "source file": "_appdirs.py",
+    "line number": "567",
+    "func name": "_get_win_folder_with_jna",
+    "func arg": "(csidl_name)",
+    "comments": ""
+}{
+    "source file": "_async.py",
+    "line number": "83",
+    "func name": "wait",
+    "func arg": "(future)",
+    "comments": "Forces completion of a `torch.jit.Future[T]` asynchronous task, returning the result of the task. See :func:`~fork` for docs and examples. Arguments: func (torch.jit.Future[T]): an asynchronous task reference, created through `torch.jit.fork` Returns: `T`: the return value of the the completed task\n\n\n"
+}{
+    "source file": "_atfork.py",
+    "line number": "19",
+    "func name": "register_after_fork",
+    "func arg": "(func)",
+    "comments": "Register a callable to be executed in the child process after a fork.\n\nNote: In python < 3.7 this will only work with processes created using the ``multiprocessing`` module. In python >= 3.7 it also works with ``os.fork()``.\n\nArguments: func (function): Function taking no arguments to be called in the child after fork\n"
+}{
+    "source file": "_builtins.py",
+    "line number": "144",
+    "func name": "_find_builtin",
+    "func arg": "(fn)",
+    "comments": ""
+}{
+    "source file": "_caffe2_graph.py",
+    "line number": "801",
+    "func name": "protos_to_graph_def",
+    "func arg": "(net_defs, shapes, **kwargs)",
+    "comments": "Convert a set of Caffe2 net definitions to a Tensorflow graph.\n\n\n##### Args\n* **net_defs**: List of caffe2_pb2.NetDef protobufs representing computation\n    graphs.\n\n* **shapes**: Dictionary mapping blob names to their shapes/dimensions.\n\n##### Returns\n"
+}{}{
+    "source file": "_convert_np.py",
+    "line number": "40",
+    "func name": "_prepare_caffe2",
+    "func arg": "(x)",
+    "comments": ""
+}{
+    "source file": "_cpp_extension_versioner.py",
+    "line number": "21",
+    "func name": "hash_build_arguments",
+    "func arg": "(hash_value, build_arguments)",
+    "comments": ""
+}{
+    "source file": "_embedding.py",
+    "line number": "65",
+    "func name": "make_mat",
+    "func arg": "(matlist, save_path)",
+    "comments": ""
+}{
+    "source file": "_freeze.py",
+    "line number": "13",
+    "func name": "freeze",
+    "func arg": "(mod, preserved_attrs)",
+    "comments": "Freezing a :class:`ScriptModule` will clone it and attempt to inline the cloned module's submodules, parameters, and attributes as constants in the TorchScript IR Graph. By default, `forward` will be preserved, as well as attributes & methods specified in `preserved_attrs`. Additionally, any attribute that is modified within a preserved method will be preserved.\n\nFreezing currently only accepts ScriptModules that are in eval mode.\n\nArguments: mod (:class:`ScriptModule`): a module to be frozen\n\npreserved_attrs (Optional[List[str]]): a list of attributes to preserve in addition to the forward method.\n##### Attributes\n##### Returns\n* **Frozen **: class\n\n* **ple (Freezing a simple module with a Parameter)**: \n\n* **estcode**: \n\n* **class MyModule(torch.nn.Module)**: def __init__(self, N, M)\n\n* **class MyModule2(torch.nn.Module)**: def __init__(self)\n\n* ****: \n\n"
+}{
+    "source file": "_functions.py",
+    "line number": "111",
+    "func name": "_get_stream",
+    "func arg": "(device)",
+    "comments": "Gets a background stream for copying between CPU and GPU\n\n\n"
+}{}{
+    "source file": "_fuser.py",
+    "line number": "68",
+    "func name": "_graph_for",
+    "func arg": "(**kwargs)",
+    "comments": ""
+}{
+    "source file": "_import_c_extension.py",
+    "line number": "63",
+    "func name": "_TensorCPU_reshape",
+    "func arg": "(shape)",
+    "comments": ""
+}{
+    "source file": "_jit_internal.py",
+    "line number": "807",
+    "func name": "_disable_emit_hooks_decorator",
+    "func arg": "(_DecoratorContextManager)",
+    "comments": ""
+}{
+    "source file": "_linalg_utils.py",
+    "line number": "91",
+    "func name": "symeig",
+    "func arg": "(A, largest, eigenvectors)",
+    "comments": "Return eigenpairs of A with specified ordering.\n\n\n"
+}{
+    "source file": "_lobpcg.py",
+    "line number": "738",
+    "func name": "LOBPCG_call_tracker",
+    "func arg": "()",
+    "comments": ""
+}{}{
+    "source file": "_lowrank.py",
+    "line number": "170",
+    "func name": "pca_lowrank",
+    "func arg": "(A, q, center, niter)",
+    "comments": "Performs linear Principal Component Analysis (PCA) on a low-rank matrix, batches of such matrices, or sparse matrix.\n\nThis function returns a namedtuple ``(U, S, V)`` which is the nearly optimal approximation of a singular value decomposition of a centered matrix :math:`A` such that :math:`A = U diag(S) V^T`.\n\n.. note:: The relation of ``(U, S, V)`` to PCA is as follows:\n\n- :math:`A` is a data matrix with ``m`` samples and ``n`` features\n\n- the :math:`V` columns represent the principal directions\n\n- :math:`S ** 2 / (m\n\n- 1)` contains the eigenvalues of :math:`A^T A / (m\n\n- 1)` which is the covariance of ``A`` when ``center=True`` is provided.\n\n- ``matmul(A, V[:, :k])`` projects data to the first k principal components\n\n.. note:: Different from the standard SVD, the size of returned matrices depend on the specified rank and q values as follows:\n\n- :math:`U` is m x q matrix\n\n- :math:`S` is q-vector\n\n- :math:`V` is n x q matrix\n\n.. note:: To obtain repeatable results, reset the seed for the pseudorandom number generator\n\nArguments:\n\nA (Tensor): the input tensor of size :math:`(*, m, n)`\n\nq (int, optional): a slightly overestimated rank of :math:`A`. By default, ``q = min(6, m, n)``.\n\ncenter (bool, optional): if True, center the input tensor, otherwise, assume that the input is centered.\n\nniter (int, optional): the number of subspace iterations to conduct; niter must be a nonnegative integer, and defaults to 2.\n\nReferences::\n\n- Nathan Halko, Per-Gunnar Martinsson, and Joel Tropp, Finding structure with randomness: probabilistic algorithms for constructing approximate matrix decompositions, arXiv:0909.4061 [math.NA; math.PR], 2009 (available at `arXiv <http://arxiv.org/abs/0909.4061>`_).\n"
+}{
+    "source file": "_namedtensor_internals.py",
+    "line number": "98",
+    "func name": "update_names",
+    "func arg": "(tensor, names, rename_map, inplace)",
+    "comments": "There are two usages\n\ntensor.rename(*names) returns a view on tensor with named dims `names`. `names` must be of length `tensor.dim()`; otherwise, if '...' is in `names`, then it is expanded greedily to be equal to the corresponding names from `tensor.names`.\n\nFor example, ``` >>> x = torch.empty(2, 3, 5, 7, names=('N', 'C', 'H', 'W')) >>> x.rename('...', 'height', 'width').names ('N', 'C', 'height', 'width')\n\n>>> x.rename('batch', '...', 'width').names ('batch', 'C', 'H', 'width') ```\n\ntensor.rename(**rename_map) returns a view on tensor that has rename dims as specified in the mapping `rename_map`.\n\nFor example, ``` >>> x = torch.empty(2, 3, 5, 7, names=('N', 'C', 'H', 'W')) >>> x.rename(W='width', H='height').names ('N', 'C', 'height', 'width') ```\n\nFinally, tensor.rename has an in-place version called tensor.rename_.\n"
+}{
+    "source file": "_numeric_suite.py",
+    "line number": "435",
+    "func name": "compare_model_outputs",
+    "func arg": "(float_model, q_model)",
+    "comments": "Compare output activations between float and quantized models at corresponding locations for the same input. Return a dict with key corresponding to quantized module names and each entry being a dictionary with two keys 'float' and 'quantized', containing the activations of quantized model and float model at matching locations. This dict can be used to compare and compute the propagation quantization error.\n\nExample usage: act_compare_dict = compare_model_outputs(float_model, qmodel, data) for key in act_compare_dict: print(key, compute_error(act_compare_dict[key]['float'], act_compare_dict[key]['quantized'].dequantize()))\n##### Args\n* **float_model**: float model used to generate the q_model\n\n* **q_model**: model quantized from float_model\n\n* **data**: input data used to run the prepared float_model and q_model\n\n* **Logger**: type of logger to be attached to float_module and q_module\n\n* **white_list**: list of module types to attach logger\n\n* **rn**: \n\n* **act_compare_dict**: dict with key corresponding to quantized module names\n\n"
+}{
+    "source file": "_onnx_graph.py",
+    "line number": "15",
+    "func name": "parse",
+    "func arg": "(graph)",
+    "comments": ""
+}{
+    "source file": "_ops.py",
+    "line number": "17",
+    "func name": "dl_open_guard",
+    "func arg": "()",
+    "comments": "Context manager to set the RTLD_GLOBAL dynamic linker flag while we open a shared library to load custom operators.\n\n\n"
+}{
+    "source file": "_overrides.py",
+    "line number": "804",
+    "func name": "get_overridable_functions",
+    "func arg": "()",
+    "comments": "List functions that are overridable via __torch_function__\n\n\n##### Returns\n"
+}{
+    "source file": "_pickle.py",
+    "line number": "32",
+    "func name": "restore_type_tag",
+    "func arg": "(value, type_str)",
+    "comments": ""
+}{
+    "source file": "_proto_graph.py",
+    "line number": "28",
+    "func name": "node_proto",
+    "func arg": "(name, op, input, dtype, shape, outputsize, attributes)",
+    "comments": "Creates an object matching https://github.com/tensorflow/tensorboard/blob/master/tensorboard/compat/proto/node_def.proto\n\n\n"
+}{
+    "source file": "_pytorch_graph.py",
+    "line number": "272",
+    "func name": "graph",
+    "func arg": "(model, args, verbose)",
+    "comments": "This method processes a PyTorch model and produces a `GraphDef` proto that can be logged to TensorBoard.\n\n\n##### Args\n* **model (PyTorch module)**: The model to be parsed.\n\n* **args (tuple)**: input tensor[s] for the model.\n\n* **verbose (bool)**: Whether to print out verbose information while\n  processing.\n\n"
+}{
+    "source file": "_recursive.py",
+    "line number": "618",
+    "func name": "lazy_bind",
+    "func arg": "(concrete_type, unbound_method)",
+    "comments": "Returns a function that lazily binds `unbound_method` to a provided Module IValue, then invokes the method. We do this so that any Python shenanigans that will poison type sharing are impossible at compile time.\n\n\n"
+}{
+    "source file": "_reduction.py",
+    "line number": "48",
+    "func name": "legacy_get_enum",
+    "func arg": "(size_average, reduce, emit_warning)",
+    "comments": ""
+}{
+    "source file": "_script.py",
+    "line number": "1092",
+    "func name": "_unwrap_optional",
+    "func arg": "(x)",
+    "comments": ""
+}{
+    "source file": "_serialization.py",
+    "line number": "171",
+    "func name": "validate_map_location",
+    "func arg": "(map_location)",
+    "comments": ""
+}{
+    "source file": "_six.py",
+    "line number": "77",
+    "func name": "bind_method",
+    "func arg": "(fn, obj, obj_type)",
+    "comments": ""
+}{
+    "source file": "_state.py",
+    "line number": "107",
+    "func name": "_set_jit_function_cache",
+    "func arg": "(key, value)",
+    "comments": ""
+}{
+    "source file": "_storage_docs.py",
+    "line number": "22",
+    "func name": "add_docstr_all",
+    "func arg": "(method, docstr)",
+    "comments": ""
+}{
+    "source file": "_tensor_docs.py",
+    "line number": "8",
+    "func name": "add_docstr_all",
+    "func arg": "(method, docstr)",
+    "comments": ""
+}{
+    "source file": "_tensor_str.py",
+    "line number": "369",
+    "func name": "_str",
+    "func arg": "()",
+    "comments": ""
+}{
+    "source file": "_tensorboard_vis.py",
+    "line number": "95",
+    "func name": "visualize_rec",
+    "func arg": "(graph, value_map, name_prefix, pb_graph, executors_it)",
+    "comments": "Recursive part of visualize (basically skips setting up the input and output nodes).\n\n\n"
+}{
+    "source file": "_torch_docs.py",
+    "line number": "26",
+    "func name": "merge_dicts",
+    "func arg": "()",
+    "comments": ""
+}{
+    "source file": "_trace.py",
+    "line number": "1109",
+    "func name": "_get_trace_graph",
+    "func arg": "(f, args, kwargs, strict, _force_outplace, return_inputs, _return_inputs_states)",
+    "comments": ".. warning:: This function is internal-only and should only be used by the ONNX exporter. If you are trying to get a graph through tracing, please go through the public API instead\n\ntrace = torch.jit.trace(nn.LSTMCell(), (input, hidden)) trace_graph = trace.graph\n\nTrace a function or model, returning a tuple consisting of the both the *trace* of an execution, as well as the original return value. If return_inputs, also returns the trace inputs as part of the tuple\n\nTracing is guaranteed not to change the semantics of the function/module that is traced.\n\nArguments: f (torch.nn.Module or function): the function or module to be traced. args (tuple or Tensor): the positional arguments to pass to the function/module to be traced.\n\nA non-tuple is assumed to be a single positional argument to be passed to the model. kwargs (dict): the keyword arguments to pass to the function/module to be traced.\n\nExample (trace a cell):\n\n.. testcode::\n\ntrace = torch.jit.trace(nn.LSTMCell(), (input, hidden))\n"
+}{
+    "source file": "_utils_internal.py",
+    "line number": "37",
+    "func name": "get_source_lines_and_file",
+    "func arg": "(obj, error_msg)",
+    "comments": "Wrapper around inspect.getsourcelines and inspect.getsourcefile.\n\n\n"
+}{
+    "source file": "_utils.py",
+    "line number": "97",
+    "func name": "convert_to_HWC",
+    "func arg": "(tensor, input_format)",
+    "comments": ""
+}{
+    "source file": "_utils3.py",
+    "line number": "453",
+    "func name": "_get_device_index",
+    "func arg": "(device, optional, allow_cpu)",
+    "comments": "Gets the device index from :attr:`device`, which can be a torch.device object, a Python integer, or ``None``.\n\nIf :attr:`device` is a torch.device object, returns the device index if it has index. Note that for a device without a specified index, i.e., ``torch.device('xxx')``, this will return the current default device of that type if :attr:`optional` is ``True``. If :attr:`allow_cpu` is ``True``, CPU devices will be accepted and ``-1`` will be returned in this case.\n\nIf :attr:`device` is a Python integer, it is returned as is.\n\nIf :attr:`device` is ``None``, this will return the current default device of the supported runtime platform if :attr:`optional` is ``True``. i.e., the current default CUDA device will be returned if CUDA runtime is supported.\n"
+}{
+    "source file": "_utils4.py",
+    "line number": "35",
+    "func name": "_dummy_type",
+    "func arg": "(name)",
+    "comments": ""
+}{}{
+    "source file": "_vmap_internals.py",
+    "line number": "151",
+    "func name": "vmap",
+    "func arg": "(func, in_dims, out_dims)",
+    "comments": "vmap is the vectorizing map. Returns a new function that maps `func` over some dimension of the inputs. Semantically, vmap pushes the map into PyTorch operations called by `func`, effectively vectorizing those operations.\n\nvmap is useful for handling batch dimensions: one can write a function `func` that runs on examples and the lift it to a function that can take batches of examples with `vmap(func)`. Furthermore, it is possible to use vmap to obtain batched gradients when composed with autograd.\n##### Args\n* **func (function)**: A Python function that takes one or more arguments.\n    Must return one or more Tensors.\n\n* **in_dims (int or Tuple[Optional[int]])**: Specifies which dimension of the\n    inputs should be mapped over. If `in_dims` is a Tuple, then it should have\n    one element per input. If the `in_dim` for a particular input is\n    None, then that indicates there is no map dimension. Default\n\n* **out_dims (int or Tuple[int])**: Specifies where the mapped dimension\n    should appear in the outputs. If `out_dims` is a Tuple, then it should\n    have one element per output. Default\n\n##### Returns\n* **arning**: \n\n"
+}{}{}{}{}{}{
+    "source file": "adagrad_test_helper.py",
+    "line number": "73",
+    "func name": "adagrad_sparse_test_helper",
+    "func arg": "(parent_test, inputs, lr, epsilon, engine, ref_adagrad, gc, dc, row_wise, weight_decay)",
+    "comments": ""
+}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{
+    "source file": "algebra.py",
+    "line number": "21",
+    "func name": "batch_mat_mul",
+    "func arg": "(model, blob_in, blob_out, enable_tensor_core, **kwargs)",
+    "comments": ""
+}{}{
+    "source file": "allcompare_test.py",
+    "line number": "30",
+    "func name": "allcompare_process",
+    "func arg": "(filestore_dir, process_id, data, num_procs)",
+    "comments": ""
+}{
+    "source file": "annotations.py",
+    "line number": "301",
+    "func name": "ann_to_type",
+    "func arg": "(ann, loc)",
+    "comments": ""
+}{}{
+    "source file": "AnyExp.py",
+    "line number": "75",
+    "func name": "initialize_params_from_file",
+    "func arg": "(**kwargs)",
+    "comments": ""
+}{
+    "source file": "AnyExpOnTerm.py",
+    "line number": "70",
+    "func name": "trainFun",
+    "func arg": "()",
+    "comments": ""
+}{
+    "source file": "api.py",
+    "line number": "756",
+    "func name": "rpc_async",
+    "func arg": "(to, func, args, kwargs, timeout)",
+    "comments": "Make a non-blocking RPC call to run function ``func`` on worker ``to``. RPC messages are sent and received in parallel to execution of Python code. This method is thread-safe. This method will immediately return a :class:`~torch.futures.Future` that can be awaited on.\n\nArguments: to (str or WorkerInfo): id or name of the destination worker. func (callable): a callable function, such as Python callables, builtin operators (e.g. :meth:`~torch.add`) and annotated TorchScript functions. args (tuple): the argument tuple for the ``func`` invocation. kwargs (dict): is a dictionary of keyword arguments for the ``func`` invocation. timeout (float, optional): timeout in seconds to use for this RPC. If the RPC does not complete in this amount of time, an exception indicating it has timed out will be raised. A value of 0 indicates an infinite timeout, i.e. a timeout error will never be raised. If not provided, the default value set during initialization or with ``_set_rpc_timeout`` is used.\n##### Returns\n* **``kwargs`` can be retrieved from the **: class\n\n* **arning **: \n\n* ****: class\n\n* **ple**: \n\n* **on both workers. Refer to **: meth\n\n* **Then run the following code in two different processes**: \n\n* **>>> # On worker 0**: \n\n* **>>> # On worker 1**: \n\n* **>>> # On both workers**: \n\n* **>>> def my_script_add(t1, t2)**: \n\n"
+}{
+    "source file": "apmeter_test.py",
+    "line number": "13",
+    "func name": "calculate_ap",
+    "func arg": "(predictions, labels)",
+    "comments": ""
+}{
+    "source file": "app.py",
+    "line number": "141",
+    "func name": "main",
+    "func arg": "(argv)",
+    "comments": ""
+}{}{}{
+    "source file": "arg_scope.py",
+    "line number": "31",
+    "func name": "get_current_scope",
+    "func arg": "()",
+    "comments": ""
+}{
+    "source file": "array_helpers.py",
+    "line number": "22",
+    "func name": "depth_concat",
+    "func arg": "(model, blobs_in, blob_out, **kwargs)",
+    "comments": "The old depth concat function - we should move to use concat.\n\n\n"
+}{}{}{}{}{}{}{
+    "source file": "attention7.py",
+    "line number": "326",
+    "func name": "apply_soft_coverage_attention",
+    "func arg": "(model, encoder_output_dim, encoder_outputs_transposed, weighted_encoder_outputs, decoder_hidden_state_t, decoder_hidden_state_dim, scope, encoder_lengths, coverage_t_prev, coverage_weights)",
+    "comments": ""
+}{
+    "source file": "autocast_mode.py",
+    "line number": "216",
+    "func name": "custom_bwd",
+    "func arg": "(bwd)",
+    "comments": "Helper decorator for backward methods of custom autograd functions (subclasses of :class:`torch.autograd.Function`). Ensures that ``backward`` executes with the same autocast state as ``forward``. See the :ref:`example page<amp-custom-examples>` for more detail.\n\n\n"
+}{}{}{
+    "source file": "backend_registry.py",
+    "line number": "174",
+    "func name": "_tensorpipe_init_backend_handler",
+    "func arg": "(store, name, rank, world_size, rpc_backend_options)",
+    "comments": ""
+}{}{
+    "source file": "backend.py",
+    "line number": "81",
+    "func name": "convertAttributeProto",
+    "func arg": "(onnx_arg)",
+    "comments": "Convert an ONNX AttributeProto into an appropriate Python object for the type.\n\nNB: Tensor attribute gets returned as the straight proto.\n"
+}{
+    "source file": "backend8.py",
+    "line number": "53",
+    "func name": "main",
+    "func arg": "()",
+    "comments": ""
+}{}{
+    "source file": "basic_rnn_test.py",
+    "line number": "18",
+    "func name": "basic_rnn_reference",
+    "func arg": "(input, hidden_initial, i2h_w, i2h_b, gate_w, gate_b, seq_lengths, drop_states, use_sequence_lengths)",
+    "comments": ""
+}{
+    "source file": "batch_box_cox_test.py",
+    "line number": "26",
+    "func name": "_inputs",
+    "func arg": "(draw)",
+    "comments": ""
+}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{
+    "source file": "bbox_transform_test.py",
+    "line number": "193",
+    "func name": "generate_rois_rotated",
+    "func arg": "(roi_counts, im_dims)",
+    "comments": ""
+}{}{
+    "source file": "bench_gen.py",
+    "line number": "25",
+    "func name": "main",
+    "func arg": "(args)",
+    "comments": ""
+}{
+    "source file": "bench.py",
+    "line number": "168",
+    "func name": "bench_group",
+    "func arg": "(model_list, bench_name, bench_group, bench_args)",
+    "comments": ""
+}{
+    "source file": "bench10.py",
+    "line number": "25",
+    "func name": "main",
+    "func arg": "()",
+    "comments": ""
+}{}{}{}{
+    "source file": "benchmark_caffe2.py",
+    "line number": "197",
+    "func name": "generate_c2_gradient_test",
+    "func arg": "(configs, c2_bench_op)",
+    "comments": "This function creates Caffe2 op test based on the given operator\n\n\n"
+}{
+    "source file": "benchmark_core.py",
+    "line number": "71",
+    "func name": "_build_test",
+    "func arg": "(configs, bench_op, OperatorTestCase, run_backward, op_name_function)",
+    "comments": "Generate PyTorch/Caffe2 tests of operators with different inputs. Args: configs: a dictionary that has the input shapes bench_op: a subclass of Caffe2BenchmarkBase/TorchBenchmarkBase which includes tensor creation and operator execution OperatorTestCase: a named tuple to save the metadata of an test run_backward: a bool parameter indicating backward path op_name_function: a dictionary includes operator name and function\n\n\n"
+}{
+    "source file": "benchmark_generator.py",
+    "line number": "30",
+    "func name": "main",
+    "func arg": "(args)",
+    "comments": ""
+}{
+    "source file": "benchmark_pytorch.py",
+    "line number": "185",
+    "func name": "create_pytorch_op_test_case",
+    "func arg": "(op_bench, test_config)",
+    "comments": "This method is used to generate est. func_name is a global unique string. For PyTorch add operator with M=8, N=2, K=1, tag = long, here are the values for the members in test_case: op.module_name: add framework: PyTorch test_config: TestConfig(test_name='add_M8_N2_K1', input_config='M: 8, N: 2, K: 1', tag='long', run_backward=False) func_name: addPyTorchTestConfig(test_name='add_M8_N2_K1', input_config='M: 8, N: 2, K: 1', tag='long', run_backward=False)\n\n\n"
+}{
+    "source file": "benchmark_runner.py",
+    "line number": "20",
+    "func name": "main",
+    "func arg": "()",
+    "comments": ""
+}{
+    "source file": "benchmark_test_generator.py",
+    "line number": "22",
+    "func name": "generate_pt_tests_from_op_list",
+    "func arg": "(ops_list, configs, pt_bench_op)",
+    "comments": "This function creates pt op tests one by one from a list of dictionaries. ops_list is a list of dictionary. Each dictionary includes the name of the operator and the math operation. Here is an example of using this API: unary_ops_configs = op_bench.config_list( attrs=[...], attr_names=[\"M\", \"N\"], ) unary_ops_list = op_bench.op_list( attr_names=[\"op_name\", \"op_func\"], attrs=[ [\"abs\", torch.abs], ], ) class UnaryOpBenchmark(op_bench.TorchBenchmarkBase): def init(self, M, N, op_name, op_func): ... def forward(self): ... op_bench.generate_pt_tests_from_op_list(unary_ops_list, unary_ops_configs, UnaryOpBenchmark)\n\n\n"
+}{
+    "source file": "benchmark_utils.py",
+    "line number": "348",
+    "func name": "process_arg_list",
+    "func arg": "(arg_list)",
+    "comments": ""
+}{
+    "source file": "benchmark.py",
+    "line number": "215",
+    "func name": "main",
+    "func arg": "()",
+    "comments": ""
+}{
+    "source file": "benchmark11.py",
+    "line number": "211",
+    "func name": "register_benchmark_class",
+    "func arg": "(benchmark_cls)",
+    "comments": ""
+}{}{}{}{}{
+    "source file": "binarysize.py",
+    "line number": "135",
+    "func name": "main",
+    "func arg": "(argv)",
+    "comments": ""
+}{
+    "source file": "binomial.py",
+    "line number": "8",
+    "func name": "_clamp_by_zero",
+    "func arg": "(x)",
+    "comments": ""
+}{}{}{}{}{}{}{}{}{
+    "source file": "box_with_nms_limit_op_test.py",
+    "line number": "51",
+    "func name": "gen_multiple_boxes",
+    "func arg": "(centers, scores, count, num_classes)",
+    "comments": ""
+}{}{}{}{
+    "source file": "broadcast.py",
+    "line number": "244",
+    "func name": "register_broadcast_ops",
+    "func arg": "()",
+    "comments": ""
+}{}{}{
+    "source file": "build_activation_images.py",
+    "line number": "51",
+    "func name": "plot_function",
+    "func arg": "(function, **args)",
+    "comments": "Plot a function on the current plot. The additional arguments may be used to specify color, alpha, etc.\n\n\n"
+}{
+    "source file": "build_amd.py",
+    "line number": "112",
+    "func name": "is_hip_clang",
+    "func arg": "()",
+    "comments": ""
+}{}{}{
+    "source file": "build_pytorch_libs.py",
+    "line number": "51",
+    "func name": "build_caffe2",
+    "func arg": "(version, cmake_python_library, build_python, rerun_cmake, cmake_only, cmake)",
+    "comments": ""
+}{}{
+    "source file": "bundled_inputs.py",
+    "line number": "158",
+    "func name": "bundle_large_tensor",
+    "func arg": "(t)",
+    "comments": "Wrap a tensor to allow bundling regardless of size.\n\n\n"
+}{}{}{
+    "source file": "C2Module.py",
+    "line number": "9",
+    "func name": "add_blob",
+    "func arg": "(ws, blob_name, tensor_size)",
+    "comments": ""
+}{}{
+    "source file": "caffe_translator_test.py",
+    "line number": "27",
+    "func name": "setUpModule",
+    "func arg": "()",
+    "comments": ""
+}{
+    "source file": "caffe_translator.py",
+    "line number": "871",
+    "func name": "TranslateReduction",
+    "func arg": "(layer, pretrained_blobs, is_test, **kwargs)",
+    "comments": ""
+}{
+    "source file": "caffe2_resnet50_default_forward.py",
+    "line number": "9",
+    "func name": "gen_forward_pass_builder_fun",
+    "func arg": "(model, dataset, is_train)",
+    "comments": ""
+}{
+    "source file": "caffe2_resnet50_default_param_update.py",
+    "line number": "7",
+    "func name": "gen_param_update_builder_fun",
+    "func arg": "(model, dataset, is_train)",
+    "comments": ""
+}{}{}{}{}{}{
+    "source file": "cells.py",
+    "line number": "116",
+    "func name": "rnn_tanh_cell",
+    "func arg": "(input, hidden, w_ih, w_hh, b_ih, b_hh)",
+    "comments": ""
+}{}{}{}{}{}{}{
+    "source file": "char_rnn.py",
+    "line number": "246",
+    "func name": "main",
+    "func arg": "()",
+    "comments": ""
+}{
+    "source file": "check_backward_compatibility.py",
+    "line number": "190",
+    "func name": "check_bc",
+    "func arg": "(new_schema_dict)",
+    "comments": ""
+}{
+    "source file": "checkpoint_test.py",
+    "line number": "46",
+    "func name": "local_copy_op",
+    "func arg": "(src, dest)",
+    "comments": ""
+}{}{
+    "source file": "checkpoint.py",
+    "line number": "818",
+    "func name": "epoch_limiter",
+    "func arg": "(job, num_epochs)",
+    "comments": "Creates a task that will output True when a given number of epochs has finished.\n\n\n"
+}{
+    "source file": "checkpoint14.py",
+    "line number": "173",
+    "func name": "scoped_name",
+    "func arg": "(blob_name)",
+    "comments": ""
+}{
+    "source file": "checkpoint15.py",
+    "line number": "166",
+    "func name": "checkpoint_sequential",
+    "func arg": "(functions, segments, input, **kwargs)",
+    "comments": "A helper function for checkpointing sequential models.\n\nSequential models execute a list of modules/functions in order (sequentially). Therefore, we can divide such a model in various segments and checkpoint each segment. All segments except the last will run in :func:`torch.no_grad` manner, i.e., not storing the intermediate activations. The inputs of each checkpointed segment will be saved for re-running the segment in the backward pass.\n\nSee :func:`~torch.utils.checkpoint.checkpoint` on how checkpointing works.\n\n.. warning:: Checkpointing doesn't work with :func:`torch.autograd.grad`, but only with :func:`torch.autograd.backward`.\n\n.. warning: At least one of the inputs needs to have :code:`requires_grad=True` if grads are needed for model inputs, otherwise the checkpointed part of the model won't have gradients.\n\n.. warning: Since PyTorch 1.4, it allows only one Tensor as the input and intermediate outputs, just like :class:`torch.nn.Sequential`.\n##### Args\n* **functions**: A\n\n* **segments**: Number of chunks to create in the model\n\n* **input**: A Tensor that is input to\n\n* **preserve_rng_state(bool, optional, default=True)**: Omit stashing and restoring\n    the RNG state during each checkpoint.\n\n##### Returns\n* **Output of running **: attr\n\n* **ple**: \n\n"
+}{}{}{
+    "source file": "clang_format_all.py",
+    "line number": "132",
+    "func name": "main",
+    "func arg": "(args)",
+    "comments": ""
+}{
+    "source file": "clang_format_utils.py",
+    "line number": "84",
+    "func name": "get_and_check_clang_format",
+    "func arg": "(verbose)",
+    "comments": "Download a platform-appropriate clang-format binary if one doesn't already exist at the expected location and verify that it is the right binary by checking its SHA1 hash against the expected hash.\n\n\n"
+}{
+    "source file": "clang_tidy.py",
+    "line number": "271",
+    "func name": "main",
+    "func arg": "()",
+    "comments": ""
+}{
+    "source file": "clip_grad.py",
+    "line number": "53",
+    "func name": "clip_grad_value_",
+    "func arg": "(parameters, clip_value)",
+    "comments": "Clips gradient of an iterable of parameters at specified value.\n\nGradients are modified in-place.\n\nArguments: parameters (Iterable[Tensor] or Tensor): an iterable of Tensors or a single Tensor that will have gradients normalized clip_value (float or int): maximum allowed value of the gradients. The gradients are clipped in the range :math:`\\left[\\text{-clip\\_value}, \\text{clip\\_value}\\right]`\n"
+}{}{}{
+    "source file": "cmake.py",
+    "line number": "56",
+    "func name": "get_cmake_cache_variables_from_file",
+    "func arg": "(cmake_cache_file)",
+    "comments": "Gets values in CMakeCache.txt into a dictionary.\n\nArguments: cmake_cache_file: A CMakeCache.txt file object.\n##### Returns\n* **dict**: A ``dict`` containing the value of cached CMake variables.\n\n"
+}{}{}{
+    "source file": "collate.py",
+    "line number": "42",
+    "func name": "default_collate",
+    "func arg": "(batch)",
+    "comments": "Puts each data field into a tensor with outer dimension batch size\n\n\n"
+}{
+    "source file": "collect_and_distribute_fpn_rpn_proposals_op_test.py",
+    "line number": "139",
+    "func name": "distribute_fpn_ref",
+    "func arg": "()",
+    "comments": ""
+}{
+    "source file": "collect_env.py",
+    "line number": "387",
+    "func name": "main",
+    "func arg": "()",
+    "comments": ""
+}{}{
+    "source file": "comm16.py",
+    "line number": "195",
+    "func name": "gather",
+    "func arg": "(tensors, dim, destination)",
+    "comments": "Gathers tensors from multiple GPU devices.\n\nArguments: tensors (Iterable[Tensor]): an iterable of tensors to gather. Tensor sizes in all dimensions other than :attr:`dim` have to match. dim (int, optional): a dimension along which the tensors will be concatenated. Default: ``0``. destination (torch.device, str, or int, optional): the output device. Can be CPU or CUDA. Default: the current CUDA device. out (Tensor, optional, keyword-only): the tensor to store gather result. Its sizes must match those of :attr:`tensors`, except for :attr:`dim`, where the size must equal ``sum(tensor.size(dim) for tensor in tensors)``. Can be on CPU or CUDA.\n\n.. note:: :attr:`destination` must not be specified when :attr:`out` is specified.\n##### Returns\n* **- If **: attr\n\n"
+}{
+    "source file": "common_cuda.py",
+    "line number": "66",
+    "func name": "tf32_on_and_off",
+    "func arg": "(tf32_precision)",
+    "comments": ""
+}{
+    "source file": "common_device_type.py",
+    "line number": "683",
+    "func name": "skipCUDAIfNoCudnn",
+    "func arg": "(fn)",
+    "comments": ""
+}{
+    "source file": "common_distributed.py",
+    "line number": "135",
+    "func name": "simple_sparse_reduce_tests",
+    "func arg": "(rank, world_size, num_inputs)",
+    "comments": "Generate a number of basic test cases for sparse reduction. These cover tensors with a varying number of sparse dimensions and a varying number of dense dimensions. The only reduction operation we support is sum.\n\n\n"
+}{
+    "source file": "common_methods_invocations.py",
+    "line number": "1201",
+    "func name": "exclude_tensor_method",
+    "func arg": "(name, test_name)",
+    "comments": ""
+}{
+    "source file": "common_nn.py",
+    "line number": "3563",
+    "func name": "padding3d_circular",
+    "func arg": "(input, pad)",
+    "comments": "input: [[[[[ 0.,  1.,  2.], [ 3.,  4.,  5.]], [[ 6.,  7.,  8.], [ 9., 10., 11.]]]]] pad: (1, 2, 2, 1, 1, 2) output: [[[[[ 8.,  6.,  7.,  8.,  6.,  7.], [11.,  9., 10., 11.,  9., 10.], [ 8.,  6.,  7.,  8.,  6.,  7.], [11.,  9., 10., 11.,  9., 10.], [ 8.,  6.,  7.,  8.,  6.,  7.]],\n\n[[ 2.,\n\n0.,\n\n1.,\n\n2.,\n\n0.,\n\n1.], [ 5.,\n\n3.,\n\n4.,\n\n5.,\n\n3.,\n\n4.], [ 2.,\n\n0.,\n\n1.,\n\n2.,\n\n0.,\n\n1.], [ 5.,\n\n3.,\n\n4.,\n\n5.,\n\n3.,\n\n4.], [ 2.,\n\n0.,\n\n1.,\n\n2.,\n\n0.,\n\n1.]],\n\n[[ 8.,\n\n6.,\n\n7.,\n\n8.,\n\n6.,\n\n7.], [11.,\n\n9., 10., 11.,\n\n9., 10.], [ 8.,\n\n6.,\n\n7.,\n\n8.,\n\n6.,\n\n7.], [11.,\n\n9., 10., 11.,\n\n9., 10.], [ 8.,\n\n6.,\n\n7.,\n\n8.,\n\n6.,\n\n7.]],\n\n[[ 2.,\n\n0.,\n\n1.,\n\n2.,\n\n0.,\n\n1.], [ 5.,\n\n3.,\n\n4.,\n\n5.,\n\n3.,\n\n4.], [ 2.,\n\n0.,\n\n1.,\n\n2.,\n\n0.,\n\n1.], [ 5.,\n\n3.,\n\n4.,\n\n5.,\n\n3.,\n\n4.], [ 2.,\n\n0.,\n\n1.,\n\n2.,\n\n0.,\n\n1.]],\n\n[[ 8.,\n\n6.,\n\n7.,\n\n8.,\n\n6.,\n\n7.], [11.,\n\n9., 10., 11.,\n\n9., 10.], [ 8.,\n\n6.,\n\n7.,\n\n8.,\n\n6.,\n\n7.], [11.,\n\n9., 10., 11.,\n\n9., 10.], [ 8.,\n\n6.,\n\n7.,\n\n8.,\n\n6.,\n\n7.]]]]]\n"
+}{
+    "source file": "common_quantization.py",
+    "line number": "130",
+    "func name": "get_script_module",
+    "func arg": "(model, tracing, data)",
+    "comments": ""
+}{
+    "source file": "common_quantized.py",
+    "line number": "129",
+    "func name": "qengine_is_qnnpack",
+    "func arg": "()",
+    "comments": ""
+}{}{
+    "source file": "common_utils.py",
+    "line number": "1702",
+    "func name": "_assertGradAndGradgradChecks",
+    "func arg": "(test_case, apply_fn, inputs)",
+    "comments": ""
+}{
+    "source file": "common_with_cwrap.py",
+    "line number": "147",
+    "func name": "parse_header",
+    "func arg": "(path)",
+    "comments": ""
+}{
+    "source file": "common.py",
+    "line number": "259",
+    "func name": "set_torch_threads",
+    "func arg": "(n)",
+    "comments": ""
+}{}{
+    "source file": "compare.py",
+    "line number": "47",
+    "func name": "main",
+    "func arg": "()",
+    "comments": ""
+}{}{}{}{}{}{}{}{}{}{}{}{
+    "source file": "concat_split_op_test.py",
+    "line number": "15",
+    "func name": "_tensor_splits",
+    "func arg": "(draw, add_axis)",
+    "comments": "Generates (axis, split_info, tensor_splits) tuples.\n\n\n"
+}{
+    "source file": "concat_split_op_test19.py",
+    "line number": "17",
+    "func name": "_tensor_splits",
+    "func arg": "(draw, add_axis)",
+    "comments": "Generates (axis, split_info, tensor_splits) tuples.\n\n\n"
+}{
+    "source file": "concat.py",
+    "line number": "20",
+    "func name": "get_concatenated_feature_to_index",
+    "func arg": "(blobs_to_concat)",
+    "comments": ""
+}{}{
+    "source file": "conf.py",
+    "line number": "186",
+    "func name": "setup",
+    "func arg": "(app)",
+    "comments": ""
+}{
+    "source file": "conf20.py",
+    "line number": "371",
+    "func name": "patched_make_field",
+    "func arg": "(types, domain, items, **kw)",
+    "comments": ""
+}{
+    "source file": "configure21.py",
+    "line number": "13",
+    "func name": "main",
+    "func arg": "(args)",
+    "comments": ""
+}{
+    "source file": "configure22.py",
+    "line number": "16",
+    "func name": "main",
+    "func arg": "(args)",
+    "comments": ""
+}{
+    "source file": "conftest.py",
+    "line number": "40",
+    "func name": "pytest_configure",
+    "func arg": "(config)",
+    "comments": ""
+}{}{}{}{}{
+    "source file": "constraint_registry.py",
+    "line number": "242",
+    "func name": "_transform_to_stack",
+    "func arg": "(constraint)",
+    "comments": ""
+}{
+    "source file": "constraints.py",
+    "line number": "79",
+    "func name": "is_dependent",
+    "func arg": "(constraint)",
+    "comments": ""
+}{}{}{
+    "source file": "context.py",
+    "line number": "117",
+    "func name": "_get_active_context",
+    "func arg": "(cls, val, required)",
+    "comments": ""
+}{}{}{
+    "source file": "control_ops_grad.py",
+    "line number": "693",
+    "func name": "disambiguate_grad_if_op_output",
+    "func arg": "(grad_op, idx, new_grad_output)",
+    "comments": ""
+}{
+    "source file": "control_ops_util.py",
+    "line number": "141",
+    "func name": "add_while_op",
+    "func arg": "(while_net, cond_blob, lexical_scope, loop_body_net, condition_body_net)",
+    "comments": "A helper function to add a While op to the net. Same rules for determining outer and inner blobs as for the 'If' operator apply for the 'While' operator loop and condition subnets. If specified, condition net is executed in a separate workspace before the first and after each iteration, the last operator must have a single scalar boolean output that is written into the condition blob. Inputs: while_net - net to add a While op to; cond_blob - scalar bool blob reference, used as a stop condition; lexical_scope - a set of outer blob names visible to the loop's body; loop_body_net - net to execute on each iteration; condition_body_net - net to compute condition value\n\n\n"
+}{
+    "source file": "control_ops.py",
+    "line number": "21",
+    "func name": "loop",
+    "func arg": "(model, cond_blob, external_blobs, loop_model, cond_model)",
+    "comments": "Loop\n\n\n"
+}{}{
+    "source file": "control.py",
+    "line number": "555",
+    "func name": "IfNot",
+    "func arg": "(name, condition_blob_or_net, true_nets_or_steps, false_nets_or_steps)",
+    "comments": "If condition_blob_or_net returns false, executes true_nets_or_steps, otherwise executes false_nets_or_steps\n\n\n"
+}{}{}{}{
+    "source file": "conv_fused.py",
+    "line number": "320",
+    "func name": "freeze_bn_stats",
+    "func arg": "(mod)",
+    "comments": ""
+}{}{}{}{}{}{
+    "source file": "conv_test25.py",
+    "line number": "38",
+    "func name": "_cudnn_convolution_algo_count",
+    "func arg": "(direction)",
+    "comments": ""
+}{}{}{}{}{}{
+    "source file": "conv29.py",
+    "line number": "269",
+    "func name": "group_conv_deprecated",
+    "func arg": "(model, blob_in, blob_out, dim_in, dim_out, kernel, weight_init, bias_init, group, use_cudnn, order, cudnn_exhaustive_search, ws_nbytes_limit, **kwargs)",
+    "comments": "GroupConvolution's deprecated interface.\n\nThis is used to simulate a group convolution via split and concat. You should always use the new group convolution in your new code.\n"
+}{}{}{}{
+    "source file": "conversion.py",
+    "line number": "83",
+    "func name": "onnx_to_caffe2",
+    "func arg": "(onnx_model, output, init_net_output)",
+    "comments": ""
+}{
+    "source file": "convert_parameters.py",
+    "line number": "56",
+    "func name": "_check_param_device",
+    "func arg": "(param, old_param_device)",
+    "comments": "This helper function is to check if the parameters are located in the same device. Currently, the conversion between model parameters and single vector form is not supported for multiple allocations, e.g. parameters in different GPUs, or mixture of CPU/GPU.\n\nArguments: param ([Tensor]): a Tensor of a parameter of a model old_param_device (int): the device where the first parameter of a model is allocated.\n##### Returns\n* **old_param_device (int)**: report device for the first time\n\n"
+}{}{}{}{}{
+    "source file": "convnet_benchmarks.py",
+    "line number": "643",
+    "func name": "GetArgumentParser",
+    "func arg": "()",
+    "comments": ""
+}{
+    "source file": "convnet_benchmarks32.py",
+    "line number": "625",
+    "func name": "GetArgumentParser",
+    "func arg": "()",
+    "comments": ""
+}{}{}{
+    "source file": "copy_rows_to_tensor_op_test.py",
+    "line number": "14",
+    "func name": "get_input_tensors",
+    "func arg": "()",
+    "comments": ""
+}{
+    "source file": "core_gradients_test.py",
+    "line number": "79",
+    "func name": "AddNogradient",
+    "func arg": "(op, g_output)",
+    "comments": ""
+}{}{
+    "source file": "core.py",
+    "line number": "2971",
+    "func name": "_extract_stacktrace",
+    "func arg": "()",
+    "comments": "This function extracts stacktrace without file system access by purely using sys._getframe() and removes part that belongs to this file (core.py). We are not using inspect module because its just a wrapper on top of sys._getframe() whose logic is based on accessing source files on disk - exactly what we are trying to avoid here. Same stands for traceback module\n\nThe reason for file system access avoidance is that if code is located on an NFS, file access might be slow\n\nFunction returns a list of tuples (file_name, line_number, function)\n"
+}{}{}{
+    "source file": "coverage.py",
+    "line number": "87",
+    "func name": "gen_covered_ops",
+    "func arg": "(source_dir)",
+    "comments": ""
+}{}{
+    "source file": "cpp_extension.py",
+    "line number": "1788",
+    "func name": "_is_cuda_file",
+    "func arg": "(path)",
+    "comments": ""
+}{}{
+    "source file": "crf_predict.py",
+    "line number": "17",
+    "func name": "apply_crf",
+    "func arg": "(init_net, net, transitions, predictions, num_classes)",
+    "comments": ""
+}{}{}{}{
+    "source file": "cross_entropy_ops_test.py",
+    "line number": "39",
+    "func name": "unjoined_sigmoid_cross_entropy_grad",
+    "func arg": "(x, z)",
+    "comments": ""
+}{}{}{
+    "source file": "ctc_ops_test.py",
+    "line number": "14",
+    "func name": "softmax",
+    "func arg": "(w)",
+    "comments": ""
+}{
+    "source file": "cuda_memcheck_common.py",
+    "line number": "47",
+    "func name": "parse",
+    "func arg": "(message)",
+    "comments": "A simple parser that parses the report of cuda-memcheck. This parser is meant to be simple and it only split the report into separate errors and a summary. Where each error is further splitted into error message and backtrace. No further details are parsed.\n\nA report contains multiple errors and a summary on how many errors are detected. It looks like:\n\n========= CUDA-MEMCHECK ========= Program hit cudaErrorInvalidValue (error 1) due to \"invalid argument\" on CUDA API call to cudaPointerGetAttributes. =========\n\n\n\n Saved host backtrace up to driver entry point at error =========\n\n\n\n Host Frame:/usr/lib/x86_64-linux-gnu/libcuda.so.1 [0x38c7b3] =========\n\n\n\n Host Frame:/usr/local/cuda/lib64/libcudart.so.10.1 (cudaPointerGetAttributes + 0x1a9) [0x428b9] =========\n\n\n\n Host Frame:/home/xgao/anaconda3/lib/python3.7/site-packages/torch/lib/libtorch.so [0x5b778a9] =========\n\n\n\n ..... ========= ========= Program hit cudaErrorInvalidValue (error 1) due to \"invalid argument\" on CUDA API call to cudaGetLastError. =========\n\n\n\n Saved host backtrace up to driver entry point at error =========\n\n\n\n Host Frame:/usr/lib/x86_64-linux-gnu/libcuda.so.1 [0x38c7b3] =========\n\n\n\n Host Frame:/usr/local/cuda/lib64/libcudart.so.10.1 (cudaGetLastError + 0x163) [0x4c493] =========\n\n\n\n ..... ========= ========= ..... ========= ========= Program hit cudaErrorInvalidValue (error 1) due to \"invalid argument\" on CUDA API call to cudaGetLastError. =========\n\n\n\n Saved host backtrace up to driver entry point at error =========\n\n\n\n Host Frame:/usr/lib/x86_64-linux-gnu/libcuda.so.1 [0x38c7b3] =========\n\n\n\n ..... =========\n\n\n\n Host Frame:python (_PyEval_EvalFrameDefault + 0x6a0) [0x1d0ad0] =========\n\n\n\n Host Frame:python (_PyEval_EvalCodeWithName + 0xbb9) [0x116db9] ========= ========= ERROR SUMMARY: 4 errors\n"
+}{}{}{}{}{
+    "source file": "custom_lstms.py",
+    "line number": "445",
+    "func name": "test_script_stacked_lnlstm",
+    "func arg": "(seq_len, batch, input_size, hidden_size, num_layers)",
+    "comments": ""
+}{
+    "source file": "cwrap_parser.py",
+    "line number": "32",
+    "func name": "process_declaration",
+    "func arg": "(declaration)",
+    "comments": ""
+}{}{}{
+    "source file": "data_parallel_model.py",
+    "line number": "2073",
+    "func name": "_GPUInterDeviceBatchNormalization",
+    "func arg": "(model)",
+    "comments": ""
+}{
+    "source file": "data_parallel.py",
+    "line number": "177",
+    "func name": "data_parallel",
+    "func arg": "(module, inputs, device_ids, output_device, dim, module_kwargs)",
+    "comments": "Evaluates module(input) in parallel across the GPUs given in device_ids.\n\nThis is the functional version of the DataParallel module.\n##### Args\n* **module (Module)**: the module to evaluate in parallel\n\n* **inputs (Tensor)**: inputs to the module\n\n* **device_ids (list of int or torch.device)**: GPU ids on which to replicate module\n\n* **output_device (list of int or torch.device)**: GPU location of the output  Use -1 to indicate the CPU.\n    (default\n\n##### Returns\n"
+}{
+    "source file": "data_workers_test.py",
+    "line number": "27",
+    "func name": "dummy_fetcher_rnn",
+    "func arg": "(fetcher_id, batch_size)",
+    "comments": ""
+}{
+    "source file": "data_workers.py",
+    "line number": "463",
+    "func name": "enqueuer",
+    "func arg": "(coordinator, batch_feeder)",
+    "comments": ""
+}{
+    "source file": "dataio_test.py",
+    "line number": "47",
+    "func name": "make_destination_dataset",
+    "func arg": "(ws, schema, name)",
+    "comments": ""
+}{
+    "source file": "dataio.py",
+    "line number": "448",
+    "func name": "CountUntil",
+    "func arg": "(num_iter)",
+    "comments": ""
+}{}{
+    "source file": "dataset_ops_test.py",
+    "line number": "123",
+    "func name": "_dataset",
+    "func arg": "(draw, min_elements, max_elements, **kwargs)",
+    "comments": ""
+}{
+    "source file": "dataset.py",
+    "line number": "278",
+    "func name": "random_split",
+    "func arg": "(dataset, lengths, generator)",
+    "comments": "Randomly split a dataset into non-overlapping new datasets of given lengths. Optionally fix the generator for reproducible results, e.g.\n\n>>> random_split(range(10), [3, 7], generator=torch.Generator().manual_seed(42))\n\nArguments: dataset (Dataset): Dataset to be split lengths (sequence): lengths of splits to be produced generator (Generator): Generator used for the random permutation.\n"
+}{
+    "source file": "dataset33.py",
+    "line number": "173",
+    "func name": "execution_step_with_progress",
+    "func arg": "(name, init_net, substeps, rows_read)",
+    "comments": ""
+}{}{
+    "source file": "db_input.py",
+    "line number": "8",
+    "func name": "db_input",
+    "func arg": "(model, blobs_out, batch_size, db, db_type)",
+    "comments": ""
+}{}{
+    "source file": "dcgan.py",
+    "line number": "15",
+    "func name": "weights_init",
+    "func arg": "(m)",
+    "comments": ""
+}{
+    "source file": "ddp_under_dist_autograd_test.py",
+    "line number": "280",
+    "func name": "set_shutdown_signal",
+    "func arg": "()",
+    "comments": ""
+}{
+    "source file": "debug_embed_params.py",
+    "line number": "25",
+    "func name": "run_embed_params",
+    "func arg": "(proto, model, input, state_dict, use_gpu)",
+    "comments": "This is only a helper debug function so we can test embed_params=False case as well on pytorch front This should likely be removed from the release version of the code\n\n\n"
+}{}{
+    "source file": "deform_conv_test.py",
+    "line number": "72",
+    "func name": "_conv_2d_shuffle_offsets",
+    "func arg": "(batch_size, kernel, dims, num_deformable_group, input_channels, output_channels)",
+    "comments": ""
+}{
+    "source file": "dense_vector_to_id_list_op_test.py",
+    "line number": "27",
+    "func name": "dense_vector_to_id_list_ref",
+    "func arg": "()",
+    "comments": ""
+}{}{}{
+    "source file": "detectron_keypoints.py",
+    "line number": "90",
+    "func name": "approx_heatmap_keypoint",
+    "func arg": "(heatmaps_in, bboxes_in)",
+    "comments": "Mask R-CNN uses bicubic upscaling before taking the maximum of the heat map for keypoints. We are using bilinear upscaling, which means we can approximate the maximum coordinate with the low dimension maximum coordinates. We would like to avoid bicubic upscaling, because it is computationally expensive. Brown and Lowe  (Invariant Features from Interest Point Groups, 2002) uses a method  for fitting a 3D quadratic function to the local sample points to determine the interpolated location of the maximum of scale space, and his experiments showed that this provides a substantial improvement to matching and stability for keypoint extraction. This approach uses the Taylor expansion (up to the quadratic terms) of the scale-space function. It is equivalent with the Newton method. This efficient method were used in many keypoint estimation algorithms like SIFT, SURF etc...\n\nThe implementation of Newton methods with numerical analysis is straight forward and super simple, though we need a linear solver.\n"
+}{}{
+    "source file": "device_reduce_sum_bench.py",
+    "line number": "118",
+    "func name": "main",
+    "func arg": "()",
+    "comments": ""
+}{}{}{
+    "source file": "diff.py",
+    "line number": "21",
+    "func name": "main",
+    "func arg": "()",
+    "comments": ""
+}{
+    "source file": "dirichlet.py",
+    "line number": "9",
+    "func name": "_Dirichlet_backward",
+    "func arg": "(x, concentration, grad_output)",
+    "comments": ""
+}{
+    "source file": "dist_autograd_test.py",
+    "line number": "26",
+    "func name": "fork_add",
+    "func arg": "(t1, t2, dst)",
+    "comments": ""
+}{
+    "source file": "dist_autograd_test34.py",
+    "line number": "164",
+    "func name": "_run_trainer_torchscript",
+    "func arg": "(rref_t1, t2, ps, rank_diff)",
+    "comments": ""
+}{
+    "source file": "dist_optimizer_test.py",
+    "line number": "79",
+    "func name": "rpc_async_method",
+    "func arg": "(method, obj_rref, **kwargs)",
+    "comments": "Call rpc.rpc_async on a method in a remote object.\n\n\n##### Args\n* **method**: the method (for example, Class.method)\n\n* **obj_rref (RRef)**: remote reference to the object\n\n* **args**: positional arguments to pass to the method\n\n* **kwargs**: keyword arguments to pass to the method\n\n"
+}{
+    "source file": "dist_utils.py",
+    "line number": "282",
+    "func name": "get_function_event",
+    "func arg": "(function_events, partial_event_name)",
+    "comments": "Returns the first event that matches partial_event_name in the provided function_events. These function_events should be the output of torch.autograd.profiler.function_events().\n\n\n##### Args\n* **function_events**: function_events returned by the profiler.\n\n* **event_name (str)**: partial key that the event was profiled with.\n\n"
+}{}{}{
+    "source file": "distributed_c10d.py",
+    "line number": "1720",
+    "func name": "new_group",
+    "func arg": "(ranks, timeout, backend)",
+    "comments": "Creates a new distributed group.\n\nThis function requires that all processes in the main group (i.e. all processes that are part of the distributed job) enter this function, even if they are not going to be members of the group. Additionally, groups should be created in the same order in all processes.\n\nArguments: ranks (list[int]): List of ranks of group members. timeout (timedelta, optional): Timeout for operations executed against the process group. Default value equals 30 minutes. This is only applicable for the ``gloo`` backend. backend (str or Backend, optional): The backend to use. Depending on build-time configurations, valid values are ``gloo`` and ``nccl``. By default uses the same backend as the global group. This field should be given as a lowercase string (e.g., ``\"gloo\"``), which can also be accessed via :class:`Backend` attributes (e.g., ``Backend.GLOO``).\n##### Returns\n"
+}{
+    "source file": "distributed.py",
+    "line number": "34",
+    "func name": "_dump_DDP_relevant_env_vars",
+    "func arg": "()",
+    "comments": ""
+}{}{}{}{
+    "source file": "dnnlowp_test_utils.py",
+    "line number": "374",
+    "func name": "run_conv_or_fc",
+    "func arg": "(test_case, init_net, net, X, W, b, op_type, engine, order, gc, outputs, scale, zero_point)",
+    "comments": ""
+}{}{
+    "source file": "download_mnist.py",
+    "line number": "72",
+    "func name": "main",
+    "func arg": "()",
+    "comments": ""
+}{
+    "source file": "download.py",
+    "line number": "139",
+    "func name": "validModelName",
+    "func arg": "(name)",
+    "comments": ""
+}{}{}{}{
+    "source file": "dropout37.py",
+    "line number": "9",
+    "func name": "dropout",
+    "func arg": "(model, blob_in, blob_out, use_cudnn, **kwargs)",
+    "comments": "dropout\n\n\n"
+}{}{
+    "source file": "dump_all_function_schemas.py",
+    "line number": "7",
+    "func name": "dump",
+    "func arg": "(filename)",
+    "comments": ""
+}{}{
+    "source file": "dyndep.py",
+    "line number": "46",
+    "func name": "_init_impl",
+    "func arg": "(path)",
+    "comments": ""
+}{}{}{}{
+    "source file": "elementwise_linear.py",
+    "line number": "44",
+    "func name": "elementwise_linear",
+    "func arg": "(model, **kwargs)",
+    "comments": ""
+}{
+    "source file": "elementwise_logical_ops_test.py",
+    "line number": "19",
+    "func name": "rowmux",
+    "func arg": "(select_vec, left, right)",
+    "comments": ""
+}{}{}{}{}{}{
+    "source file": "elementwise.py",
+    "line number": "102",
+    "func name": "register_element_ops",
+    "func arg": "()",
+    "comments": ""
+}{
+    "source file": "embedding_generation_benchmark.py",
+    "line number": "141",
+    "func name": "GetArgumentParser",
+    "func arg": "()",
+    "comments": ""
+}{}{}{
+    "source file": "end_to_end.py",
+    "line number": "407",
+    "func name": "main",
+    "func arg": "(args)",
+    "comments": ""
+}{}{}{
+    "source file": "ensure_cpu_output_op_test.py",
+    "line number": "15",
+    "func name": "_dev_options",
+    "func arg": "(draw)",
+    "comments": ""
+}{
+    "source file": "env.py",
+    "line number": "32",
+    "func name": "lib_paths_from_base",
+    "func arg": "(base_path)",
+    "comments": ""
+}{}{}{}{
+    "source file": "executor_test_util.py",
+    "line number": "206",
+    "func name": "run_resnet50_epoch",
+    "func arg": "(train_model, batch_size, epoch_size, skip_first_n_iter)",
+    "comments": ""
+}{}{}{}{}{
+    "source file": "expecttest.py",
+    "line number": "99",
+    "func name": "replace_string_literal",
+    "func arg": "(src, lineno, new_string)",
+    "comments": "Replace a triple quoted string literal with new contents. Only handles printable ASCII correctly at the moment.  This will preserve the quote style of the original string, and makes a best effort to preserve raw-ness (unless it is impossible to do so.)\n\n\n##### Returns\n"
+}{}{
+    "source file": "explicit_resnet_forward.py",
+    "line number": "41",
+    "func name": "resnet_imagenet_create_model",
+    "func arg": "(model, data, labels, split, opts, dataset)",
+    "comments": ""
+}{
+    "source file": "explicit_resnet_param_update.py",
+    "line number": "10",
+    "func name": "gen_param_update_builder_fun",
+    "func arg": "(model, dataset, is_train)",
+    "comments": ""
+}{}{
+    "source file": "export_onnx_tests_filter.py",
+    "line number": "24",
+    "func name": "collect_generated_testcases",
+    "func arg": "(root_dir, verbose, fail_dir, expect)",
+    "comments": ""
+}{
+    "source file": "export_onnx_tests_generator.py",
+    "line number": "86",
+    "func name": "convert_tests",
+    "func arg": "(testcases, sets)",
+    "comments": ""
+}{
+    "source file": "extension_loader.py",
+    "line number": "17",
+    "func name": "DlopenGuard",
+    "func arg": "(extra_flags)",
+    "comments": ""
+}{
+    "source file": "factory.py",
+    "line number": "444",
+    "func name": "lstm_factory_multilayer",
+    "func arg": "(cell, script)",
+    "comments": ""
+}{}{
+    "source file": "fake_quantize.py",
+    "line number": "170",
+    "func name": "enable_observer",
+    "func arg": "(mod)",
+    "comments": ""
+}{
+    "source file": "faulty_agent_backend_registry.py",
+    "line number": "30",
+    "func name": "_faulty_process_group_init_backend_handler",
+    "func arg": "(store, name, rank, world_size, rpc_backend_options)",
+    "comments": ""
+}{}{}{}{
+    "source file": "fc_with_bootstrap.py",
+    "line number": "14",
+    "func name": "get_fc_predictor_version",
+    "func arg": "(fc_version)",
+    "comments": ""
+}{}{
+    "source file": "fc.py",
+    "line number": "185",
+    "func name": "fc_sparse",
+    "func arg": "(model, blob_in, blob_out, w_csr, iw, jw, bias, **kwargs)",
+    "comments": "FC_Sparse: Only takes in allocated weights\n\n\n"
+}{
+    "source file": "fc40.py",
+    "line number": "16",
+    "func name": "get_fc_predictor_version",
+    "func arg": "(fc_version)",
+    "comments": ""
+}{}{}{}{}{}{}{
+    "source file": "filler_ops_test.py",
+    "line number": "16",
+    "func name": "_fill_diagonal",
+    "func arg": "(shape, value)",
+    "comments": ""
+}{}{}{}{}{}{}{}{}{}{}{}{
+    "source file": "framework_overhead_benchmark.py",
+    "line number": "65",
+    "func name": "main",
+    "func arg": "()",
+    "comments": ""
+}{}{
+    "source file": "frontend41.py",
+    "line number": "736",
+    "func name": "find_before",
+    "func arg": "(ctx, pos, substr, offsets)",
+    "comments": ""
+}{}{}{
+    "source file": "fully_connected_fp16_test.py",
+    "line number": "16",
+    "func name": "mse",
+    "func arg": "(x, xh)",
+    "comments": ""
+}{}{
+    "source file": "function_wrapper.py",
+    "line number": "1342",
+    "func name": "create_derived",
+    "func arg": "(backend_type_env, declarations)",
+    "comments": ""
+}{
+    "source file": "function.py",
+    "line number": "320",
+    "func name": "_unflatten",
+    "func arg": "(input, proto)",
+    "comments": ""
+}{
+    "source file": "functional_impl_check.py",
+    "line number": "223",
+    "func name": "build_cpp_tests",
+    "func arg": "(unit_test_class, print_cpp_source)",
+    "comments": ""
+}{}{
+    "source file": "functional_test.py",
+    "line number": "18",
+    "func name": "_tensor_splits",
+    "func arg": "(draw, add_axis)",
+    "comments": "Generates (axis, split_info, tensor_splits) tuples.\n\n\n"
+}{
+    "source file": "functional.py",
+    "line number": "650",
+    "func name": "hvp",
+    "func arg": "(func, inputs, v, create_graph, strict)",
+    "comments": "Function that computes the dot product between the Hessian of a given scalar function and a vector ``v`` at the point given by the inputs.\n\n\n##### Args\n* **func (function)**: a Python function that takes Tensor inputs and returns\n    a Tensor with a single element.\n\n* **inputs (tuple of Tensors or Tensor)**: inputs to the function ``func``.\n\n* **v (tuple of Tensors or Tensor)**: The vector for which the Hessian vector\n    product is computed. Must be the same size as the input of\n    ``func``. This argument is optional when ``func``'s input contains\n    a single element and (if it is not provided) will be set as a\n    Tensor containing a single ``1``.\n\n* **create_graph (bool, optional)**: If ``True``, both the output and result will be\n    computed in a differentiable way. Note that when ``strict`` is\n    ``False``, the result can not require gradients or be disconnected\n    from the inputs.  Defaults to ``False``.\n\n* **strict (bool, optional)**: If ``True``, an error will be raised when we\n    detect that there exists an input such that all the outputs are\n    independent of it. If ``False``, we return a Tensor of zeros as the\n    hvp for said inputs, which is the expected mathematical value.\n    Defaults to ``False``.\n\n##### Returns\n* **func_output (tuple of Tensors or Tensor)**: output of ``func(inputs)``\n    hvp (tuple of Tensors or Tensor)\n\n* **ple**: \n\n* **>>> def pow_reducer(x)**: \n\n* **>>> def pow_adder_reducer(x, y)**: \n\n* ****: \n\n"
+}{
+    "source file": "functional42.py",
+    "line number": "3849",
+    "func name": "multi_head_attention_forward",
+    "func arg": "(query, key, value, embed_dim_to_check, num_heads, in_proj_weight, in_proj_bias, bias_k, bias_v, add_zero_attn, dropout_p, out_proj_weight, out_proj_bias, training, key_padding_mask, need_weights, attn_mask, use_separate_proj_weight, q_proj_weight, k_proj_weight, v_proj_weight, static_k, static_v)",
+    "comments": "Args: query, key, value: map a query and a set of key-value pairs to an output. See \"Attention Is All You Need\" for more details. embed_dim_to_check: total dimension of the model. num_heads: parallel attention heads. in_proj_weight, in_proj_bias: input projection weight and bias. bias_k, bias_v: bias of the key and value sequences to be added at dim=0. add_zero_attn: add a new batch of zeros to the key and value sequences at dim=1. dropout_p: probability of an element to be zeroed. out_proj_weight, out_proj_bias: the output projection weight and bias. training: apply dropout if is ``True``. key_padding_mask: if provided, specified padding elements in the key will be ignored by the attention. This is an binary mask. When the value is True, the corresponding value on the attention layer will be filled with -inf. need_weights: output attn_output_weights. attn_mask: 2D or 3D mask that prevents attention to certain positions. A 2D mask will be broadcasted for all the batches while a 3D mask allows to specify a different mask for the entries of each batch. use_separate_proj_weight: the function accept the proj. weights for query, key, and value in different forms. If false, in_proj_weight will be used, which is a combination of q_proj_weight, k_proj_weight, v_proj_weight. q_proj_weight, k_proj_weight, v_proj_weight, in_proj_bias: input projection weight and bias. static_k, static_v: static key and value used for attention operators.\n\nShape: Inputs:\n\n- query: :math:`(L, N, E)` where L is the target sequence length, N is the batch size, E is the embedding dimension.\n\n- key: :math:`(S, N, E)`, where S is the source sequence length, N is the batch size, E is the embedding dimension.\n\n- value: :math:`(S, N, E)` where S is the source sequence length, N is the batch size, E is the embedding dimension.\n\n- key_padding_mask: :math:`(N, S)` where N is the batch size, S is the source sequence length. If a ByteTensor is provided, the non-zero positions will be ignored while the zero positions will be unchanged. If a BoolTensor is provided, the positions with the value of ``True`` will be ignored while the position with the value of ``False`` will be unchanged.\n\n- attn_mask: 2D mask :math:`(L, S)` where L is the target sequence length, S is the source sequence length. 3D mask :math:`(N*num_heads, L, S)` where N is the batch size, L is the target sequence length, S is the source sequence length. attn_mask ensures that position i is allowed to attend the unmasked positions. If a ByteTensor is provided, the non-zero positions are not allowed to attend while the zero positions will be unchanged. If a BoolTensor is provided, positions with ``True`` are not allowed to attend while ``False`` values will be unchanged. If a FloatTensor is provided, it will be added to the attention weight.\n\n- static_k: :math:`(N*num_heads, S, E/num_heads)`, where S is the source sequence length, N is the batch size, E is the embedding dimension. E/num_heads is the head dimension.\n\n- static_v: :math:`(N*num_heads, S, E/num_heads)`, where S is the source sequence length, N is the batch size, E is the embedding dimension. E/num_heads is the head dimension.\n\nOutputs:\n\n- attn_output: :math:`(L, N, E)` where L is the target sequence length, N is the batch size, E is the embedding dimension.\n\n- attn_output_weights: :math:`(N, L, S)` where N is the batch size, L is the target sequence length, S is the source sequence length.\n"
+}{
+    "source file": "functional43.py",
+    "line number": "1294",
+    "func name": "align_tensors",
+    "func arg": "()",
+    "comments": ""
+}{
+    "source file": "functional44.py",
+    "line number": "15",
+    "func name": "namedtupledict",
+    "func arg": "(typename, field_names, **kwargs)",
+    "comments": ""
+}{}{
+    "source file": "functional46.py",
+    "line number": "588",
+    "func name": "upsample_nearest",
+    "func arg": "(input, size, scale_factor)",
+    "comments": "Upsamples the input, using nearest neighbours' pixel values.\n\n.. warning:: This function is deprecated in favor of :func:`torch.nn.quantized.functional.interpolate`. This is equivalent with ``nn.quantized.functional.interpolate(..., mode='nearest')``.\n\n.. note:: The input quantization parameters propagate to the output.\n\n.. note:: Only 2D inputs are supported\n##### Args\n* **input (Tensor)**: quantized input\n\n* **size (int or Tuple[int, int] or Tuple[int, int, int])**: output spatial\n    size.\n\n* **scale_factor (int)**: multiplier for spatial size. Has to be an integer.\n\n"
+}{
+    "source file": "functions.py",
+    "line number": "4",
+    "func name": "async_execution",
+    "func arg": "(fn)",
+    "comments": "A decorator for a function indicating that the return value of the function is guaranteed to be a :class:`~torch.futures.Future` object and this function can run asynchronously on the RPC callee. More specifically, the callee extracts the :class:`~torch.futures.Future` returned by the wrapped function and installs subsequent processing steps as a callback to that :class:`~torch.futures.Future`. The installed callback will read the value from the :class:`~torch.futures.Future` when completed and send the value back as the RPC response. That also means the returned :class:`~torch.futures.Future` only exists on the callee side and is never sent through RPC. This decorator is useful when the wrapped function's (``fn``) execution needs to pause and resume due to, e.g., containing :meth:`~torch.distributed.rpc.rpc_async` or waiting for other signals.\n\n.. note:: To enable asynchronous execution, applications must pass the function object returned by this decorator to RPC APIs. Otherwise, RPC will not be able to detect the attributes installed by this decorator. However, this does not mean this decorator has to be outmost one when defining a function. For example, when combined with ``@staticmethod`` or ``@classmethod``, ``@rpc.functions.async_execution`` needs to be the inner decorator to allow the target function be recognized as a static or class function. This target function can still execute asynchronously because, when accessed, the static or class method preserves attributes installed by ``@rpc.functions.async_execution``.\n\n.. warning:: `autograd profiler <https://pytorch.org/docs/stable/autograd.html#profiler>`_ does not work with ``async_execution`` functions.\n\nExample:: The returned :class:`~torch.futures.Future` object can come from ``rpc.rpc_async``, ``Future.then(cb)``, or :class:`~torch.futures.Future` constructor. The example below shows directly using the :class:`~torch.futures.Future` returned by ``Future.then(cb)``.\n\n>>> from torch.distributed import rpc >>> >>> # omitting setup and shutdown RPC >>> >>> # On all workers >>> @rpc.functions.async_execution >>> def async_add_chained(to, x, y, z): >>>\n\n\n\n # This function runs on \"worker1\" and returns immediately when >>>\n\n\n\n # the callback is installed through the `then(cb)` API. In the >>>\n\n\n\n # mean time, the `rpc_async` to \"worker2\" can run concurrently. >>>\n\n\n\n # When the return value of that `rpc_async` arrives at >>>\n\n\n\n # \"worker1\", \"worker1\" will run the lambda function accordinly >>>\n\n\n\n # and set the value for the previously returned `Future`, which >>>\n\n\n\n # will then trigger RPC to send the result back to \"worker0\". >>>\n\n\n\n return rpc.rpc_async(to, torch.add, args=(x, y)).then( >>>\n\n\n\n\n\n\n\n lambda fut: fut.wait() + z >>>\n\n\n\n ) >>> >>> # On worker0 >>> ret = rpc.rpc_sync( >>>\n\n\n\n \"worker1\", >>>\n\n\n\n async_add_chained, >>>\n\n\n\n args=(\"worker2\", torch.ones(2), 1, 1) >>> ) >>> print(ret)\n\n# prints tensor([3., 3.])\n\nWhen combined with TorchScript decorators, this decorator must be the outmost one.\n\n>>> from torch import Tensor >>> from torch.futures import Future >>> from torch.distributed import rpc >>> >>> # omitting setup and shutdown RPC >>> >>> # On all workers >>> @torch.jit.script >>> def script_add(x: Tensor, y: Tensor) -> Tensor: >>>\n\n\n\n return x + y >>> >>> @rpc.functions.async_execution >>> @torch.jit.script >>> def async_add(to: str, x: Tensor, y: Tensor) -> Future[Tensor]: >>>\n\n\n\n return rpc.rpc_async(to, script_add, (x, y)) >>> >>> # On worker0 >>> ret = rpc.rpc_sync( >>>\n\n\n\n \"worker1\", >>>\n\n\n\n async_add, >>>\n\n\n\n args=(\"worker2\", torch.ones(2), 1) >>> ) >>> print(ret)\n\n# prints tensor([2., 2.])\n\nWhen combined with static or class method, this decorator must be the inner one.\n\n>>> from torch.distributed import rpc >>> >>> # omitting setup and shutdown RPC >>> >>> # On all workers >>> class AsyncExecutionClass: >>> >>>\n\n\n\n @staticmethod >>>\n\n\n\n @rpc.functions.async_execution >>>\n\n\n\n def static_async_add(to, x, y, z): >>>\n\n\n\n\n\n\n\n return rpc.rpc_async(to, torch.add, args=(x, y)).then( >>>\n\n\n\n\n\n\n\n\n\n\n\n lambda fut: fut.wait() + z >>>\n\n\n\n\n\n\n\n ) >>> >>>\n\n\n\n @classmethod >>>\n\n\n\n @rpc.functions.async_execution >>>\n\n\n\n def class_async_add(cls, to, x, y, z): >>>\n\n\n\n\n\n\n\n ret_fut = torch.futures.Future() >>>\n\n\n\n\n\n\n\n rpc.rpc_async(to, torch.add, args=(x, y)).then( >>>\n\n\n\n\n\n\n\n\n\n\n\n lambda fut: ret_fut.set_result(fut.wait() + z) >>>\n\n\n\n\n\n\n\n ) >>>\n\n\n\n\n\n\n\n return ret_fut >>> >>> # On worker0 >>> ret = rpc.rpc_sync( >>>\n\n\n\n \"worker1\", >>>\n\n\n\n AsyncExecutionClass.static_async_add, >>>\n\n\n\n args=(\"worker2\", torch.ones(2), 1, 2) >>> ) >>> print(ret)\n\n# prints tensor([4., 4.]) >>> >>> ret = rpc.rpc_sync( >>>\n\n\n\n \"worker1\", >>>\n\n\n\n AsyncExecutionClass.class_async_add, >>>\n\n\n\n args=(\"worker2\", torch.ones(2), 1, 2) >>> ) >>> print(ret)\n\n# prints tensor([4., 4.])\n"
+}{}{
+    "source file": "fuse_modules.py",
+    "line number": "156",
+    "func name": "fuse_modules",
+    "func arg": "(model, modules_to_fuse, inplace, fuser_func)",
+    "comments": "Fuses a list of modules into a single module\n\nFuses only the following sequence of modules: conv, bn conv, bn, relu conv, relu linear, relu bn, relu All other sequences are left unchanged. For these sequences, replaces the first item in the list with the fused module, replacing the rest of the modules with identity.\n\nArguments: model: Model containing the modules to be fused modules_to_fuse: list of list of module names to fuse. Can also be a list of strings if there is only a single list of modules to fuse. inplace: bool specifying if fusion happens in place on the model, by default a new model is returned fuser_func: Function that takes in a list of modules and outputs a list of fused modules of the same length. For example, fuser_func([convModule, BNModule]) returns the list [ConvBNModule, nn.Identity()] Defaults to torch.quantization.fuse_known_modules\n##### Returns\n* **ples**: \n\n"
+}{
+    "source file": "fused_8bit_rowwise_conversion_ops_test.py",
+    "line number": "53",
+    "func name": "fused_rowwise_8bit_quantize_dequantize_reference",
+    "func arg": "(data)",
+    "comments": ""
+}{
+    "source file": "fused_nbit_rowwise_conversion_ops_test.py",
+    "line number": "190",
+    "func name": "ErrorThresholdRow",
+    "func arg": "(X, bit_rate)",
+    "comments": ""
+}{
+    "source file": "fused_nbit_rowwise_test_helper.py",
+    "line number": "45",
+    "func name": "_compress_uniform_simplified",
+    "func arg": "(X, bit_rate, xmin, xmax, fp16_scale_bias)",
+    "comments": ""
+}{
+    "source file": "fused_rowwise_nbit_conversion_bench.py",
+    "line number": "9",
+    "func name": "main",
+    "func arg": "(bit_rate)",
+    "comments": ""
+}{}{
+    "source file": "fusion.py",
+    "line number": "17",
+    "func name": "fuse_conv_bn_weights",
+    "func arg": "(conv_w, conv_b, bn_rm, bn_rv, bn_eps, bn_w, bn_b)",
+    "comments": ""
+}{
+    "source file": "future_div.py",
+    "line number": "9",
+    "func name": "div_float_future",
+    "func arg": "()",
+    "comments": ""
+}{
+    "source file": "fuzzer.py",
+    "line number": "11",
+    "func name": "main",
+    "func arg": "()",
+    "comments": ""
+}{
+    "source file": "fuzzer47.py",
+    "line number": "169",
+    "func name": "prod",
+    "func arg": "(values, base)",
+    "comments": "np.prod can overflow, so for sizes the product should be done in Python.\n\nEven though np.prod type promotes to int64, it can still overflow in which case the negative value will pass the size check and OOM when attempting to actually allocate the Tensor.\n"
+}{
+    "source file": "gamma.py",
+    "line number": "9",
+    "func name": "_standard_gamma",
+    "func arg": "(concentration)",
+    "comments": ""
+}{}{
+    "source file": "gather_ops_test.py",
+    "line number": "171",
+    "func name": "_inputs",
+    "func arg": "(draw)",
+    "comments": ""
+}{
+    "source file": "gather_ranges_op_test.py",
+    "line number": "142",
+    "func name": "gather_ranges_to_dense_with_key",
+    "func arg": "(data, ranges, key, lengths)",
+    "comments": ""
+}{}{}{
+    "source file": "gen_autograd_functions.py",
+    "line number": "263",
+    "func name": "uses_single_grad",
+    "func arg": "(func)",
+    "comments": ""
+}{
+    "source file": "gen_autograd.py",
+    "line number": "299",
+    "func name": "main",
+    "func arg": "()",
+    "comments": ""
+}{
+    "source file": "gen_backend_select_register.py",
+    "line number": "58",
+    "func name": "register_backend_select_methods",
+    "func arg": "(declarations, template_path, file_manager)",
+    "comments": ""
+}{
+    "source file": "gen_glsl48.py",
+    "line number": "55",
+    "func name": "main",
+    "func arg": "(argv)",
+    "comments": ""
+}{
+    "source file": "gen_op_registration_whitelist.py",
+    "line number": "41",
+    "func name": "gen_transitive_closure",
+    "func arg": "(dep_graph, root_ops)",
+    "comments": ""
+}{
+    "source file": "gen_op.py",
+    "line number": "216",
+    "func name": "emit_assignments",
+    "func arg": "(o, env)",
+    "comments": ""
+}{
+    "source file": "gen_pyi.py",
+    "line number": "682",
+    "func name": "main",
+    "func arg": "()",
+    "comments": ""
+}{
+    "source file": "gen_python_functions.py",
+    "line number": "1467",
+    "func name": "op_name",
+    "func arg": "(declaration)",
+    "comments": ""
+}{
+    "source file": "gen_spv49.py",
+    "line number": "77",
+    "func name": "main",
+    "func arg": "(argv)",
+    "comments": ""
+}{
+    "source file": "gen_unboxing_wrappers.py",
+    "line number": "527",
+    "func name": "main",
+    "func arg": "()",
+    "comments": ""
+}{
+    "source file": "gen_variable_factories.py",
+    "line number": "60",
+    "func name": "process_function",
+    "func arg": "(decl, has_tensor_options)",
+    "comments": ""
+}{
+    "source file": "gen_variable_type.py",
+    "line number": "1270",
+    "func name": "dispatch_strategy",
+    "func arg": "(declaration)",
+    "comments": "How are we going to call the underlying implementation of a declaration?  There are two strategies\n\n- use_derived: we want to call the implementation on CPUDoubleType (or a similar, derived Type instance).\n\nBecause these derived instances deal in Tensors, not Variables (it's a completely different object, so it doesn't dispatch back to VariableType), code on this dispatch path needs to wrap/unwrap tensors.\n\nIf the derived implementation takes and returns tensors, the implementation is usually differentiable (although we also use the derived dispatch path for non-differentiable functions that we still want to dispatch on the derived Type instance; e.g., size())\n\n- use_type: we want to call the implementation on Type, because it is implemented concretely, and the functions it invokes will get dispatched back to VariableType (which will ensure that they are differentiable.)\n"
+}{
+    "source file": "gen.py",
+    "line number": "483",
+    "func name": "generate_outputs",
+    "func arg": "()",
+    "comments": ""
+}{
+    "source file": "generate_code.py",
+    "line number": "70",
+    "func name": "main",
+    "func arg": "()",
+    "comments": ""
+}{
+    "source file": "generate_test_torchscripts.py",
+    "line number": "5",
+    "func name": "scriptAndSave",
+    "func arg": "(module, fileName)",
+    "comments": ""
+}{}{}{}{}{}{}{
+    "source file": "gfs_IN1k.py",
+    "line number": "53",
+    "func name": "get_model_input_fun",
+    "func arg": "()",
+    "comments": ""
+}{
+    "source file": "github.py",
+    "line number": "55",
+    "func name": "getCodeLink",
+    "func arg": "(formatter, schema)",
+    "comments": ""
+}{}{}{}{
+    "source file": "glu_op_test.py",
+    "line number": "17",
+    "func name": "_glu_old_input",
+    "func arg": "(draw)",
+    "comments": ""
+}{}{}{
+    "source file": "grad_scaler.py",
+    "line number": "36",
+    "func name": "_refresh_per_optimizer_state",
+    "func arg": "()",
+    "comments": ""
+}{
+    "source file": "grad.py",
+    "line number": "263",
+    "func name": "conv3d_weight",
+    "func arg": "(input, weight_size, grad_output, stride, padding, dilation, groups)",
+    "comments": "Computes the gradient of conv3d with respect to the weight of the convolution.\n\n\n##### Args\n* **input**: input tensor of shape (minibatch x in_channels x iT x iH x iW)\n\n* **weight_size **: Shape of the weight gradient tensor\n\n* **grad_output **: output gradient tensor (minibatch x out_channels x oT x oH x oW)\n\n* **stride (int or tuple, optional)**: Stride of the convolution. Default\n\n* **padding (int or tuple, optional)**: Zero-padding added to both sides of the input. Default\n\n* **dilation (int or tuple, optional)**: Spacing between kernel elements. Default\n\n* **groups (int, optional)**: Number of blocked connections from input channels to output channels. Default\n\n* **ples**: \n\n"
+}{
+    "source file": "gradcheck.py",
+    "line number": "404",
+    "func name": "gradgradcheck",
+    "func arg": "(func, inputs, grad_outputs, eps, atol, rtol, gen_non_contig_grad_outputs, raise_exception, nondet_tol, check_undefined_grad)",
+    "comments": "Check gradients of gradients computed via small finite differences against analytical gradients w.r.t. tensors in :attr:`inputs` and :attr:`grad_outputs` that are of floating point or complex type and with ``requires_grad=True``.\n\nThis function checks that backpropagating through the gradients computed to the given :attr:`grad_outputs` are correct.\n\nThe check between numerical and analytical gradients uses :func:`~torch.allclose`.\n\n.. note:: The default values are designed for :attr:`input` and :attr:`grad_outputs` of double precision. This check will likely fail if they are of less precision, e.g., ``FloatTensor``.\n\n.. warning:: If any checked tensor in :attr:`input` and :attr:`grad_outputs` has overlapping memory, i.e., different indices pointing to the same memory address (e.g., from :func:`torch.expand`), this check will likely fail because the numerical gradients computed by point perturbation at such indices will change values at all other indices that share the same memory address.\n##### Args\n* **func (function)**: a Python function that takes Tensor inputs and returns\n    a Tensor or a tuple of Tensors\n\n* **inputs (tuple of Tensor or Tensor)**: inputs to the function\n\n* **grad_outputs (tuple of Tensor or Tensor, optional)**: The gradients with\n    respect to the function's outputs.\n\n* **eps (float, optional)**: perturbation for finite differences\n\n* **atol (float, optional)**: absolute tolerance\n\n* **rtol (float, optional)**: relative tolerance\n\n* **gen_non_contig_grad_outputs (bool, optional)**: if\n\n* **raise_exception (bool, optional)**: indicating whether to raise an exception if\n    the check fails. The exception gives more information about the\n    exact nature of the failure. This is helpful when debugging gradchecks.\n\n* **nondet_tol (float, optional)**: tolerance for non-determinism. When running\n    identical inputs through the differentiation, the results must either match\n    exactly (default, 0.0) or be within this tolerance. Note that a small amount\n    of nondeterminism in the gradient will lead to larger inaccuracies in\n    the second derivative.\n\n* **check_undefined_grad (bool, options)**: if True, check if undefined output grads\n    are supported and treated as zeros\n\n##### Returns\n"
+}{}{
+    "source file": "gradient_checker.py",
+    "line number": "60",
+    "func name": "_assert_close",
+    "func arg": "(value1, value2, threshold, err_msg)",
+    "comments": ""
+}{}{}{}{}{}{}{}{
+    "source file": "gru_test.py",
+    "line number": "175",
+    "func name": "_prepare_gru_unit_op",
+    "func arg": "(gc, n, d, outputs_with_grads, forward_only, drop_states, sequence_lengths, two_d_initial_states)",
+    "comments": ""
+}{}{}{}{}{}{
+    "source file": "heatmap_max_keypoint_op_test.py",
+    "line number": "31",
+    "func name": "c10_op_ref",
+    "func arg": "(maps, rois)",
+    "comments": ""
+}{}{
+    "source file": "helper.py",
+    "line number": "106",
+    "func name": "benchmark_pytorch_model",
+    "func arg": "(model, inputs, training, warmup_iters, main_iters, verbose)",
+    "comments": "Run the model several times, and measure the execution time. Return the execution time per iteration (millisecond).\n\n\n"
+}{
+    "source file": "hip_test_util.py",
+    "line number": "16",
+    "func name": "run_in_hip",
+    "func arg": "(gc, dc)",
+    "comments": ""
+}{
+    "source file": "hipify_python.py",
+    "line number": "817",
+    "func name": "hipify",
+    "func arg": "(project_directory, show_detailed, extensions, output_directory, includes, extra_files, out_of_place_only, ignores, show_progress, hip_clang_launch, is_pytorch_extension, clean_ctx)",
+    "comments": ""
+}{}{}{
+    "source file": "hooks.py",
+    "line number": "51",
+    "func name": "warn_if_has_hooks",
+    "func arg": "(tensor)",
+    "comments": ""
+}{
+    "source file": "hp_emblookup_codegen.py",
+    "line number": "189",
+    "func name": "generic",
+    "func arg": "(IndexType, InType, OutType, use_weights, isa, fused, use_offsets)",
+    "comments": ""
+}{}{
+    "source file": "hsm_util.py",
+    "line number": "34",
+    "func name": "create_hierarchy",
+    "func arg": "(tree_proto)",
+    "comments": ""
+}{
+    "source file": "hub.py",
+    "line number": "427",
+    "func name": "load_state_dict_from_url",
+    "func arg": "(url, model_dir, map_location, progress, check_hash, file_name)",
+    "comments": "Loads the Torch serialized object at the given URL.\n\nIf downloaded file is a zip file, it will be automatically decompressed.\n\nIf the object is already present in `model_dir`, it's deserialized and returned. The default value of `model_dir` is ``<hub_dir>/checkpoints`` where `hub_dir` is the directory returned by :func:`~torch.hub.get_dir`.\n##### Args\n* **url (string)**: URL of the object to download\n\n* **model_dir (string, optional)**: directory in which to save the object\n\n* **map_location (optional)**: a function or a dict specifying how to remap storage locations (see torch.load)\n\n* **progress (bool, optional)**: whether or not to display a progress bar to stderr.\n    Default\n\n* **check_hash(bool, optional)**: If True, the filename part of the URL should follow the naming convention\n    ``filename-<sha256>.ext`` where ``<sha256>`` is the first eight or more\n    digits of the SHA256 hash of the contents of the file. The hash is used to\n    ensure unique names and to verify the contents of the file.\n    Default\n\n* **file_name (string, optional)**: name for the downloaded file. Filename from `url` will be used if not set.\n\n* **ple**: \n\n* **>>> state_dict = torch.hub.load_state_dict_from_url('https**: //s3.amazonaws.com/pytorch/models/resnet18-5c106cde.pth')\n\n"
+}{}{
+    "source file": "hypothesis_test_util.py",
+    "line number": "366",
+    "func name": "runOpOnInput",
+    "func arg": "(device_option, op, inputs, input_device_options)",
+    "comments": ""
+}{
+    "source file": "hypothesis_test.py",
+    "line number": "90",
+    "func name": "_test_binary_broadcast",
+    "func arg": "(name, ref, filter_, gcs, allow_inplace, dtypes)",
+    "comments": ""
+}{
+    "source file": "hypothesis_utils.py",
+    "line number": "345",
+    "func name": "assert_deadline_disabled",
+    "func arg": "()",
+    "comments": ""
+}{
+    "source file": "ideep_test_util.py",
+    "line number": "29",
+    "func name": "gradient_checker_device_option",
+    "func arg": "()",
+    "comments": ""
+}{}{
+    "source file": "image_input_op_test.py",
+    "line number": "238",
+    "func name": "run_test",
+    "func arg": "(size_tuple, means, stds, label_type, num_labels, is_test, scale_jitter_type, color_jitter, color_lighting, dc, validator, output1, output2_size)",
+    "comments": ""
+}{
+    "source file": "imagenet_trainer_test_utils.py",
+    "line number": "152",
+    "func name": "test_forward_only_fast_simplenet",
+    "func arg": "(create_model, last_out_blob, data_blob, num_labels)",
+    "comments": ""
+}{
+    "source file": "imagenet_trainer.py",
+    "line number": "635",
+    "func name": "main",
+    "func arg": "()",
+    "comments": ""
+}{
+    "source file": "IN1k_resnet_no_test_model.py",
+    "line number": "59",
+    "func name": "run_training_net",
+    "func arg": "()",
+    "comments": ""
+}{
+    "source file": "IN1k_resnet.py",
+    "line number": "54",
+    "func name": "run_training_net",
+    "func arg": "()",
+    "comments": ""
+}{}{}{}{}{
+    "source file": "init_baseline.py",
+    "line number": "63",
+    "func name": "main",
+    "func arg": "()",
+    "comments": ""
+}{}{
+    "source file": "init.py",
+    "line number": "496",
+    "func name": "_make_deprecate",
+    "func arg": "(meth)",
+    "comments": ""
+}{}{
+    "source file": "initializers.py",
+    "line number": "123",
+    "func name": "update_initializer",
+    "func arg": "(initializer_class, operator_name_and_kwargs, default_operator_name_and_kwargs)",
+    "comments": "A helper function to convert from operator_name_and_kwargs to new object of type initializer_class. This function serves two purposes\n\n1. Support for custom initialization operators being passed in 2. Allow user to specify a custom Initializer without overwriting default operators used for initialization\n\nIf initializer_class is None, creates a default initializer using the Initializer class and operator_name_and_kwargs provided\n\nIf operator_name_and_kwargs is None, uses default_operator_name_and_kwargs\n\nreturns an instantiated Initializer object\n"
+}{}{}{}{
+    "source file": "instantiator.py",
+    "line number": "133",
+    "func name": "instantiate_non_scriptable_remote_module_template",
+    "func arg": "()",
+    "comments": ""
+}{}{}{}{
+    "source file": "internal.py",
+    "line number": "204",
+    "func name": "_start_record_function",
+    "func arg": "(exec_type, func_name, current_worker_name, dest_worker_name)",
+    "comments": "This function should be called from RPC/RRef functions to create a RecordFunction object for profiling. This function also runs the before callbacks that start the profiling, though the user is responsible for running the appropriate callbacks when the function to be profiled finishes.\n\nArguments: exec_type (RPCExecMode): Type of RPC/RRef call func_name (str): Name of function being profiled. current_worker_name (str): Name of current worker. dest_worker_name (str): Name of the destination worker.\n##### Returns\n"
+}{
+    "source file": "jit_forward_test.py",
+    "line number": "14",
+    "func name": "torch_sumall",
+    "func arg": "(a, iterations)",
+    "comments": ""
+}{
+    "source file": "jit_metaprogramming_utils.py",
+    "line number": "533",
+    "func name": "get_all_nn_module_tests",
+    "func arg": "()",
+    "comments": ""
+}{
+    "source file": "jit_utils.py",
+    "line number": "667",
+    "func name": "attrs_with_prefix",
+    "func arg": "(module, prefix)",
+    "comments": ""
+}{
+    "source file": "jsd_ops_test.py",
+    "line number": "23",
+    "func name": "jsd_grad",
+    "func arg": "(go, o, pq_list)",
+    "comments": ""
+}{}{
+    "source file": "kl.py",
+    "line number": "803",
+    "func name": "_kl_cauchy_cauchy",
+    "func arg": "(p, q)",
+    "comments": ""
+}{}{}{}{}{
+    "source file": "launch.py",
+    "line number": "201",
+    "func name": "main",
+    "func arg": "()",
+    "comments": ""
+}{}{
+    "source file": "layer_model_instantiator.py",
+    "line number": "98",
+    "func name": "generate_training_nets",
+    "func arg": "(model, include_tags)",
+    "comments": ""
+}{
+    "source file": "layer_norm_op_test.py",
+    "line number": "41",
+    "func name": "_layer_norm_grad_ref",
+    "func arg": "(axis, gout_full, norm, mean_full, stdev_full, X_full)",
+    "comments": ""
+}{}{}{}{}{}{
+    "source file": "layers.py",
+    "line number": "234",
+    "func name": "is_request_only_scalar",
+    "func arg": "(scalar)",
+    "comments": ""
+}{
+    "source file": "lbfgs.py",
+    "line number": "34",
+    "func name": "_strong_wolfe",
+    "func arg": "(obj_func, x, t, d, f, g, gtd, c1, c2, tolerance_change, max_ls)",
+    "comments": ""
+}{}{}{}{}{}{}{
+    "source file": "lengths_reducer_fused_8bit_rowwise_ops_test.py",
+    "line number": "10",
+    "func name": "compare_rowwise",
+    "func arg": "(emb_orig, emb_reconstructed, fp16)",
+    "comments": ""
+}{}{
+    "source file": "lengths_reducer_rowwise_8bit_ops_test.py",
+    "line number": "12",
+    "func name": "FakeQuantization8BitsRowwise",
+    "func arg": "(data)",
+    "comments": ""
+}{}{}{}{}{}{}{}{}{}{}{
+    "source file": "lmdb_create_example.py",
+    "line number": "91",
+    "func name": "main",
+    "func arg": "()",
+    "comments": ""
+}{
+    "source file": "load_derivatives.py",
+    "line number": "370",
+    "func name": "match_declarations_with_differentiability_info",
+    "func arg": "(declarations, differentiability_infos)",
+    "comments": "Sets the \"derivative\" and \"output_differentiability\" key on declarations to matching differentiability info\n\nIn-place functions will use the out-of-place derivative definition if there is no in-place specific derivative.\n"
+}{}{}{}{}{}{}{
+    "source file": "lowrank_multivariate_normal.py",
+    "line number": "32",
+    "func name": "_batch_lowrank_mahalanobis",
+    "func arg": "(W, D, x, capacitance_tril)",
+    "comments": "Uses \"Woodbury matrix identity\":: inv(W @ W.T + D) = inv(D) - inv(D) @ W @ inv(C) @ W.T @ inv(D), where :math:`C` is the capacitance matrix :math:`I + W.T @ inv(D) @ W`, to compute the squared Mahalanobis distance :math:`x.T @ inv(W @ W.T + D) @ x`.\n\n\n"
+}{}{}{}{
+    "source file": "lstm_benchmark.py",
+    "line number": "238",
+    "func name": "GetArgumentParser",
+    "func arg": "()",
+    "comments": ""
+}{
+    "source file": "lstm_comparison.py",
+    "line number": "10",
+    "func name": "Compare",
+    "func arg": "(args)",
+    "comments": ""
+}{}{}{}{}{}{}{}{}{}{}{}{}{}{
+    "source file": "memonger_test.py",
+    "line number": "28",
+    "func name": "count_blobs",
+    "func arg": "(proto)",
+    "comments": ""
+}{
+    "source file": "memonger.py",
+    "line number": "981",
+    "func name": "collect_blob_sizes",
+    "func arg": "(net)",
+    "comments": ""
+}{
+    "source file": "memory_format.py",
+    "line number": "3",
+    "func name": "convert_conv2d_weight_memory_format",
+    "func arg": "(module, memory_format)",
+    "comments": "Convert ``memory_format`` of ``nn.Conv2d.weight`` to ``memory_format`` The conversion recursively applies to nested ``nn.Module``, including ``module``. Note that it only changes the memory_format, but not the semantics of each dimensions. This function is used to facilitate the computation to adopt NHWC kernels, which provides considerable speed up for fp16 data on CUDA devices with compute capability >= 7.0\n\n.. note:: Calling ``model.to(memory_format=torch.channels_last)`` is more aggressive than the utility function ``convert_conv2d_weight_memory_format``. Any layer with 4d weight will be affected by ``model.to``, which does not necessarily benefit from conversion to specified ``memory_format``. One place we are confident in is that NHWC(channels_last) conversion for convolution in cuDNN, As it is beneficial to run convolution in NHWC, even in cases where we have to apply permutation to input tensors.\n\nHence our strategy here is to convert only the weight of convolution to channels_last. This ensures that; 1. Fast convolution kernels will be used, the benefit of which could outweigh overhead of permutation (if input is not in the same format) 2. No unnecessary permutations are applied on layers that do not benefit from memory_format conversion.\n\nThe optimal case is that, layers between convolution layers are channels last compatible. Input tensor would be permuted to channels last when it encounters the first convolution layer and stay in that memory format. Hence following convolutions will not need to permute its input tensor.\n\nIn case where a channels last incompatible layer is between convolution layers, we need to permute the input tensor back to contiguous format for that layer. The input tensor will go through the remaining layers in contiguous format and be permuted to channels last when it encounters another convolution layer. There's no point in propagating that permutation to an earlier layer, as most layers are quite agnostic to ``memory_format``.\n\nThis claim might change when PyTorch supports fusion of permutation, as there might have been a better spot to fuse the permutation other than immediately before a convolution.\n##### Args\n* **module (nn.Module)**: ``nn.Conv2d`` & ``nn.ConvTranspose2d``  or container\n                    ``nn.Module``\n\n* **format**: user specified ``memory_format``,\n    e.g. ``torch.channels_last`` or ``torch.contiguous_format``\n\n##### Returns\n* **ple**: \n\n* **>>>  # This is identical to**: \n\n"
+}{
+    "source file": "memory.py",
+    "line number": "371",
+    "func name": "memory_summary",
+    "func arg": "(device, abbreviated)",
+    "comments": "Returns a human-readable printout of the current memory allocator statistics for a given device.\n\nThis can be useful to display periodically during training, or when handling out-of-memory exceptions.\n\nArguments: device (torch.device or int, optional): selected device. Returns printout for the current device, given by :func:`~torch.cuda.current_device`, if :attr:`device` is ``None`` (default). abbreviated (bool, optional): whether to return an abbreviated summary (default: False).\n\n.. note:: See :ref:`cuda-memory-management` for more details about GPU memory management.\n"
+}{
+    "source file": "merge_id_lists_op_test.py",
+    "line number": "32",
+    "func name": "merge_id_lists_ref",
+    "func arg": "()",
+    "comments": ""
+}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{
+    "source file": "mkl_test_util.py",
+    "line number": "31",
+    "func name": "gradient_checker_device_option",
+    "func arg": "()",
+    "comments": ""
+}{
+    "source file": "mkldnn.py",
+    "line number": "182",
+    "func name": "to_mkldnn",
+    "func arg": "(module)",
+    "comments": ""
+}{}{}{
+    "source file": "mobile_exporter.py",
+    "line number": "51",
+    "func name": "Export",
+    "func arg": "(workspace, net, params)",
+    "comments": "Returns init_net and predict_net suitable for writing to disk and loading into a Predictor\n\n\n"
+}{
+    "source file": "mobile_optimizer.py",
+    "line number": "44",
+    "func name": "generate_mobile_module_lints",
+    "func arg": "(script_module)",
+    "comments": "Args: script_module: An instance of torch script module with type of ScriptModule\n\n\n##### Returns\n* **lint_map**: A list of dictionary that contains modules lints\n\n"
+}{
+    "source file": "mod_op_test.py",
+    "line number": "17",
+    "func name": "_data",
+    "func arg": "(draw)",
+    "comments": ""
+}{}{}{
+    "source file": "model_helper.py",
+    "line number": "496",
+    "func name": "ExtractPredictorNet",
+    "func arg": "(net_proto, input_blobs, output_blobs, device, renames, disabled_inputs)",
+    "comments": "Takes a model net for training and returns a net which can be used for prediction. For example, all gradient operators and input operators are removed. @param net_proto protobuf of the net you want to process (net.Proto()) @param input_blobs list/set of blob names that are the inputs of predictor @param output_blobs list/set of blob names that are outputs of predictor @param device optional device option that is assigned @param renames dictionary of blob name to a new name (optional) @param disabled_inputs optional set of blobs that are 'switched off'. This will cause branches with those blobs as inputs to be removed\n\n\n"
+}{}{
+    "source file": "model.py",
+    "line number": "30",
+    "func name": "main",
+    "func arg": "()",
+    "comments": ""
+}{}{
+    "source file": "module_impl_check.py",
+    "line number": "283",
+    "func name": "build_cpp_tests",
+    "func arg": "(unit_test_class, print_cpp_source)",
+    "comments": ""
+}{}{
+    "source file": "module_loader.py",
+    "line number": "4",
+    "func name": "import_module",
+    "func arg": "(name, path)",
+    "comments": ""
+}{}{
+    "source file": "module.py",
+    "line number": "120",
+    "func name": "register_module_backward_hook",
+    "func arg": "(hook)",
+    "comments": "Registers a backward hook common to all the modules.\n\n.. warning :: This adds global state to the `nn.module` module and it is only intended for debugging/profiling purposes.\n\nThe current implementation will not have the presented behavior for complex :class:`Module` that perform many operations. In some failure cases, :attr:`grad_input` and :attr:`grad_output` will only contain the gradients for a subset of the inputs and outputs. For such :class:`Module`, you should use :func:`torch.Tensor.register_hook` directly on a specific input or output to get the required gradients.\n\nThe hook will be called every time the gradients with respect to module inputs are computed. The hook should have the following signature::\n\nhook(module, grad_input, grad_output) -> Tensor or None\n\nThe :attr:`grad_input` and :attr:`grad_output` may be tuples if the module has multiple inputs or outputs. The hook should not modify its arguments, but it can optionally return a new gradient with respect to input that will be used in place of :attr:`grad_input` in subsequent computations. :attr:`grad_input` will only correspond to the inputs given as positional arguments.\n\nGlobal hooks are called before hooks registered with `register_backward_hook`\n##### Returns\n* ****: class\n\n"
+}{
+    "source file": "ModuleRegister.py",
+    "line number": "111",
+    "func name": "getClassFromModule",
+    "func arg": "(moduleName, className)",
+    "comments": ""
+}{}{}{}{
+    "source file": "mpi_test.py",
+    "line number": "22",
+    "func name": "SetupMPI",
+    "func arg": "()",
+    "comments": ""
+}{}{
+    "source file": "muji.py",
+    "line number": "226",
+    "func name": "AllreduceFallback",
+    "func arg": "(net, blobs, reduced_affix, gpu_indices)",
+    "comments": "A fallback option for Allreduce with no assumption on p2p.\n\nAlgorithm: a flat operation on gpu 0 0r <- 0 0r <- 0r + i for i in gpu_indices[1:] ir <- 0r for i in gpu_indices[1:]\n"
+}{
+    "source file": "mul_gradient_benchmark.py",
+    "line number": "12",
+    "func name": "benchmark_mul_gradient",
+    "func arg": "(args)",
+    "comments": ""
+}{}{
+    "source file": "multivariate_normal.py",
+    "line number": "69",
+    "func name": "_precision_to_scale_tril",
+    "func arg": "(P)",
+    "comments": ""
+}{}{
+    "source file": "native_parse.py",
+    "line number": "421",
+    "func name": "run",
+    "func arg": "(paths)",
+    "comments": ""
+}{
+    "source file": "nccl_ops_test.py",
+    "line number": "28",
+    "func name": "benchmark",
+    "func arg": "(ws, net, warmups, iters)",
+    "comments": ""
+}{
+    "source file": "nccl.py",
+    "line number": "84",
+    "func name": "reduce_scatter",
+    "func arg": "(inputs, outputs, op, streams, comms)",
+    "comments": ""
+}{}{}{}{}{
+    "source file": "net_builder_test.py",
+    "line number": "71",
+    "func name": "_test_if",
+    "func arg": "(x)",
+    "comments": ""
+}{}{
+    "source file": "net_construct_bench.py",
+    "line number": "136",
+    "func name": "main",
+    "func arg": "()",
+    "comments": ""
+}{
+    "source file": "net_drawer.py",
+    "line number": "346",
+    "func name": "main",
+    "func arg": "()",
+    "comments": ""
+}{}{
+    "source file": "net_printer_test.py",
+    "line number": "61",
+    "func name": "example_job",
+    "func arg": "()",
+    "comments": ""
+}{
+    "source file": "net_printer.py",
+    "line number": "409",
+    "func name": "debug_net",
+    "func arg": "(net)",
+    "comments": "Given a Net, produce another net that logs info about the operator call before each operator execution. Use for debugging purposes.\n\n\n"
+}{}{}{}{
+    "source file": "nn_parse.py",
+    "line number": "340",
+    "func name": "run",
+    "func arg": "(paths)",
+    "comments": ""
+}{
+    "source file": "nnpack_ops_test.py",
+    "line number": "34",
+    "func name": "has_avx2",
+    "func arg": "()",
+    "comments": ""
+}{
+    "source file": "no_future_div.py",
+    "line number": "8",
+    "func name": "div_float_nofuture",
+    "func arg": "()",
+    "comments": ""
+}{}{}{
+    "source file": "nomnigraph_transformations.py",
+    "line number": "9",
+    "func name": "transpose_network",
+    "func arg": "(nn)",
+    "comments": "Convert all Convolutions operators which are in the NCHW order to NHWC order and also transform their inputs and outputs so that the rest of the graph is not affected.\n\n\n"
+}{
+    "source file": "nomnigraph.py",
+    "line number": "110",
+    "func name": "render",
+    "func arg": "(s)",
+    "comments": ""
+}{
+    "source file": "nonlinearity.py",
+    "line number": "39",
+    "func name": "tanh",
+    "func arg": "(model, blob_in, blob_out, use_cudnn, order, **kwargs)",
+    "comments": "Tanh.\n\n\n"
+}{}{}{}{
+    "source file": "normalization58.py",
+    "line number": "278",
+    "func name": "moments_with_running_stats",
+    "func arg": "(model, blob_in, blob_out, dim_in, RunningMeanInitializer, RunningVarianceInitializer, order, **kwargs)",
+    "comments": ""
+}{}{}{}{}{}{
+    "source file": "numa_benchmark.py",
+    "line number": "36",
+    "func name": "main",
+    "func arg": "()",
+    "comments": ""
+}{
+    "source file": "numa_test.py",
+    "line number": "12",
+    "func name": "build_test_net",
+    "func arg": "(net_name)",
+    "comments": ""
+}{}{}{
+    "source file": "nvtx.py",
+    "line number": "37",
+    "func name": "mark",
+    "func arg": "(msg)",
+    "comments": "Describe an instantaneous event that occurred at some point.\n\nArguments: msg (string): ASCII message to associate with the event.\n"
+}{}{}{
+    "source file": "observer.py",
+    "line number": "12",
+    "func name": "_with_args",
+    "func arg": "(cls_or_self, **kwargs)",
+    "comments": "Wrapper that allows creation of class factories.\n\nThis can be useful when there is a need to create classes with the same constructor arguments, but different instances.\n\nExample::\n\n>>> Foo.with_args = classmethod(_with_args) >>> foo_builder = Foo.with_args(a=3, b=4).with_args(answer=42) >>> foo_instance1 = foo_builder() >>> foo_instance2 = foo_builder() >>> id(foo_instance1) == id(foo_instance2) False\n"
+}{}{
+    "source file": "one_hot_ops_test.py",
+    "line number": "15",
+    "func name": "_one_hots",
+    "func arg": "()",
+    "comments": ""
+}{}{}{
+    "source file": "onnxifi.py",
+    "line number": "19",
+    "func name": "onnxifi_caffe2_net",
+    "func arg": "(pred_net, input_shapes, max_batch_size, max_seq_size, debug, use_onnx, merge_fp32_inputs_into_fp16, adjust_batch, black_list, weight_names, timeout)",
+    "comments": "Transform the caffe2_net by collapsing ONNXIFI-runnable nodes into Onnxifi c2 ops\n\n\n"
+}{
+    "source file": "op_benchmark.py",
+    "line number": "96",
+    "func name": "main",
+    "func arg": "()",
+    "comments": ""
+}{
+    "source file": "op_deps_processor.py",
+    "line number": "67",
+    "func name": "convert",
+    "func arg": "(fname, graph, output_template, op_template, op_dep_template)",
+    "comments": ""
+}{
+    "source file": "op_gen.py",
+    "line number": "201",
+    "func name": "gen_names",
+    "func arg": "(op_list)",
+    "comments": ""
+}{}{}{}{
+    "source file": "operator_fp_exceptions_test.py",
+    "line number": "13",
+    "func name": "setThrowIfFpExceptions",
+    "func arg": "(enabled)",
+    "comments": ""
+}{
+    "source file": "operators.py",
+    "line number": "19",
+    "func name": "reshape_from_tensor_shape",
+    "func arg": "(x, shape)",
+    "comments": ""
+}{
+    "source file": "optim_baseline.py",
+    "line number": "108",
+    "func name": "main",
+    "func arg": "()",
+    "comments": ""
+}{}{}{}{
+    "source file": "optimizer.py",
+    "line number": "43",
+    "func name": "_wait_for_all",
+    "func arg": "(rpc_futs)",
+    "comments": ""
+}{
+    "source file": "optimizer61.py",
+    "line number": "1953",
+    "func name": "build_rms_prop",
+    "func arg": "(model, base_learning_rate, max_gradient_norm, allow_lr_injection, **kwargs)",
+    "comments": ""
+}{}{}{}{
+    "source file": "output_generator.py",
+    "line number": "14",
+    "func name": "assembleAllOutputs",
+    "func arg": "()",
+    "comments": ""
+}{
+    "source file": "override_no_test_model_no_checkpoint.py",
+    "line number": "15",
+    "func name": "run_testing_net",
+    "func arg": "()",
+    "comments": ""
+}{}{}{}{}{}{
+    "source file": "parallel_apply.py",
+    "line number": "22",
+    "func name": "parallel_apply",
+    "func arg": "(modules, inputs, kwargs_tup, devices)",
+    "comments": "Applies each `module` in :attr:`modules` in parallel on arguments contained in :attr:`inputs` (positional) and :attr:`kwargs_tup` (keyword) on each of :attr:`devices`.\n\n\n##### Args\n* **modules (Module)**: modules to be parallelized\n\n* **inputs (tensor)**: inputs to the modules\n\n* **devices (list of int or torch.device)**: CUDA devices\n\n* **r**: `devices` (if given) should all have same length. Moreover, each\n\n* **ent of **: attr\n\n"
+}{
+    "source file": "parallel_workers_test.py",
+    "line number": "47",
+    "func name": "dequeue_value",
+    "func arg": "(queue)",
+    "comments": ""
+}{
+    "source file": "parallel_workers.py",
+    "line number": "287",
+    "func name": "run_worker",
+    "func arg": "(coordinator, worker)",
+    "comments": ""
+}{
+    "source file": "parallelize_bmuf_distributed_test.py",
+    "line number": "22",
+    "func name": "bmuf_process",
+    "func arg": "(filestore_dir, process_id, shared_results, cpu_device, nesterov)",
+    "comments": ""
+}{}{}{
+    "source file": "parameter_sharing.py",
+    "line number": "88",
+    "func name": "ParameterSharing",
+    "func arg": "(shared_scopes)",
+    "comments": "Helper function for sharing scopes. All the parameters within the shared_scopes, will be remapped with the respect of CurrentNamescope()\n\nI.e. if one calls ParameterSharing with {'scope_b': 'scope_'a'}, from the scope 'some_global_scope', it'll effectively mean, that all parameters from 'some_global_scope/scope_b' will shared with the parameters from 'some_global_scope/scope_a'\n"
+}{}{}{
+    "source file": "parity_table_parser.py",
+    "line number": "32",
+    "func name": "parse_parity_tracker_table",
+    "func arg": "(file_path)",
+    "comments": ""
+}{}{}{}{}{
+    "source file": "pin_memory.py",
+    "line number": "45",
+    "func name": "pin_memory",
+    "func arg": "(data)",
+    "comments": ""
+}{}{
+    "source file": "pipeline.py",
+    "line number": "314",
+    "func name": "_pipe_step",
+    "func arg": "(input, output, num_threads, processor, name, capacity, group, num_runtime_threads, final_outputs)",
+    "comments": "\n\n\n"
+}{}{}{}{}{}{
+    "source file": "pool.py",
+    "line number": "8",
+    "func name": "clean_worker",
+    "func arg": "(**kwargs)",
+    "comments": ""
+}{}{}{
+    "source file": "pooling63.py",
+    "line number": "31",
+    "func name": "max_pool_with_index",
+    "func arg": "(model, blob_in, blob_out, order, **kwargs)",
+    "comments": "Max pooling with an explicit index of max position\n\n\n"
+}{}{}{}{}{}{
+    "source file": "predictor_exporter.py",
+    "line number": "230",
+    "func name": "load_from_db",
+    "func arg": "(filename, db_type, device_option, **kwargs)",
+    "comments": ""
+}{
+    "source file": "predictor_py_utils.py",
+    "line number": "168",
+    "func name": "AddModelIdArg",
+    "func arg": "(meta_net_def, net_def)",
+    "comments": "Takes the model_id from the predict_net of meta_net_def (if it is populated) and adds it to the net_def passed in. This is intended to be called on init_nets, as their model_id is not populated by default, but should be the same as that of the predict_net\n\n\n"
+}{}{}{}{
+    "source file": "preprocess_declarations.py",
+    "line number": "178",
+    "func name": "run",
+    "func arg": "(declarations)",
+    "comments": ""
+}{
+    "source file": "print_test_stats.py",
+    "line number": "65",
+    "func name": "parse_reports",
+    "func arg": "(folder)",
+    "comments": ""
+}{
+    "source file": "process1.py",
+    "line number": "9",
+    "func name": "insert",
+    "func arg": "(originalfile, first_line, description)",
+    "comments": ""
+}{
+    "source file": "profile.py",
+    "line number": "92",
+    "func name": "full_profile",
+    "func arg": "(rnns, **args)",
+    "comments": ""
+}{
+    "source file": "profiler_bench.py",
+    "line number": "39",
+    "func name": "run_profiler_benchmark_parallel",
+    "func arg": "(input_x, use_cuda, profiling_enabled)",
+    "comments": ""
+}{
+    "source file": "profiler.py",
+    "line number": "1035",
+    "func name": "build_table",
+    "func arg": "(events, sort_by, header, row_limit, use_cuda, profile_memory)",
+    "comments": "Prints a summary of events (which can be a list of FunctionEvent or FunctionEventAvg).\n\n\n"
+}{
+    "source file": "profiler65.py",
+    "line number": "43",
+    "func name": "profile",
+    "func arg": "()",
+    "comments": ""
+}{
+    "source file": "prune.py",
+    "line number": "1271",
+    "func name": "_compute_norm",
+    "func arg": "(t, n, dim)",
+    "comments": "Compute the L_n-norm across all entries in tensor `t` along all dimension except for the one identified by dim. Example: if `t` is of shape, say, 3x2x4 and dim=2 (the last dim), then norm will have Size [4], and each entry will represent the `L_n`-norm computed using the 3x2=6 entries for each of the 4 channels.\n\n\n##### Args\n* **t (torch.Tensor)**: tensor representing the parameter to prune\n\n* **n (int, float, inf, -inf, 'fro', 'nuc')**: See documentation of valid\n    entries for argument p in torch.norm\n\n* **dim (int)**: dim identifying the channels to prune\n\n##### Returns\n* **norm (torch.Tensor)**: L_n norm computed across all dimensions except\n    for `dim`. By construction, `norm.shape = t.shape[-1]`.\n\n"
+}{}{}{}{}{}{}{
+    "source file": "python_op_test.py",
+    "line number": "28",
+    "func name": "op_builder",
+    "func arg": "(name, index, extra)",
+    "comments": ""
+}{}{}{
+    "source file": "pytorch_helper.py",
+    "line number": "22",
+    "func name": "PyTorchModule",
+    "func arg": "(helper, model, sample_arguments, caffe2_inputs, prefix_name)",
+    "comments": "Embed an ONNX-exportable PyTorch Model into a Caffe2 model being built.\n\nArguments: helper (caffe2.python.core.ModelHelder): the model helper where this imported network should be inserted model (torch.nn.Module): the model to be exported sample_arguments (tuple of arguments): the inputs to the model, e.g., such that ``model(*args)`` is a valid invocation of the model.\n\nAny non-Variable arguments will be hard-coded into the exported model; any Variable arguments will become inputs of the exported model, in the order they occur in args.\n\nIf args is a Variable, this is equivalent to having called it with a 1-ary tuple of that Variable. (Note: passing keyword arguments to the model is not currently supported.\n\nGive us a shout if you need it.) caffe2_inputs (list of str or caffe2.python.core.BlobReference): the caffe2 Blobs that should be inputs to this network. Must be the same length as sample_arguments prefix_name: prefix name to add to each member of the blob, if None then a fresh prefix pytorch_input_N/ is used\n##### Returns\n"
+}{}{}{}{}{}{
+    "source file": "qconfig.py",
+    "line number": "90",
+    "func name": "get_default_qat_qconfig",
+    "func arg": "(backend)",
+    "comments": ""
+}{}{}{}{}{}{}{}{}{}{}{}{}{}{
+    "source file": "quantize_jit.py",
+    "line number": "166",
+    "func name": "quantize_dynamic_jit",
+    "func arg": "(model, qconfig_dict, inplace, debug)",
+    "comments": "Quantize the input float TorchScript model with post training dynamic quantization. Currently only qint8 quantization of torch.nn.Linear is supported.\n\n\n##### Args\n* **`model`**: input float TorchScript model\n\n* **`qconfig_dict`**: qconfig_dict is a dictionary with names of sub modules as key and\n\n* **descriptions in **: func\n\n* **`inplace`**: carry out model transformations in-place, the original module is\n\n* **`debug`**: flag for producing a debug friendly model (preserve weight attribute)\n\n* **rn**: \n\n* **ple**: \n\n* **calibrate(model, data_loader)**: \n\n* **with torch.no_grad()**: for image, target in data_loader\n\n* **{''**: qconfig},\n\n"
+}{
+    "source file": "quantize.py",
+    "line number": "411",
+    "func name": "get_observer_dict",
+    "func arg": "(mod, target_dict, prefix)",
+    "comments": "Traverse the modules and save all observers into dict. This is mainly used for quantization accuracy debug Args: mod: the top module we want to save all observers prefix: the prefix for the current module target_dict: the dictionary used to save all the observers\n\n\n"
+}{
+    "source file": "quantized.py",
+    "line number": "538",
+    "func name": "quantize_rnn_modules",
+    "func arg": "(module, dtype)",
+    "comments": ""
+}{}{
+    "source file": "queue_util.py",
+    "line number": "129",
+    "func name": "close_queue",
+    "func arg": "(step)",
+    "comments": ""
+}{}{}{}{}{}{}{
+    "source file": "random_topo_test.py",
+    "line number": "336",
+    "func name": "parse_args",
+    "func arg": "()",
+    "comments": ""
+}{
+    "source file": "random.py",
+    "line number": "153",
+    "func name": "initial_seed",
+    "func arg": "()",
+    "comments": "Returns the current random seed of the current GPU.\n\n.. warning:: This function eagerly initializes CUDA.\n"
+}{
+    "source file": "random67.py",
+    "line number": "61",
+    "func name": "fork_rng",
+    "func arg": "(devices, enabled, _caller, _devices_kw)",
+    "comments": "Forks the RNG, so that when you return, the RNG is reset to the state that it was previously in.\n\nArguments: devices (iterable of CUDA IDs): CUDA devices for which to fork the RNG.\n\nCPU RNG state is always forked.\n\nBy default, :meth:`fork_rng` operates on all devices, but will emit a warning if your machine has a lot of devices, since this function will run very slowly in that case. If you explicitly specify devices, this warning will be suppressed enabled (bool): if ``False``, the RNG is not forked.\n\nThis is a convenience argument for easily disabling the context manager without having to delete it and unindent your Python code under it.\n"
+}{}{
+    "source file": "rebatching_queue_test.py",
+    "line number": "17",
+    "func name": "primefac",
+    "func arg": "(n)",
+    "comments": ""
+}{
+    "source file": "record_function_bench.py",
+    "line number": "45",
+    "func name": "run_bench",
+    "func arg": "(model_names, bench_args)",
+    "comments": ""
+}{}{}{}{}{
+    "source file": "recurrent.py",
+    "line number": "305",
+    "func name": "retrieve_step_blobs",
+    "func arg": "(net, prefix)",
+    "comments": "Retrieves blobs from step workspaces (which contain intermediate recurrent network computation for each timestep) and puts them in the global workspace. This allows access to the contents of this intermediate computation in python. Returns the list of extracted blob names.\n\nnet: the net from which the step workspace blobs should be extracted\n\nprefix: prefix to append to extracted blob names when placing them in the global workspace\n"
+}{}{
+    "source file": "reduce_ops_test.py",
+    "line number": "114",
+    "func name": "getNorm",
+    "func arg": "(p)",
+    "comments": ""
+}{}{}{
+    "source file": "reductions.py",
+    "line number": "331",
+    "func name": "init_reductions",
+    "func arg": "()",
+    "comments": ""
+}{}{}{}{}{}{}{}{}{}{
+    "source file": "remote_module_test.py",
+    "line number": "59",
+    "func name": "create_scripted_module",
+    "func arg": "(first_arg, first_kwarg)",
+    "comments": ""
+}{
+    "source file": "remote_module.py",
+    "line number": "21",
+    "func name": "_create_module",
+    "func arg": "(module_cls, args, kwargs, module_interface_cls)",
+    "comments": ""
+}{
+    "source file": "rendezvous_filestore.py",
+    "line number": "19",
+    "func name": "gen_rendezvous_ctx",
+    "func arg": "(model, dataset, is_train)",
+    "comments": ""
+}{
+    "source file": "rendezvous.py",
+    "line number": "133",
+    "func name": "_env_rendezvous_handler",
+    "func arg": "(url, timeout, **kwargs)",
+    "comments": ""
+}{
+    "source file": "repeat_benchmark.py",
+    "line number": "45",
+    "func name": "pt_repeat_n_times",
+    "func arg": "(niters)",
+    "comments": ""
+}{
+    "source file": "replicate.py",
+    "line number": "78",
+    "func name": "replicate",
+    "func arg": "(network, devices, detach)",
+    "comments": ""
+}{}{
+    "source file": "reshape_op_test.py",
+    "line number": "112",
+    "func name": "_test_reshape",
+    "func arg": "(old_shape, new_shape, expected_shape, arg_shape, in_place, shape_dtype)",
+    "comments": ""
+}{
+    "source file": "reshape_ops_test.py",
+    "line number": "165",
+    "func name": "_test_reshape_output_and_gradient",
+    "func arg": "(old_shape, new_shape, expected_shape, arg_shape, in_place, expected_gradient)",
+    "comments": ""
+}{}{}{}{}{}{
+    "source file": "resnet.py",
+    "line number": "405",
+    "func name": "create_resnet50",
+    "func arg": "(model, data, num_input_channels, num_labels, label, is_test, no_loss, no_bias, conv1_kernel, conv1_stride, final_avg_kernel)",
+    "comments": ""
+}{
+    "source file": "rewrite_graph_test.py",
+    "line number": "175",
+    "func name": "complex_resnet",
+    "func arg": "()",
+    "comments": ""
+}{
+    "source file": "rewrite_graph.py",
+    "line number": "211",
+    "func name": "rewrite_model_helper_simple",
+    "func arg": "(model)",
+    "comments": ""
+}{}{}{
+    "source file": "rnn_cell_test_util.py",
+    "line number": "20",
+    "func name": "_prepare_rnn",
+    "func arg": "(t, n, dim_in, create_rnn, outputs_with_grads, forget_bias, memory_optim, forward_only, drop_states, T, two_d_initial_states, dim_out, num_states, **kwargs)",
+    "comments": ""
+}{
+    "source file": "rnn_cell_test.py",
+    "line number": "895",
+    "func name": "prepare_mul_rnn",
+    "func arg": "(model, input_blob, shape, T, outputs_with_grad, num_layers)",
+    "comments": ""
+}{
+    "source file": "rnn_cell.py",
+    "line number": "1954",
+    "func name": "_layered_LSTM",
+    "func arg": "(model, input_blob, seq_lengths, initial_states, dim_in, dim_out, scope, outputs_with_grads, return_params, memory_optimization, forget_bias, forward_only, drop_states, create_lstm)",
+    "comments": ""
+}{}{
+    "source file": "rnn.py",
+    "line number": "20",
+    "func name": "apply_permutation",
+    "func arg": "(tensor, permutation, dim)",
+    "comments": ""
+}{
+    "source file": "rnn68.py",
+    "line number": "13",
+    "func name": "apply_permutation",
+    "func arg": "(tensor, permutation, dim)",
+    "comments": ""
+}{
+    "source file": "rnn69.py",
+    "line number": "378",
+    "func name": "pack_sequence",
+    "func arg": "(sequences, enforce_sorted)",
+    "comments": "Packs a list of variable length Tensors\n\n``sequences`` should be a list of Tensors of size ``L x *``, where `L` is the length of a sequence and `*` is any number of trailing dimensions, including zero.\n\nFor unsorted sequences, use `enforce_sorted = False`. If ``enforce_sorted`` is ``True``, the sequences should be sorted in the order of decreasing length. ``enforce_sorted = True`` is only necessary for ONNX export.\n\n Example: >>> from torch.nn.utils.rnn import pack_sequence >>> a = torch.tensor([1,2,3]) >>> b = torch.tensor([4,5]) >>> c = torch.tensor([6]) >>> pack_sequence([a, b, c]) PackedSequence(data=tensor([ 1,\n\n4,\n\n6,\n\n2,\n\n5,\n\n3]), batch_sizes=tensor([ 3,\n\n2,\n\n1]))\n\n Arguments: sequences (list[Tensor]): A list of sequences of decreasing length. enforce_sorted (bool, optional): if ``True``, checks that the input contains sequences sorted by length in a decreasing order. If ``False``, this condition is not checked. Default: ``True``.\n##### Returns\n* **a **: class\n\n"
+}{
+    "source file": "rnn70.py",
+    "line number": "44",
+    "func name": "init_dropout_state",
+    "func arg": "(dropout, train, dropout_seed, dropout_state)",
+    "comments": ""
+}{}{
+    "source file": "rowwise_counter_test.py",
+    "line number": "10",
+    "func name": "update_counter_ref",
+    "func arg": "(prev_iter, update_counter, indices, curr_iter, counter_halflife)",
+    "comments": ""
+}{}{
+    "source file": "rpc_test_faulty.py",
+    "line number": "78",
+    "func name": "rpc_async_with_rref_arg",
+    "func arg": "(dst_worker_name, args)",
+    "comments": ""
+}{
+    "source file": "rpc_test.py",
+    "line number": "838",
+    "func name": "load_script_module_with_pickled_rref",
+    "func arg": "(pickled_script_module)",
+    "comments": ""
+}{
+    "source file": "rpc_test71.py",
+    "line number": "465",
+    "func name": "return_future",
+    "func arg": "()",
+    "comments": ""
+}{}{
+    "source file": "rref_proxy.py",
+    "line number": "8",
+    "func name": "_invoke_rpc",
+    "func arg": "(rref, rpc_api, func_name, **kwargs)",
+    "comments": ""
+}{
+    "source file": "run_cuda_memcheck.py",
+    "line number": "82",
+    "func name": "is_cpu_only",
+    "func arg": "(name)",
+    "comments": ""
+}{
+    "source file": "run_test.py",
+    "line number": "678",
+    "func name": "main",
+    "func arg": "()",
+    "comments": ""
+}{
+    "source file": "runner.py",
+    "line number": "41",
+    "func name": "get_nn_runners",
+    "func arg": "()",
+    "comments": ""
+}{
+    "source file": "sample_functional.py",
+    "line number": "16",
+    "func name": "sample_functional",
+    "func arg": "(x, has_parity)",
+    "comments": ""
+}{}{}{}{}{}{}{
+    "source file": "scatter_gather.py",
+    "line number": "47",
+    "func name": "gather",
+    "func arg": "(outputs, target_device, dim)",
+    "comments": "Gathers tensors from different GPUs on a specified device (-1 means the CPU).\n\n\n"
+}{}{
+    "source file": "schema.py",
+    "line number": "1302",
+    "func name": "attach_metadata_to_scalars",
+    "func arg": "(field, metadata)",
+    "comments": ""
+}{
+    "source file": "scope_test.py",
+    "line number": "16",
+    "func name": "thread_runner",
+    "func arg": "(idx, testobj)",
+    "comments": ""
+}{
+    "source file": "scope.py",
+    "line number": "107",
+    "func name": "EmptyDeviceScope",
+    "func arg": "()",
+    "comments": "Allow users to 'disable' the device scope behaviour (so it can be controlled at a NetDef::DeviceOption level, not overridden at OperatorDef::DeviceOption level).\n\nThis sets the CurrentDeviceScope() to None, so that the field is not set in CreateOperator(...), etc.\n"
+}{
+    "source file": "scratch.py",
+    "line number": "31",
+    "func name": "recurrent_scaleshift",
+    "func arg": "(x, scale, shift)",
+    "comments": ""
+}{
+    "source file": "segment_ops_test.py",
+    "line number": "274",
+    "func name": "sparse_lengths_weighted_sum_grad_ref",
+    "func arg": "(GO, fwd_out, fwd_in, grad_on_weights)",
+    "comments": ""
+}{}{}{}{}{}{}{}{
+    "source file": "seq2seq_util.py",
+    "line number": "632",
+    "func name": "output_projection",
+    "func arg": "(model, decoder_outputs, decoder_output_size, target_vocab_size, decoder_softmax_size)",
+    "comments": ""
+}{
+    "source file": "sequence_ops_test.py",
+    "line number": "88",
+    "func name": "_gather_padding_ref",
+    "func arg": "(start_pad_width, end_pad_width, data, lengths)",
+    "comments": ""
+}{
+    "source file": "serde.py",
+    "line number": "13",
+    "func name": "deserialize_protobuf_struct",
+    "func arg": "(serialized_protobuf, struct_type)",
+    "comments": ""
+}{
+    "source file": "serialization.py",
+    "line number": "861",
+    "func name": "_is_torchscript_zip",
+    "func arg": "(zip_file)",
+    "comments": ""
+}{
+    "source file": "serialized_test_util.py",
+    "line number": "263",
+    "func name": "testWithArgs",
+    "func arg": "()",
+    "comments": ""
+}{}{}{}{}{}{}{
+    "source file": "setup74.py",
+    "line number": "712",
+    "func name": "print_box",
+    "func arg": "(msg)",
+    "comments": ""
+}{}{}{}{
+    "source file": "show_pickle.py",
+    "line number": "72",
+    "func name": "main",
+    "func arg": "(argv, output_stream)",
+    "comments": ""
+}{}{
+    "source file": "shufflenet.py",
+    "line number": "176",
+    "func name": "create_shufflenet",
+    "func arg": "(model, data, num_input_channels, num_labels, label, is_test, no_loss)",
+    "comments": ""
+}{}{}{
+    "source file": "signal_handling.py",
+    "line number": "47",
+    "func name": "_set_SIGCHLD_handler",
+    "func arg": "()",
+    "comments": ""
+}{}{
+    "source file": "simple_timeit.py",
+    "line number": "11",
+    "func name": "main",
+    "func arg": "()",
+    "comments": ""
+}{
+    "source file": "SimpleAddModule.py",
+    "line number": "5",
+    "func name": "add_tensors_loop",
+    "func arg": "(x, y)",
+    "comments": ""
+}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{
+    "source file": "sparse_lengths_sum_benchmark.py",
+    "line number": "18",
+    "func name": "benchmark_sparse_lengths_sum",
+    "func arg": "(dtype_str, categorical_limit, embedding_size, average_len, batch_size, iterations, flush_cache)",
+    "comments": ""
+}{
+    "source file": "sparse_lengths_sum_nbit_benchmark.py",
+    "line number": "11",
+    "func name": "benchmark_sparse_lengths_sum",
+    "func arg": "(categorical_limit, embedding_size, average_len, batch_size, iterations, flush_cache, bit_rate)",
+    "comments": ""
+}{
+    "source file": "sparse_lookup.py",
+    "line number": "107",
+    "func name": "_is_id_score_list",
+    "func arg": "(input_record)",
+    "comments": ""
+}{}{}{}{
+    "source file": "sparse_reshape_op_test.py",
+    "line number": "28",
+    "func name": "test_reshape",
+    "func arg": "(old_shape, new_shape, stride_only)",
+    "comments": ""
+}{}{}{}{}{}{
+    "source file": "SparseTransformer.py",
+    "line number": "175",
+    "func name": "netbuilder",
+    "func arg": "(model)",
+    "comments": ""
+}{}{}{}{
+    "source file": "spawn.py",
+    "line number": "162",
+    "func name": "spawn",
+    "func arg": "(fn, args, nprocs, join, daemon, start_method)",
+    "comments": "Spawns ``nprocs`` processes that run ``fn`` with ``args``.\n\nIf one of the processes exits with a non-zero exit status, the remaining processes are killed and an exception is raised with the cause of termination. In the case an exception was caught in the child process, it is forwarded and its traceback is included in the exception raised in the parent process.\n\nArguments: fn (function): Function is called as the entrypoint of the spawned process. This function must be defined at the top level of a module so it can be pickled and spawned. This is a requirement imposed by multiprocessing.\n\nThe function is called as ``fn(i, *args)``, where ``i`` is the process index and ``args`` is the passed through tuple of arguments.\n\nargs (tuple): Arguments passed to ``fn``. nprocs (int): Number of processes to spawn. join (bool): Perform a blocking join on all processes. daemon (bool): The spawned processes' daemon flag. If set to True, daemonic processes will be created. start_method (string): (deprecated) this method will always use ``spawn`` as the start method. To use a different start method use ``start_processes()``.\n##### Returns\n* ****: class\n\n"
+}{}{
+    "source file": "spectral_norm.py",
+    "line number": "258",
+    "func name": "remove_spectral_norm",
+    "func arg": "(module, name)",
+    "comments": "Removes the spectral normalization reparameterization from a module.\n\n\n##### Args\n* **module (Module)**: containing module\n\n* **name (str, optional)**: name of weight parameter\n\n* **ple**: \n\n"
+}{}{}{
+    "source file": "square_root_divide_op_test.py",
+    "line number": "54",
+    "func name": "grad",
+    "func arg": "(output_grad, ref_outputs, inputs)",
+    "comments": ""
+}{}{
+    "source file": "srresnet.py",
+    "line number": "7",
+    "func name": "_initialize_orthogonal",
+    "func arg": "(conv)",
+    "comments": ""
+}{}{}{}{
+    "source file": "storage.py",
+    "line number": "141",
+    "func name": "_load_from_bytes",
+    "func arg": "(b)",
+    "comments": ""
+}{
+    "source file": "storage77.py",
+    "line number": "57",
+    "func name": "assign",
+    "func arg": "()",
+    "comments": ""
+}{}{}{}{
+    "source file": "string_ops_test.py",
+    "line number": "14",
+    "func name": "_string_lists",
+    "func arg": "(alphabet)",
+    "comments": ""
+}{}{}{}{
+    "source file": "summary.py",
+    "line number": "684",
+    "func name": "mesh",
+    "func arg": "(tag, vertices, colors, faces, config_dict, display_name, description)",
+    "comments": "Outputs a merged `Summary` protocol buffer with a mesh/point cloud.\n\n\n##### Args\n* **tag**: A name for this summary operation.\n\n* **vertices**: Tensor of shape `[dim_1, ..., dim_n, 3]` representing the 3D\n  coordinates of vertices.\n\n* **faces**: Tensor of shape `[dim_1, ..., dim_n, 3]` containing indices of\n  vertices within each triangle.\n\n* **colors**: Tensor of shape `[dim_1, ..., dim_n, 3]` containing colors for each\n  vertex.\n\n* **display_name**: If set, will be used as the display name in TensorBoard.\n  Defaults to `name`.\n\n* **description**: A longform readable description of the summary data. Markdown\n  is supported.\n\n* **config_dict**: Dictionary with ThreeJS classes names and configuration.\n\n##### Returns\n"
+}{}{
+    "source file": "supported_ops.py",
+    "line number": "285",
+    "func name": "_list_supported_ops",
+    "func arg": "()",
+    "comments": ""
+}{
+    "source file": "swa_utils.py",
+    "line number": "115",
+    "func name": "update_bn",
+    "func arg": "(loader, model, device)",
+    "comments": "Updates BatchNorm running_mean, running_var buffers in the model.\n\nIt performs one pass over data in `loader` to estimate the activation statistics for BatchNorm layers in the model. Arguments: loader (torch.utils.data.DataLoader): dataset loader to compute the activation statistics on. Each data batch should be either a tensor, or a list/tuple whose first element is a tensor containing data. model (torch.nn.Module): model for which we seek to update BatchNorm statistics. device (torch.device, optional): If set, data will be trasferred to :attr:`device` before being passed into :attr:`model`.\n\nExample: >>> loader, model = ... >>> torch.optim.swa_utils.update_bn(loader, model)\n\n.. note:: The `update_bn` utility assumes that each data batch in :attr:`loader` is either a tensor or a list or tuple of tensors; in the latter case it is assumed that :meth:`model.forward()` should be called on the first element of the list or tuple corresponding to the data batch.\n"
+}{}{
+    "source file": "symbolic_caffe2.py",
+    "line number": "249",
+    "func name": "sigmoid",
+    "func arg": "(g, input)",
+    "comments": ""
+}{
+    "source file": "symbolic_helper.py",
+    "line number": "563",
+    "func name": "_cast_func_template",
+    "func arg": "(to_i, g, input, non_blocking)",
+    "comments": ""
+}{
+    "source file": "symbolic_opset7.py",
+    "line number": "37",
+    "func name": "min",
+    "func arg": "(g, dim_or_y, keepdim)",
+    "comments": ""
+}{
+    "source file": "symbolic_opset8.py",
+    "line number": "277",
+    "func name": "full_like",
+    "func arg": "(g, input, fill_value, dtype, layout, device, pin_memory, memory_format)",
+    "comments": ""
+}{
+    "source file": "symbolic_opset9.py",
+    "line number": "2441",
+    "func name": "take",
+    "func arg": "(g, index)",
+    "comments": ""
+}{
+    "source file": "symbolic_opset10.py",
+    "line number": "183",
+    "func name": "fake_quantize_per_tensor_affine",
+    "func arg": "(g, inputs, scale, zero_point, quant_min, quant_max)",
+    "comments": ""
+}{
+    "source file": "symbolic_opset11.py",
+    "line number": "649",
+    "func name": "flatten",
+    "func arg": "(g, input, start_dim, end_dim)",
+    "comments": ""
+}{
+    "source file": "symbolic_opset12.py",
+    "line number": "100",
+    "func name": "le",
+    "func arg": "(g, input, other)",
+    "comments": ""
+}{
+    "source file": "symbolic_registry.py",
+    "line number": "98",
+    "func name": "get_registered_op",
+    "func arg": "(opname, domain, version)",
+    "comments": ""
+}{}{}{}{
+    "source file": "task.py",
+    "line number": "407",
+    "func name": "final_output",
+    "func arg": "(blob_or_record)",
+    "comments": "Adds an output to the current Task, or if no task is active, create a dummy task that returns the given blob or record to the client. This will return the value of the blob or record when the last task of the TaskGroup for a given node finishes.\n\n\n"
+}{}{}{
+    "source file": "tensor_engine.py",
+    "line number": "45",
+    "func name": "get_engine",
+    "func arg": "()",
+    "comments": ""
+}{}{
+    "source file": "tensor78.py",
+    "line number": "14",
+    "func name": "_wrap_type_error_to_not_implemented",
+    "func arg": "(f)",
+    "comments": ""
+}{}{
+    "source file": "tensorboard_exporter.py",
+    "line number": "342",
+    "func name": "ops_to_graph_def",
+    "func arg": "(ops, shapes, **kwargs)",
+    "comments": ""
+}{
+    "source file": "tensorboard_test.py",
+    "line number": "23",
+    "func name": "load_events",
+    "func arg": "(filename)",
+    "comments": ""
+}{
+    "source file": "tensorboard.py",
+    "line number": "137",
+    "func name": "tensorboard_events",
+    "func arg": "(c2_dir, tf_dir)",
+    "comments": ""
+}{}{}{}{}{
+    "source file": "test_autograd.py",
+    "line number": "4394",
+    "func name": "add_test",
+    "func arg": "(name, self_size, args, variant_name, check_ad, dim_args_idx, skipTestIf, output_process_fn, kwargs)",
+    "comments": ""
+}{
+    "source file": "test_backends.py",
+    "line number": "25",
+    "func name": "to_test_backend_multi",
+    "func arg": "(module, method_compile_spec)",
+    "comments": ""
+}{}{}{
+    "source file": "test_batchnorm_nnpi_fp16.py",
+    "line number": "28",
+    "func name": "reference_spatialbn_test16",
+    "func arg": "(X, scale, bias, mean, var, epsilon, order)",
+    "comments": ""
+}{}{
+    "source file": "test_bundled_images.py",
+    "line number": "28",
+    "func name": "bundle_jpeg_image",
+    "func arg": "(img_tensor, quality)",
+    "comments": ""
+}{
+    "source file": "test_bundled_inputs.py",
+    "line number": "14",
+    "func name": "save_and_load",
+    "func arg": "(sm)",
+    "comments": ""
+}{}{
+    "source file": "test_c10d.py",
+    "line number": "242",
+    "func name": "create_tcp_store",
+    "func arg": "(addr)",
+    "comments": "Creates a TCP store. Retries if the chosen port is already in use.\n\n\n"
+}{
+    "source file": "test_caffe2_common.py",
+    "line number": "27",
+    "func name": "run_generated_test",
+    "func arg": "(model_file, data_dir, device)",
+    "comments": ""
+}{}{}{
+    "source file": "test_complexity.py",
+    "line number": "24",
+    "func name": "num_non_tensor_nodes",
+    "func arg": "(block)",
+    "comments": ""
+}{}{}{
+    "source file": "test_cpp_extensions_jit.py",
+    "line number": "30",
+    "func name": "remove_build_path",
+    "func arg": "()",
+    "comments": ""
+}{}{
+    "source file": "test_cuda.py",
+    "line number": "81",
+    "func name": "get_cycles_per_ms",
+    "func arg": "()",
+    "comments": "Approximate number of cycles per millisecond for torch.cuda._sleep\n\n\n"
+}{
+    "source file": "test_cuda79.py",
+    "line number": "15",
+    "func name": "main",
+    "func arg": "()",
+    "comments": ""
+}{}{
+    "source file": "test_custom_classes.py",
+    "line number": "16",
+    "func name": "test_equality",
+    "func arg": "(f, cmp_key)",
+    "comments": ""
+}{
+    "source file": "test_custom_operators.py",
+    "line number": "17",
+    "func name": "canonical",
+    "func arg": "(graph)",
+    "comments": ""
+}{}{}{}{}{
+    "source file": "test_dataloader.py",
+    "line number": "2015",
+    "func name": "worker_set_affinity",
+    "func arg": "(_)",
+    "comments": ""
+}{}{}{}{}{}{}{}{}{}{}{
+    "source file": "test_distributed.py",
+    "line number": "237",
+    "func name": "_captured_output",
+    "func arg": "()",
+    "comments": ""
+}{
+    "source file": "test_distributions.py",
+    "line number": "91",
+    "func name": "is_all_nan",
+    "func arg": "(tensor)",
+    "comments": "Checks if all entries of a tensor is nan.\n\n\n"
+}{
+    "source file": "test_expecttest.py",
+    "line number": "99",
+    "func name": "load_tests",
+    "func arg": "(loader, tests, ignore)",
+    "comments": ""
+}{}{}{}{}{}{}{
+    "source file": "test_futures.py",
+    "line number": "8",
+    "func name": "add_one",
+    "func arg": "(fut)",
+    "comments": ""
+}{
+    "source file": "test_ideep_net.py",
+    "line number": "80",
+    "func name": "benchmark",
+    "func arg": "(args)",
+    "comments": ""
+}{}{
+    "source file": "test_instantiator.py",
+    "line number": "24",
+    "func name": "create_module",
+    "func arg": "()",
+    "comments": ""
+}{}{}{}{}{}{
+    "source file": "test_jit_disabled.py",
+    "line number": "10",
+    "func name": "_jit_disabled",
+    "func arg": "()",
+    "comments": ""
+}{}{
+    "source file": "test_jit_fuser_te.py",
+    "line number": "54",
+    "func name": "warmup_forward",
+    "func arg": "(f)",
+    "comments": ""
+}{
+    "source file": "test_jit_fuser.py",
+    "line number": "45",
+    "func name": "warmup_forward",
+    "func arg": "(f)",
+    "comments": ""
+}{}{}{}{}{}{
+    "source file": "test_jit.py",
+    "line number": "15533",
+    "func name": "normalize_check_ad",
+    "func arg": "(check_ad, name)",
+    "comments": ""
+}{}{}{}{}{}{}{}{
+    "source file": "test_models_onnxruntime.py",
+    "line number": "13",
+    "func name": "exportTest",
+    "func arg": "(model, inputs, rtol, atol, opset_versions)",
+    "comments": ""
+}{}{}{}{}{
+    "source file": "test_multiprocessing_spawn.py",
+    "line number": "58",
+    "func name": "test_nested",
+    "func arg": "(i, pids_queue, nested_child_sleep, start_method)",
+    "comments": ""
+}{
+    "source file": "test_multiprocessing.py",
+    "line number": "174",
+    "func name": "fs_sharing",
+    "func arg": "()",
+    "comments": ""
+}{
+    "source file": "test_namedtensor.py",
+    "line number": "60",
+    "func name": "out_fn",
+    "func arg": "(operator)",
+    "comments": ""
+}{}{}{}{
+    "source file": "test_nn.py",
+    "line number": "9069",
+    "func name": "_buildEquivalentAffineTransforms3d",
+    "func arg": "(device, input_size, output_size, angle_rad, axis_vector)",
+    "comments": ""
+}{}{}{}{}{
+    "source file": "test_onnx_opset.py",
+    "line number": "48",
+    "func name": "check_onnx_opsets_operator",
+    "func arg": "(module, x, ops, opset_versions, training, example_outputs)",
+    "comments": ""
+}{
+    "source file": "test_onnxifi.py",
+    "line number": "25",
+    "func name": "_print_net",
+    "func arg": "(net)",
+    "comments": ""
+}{}{
+    "source file": "test_op_normalization.py",
+    "line number": "19",
+    "func name": "get_defaults",
+    "func arg": "(name, self_size, args, variant_name, check_ad, dim_args_idx, skipTestIf, output_process_fn, kwargs)",
+    "comments": ""
+}{}{
+    "source file": "test_operators.py",
+    "line number": "35",
+    "func name": "export_to_pb",
+    "func arg": "(model, inputs, **kwargs)",
+    "comments": ""
+}{
+    "source file": "test_optim.py",
+    "line number": "30",
+    "func name": "drosenbrock",
+    "func arg": "(tensor)",
+    "comments": ""
+}{
+    "source file": "test_overrides.py",
+    "line number": "464",
+    "func name": "generate_tensor_like_override_tests",
+    "func arg": "(cls)",
+    "comments": ""
+}{}{
+    "source file": "test_pt_onnx_trt.py",
+    "line number": "43",
+    "func name": "load_normalized_test_case",
+    "func arg": "(input_shape, test_image, pagelocked_buffer, normalization_hint)",
+    "comments": ""
+}{}{
+    "source file": "test_pytorch_common.py",
+    "line number": "89",
+    "func name": "flatten",
+    "func arg": "(x)",
+    "comments": ""
+}{}{}{
+    "source file": "test_pytorch_onnx_caffe2.py",
+    "line number": "2430",
+    "func name": "setup_rnn_tests",
+    "func arg": "()",
+    "comments": ""
+}{
+    "source file": "test_pytorch_onnx_onnxruntime.py",
+    "line number": "3734",
+    "func name": "setup_rnn_tests",
+    "func arg": "()",
+    "comments": ""
+}{}{}{}{}{}{}{
+    "source file": "test_quantized_op.py",
+    "line number": "99",
+    "func name": "_get_random_tensor_and_q_params",
+    "func arg": "(shapes, rand_scale, torch_type)",
+    "comments": ""
+}{
+    "source file": "test_quantized_tensor.py",
+    "line number": "66",
+    "func name": "get_supported_device_types",
+    "func arg": "()",
+    "comments": ""
+}{}{}{}{}{}{}{}{}{}{}{}{}{}{
+    "source file": "test_sparse.py",
+    "line number": "31",
+    "func name": "cuda_only",
+    "func arg": "(inner)",
+    "comments": ""
+}{
+    "source file": "test_tensorboard.py",
+    "line number": "535",
+    "func name": "write_proto",
+    "func arg": "(str_to_compare, function_ptr)",
+    "comments": ""
+}{}{}{
+    "source file": "test_torch.py",
+    "line number": "19799",
+    "func name": "generate_not_implemented_tests",
+    "func arg": "(cls)",
+    "comments": ""
+}{}{}{
+    "source file": "test_trt.py",
+    "line number": "45",
+    "func name": "_download_onnx_model",
+    "func arg": "(model_name, opset_version)",
+    "comments": ""
+}{
+    "source file": "test_type_hints.py",
+    "line number": "56",
+    "func name": "get_all_examples",
+    "func arg": "()",
+    "comments": "get_all_examples() -> str\n\nThis function grabs (hopefully all) examples from the torch documentation strings and puts them in one nonsensical module returned as a string.\n"
+}{}{
+    "source file": "test_type_promotion.py",
+    "line number": "22",
+    "func name": "float_double_default_dtype",
+    "func arg": "(fn)",
+    "comments": ""
+}{}{}{
+    "source file": "test_util.py",
+    "line number": "67",
+    "func name": "is_flaky_test_mode",
+    "func arg": "()",
+    "comments": ""
+}{}{}{
+    "source file": "test_utils93.py",
+    "line number": "20",
+    "func name": "print_net",
+    "func arg": "(net)",
+    "comments": ""
+}{
+    "source file": "test_utils94.py",
+    "line number": "500",
+    "func name": "sum_of_state_dict",
+    "func arg": "(state_dict)",
+    "comments": ""
+}{}{}{}{}{
+    "source file": "test_workflow_module.py",
+    "line number": "1041",
+    "func name": "_get_buffer_ids",
+    "func arg": "(module)",
+    "comments": "Object addresses stay constant if and only if all modifications are in-place\n\n\n"
+}{}{
+    "source file": "test.py",
+    "line number": "67",
+    "func name": "test_vl_py",
+    "func arg": "(**test_args)",
+    "comments": ""
+}{}{
+    "source file": "test96.py",
+    "line number": "11",
+    "func name": "drosenbrock",
+    "func arg": "(tensor)",
+    "comments": ""
+}{
+    "source file": "tests_setup.py",
+    "line number": "78",
+    "func name": "shutdown",
+    "func arg": "()",
+    "comments": ""
+}{}{}{
+    "source file": "thnn.py",
+    "line number": "3",
+    "func name": "_get_thnn_function_backend",
+    "func arg": "()",
+    "comments": ""
+}{}{
+    "source file": "throughput_benchmark.py",
+    "line number": "5",
+    "func name": "format_time",
+    "func arg": "(time_us, time_ms, time_s)",
+    "comments": "Defines how to format time\n\n\n"
+}{}{
+    "source file": "timeout_guard.py",
+    "line number": "103",
+    "func name": "EuthanizeIfNecessary",
+    "func arg": "(timeout_secs)",
+    "comments": "Call this if you have problem with process getting stuck at shutdown. It will kill the process if it does not terminate in timeout_secs.\n\n\n"
+}{}{
+    "source file": "tools.py",
+    "line number": "31",
+    "func name": "video_input",
+    "func arg": "(model, blob_in, blob_out, **kwargs)",
+    "comments": ""
+}{}{}{
+    "source file": "torch_integration_test.py",
+    "line number": "110",
+    "func name": "fused_rowwise_8bit_quantize_dequantize_reference",
+    "func arg": "(data)",
+    "comments": ""
+}{
+    "source file": "torch_optim.py",
+    "line number": "4",
+    "func name": "foo",
+    "func arg": "(opt)",
+    "comments": ""
+}{}{}{
+    "source file": "train.py",
+    "line number": "58",
+    "func name": "add_weight_decay",
+    "func arg": "(model, weight_decay)",
+    "comments": "Adds a decay to weights in the model.\n\nThis is a form of L2 regularization.\n##### Args\n* **weight_decay**: strength of the regularization\n\n"
+}{
+    "source file": "train97.py",
+    "line number": "673",
+    "func name": "main",
+    "func arg": "()",
+    "comments": ""
+}{
+    "source file": "transform_ideep_net.py",
+    "line number": "284",
+    "func name": "Optimize",
+    "func arg": "(args)",
+    "comments": ""
+}{
+    "source file": "transform.py",
+    "line number": "76",
+    "func name": "transform_caffe2_net",
+    "func arg": "(pred_net, input_shapes, populate_shapes, max_batch_size, max_workspace_size, verbosity, debug_builder, build_serializable_op)",
+    "comments": "Transform the caffe2_net by collapsing TRT-runnable nodes into trt c2 ops\n\n\n"
+}{}{
+    "source file": "transformations.py",
+    "line number": "55",
+    "func name": "fuseConvBN",
+    "func arg": "(net)",
+    "comments": ""
+}{}{
+    "source file": "transformer.py",
+    "line number": "381",
+    "func name": "_get_activation_fn",
+    "func arg": "(activation)",
+    "comments": ""
+}{
+    "source file": "transforms.py",
+    "line number": "373",
+    "func name": "_clipped_sigmoid",
+    "func arg": "(x)",
+    "comments": ""
+}{
+    "source file": "translate.py",
+    "line number": "570",
+    "func name": "main",
+    "func arg": "()",
+    "comments": ""
+}{}{}{}{}{}{
+    "source file": "tt_core.py",
+    "line number": "240",
+    "func name": "fc_net_to_tt_net",
+    "func arg": "(net)",
+    "comments": ""
+}{}{}{}{}{}{}{
+    "source file": "unique_ops_test.py",
+    "line number": "30",
+    "func name": "_unique_ref",
+    "func arg": "(x, return_inverse)",
+    "comments": ""
+}{}{
+    "source file": "unsupported_tensor_ops.py",
+    "line number": "41",
+    "func name": "_list_unsupported_tensor_ops",
+    "func arg": "()",
+    "comments": ""
+}{
+    "source file": "update-caffe2-models.py",
+    "line number": "145",
+    "func name": "cleanup",
+    "func arg": "()",
+    "comments": ""
+}{
+    "source file": "update-models-from-caffe2.py",
+    "line number": "199",
+    "func name": "onnx_verify",
+    "func arg": "(onnx_model, inputs, ref_outputs)",
+    "comments": ""
+}{}{}{}{}{}{
+    "source file": "utils.py",
+    "line number": "29",
+    "func name": "_list_with_default",
+    "func arg": "(out_size, defaults)",
+    "comments": ""
+}{
+    "source file": "utils100.py",
+    "line number": "944",
+    "func name": "_validate_dynamic_axes",
+    "func arg": "(dynamic_axes, model, input_names, output_names)",
+    "comments": ""
+}{
+    "source file": "utils101.py",
+    "line number": "32",
+    "func name": "check_onnx_broadcast",
+    "func arg": "(dims1, dims2)",
+    "comments": ""
+}{
+    "source file": "utils102.py",
+    "line number": "75",
+    "func name": "probs_to_logits",
+    "func arg": "(probs, is_binary)",
+    "comments": "Converts a tensor of probabilities into logits. For the binary case, this denotes the probability of occurrence of the event indexed by `1`. For the multi-dimensional case, the values along the last dimension denote the probabilities of occurrence of each of the events.\n\n\n"
+}{
+    "source file": "utils103.py",
+    "line number": "26",
+    "func name": "benchmark_module",
+    "func arg": "(config, module, use_throughput_benchmark)",
+    "comments": ""
+}{
+    "source file": "utils104.py",
+    "line number": "457",
+    "func name": "create_int8_bias_tensor_fill",
+    "func arg": "(tensor, out_blob_name, x_q_param, w_q_param)",
+    "comments": "Similar to create_int8_given_tensor_fill, but for bias blobs to be stored as int32.\n\n\n"
+}{
+    "source file": "utils105.py",
+    "line number": "351",
+    "func name": "try_remove_folder",
+    "func arg": "(folder_path)",
+    "comments": ""
+}{
+    "source file": "utils106.py",
+    "line number": "427",
+    "func name": "NCHW2NHWC",
+    "func arg": "(tensor)",
+    "comments": ""
+}{
+    "source file": "utils107.py",
+    "line number": "80",
+    "func name": "signature_without_args",
+    "func arg": "(decl)",
+    "comments": ""
+}{
+    "source file": "utils108.py",
+    "line number": "20",
+    "func name": "_ntuple_from_first",
+    "func arg": "(n)",
+    "comments": "Converts the argument to a tuple of size n with the first element repeated.\n\n\n"
+}{}{
+    "source file": "verify.py",
+    "line number": "228",
+    "func name": "verify",
+    "func arg": "(model, args, backend, verbose, training, rtol, atol, test_args, do_constant_folding, example_outputs, opset_version, keep_initializers_as_inputs, add_node_names, operator_export_type)",
+    "comments": "Export a model into ONNX, import it into a specified ONNX backend, and then on a few random inputs verify that PyTorch and the backend produced the same results.  Requires onnx to be installed.\n\nThis function may spuriously fail: some operators are implemented with different numerical precision in an ONNX backend, in which case an unstable network (e.g., Inception) may blow up these numerical instabilities.\n\nThis situation is less likely to happen if your model has been trained.\n\nHowever, if this is not the case, you may have found a bug!\n\nPlease report it to the PyTorch developers.\n\nYou can also debug the issue yourself by removing suffixes of operators from your model until verification passes.\n\nFor reproducibility, we recommend explicitly setting PyTorch's seed before invoking this function.\n\nArguments: model (torch.nn.Module): the model to be exported and verified args (tuple of arguments): the inputs to the model, e.g., such that ``model(*args)`` is a valid invocation of the model.\n\nAny non-Variable arguments will be hard-coded into the exported model; any Variable arguments will become inputs of the exported model, in the order they occur in args.\n\nIf args is a Variable, this is equivalent to having called it with a 1-ary tuple of that Variable. (Note: passing keyword arguments to the model is not currently supported.\n\nGive us a shout if you need it.) backend (onnx.backend module): ONNX backend to verify with verbose (bool, default False): if specified, we will print out a debug description of the trace being exported. training (bool, default False): export the model in training mode.\n\nAt the moment, ONNX is oriented towards exporting models for inference only, so you will generally not need to set this to True. rtol (float, default 1e-3): relative precision required test_args (int or iterable of args, default 2): either an integer specifying the number of random arguments to generate, or an iterable producing arguments to test under. opset_version (int, default None): the opset version of the model to export. If not specified, the default value in symboli_helper will be used in utils._export(). operator_export_type (enum, default OperatorExportTypes.ONNX): the operator export type to use when exporting the model. The default value converts all operators to ONNX ops.\n"
+}{}{
+    "source file": "visualize.py",
+    "line number": "22",
+    "func name": "ChannelLast",
+    "func arg": "(arr)",
+    "comments": "Convert a CHW array to HWC.\n\n\n"
+}{
+    "source file": "von_mises.py",
+    "line number": "55",
+    "func name": "_rejection_sample",
+    "func arg": "(loc, concentration, proposal_r, x)",
+    "comments": ""
+}{}{
+    "source file": "weight_norm.py",
+    "line number": "101",
+    "func name": "remove_weight_norm",
+    "func arg": "(module, name)",
+    "comments": "Removes the weight normalization reparameterization from a module.\n\n\n##### Args\n* **module (Module)**: containing module\n\n* **name (str, optional)**: name of weight parameter\n\n* **ple**: \n\n"
+}{}{}{}{}{}{
+    "source file": "wngrad_test.py",
+    "line number": "39",
+    "func name": "wngrad_sparse_test_helper",
+    "func arg": "(parent_test, inputs, seq_b, lr, epsilon, engine, gc, dc)",
+    "comments": ""
+}{}{
+    "source file": "worker.py",
+    "line number": "114",
+    "func name": "_worker_loop",
+    "func arg": "(dataset_kind, dataset, index_queue, data_queue, done_event, auto_collation, collate_fn, drop_last, seed, init_fn, worker_id, num_workers)",
+    "comments": ""
+}{}{}{
+    "source file": "workspace109.py",
+    "line number": "764",
+    "func name": "_Blob_to_torch",
+    "func arg": "(blob)",
+    "comments": ""
+}{}

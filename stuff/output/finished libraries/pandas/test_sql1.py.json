@@ -1,0 +1,7 @@
+{
+    "source file": "test_sql1.py",
+    "line number": "2326",
+    "func name": "tquery",
+    "func arg": "(query, con, cur)",
+    "comments": "Replace removed sql.tquery function\n\n\n"
+}

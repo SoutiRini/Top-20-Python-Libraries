@@ -1,0 +1,7 @@
+{
+    "source file": "timedeltas1.py",
+    "line number": "129",
+    "func name": "_convert_listlike",
+    "func arg": "(arg, unit, errors, name)",
+    "comments": "Convert a list of objects to a timedelta index object.\n\n\n"
+}

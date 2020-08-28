@@ -1,0 +1,7 @@
+{
+    "source file": "triinterpolate.py",
+    "line number": "1584",
+    "func name": "_extract_submatrices",
+    "func arg": "(M, block_indices, block_size, axis)",
+    "comments": "Extract selected blocks of a matrices *M* depending on parameters *block_indices* and *block_size*.\n\n\n##### Returns\n* **    M_res[..., ir, **: ] = M[(block_indices*block_size+ir),\n\n"
+}

@@ -1,0 +1,7 @@
+{
+    "source file": "demo_axes_grid.py",
+    "line number": "92",
+    "func name": "demo_grid_with_each_cbar_labelled",
+    "func arg": "(fig)",
+    "comments": "A grid of 2x2 images. Each image has its own colorbar.\n\n\n"
+}

@@ -1,0 +1,7 @@
+{
+    "source file": "hdf5_format_test.py",
+    "line number": "866",
+    "func name": "_make_sequential_input_shape",
+    "func arg": "(input_size, output_size)",
+    "comments": ""
+}

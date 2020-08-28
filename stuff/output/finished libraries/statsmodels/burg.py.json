@@ -1,0 +1,7 @@
+{
+    "source file": "burg.py",
+    "line number": "16",
+    "func name": "burg",
+    "func arg": "(endog, ar_order, demean)",
+    "comments": "Estimate AR parameters using Burg technique.\n\nParameters ---------- endog : array_like or SARIMAXSpecification Input time series array, assumed to be stationary. ar_order : int, optional Autoregressive order. Default is 0. demean : bool, optional Whether to estimate and remove the mean from the process prior to fitting the autoregressive coefficients.\n##### Returns\n* **parameters **: SARIMAXParams object\n    Contains the parameter estimates from the final iteration.\n\n* **other_results **: Bunch\n    Includes one component, `spec`, which is the `SARIMAXSpecification`\n    instance corresponding to the input arguments.\n\n"
+}

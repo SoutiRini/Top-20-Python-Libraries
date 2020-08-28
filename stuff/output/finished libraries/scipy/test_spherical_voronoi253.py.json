@@ -1,0 +1,7 @@
+{
+    "source file": "test_spherical_voronoi253.py",
+    "line number": "90",
+    "func name": "_sample_sphere",
+    "func arg": "(n, dim, seed)",
+    "comments": ""
+}

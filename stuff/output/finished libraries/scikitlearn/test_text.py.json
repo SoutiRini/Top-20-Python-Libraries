@@ -1,0 +1,7 @@
+{
+    "source file": "test_text.py",
+    "line number": "1336",
+    "func name": "test_n_features_in",
+    "func arg": "(Vectorizer, X)",
+    "comments": ""
+}

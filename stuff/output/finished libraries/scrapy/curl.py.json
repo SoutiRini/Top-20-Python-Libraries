@@ -1,0 +1,7 @@
+{
+    "source file": "curl.py",
+    "line number": "37",
+    "func name": "curl_to_request_kwargs",
+    "func arg": "(curl_command, ignore_unknown_options)",
+    "comments": "Convert a cURL command syntax to Request kwargs.\n\nparam str curl_command: string containing the curl command :param bool ignore_unknown_options: If true, only a warning is emitted when cURL options are unknown. Otherwise raises an error. (default: True) :return: dictionary of Request kwargs\n"
+}

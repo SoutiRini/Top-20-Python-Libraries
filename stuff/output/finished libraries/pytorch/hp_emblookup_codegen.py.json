@@ -1,0 +1,7 @@
+{
+    "source file": "hp_emblookup_codegen.py",
+    "line number": "189",
+    "func name": "generic",
+    "func arg": "(IndexType, InType, OutType, use_weights, isa, fused, use_offsets)",
+    "comments": ""
+}

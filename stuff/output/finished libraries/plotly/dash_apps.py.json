@@ -1,0 +1,7 @@
+{
+    "source file": "dash_apps.py",
+    "line number": "23",
+    "func name": "update",
+    "func arg": "(fid, content)",
+    "comments": "Completely update the writable.\n\n\n"
+}

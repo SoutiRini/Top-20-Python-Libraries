@@ -1,0 +1,7 @@
+{
+    "source file": "np_random.py",
+    "line number": "95",
+    "func name": "randint",
+    "func arg": "(low, high, size, dtype)",
+    "comments": ""
+}

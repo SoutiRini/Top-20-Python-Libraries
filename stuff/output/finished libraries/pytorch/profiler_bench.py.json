@@ -1,0 +1,7 @@
+{
+    "source file": "profiler_bench.py",
+    "line number": "39",
+    "func name": "run_profiler_benchmark_parallel",
+    "func arg": "(input_x, use_cuda, profiling_enabled)",
+    "comments": ""
+}

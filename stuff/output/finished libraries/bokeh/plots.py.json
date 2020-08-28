@@ -1,0 +1,7 @@
+{
+    "source file": "plots.py",
+    "line number": "767",
+    "func name": "_select_helper",
+    "func arg": "(args, kwargs)",
+    "comments": "Allow flexible selector syntax.\n\n\n##### Returns\n"
+}

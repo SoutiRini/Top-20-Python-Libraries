@@ -1,0 +1,7 @@
+{
+    "source file": "test_function1.py",
+    "line number": "1604",
+    "func name": "test_apply_to_nullable_integer_returns_float",
+    "func arg": "(values, function)",
+    "comments": ""
+}

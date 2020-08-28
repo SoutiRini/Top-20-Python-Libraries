@@ -1,0 +1,7 @@
+{
+    "source file": "equality_constrained_sqp.py",
+    "line number": "17",
+    "func name": "equality_constrained_sqp",
+    "func arg": "(fun_and_constr, grad_and_jac, lagr_hess, x0, fun0, grad0, constr0, jac0, stop_criteria, state, initial_penalty, initial_trust_radius, factorization_method, trust_lb, trust_ub, scaling)",
+    "comments": "Solve nonlinear equality-constrained problem using trust-region SQP.\n\nSolve optimization problem:\n\nminimize fun(x) subject to: constr(x) = 0\n\nusing Byrd-Omojokun Trust-Region SQP method described in [1]_. Several implementation details are based on [2]_ and [3]_, p. 549.\n\nReferences ---------- .. [1] Lalee, Marucha, Jorge Nocedal, and Todd Plantenga. \"On the implementation of an algorithm for large-scale equality constrained optimization.\" SIAM Journal on Optimization 8.3 (1998): 682-706. .. [2] Byrd, Richard H., Mary E. Hribar, and Jorge Nocedal. \"An interior point algorithm for large-scale nonlinear programming.\" SIAM Journal on Optimization 9.4 (1999): 877-900. .. [3] Nocedal, Jorge, and Stephen J. Wright. \"Numerical optimization\" Second Edition (2006).\n"
+}

@@ -1,0 +1,7 @@
+{
+    "source file": "cli_shared.py",
+    "line number": "434",
+    "func name": "get_error_intro",
+    "func arg": "(tf_error)",
+    "comments": "Generate formatted intro for TensorFlow run-time error.\n\n\n##### Args\n* **tf_error**: (errors.OpError) TensorFlow run-time error object.\n\n##### Returns\n"
+}

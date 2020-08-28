@@ -1,0 +1,7 @@
+{
+    "source file": "test_parse_dates1.py",
+    "line number": "1496",
+    "func name": "test_hypothesis_delimited_date",
+    "func arg": "(date_format, dayfirst, delimiter, test_datetime)",
+    "comments": ""
+}

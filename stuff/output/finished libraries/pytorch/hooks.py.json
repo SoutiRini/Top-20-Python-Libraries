@@ -1,0 +1,7 @@
+{
+    "source file": "hooks.py",
+    "line number": "51",
+    "func name": "warn_if_has_hooks",
+    "func arg": "(tensor)",
+    "comments": ""
+}

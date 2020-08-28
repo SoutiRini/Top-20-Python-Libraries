@@ -1,0 +1,7 @@
+{
+    "source file": "ldamulticore.py",
+    "line number": "319",
+    "func name": "worker_e_step",
+    "func arg": "(input_queue, result_queue)",
+    "comments": "Perform E-step for each job.\n\nParameters ---------- input_queue : queue of (int, list of (int, float), :class:`~gensim.models.lda_worker.Worker`) Each element is a job characterized by its ID, the corpus chunk to be processed in BOW format and the worker responsible for processing it. result_queue : queue of :class:`~gensim.models.ldamodel.LdaState` After the worker finished the job, the state of the resulting (trained) worker model is appended to this queue.\n"
+}

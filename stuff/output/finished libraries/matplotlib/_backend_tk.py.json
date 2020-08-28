@@ -1,0 +1,7 @@
+{
+    "source file": "_backend_tk.py",
+    "line number": "47",
+    "func name": "blit",
+    "func arg": "(photoimage, aggimage, offsets, bbox)",
+    "comments": "Blit *aggimage* to *photoimage*.\n\n*offsets* is a tuple describing how to fill the ``offset`` field of the ``Tk_PhotoImageBlock`` struct: it should be (0, 1, 2, 3) for RGBA8888 data, (2, 1, 0, 3) for little-endian ARBG32 (i.e. GBRA8888) data and (1, 2, 3, 0) for big-endian ARGB32 (i.e. ARGB8888) data.\n\nIf *bbox* is passed, it defines the region that gets blitted.\n"
+}

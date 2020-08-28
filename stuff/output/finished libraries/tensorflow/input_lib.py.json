@@ -1,0 +1,7 @@
+{
+    "source file": "input_lib.py",
+    "line number": "1928",
+    "func name": "_replace_per_replica_spec",
+    "func arg": "(spec, i)",
+    "comments": "If `spec` is a `PerReplicaSpec`, then return its `i`th value_spec.\n\n\n"
+}

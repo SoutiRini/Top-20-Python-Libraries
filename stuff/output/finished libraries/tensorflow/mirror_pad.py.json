@@ -1,0 +1,7 @@
+{
+    "source file": "mirror_pad.py",
+    "line number": "28",
+    "func name": "make_mirror_pad_tests",
+    "func arg": "(options)",
+    "comments": "Make a set of tests to do mirror_pad.\n\n\n"
+}

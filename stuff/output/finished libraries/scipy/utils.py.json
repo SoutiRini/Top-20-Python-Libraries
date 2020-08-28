@@ -1,0 +1,7 @@
+{
+    "source file": "utils.py",
+    "line number": "12",
+    "func name": "lagrange_inversion",
+    "func arg": "(a)",
+    "comments": "Given a series\n\nf(x) = a[1]*x + a[2]*x**2 + ... + a[n-1]*x**(n\n\n- 1),\n\nuse the Lagrange inversion formula to compute a series\n\ng(x) = b[1]*x + b[2]*x**2 + ... + b[n-1]*x**(n\n\n- 1)\n\nso that f(g(x)) = g(f(x)) = x mod x**n. We must have a[0] = 0, so necessarily b[0] = 0 too.\n\nThe algorithm is naive and could be improved, but speed isn't an issue here and it's easy to read.\n"
+}

@@ -1,0 +1,7 @@
+{
+    "source file": "test_plot_precision_recall.py",
+    "line number": "199",
+    "func name": "test_plot_precision_recall_pos_label",
+    "func arg": "(pyplot, response_method)",
+    "comments": ""
+}

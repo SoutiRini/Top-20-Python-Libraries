@@ -1,0 +1,7 @@
+{
+    "source file": "critical_section_ops.py",
+    "line number": "89",
+    "func name": "_push_critical_section_stack",
+    "func arg": "(signature)",
+    "comments": "Push a CriticalSection._signature to the thread-local stack.\n\nIf the signature is already on the stack, raise an error because it means we're trying to execute inside the same locked CriticalSection, which will create a deadlock.\n##### Args\n* **signature**: Tuple of the type `CriticalSection._signature`.  Uniquely\n  identifies a CriticalSection by its `shared_name`, `container`,\n  and device.\n\n* **elds**: \n\n"
+}

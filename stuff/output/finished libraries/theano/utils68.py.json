@@ -1,0 +1,7 @@
+{
+    "source file": "utils68.py",
+    "line number": "570",
+    "func name": "hash_from_file",
+    "func arg": "(file_path)",
+    "comments": "Return the SHA256 hash of a file.\n\n\n"
+}

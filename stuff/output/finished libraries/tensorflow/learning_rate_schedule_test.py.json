@@ -1,0 +1,7 @@
+{
+    "source file": "learning_rate_schedule_test.py",
+    "line number": "37",
+    "func name": "_maybe_serialized",
+    "func arg": "(lr_decay, serialize_and_deserialize)",
+    "comments": ""
+}

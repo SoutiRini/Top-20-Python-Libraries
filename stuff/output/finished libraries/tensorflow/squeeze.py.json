@@ -1,0 +1,7 @@
+{
+    "source file": "squeeze.py",
+    "line number": "27",
+    "func name": "make_squeeze_tests",
+    "func arg": "(options)",
+    "comments": "Make a set of tests to do squeeze.\n\n\n"
+}

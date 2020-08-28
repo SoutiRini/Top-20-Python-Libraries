@@ -1,0 +1,7 @@
+{
+    "source file": "api_compatibility_test.py",
+    "line number": "179",
+    "func name": "_FilterGoldenProtoDict",
+    "func arg": "(golden_proto_dict, omit_golden_symbols_map)",
+    "comments": "Filter out golden proto dict symbols that should be omitted.\n\n\n"
+}

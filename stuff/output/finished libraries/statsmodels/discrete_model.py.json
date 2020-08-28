@@ -1,0 +1,7 @@
+{
+    "source file": "discrete_model.py",
+    "line number": "141",
+    "func name": "_validate_l1_method",
+    "func arg": "(method)",
+    "comments": "As of 0.10.0, the supported values for `method` in `fit_regularized` are \"l1\" and \"l1_cvxopt_cp\".  If an invalid value is passed, raise with a helpful error message\n\nParameters ---------- method : str\n"
+}

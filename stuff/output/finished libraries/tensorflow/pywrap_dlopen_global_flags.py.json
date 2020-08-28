@@ -1,0 +1,7 @@
+{
+    "source file": "pywrap_dlopen_global_flags.py",
+    "line number": "48",
+    "func name": "reset_dlopen_flags",
+    "func arg": "()",
+    "comments": ""
+}

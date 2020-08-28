@@ -1,0 +1,7 @@
+{
+    "source file": "type_inference.py",
+    "line number": "276",
+    "func name": "resolve",
+    "func arg": "(node, source_info, graphs, resolver)",
+    "comments": "Performs type inference.\n\n\n##### Args\n* **node**: ast.AST\n\n* **source_info**: transformer.SourceInfo\n\n* **graphs**: Dict[ast.FunctionDef, cfg.Graph]\n\n* **resolver**: Resolver\n\n##### Returns\n"
+}

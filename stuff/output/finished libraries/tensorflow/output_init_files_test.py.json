@@ -1,0 +1,7 @@
+{
+    "source file": "output_init_files_test.py",
+    "line number": "102",
+    "func name": "_module_to_paths",
+    "func arg": "(module)",
+    "comments": "Get all API __init__.py file paths for the given module.\n\n\n##### Args\n* **module**: Module to get file paths for.\n\n##### Returns\n"
+}

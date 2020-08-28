@@ -1,0 +1,7 @@
+{
+    "source file": "cifar.py",
+    "line number": "26",
+    "func name": "load_batch",
+    "func arg": "(fpath, label_key)",
+    "comments": "Internal utility for parsing CIFAR data.\n\nArguments: fpath: path the file to parse. label_key: key for label data in the retrieve dictionary.\n##### Returns\n"
+}

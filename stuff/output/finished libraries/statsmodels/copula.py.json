@@ -1,0 +1,7 @@
+{
+    "source file": "copula.py",
+    "line number": "363",
+    "func name": "transform_tev",
+    "func arg": "(t, rho, x)",
+    "comments": "t-EV model of Demarta and McNeil 2005\n\nrestrictions:\n\n- rho in (-1,1)\n\n- x > 0\n"
+}

@@ -1,0 +1,7 @@
+{
+    "source file": "profiler_v2.py",
+    "line number": "166",
+    "func name": "start_server",
+    "func arg": "(port)",
+    "comments": "Start a profiler grpc server that listens to given port.\n\nThe profiler server will exit when the process finishes. The service is defined in tensorflow/core/profiler/profiler_service.proto.\n##### Args\n* **port**: port profiler server listens to.\n\n* **ample usage**: ```python tf.profiler.experimental.server.start('6009') # do\n\n"
+}

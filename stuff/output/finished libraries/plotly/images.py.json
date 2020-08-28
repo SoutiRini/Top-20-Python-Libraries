@@ -1,0 +1,7 @@
+{
+    "source file": "images.py",
+    "line number": "9",
+    "func name": "create",
+    "func arg": "(body)",
+    "comments": "Generate an image (which does not get saved on Plotly).\n\nparam (dict) body: A mapping of body param names to values. :returns: (requests.Response) Returns response directly from requests.\n"
+}

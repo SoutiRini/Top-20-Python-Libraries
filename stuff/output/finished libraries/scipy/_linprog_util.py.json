@@ -1,0 +1,7 @@
+{
+    "source file": "_linprog_util.py",
+    "line number": "1353",
+    "func name": "_check_result",
+    "func arg": "(x, fun, status, slack, con, bounds, tol, message)",
+    "comments": "Check the validity of the provided solution.\n\nA valid (optimal) solution satisfies all bounds, all slack variables are negative and all equality constraint residuals are strictly non-zero. Further, the lower-bounds, upper-bounds, slack and residuals contain no nan values.\n\nParameters ---------- x : 1-D array Solution vector to original linear programming problem fun: float optimal objective value for original problem status : int An integer representing the exit status of the optimization::\n\n0 : Optimization terminated successfully 1 : Iteration limit reached 2 : Problem appears to be infeasible 3 : Problem appears to be unbounded 4 : Serious numerical difficulties encountered\n\nslack : 1-D array The (non-negative) slack in the upper bound constraints, that is, ``b_ub\n\n- A_ub @ x`` con : 1-D array The (nominally zero) residuals of the equality constraints, that is, ``b\n\n- A_eq @ x`` bounds : 2D array The bounds on the original variables ``x`` message : str A string descriptor of the exit status of the optimization. tol : float Termination tolerance; see [1]_ Section 4.5.\n##### Returns\n* **status **: int\n    An integer representing the exit status of the optimization\n\n* **message **: str\n    A string descriptor of the exit status of the optimization.\n\n"
+}

@@ -1,0 +1,7 @@
+{
+    "source file": "test_lobpcg208.py",
+    "line number": "322",
+    "func name": "test_diagonal_data_types",
+    "func arg": "()",
+    "comments": "Check lobpcg for diagonal matrices for all matrix types.\n\n\n"
+}

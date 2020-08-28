@@ -1,0 +1,7 @@
+{
+    "source file": "test_coordinate_descent.py",
+    "line number": "1202",
+    "func name": "test_linear_models_cv_fit_for_all_backends",
+    "func arg": "(backend, estimator)",
+    "comments": ""
+}

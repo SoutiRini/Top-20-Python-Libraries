@@ -1,0 +1,7 @@
+{
+    "source file": "mobile_exporter.py",
+    "line number": "51",
+    "func name": "Export",
+    "func arg": "(workspace, net, params)",
+    "comments": "Returns init_net and predict_net suitable for writing to disk and loading into a Predictor\n\n\n"
+}

@@ -1,0 +1,7 @@
+{
+    "source file": "system_info158.py",
+    "line number": "20",
+    "func name": "combine_dict",
+    "func arg": "(**kw)",
+    "comments": "Combine Numpy distutils style library configuration dictionaries.\n\nParameters ---------- *dicts Dictionaries of keys. List-valued keys will be concatenated. Otherwise, duplicate keys with different values result to an error. The input arguments are not modified. **kw Keyword arguments are treated as an additional dictionary (the first one, i.e., prepended).\n##### Returns\n"
+}

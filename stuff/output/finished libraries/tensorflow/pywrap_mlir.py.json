@@ -1,0 +1,7 @@
+{
+    "source file": "pywrap_mlir.py",
+    "line number": "48",
+    "func name": "experimental_run_pass_pipeline",
+    "func arg": "(mlir_txt, pass_pipeline, show_debug_info)",
+    "comments": ""
+}

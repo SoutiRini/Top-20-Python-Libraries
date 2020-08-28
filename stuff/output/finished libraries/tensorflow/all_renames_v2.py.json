@@ -1,0 +1,7 @@
+{
+    "source file": "all_renames_v2.py",
+    "line number": "560",
+    "func name": "add_contrib_direct_import_support",
+    "func arg": "(symbol_dict)",
+    "comments": "Add support for `tf.contrib.*` alias `contrib_*.` Updates dict in place.\n\n\n"
+}

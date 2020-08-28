@@ -1,0 +1,7 @@
+{
+    "source file": "action_recognition.py",
+    "line number": "42",
+    "func name": "classify_video",
+    "func arg": "(video_path, net_path)",
+    "comments": ""
+}

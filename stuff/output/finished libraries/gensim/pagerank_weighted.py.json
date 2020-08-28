@@ -1,0 +1,7 @@
+{
+    "source file": "pagerank_weighted.py",
+    "line number": "169",
+    "func name": "process_results",
+    "func arg": "(graph, vec)",
+    "comments": "Get `graph` nodes and corresponding absolute values of provided eigenvector. This function is helper for :func:`~gensim.summarization.pagerank_weighted.pagerank_weighted`\n\nParameters ---------- graph : :class:`~gensim.summarization.graph.Graph` Given graph. vec : numpy.ndarray, shape = [n, ] Given eigenvector, n is number of nodes of `graph`.\n##### Returns\n"
+}

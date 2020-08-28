@@ -1,0 +1,7 @@
+{
+    "source file": "_matfuncs_inv_ssq.py",
+    "line number": "840",
+    "func name": "_logm",
+    "func arg": "(A)",
+    "comments": "Compute the matrix logarithm.\n\nSee the logm docstring in matfuncs.py for more info.\n\nNotes ----- In this function we look at triangular matrices that are similar to the input matrix. If any diagonal entry of such a triangular matrix is exactly zero then the original matrix is singular. The matrix logarithm does not exist for such matrices, but in such cases we will pretend that the diagonal entries that are zero are actually slightly positive by an ad-hoc amount, in the interest of returning something more useful than NaN. This will cause a warning.\n"
+}

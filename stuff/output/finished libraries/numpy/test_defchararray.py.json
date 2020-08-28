@@ -1,0 +1,7 @@
+{
+    "source file": "test_defchararray.py",
+    "line number": "662",
+    "func name": "test_empty_indexing",
+    "func arg": "()",
+    "comments": "Regression test for ticket 1948.\n\n\n"
+}

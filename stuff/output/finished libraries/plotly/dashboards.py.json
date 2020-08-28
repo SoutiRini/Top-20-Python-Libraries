@@ -1,0 +1,7 @@
+{
+    "source file": "dashboards.py",
+    "line number": "38",
+    "func name": "schema",
+    "func arg": "()",
+    "comments": "Retrieve the dashboard schema.\n\n\n"
+}

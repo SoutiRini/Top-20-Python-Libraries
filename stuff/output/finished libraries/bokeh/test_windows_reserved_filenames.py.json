@@ -1,0 +1,7 @@
+{
+    "source file": "test_windows_reserved_filenames.py",
+    "line number": "26",
+    "func name": "test_windows_reserved_filenames",
+    "func arg": "()",
+    "comments": "Certain seemingly innocuous filenames like \"aux.js\" will cause Windows packages to fail spectacularly. This test ensures those reserved names are not present in the codebase.\n\n\n"
+}

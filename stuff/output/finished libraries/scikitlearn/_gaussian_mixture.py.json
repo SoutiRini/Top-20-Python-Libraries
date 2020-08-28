@@ -1,0 +1,7 @@
+{
+    "source file": "_gaussian_mixture.py",
+    "line number": "380",
+    "func name": "_estimate_log_gaussian_prob",
+    "func arg": "(X, means, precisions_chol, covariance_type)",
+    "comments": "Estimate the log Gaussian probability.\n\nParameters ---------- X : array-like of shape (n_samples, n_features)\n\nmeans : array-like of shape (n_components, n_features)\n\nprecisions_chol : array-like Cholesky decompositions of the precision matrices. 'full' : shape of (n_components, n_features, n_features) 'tied' : shape of (n_features, n_features) 'diag' : shape of (n_components, n_features) 'spherical' : shape of (n_components,)\n\ncovariance_type : {'full', 'tied', 'diag', 'spherical'}\n##### Returns\n* **log_prob **: array, shape (n_samples, n_components)\n\n"
+}

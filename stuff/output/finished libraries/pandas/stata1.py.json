@@ -1,0 +1,7 @@
+{
+    "source file": "stata1.py",
+    "line number": "2629",
+    "func name": "_pad_bytes_new",
+    "func arg": "(name, length)",
+    "comments": "Takes a bytes instance and pads it with null bytes until it's length chars.\n\n\n"
+}

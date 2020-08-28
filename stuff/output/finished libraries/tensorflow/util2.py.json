@@ -1,0 +1,7 @@
+{
+    "source file": "util2.py",
+    "line number": "103",
+    "func name": "test_truncated_normal",
+    "func arg": "(assert_equal, assert_all_close, n, y, mean_atol, median_atol, variance_rtol)",
+    "comments": "Tests truncated normal distribution's statistics.\n\n\n"
+}

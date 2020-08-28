@@ -1,0 +1,7 @@
+{
+    "source file": "applications_test.py",
+    "line number": "135",
+    "func name": "_get_output_shape",
+    "func arg": "(model_fn)",
+    "comments": ""
+}

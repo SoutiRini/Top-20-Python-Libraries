@@ -1,0 +1,7 @@
+{
+    "source file": "mobilenet_v2.py",
+    "line number": "506",
+    "func name": "decode_predictions",
+    "func arg": "(preds, top)",
+    "comments": ""
+}

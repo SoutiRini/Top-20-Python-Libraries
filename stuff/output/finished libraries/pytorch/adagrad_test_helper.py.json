@@ -1,0 +1,7 @@
+{
+    "source file": "adagrad_test_helper.py",
+    "line number": "73",
+    "func name": "adagrad_sparse_test_helper",
+    "func arg": "(parent_test, inputs, lr, epsilon, engine, ref_adagrad, gc, dc, row_wise, weight_decay)",
+    "comments": ""
+}

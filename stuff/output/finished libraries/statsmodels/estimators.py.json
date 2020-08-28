@@ -1,0 +1,7 @@
+{
+    "source file": "estimators.py",
+    "line number": "403",
+    "func name": "fit_mps",
+    "func arg": "(dist, data, x0)",
+    "comments": "Estimate distribution parameters with Maximum Product-of-Spacings\n\nParameters ---------- params : array_like, tuple ? parameters of the distribution funciton xsorted : array_like data that is already sorted dist : instance of a distribution class only cdf method is used\n##### Returns\n* **x **: ndarray\n    estimates for the parameters of the distribution given the data,\n    including loc and scale\n\n"
+}

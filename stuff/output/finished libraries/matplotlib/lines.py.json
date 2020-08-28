@@ -1,0 +1,7 @@
+{
+    "source file": "lines.py",
+    "line number": "113",
+    "func name": "_mark_every_path",
+    "func arg": "(markevery, tpath, affine, ax_transform)",
+    "comments": "Helper function that sorts out how to deal the input `markevery` and returns the points where markers should be drawn.\n\nTakes in the `markevery` value and the line path and returns the sub-sampled path.\n"
+}

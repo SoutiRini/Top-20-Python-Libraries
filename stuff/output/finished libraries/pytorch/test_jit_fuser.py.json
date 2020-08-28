@@ -1,0 +1,7 @@
+{
+    "source file": "test_jit_fuser.py",
+    "line number": "45",
+    "func name": "warmup_forward",
+    "func arg": "(f)",
+    "comments": ""
+}

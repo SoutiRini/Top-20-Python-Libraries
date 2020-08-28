@@ -1,0 +1,7 @@
+{
+    "source file": "_prediction.py",
+    "line number": "235",
+    "func name": "params_transform_univariate",
+    "func arg": "(params, cov_params, link, transform, row_labels)",
+    "comments": "results for univariate, nonlinear, monotonicaly transformed parameters\n\nThis provides transformed values, standard errors and confidence interval for transformations of parameters, for example in calculating rates with `exp(params)` in the case of Poisson or other models with exponential mean function.\n"
+}

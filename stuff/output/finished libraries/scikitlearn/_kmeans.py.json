@@ -1,0 +1,7 @@
+{
+    "source file": "_kmeans.py",
+    "line number": "1370",
+    "func name": "_mini_batch_convergence",
+    "func arg": "(model, iteration_idx, n_iter, tol, n_samples, centers_squared_diff, batch_inertia, context, verbose)",
+    "comments": "Helper function to encapsulate the early stopping logic\n\n\n"
+}

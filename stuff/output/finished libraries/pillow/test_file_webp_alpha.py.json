@@ -1,0 +1,7 @@
+{
+    "source file": "test_file_webp_alpha.py",
+    "line number": "95",
+    "func name": "test_write_unsupported_mode_PA",
+    "func arg": "(tmp_path)",
+    "comments": "Saving a palette-based file with transparency to WebP format should work, and be similar to the original file.\n\n\n"
+}

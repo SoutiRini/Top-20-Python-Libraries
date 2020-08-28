@@ -1,0 +1,7 @@
+{
+    "source file": "test_contains1.py",
+    "line number": "121",
+    "func name": "test_isin_multi_index_with_missing_value",
+    "func arg": "(labels, expected, level)",
+    "comments": ""
+}

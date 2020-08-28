@@ -1,0 +1,7 @@
+{
+    "source file": "sppatch.py",
+    "line number": "606",
+    "func name": "printresults",
+    "func arg": "(sample, arg, bres, kind)",
+    "comments": "calculate and print(Bootstrap or Monte Carlo result\n\nParameters ---------- sample : ndarray original sample data arg : float\n\n (for general case will be array) bres : ndarray parameter estimates from Bootstrap or Monte Carlo run kind : {'bootstrap', 'montecarlo'} output is printed for Mootstrap (default) or Monte Carlo\n##### Returns\n* **made correction**: reference point for bootstrap is estimated parameter\n\n* **not clear**: I'm not doing any ddof adjustment in estimation of variance, do we\n    need ddof>0 ?\n\n* **todo**: return results and string instead of printing\n\n"
+}

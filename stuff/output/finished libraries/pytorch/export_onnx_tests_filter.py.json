@@ -1,0 +1,7 @@
+{
+    "source file": "export_onnx_tests_filter.py",
+    "line number": "24",
+    "func name": "collect_generated_testcases",
+    "func arg": "(root_dir, verbose, fail_dir, expect)",
+    "comments": ""
+}

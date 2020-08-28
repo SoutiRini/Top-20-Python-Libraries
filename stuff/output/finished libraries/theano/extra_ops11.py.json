@@ -1,0 +1,7 @@
+{
+    "source file": "extra_ops11.py",
+    "line number": "1358",
+    "func name": "ravel_multi_index",
+    "func arg": "(multi_index, dims, mode, order)",
+    "comments": "Converts a tuple of index arrays into an array of flat indices, applying boundary modes to the multi-index.\n\nParameters ---------- multi_index : tuple of Theano or NumPy arrays A tuple of integer arrays, one array for each dimension. dims : tuple of ints The shape of array into which the indices from ``multi_index`` apply. mode : {'raise', 'wrap', 'clip'}, optional Specifies how out-of-bounds indices are handled.\n\nCan specify either one mode or a tuple of modes, one mode per index. * 'raise' -- raise an error (default) * 'wrap' -- wrap around * 'clip' -- clip to the range In 'clip' mode, a negative index which would normally wrap will clip to 0 instead. order : {'C', 'F'}, optional Determines whether the multi-index should be viewed as indexing in row-major (C-style) or column-major (Fortran-style) order.\n##### Returns\n* **raveled_indices **: Theano array\n    An array of indices into the flattened version of an array\n    of dimensions ``dims``.\n\n"
+}

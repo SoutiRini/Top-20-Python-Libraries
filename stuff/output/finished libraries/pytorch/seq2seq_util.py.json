@@ -1,0 +1,7 @@
+{
+    "source file": "seq2seq_util.py",
+    "line number": "632",
+    "func name": "output_projection",
+    "func arg": "(model, decoder_outputs, decoder_output_size, target_vocab_size, decoder_softmax_size)",
+    "comments": ""
+}

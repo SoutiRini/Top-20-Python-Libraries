@@ -1,0 +1,7 @@
+{
+    "source file": "varma_process.py",
+    "line number": "315",
+    "func name": "ar2lhs",
+    "func arg": "(ar)",
+    "comments": "convert full (rhs) lagpolynomial into a reduced, left side lagpoly array\n\nthis is mainly a reminder about the definition\n"
+}

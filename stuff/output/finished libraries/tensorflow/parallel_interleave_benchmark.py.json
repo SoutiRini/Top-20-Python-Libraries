@@ -1,0 +1,7 @@
+{
+    "source file": "parallel_interleave_benchmark.py",
+    "line number": "36",
+    "func name": "_make_fake_dataset_fn",
+    "func arg": "(initial_delay_us, remainder_delay_us)",
+    "comments": "Returns a dataset that emulates a remote storage data source.\n\n\n##### Args\n* **initial_delay_us**: How long to wait before producing the first element.\n\n* **remainder_delay_us**: How long to wait before producing subsequent elements.\n\n##### Returns\n"
+}

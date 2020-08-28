@@ -1,0 +1,7 @@
+{
+    "source file": "filter_design75.py",
+    "line number": "4879",
+    "func name": "gammatone",
+    "func arg": "(freq, ftype, order, numtaps, fs)",
+    "comments": "Gammatone filter design.\n\nThis function computes the coefficients of an FIR or IIR gammatone digital filter [1]_.\n\nParameters ---------- freq : float Center frequency of the filter (expressed in the same units as `fs`). ftype : {'fir', 'iir'} The type of filter the function generates. If 'fir', the function will generate an Nth order FIR gammatone filter. If 'iir', the function will generate an 8th order digital IIR filter, modeled as as 4th order gammatone filter. order : int, optional The order of the filter. Only used when ``ftype='fir'``. Default is 4 to model the human auditory system. Must be between 0 and 24. numtaps : int, optional Length of the filter. Only used when ``ftype='fir'``. Default is ``fs*0.015`` if `fs` is greater than 1000, 15 if `fs` is less than or equal to 1000. fs : float, optional The sampling frequency of the signal. `freq` must be between 0 and ``fs/2``. Default is 2.\n##### Returns\n* **b, a **: ndarray, ndarray\n    Numerator (``b``) and denominator (``a``) polynomials of the filter.\n\n"
+}

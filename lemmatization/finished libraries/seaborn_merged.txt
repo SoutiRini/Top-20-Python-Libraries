@@ -1,0 +1,169 @@
+{
+    "source file": "_core.py",
+    "line number": "1274",
+    "func name": "categorical_order",
+    "func arg": "(vector, order)",
+    "comments": "Return a list of unique data values.\n\nDetermine an ordered list of levels in ``values``.\n\nParameters ---------- vector : list, array, Categorical, or Series Vector of \"categorical\" values order : list-like, optional Desired order of category levels to override the order determined from the ``values`` object.\n##### Returns\n* **order **: list\n    Ordered list of category levels not including null values.\n\n"
+}{
+    "source file": "_decorators.py",
+    "line number": "50",
+    "func name": "share_init_params_with_map",
+    "func arg": "(cls)",
+    "comments": "Make cls.map a classmethod with same signature as cls.__init__.\n\n\n"
+}{}{}{
+    "source file": "algorithms.py",
+    "line number": "109",
+    "func name": "_handle_random_seed",
+    "func arg": "(seed)",
+    "comments": "Given a seed in one of many formats, return a random number generator.\n\nGeneralizes across the numpy 1.17 changes, preferring newer functionality.\n"
+}{}{
+    "source file": "axisgrid.py",
+    "line number": "2224",
+    "func name": "jointplot",
+    "func arg": "(**kwargs)",
+    "comments": "Draw a plot of two variables with bivariate and univariate graphs.\n\nThis function provides a convenient interface to the :class:`JointGrid` class, with several canned plot kinds. This is intended to be a fairly lightweight wrapper; if you need more flexibility, you should use :class:`JointGrid` directly.\n\nParameters ---------- x, y : strings or vectors Data or names of variables in ``data``. data : DataFrame, optional DataFrame when ``x`` and ``y`` are variable names. kind : { \"scatter\" | \"reg\" | \"resid\" | \"kde\" | \"hex\" }, optional Kind of plot to draw. stat_func : callable or None, optional *Deprecated* color : matplotlib color, optional Color used for the plot elements. height : numeric, optional Size of the figure (it will be square). ratio : numeric, optional Ratio of joint axes height to marginal axes height. space : numeric, optional Space between the joint and marginal axes dropna : bool, optional If True, remove observations that are missing from ``x`` and ``y``. {x, y}lim : two-tuples, optional Axis limits to set before plotting. {joint, marginal, annot}_kws : dicts, optional Additional keyword arguments for the plot components. kwargs : key, value pairings Additional keyword arguments are passed to the function used to draw the plot on the joint Axes, superseding items in the ``joint_kws`` dictionary.\n##### Returns\n* **grid **: \n\n* **JointGrid **: The Grid class used for drawing this plot. Use it directly if\n            you need more flexibility.\n\n* **Draw a scatterplot with marginal histograms**: \n\n* **.. plot**: \n\n* **Add regression and kernel density fits**: \n\n* **Replace the scatterplot with a joint histogram using hexagonal bins**: \n\n* **the marginal Axes tightly with the joint Axes**: \n\n* **Draw a scatterplot, then add a joint density estimate**: \n\n* **Pass vectors in directly without using Pandas, then name the axes**: \n\n* **Draw a smaller figure with more space devoted to the marginal plots**: \n\n* **Pass keyword arguments down to the underlying plots**: \n\n"
+}{}{
+    "source file": "categorical.py",
+    "line number": "3718",
+    "func name": "catplot",
+    "func arg": "(**kwargs)",
+    "comments": ""
+}{}{}{}{
+    "source file": "conf.py",
+    "line number": "286",
+    "func name": "setup",
+    "func arg": "(app)",
+    "comments": ""
+}{
+    "source file": "conftest.py",
+    "line number": "199",
+    "func name": "null_series",
+    "func arg": "()",
+    "comments": ""
+}{}{}{}{}{
+    "source file": "distributions.py",
+    "line number": "2087",
+    "func name": "distplot",
+    "func arg": "()",
+    "comments": "Flexibly plot a univariate distribution of observations.\n\nThis function combines the matplotlib ``hist`` function (with automatic calculation of a good default bin size) with the seaborn :func:`kdeplot` and :func:`rugplot` functions. It can also fit ``scipy.stats`` distributions and plot the estimated PDF over the data.\n\nParameters ----------\n\nx : Series, 1d-array, or list. Observed data. If this is a Series object with a ``name`` attribute, the name will be used to label the data axis. bins : argument for matplotlib hist(), or None, optional Specification of hist bins. If unspecified, as reference rule is used that tries to find a useful default. hist : bool, optional Whether to plot a (normed) histogram. kde : bool, optional Whether to plot a gaussian kernel density estimate. rug : bool, optional Whether to draw a rugplot on the support axis. fit : random variable object, optional An object with `fit` method, returning a tuple that can be passed to a `pdf` method a positional arguments following a grid of values to evaluate the pdf on. hist_kws : dict, optional Keyword arguments for :meth:`matplotlib.axes.Axes.hist`. kde_kws : dict, optional Keyword arguments for :func:`kdeplot`. rug_kws : dict, optional Keyword arguments for :func:`rugplot`. color : matplotlib color, optional Color to plot everything but the fitted curve in. vertical : bool, optional If True, observed values are on y-axis. norm_hist : bool, optional If True, the histogram height shows a density rather than a count. This is implied if a KDE or fitted density is plotted. axlabel : string, False, or None, optional Name for the support axis label. If None, will try to get it from a.name if False, do not set a label. label : string, optional Legend label for the relevant component of the plot. ax : matplotlib axis, optional If provided, plot on this axis.\n##### Returns\n* **kdeplot **: Show a univariate or bivariate distribution with a kernel\n          density estimate.\n\n* **rugplot **: Draw small vertical lines to show each observation in a\n          distribution.\n\n* **size determined automatically with a reference rule**: \n\n* **.. plot**: \n\n* **Use Pandas objects to get an informative axis label**: \n\n* **Plot the distribution with a kernel density estimate and rug plot**: \n\n* **distribution fit**: \n\n* **Plot the distribution on the vertical axis**: \n\n* **Change the color of all the plot elements**: \n\n* **Pass specific parameters to the underlying plot functions**: \n\n"
+}{
+    "source file": "docscrape.py",
+    "line number": "579",
+    "func name": "header",
+    "func arg": "(text, style)",
+    "comments": ""
+}{}{
+    "source file": "extract_examples.py",
+    "line number": "18",
+    "func name": "add_cell",
+    "func arg": "(nb, lines, cell_type)",
+    "comments": ""
+}{}{}{}{
+    "source file": "gallery_generator.py",
+    "line number": "376",
+    "func name": "setup",
+    "func arg": "(app)",
+    "comments": ""
+}{}{}{}{}{}{}{}{
+    "source file": "husl.py",
+    "line number": "302",
+    "func name": "lch_to_huslp",
+    "func arg": "(triple)",
+    "comments": ""
+}{}{}{
+    "source file": "kde_ridgeplot.py",
+    "line number": "34",
+    "func name": "label",
+    "func arg": "(x, color, label)",
+    "comments": ""
+}{}{}{}{}{}{
+    "source file": "matrix.py",
+    "line number": "1234",
+    "func name": "clustermap",
+    "func arg": "(data, **kwargs)",
+    "comments": "Plot a matrix dataset as a hierarchically-clustered heatmap.\n\nParameters ---------- data: 2D array-like Rectangular data for clustering. Cannot contain NAs. pivot_kws : dict, optional If `data` is a tidy dataframe, can provide keyword arguments for pivot to create a rectangular dataframe. method : str, optional Linkage method to use for calculating clusters. See scipy.cluster.hierarchy.linkage documentation for more information: https://docs.scipy.org/doc/scipy/reference/generated/scipy.cluster.hierarchy.linkage.html metric : str, optional Distance metric to use for the data. See scipy.spatial.distance.pdist documentation for more options https://docs.scipy.org/doc/scipy/reference/generated/scipy.spatial.distance.pdist.html To use different metrics (or methods) for rows and columns, you may construct each linkage matrix yourself and provide them as {row,col}_linkage. z_score : int or None, optional Either 0 (rows) or 1 (columns). Whether or not to calculate z-scores for the rows or the columns. Z scores are: z = (x\n\n- mean)/std, so values in each row (column) will get the mean of the row (column) subtracted, then divided by the standard deviation of the row (column). This ensures that each row (column) has mean of 0 and variance of 1. standard_scale : int or None, optional Either 0 (rows) or 1 (columns). Whether or not to standardize that dimension, meaning for each row or column, subtract the minimum and divide each by its maximum. figsize: (width, height), optional Overall size of the figure. cbar_kws : dict, optional Keyword arguments to pass to ``cbar_kws`` in ``heatmap``, e.g. to add a label to the colorbar. {row,col}_cluster : bool, optional If True, cluster the {rows, columns}. {row,col}_linkage : numpy.array, optional Precomputed linkage matrix for the rows or columns. See scipy.cluster.hierarchy.linkage for specific formats. {row,col}_colors : list-like or pandas DataFrame/Series, optional List of colors to label for either the rows or columns. Useful to evaluate whether samples within a group are clustered together. Can use nested lists or DataFrame for multiple color levels of labeling. If given as a DataFrame or Series, labels for the colors are extracted from the DataFrames column names or from the name of the Series. DataFrame/Series colors are also matched to the data by their index, ensuring colors are drawn in the correct order. mask : boolean array or DataFrame, optional If passed, data will not be shown in cells where ``mask`` is True. Cells with missing values are automatically masked. Only used for visualizing, not for calculating. {dendrogram,colors}_ratio: float, or pair of floats, optional Proportion of the figure size devoted to the two marginal elements. If a pair is given, they correspond to (row, col) ratios. cbar_pos : (left, bottom, width, height), optional Position of the colorbar axes in the figure. Setting to ``None`` will disable the colorbar. tree_kws : dict, optional Parameters for the :class:`matplotlib.collections.LineCollection` that is used to plot the lines of the dendrogram tree. kwargs : other keyword arguments All other keyword arguments are passed to :func:`heatmap`\n##### Returns\n* **clustergrid **: ClusterGrid\n    A ClusterGrid instance.\n\n* **To access the reordered row indices, use**: \n\n* **Column indices, use**: \n\n* **Plot a clustered heatmap**: \n\n* **.. plot**: \n\n* **Change the size and layout of the figure**: \n\n* **Add colored labels to identify observations**: \n\n* **Use a different colormap and adjust the limits of the color range**: \n\n* **Use a different similarity metric**: \n\n* **Use a different clustering method**: \n\n* **Standardize the data within the columns**: \n\n* **Normalize the data within the rows**: \n\n"
+}{
+    "source file": "miscplot.py",
+    "line number": "33",
+    "func name": "dogplot",
+    "func arg": "(**__)",
+    "comments": "Who's a good boy?\n\n\n"
+}{}{}{}{}{
+    "source file": "nb_to_doc.py",
+    "line number": "102",
+    "func name": "strip_output",
+    "func arg": "(nb, keep_output, keep_count, extra_keys)",
+    "comments": "Strip the outputs, execution count/prompt number and miscellaneous metadata from a notebook object, unless specified to keep either the outputs or counts. `extra_keys` could be 'metadata.foo cell.metadata.bar metadata.baz'\n\n\n"
+}{}{}{}{
+    "source file": "palettes.py",
+    "line number": "1029",
+    "func name": "set_color_codes",
+    "func arg": "(palette)",
+    "comments": "Change how matplotlib color shorthands are interpreted.\n\nCalling this will change how shorthand codes like \"b\" or \"g\" are interpreted by matplotlib in subsequent plots.\n\nParameters ---------- palette : {deep, muted, pastel, dark, bright, colorblind} Named seaborn palette to use as the source of colors.\n\nSee Also -------- set : Color codes can be set through the high-level seaborn style manager. set_palette : Color codes can also be set through the function that sets the matplotlib color cycle.\n\nExamples --------\n\nMap matplotlib color codes to the default seaborn palette.\n\n.. plot:: :context: close-figs\n\n>>> import matplotlib.pyplot as plt >>> import seaborn as sns; sns.set() >>> sns.set_color_codes() >>> _ = plt.plot([0, 1], color=\"r\")\n\nUse a different seaborn palette.\n\n.. plot:: :context: close-figs\n\n>>> sns.set_color_codes(\"dark\") >>> _ = plt.plot([0, 1], color=\"g\") >>> _ = plt.plot([0, 2], color=\"m\")\n"
+}{}{
+    "source file": "rcmod.py",
+    "line number": "507",
+    "func name": "set_palette",
+    "func arg": "(palette, n_colors, desat, color_codes)",
+    "comments": "Set the matplotlib color cycle using a seaborn palette.\n\nParameters ---------- palette : seaborn color paltte | matplotlib colormap | hls | husl Palette definition. Should be something that :func:`color_palette` can process. n_colors : int Number of colors in the cycle. The default number of colors will depend on the format of ``palette``, see the :func:`color_palette` documentation for more information. desat : float Proportion to desaturate each color by. color_codes : bool If ``True`` and ``palette`` is a seaborn palette, remap the shorthand color codes (e.g. \"b\", \"g\", \"r\", etc.) to the colors from this palette.\n\nExamples -------- >>> set_palette(\"Reds\")\n\n>>> set_palette(\"Set1\", 8, .75)\n\nSee Also -------- color_palette : build a color palette or set the color cycle temporarily in a ``with`` statement. set_context : set parameters to scale plot elements set_style : set the default parameters for figure style\n"
+}{}{
+    "source file": "regression.py",
+    "line number": "1009",
+    "func name": "residplot",
+    "func arg": "()",
+    "comments": "Plot the residuals of a linear regression.\n\nThis function will regress y on x (possibly as a robust or polynomial regression) and then draw a scatterplot of the residuals. You can optionally fit a lowess smoother to the residual plot, which can help in determining if there is structure to the residuals.\n\nParameters ---------- x : vector or string Data or column name in `data` for the predictor variable. y : vector or string Data or column name in `data` for the response variable. data : DataFrame, optional DataFrame to use if `x` and `y` are column names. lowess : boolean, optional Fit a lowess smoother to the residual scatterplot. {x, y}_partial : matrix or string(s) , optional Matrix with same first dimension as `x`, or column name(s) in `data`. These variables are treated as confounding and are removed from the `x` or `y` variables before plotting. order : int, optional Order of the polynomial to fit when calculating the residuals. robust : boolean, optional Fit a robust linear regression when calculating the residuals. dropna : boolean, optional If True, ignore observations with missing data when fitting and plotting. label : string, optional Label that will be used in any plot legends. color : matplotlib color, optional Color to use for all elements of the plot. {scatter, line}_kws : dictionaries, optional Additional keyword arguments passed to scatter() and plot() for drawing the components of the plot. ax : matplotlib axis, optional Plot into this axis, otherwise grab the current axis or make a new one if not existing.\n##### Returns\n* **ax**: matplotlib axes\n    Axes with the regression plot.\n\n* **regplot **: Plot a simple linear regression model.\n\n* **jointplot **: Draw a\n\n"
+}{
+    "source file": "relational.py",
+    "line number": "1164",
+    "func name": "relplot",
+    "func arg": "(**kwargs)",
+    "comments": ""
+}{}{}{}{}{}{}{}{}{}{}{
+    "source file": "test_algorithms.py",
+    "line number": "199",
+    "func name": "test_bad_seed_old",
+    "func arg": "()",
+    "comments": ""
+}{}{}{}{
+    "source file": "test_decorators.py",
+    "line number": "88",
+    "func name": "test_share_init_params_with_map",
+    "func arg": "()",
+    "comments": ""
+}{}{
+    "source file": "test_docstrings.py",
+    "line number": "24",
+    "func name": "example_func",
+    "func arg": "()",
+    "comments": "An example function.\n\nParameters ---------- a : str A function parameter.\n"
+}{}{}{}{
+    "source file": "test_rcmod.py",
+    "line number": "263",
+    "func name": "has_verdana",
+    "func arg": "()",
+    "comments": "Helper to verify if Verdana font is present\n\n\n"
+}{}{
+    "source file": "test_relational.py",
+    "line number": "37",
+    "func name": "long_semantics",
+    "func arg": "(request)",
+    "comments": ""
+}{}{
+    "source file": "test_utils.py",
+    "line number": "451",
+    "func name": "test_remove_na",
+    "func arg": "()",
+    "comments": ""
+}{
+    "source file": "utils.py",
+    "line number": "673",
+    "func name": "_check_argument",
+    "func arg": "(param, options, value)",
+    "comments": "Raise if value for param is not in options.\n\n\n"
+}{}{}{
+    "source file": "widgets.py",
+    "line number": "386",
+    "func name": "choose_cubehelix_palette",
+    "func arg": "(as_cmap)",
+    "comments": "Launch an interactive widget to create a sequential cubehelix palette.\n\nThis corresponds with the :func:`cubehelix_palette` function. This kind of palette is good for data that range between relatively uninteresting low values and interesting high values. The cubehelix system allows the palette to have more hue variance across the range, which can be helpful for distinguishing a wider range of values.\n\nRequires IPython 2+ and must be used in the notebook.\n\nParameters ---------- as_cmap : bool If True, the return value is a matplotlib colormap rather than a list of discrete colors.\n##### Returns\n* **pal or cmap **: list of colors or matplotlib colormap\n    Object that can be passed to plotting functions.\n\n* **cubehelix_palette **: Create a sequential palette or colormap using the\n                    cubehelix system.\n\n"
+}{}

@@ -1,0 +1,7 @@
+{
+    "source file": "rnn_cell.py",
+    "line number": "1954",
+    "func name": "_layered_LSTM",
+    "func arg": "(model, input_blob, seq_lengths, initial_states, dim_in, dim_out, scope, outputs_with_grads, return_params, memory_optimization, forget_bias, forward_only, drop_states, create_lstm)",
+    "comments": ""
+}

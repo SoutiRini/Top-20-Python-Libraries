@@ -1,0 +1,7 @@
+{
+    "source file": "_constrained_layout.py",
+    "line number": "541",
+    "func name": "layoutcolorbargridspec",
+    "func arg": "(parents, cax, shrink, aspect, location, pad)",
+    "comments": "Do the layout for a colorbar, to not overly pollute colorbar.py\n\n*pad* is in fraction of the original axis size.\n"
+}

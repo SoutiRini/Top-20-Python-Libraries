@@ -1,0 +1,7 @@
+{
+    "source file": "dtypes.py",
+    "line number": "607",
+    "func name": "as_dtype",
+    "func arg": "(type_value)",
+    "comments": "Converts the given `type_value` to a `DType`.\n\nNote: `DType` values are interned. When passed a new `DType` object, `as_dtype` always returns the interned value.\n##### Args\n* **type_value**: A value that can be converted to a `tf.DType` object. This may\n  currently be a `tf.DType` object, a [`DataType`\n  enum](https\n\n##### Returns\n"
+}

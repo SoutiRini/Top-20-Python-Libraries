@@ -1,0 +1,7 @@
+{
+    "source file": "nnpack_ops_test.py",
+    "line number": "34",
+    "func name": "has_avx2",
+    "func arg": "()",
+    "comments": ""
+}

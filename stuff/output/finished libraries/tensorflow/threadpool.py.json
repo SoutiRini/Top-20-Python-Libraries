@@ -1,0 +1,7 @@
+{
+    "source file": "threadpool.py",
+    "line number": "78",
+    "func name": "override_threadpool",
+    "func arg": "(dataset, thread_pool)",
+    "comments": "Returns a new dataset that uses the given thread pool for its operations.\n\n\n##### Args\n* **dataset**: A `tf.data.Dataset` object.\n\n* **thread_pool**: A `PrivateThreadPool` object.\n\n##### Returns\n"
+}

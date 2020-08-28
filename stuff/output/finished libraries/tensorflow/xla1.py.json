@@ -1,0 +1,7 @@
+{
+    "source file": "xla1.py",
+    "line number": "591",
+    "func name": "check_function_argument_count",
+    "func arg": "(func, input_arity, infeed_queue)",
+    "comments": "Validate the number of input arguments to an XLA function.\n\n\n##### Args\n* **func**: the Python function that will be called to generate the body of an XLA\n  computation graph.\n\n* **input_arity**: the number of explicit arguments supplied by the caller.\n\n* **infeed_queue**: if not None, the infeed queue that will supply\n  additional arguments to the function.\n\n##### Returns\n"
+}

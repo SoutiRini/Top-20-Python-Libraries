@@ -1,0 +1,7 @@
+{
+    "source file": "remote_benchmarks_test.py",
+    "line number": "45",
+    "func name": "run_benchmark",
+    "func arg": "(func, num_iters, execution_mode)",
+    "comments": ""
+}

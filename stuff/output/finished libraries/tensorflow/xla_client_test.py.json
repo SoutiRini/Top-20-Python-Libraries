@@ -1,0 +1,7 @@
+{
+    "source file": "xla_client_test.py",
+    "line number": "2103",
+    "func name": "InstantiateTests",
+    "func arg": "(globals_dict, backend_fn, test_prefix, **kw)",
+    "comments": ""
+}

@@ -1,0 +1,7 @@
+{
+    "source file": "app_hooks.py",
+    "line number": "6",
+    "func name": "on_server_loaded",
+    "func arg": "(server_context)",
+    "comments": ""
+}

@@ -1,0 +1,7 @@
+{
+    "source file": "test_tightlayout.py",
+    "line number": "316",
+    "func name": "test_non_agg_renderer",
+    "func arg": "(monkeypatch, recwarn)",
+    "comments": ""
+}

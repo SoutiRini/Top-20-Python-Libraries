@@ -1,0 +1,7 @@
+{
+    "source file": "dense_layer_test.py",
+    "line number": "45",
+    "func name": "InLabels",
+    "func arg": "(labels, substr)",
+    "comments": "Returns true iff one of the labels contains substr.\n\n\n"
+}

@@ -1,0 +1,7 @@
+{
+    "source file": "test_shell_utils.py",
+    "line number": "68",
+    "func name": "test_roundtrip",
+    "func arg": "(Parser, argv)",
+    "comments": "Test that split is the inverse operation of join\n\n\n"
+}

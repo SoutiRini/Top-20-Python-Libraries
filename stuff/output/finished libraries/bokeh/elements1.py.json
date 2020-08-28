@@ -1,0 +1,7 @@
+{
+    "source file": "elements1.py",
+    "line number": "129",
+    "func name": "script_for_render_items",
+    "func arg": "(docs_json_or_id, render_items, app_path, absolute_url)",
+    "comments": "Render an script for Bokeh render items. Args: docs_json_or_id: can be None\n\nrender_items (RenderItems) : Specific items to render from the document and where\n\napp_path (str, optional) :\n\nabsolute_url (Theme, optional)\n##### Returns\n"
+}

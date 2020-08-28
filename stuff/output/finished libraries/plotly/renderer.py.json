@@ -1,0 +1,7 @@
+{
+    "source file": "renderer.py",
+    "line number": "20",
+    "func name": "warning_on_one_line",
+    "func arg": "(msg, category, filename, lineno, file, line)",
+    "comments": ""
+}

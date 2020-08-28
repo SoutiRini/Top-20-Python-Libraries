@@ -1,0 +1,7 @@
+{
+    "source file": "statespace_seasonal.py",
+    "line number": "48",
+    "func name": "simulate_seasonal_term",
+    "func arg": "(periodicity, total_cycles, noise_std, harmonics)",
+    "comments": ""
+}

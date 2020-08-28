@@ -1,0 +1,7 @@
+{
+    "source file": "_solvers.py",
+    "line number": "737",
+    "func name": "_are_validate_args",
+    "func arg": "(a, b, q, r, e, s, eq_type)",
+    "comments": "A helper function to validate the arguments supplied to the Riccati equation solvers. Any discrepancy found in the input matrices leads to a ``ValueError`` exception.\n\nEssentially, it performs:\n\n- a check whether the input is free of NaN and Infs\n\n- a pass for the data through ``numpy.atleast_2d()``\n\n- squareness check of the relevant arrays\n\n- shape consistency check of the arrays\n\n- singularity check of the relevant arrays\n\n- symmetricity check of the relevant matrices\n\n- a check whether the regular or the generalized version is asked.\n\nThis function is used by ``solve_continuous_are`` and ``solve_discrete_are``.\n\nParameters ---------- a, b, q, r, e, s : array_like Input data eq_type : str Accepted arguments are 'care' and 'dare'.\n##### Returns\n* **a, b, q, r, e, s **: ndarray\n    Regularized input data\n\n* **m, n **: int\n    shape of the problem\n\n* **r_or_c **: type\n    Data type of the problem, returns float or complex\n\n* **gen_or_not **: bool\n    Type of the equation, True for generalized and False for regular ARE.\n\n"
+}

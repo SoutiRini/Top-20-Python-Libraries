@@ -1,0 +1,7 @@
+{
+    "source file": "_inspect.py",
+    "line number": "168",
+    "func name": "formatargvalues",
+    "func arg": "(args, varargs, varkw, locals, formatarg, formatvarargs, formatvarkw, formatvalue, join)",
+    "comments": "Format an argument spec from the 4 values returned by getargvalues.\n\nThe first four arguments are (args, varargs, varkw, locals).\n\nThe next four arguments are the corresponding optional formatting functions that are called to turn names and values into strings.\n\nThe ninth argument is an optional function to format the sequence of arguments.\n"
+}

@@ -1,0 +1,7 @@
+{
+    "source file": "durbin_levinson.py",
+    "line number": "18",
+    "func name": "durbin_levinson",
+    "func arg": "(endog, ar_order, demean, adjusted)",
+    "comments": "Estimate AR parameters at multiple orders using Durbin-Levinson recursions.\n\nParameters ---------- endog : array_like or SARIMAXSpecification Input time series array, assumed to be stationary. ar_order : int, optional Autoregressive order. Default is 0. demean : bool, optional Whether to estimate and remove the mean from the process prior to fitting the autoregressive coefficients. Default is True. adjusted : bool, optional Whether to use the \"adjusted\" autocovariance estimator, which uses n\n\n- h degrees of freedom rather than n. This option can result in a non-positive definite autocovariance matrix. Default is False.\n##### Returns\n* **parameters **: list of SARIMAXParams objects\n    List elements correspond to estimates at different `ar_order`. For\n    example, parameters[0] is an `SARIMAXParams` instance corresponding to\n    `ar_order=0`.\n\n* **other_results **: Bunch\n    Includes one component, `spec`, containing the `SARIMAXSpecification`\n    instance corresponding to the input arguments.\n\n"
+}

@@ -1,0 +1,7 @@
+{
+    "source file": "_appdirs.py",
+    "line number": "567",
+    "func name": "_get_win_folder_with_jna",
+    "func arg": "(csidl_name)",
+    "comments": ""
+}

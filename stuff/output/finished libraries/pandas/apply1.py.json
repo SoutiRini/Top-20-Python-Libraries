@@ -1,0 +1,7 @@
+{
+    "source file": "apply1.py",
+    "line number": "26",
+    "func name": "frame_apply",
+    "func arg": "(obj, func, axis, raw, result_type, ignore_failures, args, kwds)",
+    "comments": "construct and return a row or column based frame apply object\n\n\n"
+}

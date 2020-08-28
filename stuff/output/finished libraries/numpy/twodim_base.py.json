@@ -1,0 +1,7 @@
+{
+    "source file": "twodim_base.py",
+    "line number": "986",
+    "func name": "triu_indices_from",
+    "func arg": "(arr, k)",
+    "comments": "Return the indices for the upper-triangle of arr.\n\nSee `triu_indices` for full details.\n\nParameters ---------- arr : ndarray, shape(N, N) The indices will be valid for square arrays. k : int, optional Diagonal offset (see `triu` for details).\n##### Returns\n* **triu_indices_from **: tuple, shape(2) of ndarray, shape(N)\n    Indices for the upper-triangle of `arr`.\n\n* **.. versionadded**: \n\n"
+}

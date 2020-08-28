@@ -1,0 +1,7 @@
+{
+    "source file": "srparser_app.py",
+    "line number": "892",
+    "func name": "app",
+    "func arg": "()",
+    "comments": "Create a shift reduce parser app, using a simple grammar and text.\n\n\n"
+}

@@ -1,0 +1,7 @@
+{
+    "source file": "overrides.py",
+    "line number": "202",
+    "func name": "array_function_from_dispatcher",
+    "func arg": "(implementation, module, verify, docs_from_dispatcher)",
+    "comments": "Like array_function_dispatcher, but with function arguments flipped.\n\n\n"
+}

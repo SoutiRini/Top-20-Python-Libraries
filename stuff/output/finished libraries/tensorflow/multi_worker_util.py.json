@@ -1,0 +1,7 @@
+{
+    "source file": "multi_worker_util.py",
+    "line number": "264",
+    "func name": "has_worker_context",
+    "func arg": "()",
+    "comments": "Returns whether a worker context has been entered.\n\n\n"
+}

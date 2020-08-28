@@ -1,0 +1,7 @@
+{
+    "source file": "missing4.py",
+    "line number": "670",
+    "func name": "_rolling_window",
+    "func arg": "(a, window)",
+    "comments": "[True, True, False, True, False], 2 ->\n\n[ [True,\n\nTrue], [True, False], [False, True], [True, False], ]\n"
+}

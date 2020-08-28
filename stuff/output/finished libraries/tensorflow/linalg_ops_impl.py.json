@@ -1,0 +1,7 @@
+{
+    "source file": "linalg_ops_impl.py",
+    "line number": "33",
+    "func name": "eye",
+    "func arg": "(num_rows, num_columns, batch_shape, dtype, name)",
+    "comments": "Construct an identity matrix, or a batch of matrices.\n\nSee `linalg_ops.eye`.\n"
+}

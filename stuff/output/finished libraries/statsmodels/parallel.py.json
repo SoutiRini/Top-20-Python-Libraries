@@ -1,0 +1,7 @@
+{
+    "source file": "parallel.py",
+    "line number": "17",
+    "func name": "parallel_func",
+    "func arg": "(func, n_jobs, verbose)",
+    "comments": "Return parallel instance with delayed function\n\nUtil function to use joblib only if available\n\nParameters ---------- func: callable A function n_jobs: int Number of jobs to run in parallel verbose: int Verbosity level\n##### Returns\n* **parallel**: instance of joblib.Parallel or list\n    The parallel object\n\n* **my_func**: callable\n    func if not parallel or delayed(func)\n\n* **n_jobs**: int\n    Number of jobs >= 0\n\n"
+}

@@ -1,0 +1,7 @@
+{
+    "source file": "test_to_from_json.py",
+    "line number": "214",
+    "func name": "test_write_json_from_file_string",
+    "func arg": "(fig1, pretty, remove_uids)",
+    "comments": ""
+}

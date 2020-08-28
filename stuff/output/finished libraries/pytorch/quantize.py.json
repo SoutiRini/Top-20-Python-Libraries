@@ -1,0 +1,7 @@
+{
+    "source file": "quantize.py",
+    "line number": "411",
+    "func name": "get_observer_dict",
+    "func arg": "(mod, target_dict, prefix)",
+    "comments": "Traverse the modules and save all observers into dict. This is mainly used for quantization accuracy debug Args: mod: the top module we want to save all observers prefix: the prefix for the current module target_dict: the dictionary used to save all the observers\n\n\n"
+}

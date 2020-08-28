@@ -1,0 +1,7 @@
+{
+    "source file": "doc_typealias.py",
+    "line number": "24",
+    "func name": "document",
+    "func arg": "(obj, doc)",
+    "comments": "Adds a docstring to typealias by overriding the `__doc__` attribute.\n\nNote: Overriding `__doc__` is only possible after python 3.7.\n##### Args\n* **obj**: Typealias object that needs to be documented.\n\n* **doc**: Docstring of the typealias. It should follow the standard pystyle\n  docstring rules.\n\n"
+}

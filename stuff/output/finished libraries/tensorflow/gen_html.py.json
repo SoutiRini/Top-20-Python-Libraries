@@ -1,0 +1,7 @@
+{
+    "source file": "gen_html.py",
+    "line number": "208",
+    "func name": "gen_conversion_log_html",
+    "func arg": "(conversion_log_dir, quantization_enabled, tflite_graph_path)",
+    "comments": "Generates an HTML report about the conversion process.\n\n\n##### Args\n* **conversion_log_dir**: A string specifying the file directory of the conversion\n  logs. It's required that before calling this function, the\n  `conversion_log_dir`\n  already contains the following files\n\n* **quantization_enabled**: A boolean, passed from the tflite converter to\n  indicate whether post-training quantization is enabled during conversion.\n\n* **tflite_graph_path**: A string, the filepath to the converted TFLite model.\n\n"
+}

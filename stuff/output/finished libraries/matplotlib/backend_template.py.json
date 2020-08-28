@@ -1,0 +1,7 @@
+{
+    "source file": "backend_template.py",
+    "line number": "169",
+    "func name": "new_figure_manager_given_figure",
+    "func arg": "(num, figure)",
+    "comments": "Create a new figure manager instance for the given figure.\n\n\n"
+}

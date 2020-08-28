@@ -1,0 +1,7 @@
+{
+    "source file": "wavfile.py",
+    "line number": "771",
+    "func name": "_array_tofile",
+    "func arg": "(fid, data)",
+    "comments": ""
+}

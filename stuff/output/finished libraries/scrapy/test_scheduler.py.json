@@ -1,0 +1,7 @@
+{
+    "source file": "test_scheduler.py",
+    "line number": "223",
+    "func name": "_is_scheduling_fair",
+    "func arg": "(enqueued_slots, dequeued_slots)",
+    "comments": "We enqueued same number of requests for every slot. Assert correct order, e.g.\n\n>>> enqueued = ['a', 'b', 'c'] * 2 >>> correct = ['a', 'c', 'b', 'b', 'a', 'c'] >>> incorrect = ['a', 'a', 'b', 'c', 'c', 'b'] >>> _is_scheduling_fair(enqueued, correct) True >>> _is_scheduling_fair(enqueued, incorrect) False\n"
+}

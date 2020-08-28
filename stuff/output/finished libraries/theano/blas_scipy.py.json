@@ -1,0 +1,7 @@
+{
+    "source file": "blas_scipy.py",
+    "line number": "65",
+    "func name": "make_ger_destructive",
+    "func arg": "(node)",
+    "comments": ""
+}

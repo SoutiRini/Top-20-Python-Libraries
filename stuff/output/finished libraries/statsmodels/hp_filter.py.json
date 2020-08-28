@@ -1,0 +1,7 @@
+{
+    "source file": "hp_filter.py",
+    "line number": "8",
+    "func name": "hpfilter",
+    "func arg": "(x, lamb)",
+    "comments": "Hodrick-Prescott filter.\n\nParameters ---------- x : array_like The time series to filter, 1-d. lamb : float The Hodrick-Prescott smoothing parameter. A value of 1600 is suggested for quarterly data. Ravn and Uhlig suggest using a value of 6.25 (1600/4**4) for annual data and 129600 (1600*3**4) for monthly data.\n##### Returns\n* **cycle **: ndarray\n    The estimated cycle in the data given lamb.\n\n* **trend **: ndarray\n    The estimated trend in the data given lamb.\n\n* **Hodrick, R.J, and E. C. Prescott. 1980. \"Postwar U.S. Business Cycles**: An\n    Empirical Investigation.\" `Carnegie Mellon University discussion\n    paper no. 451`.\n\n* **>>> gdp_decomp[[\"realgdp\", \"trend\"]][\"2000-03-31\"**: ].plot(ax=ax,\n\n* **.. plot**: \n\n"
+}

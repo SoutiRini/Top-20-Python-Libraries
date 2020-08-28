@@ -1,0 +1,7 @@
+{
+    "source file": "sequence_feature_column1.py",
+    "line number": "165",
+    "func name": "_assert_all_equal_and_return",
+    "func arg": "(tensors, name)",
+    "comments": "Asserts that all tensors are equal and returns the first one.\n\n\n"
+}

@@ -1,0 +1,7 @@
+{
+    "source file": "tpu_embedding_v2_correctness_test.py",
+    "line number": "624",
+    "func name": "_get_variable",
+    "func arg": "(variable)",
+    "comments": ""
+}

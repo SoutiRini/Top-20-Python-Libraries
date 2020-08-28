@@ -1,0 +1,7 @@
+{
+    "source file": "layer_utils1.py",
+    "line number": "277",
+    "func name": "gather_non_trainable_weights",
+    "func arg": "(trainable, sub_layers, extra_variables)",
+    "comments": "Lists the non-trainable weights for an object with sub-layers.\n\n\n##### Args\n* **trainable**: Whether the object collecting the variables is trainable.\n\n* **sub_layers**: A flat list of Layer objects owned by this object, to collect\n  variables from.\n\n* **extra_variables**: Any extra variables to include. Their `.trainable` property\n  is used to categorize them.\n\n##### Returns\n"
+}

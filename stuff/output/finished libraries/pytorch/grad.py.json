@@ -1,0 +1,7 @@
+{
+    "source file": "grad.py",
+    "line number": "263",
+    "func name": "conv3d_weight",
+    "func arg": "(input, weight_size, grad_output, stride, padding, dilation, groups)",
+    "comments": "Computes the gradient of conv3d with respect to the weight of the convolution.\n\n\n##### Args\n* **input**: input tensor of shape (minibatch x in_channels x iT x iH x iW)\n\n* **weight_size **: Shape of the weight gradient tensor\n\n* **grad_output **: output gradient tensor (minibatch x out_channels x oT x oH x oW)\n\n* **stride (int or tuple, optional)**: Stride of the convolution. Default\n\n* **padding (int or tuple, optional)**: Zero-padding added to both sides of the input. Default\n\n* **dilation (int or tuple, optional)**: Spacing between kernel elements. Default\n\n* **groups (int, optional)**: Number of blocked connections from input channels to output channels. Default\n\n* **ples**: \n\n"
+}

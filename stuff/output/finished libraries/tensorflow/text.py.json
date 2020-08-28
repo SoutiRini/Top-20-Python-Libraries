@@ -1,0 +1,7 @@
+{
+    "source file": "text.py",
+    "line number": "61",
+    "func name": "one_hot",
+    "func arg": "(input_text, n, filters, lower, split)",
+    "comments": "One-hot encodes a text into a list of word indexes of size `n`.\n\nThis function receives as input a string of text and returns a list of encoded integers each corresponding to a word (or token) in the given input string.\n\nArguments: input_text: Input text (string). n: int. Size of vocabulary. filters: list (or concatenation) of characters to filter out, such as punctuation. Default: ``!\"#$%&()*+,-./:;<=>?@[\\]^_`{|}~\\t\\n``, includes basic punctuation, tabs, and newlines. lower: boolean. Whether to set the text to lowercase. split: str. Separator for word splitting.\n##### Returns\n"
+}

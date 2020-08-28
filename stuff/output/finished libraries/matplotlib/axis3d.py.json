@@ -1,0 +1,7 @@
+{
+    "source file": "axis3d.py",
+    "line number": "22",
+    "func name": "tick_update_position",
+    "func arg": "(tick, tickxs, tickys, labelpos)",
+    "comments": "Update tick line and label position and style.\n\n\n"
+}

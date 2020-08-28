@@ -1,0 +1,7 @@
+{
+    "source file": "training_distributed.py",
+    "line number": "763",
+    "func name": "_train_with_multi_worker",
+    "func arg": "(method)",
+    "comments": "Decorator that handles multi worker training with distribution strategy.\n\n\n"
+}

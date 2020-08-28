@@ -1,0 +1,7 @@
+{
+    "source file": "casual.py",
+    "line number": "335",
+    "func name": "casual_tokenize",
+    "func arg": "(text, preserve_case, reduce_len, strip_handles)",
+    "comments": "Convenience function for wrapping the tokenizer.\n\n\n"
+}

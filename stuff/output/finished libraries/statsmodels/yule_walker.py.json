@@ -1,0 +1,7 @@
+{
+    "source file": "yule_walker.py",
+    "line number": "16",
+    "func name": "yule_walker",
+    "func arg": "(endog, ar_order, demean, adjusted)",
+    "comments": "Estimate AR parameters using Yule-Walker equations.\n\nParameters ---------- endog : array_like or SARIMAXSpecification Input time series array, assumed to be stationary. ar_order : int, optional Autoregressive order. Default is 0. demean : bool, optional Whether to estimate and remove the mean from the process prior to fitting the autoregressive coefficients. Default is True. adjusted : bool, optional Whether to use the adjusted autocovariance estimator, which uses n\n\n- h degrees of freedom rather than n. For some processes this option may\n\nresult in a non-positive definite autocovariance matrix. Default is False.\n##### Returns\n* **parameters **: SARIMAXParams object\n    Contains the parameter estimates from the final iteration.\n\n* **other_results **: Bunch\n    Includes one component, `spec`, which is the `SARIMAXSpecification`\n    instance corresponding to the input arguments.\n\n"
+}

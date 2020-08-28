@@ -1,0 +1,7 @@
+{
+    "source file": "solve_registrations.py",
+    "line number": "180",
+    "func name": "_solve_linear_operator_circulant_circulant",
+    "func arg": "(linop_a, linop_b)",
+    "comments": ""
+}

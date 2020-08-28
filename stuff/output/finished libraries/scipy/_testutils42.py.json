@@ -1,0 +1,7 @@
+{
+    "source file": "_testutils42.py",
+    "line number": "120",
+    "func name": "_get_mem_available",
+    "func arg": "()",
+    "comments": "Get information about memory available, not counting swap.\n\n\n"
+}

@@ -1,0 +1,7 @@
+{
+    "source file": "serde.py",
+    "line number": "13",
+    "func name": "deserialize_protobuf_struct",
+    "func arg": "(serialized_protobuf, struct_type)",
+    "comments": ""
+}

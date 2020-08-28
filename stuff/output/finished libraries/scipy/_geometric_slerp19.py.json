@@ -1,0 +1,7 @@
+{
+    "source file": "_geometric_slerp19.py",
+    "line number": "31",
+    "func name": "geometric_slerp",
+    "func arg": "(start, end, t, tol)",
+    "comments": "Geometric spherical linear interpolation.\n\nThe interpolation occurs along a unit-radius great circle arc in arbitrary dimensional space.\n\nParameters ---------- start : (n_dimensions, ) array-like Single n-dimensional input coordinate in a 1-D array-like object. `n` must be greater than 1. end : (n_dimensions, ) array-like Single n-dimensional input coordinate in a 1-D array-like object. `n` must be greater than 1. t: float or (n_points,) array-like A float or array-like of doubles representing interpolation parameters, with values required in the inclusive interval between 0 and 1. A common approach is to generate the array with ``np.linspace(0, 1, n_pts)`` for linearly spaced points. Ascending, descending, and scrambled orders are permitted. tol: float The absolute tolerance for determining if the start and end coordinates are antipodes.\n##### Returns\n* **result **: (t.size, D)\n    An array of doubles containing the interpolated\n    spherical path and including start and\n    end when 0 and 1 t are used. The\n    interpolated values should correspond to the\n    same sort order provided in the t array. The result\n    may be 1-dimensional if ``t`` is a float.\n\n"
+}

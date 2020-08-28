@@ -1,0 +1,7 @@
+{
+    "source file": "rnn_cell_test.py",
+    "line number": "895",
+    "func name": "prepare_mul_rnn",
+    "func arg": "(model, input_blob, shape, T, outputs_with_grad, num_layers)",
+    "comments": ""
+}

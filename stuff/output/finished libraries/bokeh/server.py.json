@@ -1,0 +1,7 @@
+{
+    "source file": "server.py",
+    "line number": "346",
+    "func name": "_src_path",
+    "func arg": "(url, elementid)",
+    "comments": "Return a base autoload URL for a given element ID\n\n\n##### Args\n* **url (str) **: The base server URL\n\n* **elementid (str) **: The div ID for autload to target\n\n##### Returns\n"
+}

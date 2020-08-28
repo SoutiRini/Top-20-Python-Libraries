@@ -1,0 +1,7 @@
+{
+    "source file": "resample1.py",
+    "line number": "1774",
+    "func name": "asfreq",
+    "func arg": "(obj, freq, method, how, normalize, fill_value)",
+    "comments": "Utility frequency conversion method for Series/DataFrame.\n\n\n"
+}

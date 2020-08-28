@@ -1,0 +1,7 @@
+{
+    "source file": "scatter_gather.py",
+    "line number": "47",
+    "func name": "gather",
+    "func arg": "(outputs, target_device, dim)",
+    "comments": "Gathers tensors from different GPUs on a specified device (-1 means the CPU).\n\n\n"
+}

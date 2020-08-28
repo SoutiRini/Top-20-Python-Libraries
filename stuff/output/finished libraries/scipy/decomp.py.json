@@ -1,0 +1,7 @@
+{
+    "source file": "decomp.py",
+    "line number": "1436",
+    "func name": "cdf2rdf",
+    "func arg": "(w, v)",
+    "comments": "Converts complex eigenvalues ``w`` and eigenvectors ``v`` to real eigenvalues in a block diagonal form ``wr`` and the associated real eigenvectors ``vr``, such that\n\nvr @ wr = X @ vr\n\ncontinues to hold, where ``X`` is the original array for which ``w`` and ``v`` are the eigenvalues and eigenvectors.\n\n.. versionadded:: 1.1.0\n\nParameters ---------- w : (..., M) array_like Complex or real eigenvalues, an array or stack of arrays\n\nConjugate pairs must not be interleaved, else the wrong result will be produced. So ``[1+1j, 1, 1-1j]`` will give a correct result, but ``[1+1j, 2+1j, 1-1j, 2-1j]`` will not.\n\nv : (..., M, M) array_like Complex or real eigenvectors, a square array or stack of square arrays.\n##### Returns\n* **wr **: (..., M, M) ndarray\n    Real diagonal block form of eigenvalues\n\n* **vr **: (..., M, M) ndarray\n    Real eigenvectors associated with ``wr``\n\n* **eig **: Eigenvalues and right eigenvectors for non-symmetric arrays\n\n* **rsf2csf **: Convert real Schur form to complex Schur form\n\n* **.. versionadded**: \n\n"
+}

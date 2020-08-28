@@ -1,0 +1,7 @@
+{
+    "source file": "profile_analyzer_cli.py",
+    "line number": "768",
+    "func name": "create_profiler_ui",
+    "func arg": "(graph, run_metadata, ui_type, on_ui_exit, config)",
+    "comments": "Create an instance of CursesUI based on a `tf.Graph` and `RunMetadata`.\n\n\n##### Args\n* **graph**: Python `Graph` object.\n\n* **run_metadata**: A `RunMetadata` protobuf object.\n\n* **ui_type**: (str) requested UI type, e.g., \"curses\", \"readline\".\n\n* **on_ui_exit**: (`Callable`) the callback to be called when the UI exits.\n\n* **config**: An instance of `cli_config.CLIConfig`.\n\n##### Returns\n"
+}

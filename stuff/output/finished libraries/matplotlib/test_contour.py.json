@@ -1,0 +1,7 @@
+{
+    "source file": "test_contour.py",
+    "line number": "390",
+    "func name": "test_contour_linewidth",
+    "func arg": "(rc_lines_linewidth, rc_contour_linewidth, call_linewidths, expected)",
+    "comments": ""
+}

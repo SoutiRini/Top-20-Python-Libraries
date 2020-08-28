@@ -1,0 +1,7 @@
+{
+    "source file": "toco_convert.py",
+    "line number": "78",
+    "func name": "toco_convert",
+    "func arg": "(options, graph_def, input_tensors, output_tensors, **kwargs)",
+    "comments": "Convert a model's graph def into a tflite model.\n\nNOTE: this currently shells out to the toco binary, but we would like convert to Python API tooling in the future.\n##### Args\n* **options**: An Options instance.\n\n* **graph_def**: A GraphDef object.\n\n* **input_tensors**: List of input tensor tuples `(name, shape, type)`.\n\n* **output_tensors**: List of output tensors (names).\n\n* ****kwargs**: Extra options to be passed.\n\n##### Returns\n"
+}

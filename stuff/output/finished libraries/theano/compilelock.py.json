@@ -1,0 +1,7 @@
+{
+    "source file": "compilelock.py",
+    "line number": "318",
+    "func name": "refresh_lock",
+    "func arg": "(lock_file)",
+    "comments": "'Refresh' an existing lock by re-writing the file containing the owner's unique id, using a new (randomly generated) id, which is also returned.\n\n\n"
+}

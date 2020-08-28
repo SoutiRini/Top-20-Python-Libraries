@@ -1,0 +1,7 @@
+{
+    "source file": "spacetobatch_op_test.py",
+    "line number": "30",
+    "func name": "space_to_batch_direct",
+    "func arg": "(input_array, block_shape, paddings)",
+    "comments": "Direct Python implementation of space-to-batch conversion.\n\nThis is used for tests only.\n##### Args\n* **input_array**: N-D array\n\n* **block_shape**: 1-D array of shape [num_block_dims].\n\n* **paddings**: 2-D array of shape [num_block_dims, 2].\n\n##### Returns\n"
+}

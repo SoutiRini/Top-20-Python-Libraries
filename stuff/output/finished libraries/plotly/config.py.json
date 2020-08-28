@@ -1,0 +1,7 @@
+{
+    "source file": "config.py",
+    "line number": "25",
+    "func name": "get_config",
+    "func arg": "()",
+    "comments": "Returns either module config or file config.\n\n\n"
+}

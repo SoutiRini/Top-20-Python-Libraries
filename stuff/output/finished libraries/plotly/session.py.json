@@ -1,0 +1,7 @@
+{
+    "source file": "session.py",
+    "line number": "156",
+    "func name": "get_session_credentials",
+    "func arg": "()",
+    "comments": "Returns the credentials that will be sent to plotly.\n\n\n"
+}

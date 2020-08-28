@@ -1,0 +1,7 @@
+{
+    "source file": "legend1.py",
+    "line number": "1161",
+    "func name": "_parse_legend_args",
+    "func arg": "(axs, **kwargs)",
+    "comments": "Get the handles and labels from the calls to either ``figure.legend`` or ``axes.legend``.\n\n``axs`` is a list of axes (to get legend artists from)\n"
+}

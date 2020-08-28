@@ -1,0 +1,7 @@
+{
+    "source file": "type67.py",
+    "line number": "14",
+    "func name": "_is_sparse",
+    "func arg": "(x)",
+    "comments": "Returns ------- boolean True iff x is a L{scipy.sparse.spmatrix} (and not a L{numpy.ndarray}).\n\n\n"
+}

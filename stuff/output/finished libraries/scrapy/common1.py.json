@@ -1,0 +1,7 @@
+{
+    "source file": "common1.py",
+    "line number": "10",
+    "func name": "wrap_loader_context",
+    "func arg": "(function, context)",
+    "comments": "Wrap functions that receive loader_context to contain the context \"pre-loaded\" and expose a interface that receives only one argument\n\n\n"
+}

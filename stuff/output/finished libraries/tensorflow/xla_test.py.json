@@ -1,0 +1,7 @@
+{
+    "source file": "xla_test.py",
+    "line number": "250",
+    "func name": "Benchmark",
+    "func arg": "(tf_bench, builder_fn, use_xla_jit, device, separate_compiled_gradients)",
+    "comments": "Build a graph and run benchmarks against it, with or without XLA.\n\n\n##### Args\n* **tf_bench**: An instance of tf.test.Benchmark, used to run the benchmark.\n\n* **builder_fn**: A function that builds a graph when invoked, and returns\n    (name, fetches), where name is the name of the test, and fetches\n    is a list of tensors to fetch as output.\n\n* **use_xla_jit**: If true compile with the XLA JIT, otherwise use regular TF.\n\n* **device**: The tensorflow device to run on, e.g. \"cpu\", \"gpu\".\n\n* **separate_compiled_gradients**: If true put each gradient subgraph into a\n  separate compilation scope. This gives fine-grained control over which\n  portions of the graph will be compiled as a single unit. Compiling\n  gradients separately may yield better performance for some graphs.\n  The scope is named based on the scope of the forward computation as well\n  as the name of the gradients. As a result, the gradients will be compiled\n  in a scope that is separate from both the forward computation, and from\n  other gradients.\n\n"
+}

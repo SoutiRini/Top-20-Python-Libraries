@@ -1,0 +1,7 @@
+{
+    "source file": "_pickle.py",
+    "line number": "32",
+    "func name": "restore_type_tag",
+    "func arg": "(value, type_str)",
+    "comments": ""
+}

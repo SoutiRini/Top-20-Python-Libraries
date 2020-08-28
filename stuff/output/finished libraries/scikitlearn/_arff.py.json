@@ -1,0 +1,7 @@
+{
+    "source file": "_arff.py",
+    "line number": "1117",
+    "func name": "dumps",
+    "func arg": "(obj)",
+    "comments": "Serialize an object representing the ARFF document, returning a string.\n\nparam obj: a dictionary. :return: a string with the ARFF document.\n"
+}

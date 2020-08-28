@@ -1,0 +1,7 @@
+{
+    "source file": "test_indexing7.py",
+    "line number": "524",
+    "func name": "test_slice_locs_with_missing_value",
+    "func arg": "(index_arr, expected, start_idx, end_idx)",
+    "comments": ""
+}

@@ -1,0 +1,7 @@
+{
+    "source file": "decorator_utils.py",
+    "line number": "117",
+    "func name": "validate_callable",
+    "func arg": "(func, decorator_name)",
+    "comments": ""
+}

@@ -1,0 +1,7 @@
+{
+    "source file": "scatter_ops_test.py",
+    "line number": "102",
+    "func name": "_NumpyUpdateScalar",
+    "func arg": "(ref, indices, update)",
+    "comments": ""
+}

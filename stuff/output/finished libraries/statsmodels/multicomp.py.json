@@ -1,0 +1,7 @@
+{
+    "source file": "multicomp.py",
+    "line number": "1745",
+    "func name": "set_remove_subs",
+    "func arg": "(ssli)",
+    "comments": "remove sets that are subsets of another set from a list of tuples\n\nParameters ---------- ssli : list of tuples each tuple is considered as a set\n##### Returns\n* **part **: list of tuples\n    new list with subset tuples removed, it is sorted by set-length of tuples. The\n    list contains original tuples, duplicate elements are not removed.\n\n"
+}

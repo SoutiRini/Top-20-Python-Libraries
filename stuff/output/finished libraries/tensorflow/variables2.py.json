@@ -1,0 +1,7 @@
+{
+    "source file": "variables2.py",
+    "line number": "3383",
+    "func name": "report_uninitialized_variables",
+    "func arg": "(var_list, name)",
+    "comments": "Adds ops to list the names of uninitialized variables.\n\nWhen run, it returns a 1-D tensor containing the names of uninitialized variables if there are any, or an empty array if there are none.\n##### Args\n* **var_list**: List of `Variable` objects to check. Defaults to the value of\n  `global_variables() + local_variables()`\n\n* **name**: Optional name of the `Operation`.\n\n##### Returns\n"
+}

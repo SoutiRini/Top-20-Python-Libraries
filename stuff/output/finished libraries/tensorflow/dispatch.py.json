@@ -1,0 +1,7 @@
+{
+    "source file": "dispatch.py",
+    "line number": "196",
+    "func name": "add_dispatch_support",
+    "func arg": "(target)",
+    "comments": "Decorator that adds a dispatch handling wrapper to an op.\n\n\n"
+}

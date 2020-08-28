@@ -1,0 +1,7 @@
+{
+    "source file": "common2.py",
+    "line number": "74",
+    "func name": "get_run_key",
+    "func arg": "(feed_dict, fetches)",
+    "comments": "Summarize the names of feeds and fetches as a RunKey JSON string.\n\n\n##### Args\n* **feed_dict**: The feed_dict given to the `Session.run()` call.\n\n* **fetches**: The fetches from the `Session.run()` call.\n\n##### Returns\n"
+}

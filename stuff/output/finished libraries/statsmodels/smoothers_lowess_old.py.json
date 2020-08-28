@@ -1,0 +1,7 @@
+{
+    "source file": "smoothers_lowess_old.py",
+    "line number": "336",
+    "func name": "_lowess_bisquare",
+    "func arg": "(t)",
+    "comments": "The bisquare function applied to a numpy array. The bisquare function is (1-t**2)**2.\n\nParameters ---------- t : ndarray array bisquare function is applied to, element-wise and in-place.\n##### Returns\n"
+}

@@ -1,0 +1,7 @@
+{
+    "source file": "atrous_conv2d_test.py",
+    "line number": "34",
+    "func name": "_upsample_filters",
+    "func arg": "(filters, rate)",
+    "comments": "Upsamples the filters by a factor of rate along the spatial dimensions.\n\n\n##### Args\n* **filters**: [h, w, in_depth, out_depth]. Original filters.\n\n* **rate**: An int, specifying the upsampling rate.\n\n##### Returns\n* **filters_up**: [h_up, w_up, in_depth, out_depth]. Upsampled filters with\n  h_up = h + (h - 1) * (rate - 1)\n  w_up = w + (w - 1) * (rate - 1)\n  containing (rate - 1) zeros between consecutive filter values along\n  the filters' spatial dimensions.\n\n"
+}

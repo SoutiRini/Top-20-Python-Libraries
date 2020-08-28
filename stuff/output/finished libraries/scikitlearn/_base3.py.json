@@ -1,0 +1,7 @@
+{
+    "source file": "_base3.py",
+    "line number": "175",
+    "func name": "_partition_estimators",
+    "func arg": "(n_estimators, n_jobs)",
+    "comments": "Private function used to partition estimators between jobs.\n\n\n"
+}

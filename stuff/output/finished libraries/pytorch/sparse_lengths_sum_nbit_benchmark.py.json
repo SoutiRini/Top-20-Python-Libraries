@@ -1,0 +1,7 @@
+{
+    "source file": "sparse_lengths_sum_nbit_benchmark.py",
+    "line number": "11",
+    "func name": "benchmark_sparse_lengths_sum",
+    "func arg": "(categorical_limit, embedding_size, average_len, batch_size, iterations, flush_cache, bit_rate)",
+    "comments": ""
+}

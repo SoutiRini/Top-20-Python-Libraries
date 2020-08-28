@@ -1,0 +1,7 @@
+{
+    "source file": "backend_ps.py",
+    "line number": "1242",
+    "func name": "pstoeps",
+    "func arg": "(tmpfile, bbox, rotated)",
+    "comments": "Convert the postscript to encapsulated postscript.  The bbox of the eps file will be replaced with the given *bbox* argument. If None, original bbox will be used.\n\n\n"
+}

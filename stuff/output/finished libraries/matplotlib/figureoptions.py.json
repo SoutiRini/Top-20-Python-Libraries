@@ -1,0 +1,7 @@
+{
+    "source file": "figureoptions.py",
+    "line number": "31",
+    "func name": "figure_edit",
+    "func arg": "(axes, parent)",
+    "comments": "Edit matplotlib figure options\n\n\n"
+}

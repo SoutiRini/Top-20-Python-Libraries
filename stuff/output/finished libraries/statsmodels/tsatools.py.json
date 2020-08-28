@@ -1,0 +1,7 @@
+{
+    "source file": "tsatools.py",
+    "line number": "792",
+    "func name": "freq_to_period",
+    "func arg": "(freq)",
+    "comments": "Convert a pandas frequency to a periodicity\n\nParameters ---------- freq : str or offset Frequency to convert\n##### Returns\n* **period **: int\n    Periodicity of freq\n\n"
+}

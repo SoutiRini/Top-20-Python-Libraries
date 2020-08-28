@@ -1,0 +1,7 @@
+{
+    "source file": "test_tools.py",
+    "line number": "108",
+    "func name": "test_toolbar_box_with_no_children_does_not_raise_a_bokeh_warning",
+    "func arg": "(mock__show_with_state)",
+    "comments": ""
+}

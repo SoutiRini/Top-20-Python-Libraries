@@ -1,0 +1,7 @@
+{
+    "source file": "matfuncs99.py",
+    "line number": "821",
+    "func name": "_ell",
+    "func arg": "(A, m)",
+    "comments": "A helper function for expm_2009.\n\nParameters ---------- A : linear operator A linear operator whose norm of power we care about. m : int The power of the linear operator\n##### Returns\n* **value **: int\n    A value related to a bound.\n\n"
+}

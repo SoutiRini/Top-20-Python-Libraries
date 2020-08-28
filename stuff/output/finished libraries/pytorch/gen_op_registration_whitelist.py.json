@@ -1,0 +1,7 @@
+{
+    "source file": "gen_op_registration_whitelist.py",
+    "line number": "41",
+    "func name": "gen_transitive_closure",
+    "func arg": "(dep_graph, root_ops)",
+    "comments": ""
+}

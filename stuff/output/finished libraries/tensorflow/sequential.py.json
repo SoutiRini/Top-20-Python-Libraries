@@ -1,0 +1,7 @@
+{
+    "source file": "sequential.py",
+    "line number": "547",
+    "func name": "track_nodes_created_by_last_call",
+    "func arg": "(layer, created_nodes)",
+    "comments": "Adds to `created_nodes` the nodes created by the last call to `layer`.\n\n\n"
+}

@@ -1,0 +1,7 @@
+{
+    "source file": "ragged_to_tensor_op_test.py",
+    "line number": "50",
+    "func name": "rebuild_ragged_tensor_with_value_rowids",
+    "func arg": "(rt, feed_dict, sess)",
+    "comments": "Returns a copy of `rt`, built using `from_value_rowids`.\n\nThis ensures that RaggedTensor._cached_value_rowids is populated, which triggers a different code-path for converting ragged tensors to tensors.\n\nIf `feed_dict` and `sess` are specified, then build the new `RaggedTensor` using placeholder tensors, and populate a feed dictionary that can be used to feed the placeholders.\n##### Args\n* **rt**: The RaggedTensor to copy.\n\n* **feed_dict**: If specified, then build the new `RaggedTensor` using\n  placeholders, and populate this dict with entries to feed those\n  placeholders.\n\n* **sess**: A session used to evaluate tensors; required if feed_dict is\n  specified.\n\n##### Returns\n"
+}

@@ -1,0 +1,7 @@
+{
+    "source file": "test_gradient_boosting_loss_functions.py",
+    "line number": "295",
+    "func name": "test_lad_equals_quantile_50",
+    "func arg": "(seed)",
+    "comments": ""
+}

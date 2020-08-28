@@ -1,0 +1,7 @@
+{
+    "source file": "fill.py",
+    "line number": "19",
+    "func name": "koch_snowflake",
+    "func arg": "(order, scale)",
+    "comments": "Return two lists x, y of point coordinates of the Koch snowflake.\n\nParameters ---------- order : int The recursion depth. scale : float The extent of the snowflake (edge length of the base triangle).\n"
+}

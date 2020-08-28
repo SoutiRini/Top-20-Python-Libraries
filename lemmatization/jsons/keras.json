@@ -1,0 +1,27 @@
+{"function":
+[{
+    "source file": "conv_utils.py",
+    "line number": "130",
+    "func name": "deconv_length",
+    "func arg": "(dim_size, stride_size, kernel_size, padding, output_padding, dilation)",
+    "comments": "Determines output length of a transposed convolution given input length.\n\n# Arguments dim_size: Integer, the input length. stride_size: Integer, the stride along the dimension of `dim_size`. kernel_size: Integer, the kernel size along the dimension of `dim_size`. padding: One of `\"same\"`, `\"valid\"`, `\"full\"`. output_padding: Integer, amount of padding along the output dimension, Can be set to `None` in which case the output length is inferred. dilation: dilation rate, integer.\n\n# Returns The output length (integer).\n"
+},{
+    "source file": "generic_utils.py",
+    "line number": "164",
+    "func name": "has_arg",
+    "func arg": "(fn, name, accept_all)",
+    "comments": "Checks if a callable accepts a given keyword argument. For Python 2, checks if there is an argument with the given name. For Python 3, checks if there is an argument with the given name, and also whether this argument can be called with a keyword (i.e. if it is not a positional-only argument). # Arguments fn: Callable to inspect. name: Check if `fn` can be called with `name` as a keyword argument. accept_all: What to return if there is no parameter called `name` but the function accepts a `**kwargs` argument. # Returns bool, whether `fn` accepts a `name` keyword argument.\n\n\n"
+},{
+    "source file": "layer_utils.py",
+    "line number": "55",
+    "func name": "convert_dense_weights_data_format",
+    "func arg": "(dense, previous_feature_map_shape, target_data_format)",
+    "comments": "Utility useful when changing a convnet's `data_format`.\n\nWhen porting the weights of a convnet from one data format to the other, if the convnet includes a `Flatten` layer (applied to the last convolutional feature map) followed by a `Dense` layer, the weights of that `Dense` layer should be updated to reflect the new dimension ordering.\n\n# Arguments dense: The target `Dense` layer. previous_feature_map_shape: A shape tuple of 3 integers, e.g. `(512, 7, 7)`. The shape of the convolutional feature map right before the `Flatten` layer that came before the target `Dense` layer. target_data_format: One of \"channels_last\", \"channels_first\". Set it \"channels_last\" if converting a \"channels_first\" model to \"channels_last\", or reciprocally.\n"
+},{
+    "source file": "test_utils.py",
+    "line number": "41",
+    "func name": "layer_test",
+    "func arg": "(layer_cls, kwargs, input_shape, input_dtype, input_data, expected_output, expected_output_dtype, fixed_batch_size)",
+    "comments": "Test routine for a layer with a single input tensor and single output tensor.\n\n\n"
+}]
+}

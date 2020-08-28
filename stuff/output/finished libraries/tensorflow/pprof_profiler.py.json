@@ -1,0 +1,7 @@
+{
+    "source file": "pprof_profiler.py",
+    "line number": "405",
+    "func name": "profile",
+    "func arg": "(graph, run_metadata, output_dir)",
+    "comments": "Generate profiles in pprof format.\n\nSee https://github.com/google/pprof/blob/master/proto/profile.proto for pprof proto format.\n##### Args\n* **graph**: A `Graph` object.\n\n* **run_metadata**: A `RunMetadata` proto.\n\n* **output_dir**: (string) Directory to output pprof profile to.\n  Profile files for each device will be stored in compressed\n  serialized proto format. If output_dir is None, profile protos\n  will be printed to stdout instead.\n\n##### Returns\n* **(Note**: this list will be empty if output_dir is None)\n\n"
+}

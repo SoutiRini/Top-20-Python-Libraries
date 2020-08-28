@@ -1,0 +1,7 @@
+{
+    "source file": "test_lowlevel.py",
+    "line number": "268",
+    "func name": "test_fragment_update_on_redirect",
+    "func arg": "()",
+    "comments": "Verify we only append previous fragment if one doesn't exist on new location. If a new fragment is encountered in a Location header, it should be added to all subsequent requests.\n\n\n"
+}

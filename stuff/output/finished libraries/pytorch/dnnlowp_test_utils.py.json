@@ -1,0 +1,7 @@
+{
+    "source file": "dnnlowp_test_utils.py",
+    "line number": "374",
+    "func name": "run_conv_or_fc",
+    "func arg": "(test_case, init_net, net, X, W, b, op_type, engine, order, gc, outputs, scale, zero_point)",
+    "comments": ""
+}

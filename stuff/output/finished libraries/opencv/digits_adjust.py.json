@@ -1,0 +1,7 @@
+{
+    "source file": "digits_adjust.py",
+    "line number": "31",
+    "func name": "cross_validate",
+    "func arg": "(model_class, params, samples, labels, kfold, pool)",
+    "comments": ""
+}

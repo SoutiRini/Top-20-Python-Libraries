@@ -1,0 +1,7 @@
+{
+    "source file": "compat_internal.py",
+    "line number": "24",
+    "func name": "path_to_str",
+    "func arg": "(path)",
+    "comments": "Returns the file system path representation of a `PathLike` object, else as it is.\n\n\n##### Args\n* **path**: An object that can be converted to path representation.\n\n##### Returns\n"
+}

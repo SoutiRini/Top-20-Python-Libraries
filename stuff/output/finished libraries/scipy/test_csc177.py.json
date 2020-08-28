@@ -1,0 +1,7 @@
+{
+    "source file": "test_csc177.py",
+    "line number": "54",
+    "func name": "test_csc_empty_slices",
+    "func arg": "(matrix_input, axis, expected_shape)",
+    "comments": ""
+}

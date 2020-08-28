@@ -1,0 +1,7 @@
+{
+    "source file": "test_print.py",
+    "line number": "157",
+    "func name": "test_scalar_format",
+    "func arg": "()",
+    "comments": "Test the str.format method with NumPy scalar types\n\n\n"
+}

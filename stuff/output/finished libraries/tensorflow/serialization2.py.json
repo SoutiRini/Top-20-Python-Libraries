@@ -1,0 +1,7 @@
+{
+    "source file": "serialization2.py",
+    "line number": "29",
+    "func name": "get_json_type",
+    "func arg": "(obj)",
+    "comments": "Serializes any object to a JSON-serializable structure.\n\nArguments: obj: the object to serialize\n##### Returns\n"
+}

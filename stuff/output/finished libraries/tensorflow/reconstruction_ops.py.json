@@ -1,0 +1,7 @@
+{
+    "source file": "reconstruction_ops.py",
+    "line number": "32",
+    "func name": "overlap_and_add",
+    "func arg": "(signal, frame_step, name)",
+    "comments": "Reconstructs a signal from a framed representation.\n\nAdds potentially overlapping frames of a signal with shape `[..., frames, frame_length]`, offsetting subsequent frames by `frame_step`. The resulting tensor has shape `[..., output_size]` where\n\noutput_size = (frames\n\n- 1) * frame_step + frame_length\n##### Args\n* **signal**: A [..., frames, frame_length] `Tensor`. All dimensions may be\n  unknown, and rank must be at least 2.\n\n* **frame_step**: An integer or scalar `Tensor` denoting overlap offsets. Must be\n  less than or equal to `frame_length`.\n\n* **name**: An optional name for the operation.\n\n##### Returns\n"
+}

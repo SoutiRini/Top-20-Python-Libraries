@@ -1,0 +1,7 @@
+{
+    "source file": "stats_mstats_short.py",
+    "line number": "311",
+    "func name": "edf_normal_inverse_transformed",
+    "func arg": "(x, alpha, beta, axis)",
+    "comments": "rank based normal inverse transformed cdf\n\n\n"
+}

@@ -1,0 +1,7 @@
+{
+    "source file": "test_doctesting.py",
+    "line number": "43",
+    "func name": "check_skip",
+    "func arg": "()",
+    "comments": "Check skip directive\n\nThe test below should not run\n\n>>> 1/0 #doctest: +SKIP\n"
+}

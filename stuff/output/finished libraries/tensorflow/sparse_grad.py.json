@@ -1,0 +1,7 @@
+{
+    "source file": "sparse_grad.py",
+    "line number": "316",
+    "func name": "_SparseToDenseGrad",
+    "func arg": "(op, grad)",
+    "comments": ""
+}

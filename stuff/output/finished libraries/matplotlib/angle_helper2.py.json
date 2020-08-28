@@ -1,0 +1,7 @@
+{
+    "source file": "angle_helper2.py",
+    "line number": "137",
+    "func name": "select_step360",
+    "func arg": "(v1, v2, nv, include_last, threshold_factor)",
+    "comments": ""
+}

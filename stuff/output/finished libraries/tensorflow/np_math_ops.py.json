@@ -1,0 +1,7 @@
+{
+    "source file": "np_math_ops.py",
+    "line number": "1364",
+    "func name": "einsum",
+    "func arg": "(subscripts, **kwargs)",
+    "comments": ""
+}

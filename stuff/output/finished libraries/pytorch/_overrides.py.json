@@ -1,0 +1,7 @@
+{
+    "source file": "_overrides.py",
+    "line number": "804",
+    "func name": "get_overridable_functions",
+    "func arg": "()",
+    "comments": "List functions that are overridable via __torch_function__\n\n\n##### Returns\n"
+}

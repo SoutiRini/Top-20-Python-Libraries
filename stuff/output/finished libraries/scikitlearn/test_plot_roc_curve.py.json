@@ -1,0 +1,7 @@
+{
+    "source file": "test_plot_roc_curve.py",
+    "line number": "186",
+    "func name": "test_plot_roc_curve_pos_label",
+    "func arg": "(pyplot, response_method)",
+    "comments": ""
+}

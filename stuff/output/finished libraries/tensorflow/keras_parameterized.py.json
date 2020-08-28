@@ -1,0 +1,7 @@
+{
+    "source file": "keras_parameterized.py",
+    "line number": "439",
+    "func name": "_test_or_class_decorator",
+    "func arg": "(test_or_class, single_method_decorator)",
+    "comments": "Decorate a test or class with a decorator intended for one method.\n\nIf the test_or_class is a class: This will apply the decorator to all test methods in the class.\n\nIf the test_or_class is an iterable of already-parameterized test cases: This will apply the decorator to all the cases, and then flatten the resulting cross-product of test cases. This allows stacking the Keras parameterized decorators w/ each other, and to apply them to test methods that have already been marked with an absl parameterized decorator.\n\nOtherwise, treat the obj as a single method and apply the decorator directly.\n##### Args\n* **test_or_class**: A test method (that may have already been decorated with a\n  parameterized decorator, or a test class that extends\n  keras_parameterized.TestCase\n\n* **single_method_decorator**: A parameterized decorator intended for a single test method.\n\n##### Returns\n"
+}

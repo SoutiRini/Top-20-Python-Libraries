@@ -1,0 +1,7 @@
+{
+    "source file": "selenium1.py",
+    "line number": "297",
+    "func name": "get_slider_bar_color",
+    "func arg": "(driver, css_class)",
+    "comments": ""
+}

@@ -1,0 +1,7 @@
+{
+    "source file": "test_docstrings.py",
+    "line number": "24",
+    "func name": "example_func",
+    "func arg": "()",
+    "comments": "An example function.\n\nParameters ---------- a : str A function parameter.\n"
+}

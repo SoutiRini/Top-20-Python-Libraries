@@ -1,0 +1,7 @@
+{
+    "source file": "optimizers_test.py",
+    "line number": "37",
+    "func name": "_get_model",
+    "func arg": "(input_dim, num_hidden, output_dim)",
+    "comments": ""
+}

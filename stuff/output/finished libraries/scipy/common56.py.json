@@ -1,0 +1,7 @@
+{
+    "source file": "common56.py",
+    "line number": "365",
+    "func name": "_sparse_num_jac",
+    "func arg": "(fun, t, y, f, h, factor, y_scale, structure, groups)",
+    "comments": ""
+}

@@ -1,0 +1,7 @@
+{
+    "source file": "pchart.py",
+    "line number": "431",
+    "func name": "demo",
+    "func arg": "(choice, draw_parses, print_parses)",
+    "comments": "A demonstration of the probabilistic parsers.  The user is prompted to select which demo to run, and how many parses should be found; and then each parser is run on the same demo, and a summary of the results are displayed.\n\n\n"
+}

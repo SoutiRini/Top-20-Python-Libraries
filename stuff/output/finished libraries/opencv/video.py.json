@@ -1,0 +1,7 @@
+{
+    "source file": "video.py",
+    "line number": "167",
+    "func name": "create_capture",
+    "func arg": "(source, fallback)",
+    "comments": "source: <int> or '<int>|<filename>|synth [:<param_name>=<value> [:...]]'\n\n\n"
+}

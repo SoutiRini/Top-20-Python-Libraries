@@ -1,0 +1,7 @@
+{
+    "source file": "create_constants.py",
+    "line number": "44",
+    "func name": "to_h",
+    "func arg": "(_, varname, directory)",
+    "comments": "Writes a header file for the table values.\n\n\n"
+}

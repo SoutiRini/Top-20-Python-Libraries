@@ -1,0 +1,7 @@
+{
+    "source file": "missing2.py",
+    "line number": "596",
+    "func name": "is_valid_nat_for_dtype",
+    "func arg": "(obj, dtype)",
+    "comments": "isna check that excludes incompatible dtypes\n\nParameters ---------- obj : object dtype : np.datetime64, np.timedelta64, DatetimeTZDtype, or PeriodDtype\n##### Returns\n"
+}

@@ -1,0 +1,7 @@
+{
+    "source file": "recurrent.py",
+    "line number": "3074",
+    "func name": "_config_for_enable_caching_device",
+    "func arg": "(rnn_cell)",
+    "comments": "Return the dict config for RNN cell wrt to enable_caching_device field.\n\nSince enable_caching_device is a internal implementation detail for speed up the RNN variable read when running on the multi remote worker setting, we don't want this config to be serialized constantly in the JSON. We will only serialize this field when a none default value is used to create the cell.\n##### Args\n* **rnn_cell**: the RNN cell for serialize.\n\n##### Returns\n"
+}

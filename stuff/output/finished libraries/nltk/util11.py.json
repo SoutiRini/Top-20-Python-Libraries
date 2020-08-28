@@ -1,0 +1,7 @@
+{
+    "source file": "util11.py",
+    "line number": "784",
+    "func name": "demo_vader_tweets",
+    "func arg": "(n_instances, output)",
+    "comments": "Classify 10000 positive and negative tweets using Vader approach.\n\nparam n_instances: the number of total tweets that have to be classified. :param output: the output file where results have to be reported.\n"
+}

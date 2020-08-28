@@ -1,0 +1,7 @@
+{
+    "source file": "gather_with_constant.py",
+    "line number": "28",
+    "func name": "make_gather_with_constant_tests",
+    "func arg": "(options)",
+    "comments": "Make a set of test which feed a constant to gather toco.\n\n\n"
+}

@@ -1,0 +1,7 @@
+{
+    "source file": "data_split_person.py",
+    "line number": "41",
+    "func name": "person_split",
+    "func arg": "(whole_data, train_names, valid_names, test_names)",
+    "comments": "Split data by person.\n\n\n"
+}

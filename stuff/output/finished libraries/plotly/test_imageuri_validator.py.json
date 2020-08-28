@@ -1,0 +1,7 @@
+{
+    "source file": "test_imageuri_validator.py",
+    "line number": "48",
+    "func name": "test_rejection_by_type",
+    "func arg": "(val, validator)",
+    "comments": ""
+}

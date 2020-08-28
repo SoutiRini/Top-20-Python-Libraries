@@ -1,0 +1,7 @@
+{
+    "source file": "_tukeylambda_stats43.py",
+    "line number": "147",
+    "func name": "tukeylambda_kurtosis",
+    "func arg": "(lam)",
+    "comments": "Kurtosis of the Tukey Lambda distribution.\n\nParameters ---------- lam : array_like The lambda values at which to compute the variance.\n##### Returns\n* **v **: ndarray\n    The variance.  For lam < -0.25, the variance is not defined, so\n    np.nan is returned.  For lam = 0.25, np.inf is returned.\n\n"
+}

@@ -1,0 +1,7 @@
+{
+    "source file": "chebyshev.py",
+    "line number": "1945",
+    "func name": "chebpts2",
+    "func arg": "(npts)",
+    "comments": "Chebyshev points of the second kind.\n\nThe Chebyshev points of the second kind are the points ``cos(x)``, where ``x = [pi*k/(npts\n\n- 1) for k in range(npts)]``.\n\nParameters ---------- npts : int Number of sample points desired.\n##### Returns\n* **pts **: ndarray\n    The Chebyshev points of the second kind.\n\n* **.. versionadded**: \n\n"
+}

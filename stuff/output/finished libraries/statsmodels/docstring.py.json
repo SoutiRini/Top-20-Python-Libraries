@@ -1,0 +1,7 @@
+{
+    "source file": "docstring.py",
+    "line number": "654",
+    "func name": "remove_parameters",
+    "func arg": "(docstring, parameters)",
+    "comments": "Parameters ---------- docstring : str The docstring to modify. parameters : str, list[str] The names of the parameters to remove.\n\n\n##### Returns\n"
+}

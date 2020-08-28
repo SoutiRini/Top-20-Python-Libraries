@@ -1,0 +1,7 @@
+{
+    "source file": "bn.py",
+    "line number": "765",
+    "func name": "local_abstract_batch_norm_inference",
+    "func arg": "(node)",
+    "comments": ""
+}

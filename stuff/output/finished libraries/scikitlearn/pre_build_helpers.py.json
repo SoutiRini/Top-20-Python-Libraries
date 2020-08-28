@@ -1,0 +1,7 @@
+{
+    "source file": "pre_build_helpers.py",
+    "line number": "88",
+    "func name": "basic_check_build",
+    "func arg": "()",
+    "comments": "Check basic compilation and linking of C code\n\n\n"
+}

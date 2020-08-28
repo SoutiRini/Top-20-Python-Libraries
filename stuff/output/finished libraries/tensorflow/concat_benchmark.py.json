@@ -1,0 +1,7 @@
+{
+    "source file": "concat_benchmark.py",
+    "line number": "35",
+    "func name": "build_graph",
+    "func arg": "(device, input_shape, variable, num_inputs, axis, grad)",
+    "comments": "Build a graph containing a sequence of concat operations.\n\n\n##### Args\n* **device**: string, the device to run on.\n\n* **input_shape**: shape of the input tensors.\n\n* **variable**: whether or not to randomize the input shape\n\n* **num_inputs**: the number of inputs to concat\n\n* **axis**: axis to be concat'ed\n\n* **grad**: if True compute the gradient\n\n##### Returns\n"
+}

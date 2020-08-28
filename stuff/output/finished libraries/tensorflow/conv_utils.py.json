@@ -1,0 +1,7 @@
+{
+    "source file": "conv_utils.py",
+    "line number": "468",
+    "func name": "conv_output_shape",
+    "func arg": "(input_shape, kernel_shape, strides, padding)",
+    "comments": "Return the output shape of an N-D convolution.\n\nForces dimensions where input is empty (size 0) to remain empty.\n##### Args\n* **input_shape**: tuple of size N\n\n* **kernel_shape**: tuple of size N, spatial shape of the convolutional kernel /\n  receptive field.\n\n* **strides**: tuple of size N, strides along each spatial dimension.\n\n* **padding**: type of padding, string `\"same\"` or `\"valid\"`.\n  `\"valid\"` means no padding. `\"same\"` results in padding evenly to \n  the left/right or up/down of the input such that output has the same \n  height/width dimension as the input.\n\n##### Returns\n* **tuple of size N**: `(d_out1, ..., d_outN)`, spatial shape of the output.\n\n"
+}

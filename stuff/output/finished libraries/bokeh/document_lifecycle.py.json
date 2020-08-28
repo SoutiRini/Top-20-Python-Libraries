@@ -1,0 +1,7 @@
+{
+    "source file": "document_lifecycle.py",
+    "line number": "54",
+    "func name": "_on_session_destroyed",
+    "func arg": "(session_context)",
+    "comments": "Calls any on_session_destroyed callbacks defined on the Document\n\n\n"
+}

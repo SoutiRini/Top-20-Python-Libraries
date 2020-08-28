@@ -1,0 +1,7 @@
+{
+    "source file": "vm.py",
+    "line number": "28",
+    "func name": "calculate_reallocate_info",
+    "func arg": "(order, fgraph, storage_map, compute_map_re, dependencies)",
+    "comments": "WRITEME : explain the parameters\n\n\n"
+}

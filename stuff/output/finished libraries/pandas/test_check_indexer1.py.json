@@ -1,0 +1,7 @@
+{
+    "source file": "test_check_indexer1.py",
+    "line number": "95",
+    "func name": "test_pass_through_non_array_likes",
+    "func arg": "(indexer)",
+    "comments": ""
+}

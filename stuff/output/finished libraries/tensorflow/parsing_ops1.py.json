@@ -1,0 +1,7 @@
+{
+    "source file": "parsing_ops1.py",
+    "line number": "1042",
+    "func name": "_assert_scalar",
+    "func arg": "(value, name)",
+    "comments": "Asserts that `value` is scalar, and returns `value`.\n\n\n"
+}

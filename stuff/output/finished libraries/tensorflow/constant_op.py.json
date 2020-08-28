@@ -1,0 +1,7 @@
+{
+    "source file": "constant_op.py",
+    "line number": "381",
+    "func name": "_dimension_tensor_conversion_function",
+    "func arg": "(d, dtype, name, as_ref)",
+    "comments": "Function to convert Dimension to Tensor.\n\n\n"
+}

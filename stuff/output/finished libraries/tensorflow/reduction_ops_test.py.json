@@ -1,0 +1,7 @@
+{
+    "source file": "reduction_ops_test.py",
+    "line number": "42",
+    "func name": "_powerset",
+    "func arg": "(iterable)",
+    "comments": "Helper for generating all possible reduction_axes arguments.\n\nExample: powerset([0,1,2]): () (0,) (1,) (2,) (0,1) (0,2) (1,2) (0,1,2)\n##### Args\n* **iterable**: An iterable of items to generate the powerset of.\n\n##### Returns\n"
+}

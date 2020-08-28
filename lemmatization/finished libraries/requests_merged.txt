@@ -1,0 +1,109 @@
+{}{
+    "source file": "_internal_utils.py",
+    "line number": "30",
+    "func name": "unicode_is_ascii",
+    "func arg": "(u_string)",
+    "comments": "Determine if unicode string only contains ASCII characters.\n\nparam str u_string: unicode string to check. Must be unicode and not Python 2 `str`. :rtype: bool\n"
+}{}{
+    "source file": "api.py",
+    "line number": "152",
+    "func name": "delete",
+    "func arg": "(url, **kwargs)",
+    "comments": "Sends a DELETE request.\n\nparam url: URL for the new :class:`Request` object. :param \\*\\*kwargs: Optional arguments that ``request`` takes. :return: :class:`Response <Response>` object :rtype: requests.Response\n"
+}{
+    "source file": "auth.py",
+    "line number": "28",
+    "func name": "_basic_auth_str",
+    "func arg": "(username, password)",
+    "comments": "Returns a Basic Auth string.\n\n\n"
+}{}{}{}{}{
+    "source file": "conftest.py",
+    "line number": "23",
+    "func name": "httpbin_secure",
+    "func arg": "(httpbin_secure)",
+    "comments": ""
+}{
+    "source file": "cookies.py",
+    "line number": "529",
+    "func name": "merge_cookies",
+    "func arg": "(cookiejar, cookies)",
+    "comments": "Add cookies to cookiejar and returns a merged CookieJar.\n\nparam cookiejar: CookieJar object to add the cookies to. :param cookies: Dictionary or CookieJar object to be added. :rtype: CookieJar\n"
+}{}{}{
+    "source file": "help.py",
+    "line number": "113",
+    "func name": "main",
+    "func arg": "()",
+    "comments": "Pretty-print the bug information as JSON.\n\n\n"
+}{
+    "source file": "hooks.py",
+    "line number": "23",
+    "func name": "dispatch_hook",
+    "func arg": "(key, hooks, hook_data, **kwargs)",
+    "comments": "Dispatches a hook dictionary on a given piece of data.\n\n\n"
+}{}{}{
+    "source file": "server.py",
+    "line number": "8",
+    "func name": "consume_socket_content",
+    "func arg": "(sock, timeout)",
+    "comments": ""
+}{
+    "source file": "sessions.py",
+    "line number": "757",
+    "func name": "session",
+    "func arg": "()",
+    "comments": "Returns a :class:`Session` for context-management.\n\n.. deprecated:: 1.0.0\n\nThis method has been deprecated since version 1.0.0 and is only kept for backwards compatibility. New code should use :class:`~requests.sessions.Session` to create a session. This may be removed at a future date.\n\n:rtype: Session\n"
+}{}{
+    "source file": "status_codes.py",
+    "line number": "107",
+    "func name": "_init",
+    "func arg": "()",
+    "comments": ""
+}{}{
+    "source file": "test_help.py",
+    "line number": "28",
+    "func name": "test_idna_with_version_attribute",
+    "func arg": "(mocker)",
+    "comments": "Verify we're actually setting idna version when it should be available.\n\n\n"
+}{
+    "source file": "test_hooks.py",
+    "line number": "22",
+    "func name": "test_default_hooks",
+    "func arg": "()",
+    "comments": ""
+}{
+    "source file": "test_lowlevel.py",
+    "line number": "268",
+    "func name": "test_fragment_update_on_redirect",
+    "func arg": "()",
+    "comments": "Verify we only append previous fragment if one doesn't exist on new location. If a new fragment is encountered in a Location header, it should be added to all subsequent requests.\n\n\n"
+}{
+    "source file": "test_packages.py",
+    "line number": "12",
+    "func name": "test_can_access_chardet_attribute",
+    "func arg": "()",
+    "comments": ""
+}{
+    "source file": "test_requests.py",
+    "line number": "2372",
+    "func name": "test_urllib3_pool_connection_closed",
+    "func arg": "(httpbin)",
+    "comments": ""
+}{}{}{
+    "source file": "test_utils.py",
+    "line number": "776",
+    "func name": "test_set_environ_raises_exception",
+    "func arg": "()",
+    "comments": "Tests set_environ will raise exceptions in context when the value parameter is None.\n\n\n"
+}{
+    "source file": "utils.py",
+    "line number": "970",
+    "func name": "rewind_body",
+    "func arg": "(prepared_request)",
+    "comments": "Move file pointer back to its recorded starting position so it can be read again on redirect.\n\n\n"
+}{
+    "source file": "utils1.py",
+    "line number": "8",
+    "func name": "override_environ",
+    "func arg": "(**kwargs)",
+    "comments": ""
+}

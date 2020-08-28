@@ -1,0 +1,7 @@
+{
+    "source file": "units.py",
+    "line number": "58",
+    "func name": "_is_natively_supported",
+    "func arg": "(x)",
+    "comments": "Return whether *x* is of a type that Matplotlib natively supports or an array of objects of such types.\n\n\n"
+}

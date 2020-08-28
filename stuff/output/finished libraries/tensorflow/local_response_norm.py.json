@@ -1,0 +1,7 @@
+{
+    "source file": "local_response_norm.py",
+    "line number": "28",
+    "func name": "make_local_response_norm_tests",
+    "func arg": "(options)",
+    "comments": "Make a set of tests to do local_response_norm.\n\n\n"
+}

@@ -1,0 +1,7 @@
+{
+    "source file": "plots.py",
+    "line number": "107",
+    "func name": "lookup",
+    "func arg": "(path, parent, user, exists)",
+    "comments": "Retrieve a plot file from Plotly without needing a fid.\n\nparam (str) path: The '/'-delimited path specifying the file location. :param (int) parent: Parent id, an integer, which the path is relative to. :param (str) user: The username to target files for. Defaults to requestor. :param (bool) exists: If True, don't return the full file, just a flag. :returns: (requests.Response) Returns response directly from requests.\n"
+}

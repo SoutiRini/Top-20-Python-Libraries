@@ -1,0 +1,7 @@
+{
+    "source file": "windows.py",
+    "line number": "68",
+    "func name": "output_subprocess_Popen",
+    "func arg": "(command, **params)",
+    "comments": "Calls subprocess_Popen, returning the output, error and exit code in a tuple.\n\n\n"
+}

@@ -1,0 +1,7 @@
+{
+    "source file": "generalized_linear_model.py",
+    "line number": "53",
+    "func name": "_check_convergence",
+    "func arg": "(criterion, iteration, atol, rtol)",
+    "comments": ""
+}

@@ -1,0 +1,7 @@
+{
+    "source file": "fasttext.py",
+    "line number": "1302",
+    "func name": "save_facebook_model",
+    "func arg": "(model, path, encoding, lr_update_rate, word_ngrams)",
+    "comments": "Saves word embeddings to the Facebook's native fasttext `.bin` format.\n\nNotes ------ Facebook provides both `.vec` and `.bin` files with their modules. The former contains human-readable vectors. The latter contains machine-readable vectors along with other model parameters. **This function saves only the .bin file**.\n\nParameters ---------- model : gensim.models.fasttext.FastText FastText model to be saved. path : str Output path and filename (including `.bin` extension) encoding : str, optional Specifies the file encoding. Defaults to utf-8.\n\nlr_update_rate : int This parameter is used by Facebook fasttext tool, unused by Gensim. It defaults to Facebook fasttext default value `100`. In very rare circumstances you might wish to fiddle with it.\n\nword_ngrams : int This parameter is used by Facebook fasttext tool, unused by Gensim. It defaults to Facebook fasttext default value `1`. In very rare circumstances you might wish to fiddle with it.\n##### Returns\n"
+}

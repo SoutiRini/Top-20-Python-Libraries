@@ -1,0 +1,7 @@
+{
+    "source file": "test_promote1.py",
+    "line number": "607",
+    "func name": "test_maybe_promote_dimensions",
+    "func arg": "(any_numpy_dtype_reduced, dim)",
+    "comments": ""
+}

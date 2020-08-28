@@ -1,0 +1,7 @@
+{
+    "source file": "panel_short.py",
+    "line number": "63",
+    "func name": "whiten_individuals_loop",
+    "func arg": "(x, transform, group_iter)",
+    "comments": "apply linear transform for each individual\n\nloop version\n"
+}

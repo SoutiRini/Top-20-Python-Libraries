@@ -1,0 +1,7 @@
+{
+    "source file": "dataset_ops.py",
+    "line number": "4575",
+    "func name": "_resource_resolver",
+    "func arg": "(op, resource_reads, resource_writes)",
+    "comments": "Updates resource inputs for tf.data ops with indirect dependencies.\n\n\n"
+}

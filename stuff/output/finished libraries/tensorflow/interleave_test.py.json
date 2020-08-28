@@ -1,0 +1,7 @@
+{
+    "source file": "interleave_test.py",
+    "line number": "92",
+    "func name": "_repeat",
+    "func arg": "(values, count)",
+    "comments": "Produces a list of lists suitable for testing interleave.\n\n\n##### Args\n* **values**: for each element `x` the result contains `[x] * x`\n\n* **count**: determines how many times to repeat `[x] * x` in the result\n\n##### Returns\n"
+}

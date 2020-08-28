@@ -1,0 +1,7 @@
+{
+    "source file": "test_half.py",
+    "line number": "9",
+    "func name": "assert_raises_fpe",
+    "func arg": "(strmatch, callable, **kwargs)",
+    "comments": ""
+}

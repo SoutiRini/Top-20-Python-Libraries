@@ -1,0 +1,7 @@
+{
+    "source file": "test_encoders.py",
+    "line number": "694",
+    "func name": "test_encoders_does_not_support_none_values",
+    "func arg": "(Encoder)",
+    "comments": ""
+}

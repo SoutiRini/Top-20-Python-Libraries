@@ -1,0 +1,7 @@
+{
+    "source file": "ftp8.py",
+    "line number": "21",
+    "func name": "ftp_store_file",
+    "func arg": "()",
+    "comments": "Opens a FTP connection with passed credentials,sets current directory to the directory extracted from given path, then uploads the file to server\n\n\n"
+}

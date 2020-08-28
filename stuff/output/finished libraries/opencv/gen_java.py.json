@@ -1,0 +1,7 @@
+{
+    "source file": "gen_java.py",
+    "line number": "1204",
+    "func name": "sanitize_java_documentation_string",
+    "func arg": "(doc, type)",
+    "comments": ""
+}

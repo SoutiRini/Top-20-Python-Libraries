@@ -1,0 +1,7 @@
+{
+    "source file": "hub.py",
+    "line number": "427",
+    "func name": "load_state_dict_from_url",
+    "func arg": "(url, model_dir, map_location, progress, check_hash, file_name)",
+    "comments": "Loads the Torch serialized object at the given URL.\n\nIf downloaded file is a zip file, it will be automatically decompressed.\n\nIf the object is already present in `model_dir`, it's deserialized and returned. The default value of `model_dir` is ``<hub_dir>/checkpoints`` where `hub_dir` is the directory returned by :func:`~torch.hub.get_dir`.\n##### Args\n* **url (string)**: URL of the object to download\n\n* **model_dir (string, optional)**: directory in which to save the object\n\n* **map_location (optional)**: a function or a dict specifying how to remap storage locations (see torch.load)\n\n* **progress (bool, optional)**: whether or not to display a progress bar to stderr.\n    Default\n\n* **check_hash(bool, optional)**: If True, the filename part of the URL should follow the naming convention\n    ``filename-<sha256>.ext`` where ``<sha256>`` is the first eight or more\n    digits of the SHA256 hash of the contents of the file. The hash is used to\n    ensure unique names and to verify the contents of the file.\n    Default\n\n* **file_name (string, optional)**: name for the downloaded file. Filename from `url` will be used if not set.\n\n* **ple**: \n\n* **>>> state_dict = torch.hub.load_state_dict_from_url('https**: //s3.amazonaws.com/pytorch/models/resnet18-5c106cde.pth')\n\n"
+}

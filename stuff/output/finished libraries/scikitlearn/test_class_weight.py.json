@@ -1,0 +1,7 @@
+{
+    "source file": "test_class_weight.py",
+    "line number": "261",
+    "func name": "test_compute_sample_weight_more_than_32",
+    "func arg": "()",
+    "comments": ""
+}

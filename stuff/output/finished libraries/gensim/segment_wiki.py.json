@@ -1,0 +1,7 @@
+{
+    "source file": "segment_wiki.py",
+    "line number": "209",
+    "func name": "segment",
+    "func arg": "(page_xml, include_interlinks)",
+    "comments": "Parse the content inside a page tag\n\nParameters ---------- page_xml : str Content from page tag.\n\ninclude_interlinks : bool Whether or not interlinks should be parsed.\n##### Returns\n"
+}

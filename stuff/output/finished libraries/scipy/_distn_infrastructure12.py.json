@@ -1,0 +1,7 @@
+{
+    "source file": "_distn_infrastructure12.py",
+    "line number": "3634",
+    "func name": "get_distribution_names",
+    "func arg": "(namespace_pairs, rv_base_class)",
+    "comments": "Collect names of statistical distributions and their generators.\n\nParameters ---------- namespace_pairs : sequence A snapshot of (name, value) pairs in the namespace of a module. rv_base_class : class The base class of random variable generator classes in a module.\n##### Returns\n* **distn_names **: list of strings\n    Names of the statistical distributions.\n\n* **distn_gen_names **: list of strings\n    Names of the generators of the statistical distributions.\n    Note that these are not simply the names of the statistical\n    distributions, with a _gen suffix added.\n\n"
+}

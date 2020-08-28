@@ -1,0 +1,7 @@
+{
+    "source file": "_utils3.py",
+    "line number": "453",
+    "func name": "_get_device_index",
+    "func arg": "(device, optional, allow_cpu)",
+    "comments": "Gets the device index from :attr:`device`, which can be a torch.device object, a Python integer, or ``None``.\n\nIf :attr:`device` is a torch.device object, returns the device index if it has index. Note that for a device without a specified index, i.e., ``torch.device('xxx')``, this will return the current default device of that type if :attr:`optional` is ``True``. If :attr:`allow_cpu` is ``True``, CPU devices will be accepted and ``-1`` will be returned in this case.\n\nIf :attr:`device` is a Python integer, it is returned as is.\n\nIf :attr:`device` is ``None``, this will return the current default device of the supported runtime platform if :attr:`optional` is ``True``. i.e., the current default CUDA device will be returned if CUDA runtime is supported.\n"
+}

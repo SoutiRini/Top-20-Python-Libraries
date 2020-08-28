@@ -1,0 +1,7 @@
+{
+    "source file": "_rfe.py",
+    "line number": "28",
+    "func name": "_rfe_single_fit",
+    "func arg": "(rfe, estimator, X, y, train, test, scorer)",
+    "comments": "Return the score for a fit across one fold.\n\n\n"
+}

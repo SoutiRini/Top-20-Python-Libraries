@@ -1,0 +1,7 @@
+{
+    "source file": "attention7.py",
+    "line number": "326",
+    "func name": "apply_soft_coverage_attention",
+    "func arg": "(model, encoder_output_dim, encoder_outputs_transposed, weighted_encoder_outputs, decoder_hidden_state_t, decoder_hidden_state_dim, scope, encoder_lengths, coverage_t_prev, coverage_weights)",
+    "comments": ""
+}

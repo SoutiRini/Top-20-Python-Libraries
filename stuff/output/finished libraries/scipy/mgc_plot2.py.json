@@ -1,0 +1,7 @@
+{
+    "source file": "mgc_plot2.py",
+    "line number": "6",
+    "func name": "mgc_plot",
+    "func arg": "(x, y, mgc_dict)",
+    "comments": "Plot sim and MGC-plot\n\n\n"
+}

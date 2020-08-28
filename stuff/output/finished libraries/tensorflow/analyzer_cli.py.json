@@ -1,0 +1,7 @@
+{
+    "source file": "analyzer_cli.py",
+    "line number": "1582",
+    "func name": "create_analyzer_ui",
+    "func arg": "(debug_dump, tensor_filters, ui_type, on_ui_exit, config)",
+    "comments": "Create an instance of CursesUI based on a DebugDumpDir object.\n\n\n##### Args\n* **debug_dump**: (debug_data.DebugDumpDir) The debug dump to use.\n\n* **tensor_filters**: (dict) A dict mapping tensor filter name (str) to tensor\n  filter (Callable).\n\n* **ui_type**: (str) requested UI type, e.g., \"curses\", \"readline\".\n\n* **on_ui_exit**: (`Callable`) the callback to be called when the UI exits.\n\n* **config**: A `cli_config.CLIConfig` object.\n\n##### Returns\n"
+}

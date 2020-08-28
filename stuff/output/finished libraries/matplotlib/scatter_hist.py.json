@@ -1,0 +1,7 @@
+{
+    "source file": "scatter_hist.py",
+    "line number": "35",
+    "func name": "scatter_hist",
+    "func arg": "(x, y, ax, ax_histx, ax_histy)",
+    "comments": ""
+}

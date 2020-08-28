@@ -1,0 +1,7 @@
+{
+    "source file": "unary_ops_test.py",
+    "line number": "37",
+    "func name": "nhwc_to_format",
+    "func arg": "(x, data_format)",
+    "comments": "Converts a numpy array from NHWC format to `data_format`.\n\n\n"
+}

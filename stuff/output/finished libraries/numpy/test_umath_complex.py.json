@@ -1,0 +1,7 @@
+{
+    "source file": "test_umath_complex.py",
+    "line number": "535",
+    "func name": "check_complex_value",
+    "func arg": "(f, x1, y1, x2, y2, exact)",
+    "comments": ""
+}

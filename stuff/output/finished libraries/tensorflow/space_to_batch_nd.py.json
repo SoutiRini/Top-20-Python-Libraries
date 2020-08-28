@@ -1,0 +1,7 @@
+{
+    "source file": "space_to_batch_nd.py",
+    "line number": "28",
+    "func name": "make_space_to_batch_nd_tests",
+    "func arg": "(options)",
+    "comments": "Make a set of tests to do space_to_batch_nd.\n\n\n"
+}

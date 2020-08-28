@@ -1,0 +1,7 @@
+{
+    "source file": "random_grad.py",
+    "line number": "139",
+    "func name": "_StatelessParameterizedTruncatedNormalGrad",
+    "func arg": "(op, grad)",
+    "comments": "Returns the gradient of a TruncatedNormal sample w.r.t. parameters.\n\nThe gradient is computed using implicit differentiation (Figurnov et al., 2018).\n##### Args\n* **op**: A `StatelessParameterizedTruncatedNormal` operation. We assume that the\n  inputs to the operation are `shape`, `seed`, `mean`, `stddev`, `minval`,\n  and `maxval` tensors, and the output is the `sample` tensor.\n\n* **grad**: The incoming gradient `dloss / dsample` of the same shape as\n  `op.outputs[0]`.\n\n##### Returns\n* **ferences**: \n\n* **Implicit Reparameterization Gradients**: [Figurnov et al., 2018]\n  (http\n\n"
+}

@@ -1,0 +1,7 @@
+{
+    "source file": "core.py",
+    "line number": "28",
+    "func name": "_status_to_exception",
+    "func arg": "(code, message)",
+    "comments": ""
+}

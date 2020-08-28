@@ -1,0 +1,7 @@
+{
+    "source file": "extension1.py",
+    "line number": "175",
+    "func name": "_maybe_unwrap_index",
+    "func arg": "(obj)",
+    "comments": "If operating against another Index object, we need to unwrap the underlying data before deferring to the DatetimeArray/TimedeltaArray/PeriodArray implementation, otherwise we will incorrectly return NotImplemented.\n\nParameters ---------- obj : object\n##### Returns\n"
+}

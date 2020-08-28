@@ -1,0 +1,7 @@
+{
+    "source file": "gradient_checker.py",
+    "line number": "60",
+    "func name": "_assert_close",
+    "func arg": "(value1, value2, threshold, err_msg)",
+    "comments": ""
+}

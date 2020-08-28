@@ -1,0 +1,7 @@
+{
+    "source file": "sparse_to_dense_op_test.py",
+    "line number": "31",
+    "func name": "_SparseToDense",
+    "func arg": "(sparse_indices, output_size, sparse_values, default_value, validate_indices)",
+    "comments": ""
+}

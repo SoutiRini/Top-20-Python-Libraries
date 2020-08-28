@@ -1,0 +1,7 @@
+{
+    "source file": "symbolic_registry.py",
+    "line number": "98",
+    "func name": "get_registered_op",
+    "func arg": "(opname, domain, version)",
+    "comments": ""
+}

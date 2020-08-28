@@ -1,0 +1,7 @@
+{
+    "source file": "backend_cairo.py",
+    "line number": "74",
+    "func name": "_cairo_font_args_from_font_prop",
+    "func arg": "(prop)",
+    "comments": "Convert a `.FontProperties` or a `.FontEntry` to arguments that can be passed to `.Context.select_font_face`.\n\n\n"
+}

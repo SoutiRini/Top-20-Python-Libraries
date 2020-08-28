@@ -1,0 +1,7 @@
+{
+    "source file": "contingency_tables.py",
+    "line number": "1356",
+    "func name": "cochrans_q",
+    "func arg": "(x, return_object)",
+    "comments": "Cochran's Q test for identical binomial proportions.\n\nParameters ---------- x : array_like, 2d (N, k) data with N cases and k variables return_object : bool Return values as bunch instead of as individual values.\n##### Returns\n* **statistic **: float\n   test statistic\n\n* **pvalue **: float\n   pvalue from the chisquare distribution\n\n* **https**: //en.wikipedia.org/wiki/Cochran_test\n\n"
+}

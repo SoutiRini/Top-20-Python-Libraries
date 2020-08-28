@@ -1,0 +1,7 @@
+{
+    "source file": "recursive_ls67.py",
+    "line number": "104",
+    "func name": "ewma",
+    "func arg": "(series, beta, n_window)",
+    "comments": ""
+}

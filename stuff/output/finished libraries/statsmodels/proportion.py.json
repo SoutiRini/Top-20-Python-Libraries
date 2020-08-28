@@ -1,0 +1,7 @@
+{
+    "source file": "proportion.py",
+    "line number": "2045",
+    "func name": "_confint_riskratio_paired_nam",
+    "func arg": "(table, alpha)",
+    "comments": "confidence interval for marginal risk ratio for matched pairs\n\nneed full table\n\nsuccess fail\n\nmarginal success\n\n\n\nx11\n\n\n\nx10\n\nx1. fail\n\n\n\n\n\n x01\n\n\n\nx00\n\nx0. marginal\n\n x.1\n\n\n\nx.0\n\n n\n\nThe confidence interval is for the ratio p1 / p0 where p1 = x1. / n and p0\n\n- x.1 / n Todo: rename p1 to pa and p2 to pb, so we have a, b for treatment and 0, 1 for success/failure\n\ncurrent namings follow Nam 2009\n\nstatus testing: compared to example in Nam 2009 internal polynomial coefficients in calculation correspond at around 4 decimals confidence interval agrees only at 2 decimals\n"
+}

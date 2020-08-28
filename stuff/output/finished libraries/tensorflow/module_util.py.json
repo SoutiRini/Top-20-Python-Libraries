@@ -1,0 +1,7 @@
+{
+    "source file": "module_util.py",
+    "line number": "33",
+    "func name": "get_parent_dir_for_name",
+    "func arg": "(module_name)",
+    "comments": "Get parent directory for module with the given name.\n\n\n##### Args\n* **module_name**: Module name for e.g.\n  tensorflow_estimator.python.estimator.api._v1.estimator.\n\n##### Returns\n* **Given example above, it should return**: /pathtoestimator/tensorflow_estimator/python/estimator/api/_v1.\n\n"
+}

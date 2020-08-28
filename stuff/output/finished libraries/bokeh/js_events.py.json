@@ -1,0 +1,7 @@
+{
+    "source file": "js_events.py",
+    "line number": "14",
+    "func name": "display_event",
+    "func arg": "(div, attributes)",
+    "comments": "Function to build a suitable CustomJS to display the current event in the div model.\n\n\n"
+}

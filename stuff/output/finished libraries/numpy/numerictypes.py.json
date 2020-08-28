@@ -1,0 +1,7 @@
+{
+    "source file": "numerictypes.py",
+    "line number": "568",
+    "func name": "find_common_type",
+    "func arg": "(array_types, scalar_types)",
+    "comments": "Determine common type following standard coercion rules.\n\nParameters ---------- array_types : sequence A list of dtypes or dtype convertible objects representing arrays. scalar_types : sequence A list of dtypes or dtype convertible objects representing scalars.\n##### Returns\n* **datatype **: dtype\n    The common data type, which is the maximum of `array_types` ignoring\n    `scalar_types`, unless the maximum of `scalar_types` is of a\n    different kind (`dtype.kind`). If the kind is not understood, then\n    None is returned.\n\n* **the array**: \n\n* **`array_types` argument**: \n\n* **be used instead of dtypes**: \n\n"
+}

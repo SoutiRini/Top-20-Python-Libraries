@@ -1,0 +1,7 @@
+{
+    "source file": "test_multiprocessing_spawn.py",
+    "line number": "58",
+    "func name": "test_nested",
+    "func arg": "(i, pids_queue, nested_child_sleep, start_method)",
+    "comments": ""
+}

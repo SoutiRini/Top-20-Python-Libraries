@@ -1,0 +1,7 @@
+{
+    "source file": "hdpmodel.py",
+    "line number": "104",
+    "func name": "lda_e_step",
+    "func arg": "(doc_word_ids, doc_word_counts, alpha, beta, max_iter)",
+    "comments": "Performs EM-iteration on a single document for calculation of likelihood for a maximum iteration of `max_iter`.\n\nParameters ---------- doc_word_ids : int Id of corresponding words in a document. doc_word_counts : int Count of words in a single document. alpha : numpy.ndarray Lda equivalent value of alpha. beta : numpy.ndarray Lda equivalent value of beta. max_iter : int, optional Maximum number of times the expectation will be maximised.\n##### Returns\n* **(numpy.ndarray, numpy.ndarray)\n    Computed (**: math\n\n"
+}

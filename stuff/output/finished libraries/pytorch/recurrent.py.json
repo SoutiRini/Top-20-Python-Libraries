@@ -1,0 +1,7 @@
+{
+    "source file": "recurrent.py",
+    "line number": "305",
+    "func name": "retrieve_step_blobs",
+    "func arg": "(net, prefix)",
+    "comments": "Retrieves blobs from step workspaces (which contain intermediate recurrent network computation for each timestep) and puts them in the global workspace. This allows access to the contents of this intermediate computation in python. Returns the list of extracted blob names.\n\nnet: the net from which the step workspace blobs should be extracted\n\nprefix: prefix to append to extracted blob names when placing them in the global workspace\n"
+}

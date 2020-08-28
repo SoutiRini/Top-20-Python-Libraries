@@ -1,0 +1,7 @@
+{
+    "source file": "wrappers.py",
+    "line number": "95",
+    "func name": "notify_owner",
+    "func arg": "(func)",
+    "comments": "A decorator for mutating methods of property container classes that notifies owners of the property container about mutating changes.\n\n\n##### Args\n* **func (callable) **: the container method to wrap in a notification\n\n##### Returns\n* **ples**: \n\n* **A ``__setitem__`` could be wrapped like this**: \n\n* **.. code-block**: \n\n"
+}

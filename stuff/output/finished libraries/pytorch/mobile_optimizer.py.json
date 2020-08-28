@@ -1,0 +1,7 @@
+{
+    "source file": "mobile_optimizer.py",
+    "line number": "44",
+    "func name": "generate_mobile_module_lints",
+    "func arg": "(script_module)",
+    "comments": "Args: script_module: An instance of torch script module with type of ScriptModule\n\n\n##### Returns\n* **lint_map**: A list of dictionary that contains modules lints\n\n"
+}

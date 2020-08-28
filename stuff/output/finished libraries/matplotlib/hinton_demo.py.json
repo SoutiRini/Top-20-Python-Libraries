@@ -1,0 +1,7 @@
+{
+    "source file": "hinton_demo.py",
+    "line number": "17",
+    "func name": "hinton",
+    "func arg": "(matrix, max_weight, ax)",
+    "comments": "Draw Hinton diagram for visualizing a weight matrix.\n\n\n"
+}

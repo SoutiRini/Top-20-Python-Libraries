@@ -1,0 +1,7 @@
+{
+    "source file": "_omp.py",
+    "line number": "684",
+    "func name": "_omp_path_residues",
+    "func arg": "(X_train, y_train, X_test, y_test, copy, fit_intercept, normalize, max_iter)",
+    "comments": "Compute the residues on left-out data for a full LARS path\n\nParameters ---------- X_train : array, shape (n_samples, n_features) The data to fit the LARS on\n\ny_train : array, shape (n_samples) The target variable to fit LARS on\n\nX_test : array, shape (n_samples, n_features) The data to compute the residues on\n\ny_test : array, shape (n_samples) The target variable to compute the residues on\n\ncopy : boolean, optional Whether X_train, X_test, y_train and y_test should be copied.\n\nIf False, they may be overwritten.\n\nfit_intercept : boolean whether to calculate the intercept for this model. If set to false, no intercept will be used in calculations (i.e. data is expected to be centered).\n\nnormalize : boolean, optional, default True This parameter is ignored when ``fit_intercept`` is set to False. If True, the regressors X will be normalized before regression by subtracting the mean and dividing by the l2-norm. If you wish to standardize, please use :class:`~sklearn.preprocessing.StandardScaler` before calling ``fit`` on an estimator with ``normalize=False``.\n\nmax_iter : integer, optional Maximum numbers of iterations to perform, therefore maximum features to include. 100 by default.\n##### Returns\n* **residues **: array, shape (n_samples, max_features)\n    Residues of the prediction on the test data\n\n"
+}

@@ -1,0 +1,7 @@
+{
+    "source file": "matmul_op_test.py",
+    "line number": "115",
+    "func name": "_GetMatMulGradientTest",
+    "func arg": "(a_np_, b_np_, use_static_shape_, **kwargs_)",
+    "comments": ""
+}

@@ -1,0 +1,7 @@
+{
+    "source file": "backend_qt5.py",
+    "line number": "138",
+    "func name": "_allow_super_init",
+    "func arg": "(__init__)",
+    "comments": "Decorator for ``__init__`` to allow ``super().__init__`` on PyQt4/PySide2.\n\n\n"
+}

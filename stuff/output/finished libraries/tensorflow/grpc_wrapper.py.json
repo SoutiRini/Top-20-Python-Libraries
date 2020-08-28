@@ -1,0 +1,7 @@
+{
+    "source file": "grpc_wrapper.py",
+    "line number": "154",
+    "func name": "register_signal_handler",
+    "func arg": "()",
+    "comments": ""
+}

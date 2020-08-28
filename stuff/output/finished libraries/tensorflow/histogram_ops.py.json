@@ -1,0 +1,7 @@
+{
+    "source file": "histogram_ops.py",
+    "line number": "104",
+    "func name": "histogram_fixed_width",
+    "func arg": "(values, value_range, nbins, dtype, name)",
+    "comments": "Return histogram of values.\n\nGiven the tensor `values`, this operation returns a rank 1 histogram counting the number of entries in `values` that fell into every bin.\n\nThe bins are equal width and determined by the arguments `value_range` and `nbins`.\n##### Args\n* **values**: Numeric `Tensor`.\n\n* **value_range**: Shape [2] `Tensor` of same `dtype` as `values`.\n  values <= value_range[0] will be mapped to hist[0],\n  values >= value_range[1] will be mapped to hist[-1].\n\n* **nbins**: Scalar `int32 Tensor`.  Number of histogram bins.\n\n* **dtype**: dtype for returned histogram.\n\n* **name**: A name for this operation (defaults to 'histogram_fixed_width').\n\n##### Returns\n"
+}

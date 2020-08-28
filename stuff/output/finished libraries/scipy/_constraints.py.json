@@ -1,0 +1,7 @@
+{
+    "source file": "_constraints.py",
+    "line number": "426",
+    "func name": "old_constraint_to_new",
+    "func arg": "(ic, con)",
+    "comments": "Converts old-style constraint dictionaries to new-style constraint objects.\n\n\n"
+}

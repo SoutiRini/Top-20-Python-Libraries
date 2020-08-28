@@ -1,0 +1,7 @@
+{
+    "source file": "boolean1.py",
+    "line number": "114",
+    "func name": "coerce_to_array",
+    "func arg": "(values, mask, copy)",
+    "comments": "Coerce the input values array to numpy arrays with a mask.\n\nParameters ---------- values : 1D list-like mask : bool 1D array, optional copy : bool, default False if True, copy the input\n##### Returns\n"
+}

@@ -1,0 +1,7 @@
+{
+    "source file": "leftventricle_bulleye.py",
+    "line number": "15",
+    "func name": "bullseye_plot",
+    "func arg": "(ax, data, seg_bold, cmap, norm)",
+    "comments": "Bullseye representation for the left ventricle.\n\nParameters ---------- ax : axes data : list of int and float The intensity values for each of the 17 segments seg_bold : list of int, optional A list with the segments to highlight cmap : ColorMap or None, optional Optional argument to set the desired colormap norm : Normalize or None, optional Optional argument to normalize data into the [0.0, 1.0] range\n\nNotes ----- This function creates the 17 segment model for the left ventricle according to the American Heart Association (AHA) [1]_\n\nReferences ---------- .. [1] M. D. Cerqueira, N. J. Weissman, V. Dilsizian, A. K. Jacobs, S. Kaul, W. K. Laskey, D. J. Pennell, J. A. Rumberger, T. Ryan, and M. S. Verani, \"Standardized myocardial segmentation and nomenclature for tomographic imaging of the heart\", Circulation, vol. 105, no. 4, pp. 539-542, 2002.\n"
+}

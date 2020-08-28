@@ -1,0 +1,7 @@
+{
+    "source file": "abstract_conv.py",
+    "line number": "1864",
+    "func name": "bilinear_upsampling",
+    "func arg": "(input, ratio, frac_ratio, batch_size, num_input_channels, use_1D_kernel)",
+    "comments": "Compute bilinear upsampling This function will build the symbolic graph for upsampling a tensor by the given ratio using bilinear interpolation.\n\nParameters ---------- input: symbolic 4D tensor mini-batch of feature map stacks, of shape (batch size, input channels, input rows, input columns) that will be upsampled. ratio: `int or Constant or Scalar Tensor of int* dtype` the ratio by which the input is upsampled in the 2D space (row and col size). frac_ratio: None, tuple of int or tuple of tuples of int The tuple defining the fractional ratio by which the input is upsampled in the 2D space. One fractional ratio should be represented as (numerator, denominator). If row and col ratios are different frac_ratio should be a tuple of fractional ratios, i.e a tuple of tuples. use_1D_kernel: bool if set to true, row and column will be upsampled separately by 1D kernels, otherwise they are upsampled together using a 2D kernel. The final result is the same, only the speed can differ, given factors such as upsampling ratio.\n##### Returns\n* ****: note\n\n"
+}

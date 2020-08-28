@@ -1,0 +1,7 @@
+{
+    "source file": "_decomp_polar.py",
+    "line number": "8",
+    "func name": "polar",
+    "func arg": "(a, side)",
+    "comments": "Compute the polar decomposition.\n\n\n##### Returns\n* **u **: (m, n) ndarray\n    If `a` is square, then `u` is unitary. If m > n, then the columns\n    of `a` are orthonormal, and if m < n, then the rows of `u` are\n    orthonormal.\n\n* **p **: ndarray\n    `p` is Hermitian positive semidefinite. If `a` is nonsingular, `p`\n    is positive definite. The shape of `p` is (n, n) or (m, m), depending\n    on whether `side` is \"right\" or \"left\", respectively.\n\n* **.. [2] N. J. Higham, \"Functions of Matrices**: Theory and Computation\",\n       SIAM, 2008.\n\n* **A non-square example, with m < n**: \n\n* **Another non-square example, with m > n**: \n\n"
+}

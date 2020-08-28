@@ -1,0 +1,7 @@
+{
+    "source file": "input_data1.py",
+    "line number": "160",
+    "func name": "get_features_range",
+    "func arg": "(model_settings)",
+    "comments": "Returns the expected min/max for generated features.\n\n\n##### Args\n* **model_settings**: Information about the current model being trained.\n\n##### Returns\n"
+}

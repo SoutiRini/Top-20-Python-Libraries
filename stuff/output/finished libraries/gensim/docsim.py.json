@@ -1,0 +1,7 @@
+{
+    "source file": "docsim.py",
+    "line number": "236",
+    "func name": "_nlargest",
+    "func arg": "(n, iterable)",
+    "comments": "Helper for extracting n documents with maximum similarity.\n\nParameters ---------- n : int Number of elements to be extracted iterable : iterable of list of (int, float) Iterable containing documents with computed similarities\n##### Returns\n* ****: class\n\n"
+}

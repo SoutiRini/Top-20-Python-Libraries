@@ -1,0 +1,7 @@
+{
+    "source file": "test_na_scalar1.py",
+    "line number": "289",
+    "func name": "test_pickle_roundtrip_containers",
+    "func arg": "(as_frame, values, dtype)",
+    "comments": ""
+}

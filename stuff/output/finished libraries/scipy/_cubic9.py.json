@@ -1,0 +1,7 @@
+{
+    "source file": "_cubic9.py",
+    "line number": "302",
+    "func name": "pchip_interpolate",
+    "func arg": "(xi, yi, x, der, axis)",
+    "comments": "Convenience function for pchip interpolation.\n\nxi and yi are arrays of values used to approximate some function f, with ``yi = f(xi)``. The interpolant uses monotonic cubic splines to find the value of new points x and the derivatives there.\n\nSee `scipy.interpolate.PchipInterpolator` for details.\n\nParameters ---------- xi : array_like A sorted list of x-coordinates, of length N. yi :\n\narray_like A 1-D array of real values. `yi`'s length along the interpolation axis must be equal to the length of `xi`. If N-D array, use axis parameter to select correct axis. x : scalar or array_like Of length M. der : int or list, optional Derivatives to extract. The 0th derivative can be included to return the function value. axis : int, optional Axis in the yi array corresponding to the x-coordinate values.\n\nSee Also -------- PchipInterpolator : PCHIP 1-D monotonic cubic interpolator.\n##### Returns\n* **y **: scalar or array_like\n    The result, of length R or length M or M by R,\n\n* **We can interpolate 2D observed data using pchip interpolation**: \n\n"
+}

@@ -1,0 +1,7 @@
+{
+    "source file": "_quad_vec.py",
+    "line number": "588",
+    "func name": "_quadrature_gk15",
+    "func arg": "(a, b, f, norm_func)",
+    "comments": "Gauss-Kronrod 15 quadrature with error estimate\n\n\n"
+}

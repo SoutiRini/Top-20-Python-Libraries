@@ -1,0 +1,7 @@
+{
+    "source file": "ops_test1.py",
+    "line number": "3022",
+    "func name": "_calc_a_forward_flops",
+    "func arg": "(unused_graph, unused_node)",
+    "comments": ""
+}

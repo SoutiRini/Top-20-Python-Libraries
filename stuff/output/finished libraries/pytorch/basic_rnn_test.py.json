@@ -1,0 +1,7 @@
+{
+    "source file": "basic_rnn_test.py",
+    "line number": "18",
+    "func name": "basic_rnn_reference",
+    "func arg": "(input, hidden_initial, i2h_w, i2h_b, gate_w, gate_b, seq_lengths, drop_states, use_sequence_lengths)",
+    "comments": ""
+}

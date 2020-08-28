@@ -1,0 +1,7 @@
+{
+    "source file": "profile_analyzer_cli_test.py",
+    "line number": "66",
+    "func name": "_assert_no_lines_match",
+    "func arg": "(pattern, lines)",
+    "comments": ""
+}

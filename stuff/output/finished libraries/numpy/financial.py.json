@@ -1,0 +1,7 @@
+{
+    "source file": "financial.py",
+    "line number": "921",
+    "func name": "mirr",
+    "func arg": "(values, finance_rate, reinvest_rate)",
+    "comments": "Modified internal rate of return.\n\n.. deprecated:: 1.18\n\n`mirr` is deprecated; for details, see NEP 32 [1]_. Use the corresponding function in the numpy-financial library, https://pypi.org/project/numpy-financial.\n\nParameters ---------- values : array_like Cash flows (must contain at least one positive and one negative value) or nan is returned.\n\nThe first value is considered a sunk cost at time zero. finance_rate : scalar Interest rate paid on the cash flows reinvest_rate : scalar Interest rate received on the cash flows upon reinvestment\n##### Returns\n* **out **: float\n    Modified internal rate of return\n\n* **.. [1] NumPy Enhancement Proposal (NEP) 32,\n   https**: //numpy.org/neps/nep-0032-remove-financial-functions.html\n\n"
+}

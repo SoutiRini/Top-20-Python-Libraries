@@ -1,0 +1,7 @@
+{
+    "source file": "cyclical.py",
+    "line number": "17",
+    "func name": "swatches_cyclical",
+    "func arg": "(template)",
+    "comments": "Parameters ---------- template : str or dict or plotly.graph_objects.layout.Template instance The figure template name or definition.\n\n\n##### Returns\n* **fig **: graph_objects.Figure containing the displayed image\n    A `Figure` object. This figure demonstrates the color scales and\n    sequences in this module, as polar bar charts.\n\n"
+}

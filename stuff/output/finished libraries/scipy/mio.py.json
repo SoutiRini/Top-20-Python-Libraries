@@ -1,0 +1,7 @@
+{
+    "source file": "mio.py",
+    "line number": "302",
+    "func name": "whosmat",
+    "func arg": "(file_name, appendmat, **kwargs)",
+    "comments": "List variables inside a MATLAB file.\n\nParameters ---------- %(file_arg)s %(append_arg)s %(load_args)s %(struct_arg)s\n##### Returns\n* **variables **: list of tuples\n    A list of tuples, where each tuple holds the matrix name (a string),\n    its shape (tuple of ints), and its data class (a string).\n    Possible data classes are\n\n* **.. versionadded**: \n\n"
+}

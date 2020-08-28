@@ -1,0 +1,7 @@
+{
+    "source file": "lengths_reducer_rowwise_8bit_ops_test.py",
+    "line number": "12",
+    "func name": "FakeQuantization8BitsRowwise",
+    "func arg": "(data)",
+    "comments": ""
+}

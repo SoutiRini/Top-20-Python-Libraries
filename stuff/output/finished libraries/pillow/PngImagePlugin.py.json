@@ -1,0 +1,7 @@
+{
+    "source file": "PngImagePlugin.py",
+    "line number": "1325",
+    "func name": "getchunks",
+    "func arg": "(im, **params)",
+    "comments": "Return a list of PNG chunks representing this image.\n\n\n"
+}

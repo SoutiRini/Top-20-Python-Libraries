@@ -1,0 +1,7 @@
+{
+    "source file": "einsum_dense.py",
+    "line number": "240",
+    "func name": "_analyze_split_string",
+    "func arg": "(split_string, bias_axes, input_shape, output_shape, left_elided)",
+    "comments": "Analyze an pre-split einsum string to find the weight shape.\n\n\n"
+}

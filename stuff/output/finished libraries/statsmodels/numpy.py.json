@@ -1,0 +1,7 @@
+{
+    "source file": "numpy.py",
+    "line number": "68",
+    "func name": "lstsq",
+    "func arg": "(a, b, rcond)",
+    "comments": "Shim that allows modern rcond setting with backward compat for NumPY earlier than 1.14\n\n\n"
+}

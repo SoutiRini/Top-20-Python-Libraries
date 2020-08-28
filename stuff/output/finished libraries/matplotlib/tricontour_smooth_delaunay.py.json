@@ -1,0 +1,7 @@
+{
+    "source file": "tricontour_smooth_delaunay.py",
+    "line number": "35",
+    "func name": "experiment_res",
+    "func arg": "(x, y)",
+    "comments": "An analytic function representing experiment results.\n\n\n"
+}

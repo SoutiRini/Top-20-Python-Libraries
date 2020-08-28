@@ -1,0 +1,7 @@
+{
+    "source file": "templates.py",
+    "line number": "70",
+    "func name": "get_env",
+    "func arg": "()",
+    "comments": "Get the correct Jinja2 Environment, also for frozen scripts.\n\n\n"
+}

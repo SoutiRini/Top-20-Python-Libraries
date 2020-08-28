@@ -1,0 +1,7 @@
+{
+    "source file": "ragged_factory_ops.py",
+    "line number": "318",
+    "func name": "placeholder",
+    "func arg": "(dtype, ragged_rank, value_shape, name)",
+    "comments": "Creates a placeholder for a `tf.RaggedTensor` that will always be fed.\n\n**Important**: This ragged tensor will produce an error if evaluated. Its value must be fed using the `feed_dict` optional argument to `Session.run()`, `Tensor.eval()`, or `Operation.run()`.\n\n@compatibility{eager} Placeholders are not compatible with eager execution.\n##### Args\n* **dtype**: The data type for the `RaggedTensor`.\n\n* **ragged_rank**: The ragged rank for the `RaggedTensor`\n\n* **value_shape**: The shape for individual flat values in the `RaggedTensor`.\n\n* **name**: A name for the operation (optional).\n\n##### Returns\n"
+}

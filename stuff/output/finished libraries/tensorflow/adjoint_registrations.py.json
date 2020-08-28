@@ -1,0 +1,7 @@
+{
+    "source file": "adjoint_registrations.py",
+    "line number": "133",
+    "func name": "_adjoint_householder",
+    "func arg": "(householder_operator)",
+    "comments": ""
+}

@@ -1,0 +1,7 @@
+{
+    "source file": "loader.py",
+    "line number": "70",
+    "func name": "load_ast",
+    "func arg": "(nodes, indentation, include_source_map, delete_on_exit)",
+    "comments": "Loads the given AST as a Python module.\n\nCompiling the AST code this way ensures that the source code is readable by e.g. `pdb` or `inspect`.\n##### Args\n* **nodes**: Union[ast.AST, Iterable[ast.AST]], the code to compile, as an AST\n  object.\n\n* **indentation**: Text, the string to use for indentation.\n\n* **include_source_map**: bool, whether return a source map.\n\n* **delete_on_exit**: bool, whether to delete the temporary file used for\n  compilation on exit.\n\n##### Returns\n* **Tuple[module, Text, Dict[LineLocation, OriginInfo]], containing**: \n\n"
+}

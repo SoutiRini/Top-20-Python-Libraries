@@ -1,0 +1,931 @@
+{
+    "source file": "_2d_density.py",
+    "line number": "22",
+    "func name": "create_2d_density",
+    "func arg": "(x, y, colorscale, ncontours, hist_color, point_color, point_size, title, height, width)",
+    "comments": "**deprecated**, use instead :func:`plotly.express.density_heatmap`.\n\nparam (list|array) x: x-axis data for plot generation :param (list|array) y: y-axis data for plot generation :param (str|tuple|list) colorscale: either a plotly scale name, an rgb or hex color, a color tuple or a list or tuple of colors. An rgb color is of the form 'rgb(x, y, z)' where x, y, z belong to the interval [0, 255] and a color tuple is a tuple of the form (a, b, c) where a, b and c belong to [0, 1]. If colormap is a list, it must contain the valid color types aforementioned as its members. :param (int) ncontours: the number of 2D contours to draw on the plot :param (str) hist_color: the color of the plotted histograms :param (str) point_color: the color of the scatter points :param (str) point_size: the color of the scatter points :param (str) title: set the title for the plot :param (float) height: the height of the chart :param (float) width: the width of the chart\n\nExamples --------\n\nExample 1: Simple 2D Density Plot\n\n>>> from plotly.figure_factory import create_2d_density >>> import numpy as np\n\n>>> # Make data points >>> t = np.linspace(-1,1.2,2000) >>> x = (t**3)+(0.3*np.random.randn(2000)) >>> y = (t**6)+(0.3*np.random.randn(2000))\n\n>>> # Create a figure >>> fig = create_2d_density(x, y)\n\n>>> # Plot the data >>> fig.show()\n\nExample 2: Using Parameters\n\n>>> from plotly.figure_factory import create_2d_density\n\n>>> import numpy as np\n\n>>> # Make data points >>> t = np.linspace(-1,1.2,2000) >>> x = (t**3)+(0.3*np.random.randn(2000)) >>> y = (t**6)+(0.3*np.random.randn(2000))\n\n>>> # Create custom colorscale >>> colorscale = ['#7A4579', '#D56073', 'rgb(236,158,105)', ...\n\n\n\n\n\n\n\n\n\n\n\n\n\n(1, 1, 0.2), (0.98,0.98,0.98)]\n\n>>> # Create a figure >>> fig = create_2d_density(x, y, colorscale=colorscale, ...\n\n\n\n\n\n hist_color='rgb(255, 237, 222)', point_size=3)\n\n>>> # Plot the data >>> fig.show()\n"
+}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{
+    "source file": "_annotated_heatmap.py",
+    "line number": "158",
+    "func name": "should_use_black_text",
+    "func arg": "(background_color)",
+    "comments": ""
+}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{
+    "source file": "_base_renderers.py",
+    "line number": "652",
+    "func name": "open_html_in_browser",
+    "func arg": "(html, using, new, autoraise)",
+    "comments": "Display html in a web browser without creating a temp file.\n\nInstantiates a trivial http server and uses the webbrowser module to open a URL to retrieve html from that server.\n\nParameters ---------- html: str HTML string to display using, new, autoraise: See docstrings in webbrowser.get and webbrowser.open\n"
+}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{
+    "source file": "_bullet.py",
+    "line number": "185",
+    "func name": "create_bullet",
+    "func arg": "(data, markers, measures, ranges, subtitles, titles, orientation, range_colors, measure_colors, horizontal_spacing, vertical_spacing, scatter_options, **layout_options)",
+    "comments": "**deprecated**, use instead the plotly.graph_objects trace :class:`plotly.graph_objects.Indicator`.\n\nparam (pd.DataFrame | list | tuple) data: either a list/tuple of dictionaries or a pandas DataFrame. :param (str) markers: the column name or dictionary key for the markers in each subplot. :param (str) measures: the column name or dictionary key for the measure bars in each subplot. This bar usually represents the quantitative measure of performance, usually a list of two values [a, b] and are the blue bars in the foreground of each subplot by default. :param (str) ranges: the column name or dictionary key for the qualitative ranges of performance, usually a 3-item list [bad, okay, good]. They correspond to the grey bars in the background of each chart. :param (str) subtitles: the column name or dictionary key for the subtitle of each subplot chart. The subplots are displayed right underneath each title. :param (str) titles: the column name or dictionary key for the main label of each subplot chart. :param (bool) orientation: if 'h', the bars are placed horizontally as rows. If 'v' the bars are placed vertically in the chart. :param (list) range_colors: a tuple of two colors between which all the rectangles for the range are drawn. These rectangles are meant to be qualitative indicators against which the marker and measure bars are compared. Default=('rgb(200, 200, 200)', 'rgb(245, 245, 245)') :param (list) measure_colors: a tuple of two colors which is used to color the thin quantitative bars in the bullet chart. Default=('rgb(31, 119, 180)', 'rgb(176, 196, 221)') :param (float) horizontal_spacing: see the 'horizontal_spacing' param in plotly.tools.make_subplots. Ranges between 0 and 1. :param (float) vertical_spacing: see the 'vertical_spacing' param in plotly.tools.make_subplots. Ranges between 0 and 1. :param (dict) scatter_options: describes attributes for the scatter trace in each subplot such as name and marker size. Call help(plotly.graph_objs.Scatter) for more information on valid params. :param layout_options: describes attributes for the layout of the figure such as title, height and width. Call help(plotly.graph_objs.Layout) for more information on valid params.\n\nExample 1: Use a Dictionary\n\n>>> import plotly.figure_factory as ff\n\n>>> data = [ ...\n\n {\"label\": \"revenue\", \"sublabel\": \"us$, in thousands\", ...\n\n\n\n\"range\": [150, 225, 300], \"performance\": [220,270], \"point\": [250]}, ...\n\n {\"label\": \"Profit\", \"sublabel\": \"%\", \"range\": [20, 25, 30], ...\n\n\n\n\"performance\": [21, 23], \"point\": [26]}, ...\n\n {\"label\": \"Order Size\", \"sublabel\":\"US$, average\",\"range\": [350, 500, 600], ...\n\n\n\n\"performance\": [100,320],\"point\": [550]}, ...\n\n {\"label\": \"New Customers\", \"sublabel\": \"count\", \"range\": [1400, 2000, 2500], ...\n\n\n\n\"performance\": [1000, 1650],\"point\": [2100]}, ...\n\n {\"label\": \"Satisfaction\", \"sublabel\": \"out of 5\",\"range\": [3.5, 4.25, 5], ...\n\n\n\n\"performance\": [3.2, 4.7], \"point\": [4.4]} ... ]\n\n>>> fig = ff.create_bullet( ...\n\n\n\n data, titles='label', subtitles='sublabel', markers='point', ...\n\n\n\n measures='performance', ranges='range', orientation='h', ...\n\n\n\n title='my simple bullet chart' ... ) >>> fig.show()\n\nExample 2: Use a DataFrame with Custom Colors\n\n>>> import plotly.figure_factory as ff >>> import pandas as pd >>> data = pd.read_json('https://cdn.rawgit.com/plotly/datasets/master/BulletData.json')\n\n>>> fig = ff.create_bullet( ...\n\n\n\n data, titles='title', markers='markers', measures='measures', ...\n\n\n\n orientation='v', measure_colors=['rgb(14, 52, 75)', 'rgb(31, 141, 127)'], ...\n\n\n\n scatter_options={'marker': {'symbol': 'circle'}}, width=700) >>> fig.show()\n"
+}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{
+    "source file": "_candlestick.py",
+    "line number": "100",
+    "func name": "create_candlestick",
+    "func arg": "(open, high, low, close, dates, direction, **kwargs)",
+    "comments": "**deprecated**, use instead the plotly.graph_objects trace :class:`plotly.graph_objects.Candlestick`\n\nparam (list) open: opening values :param (list) high: high values :param (list) low: low values :param (list) close: closing values :param (list) dates: list of datetime objects. Default: None :param (string) direction: direction can be 'increasing', 'decreasing', or 'both'. When the direction is 'increasing', the returned figure consists of all candlesticks where the close value is greater than the corresponding open value, and when the direction is 'decreasing', the returned figure consists of all candlesticks where the close value is less than or equal to the corresponding open value. When the direction is 'both', both increasing and decreasing candlesticks are returned. Default: 'both' :param kwargs: kwargs passed through plotly.graph_objs.Scatter. These kwargs describe other attributes about the ohlc Scatter trace such as the color or the legend name. For more information on valid kwargs call help(plotly.graph_objs.Scatter)\n\n:rtype (dict): returns a representation of candlestick chart figure.\n\nExample 1: Simple candlestick chart from a Pandas DataFrame\n\n>>> from plotly.figure_factory import create_candlestick >>> from datetime import datetime >>> import pandas as pd\n\n>>> df = pd.read_csv('https://raw.githubusercontent.com/plotly/datasets/master/finance-charts-apple.csv') >>> fig = create_candlestick(df['AAPL.Open'], df['AAPL.High'], df['AAPL.Low'], df['AAPL.Close'], ...\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\ndates=df.index) >>> fig.show()\n\nExample 2: Customize the candlestick colors\n\n>>> from plotly.figure_factory import create_candlestick >>> from plotly.graph_objs import Line, Marker >>> from datetime import datetime\n\n>>> import pandas as pd >>> df = pd.read_csv('https://raw.githubusercontent.com/plotly/datasets/master/finance-charts-apple.csv')\n\n>>> # Make increasing candlesticks and customize their color and name >>> fig_increasing = create_candlestick(df['AAPL.Open'], df['AAPL.High'], df['AAPL.Low'], df['AAPL.Close'], ...\n\n\n\n dates=df.index, ...\n\n\n\n direction='increasing', name='AAPL', ...\n\n\n\n marker=Marker(color='rgb(150, 200, 250)'), ...\n\n\n\n line=Line(color='rgb(150, 200, 250)'))\n\n>>> # Make decreasing candlesticks and customize their color and name >>> fig_decreasing = create_candlestick(df['AAPL.Open'], df['AAPL.High'], df['AAPL.Low'], df['AAPL.Close'], ...\n\n\n\n dates=df.index, ...\n\n\n\n direction='decreasing', ...\n\n\n\n marker=Marker(color='rgb(128, 128, 128)'), ...\n\n\n\n line=Line(color='rgb(128, 128, 128)'))\n\n>>> # Initialize the figure >>> fig = fig_increasing\n\n>>> # Add decreasing data with .extend() >>> fig.add_trace(fig_decreasing['data']) # doctest: +SKIP >>> fig.show()\n\nExample 3: Candlestick chart with datetime objects\n\n>>> from plotly.figure_factory import create_candlestick\n\n>>> from datetime import datetime\n\n>>> # Add data >>> open_data = [33.0, 33.3, 33.5, 33.0, 34.1] >>> high_data = [33.1, 33.3, 33.6, 33.2, 34.8] >>> low_data = [32.7, 32.7, 32.8, 32.6, 32.8] >>> close_data = [33.0, 32.9, 33.3, 33.1, 33.1] >>> dates = [datetime(year=2013, month=10, day=10), ...\n\n\n\n\n\n\n\n\n\ndatetime(year=2013, month=11, day=10), ...\n\n\n\n\n\n\n\n\n\ndatetime(year=2013, month=12, day=10), ...\n\n\n\n\n\n\n\n\n\ndatetime(year=2014, month=1, day=10), ...\n\n\n\n\n\n\n\n\n\ndatetime(year=2014, month=2, day=10)]\n\n>>> # Create ohlc >>> fig = create_candlestick(open_data, high_data, ...\n\n\n\n low_data, close_data, dates=dates) >>> fig.show()\n"
+}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{
+    "source file": "_chart_types.py",
+    "line number": "1503",
+    "func name": "funnel_area",
+    "func arg": "(data_frame, names, values, color, color_discrete_sequence, color_discrete_map, hover_name, hover_data, custom_data, labels, title, template, width, height, opacity)",
+    "comments": "In a funnel area plot, each row of `data_frame` is represented as a trapezoidal sector of a funnel.\n\n\n"
+}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{
+    "source file": "_core.py",
+    "line number": "2068",
+    "func name": "init_figure",
+    "func arg": "(args, subplot_type, frame_list, nrows, ncols, col_labels, row_labels)",
+    "comments": ""
+}{}{}{}{}{}{}{}{}{}{
+    "source file": "_county_choropleth.py",
+    "line number": "396",
+    "func name": "create_choropleth",
+    "func arg": "(fips, values, scope, binning_endpoints, colorscale, order, simplify_county, simplify_state, asp, show_hover, show_state_data, state_outline, county_outline, centroid_marker, round_legend_values, exponent_format, legend_title, **layout_options)",
+    "comments": "Returns figure for county choropleth. Uses data from package_data.\n\nparam (list) fips: list of FIPS values which correspond to the con catination of state and county ids. An example is '01001'. :param (list) values: list of numbers/strings which correspond to the fips list. These are the values that will determine how the counties are colored. :param (list) scope: list of states and/or states abbreviations. Fits all states in the camera tightly. Selecting ['usa'] is the equivalent of appending all 50 states into your scope list. Selecting only 'usa' does not include 'Alaska', 'Puerto Rico', 'American Samoa', 'Commonwealth of the Northern Mariana Islands', 'Guam', 'United States Virgin Islands'. These must be added manually to the list. Default = ['usa'] :param (list) binning_endpoints: ascending numbers which implicitly define real number intervals which are used as bins. The colorscale used must have the same number of colors as the number of bins and this will result in a categorical colormap. :param (list) colorscale: a list of colors with length equal to the number of categories of colors. The length must match either all unique numbers in the 'values' list or if endpoints is being used, the number of categories created by the endpoints.\n\nFor example, if binning_endpoints = [4, 6, 8], then there are 4 bins: [-inf, 4), [4, 6), [6, 8), [8, inf) :param (list) order: a list of the unique categories (numbers/bins) in any desired order. This is helpful if you want to order string values to a chosen colorscale. :param (float) simplify_county: determines the simplification factor for the counties. The larger the number, the fewer vertices and edges each polygon has. See http://toblerity.org/shapely/manual.html#object.simplify for more information. Default = 0.02 :param (float) simplify_state: simplifies the state outline polygon. See http://toblerity.org/shapely/manual.html#object.simplify for more information. Default = 0.02 :param (float) asp: the width-to-height aspect ratio for the camera. Default = 2.5 :param (bool) show_hover: show county hover and centroid info :param (bool) show_state_data: reveals state boundary lines :param (dict) state_outline: dict of attributes of the state outline including width and color. See https://plot.ly/python/reference/#scatter-marker-line for all valid params :param (dict) county_outline: dict of attributes of the county outline including width and color. See https://plot.ly/python/reference/#scatter-marker-line for all valid params :param (dict) centroid_marker: dict of attributes of the centroid marker. The centroid markers are invisible by default and appear visible on selection. See https://plot.ly/python/reference/#scatter-marker for all valid params :param (bool) round_legend_values: automatically round the numbers that appear in the legend to the nearest integer. Default = False :param (bool) exponent_format: if set to True, puts numbers in the K, M, B number format. For example 4000.0 becomes 4.0K Default = False :param (str) legend_title: title that appears above the legend :param **layout_options: a **kwargs argument for all layout parameters\n\n Example 1: Florida::\n\nimport plotly.plotly as py import plotly.figure_factory as ff\n\nimport numpy as np import pandas as pd\n\ndf_sample = pd.read_csv( 'https://raw.githubusercontent.com/plotly/datasets/master/minoritymajority.csv' ) df_sample_r = df_sample[df_sample['STNAME'] == 'Florida']\n\nvalues = df_sample_r['TOT_POP'].tolist() fips = df_sample_r['FIPS'].tolist()\n\nbinning_endpoints = list(np.mgrid[min(values):max(values):4j]) colorscale = [\"#030512\",\"#1d1d3b\",\"#323268\",\"#3d4b94\",\"#3e6ab0\", \"#4989bc\",\"#60a7c7\",\"#85c5d3\",\"#b7e0e4\",\"#eafcfd\"] fig = ff.create_choropleth( fips=fips, values=values, scope=['Florida'], show_state_data=True, colorscale=colorscale, binning_endpoints=binning_endpoints, round_legend_values=True, plot_bgcolor='rgb(229,229,229)', paper_bgcolor='rgb(229,229,229)', legend_title='Florida Population', county_outline={'color': 'rgb(255,255,255)', 'width': 0.5}, exponent_format=True, )\n\nExample 2: New England::\n\nimport plotly.figure_factory as ff\n\nimport pandas as pd\n\nNE_states = ['Connecticut', 'Maine', 'Massachusetts', 'New Hampshire', 'Rhode Island'] df_sample = pd.read_csv( 'https://raw.githubusercontent.com/plotly/datasets/master/minoritymajority.csv' ) df_sample_r = df_sample[df_sample['STNAME'].isin(NE_states)] colorscale = ['rgb(68.0, 1.0, 84.0)', 'rgb(66.0, 64.0, 134.0)', 'rgb(38.0, 130.0, 142.0)', 'rgb(63.0, 188.0, 115.0)', 'rgb(216.0, 226.0, 25.0)']\n\nvalues = df_sample_r['TOT_POP'].tolist() fips = df_sample_r['FIPS'].tolist() fig = ff.create_choropleth( fips=fips, values=values, scope=NE_states, show_state_data=True ) fig.show()\n\nExample 3: California and Surrounding States::\n\nimport plotly.figure_factory as ff\n\nimport pandas as pd\n\ndf_sample = pd.read_csv( 'https://raw.githubusercontent.com/plotly/datasets/master/minoritymajority.csv' ) df_sample_r = df_sample[df_sample['STNAME'] == 'California']\n\nvalues = df_sample_r['TOT_POP'].tolist() fips = df_sample_r['FIPS'].tolist()\n\ncolorscale = [ 'rgb(193, 193, 193)', 'rgb(239,239,239)', 'rgb(195, 196, 222)', 'rgb(144,148,194)', 'rgb(101,104,168)', 'rgb(65, 53, 132)' ]\n\nfig = ff.create_choropleth( fips=fips, values=values, colorscale=colorscale, scope=['CA', 'AZ', 'Nevada', 'Oregon', ' Idaho'], binning_endpoints=[14348, 63983, 134827, 426762, 2081313], county_outline={'color': 'rgb(255,255,255)', 'width': 0.5}, legend_title='California Counties', title='California and Nearby States' ) fig.show()\n\nExample 4: USA::\n\nimport plotly.figure_factory as ff\n\nimport numpy as np import pandas as pd\n\ndf_sample = pd.read_csv( 'https://raw.githubusercontent.com/plotly/datasets/master/laucnty16.csv' ) df_sample['State FIPS Code'] = df_sample['State FIPS Code'].apply( lambda x: str(x).zfill(2) ) df_sample['County FIPS Code'] = df_sample['County FIPS Code'].apply( lambda x: str(x).zfill(3) ) df_sample['FIPS'] = ( df_sample['State FIPS Code'] + df_sample['County FIPS Code'] )\n\nbinning_endpoints = list(np.linspace(1, 12, len(colorscale)\n\n- 1)) colorscale = [\"#f7fbff\", \"#ebf3fb\", \"#deebf7\", \"#d2e3f3\", \"#c6dbef\", \"#b3d2e9\", \"#9ecae1\", \"#85bcdb\", \"#6baed6\", \"#57a0ce\", \"#4292c6\", \"#3082be\", \"#2171b5\", \"#1361a9\", \"#08519c\", \"#0b4083\",\"#08306b\"] fips = df_sample['FIPS'] values = df_sample['Unemployment Rate (%)'] fig = ff.create_choropleth( fips=fips, values=values, scope=['usa'], binning_endpoints=binning_endpoints, colorscale=colorscale, show_hover=True, centroid_marker={'opacity': 0}, asp=2.9, title='USA by Unemployment %', legend_title='Unemployment %' ) fig.show()\n"
+}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{
+    "source file": "_dendrogram.py",
+    "line number": "17",
+    "func name": "create_dendrogram",
+    "func arg": "(X, orientation, labels, colorscale, distfun, linkagefun, hovertext, color_threshold)",
+    "comments": "Function that returns a dendrogram Plotly figure object. This is a thin wrapper around scipy.cluster.hierarchy.dendrogram.\n\nSee also https://dash.plot.ly/dash-bio/clustergram.\n\n:param (ndarray) X: Matrix of observations as array of arrays :param (str) orientation: 'top', 'right', 'bottom', or 'left' :param (list) labels: List of axis category labels(observation labels) :param (list) colorscale: Optional colorscale for the dendrogram tree. Requires 8 colors to be specified, the 7th of which is ignored.\n\nWith scipy>=1.5.0, the 2nd, 3rd and 6th are used twice as often as the others. Given a shorter list, the missing values are replaced with defaults and with a longer list the extra values are ignored. :param (function) distfun: Function to compute the pairwise distance from the observations :param (function) linkagefun: Function to compute the linkage matrix from the pairwise distances :param (list[list]) hovertext: List of hovertext for constituent traces of dendrogram clusters :param (double) color_threshold: Value at which the separation of clusters will be made\n\nExample 1: Simple bottom oriented dendrogram\n\n>>> from plotly.figure_factory import create_dendrogram\n\n>>> import numpy as np\n\n>>> X = np.random.rand(10,10) >>> fig = create_dendrogram(X) >>> fig.show()\n\nExample 2: Dendrogram to put on the left of the heatmap\n\n>>> from plotly.figure_factory import create_dendrogram\n\n>>> import numpy as np\n\n>>> X = np.random.rand(5,5) >>> names = ['Jack', 'Oxana', 'John', 'Chelsea', 'Mark'] >>> dendro = create_dendrogram(X, orientation='right', labels=names) >>> dendro.update_layout({'width':700, 'height':500}) # doctest: +SKIP >>> dendro.show()\n\nExample 3: Dendrogram with Pandas\n\n>>> from plotly.figure_factory import create_dendrogram\n\n>>> import numpy as np >>> import pandas as pd\n\n>>> Index= ['A','B','C','D','E','F','G','H','I','J'] >>> df = pd.DataFrame(abs(np.random.randn(10, 10)), index=Index) >>> fig = create_dendrogram(df, labels=Index) >>> fig.show()\n"
+}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{
+    "source file": "_distplot.py",
+    "line number": "52",
+    "func name": "create_distplot",
+    "func arg": "(hist_data, group_labels, bin_size, curve_type, colors, rug_text, histnorm, show_hist, show_curve, show_rug)",
+    "comments": "Function that creates a distplot similar to seaborn.distplot; **this function is deprecated**, use instead :mod:`plotly.express` functions, for example\n\n>>> import plotly.express as px >>> tips = px.data.tips() >>> fig = px.histogram(tips, x=\"total_bill\", y=\"tip\", color=\"sex\", marginal=\"rug\", ...\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nhover_data=tips.columns) >>> fig.show()\n\n The distplot can be composed of all or any combination of the following 3 components: (1) histogram, (2) curve: (a) kernel density estimation or (b) normal curve, and (3) rug plot. Additionally, multiple distplots (from multiple datasets) can be created in the same plot.\n\n:param (list[list]) hist_data: Use list of lists to plot multiple data sets on the same plot. :param (list[str]) group_labels: Names for each data set. :param (list[float]|float) bin_size: Size of histogram bins. Default = 1. :param (str) curve_type: 'kde' or 'normal'. Default = 'kde' :param (str) histnorm: 'probability density' or 'probability' Default = 'probability density' :param (bool) show_hist: Add histogram to distplot? Default = True :param (bool) show_curve: Add curve to distplot? Default = True :param (bool) show_rug: Add rug to distplot? Default = True :param (list[str]) colors: Colors for traces. :param (list[list]) rug_text: Hovertext values for rug_plot, :return (dict): Representation of a distplot figure.\n\nExample 1: Simple distplot of 1 data set\n\n>>> from plotly.figure_factory import create_distplot\n\n>>> hist_data = [[1.1, 1.1, 2.5, 3.0, 3.5, ...\n\n\n\n\n\n\n\n\n\n\n\n\n\n 3.5, 4.1, 4.4, 4.5, 4.5, ...\n\n\n\n\n\n\n\n\n\n\n\n\n\n 5.0, 5.0, 5.2, 5.5, 5.5, ...\n\n\n\n\n\n\n\n\n\n\n\n\n\n 5.5, 5.5, 5.5, 6.1, 7.0]] >>> group_labels = ['distplot example'] >>> fig = create_distplot(hist_data, group_labels) >>> fig.show()\n\n Example 2: Two data sets and added rug text\n\n>>> from plotly.figure_factory import create_distplot >>> # Add histogram data >>> hist1_x = [0.8, 1.2, 0.2, 0.6, 1.6, ...\n\n\n\n\n\n\n\n\n\n\n\n-0.9, -0.07, 1.95, 0.9, -0.2, ...\n\n\n\n\n\n\n\n\n\n\n\n-0.5, 0.3, 0.4, -0.37, 0.6] >>> hist2_x = [0.8, 1.5, 1.5, 0.6, 0.59, ...\n\n\n\n\n\n\n\n\n\n\n\n1.0, 0.8, 1.7, 0.5, 0.8, ...\n\n\n\n\n\n\n\n\n\n\n\n-0.3, 1.2, 0.56, 0.3, 2.2]\n\n>>> # Group data together >>> hist_data = [hist1_x, hist2_x]\n\n>>> group_labels = ['2012', '2013']\n\n>>> # Add text >>> rug_text_1 = ['a1', 'b1', 'c1', 'd1', 'e1', ...\n\n\n\n\n\n 'f1', 'g1', 'h1', 'i1', 'j1', ...\n\n\n\n\n\n 'k1', 'l1', 'm1', 'n1', 'o1']\n\n>>> rug_text_2 = ['a2', 'b2', 'c2', 'd2', 'e2', ...\n\n\n\n\n\n 'f2', 'g2', 'h2', 'i2', 'j2', ...\n\n\n\n\n\n 'k2', 'l2', 'm2', 'n2', 'o2']\n\n>>> # Group text together >>> rug_text_all = [rug_text_1, rug_text_2]\n\n>>> # Create distplot >>> fig = create_distplot( ...\n\n\n\n hist_data, group_labels, rug_text=rug_text_all, bin_size=.2)\n\n>>> # Add title >>> fig.update_layout(title='Dist Plot') # doctest: +SKIP >>> fig.show()\n\n Example 3: Plot with normal curve and hide rug plot\n\n>>> from plotly.figure_factory import create_distplot >>> import numpy as np\n\n>>> x1 = np.random.randn(190) >>> x2 = np.random.randn(200)+1 >>> x3 = np.random.randn(200)-1 >>> x4 = np.random.randn(210)+2\n\n>>> hist_data = [x1, x2, x3, x4] >>> group_labels = ['2012', '2013', '2014', '2015']\n\n>>> fig = create_distplot( ...\n\n\n\n hist_data, group_labels, curve_type='normal', ...\n\n\n\n show_rug=False, bin_size=.4)\n\n Example 4: Distplot with Pandas\n\n>>> from plotly.figure_factory import create_distplot >>> import numpy as np >>> import pandas as pd\n\n>>> df = pd.DataFrame({'2012': np.random.randn(200), ...\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n'2013': np.random.randn(200)+1}) >>> fig = create_distplot([df[c] for c in df.columns], df.columns) >>> fig.show()\n"
+}{}{}{}{}{}{}{}{
+    "source file": "_doc.py",
+    "line number": "545",
+    "func name": "make_docstring",
+    "func arg": "(fn, override_dict, append_dict)",
+    "comments": ""
+}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{
+    "source file": "_facet_grid.py",
+    "line number": "653",
+    "func name": "create_facet_grid",
+    "func arg": "(df, x, y, facet_row, facet_col, color_name, colormap, color_is_cat, facet_row_labels, facet_col_labels, height, width, trace_type, scales, dtick_x, dtick_y, show_boxes, ggplot2, binsize, **kwargs)",
+    "comments": "Returns figure for facet grid; **this function is deprecated**, since plotly.express functions should be used instead, for example\n\n>>> import plotly.express as px >>> tips = px.data.tips() >>> fig = px.scatter(tips, ...\n\n\n\n x='total_bill', ...\n\n\n\n y='tip', ...\n\n\n\n facet_row='sex', ...\n\n\n\n facet_col='smoker', ...\n\n\n\n color='size')\n\n :param (pd.DataFrame) df: the dataframe of columns for the facet grid. :param (str) x: the name of the dataframe column for the x axis data. :param (str) y: the name of the dataframe column for the y axis data. :param (str) facet_row: the name of the dataframe column that is used to facet the grid into row panels. :param (str) facet_col: the name of the dataframe column that is used to facet the grid into column panels. :param (str) color_name: the name of your dataframe column that will function as the colormap variable. :param (str|list|dict) colormap: the param that determines how the color_name column colors the data. If the dataframe contains numeric data, then a dictionary of colors will group the data categorically while a Plotly Colorscale name or a custom colorscale will treat it numerically. To learn more about colors and types of colormap, run `help(plotly.colors)`. :param (bool) color_is_cat: determines whether a numerical column for the colormap will be treated as categorical (True) or sequential (False). Default = False. :param (str|dict) facet_row_labels: set to either 'name' or a dictionary of all the unique values in the faceting row mapped to some text to show up in the label annotations. If None, labeling works like usual. :param (str|dict) facet_col_labels: set to either 'name' or a dictionary of all the values in the faceting row mapped to some text to show up in the label annotations. If None, labeling works like usual. :param (int) height: the height of the facet grid figure. :param (int) width: the width of the facet grid figure. :param (str) trace_type: decides the type of plot to appear in the facet grid. The options are 'scatter', 'scattergl', 'histogram', 'bar', and 'box'. Default = 'scatter'. :param (str) scales: determines if axes have fixed ranges or not. Valid settings are 'fixed' (all axes fixed), 'free_x' (x axis free only), 'free_y' (y axis free only) or 'free' (both axes free). :param (float) dtick_x: determines the distance between each tick on the x-axis. Default is None which means dtick_x is set automatically. :param (float) dtick_y: determines the distance between each tick on the y-axis. Default is None which means dtick_y is set automatically. :param (bool) show_boxes: draws grey boxes behind the facet titles. :param (bool) ggplot2: draws the facet grid in the style of `ggplot2`. See http://ggplot2.tidyverse.org/reference/facet_grid.html for reference. Default = False :param (int) binsize: groups all data into bins of a given length. :param (dict) kwargs: a dictionary of scatterplot arguments.\n\nExamples 1: One Way Faceting\n\n>>> import plotly.figure_factory as ff >>> import pandas as pd >>> mpg = pd.read_table('https://raw.githubusercontent.com/plotly/datasets/master/mpg_2017.txt')\n\n>>> fig = ff.create_facet_grid( ...\n\n\n\n mpg, ...\n\n\n\n x='displ', ...\n\n\n\n y='cty', ...\n\n\n\n facet_col='cyl', ... ) >>> fig.show()\n\nExample 2: Two Way Faceting\n\n>>> import plotly.figure_factory as ff\n\n>>> import pandas as pd\n\n>>> mpg = pd.read_table('https://raw.githubusercontent.com/plotly/datasets/master/mpg_2017.txt')\n\n>>> fig = ff.create_facet_grid( ...\n\n\n\n mpg, ...\n\n\n\n x='displ', ...\n\n\n\n y='cty', ...\n\n\n\n facet_row='drv', ...\n\n\n\n facet_col='cyl', ... ) >>> fig.show()\n\nExample 3: Categorical Coloring\n\n>>> import plotly.figure_factory as ff >>> import pandas as pd >>> mtcars = pd.read_csv('https://raw.githubusercontent.com/plotly/datasets/master/mtcars.csv') >>> mtcars.cyl = mtcars.cyl.astype(str) >>> fig = ff.create_facet_grid( ...\n\n\n\n mtcars, ...\n\n\n\n x='mpg', ...\n\n\n\n y='wt', ...\n\n\n\n facet_col='cyl', ...\n\n\n\n color_name='cyl', ...\n\n\n\n color_is_cat=True, ... ) >>> fig.show()\n"
+}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{
+    "source file": "_gantt.py",
+    "line number": "803",
+    "func name": "create_gantt",
+    "func arg": "(df, colors, index_col, show_colorbar, reverse_colors, title, bar_width, showgrid_x, showgrid_y, height, width, tasks, task_names, data, group_tasks, show_hover_fill)",
+    "comments": "Returns figure for a gantt chart\n\nparam (array|list) df: input data for gantt chart. Must be either a a dataframe or a list. If dataframe, the columns must include 'Task', 'Start' and 'Finish'. Other columns can be included and used for indexing. If a list, its elements must be dictionaries with the same required column headers: 'Task', 'Start' and 'Finish'. :param (str|list|dict|tuple) colors: either a plotly scale name, an rgb or hex color, a color tuple or a list of colors. An rgb color is of the form 'rgb(x, y, z)' where x, y, z belong to the interval [0, 255] and a color tuple is a tuple of the form (a, b, c) where a, b and c belong to [0, 1]. If colors is a list, it must contain the valid color types aforementioned as its members. If a dictionary, all values of the indexing column must be keys in colors. :param (str|float) index_col: the column header (if df is a data frame) that will function as the indexing column. If df is a list, index_col must be one of the keys in all the items of df. :param (bool) show_colorbar: determines if colorbar will be visible. Only applies if values in the index column are numeric. :param (bool) show_hover_fill: enables/disables the hovertext for the filled area of the chart. :param (bool) reverse_colors: reverses the order of selected colors :param (str) title: the title of the chart :param (float) bar_width: the width of the horizontal bars in the plot :param (bool) showgrid_x: show/hide the x-axis grid :param (bool) showgrid_y: show/hide the y-axis grid :param (float) height: the height of the chart :param (float) width: the width of the chart\n\nExample 1: Simple Gantt Chart\n\n>>> from plotly.figure_factory import create_gantt\n\n>>> # Make data for chart >>> df = [dict(Task=\"Job A\", Start='2009-01-01', Finish='2009-02-30'), ...\n\n\n\n\n\n dict(Task=\"Job B\", Start='2009-03-05', Finish='2009-04-15'), ...\n\n\n\n\n\n dict(Task=\"Job C\", Start='2009-02-20', Finish='2009-05-30')]\n\n>>> # Create a figure >>> fig = create_gantt(df) >>> fig.show()\n\n Example 2: Index by Column with Numerical Entries\n\n>>> from plotly.figure_factory import create_gantt\n\n>>> # Make data for chart >>> df = [dict(Task=\"Job A\", Start='2009-01-01', ...\n\n\n\n\n\n\n\n\n\n\n\nFinish='2009-02-30', Complete=10), ...\n\n\n\n\n\n dict(Task=\"Job B\", Start='2009-03-05', ...\n\n\n\n\n\n\n\n\n\n\n\nFinish='2009-04-15', Complete=60), ...\n\n\n\n\n\n dict(Task=\"Job C\", Start='2009-02-20', ...\n\n\n\n\n\n\n\n\n\n\n\nFinish='2009-05-30', Complete=95)]\n\n>>> # Create a figure with Plotly colorscale >>> fig = create_gantt(df, colors='Blues', index_col='Complete', ...\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nshow_colorbar=True, bar_width=0.5, ...\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nshowgrid_x=True, showgrid_y=True) >>> fig.show()\n\n Example 3: Index by Column with String Entries\n\n>>> from plotly.figure_factory import create_gantt\n\n>>> # Make data for chart >>> df = [dict(Task=\"Job A\", Start='2009-01-01', ...\n\n\n\n\n\n\n\n\n\n\n\nFinish='2009-02-30', Resource='Apple'), ...\n\n\n\n\n\n dict(Task=\"Job B\", Start='2009-03-05', ...\n\n\n\n\n\n\n\n\n\n\n\nFinish='2009-04-15', Resource='Grape'), ...\n\n\n\n\n\n dict(Task=\"Job C\", Start='2009-02-20', ...\n\n\n\n\n\n\n\n\n\n\n\nFinish='2009-05-30', Resource='Banana')]\n\n>>> # Create a figure with Plotly colorscale >>> fig = create_gantt(df, colors=['rgb(200, 50, 25)', (1, 0, 1), '#6c4774'], ...\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nindex_col='Resource', reverse_colors=True, ...\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nshow_colorbar=True) >>> fig.show()\n\n Example 4: Use a dictionary for colors\n\n>>> from plotly.figure_factory import create_gantt >>> # Make data for chart >>> df = [dict(Task=\"Job A\", Start='2009-01-01', ...\n\n\n\n\n\n\n\n\n\n\n\nFinish='2009-02-30', Resource='Apple'), ...\n\n\n\n\n\n dict(Task=\"Job B\", Start='2009-03-05', ...\n\n\n\n\n\n\n\n\n\n\n\nFinish='2009-04-15', Resource='Grape'), ...\n\n\n\n\n\n dict(Task=\"Job C\", Start='2009-02-20', ...\n\n\n\n\n\n\n\n\n\n\n\nFinish='2009-05-30', Resource='Banana')]\n\n>>> # Make a dictionary of colors >>> colors = {'Apple': 'rgb(255, 0, 0)', ...\n\n\n\n\n\n\n\n\n\n 'Grape': 'rgb(170, 14, 200)', ...\n\n\n\n\n\n\n\n\n\n 'Banana': (1, 1, 0.2)}\n\n>>> # Create a figure with Plotly colorscale >>> fig = create_gantt(df, colors=colors, index_col='Resource', ...\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nshow_colorbar=True)\n\n>>> fig.show()\n\nExample 5: Use a pandas dataframe\n\n>>> from plotly.figure_factory import create_gantt >>> import pandas as pd\n\n>>> # Make data as a dataframe >>> df = pd.DataFrame([['Run', '2010-01-01', '2011-02-02', 10], ...\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n['Fast', '2011-01-01', '2012-06-05', 55], ...\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n['Eat', '2012-01-05', '2013-07-05', 94]], ...\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n columns=['Task', 'Start', 'Finish', 'Complete'])\n\n>>> # Create a figure with Plotly colorscale >>> fig = create_gantt(df, colors='Blues', index_col='Complete', ...\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nshow_colorbar=True, bar_width=0.5, ...\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nshowgrid_x=True, showgrid_y=True) >>> fig.show()\n"
+}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{
+    "source file": "_hexbin_mapbox.py",
+    "line number": "317",
+    "func name": "create_hexbin_mapbox",
+    "func arg": "(data_frame, lat, lon, color, nx_hexagon, agg_func, animation_frame, color_discrete_sequence, color_discrete_map, labels, color_continuous_scale, range_color, color_continuous_midpoint, opacity, zoom, center, mapbox_style, title, template, width, height, min_count, show_original_data, original_data_marker)",
+    "comments": "Returns a figure aggregating scattered points into connected hexagons\n\n\n"
+}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{
+    "source file": "_html.py",
+    "line number": "380",
+    "func name": "write_html",
+    "func arg": "(fig, file, config, auto_play, include_plotlyjs, include_mathjax, post_script, full_html, animation_opts, validate, default_width, default_height, auto_open)",
+    "comments": "Write a figure to an HTML file representation\n\nParameters ---------- fig: Figure object or dict representing a figure file: str or writeable A string representing a local file path or a writeable object (e.g. an open file descriptor) config: dict or None (default None) Plotly.js figure config options auto_play: bool (default=True) Whether to automatically start the animation sequence on page load if the figure contains frames. Has no effect if the figure does not contain frames. include_plotlyjs: bool or string (default True) Specifies how the plotly.js library is included/loaded in the output div string.\n\nIf True, a script tag containing the plotly.js source code (~3MB) is included in the output.\n\nHTML files generated with this option are fully self-contained and can be used offline.\n\nIf 'cdn', a script tag that references the plotly.js CDN is included in the output. HTML files generated with this option are about 3MB smaller than those generated with include_plotlyjs=True, but they require an active internet connection in order to load the plotly.js library.\n\nIf 'directory', a script tag is included that references an external plotly.min.js bundle that is assumed to reside in the same directory as the HTML file. If `file` is a string to a local file path and `full_html` is True then\n\nIf 'directory', a script tag is included that references an external plotly.min.js bundle that is assumed to reside in the same directory as the HTML file.\n\nIf `file` is a string to a local file path and `full_html` is True, then the plotly.min.js bundle is copied into the directory of the resulting HTML file. If a file named plotly.min.js already exists in the output directory then this file is left unmodified and no copy is performed. HTML files generated with this option can be used offline, but they require a copy of the plotly.min.js bundle in the same directory. This option is useful when many figures will be saved as HTML files in the same directory because the plotly.js source code will be included only once per output directory, rather than once per output file.\n\nIf 'require', Plotly.js is loaded using require.js.\n\nThis option assumes that require.js is globally available and that it has been globally configured to know how to find Plotly.js as 'plotly'. This option is not advised when full_html=True as it will result in a non-functional html file.\n\nIf a string that ends in '.js', a script tag is included that references the specified path. This approach can be used to point the resulting HTML file to an alternative CDN or local bundle.\n\nIf False, no script tag referencing plotly.js is included. This is useful when the resulting div string will be placed inside an HTML document that already loads plotly.js.\n\nThis option is not advised when full_html=True as it will result in a non-functional html file.\n\ninclude_mathjax: bool or string (default False) Specifies how the MathJax.js library is included in the output html div string.\n\nMathJax is required in order to display labels with LaTeX typesetting.\n\nIf False, no script tag referencing MathJax.js will be included in the output.\n\nIf 'cdn', a script tag that references a MathJax CDN location will be included in the output.\n\nHTML div strings generated with this option will be able to display LaTeX typesetting as long as internet access is available.\n\nIf a string that ends in '.js', a script tag is included that references the specified path. This approach can be used to point the resulting HTML div string to an alternative CDN. post_script: str or list or None (default None) JavaScript snippet(s) to be included in the resulting div just after plot creation.\n\nThe string(s) may include '{plot_id}' placeholders that will then be replaced by the `id` of the div element that the plotly.js figure is associated with.\n\nOne application for this script is to install custom plotly.js event handlers. full_html: bool (default True) If True, produce a string containing a complete HTML document starting with an <html> tag.\n\nIf False, produce a string containing a single <div> element. animation_opts: dict or None (default None) dict of custom animation parameters to be passed to the function Plotly.animate in Plotly.js. See https://github.com/plotly/plotly.js/blob/master/src/plots/animation_attributes.js for available options. Has no effect if the figure does not contain frames, or auto_play is False. default_width, default_height: number or str (default '100%') The default figure width/height to use if the provided figure does not specify its own layout.width/layout.height property.\n\nMay be specified in pixels as an integer (e.g. 500), or as a css width style string (e.g. '500px', '100%'). validate: bool (default True) True if the figure should be validated before being converted to JSON, False otherwise. auto_open: bool (default True If True, open the saved file in a web browser after saving. This argument only applies if `full_html` is True.\n##### Returns\n"
+}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{
+    "source file": "_imshow.py",
+    "line number": "66",
+    "func name": "imshow",
+    "func arg": "(img, zmin, zmax, origin, labels, x, y, color_continuous_scale, color_continuous_midpoint, range_color, title, template, width, height, aspect)",
+    "comments": "Display an image, i.e. data on a 2D regular raster.\n\nParameters ----------\n\nimg: array-like image, or xarray The image data. Supported array shapes are\n\n- (M, N): an image with scalar data. The data is visualized using a colormap.\n\n- (M, N, 3): an image with RGB values.\n\n- (M, N, 4): an image with RGBA values, i.e. including transparency.\n\nzmin, zmax : scalar or iterable, optional zmin and zmax define the scalar range that the colormap covers. By default, zmin and zmax correspond to the min and max values of the datatype for integer datatypes (ie [0-255] for uint8 images, [0, 65535] for uint16 images, etc.). For a multichannel image of floats, the max of the image is computed and zmax is the smallest power of 256 (1, 255, 65535) greater than this max value, with a 5% tolerance. For a single-channel image, the max of the image is used. Overridden by range_color.\n\norigin : str, 'upper' or 'lower' (default 'upper') position of the [0, 0] pixel of the image array, in the upper left or lower left corner. The convention 'upper' is typically used for matrices and images.\n\nlabels : dict with str keys and str values (default `{}`) Sets names used in the figure for axis titles (keys ``x`` and ``y``), colorbar title and hoverlabel (key ``color``). The values should correspond to the desired label to be displayed. If ``img`` is an xarray, dimension names are used for axis titles, and long name for the colorbar title (unless overridden in ``labels``). Possible keys are: x, y, and color.\n\nx, y: list-like, optional x and y are used to label the axes of single-channel heatmap visualizations and their lengths must match the lengths of the second and first dimensions of the img argument. They are auto-populated if the input is an xarray.\n\ncolor_continuous_scale : str or list of str colormap used to map scalar data to colors (for a 2D image). This parameter is not used for RGB or RGBA images. If a string is provided, it should be the name of a known color scale, and if a list is provided, it should be a list of CSS- compatible colors.\n\ncolor_continuous_midpoint : number If set, computes the bounds of the continuous color scale to have the desired midpoint. Overridden by range_color or zmin and zmax.\n\nrange_color : list of two numbers If provided, overrides auto-scaling on the continuous color scale, including overriding `color_continuous_midpoint`. Also overrides zmin and zmax. Used only for single-channel images.\n\ntitle : str The figure title.\n\ntemplate : str or dict or plotly.graph_objects.layout.Template instance The figure template name or definition.\n\nwidth : number The figure width in pixels.\n\nheight: number The figure height in pixels.\n\naspect: 'equal', 'auto', or None\n\n- 'equal': Ensures an aspect ratio of 1 or pixels (square pixels)\n\n- 'auto': The axes is kept fixed and the aspect ratio of pixels is adjusted so that the data fit in the axes. In general, this will result in non-square pixels.\n\n- if None, 'equal' is used for numpy arrays and 'auto' for xarrays (which have typically heterogeneous coordinates)\n##### Returns\n* **fig **: graph_objects.Figure containing the displayed image\n\n* **plotly.graph_objects.Image **: image trace\n\n* **plotly.graph_objects.Heatmap **: heatmap trace\n\n"
+}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{
+    "source file": "_json.py",
+    "line number": "156",
+    "func name": "read_json",
+    "func arg": "(file, output_type, skip_invalid)",
+    "comments": "Construct a figure from the JSON contents of a local file or readable Python object\n\nParameters ---------- file: str or readable A string containing the path to a local file or a read-able Python object (e.g. an open file descriptor)\n\noutput_type: type or str (default 'Figure') The output figure type or type name. One of:\n\ngraph_objs.Figure, 'Figure', graph_objs.FigureWidget, 'FigureWidget'\n\nskip_invalid: bool (default False) False if invalid figure properties should result in an exception. True if invalid figure properties should be silently ignored.\n##### Returns\n"
+}{}{}{
+    "source file": "_kaleido.py",
+    "line number": "137",
+    "func name": "write_image",
+    "func arg": "(fig, file, format, scale, width, height, validate, engine)",
+    "comments": "Convert a figure to a static image and write it to a file or writeable object\n\nParameters ---------- fig: Figure object or dict representing a figure\n\nfile: str or writeable A string representing a local file path or a writeable object (e.g. an open file descriptor)\n\nformat: str or None The desired image format. One of\n\n- 'png'\n\n- 'jpg' or 'jpeg'\n\n- 'webp'\n\n- 'svg'\n\n- 'pdf'\n\n- 'eps' (Requires the poppler library to be installed and on the PATH)\n\nIf not specified and `file` is a string then this will default to the file extension. If not specified and `file` is not a string then this will default to:\n\n- `plotly.io.kaleido.scope.default_format` if engine is \"kaleido\"\n\n- `plotly.io.orca.config.default_format` if engine is \"orca\"\n\nwidth: int or None The width of the exported image in layout pixels. If the `scale` property is 1.0, this will also be the width of the exported image in physical pixels.\n\nIf not specified, will default to:\n\n- `plotly.io.kaleido.scope.default_width` if engine is \"kaleido\"\n\n- `plotly.io.orca.config.default_width` if engine is \"orca\"\n\nheight: int or None The height of the exported image in layout pixels. If the `scale` property is 1.0, this will also be the height of the exported image in physical pixels.\n\nIf not specified, will default to:\n\n- `plotly.io.kaleido.scope.default_height` if engine is \"kaleido\"\n\n- `plotly.io.orca.config.default_height` if engine is \"orca\"\n\nscale: int or float or None The scale factor to use when exporting the figure. A scale factor larger than 1.0 will increase the image resolution with respect to the figure's layout pixel dimensions. Whereas as scale factor of less than 1.0 will decrease the image resolution.\n\nIf not specified, will default to:\n\n- `plotly.io.kaleido.scope.default_scale` if engine is \"kaleido\"\n\n- `plotly.io.orca.config.default_scale` if engine is \"orca\"\n\nvalidate: bool True if the figure should be validated before being converted to an image, False otherwise.\n\nengine: str Image export engine to use:\n\n- \"kaleido\": Use Kaleido for image export\n\n- \"orca\": Use Orca for image export\n\n- \"auto\" (default): Use Kaleido if installed, otherwise use orca\n##### Returns\n"
+}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{
+    "source file": "_ohlc.py",
+    "line number": "135",
+    "func name": "create_ohlc",
+    "func arg": "(open, high, low, close, dates, direction, **kwargs)",
+    "comments": "**deprecated**, use instead the plotly.graph_objects trace :class:`plotly.graph_objects.Ohlc`\n\nparam (list) open: opening values :param (list) high: high values :param (list) low: low values :param (list) close: closing :param (list) dates: list of datetime objects. Default: None :param (string) direction: direction can be 'increasing', 'decreasing', or 'both'. When the direction is 'increasing', the returned figure consists of all units where the close value is greater than the corresponding open value, and when the direction is 'decreasing', the returned figure consists of all units where the close value is less than or equal to the corresponding open value. When the direction is 'both', both increasing and decreasing units are returned. Default: 'both' :param kwargs: kwargs passed through plotly.graph_objs.Scatter. These kwargs describe other attributes about the ohlc Scatter trace such as the color or the legend name. For more information on valid kwargs call help(plotly.graph_objs.Scatter)\n\n:rtype (dict): returns a representation of an ohlc chart figure.\n\nExample 1: Simple OHLC chart from a Pandas DataFrame\n\n>>> from plotly.figure_factory import create_ohlc >>> from datetime import datetime\n\n>>> import pandas as pd >>> df = pd.read_csv('https://raw.githubusercontent.com/plotly/datasets/master/finance-charts-apple.csv') >>> fig = create_ohlc(df['AAPL.Open'], df['AAPL.High'], df['AAPL.Low'], df['AAPL.Close'], dates=df.index) >>> fig.show()\n"
+}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{
+    "source file": "_orca.py",
+    "line number": "1682",
+    "func name": "write_image",
+    "func arg": "(fig, file, format, scale, width, height, validate)",
+    "comments": "Convert a figure to a static image and write it to a file or writeable object\n\nParameters ---------- fig: Figure object or dict representing a figure\n\nfile: str or writeable A string representing a local file path or a writeable object (e.g. an open file descriptor)\n\nformat: str or None The desired image format. One of\n\n- 'png'\n\n- 'jpg' or 'jpeg'\n\n- 'webp'\n\n- 'svg'\n\n- 'pdf'\n\n- 'eps' (Requires the poppler library to be installed)\n\nIf not specified and `file` is a string then this will default to the file extension. If not specified and `file` is not a string then this will default to `plotly.io.config.default_format`\n\nwidth: int or None The width of the exported image in layout pixels. If the `scale` property is 1.0, this will also be the width of the exported image in physical pixels.\n\nIf not specified, will default to `plotly.io.config.default_width`\n\nheight: int or None The height of the exported image in layout pixels. If the `scale` property is 1.0, this will also be the height of the exported image in physical pixels.\n\nIf not specified, will default to `plotly.io.config.default_height`\n\nscale: int or float or None The scale factor to use when exporting the figure. A scale factor larger than 1.0 will increase the image resolution with respect to the figure's layout pixel dimensions. Whereas as scale factor of less than 1.0 will decrease the image resolution.\n\nIf not specified, will default to `plotly.io.config.default_scale`\n\nvalidate: bool True if the figure should be validated before being converted to an image, False otherwise.\n##### Returns\n"
+}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{
+    "source file": "_quiver.py",
+    "line number": "10",
+    "func name": "create_quiver",
+    "func arg": "(x, y, u, v, scale, arrow_scale, angle, scaleratio, **kwargs)",
+    "comments": "Returns data for a quiver plot.\n\nparam (list|ndarray) x: x coordinates of the arrow locations :param (list|ndarray) y: y coordinates of the arrow locations :param (list|ndarray) u: x components of the arrow vectors :param (list|ndarray) v: y components of the arrow vectors :param (float in [0,1]) scale: scales size of the arrows(ideally to avoid overlap). Default = .1 :param (float in [0,1]) arrow_scale: value multiplied to length of barb to get length of arrowhead. Default = .3 :param (angle in radians) angle: angle of arrowhead. Default = pi/9 :param (positive float) scaleratio: the ratio between the scale of the y-axis and the scale of the x-axis (scale_y / scale_x). Default = None, the scale ratio is not fixed. :param kwargs: kwargs passed through plotly.graph_objs.Scatter for more information on valid kwargs call help(plotly.graph_objs.Scatter)\n\n:rtype (dict): returns a representation of quiver figure.\n\nExample 1: Trivial Quiver\n\n>>> from plotly.figure_factory import create_quiver >>> import math\n\n>>> # 1 Arrow from (0,0) to (1,1) >>> fig = create_quiver(x=[0], y=[0], u=[1], v=[1], scale=1) >>> fig.show()\n\n Example 2: Quiver plot using meshgrid\n\n>>> from plotly.figure_factory import create_quiver\n\n>>> import numpy as np >>> import math\n\n>>> # Add data >>> x,y = np.meshgrid(np.arange(0, 2, .2), np.arange(0, 2, .2)) >>> u = np.cos(x)*y >>> v = np.sin(x)*y\n\n>>> #Create quiver >>> fig = create_quiver(x, y, u, v) >>> fig.show()\n\n Example 3: Styling the quiver plot\n\n>>> from plotly.figure_factory import create_quiver >>> import numpy as np >>> import math\n\n>>> # Add data >>> x, y = np.meshgrid(np.arange(-np.pi, math.pi, .5), ...\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nnp.arange(-math.pi, math.pi, .5)) >>> u = np.cos(x)*y >>> v = np.sin(x)*y\n\n>>> # Create quiver >>> fig = create_quiver(x, y, u, v, scale=.2, arrow_scale=.3, angle=math.pi/6, ...\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n name='Wind Velocity', line=dict(width=1))\n\n>>> # Add title to layout >>> fig.update_layout(title='Quiver Plot') # doctest: +SKIP >>> fig.show()\n\n Example 4: Forcing a fix scale ratio to maintain the arrow length\n\n>>> from plotly.figure_factory import create_quiver >>> import numpy as np\n\n>>> # Add data >>> x,y = np.meshgrid(np.arange(0.5, 3.5, .5), np.arange(0.5, 4.5, .5)) >>> u = x >>> v = y >>> angle = np.arctan(v / u) >>> norm = 0.25 >>> u = norm * np.cos(angle) >>> v = norm * np.sin(angle)\n\n>>> # Create quiver with a fix scale ratio >>> fig = create_quiver(x, y, u, v, scale = 1, scaleratio = 0.5) >>> fig.show()\n"
+}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{
+    "source file": "_renderers.py",
+    "line number": "351",
+    "func name": "show",
+    "func arg": "(fig, renderer, validate, **kwargs)",
+    "comments": "Show a figure using either the default renderer(s) or the renderer(s) specified by the renderer argument\n\nParameters ---------- fig: dict of Figure The Figure object or figure dict to display\n\nrenderer: str or None (default None) A string containing the names of one or more registered renderers (separated by '+' characters) or None.\n\nIf None, then the default renderers specified in plotly.io.renderers.default are used.\n\nvalidate: bool (default True) True if the figure should be validated before being shown, False otherwise.\n##### Returns\n"
+}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{
+    "source file": "_scatterplot.py",
+    "line number": "840",
+    "func name": "create_scatterplotmatrix",
+    "func arg": "(df, index, endpts, diag, height, width, size, title, colormap, colormap_type, dataframe, headers, index_vals, **kwargs)",
+    "comments": "Returns data for a scatterplot matrix; **deprecated**, use instead the plotly.graph_objects trace :class:`plotly.graph_objects.Splom`.\n\nparam (array) df: array of the data with column headers :param (str) index: name of the index column in data array :param (list|tuple) endpts: takes an increasing sequece of numbers that defines intervals on the real line. They are used to group the entries in an index of numbers into their corresponding interval and therefore can be treated as categorical data :param (str) diag: sets the chart type for the main diagonal plots. The options are 'scatter', 'histogram' and 'box'. :param (int|float) height: sets the height of the chart :param (int|float) width: sets the width of the chart :param (float) size: sets the marker size (in px) :param (str) title: the title label of the scatterplot matrix :param (str|tuple|list|dict) colormap: either a plotly scale name, an rgb or hex color, a color tuple, a list of colors or a dictionary. An rgb color is of the form 'rgb(x, y, z)' where x, y and z belong to the interval [0, 255] and a color tuple is a tuple of the form (a, b, c) where a, b and c belong to [0, 1]. If colormap is a list, it must contain valid color types as its members. If colormap is a dictionary, all the string entries in the index column must be a key in colormap. In this case, the colormap_type is forced to 'cat' or categorical :param (str) colormap_type: determines how colormap is interpreted. Valid choices are 'seq' (sequential) and 'cat' (categorical). If 'seq' is selected, only the first two colors in colormap will be considered (when colormap is a list) and the index values will be linearly interpolated between those two colors. This option is forced if all index values are numeric. If 'cat' is selected, a color from colormap will be assigned to each category from index, including the intervals if endpts is being used :param (dict) **kwargs: a dictionary of scatterplot arguments The only forbidden parameters are 'size', 'color' and 'colorscale' in 'marker'\n\nExample 1: Vanilla Scatterplot Matrix\n\n>>> from plotly.graph_objs import graph_objs >>> from plotly.figure_factory import create_scatterplotmatrix\n\n>>> import numpy as np >>> import pandas as pd\n\n>>> # Create dataframe >>> df = pd.DataFrame(np.random.randn(10, 2), ...\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n columns=['Column 1', 'Column 2'])\n\n>>> # Create scatterplot matrix >>> fig = create_scatterplotmatrix(df) >>> fig.show()\n\n Example 2: Indexing a Column\n\n>>> from plotly.graph_objs import graph_objs >>> from plotly.figure_factory import create_scatterplotmatrix\n\n>>> import numpy as np >>> import pandas as pd\n\n>>> # Create dataframe with index >>> df = pd.DataFrame(np.random.randn(10, 2), ...\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\ncolumns=['A', 'B'])\n\n>>> # Add another column of strings to the dataframe >>> df['Fruit'] = pd.Series(['apple', 'apple', 'grape', 'apple', 'apple', ...\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n'grape', 'pear', 'pear', 'apple', 'pear'])\n\n>>> # Create scatterplot matrix >>> fig = create_scatterplotmatrix(df, index='Fruit', size=10) >>> fig.show()\n\n Example 3: Styling the Diagonal Subplots\n\n>>> from plotly.graph_objs import graph_objs >>> from plotly.figure_factory import create_scatterplotmatrix\n\n>>> import numpy as np >>> import pandas as pd\n\n>>> # Create dataframe with index >>> df = pd.DataFrame(np.random.randn(10, 4), ...\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\ncolumns=['A', 'B', 'C', 'D'])\n\n>>> # Add another column of strings to the dataframe >>> df['Fruit'] = pd.Series(['apple', 'apple', 'grape', 'apple', 'apple', ...\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n'grape', 'pear', 'pear', 'apple', 'pear'])\n\n>>> # Create scatterplot matrix >>> fig = create_scatterplotmatrix(df, diag='box', index='Fruit', height=1000, ...\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nwidth=1000) >>> fig.show()\n\n Example 4: Use a Theme to Style the Subplots\n\n>>> from plotly.graph_objs import graph_objs >>> from plotly.figure_factory import create_scatterplotmatrix\n\n>>> import numpy as np >>> import pandas as pd\n\n>>> # Create dataframe with random data >>> df = pd.DataFrame(np.random.randn(100, 3), ...\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\ncolumns=['A', 'B', 'C'])\n\n>>> # Create scatterplot matrix using a built-in >>> # Plotly palette scale and indexing column 'A' >>> fig = create_scatterplotmatrix(df, diag='histogram', index='A', ...\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\ncolormap='Blues', height=800, width=800) >>> fig.show()\n\n Example 5: Example 4 with Interval Factoring\n\n>>> from plotly.graph_objs import graph_objs >>> from plotly.figure_factory import create_scatterplotmatrix\n\n>>> import numpy as np >>> import pandas as pd\n\n>>> # Create dataframe with random data >>> df = pd.DataFrame(np.random.randn(100, 3), ...\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\ncolumns=['A', 'B', 'C'])\n\n>>> # Create scatterplot matrix using a list of 2 rgb tuples >>> # and endpoints at -1, 0 and 1 >>> fig = create_scatterplotmatrix(df, diag='histogram', index='A', ...\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\ncolormap=['rgb(140, 255, 50)', ...\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n'rgb(170, 60, 115)', '#6c4774', ...\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n(0.5, 0.1, 0.8)], ...\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nendpts=[-1, 0, 1], height=800, width=800) >>> fig.show()\n\n Example 6: Using the colormap as a Dictionary\n\n>>> from plotly.graph_objs import graph_objs >>> from plotly.figure_factory import create_scatterplotmatrix\n\n>>> import numpy as np >>> import pandas as pd >>> import random\n\n>>> # Create dataframe with random data >>> df = pd.DataFrame(np.random.randn(100, 3), ...\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\ncolumns=['Column A', ...\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n 'Column B', ...\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n 'Column C'])\n\n>>> # Add new color column to dataframe >>> new_column = [] >>> strange_colors = ['turquoise', 'limegreen', 'goldenrod']\n\n>>> for j in range(100): ...\n\n\n\n new_column.append(random.choice(strange_colors)) >>> df['Colors'] = pd.Series(new_column, index=df.index)\n\n>>> # Create scatterplot matrix using a dictionary of hex color values >>> # which correspond to actual color names in 'Colors' column >>> fig = create_scatterplotmatrix( ...\n\n\n\n df, diag='box', index='Colors', ...\n\n\n\n colormap= dict( ...\n\n\n\n\n\n\n\n turquoise = '#00F5FF', ...\n\n\n\n\n\n\n\n limegreen = '#32CD32', ...\n\n\n\n\n\n\n\n goldenrod = '#DAA520' ...\n\n\n\n ), ...\n\n\n\n colormap_type='cat', ...\n\n\n\n height=800, width=800 ... ) >>> fig.show()\n"
+}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{
+    "source file": "_sg_scraper.py",
+    "line number": "65",
+    "func name": "figure_rst",
+    "func arg": "(figure_list, sources_dir)",
+    "comments": "Generate RST for a list of PNG filenames.\n\nDepending on whether we have one or more figures, we use a single rst call to 'image' or a horizontal list.\n\nParameters ---------- figure_list : list List of strings of the figures' absolute paths. sources_dir : str absolute path of Sphinx documentation sources\n##### Returns\n* **images_rst **: str\n    rst code to embed the images in the document\n\n"
+}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{
+    "source file": "_streamline.py",
+    "line number": "39",
+    "func name": "create_streamline",
+    "func arg": "(x, y, u, v, density, angle, arrow_scale, **kwargs)",
+    "comments": "Returns data for a streamline plot.\n\nparam (list|ndarray) x: 1 dimensional, evenly spaced list or array :param (list|ndarray) y: 1 dimensional, evenly spaced list or array :param (ndarray) u: 2 dimensional array :param (ndarray) v: 2 dimensional array :param (float|int) density: controls the density of streamlines in plot. This is multiplied by 30 to scale similiarly to other available streamline functions such as matplotlib. Default = 1 :param (angle in radians) angle: angle of arrowhead. Default = pi/9 :param (float in [0,1]) arrow_scale: value to scale length of arrowhead Default = .09 :param kwargs: kwargs passed through plotly.graph_objs.Scatter for more information on valid kwargs call help(plotly.graph_objs.Scatter)\n\n:rtype (dict): returns a representation of streamline figure.\n\nExample 1: Plot simple streamline and increase arrow size\n\n>>> from plotly.figure_factory import create_streamline >>> import plotly.graph_objects as go >>> import numpy as np >>> import math\n\n>>> # Add data >>> x = np.linspace(-3, 3, 100) >>> y = np.linspace(-3, 3, 100) >>> Y, X = np.meshgrid(x, y) >>> u = -1\n\n- X**2 + Y >>> v = 1 + X\n\n- Y**2 >>> u = u.T\n\n# Transpose >>> v = v.T\n\n# Transpose\n\n>>> # Create streamline >>> fig = create_streamline(x, y, u, v, arrow_scale=.1) >>> fig.show()\n\nExample 2: from nbviewer.ipython.org/github/barbagroup/AeroPython\n\n>>> from plotly.figure_factory import create_streamline >>> import numpy as np >>> import math\n\n>>> # Add data >>> N = 50 >>> x_start, x_end = -2.0, 2.0 >>> y_start, y_end = -1.0, 1.0 >>> x = np.linspace(x_start, x_end, N) >>> y = np.linspace(y_start, y_end, N) >>> X, Y = np.meshgrid(x, y) >>> ss = 5.0 >>> x_s, y_s = -1.0, 0.0\n\n>>> # Compute the velocity field on the mesh grid >>> u_s = ss/(2*np.pi) * (X-x_s)/((X-x_s)**2 + (Y-y_s)**2) >>> v_s = ss/(2*np.pi) * (Y-y_s)/((X-x_s)**2 + (Y-y_s)**2)\n\n>>> # Create streamline >>> fig = create_streamline(x, y, u_s, v_s, density=2, name='streamline')\n\n>>> # Add source point >>> point = go.Scatter(x=[x_s], y=[y_s], mode='markers', ...\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nmarker_size=14, name='source point')\n\n>>> fig.add_trace(point) # doctest: +SKIP >>> fig.show()\n"
+}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{
+    "source file": "_swatches.py",
+    "line number": "1",
+    "func name": "_swatches",
+    "func arg": "(module_names, module_contents, template)",
+    "comments": "Parameters ---------- template : str or dict or plotly.graph_objects.layout.Template instance The figure template name or definition.\n\n\n##### Returns\n* **fig **: graph_objects.Figure containing the displayed image\n    A `Figure` object. This figure demonstrates the color scales and\n    sequences in this module, as stacked bar charts.\n\n"
+}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{
+    "source file": "_table.py",
+    "line number": "27",
+    "func name": "create_table",
+    "func arg": "(table_text, colorscale, font_colors, index, index_title, annotation_offset, height_constant, hoverinfo, **kwargs)",
+    "comments": "Function that creates data tables.\n\nSee also the plotly.graph_objects trace :class:`plotly.graph_objects.Table`\n\n:param (pandas.Dataframe | list[list]) text: data for table. :param (str|list[list]) colorscale: Colorscale for table where the color at value 0 is the header color, .5 is the first table color and 1 is the second table color. (Set .5 and 1 to avoid the striped table effect). Default=[[0, '#66b2ff'], [.5, '#d9d9d9'], [1, '#ffffff']] :param (list) font_colors: Color for fonts in table. Can be a single color, three colors, or a color for each row in the table. Default=['#000000'] (black text for the entire table) :param (int) height_constant: Constant multiplied by # of rows to create table height. Default=30. :param (bool) index: Create (header-colored) index column index from Pandas dataframe or list[0] for each list in text. Default=False. :param (string) index_title: Title for index column. Default=''. :param kwargs: kwargs passed through plotly.graph_objs.Heatmap. These kwargs describe other attributes about the annotated Heatmap trace such as the colorscale. For more information on valid kwargs call help(plotly.graph_objs.Heatmap)\n\nExample 1: Simple Plotly Table\n\n>>> from plotly.figure_factory import create_table\n\n>>> text = [['Country', 'Year', 'Population'], ...\n\n\n\n\n\n\n\n ['US', 2000, 282200000], ...\n\n\n\n\n\n\n\n ['Canada', 2000, 27790000], ...\n\n\n\n\n\n\n\n ['US', 2010, 309000000], ...\n\n\n\n\n\n\n\n ['Canada', 2010, 34000000]]\n\n>>> table = create_table(text) >>> table.show()\n\nExample 2: Table with Custom Coloring\n\n>>> from plotly.figure_factory import create_table >>> text = [['Country', 'Year', 'Population'], ...\n\n\n\n\n\n\n\n ['US', 2000, 282200000], ...\n\n\n\n\n\n\n\n ['Canada', 2000, 27790000], ...\n\n\n\n\n\n\n\n ['US', 2010, 309000000], ...\n\n\n\n\n\n\n\n ['Canada', 2010, 34000000]] >>> table = create_table(text, ...\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\ncolorscale=[[0, '#000000'], ...\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n[.5, '#80beff'], ...\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n[1, '#cce5ff']], ...\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nfont_colors=['#ffffff', '#000000', ...\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n '#000000']) >>> table.show()\n\nExample 3: Simple Plotly Table with Pandas\n\n>>> from plotly.figure_factory import create_table >>> import pandas as pd >>> df = pd.read_csv('http://www.stat.ubc.ca/~jenny/notOcto/STAT545A/examples/gapminder/data/gapminderDataFiveYear.txt', sep='\n\n\n\n\n\n') >>> df_p = df[0:25] >>> table_simple = create_table(df_p) >>> table_simple.show()\n"
+}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{
+    "source file": "_templates.py",
+    "line number": "352",
+    "func name": "to_templated",
+    "func arg": "(fig, skip)",
+    "comments": "Return a copy of a figure where all styling properties have been moved into the figure's template.  The template property of the resulting figure may then be used to set the default styling of other figures.\n\nParameters ---------- fig Figure object or dict representing a figure skip A collection of names of properties to skip when moving properties to the template. Defaults to ('title', 'text') so that the text of figure titles, axis titles, and annotations does not become part of the template\n\nExamples -------- Imports\n\n>>> import plotly.graph_objs as go >>> import plotly.io as pio\n\nConstruct a figure with large courier text\n\n>>> fig = go.Figure(layout={'title': 'Figure Title', ...\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n 'font': {'size': 20, 'family': 'Courier'}, ...\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n 'template':\"none\"}) >>> fig # doctest: +NORMALIZE_WHITESPACE Figure({ 'data': [], 'layout': {'font': {'family': 'Courier', 'size': 20}, 'template': '...', 'title': {'text': 'Figure Title'}} })\n\nConvert to a figure with a template. Note how the 'font' properties have been moved into the template property.\n\n>>> templated_fig = pio.to_templated(fig) >>> templated_fig.layout.template layout.Template({ 'layout': {'font': {'family': 'Courier', 'size': 20}} }) >>> templated_fig Figure({ 'data': [], 'layout': {'template': '...', 'title': {'text': 'Figure Title'}} })\n\n Next create a new figure with this template\n\n>>> fig2 = go.Figure(layout={ ...\n\n\n\n 'title': 'Figure 2 Title', ...\n\n\n\n 'template': templated_fig.layout.template}) >>> fig2.layout.template layout.Template({ 'layout': {'font': {'family': 'Courier', 'size': 20}} })\n\nThe default font in fig2 will now be size 20 Courier.\n\nNext, register as a named template...\n\n>>> pio.templates['large_courier'] = templated_fig.layout.template\n\nand specify this template by name when constructing a figure.\n\n>>> go.Figure(layout={ ...\n\n\n\n 'title': 'Figure 3 Title', ...\n\n\n\n 'template': 'large_courier'}) # doctest: +ELLIPSIS Figure(...)\n\nFinally, set this as the default template to be applied to all new figures\n\n>>> pio.templates.default = 'large_courier' >>> fig = go.Figure(layout={'title': 'Figure 4 Title'}) >>> fig.layout.template layout.Template({ 'layout': {'font': {'family': 'Courier', 'size': 20}} })\n##### Returns\n"
+}{
+    "source file": "_ternary_contour.py",
+    "line number": "518",
+    "func name": "create_ternary_contour",
+    "func arg": "(coordinates, values, pole_labels, width, height, ncontours, showscale, coloring, colorscale, linecolor, title, interp_mode, showmarkers)",
+    "comments": "Ternary contour plot.\n\nParameters ----------\n\ncoordinates : list or ndarray Barycentric coordinates of shape (2, N) or (3, N) where N is the number of data points. The sum of the 3 coordinates is expected to be 1 for all data points. values : array-like Data points of field to be represented as contours. pole_labels : str, default ['a', 'b', 'c'] Names of the three poles of the triangle. width : int Figure width. height : int Figure height. ncontours : int or None Number of contours to display (determined automatically if None). showscale : bool, default False If True, a colorbar showing the color scale is displayed. coloring : None or 'lines' How to display contour. Filled contours if None, lines if ``lines``. colorscale : None or str (Plotly colormap) colorscale of the contours. linecolor : None or rgb color Color used for lines. ``colorscale`` has to be set to None, otherwise line colors are determined from ``colorscale``. title : str or None Title of ternary plot interp_mode : 'ilr' (default) or 'cartesian' Defines how data are interpolated to compute contours. If 'irl', ILR (Isometric Log-Ratio) of compositional data is performed. If 'cartesian', contours are determined in Cartesian space. showmarkers : bool, default False If True, markers corresponding to input compositional points are superimposed on contours, using the same colorscale.\n\nExamples ========\n\nExample 1: ternary contour plot with filled contours\n\n>>> import plotly.figure_factory as ff >>> import numpy as np >>> # Define coordinates >>> a, b = np.mgrid[0:1:20j, 0:1:20j] >>> mask = a + b <= 1 >>> a = a[mask].ravel() >>> b = b[mask].ravel() >>> c = 1\n\n- a\n\n- b >>> # Values to be displayed as contours >>> z = a * b * c >>> fig = ff.create_ternary_contour(np.stack((a, b, c)), z) >>> fig.show()\n\nIt is also possible to give only two barycentric coordinates for each point, since the sum of the three coordinates is one:\n\n>>> fig = ff.create_ternary_contour(np.stack((a, b)), z)\n\n Example 2: ternary contour plot with line contours\n\n>>> fig = ff.create_ternary_contour(np.stack((a, b, c)), z, coloring='lines')\n\nExample 3: customize number of contours\n\n>>> fig = ff.create_ternary_contour(np.stack((a, b, c)), z, ncontours=8)\n\nExample 4: superimpose contour plot and original data as markers\n\n>>> fig = ff.create_ternary_contour(np.stack((a, b, c)), z, coloring='lines', ...\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n showmarkers=True)\n\nExample 5: customize title and pole labels\n\n>>> fig = ff.create_ternary_contour(np.stack((a, b, c)), z, ...\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n title='Ternary plot', ...\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n pole_labels=['clay', 'quartz', 'fledspar'])\n"
+}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{
+    "source file": "_trisurf.py",
+    "line number": "247",
+    "func name": "create_trisurf",
+    "func arg": "(x, y, z, simplices, colormap, show_colorbar, scale, color_func, title, plot_edges, showbackground, backgroundcolor, gridcolor, zerolinecolor, edges_color, height, width, aspectratio)",
+    "comments": "Returns figure for a triangulated surface plot\n\nparam (array) x: data values of x in a 1D array :param (array) y: data values of y in a 1D array :param (array) z: data values of z in a 1D array :param (array) simplices: an array of shape (ntri, 3) where ntri is the number of triangles in the triangularization. Each row of the array contains the indicies of the verticies of each triangle :param (str|tuple|list) colormap: either a plotly scale name, an rgb or hex color, a color tuple or a list of colors. An rgb color is of the form 'rgb(x, y, z)' where x, y, z belong to the interval [0, 255] and a color tuple is a tuple of the form (a, b, c) where a, b and c belong to [0, 1]. If colormap is a list, it must contain the valid color types aforementioned as its members :param (bool) show_colorbar: determines if colorbar is visible :param (list|array) scale: sets the scale values to be used if a non- linearly interpolated colormap is desired. If left as None, a linear interpolation between the colors will be excecuted :param (function|list) color_func: The parameter that determines the coloring of the surface. Takes either a function with 3 arguments x, y, z or a list/array of color values the same length as simplices. If None, coloring will only depend on the z axis :param (str) title: title of the plot :param (bool) plot_edges: determines if the triangles on the trisurf are visible :param (bool) showbackground: makes background in plot visible :param (str) backgroundcolor: color of background. Takes a string of the form 'rgb(x,y,z)' x,y,z are between 0 and 255 inclusive :param (str) gridcolor: color of the gridlines besides the axes. Takes a string of the form 'rgb(x,y,z)' x,y,z are between 0 and 255 inclusive :param (str) zerolinecolor: color of the axes. Takes a string of the form 'rgb(x,y,z)' x,y,z are between 0 and 255 inclusive :param (str) edges_color: color of the edges, if plot_edges is True :param (int|float) height: the height of the plot (in pixels) :param (int|float) width: the width of the plot (in pixels) :param (dict) aspectratio: a dictionary of the aspect ratio values for the x, y and z axes. 'x', 'y' and 'z' take (int|float) values\n\nExample 1: Sphere\n\n>>> # Necessary Imports for Trisurf >>> import numpy as np >>> from scipy.spatial import Delaunay\n\n>>> from plotly.figure_factory import create_trisurf >>> from plotly.graph_objs import graph_objs\n\n>>> # Make data for plot >>> u = np.linspace(0, 2*np.pi, 20) >>> v = np.linspace(0, np.pi, 20) >>> u,v = np.meshgrid(u,v) >>> u = u.flatten() >>> v = v.flatten()\n\n>>> x = np.sin(v)*np.cos(u) >>> y = np.sin(v)*np.sin(u) >>> z = np.cos(v)\n\n>>> points2D = np.vstack([u,v]).T >>> tri = Delaunay(points2D) >>> simplices = tri.simplices\n\n>>> # Create a figure >>> fig1 = create_trisurf(x=x, y=y, z=z, colormap=\"Rainbow\", ...\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n simplices=simplices)\n\nExample 2: Torus\n\n>>> # Necessary Imports for Trisurf >>> import numpy as np >>> from scipy.spatial import Delaunay\n\n>>> from plotly.figure_factory import create_trisurf >>> from plotly.graph_objs import graph_objs\n\n>>> # Make data for plot >>> u = np.linspace(0, 2*np.pi, 20) >>> v = np.linspace(0, 2*np.pi, 20) >>> u,v = np.meshgrid(u,v) >>> u = u.flatten() >>> v = v.flatten()\n\n>>> x = (3 + (np.cos(v)))*np.cos(u) >>> y = (3 + (np.cos(v)))*np.sin(u) >>> z = np.sin(v)\n\n>>> points2D = np.vstack([u,v]).T >>> tri = Delaunay(points2D) >>> simplices = tri.simplices\n\n>>> # Create a figure >>> fig1 = create_trisurf(x=x, y=y, z=z, colormap=\"Viridis\", ...\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n simplices=simplices)\n\nExample 3: Mobius Band\n\n>>> # Necessary Imports for Trisurf >>> import numpy as np >>> from scipy.spatial import Delaunay\n\n>>> from plotly.figure_factory import create_trisurf >>> from plotly.graph_objs import graph_objs\n\n>>> # Make data for plot >>> u = np.linspace(0, 2*np.pi, 24) >>> v = np.linspace(-1, 1, 8) >>> u,v = np.meshgrid(u,v) >>> u = u.flatten() >>> v = v.flatten()\n\n>>> tp = 1 + 0.5*v*np.cos(u/2.) >>> x = tp*np.cos(u) >>> y = tp*np.sin(u) >>> z = 0.5*v*np.sin(u/2.)\n\n>>> points2D = np.vstack([u,v]).T >>> tri = Delaunay(points2D) >>> simplices = tri.simplices\n\n>>> # Create a figure >>> fig1 = create_trisurf(x=x, y=y, z=z, colormap=[(0.2, 0.4, 0.6), (1, 1, 1)], ...\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n simplices=simplices)\n\nExample 4: Using a Custom Colormap Function with Light Cone\n\n>>> # Necessary Imports for Trisurf >>> import numpy as np >>> from scipy.spatial import Delaunay\n\n>>> from plotly.figure_factory import create_trisurf >>> from plotly.graph_objs import graph_objs\n\n>>> # Make data for plot >>> u=np.linspace(-np.pi, np.pi, 30) >>> v=np.linspace(-np.pi, np.pi, 30) >>> u,v=np.meshgrid(u,v) >>> u=u.flatten() >>> v=v.flatten()\n\n>>> x = u >>> y = u*np.cos(v) >>> z = u*np.sin(v)\n\n>>> points2D = np.vstack([u,v]).T >>> tri = Delaunay(points2D) >>> simplices = tri.simplices\n\n>>> # Define distance function >>> def dist_origin(x, y, z): ...\n\n\n\n return np.sqrt((1.0 * x)**2 + (1.0 * y)**2 + (1.0 * z)**2)\n\n>>> # Create a figure >>> fig1 = create_trisurf(x=x, y=y, z=z, ...\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n colormap=['#FFFFFF', '#E4FFFE', ...\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n '#A4F6F9', '#FF99FE', ...\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n '#BA52ED'], ...\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n scale=[0, 0.6, 0.71, 0.89, 1], ...\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n simplices=simplices, ...\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n color_func=dist_origin)\n\nExample 5: Enter color_func as a list of colors\n\n>>> # Necessary Imports for Trisurf >>> import numpy as np >>> from scipy.spatial import Delaunay >>> import random\n\n>>> from plotly.figure_factory import create_trisurf >>> from plotly.graph_objs import graph_objs\n\n>>> # Make data for plot >>> u=np.linspace(-np.pi, np.pi, 30) >>> v=np.linspace(-np.pi, np.pi, 30) >>> u,v=np.meshgrid(u,v) >>> u=u.flatten() >>> v=v.flatten()\n\n>>> x = u >>> y = u*np.cos(v) >>> z = u*np.sin(v)\n\n>>> points2D = np.vstack([u,v]).T >>> tri = Delaunay(points2D) >>> simplices = tri.simplices\n\n >>> colors = [] >>> color_choices = ['rgb(0, 0, 0)', '#6c4774', '#d6c7dd']\n\n>>> for index in range(len(simplices)): ...\n\n\n\n colors.append(random.choice(color_choices))\n\n>>> fig = create_trisurf( ...\n\n\n\n x, y, z, simplices, ...\n\n\n\n color_func=colors, ...\n\n\n\n show_colorbar=True, ...\n\n\n\n edges_color='rgb(2, 85, 180)', ...\n\n\n\n title=' Modern Art' ... )\n"
+}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{
+    "source file": "_utils.py",
+    "line number": "29",
+    "func name": "validate_coerce_output_type",
+    "func arg": "(output_type)",
+    "comments": ""
+}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{
+    "source file": "_version.py",
+    "line number": "507",
+    "func name": "get_versions",
+    "func arg": "()",
+    "comments": "Get version information or return default if unable to do so.\n\n\n"
+}{}{}{}{}{}{}{}{
+    "source file": "_violin.py",
+    "line number": "440",
+    "func name": "create_violin",
+    "func arg": "(data, data_header, group_header, colors, use_colorscale, group_stats, rugplot, sort, height, width, title)",
+    "comments": "**deprecated**, use instead the plotly.graph_objects trace :class:`plotly.graph_objects.Violin`.\n\nparam (list|array) data: accepts either a list of numerical values, a list of dictionaries all with identical keys and at least one column of numeric values, or a pandas dataframe with at least one column of numbers. :param (str) data_header: the header of the data column to be used from an inputted pandas dataframe. Not applicable if 'data' is a list of numeric values. :param (str) group_header: applicable if grouping data by a variable. 'group_header' must be set to the name of the grouping variable. :param (str|tuple|list|dict) colors: either a plotly scale name, an rgb or hex color, a color tuple, a list of colors or a dictionary. An rgb color is of the form 'rgb(x, y, z)' where x, y and z belong to the interval [0, 255] and a color tuple is a tuple of the form (a, b, c) where a, b and c belong to [0, 1]. If colors is a list, it must contain valid color types as its members. :param (bool) use_colorscale: only applicable if grouping by another variable. Will implement a colorscale based on the first 2 colors of param colors. This means colors must be a list with at least 2 colors in it (Plotly colorscales are accepted since they map to a list of two rgb colors). Default = False :param (dict) group_stats: a dictioanry where each key is a unique value from the group_header column in data. Each value must be a number and will be used to color the violin plots if a colorscale is being used. :param (bool) rugplot: determines if a rugplot is draw on violin plot. Default = True :param (bool) sort: determines if violins are sorted alphabetically (True) or by input order (False). Default = False :param (float) height: the height of the violin plot. :param (float) width: the width of the violin plot. :param (str) title: the title of the violin plot.\n\nExample 1: Single Violin Plot\n\n>>> from plotly.figure_factory import create_violin >>> import plotly.graph_objs as graph_objects\n\n>>> import numpy as np >>> from scipy import stats\n\n>>> # create list of random values >>> data_list = np.random.randn(100)\n\n>>> # create violin fig >>> fig = create_violin(data_list, colors='#604d9e')\n\n>>> # plot >>> fig.show()\n\nExample 2: Multiple Violin Plots with Qualitative Coloring\n\n>>> from plotly.figure_factory import create_violin >>> import plotly.graph_objs as graph_objects\n\n>>> import numpy as np >>> import pandas as pd >>> from scipy import stats\n\n>>> # create dataframe >>> np.random.seed(619517) >>> Nr=250 >>> y = np.random.randn(Nr) >>> gr = np.random.choice(list(\"ABCDE\"), Nr) >>> norm_params=[(0, 1.2), (0.7, 1), (-0.5, 1.4), (0.3, 1), (0.8, 0.9)]\n\n>>> for i, letter in enumerate(\"ABCDE\"): ...\n\n\n\n y[gr == letter] *=norm_params[i][1]+ norm_params[i][0] >>> df = pd.DataFrame(dict(Score=y, Group=gr))\n\n>>> # create violin fig >>> fig = create_violin(df, data_header='Score', group_header='Group', ...\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nsort=True, height=600, width=1000)\n\n>>> # plot >>> fig.show()\n\nExample 3: Violin Plots with Colorscale\n\n>>> from plotly.figure_factory import create_violin >>> import plotly.graph_objs as graph_objects\n\n>>> import numpy as np >>> import pandas as pd >>> from scipy import stats\n\n>>> # create dataframe >>> np.random.seed(619517) >>> Nr=250 >>> y = np.random.randn(Nr) >>> gr = np.random.choice(list(\"ABCDE\"), Nr) >>> norm_params=[(0, 1.2), (0.7, 1), (-0.5, 1.4), (0.3, 1), (0.8, 0.9)]\n\n>>> for i, letter in enumerate(\"ABCDE\"): ...\n\n\n\n y[gr == letter] *=norm_params[i][1]+ norm_params[i][0] >>> df = pd.DataFrame(dict(Score=y, Group=gr))\n\n>>> # define header params >>> data_header = 'Score' >>> group_header = 'Group'\n\n>>> # make groupby object with pandas >>> group_stats = {} >>> groupby_data = df.groupby([group_header])\n\n>>> for group in \"ABCDE\": ...\n\n\n\n data_from_group = groupby_data.get_group(group)[data_header] ...\n\n\n\n # take a stat of the grouped data ...\n\n\n\n stat = np.median(data_from_group) ...\n\n\n\n # add to dictionary ...\n\n\n\n group_stats[group] = stat\n\n>>> # create violin fig >>> fig = create_violin(df, data_header='Score', group_header='Group', ...\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n height=600, width=1000, use_colorscale=True, ...\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n group_stats=group_stats)\n\n>>> # plot >>> fig.show()\n"
+}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{
+    "source file": "basevalidators.py",
+    "line number": "203",
+    "func name": "type_str",
+    "func arg": "(v)",
+    "comments": "Return a type string of the form module.name for the input value v\n\n\n"
+}{}{}{
+    "source file": "carto.py",
+    "line number": "12",
+    "func name": "swatches",
+    "func arg": "(template)",
+    "comments": ""
+}{}{}{
+    "source file": "cmocean.py",
+    "line number": "12",
+    "func name": "swatches",
+    "func arg": "(template)",
+    "comments": ""
+}{
+    "source file": "colorbrewer.py",
+    "line number": "12",
+    "func name": "swatches",
+    "func arg": "(template)",
+    "comments": ""
+}{
+    "source file": "colors.py",
+    "line number": "12",
+    "func name": "rgb_str",
+    "func arg": "(red, green, blue)",
+    "comments": ""
+}{
+    "source file": "compatibility.py",
+    "line number": "187",
+    "func name": "write_graph_objs_graph_objs",
+    "func arg": "(outdir)",
+    "comments": "Write the plotly/graph_objs/graph_objs.py file\n\nThis module just imports everything from the plotly.graph_objs package. We write it for backward compatibility with legacy imports like:\n\nfrom plotly.graph_objs import graph_objs\n\nParameters ---------- outdir : str Root outdir in which the graph_objs package should reside\n##### Returns\n"
+}{
+    "source file": "conf.py",
+    "line number": "208",
+    "func name": "setup",
+    "func arg": "(app)",
+    "comments": ""
+}{
+    "source file": "config.py",
+    "line number": "25",
+    "func name": "get_config",
+    "func arg": "()",
+    "comments": "Returns either module config or file config.\n\n\n"
+}{}{
+    "source file": "conftest.py",
+    "line number": "5",
+    "func name": "pytest_ignore_collect",
+    "func arg": "(path)",
+    "comments": ""
+}{
+    "source file": "cyclical.py",
+    "line number": "17",
+    "func name": "swatches_cyclical",
+    "func arg": "(template)",
+    "comments": "Parameters ---------- template : str or dict or plotly.graph_objects.layout.Template instance The figure template name or definition.\n\n\n##### Returns\n* **fig **: graph_objects.Figure containing the displayed image\n    A `Figure` object. This figure demonstrates the color scales and\n    sequences in this module, as polar bar charts.\n\n"
+}{
+    "source file": "dash_apps.py",
+    "line number": "23",
+    "func name": "update",
+    "func arg": "(fid, content)",
+    "comments": "Completely update the writable.\n\n\n"
+}{
+    "source file": "dashboard_objs.py",
+    "line number": "138",
+    "func name": "_add_html_text",
+    "func arg": "(dashboard_html, text, top_left_x, top_left_y, box_w, box_h)",
+    "comments": ""
+}{}{
+    "source file": "dashboards.py",
+    "line number": "38",
+    "func name": "schema",
+    "func arg": "()",
+    "comments": "Retrieve the dashboard schema.\n\n\n"
+}{}{
+    "source file": "datatypes.py",
+    "line number": "584",
+    "func name": "write_datatype_py",
+    "func arg": "(outdir, node)",
+    "comments": "Build datatype (graph_objs) class source code and write to a file\n\nParameters ---------- outdir : Root outdir in which the graph_objs package should reside node : The datatype node (node.is_datatype must evaluate to true) for which to build the datatype class\n##### Returns\n"
+}{
+    "source file": "definitions.py",
+    "line number": "665",
+    "func name": "gridon",
+    "func arg": "()",
+    "comments": "Template to enable x and y-grid by default\n\n\n"
+}{
+    "source file": "diverging.py",
+    "line number": "28",
+    "func name": "swatches",
+    "func arg": "(template)",
+    "comments": ""
+}{}{}{}{}{}{}{}{
+    "source file": "figure.py",
+    "line number": "601",
+    "func name": "write_figure_classes",
+    "func arg": "(outdir, trace_node, data_validator, layout_validator, frame_validator, subplot_nodes, layout_array_nodes)",
+    "comments": "Construct source code for the Figure and FigureWidget classes and write to graph_objs/_figure.py and graph_objs/_figurewidget.py respectively\n\nParameters ---------- outdir : str Root outdir in which the graph_objs package should reside trace_node : PlotlyNode Root trace node (the node that is the parent of all of the individual trace nodes like bar, scatter, etc.) data_validator : BaseDataValidator DataValidator instance layout_validator : CompoundValidator LayoutValidator instance frame_validator : CompoundArrayValidator FrameValidator instance subplot_nodes: list of PlotlyNode List of names of all of the layout subplot properties layout_array_nodes: list of PlotlyNode List of array nodes under layout that can be positioned using xref/yref\n##### Returns\n"
+}{}{}{}{
+    "source file": "files1.py",
+    "line number": "72",
+    "func name": "lookup",
+    "func arg": "(path, parent, user, exists)",
+    "comments": "Retrieve a general file from Plotly without needing a fid.\n\nparam (str) path: The '/'-delimited path specifying the file location. :param (int) parent: Parent id, an integer, which the path is relative to. :param (str) user: The username to target files for. Defaults to requestor. :param (bool) exists: If True, don't return the full file, just a flag. :returns: (requests.Response) Returns response directly from requests.\n"
+}{
+    "source file": "files2.py",
+    "line number": "32",
+    "func name": "ensure_writable_plotly_dir",
+    "func arg": "()",
+    "comments": ""
+}{}{
+    "source file": "folders.py",
+    "line number": "90",
+    "func name": "lookup",
+    "func arg": "(path, parent, user, exists)",
+    "comments": "Retrieve a folder file from Plotly without needing a fid.\n\nparam (str) path: The '/'-delimited path specifying the file location. :param (int) parent: Parent id, an integer, which the path is relative to. :param (str) user: The username to target files for. Defaults to requestor. :param (bool) exists: If True, don't return the full file, just a flag. :returns: (requests.Response) Returns response directly from requests.\n"
+}{}{}{}{
+    "source file": "grids.py",
+    "line number": "182",
+    "func name": "row",
+    "func arg": "(fid, body)",
+    "comments": "Append rows to a grid.\n\nparam (str) fid: The `{username}:{idlocal}` identifier. E.g. `foo:88`. :param (dict) body: A mapping of body param names to values. :returns: (requests.Response) Returns response directly from requests.\n"
+}{}{
+    "source file": "images.py",
+    "line number": "9",
+    "func name": "create",
+    "func arg": "(body)",
+    "comments": "Generate an image (which does not get saved on Plotly).\n\nparam (dict) body: A mapping of body param names to values. :returns: (requests.Response) Returns response directly from requests.\n"
+}{
+    "source file": "importers.py",
+    "line number": "4",
+    "func name": "relative_import",
+    "func arg": "(parent_name, rel_modules, rel_classes)",
+    "comments": "Helper function to import submodules lazily in Python 3.7+\n\nParameters ---------- rel_modules: list of str list of submodules to import, of the form .submodule rel_classes: list of str list of submodule classes/variables to import, of the form ._submodule.Foo\n##### Returns\n"
+}{}{}{}{
+    "source file": "mpltools.py",
+    "line number": "530",
+    "func name": "mpl_dates_to_datestrings",
+    "func arg": "(dates, mpl_formatter)",
+    "comments": "Convert matplotlib dates to iso-formatted-like time strings.\n\nPlotly's accepted format: \"YYYY-MM-DD HH:MM:SS\" (e.g., 2001-01-01 00:00:00)\n\nInfo on mpl dates: http://matplotlib.org/api/dates_api.html\n"
+}{
+    "source file": "offline.py",
+    "line number": "796",
+    "func name": "enable_mpl_offline",
+    "func arg": "(resize, strip_style, verbose, show_link, link_text, validate)",
+    "comments": "Convert mpl plots to locally hosted HTML documents.\n\nThis function should be used with the inline matplotlib backend that ships with IPython that can be enabled with `%pylab inline` or `%matplotlib inline`. This works by adding an HTML formatter for Figure objects; the existing SVG/PNG formatters will remain enabled.\n\n(idea taken from `mpld3._display.enable_notebook`)\n\nExample: ``` from plotly.offline import enable_mpl_offline import matplotlib.pyplot as plt\n\nenable_mpl_offline()\n\nfig = plt.figure() x = [10, 15, 20, 25, 30] y = [100, 250, 200, 150, 300] plt.plot(x, y, \"o\") fig ```\n"
+}{
+    "source file": "optional_imports.py",
+    "line number": "15",
+    "func name": "get_module",
+    "func arg": "(name, should_load)",
+    "comments": "Return module or None. Absolute import is required.\n\nparam (str) name: Dot-separated module path. E.g., 'scipy.stats'. :raise: (ImportError) Only when exc_msg is defined. :return: (module|None) If import succeeds, the module will be returned.\n"
+}{}{
+    "source file": "optional_utils.py",
+    "line number": "21",
+    "func name": "run_fig",
+    "func arg": "(fig)",
+    "comments": ""
+}{}{}{
+    "source file": "plot_schema.py",
+    "line number": "9",
+    "func name": "retrieve",
+    "func arg": "(sha1, **kwargs)",
+    "comments": "Retrieve the most up-to-date copy of the plot-schema wrt the given hash.\n\nparam (str) sha1: The last-known hash of the plot-schema (or ''). :returns: (requests.Response) Returns response directly from requests.\n"
+}{}{
+    "source file": "plotly.py",
+    "line number": "2120",
+    "func name": "_open_url",
+    "func arg": "(url)",
+    "comments": ""
+}{}{
+    "source file": "plots.py",
+    "line number": "107",
+    "func name": "lookup",
+    "func arg": "(path, parent, user, exists)",
+    "comments": "Retrieve a plot file from Plotly without needing a fid.\n\nparam (str) path: The '/'-delimited path specifying the file location. :param (int) parent: Parent id, an integer, which the path is relative to. :param (str) user: The username to target files for. Defaults to requestor. :param (bool) exists: If True, don't return the full file, just a flag. :returns: (requests.Response) Returns response directly from requests.\n"
+}{
+    "source file": "presentation_objs.py",
+    "line number": "893",
+    "func name": "_url_parens_contained",
+    "func arg": "(url_name, line)",
+    "comments": ""
+}{}{
+    "source file": "qualitative.py",
+    "line number": "10",
+    "func name": "swatches",
+    "func arg": "(template)",
+    "comments": ""
+}{}{}{
+    "source file": "renderer.py",
+    "line number": "20",
+    "func name": "warning_on_one_line",
+    "func arg": "(msg, category, filename, lineno, file, line)",
+    "comments": ""
+}{}{
+    "source file": "sequential.py",
+    "line number": "11",
+    "func name": "swatches",
+    "func arg": "(template)",
+    "comments": ""
+}{
+    "source file": "serializers.py",
+    "line number": "68",
+    "func name": "_js_to_py",
+    "func arg": "(v, widget_manager)",
+    "comments": "Javascript -> Python ipywidget deserializer\n\nParameters ---------- v Object to be deserialized widget_manager ipywidget widget_manager (unused)\n##### Returns\n"
+}{
+    "source file": "session.py",
+    "line number": "156",
+    "func name": "get_session_credentials",
+    "func arg": "()",
+    "comments": "Returns the credentials that will be sent to plotly.\n\n\n"
+}{}{}{
+    "source file": "setup1.py",
+    "line number": "5",
+    "func name": "readme",
+    "func arg": "()",
+    "comments": ""
+}{
+    "source file": "setup2.py",
+    "line number": "257",
+    "func name": "get_bundle_schema_urls",
+    "func arg": "(build_num)",
+    "comments": ""
+}{
+    "source file": "setup3.py",
+    "line number": "5",
+    "func name": "readme",
+    "func arg": "()",
+    "comments": ""
+}{
+    "source file": "spectacle_presentations.py",
+    "line number": "29",
+    "func name": "update",
+    "func arg": "(fid, content)",
+    "comments": "Completely update the writable.\n\n\n"
+}{
+    "source file": "subplots.py",
+    "line number": "1430",
+    "func name": "_get_subplot_ref_for_trace",
+    "func arg": "(trace)",
+    "comments": ""
+}{}{}{}{
+    "source file": "test_angle_validator.py",
+    "line number": "34",
+    "func name": "test_rejection",
+    "func arg": "(val, validator)",
+    "comments": ""
+}{
+    "source file": "test_annotations.py",
+    "line number": "18",
+    "func name": "test_annotations",
+    "func arg": "()",
+    "comments": ""
+}{
+    "source file": "test_annotations1.py",
+    "line number": "50",
+    "func name": "test_dict_instantiation_graph_obj_error_2",
+    "func arg": "()",
+    "comments": ""
+}{
+    "source file": "test_any_validator.py",
+    "line number": "40",
+    "func name": "test_acceptance_array",
+    "func arg": "(val, validator_aok)",
+    "comments": ""
+}{
+    "source file": "test_append_trace.py",
+    "line number": "78",
+    "func name": "test_append_scatter3d",
+    "func arg": "()",
+    "comments": ""
+}{
+    "source file": "test_axis_scales.py",
+    "line number": "17",
+    "func name": "test_even_linear_scale",
+    "func arg": "()",
+    "comments": ""
+}{
+    "source file": "test_bars.py",
+    "line number": "56",
+    "func name": "test_h_and_v_bars",
+    "func arg": "()",
+    "comments": ""
+}{
+    "source file": "test_basetraces_validator.py",
+    "line number": "121",
+    "func name": "test_skip_invalid",
+    "func arg": "(validator_nouid)",
+    "comments": ""
+}{
+    "source file": "test_basic.py",
+    "line number": "225",
+    "func name": "test_blended",
+    "func arg": "()",
+    "comments": ""
+}{}{
+    "source file": "test_boolean_validator.py",
+    "line number": "22",
+    "func name": "test_rejection",
+    "func arg": "(val, validator)",
+    "comments": ""
+}{
+    "source file": "test_color_validator.py",
+    "line number": "252",
+    "func name": "test_description_aok_colorscale",
+    "func arg": "(validator_aok_colorscale)",
+    "comments": ""
+}{
+    "source file": "test_colorlist_validator.py",
+    "line number": "47",
+    "func name": "test_acceptance_aok",
+    "func arg": "(val, validator)",
+    "comments": ""
+}{}{
+    "source file": "test_colors1.py",
+    "line number": "4",
+    "func name": "test_reversed_colorscale",
+    "func arg": "()",
+    "comments": ""
+}{
+    "source file": "test_colorscale_validator.py",
+    "line number": "144",
+    "func name": "test_rejection_array",
+    "func arg": "(val, validator)",
+    "comments": ""
+}{
+    "source file": "test_compound_validator.py",
+    "line number": "78",
+    "func name": "test_skip_invalid_empty_object",
+    "func arg": "(validator)",
+    "comments": ""
+}{
+    "source file": "test_compoundarray_validator.py",
+    "line number": "95",
+    "func name": "test_skip_invalid",
+    "func arg": "(validator)",
+    "comments": ""
+}{}{}{}{
+    "source file": "test_dash_validator.py",
+    "line number": "57",
+    "func name": "test_rejection_by_bad_dash_list",
+    "func arg": "(val, validator)",
+    "comments": ""
+}{}{
+    "source file": "test_data.py",
+    "line number": "78",
+    "func name": "test_bars_data",
+    "func arg": "()",
+    "comments": ""
+}{
+    "source file": "test_data1.py",
+    "line number": "60",
+    "func name": "test_dict_instantiation_graph_obj_error_2",
+    "func arg": "()",
+    "comments": ""
+}{
+    "source file": "test_dataarray_validator.py",
+    "line number": "46",
+    "func name": "test_rejection",
+    "func arg": "(val, validator)",
+    "comments": ""
+}{}{
+    "source file": "test_deepcopy_pickle.py",
+    "line number": "111",
+    "func name": "test_pickle_layout",
+    "func arg": "(fig1)",
+    "comments": ""
+}{
+    "source file": "test_dependencies_not_imported.py",
+    "line number": "6",
+    "func name": "test_dependencies_not_imported",
+    "func arg": "()",
+    "comments": ""
+}{
+    "source file": "test_enumerated_validator.py",
+    "line number": "147",
+    "func name": "test_rejection_by_element_aok",
+    "func arg": "(val, validator_aok_re)",
+    "comments": ""
+}{
+    "source file": "test_error_bars.py",
+    "line number": "47",
+    "func name": "test_key_error",
+    "func arg": "()",
+    "comments": ""
+}{
+    "source file": "test_facets.py",
+    "line number": "5",
+    "func name": "test_facets",
+    "func arg": "()",
+    "comments": ""
+}{}{}{}{}{}{}{}{
+    "source file": "test_flaglist_validator.py",
+    "line number": "207",
+    "func name": "test_rejection_aok_element_val",
+    "func arg": "(val, validator_extra_aok)",
+    "comments": ""
+}{}{
+    "source file": "test_frames.py",
+    "line number": "12",
+    "func name": "return_prop_descriptions",
+    "func arg": "(prop_descrip_text)",
+    "comments": ""
+}{
+    "source file": "test_get_embed.py",
+    "line number": "16",
+    "func name": "test_get_invalid_embed",
+    "func arg": "()",
+    "comments": ""
+}{
+    "source file": "test_get_figure.py",
+    "line number": "20",
+    "func name": "is_trivial",
+    "func arg": "(obj)",
+    "comments": ""
+}{}{}{}{}{
+    "source file": "test_grid1.py",
+    "line number": "24",
+    "func name": "random_filename",
+    "func arg": "()",
+    "comments": ""
+}{}{
+    "source file": "test_image_renderers.py",
+    "line number": "116",
+    "func name": "test_mimetype_combination",
+    "func arg": "(fig1)",
+    "comments": ""
+}{
+    "source file": "test_image.py",
+    "line number": "51",
+    "func name": "test_image_save_as_saves_valid_image",
+    "func arg": "(setup_image, image_format, width, height, scale)",
+    "comments": ""
+}{}{
+    "source file": "test_imageuri_validator.py",
+    "line number": "48",
+    "func name": "test_rejection_by_type",
+    "func arg": "(val, validator)",
+    "comments": ""
+}{
+    "source file": "test_imshow.py",
+    "line number": "155",
+    "func name": "test_imshow_dataframe",
+    "func arg": "()",
+    "comments": ""
+}{
+    "source file": "test_infoarray_validator.py",
+    "line number": "579",
+    "func name": "test_validator_rejection_number_free_2d_element_value",
+    "func arg": "(val, invalid_inds, validator_number_free_2d)",
+    "comments": ""
+}{}{
+    "source file": "test_integer_validator.py",
+    "line number": "154",
+    "func name": "test_rejection_aok_min_max",
+    "func arg": "(val, validator_aok)",
+    "comments": ""
+}{
+    "source file": "test_kaleido.py",
+    "line number": "90",
+    "func name": "test_image_renderer",
+    "func arg": "()",
+    "comments": ""
+}{}{
+    "source file": "test_lazy_imports.py",
+    "line number": "6",
+    "func name": "test_lazy_imports",
+    "func arg": "()",
+    "comments": ""
+}{
+    "source file": "test_lines.py",
+    "line number": "33",
+    "func name": "test_complicated_line",
+    "func arg": "()",
+    "comments": ""
+}{
+    "source file": "test_literal_validator.py",
+    "line number": "23",
+    "func name": "test_rejection",
+    "func arg": "(val, validator)",
+    "comments": ""
+}{}{}{}{}{}{
+    "source file": "test_number_validator.py",
+    "line number": "147",
+    "func name": "test_rejection_aok_min_max",
+    "func arg": "(val, validator_aok)",
+    "comments": ""
+}{}{}{}{}{
+    "source file": "test_orca_server.py",
+    "line number": "159",
+    "func name": "test_external_server_url",
+    "func arg": "()",
+    "comments": ""
+}{
+    "source file": "test_pandas_backend.py",
+    "line number": "49",
+    "func name": "test_pandas_example",
+    "func arg": "()",
+    "comments": ""
+}{
+    "source file": "test_pandas_series_input.py",
+    "line number": "176",
+    "func name": "test_data_array_validator_dates",
+    "func arg": "(data_array_validator, datetime_pandas, dates_array)",
+    "comments": ""
+}{}{}{
+    "source file": "test_plot.py",
+    "line number": "348",
+    "func name": "generate_private_sharing_and_public_world_readable_precedence",
+    "func arg": "()",
+    "comments": "Test that call signature arguments applied through _plot_option_logic overwrite options supplied through py.sign_in which overwrite options set through tls.set_config\n\n\n"
+}{}{}{}{}{}{}{
+    "source file": "test_px_functions.py",
+    "line number": "382",
+    "func name": "test_timeline",
+    "func arg": "()",
+    "comments": ""
+}{
+    "source file": "test_px_hover.py",
+    "line number": "156",
+    "func name": "test_sunburst_hoverdict_color",
+    "func arg": "()",
+    "comments": ""
+}{
+    "source file": "test_px_input.py",
+    "line number": "463",
+    "func name": "test_x_or_y",
+    "func arg": "(fn)",
+    "comments": ""
+}{
+    "source file": "test_px_wide.py",
+    "line number": "764",
+    "func name": "test_line_group",
+    "func arg": "()",
+    "comments": ""
+}{
+    "source file": "test_px.py",
+    "line number": "258",
+    "func name": "test_render_mode",
+    "func arg": "()",
+    "comments": ""
+}{
+    "source file": "test_renderers.py",
+    "line number": "372",
+    "func name": "test_repr_mimebundle_mixed_renderer",
+    "func arg": "(fig1)",
+    "comments": ""
+}{}{
+    "source file": "test_scatter.py",
+    "line number": "36",
+    "func name": "test_double_scatter",
+    "func arg": "()",
+    "comments": ""
+}{
+    "source file": "test_scatter1.py",
+    "line number": "14",
+    "func name": "test_trivial",
+    "func arg": "()",
+    "comments": ""
+}{}{
+    "source file": "test_sg_scraper.py",
+    "line number": "43",
+    "func name": "test_scraper",
+    "func arg": "()",
+    "comments": ""
+}{}{
+    "source file": "test_string_validator.py",
+    "line number": "199",
+    "func name": "test_rejection_no_blanks_aok",
+    "func arg": "(val, validator_no_blanks_aok)",
+    "comments": ""
+}{
+    "source file": "test_subplotid_validator.py",
+    "line number": "39",
+    "func name": "test_rejection_value",
+    "func arg": "(val, validator)",
+    "comments": ""
+}{
+    "source file": "test_subplots.py",
+    "line number": "18",
+    "func name": "test_blank_subplots",
+    "func arg": "()",
+    "comments": ""
+}{}{
+    "source file": "test_to_from_json.py",
+    "line number": "214",
+    "func name": "test_write_json_from_file_string",
+    "func arg": "(fig1, pretty, remove_uids)",
+    "comments": ""
+}{
+    "source file": "test_to_image.py",
+    "line number": "321",
+    "func name": "test_invalid_figure_json",
+    "func arg": "()",
+    "comments": ""
+}{}{
+    "source file": "test_trendline.py",
+    "line number": "95",
+    "func name": "test_trendline_on_timeseries",
+    "func arg": "(mode)",
+    "comments": ""
+}{}{}{}{}{}{}{}{}{
+    "source file": "test_utils2.py",
+    "line number": "26",
+    "func name": "test_axis_w_fixed_formatter",
+    "func arg": "()",
+    "comments": ""
+}{}{}{}{
+    "source file": "test_validate.py",
+    "line number": "21",
+    "func name": "test_validate_false",
+    "func arg": "()",
+    "comments": ""
+}{}{
+    "source file": "test_xarray_input.py",
+    "line number": "124",
+    "func name": "test_color_validator_object",
+    "func arg": "(color_validator, color_object_xarray)",
+    "comments": ""
+}{}{
+    "source file": "tools.py",
+    "line number": "339",
+    "func name": "embed",
+    "func arg": "(file_owner_or_url, file_id, width, height)",
+    "comments": "Embeds existing Plotly figure in IPython Notebook\n\nPlotly uniquely identifies figures with a 'file_owner'/'file_id' pair. Since each file is given a corresponding unique url, you may also simply pass a valid plotly url as the first argument.\n\nNote, if you're using a file_owner string as the first argument, you MUST specify a `file_id` keyword argument. Else, if you're using a url string as the first argument, you MUST NOT specify a `file_id` keyword argument, or file_id must be set to Python's None value.\n\nPositional arguments: file_owner_or_url (string) -- a valid plotly username OR a valid plotly url\n\nKeyword arguments: file_id (default=None) -- an int or string that can be converted to int if you're using a url, don't fill this in! width (default=\"100%\") -- an int or string corresp. to width of the figure height (default=\"525\") -- same as width but corresp. to the height of the figure\n"
+}{
+    "source file": "tools1.py",
+    "line number": "694",
+    "func name": "get_config_plotly_server_url",
+    "func arg": "()",
+    "comments": "Function to get the .config file's 'plotly_domain' without importing the chart_studio package.  This property is needed to compute the default value of the plotly.js config plotlyServerURL, so it is independent of the chart_studio integration and still needs to live in\n\n\n##### Returns\n"
+}{
+    "source file": "tools2.py",
+    "line number": "6",
+    "func name": "ipynb_vega_init",
+    "func arg": "()",
+    "comments": "Initialize the IPython notebook display elements\n\nThis function borrows heavily from the excellent vincent package: http://github.com/wrobstory/vincent\n"
+}{}{
+    "source file": "users.py",
+    "line number": "9",
+    "func name": "current",
+    "func arg": "()",
+    "comments": "Retrieve information on the logged-in user from Plotly.\n\nreturns: (requests.Response) Returns response directly from requests.\n"
+}{
+    "source file": "utils.py",
+    "line number": "173",
+    "func name": "set_sharing_and_world_readable",
+    "func arg": "(option_set)",
+    "comments": ""
+}{
+    "source file": "utils1.py",
+    "line number": "22",
+    "func name": "basic_auth",
+    "func arg": "(username, password)",
+    "comments": "Creates the basic auth value to be used in an authorization header.\n\nThis is mostly copied from the requests library.\n\n:param (str) username: A Plotly username. :param (str) password: The password for the given Plotly username. :returns: (str) An 'authorization' header for use in a request header.\n"
+}{
+    "source file": "utils2.py",
+    "line number": "138",
+    "func name": "request",
+    "func arg": "(method, url, **kwargs)",
+    "comments": "Central place to make any api v2 api request.\n\nparam (str) method: The request method ('get', 'put', 'delete', ...). :param (str) url: The full api url to make the request to. :param kwargs: These are passed along (but possibly mutated) to requests. :return: (requests.Response) The response directly from requests.\n"
+}{}{
+    "source file": "utils4.py",
+    "line number": "252",
+    "func name": "_get_int_type",
+    "func arg": "()",
+    "comments": ""
+}{
+    "source file": "utils5.py",
+    "line number": "125",
+    "func name": "format_description",
+    "func arg": "(desc)",
+    "comments": ""
+}{
+    "source file": "utils6.py",
+    "line number": "187",
+    "func name": "decode_unicode",
+    "func arg": "(coll)",
+    "comments": ""
+}{}{
+    "source file": "utils8.py",
+    "line number": "259",
+    "func name": "list_of_options",
+    "func arg": "(iterable, conj, period)",
+    "comments": "Returns an English listing of objects seperated by commas ','\n\nFor example, ['foo', 'bar', 'baz'] becomes 'foo, bar and baz' if the conjunction 'and' is selected.\n"
+}{
+    "source file": "utils9.py",
+    "line number": "337",
+    "func name": "image_to_base64",
+    "func arg": "(image)",
+    "comments": "Convert a matplotlib image to a base64 png representation\n\nParameters ---------- image : matplotlib image object The image to be converted.\n##### Returns\n* **image_base64 **: string\n    The UTF8-encoded base64 string representation of the png image.\n\n"
+}{
+    "source file": "utils10.py",
+    "line number": "90",
+    "func name": "is_num_list",
+    "func arg": "(item)",
+    "comments": ""
+}{}{}{}{}{}{
+    "source file": "validators.py",
+    "line number": "236",
+    "func name": "write_data_validator_py",
+    "func arg": "(outdir, base_trace_node)",
+    "comments": "Construct and write out the DataValidator (this is the validator that inputs a list of traces)\n\nParameters ---------- outdir : str Root outdir in which the top-level validators package should reside base_trace_node : PlotlyNode PlotlyNode that is the parent of all of the individual trace nodes\n##### Returns\n"
+}{
+    "source file": "vega_renderer.py",
+    "line number": "110",
+    "func name": "fig_to_vega",
+    "func arg": "(fig, notebook)",
+    "comments": "Convert a matplotlib figure to vega dictionary\n\nif notebook=True, then return an object which will display in a notebook otherwise, return an HTML string.\n"
+}{
+    "source file": "version.py",
+    "line number": "9",
+    "func name": "stable_semver",
+    "func arg": "()",
+    "comments": "Get the stable portion of the semantic version string (the first three numbers), without any of the trailing labels\n\n'3.0.0rc11' -> '3.0.0'\n"
+}{}{
+    "source file": "versioneer.py",
+    "line number": "1842",
+    "func name": "scan_setup_py",
+    "func arg": "()",
+    "comments": "Validate the contents of setup.py against Versioneer's expectations.\n\n\n"
+}{
+    "source file": "vincent_renderer.py",
+    "line number": "47",
+    "func name": "fig_to_vincent",
+    "func arg": "(fig)",
+    "comments": "Convert a matplotlib figure to a vincent object\n\n\n"
+}{}

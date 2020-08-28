@@ -1,0 +1,7 @@
+{
+    "source file": "xla_ops_grad.py",
+    "line number": "25",
+    "func name": "_XlaClusterOutputGrad",
+    "func arg": "(_, grad)",
+    "comments": ""
+}

@@ -1,0 +1,7 @@
+{
+    "source file": "warm_starting_util.py",
+    "line number": "413",
+    "func name": "warm_start",
+    "func arg": "(ckpt_to_initialize_from, vars_to_warm_start, var_name_to_vocab_info, var_name_to_prev_var_name)",
+    "comments": "Warm-starts a model using the given settings.\n\nIf you are using a tf.estimator.Estimator, this will automatically be called during training.\n##### Args\n* **ckpt_to_initialize_from**: [Required] A string specifying the directory with\n  checkpoint file(s) or path to checkpoint from which to warm-start the\n  model parameters.\n\n* **vars_to_warm_start**: [Optional] One of the following\n\n* **var_name_to_vocab_info**: [Optional] Dict of variable names (strings) to\n  `tf.estimator.VocabInfo`. The variable names should be \"full\" variables,\n  not the names of the partitions.  If not explicitly provided, the variable\n  is assumed to have no (changes to) vocabulary.\n\n* **var_name_to_prev_var_name**: [Optional] Dict of variable names (strings) to\n  name of the previously-trained variable in `ckpt_to_initialize_from`. If\n  not explicitly provided, the name of the variable is assumed to be same\n  between previous checkpoint and current model.  Note that this has no\n  effect on the set of variables that is warm-started, and only controls\n  name mapping (use `vars_to_warm_start` for controlling what variables to\n  warm-start).\n\n"
+}

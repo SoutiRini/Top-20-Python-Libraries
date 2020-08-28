@@ -1,0 +1,7 @@
+{
+    "source file": "jsontags.py",
+    "line number": "25",
+    "func name": "register_tag",
+    "func arg": "(cls)",
+    "comments": "Decorates a class to register it's json tag.\n\n\n"
+}

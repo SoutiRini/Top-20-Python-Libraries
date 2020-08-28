@@ -1,0 +1,7 @@
+{
+    "source file": "graph_io.py",
+    "line number": "31",
+    "func name": "write_graph",
+    "func arg": "(graph_or_graph_def, logdir, name, as_text)",
+    "comments": "Writes a graph proto to a file.\n\nThe graph is written as a text proto unless `as_text` is `False`.\n\n```python v = tf.Variable(0, name='my_variable') sess = tf.compat.v1.Session() tf.io.write_graph(sess.graph_def, '/tmp/my-model', 'train.pbtxt') ```\n\nor\n\n```python v = tf.Variable(0, name='my_variable') sess = tf.compat.v1.Session() tf.io.write_graph(sess.graph, '/tmp/my-model', 'train.pbtxt') ```\n##### Args\n* **graph_or_graph_def**: A `Graph` or a `GraphDef` protocol buffer.\n\n* **logdir**: Directory where to write the graph. This can refer to remote\n  filesystems, such as Google Cloud Storage (GCS).\n\n* **name**: Filename for the graph.\n\n* **as_text**: If `True`, writes the graph as an ASCII proto.\n\n##### Returns\n"
+}

@@ -1,0 +1,7 @@
+{
+    "source file": "httpobj.py",
+    "line number": "10",
+    "func name": "urlparse_cached",
+    "func arg": "(request_or_response)",
+    "comments": "Return urlparse.urlparse caching the result, where the argument can be a Request or Response object\n\n\n"
+}

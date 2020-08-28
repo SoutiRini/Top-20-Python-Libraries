@@ -1,0 +1,7 @@
+{
+    "source file": "common12.py",
+    "line number": "17",
+    "func name": "result_type_many",
+    "func arg": "()",
+    "comments": "Wrapper around numpy.result_type which overcomes the NPY_MAXARGS (32) argument limit.\n\n\n"
+}

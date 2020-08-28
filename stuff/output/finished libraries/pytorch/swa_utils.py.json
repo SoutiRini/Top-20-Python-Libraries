@@ -1,0 +1,7 @@
+{
+    "source file": "swa_utils.py",
+    "line number": "115",
+    "func name": "update_bn",
+    "func arg": "(loader, model, device)",
+    "comments": "Updates BatchNorm running_mean, running_var buffers in the model.\n\nIt performs one pass over data in `loader` to estimate the activation statistics for BatchNorm layers in the model. Arguments: loader (torch.utils.data.DataLoader): dataset loader to compute the activation statistics on. Each data batch should be either a tensor, or a list/tuple whose first element is a tensor containing data. model (torch.nn.Module): model for which we seek to update BatchNorm statistics. device (torch.device, optional): If set, data will be trasferred to :attr:`device` before being passed into :attr:`model`.\n\nExample: >>> loader, model = ... >>> torch.optim.swa_utils.update_bn(loader, model)\n\n.. note:: The `update_bn` utility assumes that each data batch in :attr:`loader` is either a tensor or a list or tuple of tensors; in the latter case it is assumed that :meth:`model.forward()` should be called on the first element of the list or tuple corresponding to the data batch.\n"
+}

@@ -1,0 +1,7 @@
+{
+    "source file": "depthwiseconv.py",
+    "line number": "28",
+    "func name": "make_depthwiseconv_tests",
+    "func arg": "(options)",
+    "comments": "Make a set of tests to do convolution.\n\n\n"
+}

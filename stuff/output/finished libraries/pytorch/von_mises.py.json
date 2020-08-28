@@ -1,0 +1,7 @@
+{
+    "source file": "von_mises.py",
+    "line number": "55",
+    "func name": "_rejection_sample",
+    "func arg": "(loc, concentration, proposal_r, x)",
+    "comments": ""
+}

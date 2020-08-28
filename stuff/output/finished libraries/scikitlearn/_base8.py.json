@@ -1,0 +1,7 @@
+{
+    "source file": "_base8.py",
+    "line number": "201",
+    "func name": "binary_log_loss",
+    "func arg": "(y_true, y_prob)",
+    "comments": "Compute binary logistic loss for classification.\n\nThis is identical to log_loss in binary classification case, but is kept for its use in multilabel case.\n\nParameters ---------- y_true : array-like or label indicator matrix Ground truth (correct) labels.\n\ny_prob : array-like of float, shape = (n_samples, 1) Predicted probabilities, as returned by a classifier's predict_proba method.\n##### Returns\n* **loss **: float\n    The degree to which the samples are correctly predicted.\n\n"
+}

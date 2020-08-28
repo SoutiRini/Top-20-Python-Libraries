@@ -1,0 +1,7 @@
+{
+    "source file": "test_python_execution_with_OO.py",
+    "line number": "32",
+    "func name": "test_python_execution_with_OO",
+    "func arg": "()",
+    "comments": "Running python with -OO will discard docstrings (__doc__ is None) which can cause problems if docstrings are naively formatted.\n\nThis test ensures that the all modules are importable, even with -OO set.\n\nIf you encounter a new problem with docstrings being formatted, try using format_docstring.\n"
+}

@@ -1,0 +1,7 @@
+{
+    "source file": "map_vectorization_benchmark.py",
+    "line number": "57",
+    "func name": "_generate_parse_single_example_test_case",
+    "func arg": "()",
+    "comments": "Generates a `parse_single_example()` test case.\n\n\n"
+}

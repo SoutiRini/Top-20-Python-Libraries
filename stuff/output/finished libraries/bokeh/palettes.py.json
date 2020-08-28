@@ -1,0 +1,7 @@
+{
+    "source file": "palettes.py",
+    "line number": "1500",
+    "func name": "gray",
+    "func arg": "(n)",
+    "comments": "Generate a palette of colors or from the Greys palette.\n\nThe full Greys palette that serves as input for deriving new palettes has 256 colors, and looks like:\n\n:bokeh-palette:`grey(256)`\n##### Args\n* **n (int) **: size of the palette to generate\n\n##### Returns\n* **seq[str] **: a sequence of hex RGB color strings\n\n"
+}

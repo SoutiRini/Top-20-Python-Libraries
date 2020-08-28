@@ -1,0 +1,7 @@
+{
+    "source file": "utils.py",
+    "line number": "140",
+    "func name": "_is_shape_and_default_value_compatible",
+    "func arg": "(default_value, shape)",
+    "comments": "Verifies compatibility of shape and default_value.\n\n\n"
+}

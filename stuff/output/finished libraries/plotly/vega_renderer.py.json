@@ -1,0 +1,7 @@
+{
+    "source file": "vega_renderer.py",
+    "line number": "110",
+    "func name": "fig_to_vega",
+    "func arg": "(fig, notebook)",
+    "comments": "Convert a matplotlib figure to vega dictionary\n\nif notebook=True, then return an object which will display in a notebook otherwise, return an HTML string.\n"
+}

@@ -1,0 +1,7 @@
+{
+    "source file": "sort32.py",
+    "line number": "357",
+    "func name": "local_gpua_topkop",
+    "func arg": "(op, ctx_name, inputs, outputs)",
+    "comments": ""
+}

@@ -1,0 +1,7 @@
+{
+    "source file": "slsqp.py",
+    "line number": "477",
+    "func name": "_eval_con_normals",
+    "func arg": "(x, cons, la, n, m, meq, mieq)",
+    "comments": ""
+}

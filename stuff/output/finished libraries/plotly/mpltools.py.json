@@ -1,0 +1,7 @@
+{
+    "source file": "mpltools.py",
+    "line number": "530",
+    "func name": "mpl_dates_to_datestrings",
+    "func arg": "(dates, mpl_formatter)",
+    "comments": "Convert matplotlib dates to iso-formatted-like time strings.\n\nPlotly's accepted format: \"YYYY-MM-DD HH:MM:SS\" (e.g., 2001-01-01 00:00:00)\n\nInfo on mpl dates: http://matplotlib.org/api/dates_api.html\n"
+}

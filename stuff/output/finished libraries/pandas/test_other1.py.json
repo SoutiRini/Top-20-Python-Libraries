@@ -1,0 +1,7 @@
+{
+    "source file": "test_other1.py",
+    "line number": "622",
+    "func name": "test_groupby_agg_err_catching",
+    "func arg": "(err_cls)",
+    "comments": ""
+}

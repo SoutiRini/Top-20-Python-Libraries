@@ -1,0 +1,7 @@
+{
+    "source file": "indexing.py",
+    "line number": "2469",
+    "func name": "_can_do_equal_len",
+    "func arg": "(labels, value, plane_indexer, lplane_indexer, obj)",
+    "comments": "Returns ------- bool True if we have an equal len settable.\n\n\n"
+}

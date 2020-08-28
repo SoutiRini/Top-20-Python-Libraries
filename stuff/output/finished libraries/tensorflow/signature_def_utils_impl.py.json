@@ -1,0 +1,7 @@
+{
+    "source file": "signature_def_utils_impl.py",
+    "line number": "368",
+    "func name": "load_op_from_signature_def",
+    "func arg": "(signature_def, key, import_scope)",
+    "comments": "Load an Op from a SignatureDef created by op_signature_def().\n\n\n##### Args\n* **signature_def**: a SignatureDef proto\n\n* **key**: string key to op in the SignatureDef outputs.\n\n* **import_scope**: Scope used to import the op\n\n##### Returns\n"
+}

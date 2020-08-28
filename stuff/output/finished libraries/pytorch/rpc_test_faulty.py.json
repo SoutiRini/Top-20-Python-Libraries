@@ -1,0 +1,7 @@
+{
+    "source file": "rpc_test_faulty.py",
+    "line number": "78",
+    "func name": "rpc_async_with_rref_arg",
+    "func arg": "(dst_worker_name, args)",
+    "comments": ""
+}

@@ -1,0 +1,7 @@
+{
+    "source file": "_testutils.py",
+    "line number": "53",
+    "func name": "assert_func_equal",
+    "func arg": "(func, results, points, rtol, atol, param_filter, knownfailure, vectorized, dtype, nan_ok, ignore_inf_sign, distinguish_nan_and_inf)",
+    "comments": ""
+}

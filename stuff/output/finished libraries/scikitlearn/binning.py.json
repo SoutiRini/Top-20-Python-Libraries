@@ -1,0 +1,7 @@
+{
+    "source file": "binning.py",
+    "line number": "19",
+    "func name": "_find_binning_thresholds",
+    "func arg": "(data, max_bins, subsample, random_state)",
+    "comments": "Extract feature-wise quantiles from numerical data.\n\nMissing values are ignored for finding the thresholds.\n\nParameters ---------- data : array-like, shape (n_samples, n_features) The data to bin. max_bins: int The maximum number of bins to use for non-missing values. If for a given feature the number of unique values is less than ``max_bins``, then those unique values will be used to compute the bin thresholds, instead of the quantiles. subsample : int or None If ``n_samples > subsample``, then ``sub_samples`` samples will be randomly chosen to compute the quantiles. If ``None``, the whole data is used. random_state: int, RandomState instance or None Pseudo-random number generator to control the random sub-sampling. Pass an int for reproducible output across multiple function calls. See :term: `Glossary <random_state>`.\n\nReturn ------ binning_thresholds: list of arrays For each feature, stores the increasing numeric values that can be used to separate the bins. Thus ``len(binning_thresholds) == n_features``.\n"
+}

@@ -1,0 +1,7 @@
+{
+    "source file": "loss_scale_optimizer_test.py",
+    "line number": "55",
+    "func name": "create_mirrored_strategy",
+    "func arg": "()",
+    "comments": ""
+}

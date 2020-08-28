@@ -1,0 +1,7 @@
+{
+    "source file": "test_discriminant_analysis.py",
+    "line number": "480",
+    "func name": "test_raises_value_error_on_same_number_of_classes_and_samples",
+    "func arg": "(solver)",
+    "comments": "Tests that if the number of samples equals the number of classes, a ValueError is raised.\n\n\n"
+}

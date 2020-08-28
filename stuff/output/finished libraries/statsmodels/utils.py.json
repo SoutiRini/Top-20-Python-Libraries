@@ -1,0 +1,7 @@
+{
+    "source file": "utils.py",
+    "line number": "136",
+    "func name": "annotate_axes",
+    "func arg": "(index, labels, points, offset_points, size, ax, **kwargs)",
+    "comments": "Annotate Axes with labels, points, offset_points according to the given index.\n\n\n"
+}

@@ -1,0 +1,7 @@
+{
+    "source file": "graph_util_impl.py",
+    "line number": "291",
+    "func name": "remove_training_nodes",
+    "func arg": "(input_graph, protected_nodes)",
+    "comments": "Prunes out nodes that aren't needed for inference.\n\nThere are nodes like Identity and CheckNumerics that are only useful during training, and can be removed in graphs that will be used for nothing but inference. Here we identify and remove them, returning an equivalent graph. To be specific, CheckNumerics nodes are always removed, and Identity nodes that aren't involved in control edges are spliced out so that their input and outputs are directly connected.\n##### Args\n* **input_graph**: Model to analyze and prune.\n\n* **protected_nodes**: An optional list of names of nodes to be kept\n  unconditionally. This is for example useful to preserve Identity output\n  nodes.\n\n##### Returns\n"
+}

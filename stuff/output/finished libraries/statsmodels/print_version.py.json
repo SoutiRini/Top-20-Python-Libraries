@@ -1,0 +1,7 @@
+{
+    "source file": "print_version.py",
+    "line number": "140",
+    "func name": "show_versions",
+    "func arg": "(show_dirs)",
+    "comments": "List the versions of statsmodels and any installed dependencies\n\nParameters ---------- show_dirs : bool Flag indicating to show module locations\n"
+}

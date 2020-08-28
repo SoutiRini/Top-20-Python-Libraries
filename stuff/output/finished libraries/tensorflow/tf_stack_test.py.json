@@ -1,0 +1,7 @@
+{
+    "source file": "tf_stack_test.py",
+    "line number": "61",
+    "func name": "convert_stack_frame",
+    "func arg": "(frame)",
+    "comments": "Converts a TF stack frame into Python's.\n\n\n"
+}

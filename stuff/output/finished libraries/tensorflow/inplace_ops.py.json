@@ -1,0 +1,7 @@
+{
+    "source file": "inplace_ops.py",
+    "line number": "228",
+    "func name": "inplace_sub",
+    "func arg": "(x, i, v)",
+    "comments": "Applies an inplace sub on input x at index i with value v.\n\nNote that this function is not actually inplace\n\n- it allocates a copy of x.\n\nThe utility is not avoiding memory copies but rather specifying a sparse update.\n\nIf i is None, x and v must be the same shape. Computes y = x; y -= v; If i is a scalar, x has a rank 1 higher than v's. Computes y = x; y[i, :] -= v; Otherwise, x and v must have the same rank. Computes y = x; y[i, :] -= v;\n##### Args\n* **x**: A Tensor.\n\n* **i**: None, a scalar or a vector.\n\n* **v**: A Tensor.\n\n"
+}

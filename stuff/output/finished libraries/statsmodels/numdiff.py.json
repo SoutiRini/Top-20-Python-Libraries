@@ -1,0 +1,7 @@
+{
+    "source file": "numdiff.py",
+    "line number": "344",
+    "func name": "approx_hess3",
+    "func arg": "(x, f, epsilon, args, kwargs)",
+    "comments": ""
+}

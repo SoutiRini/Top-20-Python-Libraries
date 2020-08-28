@@ -1,0 +1,7 @@
+{
+    "source file": "activations.py",
+    "line number": "497",
+    "func name": "get",
+    "func arg": "(identifier)",
+    "comments": "Returns function.\n\nArguments: identifier: Function or string\n##### Returns\n* **example**: \n\n* **eback (most recent call last)**: \n\n* **eError**: Unknown activation function\n\n"
+}

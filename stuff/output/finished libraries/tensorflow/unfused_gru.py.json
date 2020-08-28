@@ -1,0 +1,7 @@
+{
+    "source file": "unfused_gru.py",
+    "line number": "27",
+    "func name": "make_unfused_gru_tests",
+    "func arg": "(options)",
+    "comments": "Make a set of tests for unfused gru op.\n\n\n"
+}

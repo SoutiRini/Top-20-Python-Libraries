@@ -1,0 +1,7 @@
+{
+    "source file": "graph_only_ops.py",
+    "line number": "29",
+    "func name": "graph_placeholder",
+    "func arg": "(dtype, shape, name)",
+    "comments": "Graph-only version of tf.compat.v1.placeholder(), for internal use only.\n\n\n"
+}

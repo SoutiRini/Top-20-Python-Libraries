@@ -1,0 +1,7 @@
+{
+    "source file": "conftest16.py",
+    "line number": "5",
+    "func name": "allow_fill",
+    "func arg": "(request)",
+    "comments": "Boolean 'allow_fill' parameter for Categorical.take\n\n\n"
+}

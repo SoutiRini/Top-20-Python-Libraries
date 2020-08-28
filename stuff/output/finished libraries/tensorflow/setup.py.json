@@ -1,0 +1,7 @@
+{
+    "source file": "setup.py",
+    "line number": "137",
+    "func name": "get_pybind_include",
+    "func arg": "()",
+    "comments": "pybind11 include directory is not correctly resolved.\n\nThis fixes include directory to /usr/local/pythonX.X\n##### Returns\n"
+}

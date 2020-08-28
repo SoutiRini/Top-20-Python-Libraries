@@ -1,0 +1,7 @@
+{
+    "source file": "save_context.py",
+    "line number": "53",
+    "func name": "in_save_context",
+    "func arg": "()",
+    "comments": "Returns whether under a save context.\n\n\n"
+}

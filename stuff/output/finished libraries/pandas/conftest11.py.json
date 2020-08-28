@@ -1,0 +1,7 @@
+{
+    "source file": "conftest11.py",
+    "line number": "174",
+    "func name": "as_array",
+    "func arg": "(request)",
+    "comments": "Boolean fixture to support ExtensionDtype _from_sequence method testing.\n\n\n"
+}

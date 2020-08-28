@@ -1,0 +1,7 @@
+{
+    "source file": "segment_ops_test.py",
+    "line number": "274",
+    "func name": "sparse_lengths_weighted_sum_grad_ref",
+    "func arg": "(GO, fwd_out, fwd_in, grad_on_weights)",
+    "comments": ""
+}

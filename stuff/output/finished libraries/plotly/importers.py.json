@@ -1,0 +1,7 @@
+{
+    "source file": "importers.py",
+    "line number": "4",
+    "func name": "relative_import",
+    "func arg": "(parent_name, rel_modules, rel_classes)",
+    "comments": "Helper function to import submodules lazily in Python 3.7+\n\nParameters ---------- rel_modules: list of str list of submodules to import, of the form .submodule rel_classes: list of str list of submodule classes/variables to import, of the form ._submodule.Foo\n##### Returns\n"
+}

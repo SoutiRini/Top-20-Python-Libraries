@@ -1,0 +1,7 @@
+{
+    "source file": "core2.py",
+    "line number": "30",
+    "func name": "dense",
+    "func arg": "(inputs, kernel, bias, activation, dtype)",
+    "comments": "Densely connected NN layer op.\n\nArguments: inputs: `tf.Tensor` or `tf.SparseTensor`. Inputs to operation. kernel: `tf.Variable`. Matrix kernel. bias: (Optional) `tf.Variable`. Bias to add to outputs. activation: (Optional) 1-argument callable. Activation function to apply to outputs. dtype: (Optional) `tf.DType`. Dtype to cast `inputs` to.\n##### Returns\n"
+}

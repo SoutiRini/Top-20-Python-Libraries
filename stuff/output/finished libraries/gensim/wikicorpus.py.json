@@ -1,0 +1,7 @@
+{
+    "source file": "wikicorpus.py",
+    "line number": "516",
+    "func name": "_process_article",
+    "func arg": "(args)",
+    "comments": "Same as :func:`~gensim.corpora.wikicorpus.process_article`, but with args in list format.\n\nParameters ---------- args : [(str, bool, str, int), (function, int, int, bool)] First element\n\n- same as `args` from :func:`~gensim.corpora.wikicorpus.process_article`, second element is tokenizer function, token minimal length, token maximal length, lowercase flag.\n##### Returns\n* **Should not be called explicitly. Use **: func\n\n"
+}

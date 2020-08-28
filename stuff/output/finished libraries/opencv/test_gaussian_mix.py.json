@@ -1,0 +1,7 @@
+{
+    "source file": "test_gaussian_mix.py",
+    "line number": "15",
+    "func name": "make_gaussians",
+    "func arg": "(cluster_n, img_size)",
+    "comments": ""
+}

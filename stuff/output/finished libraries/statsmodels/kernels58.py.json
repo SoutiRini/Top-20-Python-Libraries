@@ -1,0 +1,7 @@
+{
+    "source file": "kernels58.py",
+    "line number": "220",
+    "func name": "wang_ryzin_reg",
+    "func arg": "(h, Xi, x)",
+    "comments": "A version for the Wang-Ryzin kernel for nonparametric regression.\n\nSuggested by Li and Racine in [1] ch.4\n"
+}

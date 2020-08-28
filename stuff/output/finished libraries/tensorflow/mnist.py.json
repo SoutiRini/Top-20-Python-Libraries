@@ -1,0 +1,7 @@
+{
+    "source file": "mnist.py",
+    "line number": "28",
+    "func name": "load_data",
+    "func arg": "(path)",
+    "comments": "Loads the [MNIST dataset](http://yann.lecun.com/exdb/mnist/).\n\nThis is a dataset of 60,000 28x28 grayscale images of the 10 digits, along with a test set of 10,000 images. More info can be found at the [MNIST homepage](http://yann.lecun.com/exdb/mnist/).\n\n Arguments: path: path where to cache the dataset locally (relative to `~/.keras/datasets`).\n##### Returns\n* **Tuple of Numpy arrays**: `(x_train, y_train), (x_test, y_test)`.\n\n* ****x_train, x_test****: uint8 arrays of grayscale image data with shapes\n  (num_samples, 28, 28).\n\n* ****y_train, y_test****: uint8 arrays of digit labels (integers in range 0-9)\n  with shapes (num_samples,).\n\n* **nse**: \n\n* **https**: //creativecommons.org/licenses/by-sa/3.0/)\n\n"
+}

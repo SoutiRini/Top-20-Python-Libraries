@@ -1,0 +1,7 @@
+{
+    "source file": "robust_compare.py",
+    "line number": "237",
+    "func name": "scale_transform",
+    "func arg": "(data, center, transform, trim_frac, axis)",
+    "comments": "Transform data for variance comparison for Levene type tests\n\nParameters ---------- data : array_like observations for the data center : str in ['median', 'mean', 'trimmed'] the statistic that is used as center for the data transformation transform : 'abs', 'square', 'identity' or a callable the transform for the centered data trim_frac : float in [0, 0.5) Fraction of observations that are trimmed on each side of the sorted observations. This is only used if center is `trimmed`. axis : int axis along which the data are transformed when centering.\n##### Returns\n* **res **: ndarray\n    transformed data in the same shape as the original data.\n\n"
+}

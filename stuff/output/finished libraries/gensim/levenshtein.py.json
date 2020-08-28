@@ -1,0 +1,7 @@
+{
+    "source file": "levenshtein.py",
+    "line number": "54",
+    "func name": "levsim",
+    "func arg": "(t1, t2, alpha, beta, min_similarity)",
+    "comments": "Get the Levenshtein similarity between two terms.\n\nReturn the Levenshtein similarity between two terms. The similarity is a number between <0.0, 1.0>, higher is more similar.\n\nParameters ---------- t1 : {bytes, str, unicode} The first compared term. t2 : {bytes, str, unicode} The second compared term. alpha : float, optional The multiplicative factor alpha defined by Charlet and Damnati (2017). beta : float, optional The exponential factor beta defined by Charlet and Damnati (2017). min_similarity : {int, float}, optional If you don't care about similarities smaller than a known threshold, a more efficient code path can be taken. For terms that are clearly \"too far apart\", we will not compute the distance exactly, but we will return zero more quickly, meaning \"less than `min_similarity`\". Default: always compute similarity exactly, no threshold clipping.\n##### Returns\n* **`Delphine Charlet and Geraldine Damnati, \"SimBow at SemEval-2017 Task 3**: \n\n* **Answering\", 2017 <http**: //www.aclweb.org/anthology/S/S17/S17-2051.pdf>`_.\n\n"
+}

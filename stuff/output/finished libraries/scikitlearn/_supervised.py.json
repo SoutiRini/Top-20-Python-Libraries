@@ -1,0 +1,7 @@
+{
+    "source file": "_supervised.py",
+    "line number": "960",
+    "func name": "entropy",
+    "func arg": "(labels)",
+    "comments": "Calculates the entropy for a labeling.\n\nParameters ---------- labels : int array, shape = [n_samples] The labels\n\nNotes ----- The logarithm used is the natural logarithm (base-e).\n"
+}

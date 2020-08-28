@@ -1,0 +1,7 @@
+{
+    "source file": "linalg.py",
+    "line number": "867",
+    "func name": "gpu_qr",
+    "func arg": "(a, complete)",
+    "comments": "This function performs the QR on GPU.\n\nParameters ---------- complete : bool, optional If `False`, returns only r.\n##### Returns\n* **Q, R **: matrices\n\n"
+}

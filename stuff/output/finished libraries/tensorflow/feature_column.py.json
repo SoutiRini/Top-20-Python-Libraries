@@ -1,0 +1,7 @@
+{
+    "source file": "feature_column.py",
+    "line number": "3227",
+    "func name": "_verify_static_batch_size_equality",
+    "func arg": "(tensors, columns)",
+    "comments": "Validates that the first dim (batch size) of all tensors are equal or None.\n\n\n##### Args\n* **tensors**: list of tensors to check.\n\n* **columns**: list of feature columns matching tensors. Will be used for error\n  messaging.\n\n"
+}

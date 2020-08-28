@@ -1,0 +1,7 @@
+{
+    "source file": "sparse_lengths_sum_benchmark.py",
+    "line number": "18",
+    "func name": "benchmark_sparse_lengths_sum",
+    "func arg": "(dtype_str, categorical_limit, embedding_size, average_len, batch_size, iterations, flush_cache)",
+    "comments": ""
+}

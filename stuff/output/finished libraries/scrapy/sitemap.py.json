@@ -1,0 +1,7 @@
+{
+    "source file": "sitemap.py",
+    "line number": "40",
+    "func name": "sitemap_urls_from_robots",
+    "func arg": "(robots_text, base_url)",
+    "comments": "Return an iterator over all sitemap urls contained in the given robots.txt file\n\n\n"
+}

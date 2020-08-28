@@ -1,0 +1,7 @@
+{
+    "source file": "gnu.py",
+    "line number": "526",
+    "func name": "_can_target",
+    "func arg": "(cmd, arch)",
+    "comments": "Return true if the architecture supports the -arch flag\n\n\n"
+}

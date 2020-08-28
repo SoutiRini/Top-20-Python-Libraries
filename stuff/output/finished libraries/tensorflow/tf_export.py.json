@@ -1,0 +1,7 @@
+{
+    "source file": "tf_export.py",
+    "line number": "394",
+    "func name": "kwarg_only",
+    "func arg": "(f)",
+    "comments": "A wrapper that throws away all non-kwarg arguments.\n\n\n"
+}

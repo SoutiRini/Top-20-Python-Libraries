@@ -1,0 +1,7 @@
+{
+    "source file": "conftest.py",
+    "line number": "29",
+    "func name": "pytest_addoption",
+    "func arg": "(parser)",
+    "comments": ""
+}

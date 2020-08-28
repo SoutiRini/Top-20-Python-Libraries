@@ -1,0 +1,7 @@
+{
+    "source file": "chat80.py",
+    "line number": "845",
+    "func name": "sql_demo",
+    "func arg": "()",
+    "comments": "Print out every row from the 'city.db' database.\n\n\n"
+}

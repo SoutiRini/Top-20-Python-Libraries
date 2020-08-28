@@ -1,0 +1,7 @@
+{
+    "source file": "title.py",
+    "line number": "10",
+    "func name": "make_plot",
+    "func arg": "(location, title_align, two_axes)",
+    "comments": ""
+}

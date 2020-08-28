@@ -1,0 +1,7 @@
+{
+    "source file": "bfloat16.py",
+    "line number": "73",
+    "func name": "bfloat16_scope",
+    "func arg": "(name)",
+    "comments": "Scope class for bfloat16 variables so that the model uses custom getter.\n\nThis enables variables to be read as bfloat16 type when using get_variable.\n"
+}

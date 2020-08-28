@@ -1,0 +1,7 @@
+{
+    "source file": "model.py",
+    "line number": "799",
+    "func name": "_visit_value_and_its_immediate_references",
+    "func arg": "(obj, visitor)",
+    "comments": "Recurse down Models, HasProps, and Python containers\n\nThe ordering in this function is to optimize performance.\n\nWe check the most comomn types (int, float, str) first so that we can quickly return in the common case.\n\nWe avoid isinstance and issubclass checks in a couple places with `type` checks because isinstance checks can be slow.\n"
+}

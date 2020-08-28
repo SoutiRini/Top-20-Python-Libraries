@@ -1,0 +1,7 @@
+{
+    "source file": "training_generator_test.py",
+    "line number": "67",
+    "func name": "custom_generator_changing_batch_size",
+    "func arg": "(mode)",
+    "comments": ""
+}

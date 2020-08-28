@@ -1,0 +1,7 @@
+{
+    "source file": "matlib.py",
+    "line number": "328",
+    "func name": "repmat",
+    "func arg": "(a, m, n)",
+    "comments": "Repeat a 0-D to 2-D array or matrix MxN times.\n\nParameters ---------- a : array_like The array or matrix to be repeated. m, n : int The number of times `a` is repeated along the first and second axes.\n##### Returns\n* **out **: ndarray\n    The result of repeating `a`.\n\n"
+}

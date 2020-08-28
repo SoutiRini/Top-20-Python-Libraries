@@ -1,0 +1,7 @@
+{
+    "source file": "mandelbrot.py",
+    "line number": "16",
+    "func name": "mandelbrot_set",
+    "func arg": "(xmin, xmax, ymin, ymax, xn, yn, maxiter, horizon)",
+    "comments": ""
+}

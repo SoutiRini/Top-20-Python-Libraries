@@ -1,0 +1,7 @@
+{
+    "source file": "axes3d.py",
+    "line number": "2943",
+    "func name": "get_test_data",
+    "func arg": "(delta)",
+    "comments": "Return a tuple X, Y, Z with a test data set.\n\n\n"
+}

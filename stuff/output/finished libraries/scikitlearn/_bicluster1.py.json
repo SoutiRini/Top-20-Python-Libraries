@@ -1,0 +1,7 @@
+{
+    "source file": "_bicluster1.py",
+    "line number": "72",
+    "func name": "_log_normalize",
+    "func arg": "(X)",
+    "comments": "Normalize ``X`` according to Kluger's log-interactions scheme.\n\n\n"
+}

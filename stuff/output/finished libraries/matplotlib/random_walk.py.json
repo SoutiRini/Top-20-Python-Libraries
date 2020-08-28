@@ -1,0 +1,7 @@
+{
+    "source file": "random_walk.py",
+    "line number": "39",
+    "func name": "update_lines",
+    "func arg": "(num, data_lines, lines)",
+    "comments": ""
+}

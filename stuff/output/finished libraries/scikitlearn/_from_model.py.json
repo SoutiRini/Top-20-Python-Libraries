@@ -1,0 +1,7 @@
+{
+    "source file": "_from_model.py",
+    "line number": "17",
+    "func name": "_calculate_threshold",
+    "func arg": "(estimator, importances, threshold)",
+    "comments": "Interpret the threshold value\n\n\n"
+}

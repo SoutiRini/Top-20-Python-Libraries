@@ -1,0 +1,7 @@
+{
+    "source file": "test_splitting.py",
+    "line number": "402",
+    "func name": "test_splitting_missing_values",
+    "func arg": "(X_binned, all_gradients, has_missing_values, n_bins_non_missing, expected_split_on_nan, expected_bin_idx, expected_go_to_left)",
+    "comments": ""
+}

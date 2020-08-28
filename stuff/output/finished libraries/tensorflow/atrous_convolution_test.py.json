@@ -1,0 +1,7 @@
+{
+    "source file": "atrous_convolution_test.py",
+    "line number": "36",
+    "func name": "upsample_filters",
+    "func arg": "(filters, rate)",
+    "comments": "Upsamples the filters by a factor of rate along the spatial dimensions.\n\n\n##### Args\n* **filters**: spatial_shape + [in_channels, out_channels]\n  Original filters.\n\n* **rate**: A list of len(spatial_shape) positive ints, specifying the\n  upsampling rate.\n\n##### Returns\n* **filters_up**: output_spatial_shape + [in_channels, out_channels].\n  Upsampled filters with\n  output_spatial_shape[i] = (spatial_shape[i] - 1) * rate[i] + 1\n  containing (rate[i] - 1) zeros between consecutive filter values along\n  spatial dimension i.\n\n"
+}

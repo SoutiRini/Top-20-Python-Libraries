@@ -1,0 +1,7 @@
+{
+    "source file": "forwardprop.py",
+    "line number": "201",
+    "func name": "_jvp_dispatch",
+    "func arg": "(op_name, attr_tuple, inputs, outputs, tangents, use_batch)",
+    "comments": "Determine which forwardprop function to call.\n\n\n"
+}

@@ -1,0 +1,7 @@
+{
+    "source file": "_pprint.py",
+    "line number": "335",
+    "func name": "_safe_repr",
+    "func arg": "(object, context, maxlevels, level, changed_only)",
+    "comments": "Same as the builtin _safe_repr, with added support for Estimator objects.\n\n\n"
+}

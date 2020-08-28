@@ -1,0 +1,7 @@
+{
+    "source file": "default_gradient.py",
+    "line number": "68",
+    "func name": "supports_default_grad",
+    "func arg": "(t)",
+    "comments": "Whether tensor `t` supports creating a default gradient.\n\nThis function assumes that `t` is of a trainable type.\n##### Args\n* **t**: Tensor\n\n##### Returns\n"
+}

@@ -1,0 +1,7 @@
+{
+    "source file": "conv2d_transpose.py",
+    "line number": "28",
+    "func name": "make_conv2d_transpose_tests",
+    "func arg": "(options)",
+    "comments": "Make a set of tests to do transpose_conv.\n\n\n"
+}

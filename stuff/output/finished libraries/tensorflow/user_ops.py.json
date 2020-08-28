@@ -1,0 +1,7 @@
+{
+    "source file": "user_ops.py",
+    "line number": "30",
+    "func name": "my_fact",
+    "func arg": "()",
+    "comments": "Example of overriding the generated code for an Op.\n\n\n"
+}

@@ -1,0 +1,7 @@
+{
+    "source file": "test_command_parse.py",
+    "line number": "10",
+    "func name": "_textmode",
+    "func arg": "(bstr)",
+    "comments": "Normalize input the same as writing to a file and reading from it in text mode\n\n\n"
+}

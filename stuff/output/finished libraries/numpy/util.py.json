@@ -1,0 +1,7 @@
+{
+    "source file": "util.py",
+    "line number": "242",
+    "func name": "build_module_distutils",
+    "func arg": "(source_files, config_code, module_name, **kw)",
+    "comments": "Build a module via distutils and import it.\n\n\n"
+}

@@ -1,0 +1,7 @@
+{
+    "source file": "_tmpdirs.py",
+    "line number": "58",
+    "func name": "in_dir",
+    "func arg": "(dir)",
+    "comments": "Change directory to given directory for duration of ``with`` block\n\nUseful when you want to use `in_tempdir` for the final test, but you are still debugging. For example, you may want to do this in the end:\n\n>>> with in_tempdir() as tmpdir: ...\n\n\n\n # do something complicated which might break ...\n\n\n\n pass\n\nBut, indeed, the complicated thing does break, and meanwhile, the ``in_tempdir`` context manager wiped out the directory with the temporary files that you wanted for debugging. So, while debugging, you replace with something like:\n\n>>> with in_dir() as tmpdir: # Use working directory by default ...\n\n\n\n # do something complicated which might break ...\n\n\n\n pass\n\nYou can then look at the temporary file outputs to debug what is happening, fix, and finally replace ``in_dir`` with ``in_tempdir`` again.\n"
+}

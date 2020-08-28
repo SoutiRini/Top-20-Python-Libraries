@@ -1,0 +1,7 @@
+{
+    "source file": "meta_graph.py",
+    "line number": "1068",
+    "func name": "copy_scoped_meta_graph",
+    "func arg": "(from_scope, to_scope, from_graph, to_graph)",
+    "comments": "Copies a sub-meta_graph from one scope to another.\n\n\n##### Args\n* **from_scope**: `String` name scope containing the subgraph to be copied.\n\n* **to_scope**: `String` name scope under which the copied subgraph will reside.\n\n* **from_graph**: Optional `Graph` from which to copy the subgraph. If `None`, the\n  default graph is use.\n\n* **to_graph**: Optional `Graph` to which to copy the subgraph. If `None`, the\n  default graph is used.\n\n##### Returns\n"
+}

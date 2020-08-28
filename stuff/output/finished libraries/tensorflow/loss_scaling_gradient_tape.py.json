@@ -1,0 +1,7 @@
+{
+    "source file": "loss_scaling_gradient_tape.py",
+    "line number": "204",
+    "func name": "_compute_gradients_until_finite",
+    "func arg": "(distribution, loss_scale_gradient_tapes, loss_scale, target, sources, output_gradients, unconnected_gradients)",
+    "comments": "Compute gradients and update the loss scale until the gradients are finite.\n\nThis must be called in a cross-replica context.\n\nThis is a function instead of a method of LossScaleGradientTape, as the `self` parameter would be meaningless. There is one LossScaleGradientTape per replica, but this function is called once total (not per replica), so there cannot be a singular `self` parameter.\n##### Args\n* **distribution**: The distribution strategy in effect.\n\n* **loss_scale_gradient_tapes**: A PerReplica value of LossScaleGradientTapes.\n  Contains the LossScaleGradientTape of each replica.\n\n* **loss_scale**: The loss scale to use to scale the loss and unscale the\n  gradient.\n\n* **target**: a list or nested structure of Tensors or Variables to be\n  differentiated.\n\n* **sources**: a list or nested structure of Tensors or Variables. `target` will\n  be differentiated against elements in `sources`.\n\n* **output_gradients**: Passed to GradientTape.gradient\n\n* **unconnected_gradients**: Pass to GradientTape.gradient.\n\n##### Returns\n"
+}

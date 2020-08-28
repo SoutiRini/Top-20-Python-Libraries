@@ -1,0 +1,7 @@
+{
+    "source file": "compare.py",
+    "line number": "433",
+    "func name": "save_diff_image",
+    "func arg": "(expected, actual, output)",
+    "comments": "Parameters ---------- expected : str File path of expected image. actual : str File path of actual image. output : str File path to save difference image to.\n\n\n"
+}

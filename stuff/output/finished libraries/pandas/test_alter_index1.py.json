@@ -1,0 +1,7 @@
+{
+    "source file": "test_alter_index1.py",
+    "line number": "566",
+    "func name": "test_drop_non_empty_list",
+    "func arg": "(data, index, drop_labels)",
+    "comments": ""
+}

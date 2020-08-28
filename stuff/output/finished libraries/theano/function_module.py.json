@@ -1,0 +1,7 @@
+{
+    "source file": "function_module.py",
+    "line number": "1932",
+    "func name": "get_info_on_inputs",
+    "func arg": "(named_inputs, n_unnamed_inputs)",
+    "comments": "Return a human-readable description of named and un-named inputs.\n\n\n"
+}

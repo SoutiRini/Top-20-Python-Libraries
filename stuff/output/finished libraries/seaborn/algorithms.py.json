@@ -1,0 +1,7 @@
+{
+    "source file": "algorithms.py",
+    "line number": "109",
+    "func name": "_handle_random_seed",
+    "func arg": "(seed)",
+    "comments": "Given a seed in one of many formats, return a random number generator.\n\nGeneralizes across the numpy 1.17 changes, preferring newer functionality.\n"
+}

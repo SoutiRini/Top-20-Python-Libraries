@@ -1,0 +1,7 @@
+{
+    "source file": "handler.py",
+    "line number": "218",
+    "func name": "handle_exception",
+    "func arg": "(handler, e)",
+    "comments": "Record an exception and details on a Handler.\n\n\n"
+}

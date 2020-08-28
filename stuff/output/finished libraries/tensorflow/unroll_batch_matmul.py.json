@@ -1,0 +1,7 @@
+{
+    "source file": "unroll_batch_matmul.py",
+    "line number": "27",
+    "func name": "make_unroll_batch_matmul_tests",
+    "func arg": "(options)",
+    "comments": "Make a set of tests to test unroll_batch_matmul.\n\n\n"
+}

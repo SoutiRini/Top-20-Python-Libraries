@@ -1,0 +1,7 @@
+{
+    "source file": "test_from_model.py",
+    "line number": "384",
+    "func name": "test_importance_getter",
+    "func arg": "(estimator, importance_getter)",
+    "comments": ""
+}

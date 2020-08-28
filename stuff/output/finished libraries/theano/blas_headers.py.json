@@ -1,0 +1,7 @@
+{
+    "source file": "blas_headers.py",
+    "line number": "1048",
+    "func name": "____gemm_code",
+    "func arg": "(check_ab, a_init, b_init)",
+    "comments": ""
+}

@@ -1,0 +1,7 @@
+{
+    "source file": "decomp_cholesky.py",
+    "line number": "288",
+    "func name": "cho_solve_banded",
+    "func arg": "(cb_and_lower, b, overwrite_b, check_finite)",
+    "comments": "Solve the linear equations ``A x = b``, given the Cholesky factorization of the banded Hermitian ``A``.\n\nParameters ---------- (cb, lower) : tuple, (ndarray, bool) `cb` is the Cholesky factorization of A, as given by cholesky_banded. `lower` must be the same value that was given to cholesky_banded. b : array_like Right-hand side overwrite_b : bool, optional If True, the function will overwrite the values in `b`. check_finite : bool, optional Whether to check that the input matrices contain only finite numbers. Disabling may give a performance gain, but may result in problems (crashes, non-termination) if the inputs do contain infinities or NaNs.\n##### Returns\n* **x **: array\n    The solution to the system A x = b\n\n* **cholesky_banded **: Cholesky factorization of a banded matrix\n\n* **.. versionadded**: \n\n* **>>> A = np.diag(Ab[0,2**: ], k=2) + np.diag(Ab[1,1\n\n* **>>> A = A + A.conj().T + np.diag(Ab[2, **: ])\n\n"
+}

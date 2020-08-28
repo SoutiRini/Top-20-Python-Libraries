@@ -1,0 +1,7 @@
+{
+    "source file": "auth.py",
+    "line number": "6",
+    "func name": "get_user",
+    "func arg": "(request_handler)",
+    "comments": ""
+}

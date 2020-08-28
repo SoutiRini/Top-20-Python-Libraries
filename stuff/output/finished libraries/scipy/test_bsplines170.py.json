@@ -1,0 +1,7 @@
+{
+    "source file": "test_bsplines170.py",
+    "line number": "1150",
+    "func name": "make_lsq_full_matrix",
+    "func arg": "(x, y, t, k)",
+    "comments": "Make the least-square spline, full matrices.\n\n\n"
+}

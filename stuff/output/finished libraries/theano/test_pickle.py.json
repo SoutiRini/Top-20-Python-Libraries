@@ -1,0 +1,7 @@
+{
+    "source file": "test_pickle.py",
+    "line number": "53",
+    "func name": "test_unpickle_gpuarray_as_numpy_ndarray_flag2",
+    "func arg": "()",
+    "comments": ""
+}

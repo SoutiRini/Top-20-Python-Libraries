@@ -1,0 +1,7 @@
+{
+    "source file": "sync_replicas_optimizer_test.py",
+    "line number": "35",
+    "func name": "get_workers",
+    "func arg": "(num_workers, replicas_to_aggregate, workers)",
+    "comments": ""
+}

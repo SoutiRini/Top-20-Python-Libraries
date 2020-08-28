@@ -1,0 +1,7 @@
+{
+    "source file": "parsing_ops_test.py",
+    "line number": "66",
+    "func name": "_compare_output_to_expected",
+    "func arg": "(tester, actual, expected)",
+    "comments": ""
+}

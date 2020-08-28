@@ -1,0 +1,7 @@
+{
+    "source file": "nccl_ops.py",
+    "line number": "263",
+    "func name": "_check_device",
+    "func arg": "(tensor, expected)",
+    "comments": ""
+}

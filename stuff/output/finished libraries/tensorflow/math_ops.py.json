@@ -1,0 +1,7 @@
+{
+    "source file": "math_ops.py",
+    "line number": "4857",
+    "func name": "rsqrt",
+    "func arg": "(x, name)",
+    "comments": "Computes reciprocal of square root of x element-wise.\n\nFor example:\n\n>>> x = tf.constant([2., 0., -2.]) >>> tf.math.rsqrt(x) <tf.Tensor: shape=(3,), dtype=float32, numpy=array([0.707, inf, nan], dtype=float32)>\n##### Args\n* **x**: A `tf.Tensor`. Must be one of the following types\n\n* **name**: A name for the operation (optional).\n\n##### Returns\n"
+}

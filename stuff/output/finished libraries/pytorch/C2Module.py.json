@@ -1,0 +1,7 @@
+{
+    "source file": "C2Module.py",
+    "line number": "9",
+    "func name": "add_blob",
+    "func arg": "(ws, blob_name, tensor_size)",
+    "comments": ""
+}

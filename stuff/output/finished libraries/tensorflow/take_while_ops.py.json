@@ -1,0 +1,7 @@
+{
+    "source file": "take_while_ops.py",
+    "line number": "56",
+    "func name": "take_while",
+    "func arg": "(predicate)",
+    "comments": "A transformation that stops dataset iteration based on a `predicate`.\n\n\n##### Args\n* **predicate**: A function that maps a nested structure of tensors (having shapes\n  and types defined by `self.output_shapes` and `self.output_types`) to a\n  scalar `tf.bool` tensor.\n\n##### Returns\n"
+}

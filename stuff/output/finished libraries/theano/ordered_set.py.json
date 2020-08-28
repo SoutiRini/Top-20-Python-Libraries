@@ -1,0 +1,7 @@
+{
+    "source file": "ordered_set.py",
+    "line number": "15",
+    "func name": "check_deterministic",
+    "func arg": "(iterable)",
+    "comments": ""
+}

@@ -1,0 +1,7 @@
+{
+    "source file": "py_func.py",
+    "line number": "38",
+    "func name": "wrap_py_func",
+    "func arg": "(f, return_dtypes, args, kwargs, use_dummy_return)",
+    "comments": "Helper that wraps a callable to py_func.\n\nThe helper passes tensor arguments through the py_func interface. Non-tensor arguments are allowed, and will be passed to f directly. Note that non-tensor arguments are captured by f will not update every time the wrapper is called (this is consistent with its argument list, which only includes the tensor arguments). In general, it's safest not to reuse this wrapper.\n##### Args\n* **f**: Callable\n\n* **return_dtypes**: None, individual of tuple/list of DType or MatchDType, the\n    data type for each of f's return value(s). Set to None if f has no\n    return values or use_dummy_return is True. Use MatchDType to define a\n    dtype identical to that of `i`th argument (argument 0 is the first);\n    an argument must of Tensor type if it is to be used with MatchDType.\n\n* **args**: Positional arguments for f, as list or tuple.\n\n* **kwargs**: Keyword arguments for f, as dict with string keys. May be None.\n\n* **use_dummy_return**: If True, the function will return a dummy value of 1\n    and discard its actual return value.\n\n##### Returns\n"
+}

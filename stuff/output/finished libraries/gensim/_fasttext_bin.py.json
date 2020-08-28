@@ -1,0 +1,7 @@
+{
+    "source file": "_fasttext_bin.py",
+    "line number": "638",
+    "func name": "save",
+    "func arg": "(model, fout, fb_fasttext_parameters, encoding)",
+    "comments": "Saves word embeddings to the Facebook's native fasttext `.bin` format.\n\nParameters ---------- fout: file name or writeable binary stream stream to which model is saved model: gensim.models.fasttext.FastText saved model fb_fasttext_parameters: dictionary dictionary contain parameters containing `lr_update_rate`, `word_ngrams` unused by gensim implementation, so they have to be provided externally encoding: str encoding used in the output file\n\nNotes ----- Unfortunately, there is no documentation of the Facebook's native fasttext `.bin` format\n\nThis is just reimplementation of [FastText::saveModel](https://github.com/facebookresearch/fastText/blob/master/src/fasttext.cc)\n\nBased on v0.9.1, more precisely commit da2745fcccb848c7a225a7d558218ee4c64d5333\n\nCode follows the original C++ code naming.\n"
+}

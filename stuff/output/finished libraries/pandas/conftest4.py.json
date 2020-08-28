@@ -1,0 +1,7 @@
+{
+    "source file": "conftest4.py",
+    "line number": "152",
+    "func name": "series_and_frame",
+    "func arg": "(request, series, frame)",
+    "comments": "Fixture for parametrization of Series and DataFrame with date_range, period_range and timedelta_range indexes\n\n\n"
+}

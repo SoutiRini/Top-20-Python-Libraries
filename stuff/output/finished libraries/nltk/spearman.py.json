@@ -1,0 +1,7 @@
+{
+    "source file": "spearman.py",
+    "line number": "52",
+    "func name": "ranks_from_scores",
+    "func arg": "(scores, rank_gap)",
+    "comments": "Given a sequence of (key, score) tuples, yields each key with an increasing rank, tying with previous key's rank if the difference between their scores is less than rank_gap. Suitable for use as an argument to ``spearman_correlation``.\n\n\n"
+}

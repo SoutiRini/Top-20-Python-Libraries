@@ -1,0 +1,7 @@
+{
+    "source file": "parameterized_truncated_normal_op_test.py",
+    "line number": "419",
+    "func name": "randn_sampler_switchover",
+    "func arg": "(shape, num_iters, use_gpu)",
+    "comments": ""
+}

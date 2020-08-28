@@ -1,0 +1,7 @@
+{
+    "source file": "anova.py",
+    "line number": "387",
+    "func name": "_ssr_reduced_model",
+    "func arg": "(y, x, term_slices, params, keys)",
+    "comments": "Residual sum of squares of OLS model excluding factors in `keys` Assumes x matrix is orthogonal\n\nParameters ---------- y : array_like dependent variable x : array_like independent variables term_slices : a dict of slices term_slices[key] is a boolean array specifies the parameters associated with the factor `key` params : ndarray OLS solution of y = x * params keys : keys for term_slices factors to be excluded\n##### Returns\n* **rss **: float\n    residual sum of squares\n\n* **df **: int\n    degrees of freedom\n\n"
+}

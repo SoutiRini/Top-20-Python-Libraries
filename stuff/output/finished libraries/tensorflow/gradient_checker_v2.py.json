@@ -1,0 +1,7 @@
+{
+    "source file": "gradient_checker_v2.py",
+    "line number": "335",
+    "func name": "max_error",
+    "func arg": "(grad1, grad2)",
+    "comments": "Computes maximum elementwise gap.\n\nComputes the maximum elementwise gap between two lists of tensors of the same shape.\n##### Args\n* **grad1**: a lists of tensors.\n\n* **grad2**: a lists of tensors with the same shape as grad1.\n\n##### Returns\n"
+}

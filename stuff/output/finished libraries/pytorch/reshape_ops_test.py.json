@@ -1,0 +1,7 @@
+{
+    "source file": "reshape_ops_test.py",
+    "line number": "165",
+    "func name": "_test_reshape_output_and_gradient",
+    "func arg": "(old_shape, new_shape, expected_shape, arg_shape, in_place, expected_gradient)",
+    "comments": ""
+}

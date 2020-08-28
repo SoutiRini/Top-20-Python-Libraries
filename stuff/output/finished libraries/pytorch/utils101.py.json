@@ -1,0 +1,7 @@
+{
+    "source file": "utils101.py",
+    "line number": "32",
+    "func name": "check_onnx_broadcast",
+    "func arg": "(dims1, dims2)",
+    "comments": ""
+}

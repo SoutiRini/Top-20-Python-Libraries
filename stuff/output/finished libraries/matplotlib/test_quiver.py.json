@@ -1,0 +1,7 @@
+{
+    "source file": "test_quiver.py",
+    "line number": "252",
+    "func name": "test_quiver_setuvc_numbers",
+    "func arg": "()",
+    "comments": "Check that it is possible to set all arrow UVC to the same numbers\n\n\n"
+}

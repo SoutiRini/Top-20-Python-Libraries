@@ -1,0 +1,7 @@
+{
+    "source file": "test_compression3.py",
+    "line number": "130",
+    "func name": "test_with_missing_lzma_runtime",
+    "func arg": "()",
+    "comments": "Tests if RuntimeError is hit when calling lzma without having the module available.\n\n\n"
+}

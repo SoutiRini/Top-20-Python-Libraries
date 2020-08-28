@@ -1,0 +1,7 @@
+{
+    "source file": "muji.py",
+    "line number": "226",
+    "func name": "AllreduceFallback",
+    "func arg": "(net, blobs, reduced_affix, gpu_indices)",
+    "comments": "A fallback option for Allreduce with no assumption on p2p.\n\nAlgorithm: a flat operation on gpu 0 0r <- 0 0r <- 0r + i for i in gpu_indices[1:] ir <- 0r for i in gpu_indices[1:]\n"
+}

@@ -1,0 +1,7 @@
+{
+    "source file": "common8.py",
+    "line number": "314",
+    "func name": "get_handle",
+    "func arg": "(path_or_buf, mode, encoding, compression, memory_map, is_text)",
+    "comments": "Get file handle for given path/buffer and mode.\n\nParameters ---------- path_or_buf : str or file handle File path or object. mode : str Mode to open path_or_buf with. encoding : str or None Encoding to use. compression : str or dict, default None If string, specifies compression mode. If dict, value at key 'method' specifies compression mode. Compression mode must be one of {'infer', 'gzip', 'bz2', 'zip', 'xz', None}. If compression mode is 'infer' and `filepath_or_buffer` is path-like, then detect compression from the following extensions: '.gz', '.bz2', '.zip', or '.xz' (otherwise no compression). If dict and compression mode is 'zip' or inferred as 'zip', other entries passed as additional compression options.\n\n.. versionchanged:: 1.0.0\n\nMay now be a dict with key 'method' as compression mode and other keys as compression options if compression mode is 'zip'.\n\nmemory_map : boolean, default False See parsers._parser_params for more information. is_text : boolean, default True whether file/buffer is in text format (csv, json, etc.), or in binary mode (pickle, etc.).\n##### Returns\n* **f **: file-like\n    A file-like object.\n\n* **handles **: list of file-like objects\n    A list of file-like object that were opened in this function.\n\n"
+}

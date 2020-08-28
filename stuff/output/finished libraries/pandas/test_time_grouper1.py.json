@@ -1,0 +1,7 @@
+{
+    "source file": "test_time_grouper1.py",
+    "line number": "270",
+    "func name": "test_upsample_sum",
+    "func arg": "(method, method_args, expected_values)",
+    "comments": ""
+}

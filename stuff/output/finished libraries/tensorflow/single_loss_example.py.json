@@ -1,0 +1,7 @@
+{
+    "source file": "single_loss_example.py",
+    "line number": "82",
+    "func name": "batchnorm_example",
+    "func arg": "(optimizer_fn, batch_per_epoch, momentum, renorm, update_ops_in_replica_mode)",
+    "comments": "Example of non-distribution-aware legacy code with batch normalization.\n\n\n"
+}

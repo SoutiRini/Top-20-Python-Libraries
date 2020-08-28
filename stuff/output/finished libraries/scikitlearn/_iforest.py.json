@@ -1,0 +1,7 @@
+{
+    "source file": "_iforest.py",
+    "line number": "466",
+    "func name": "_average_path_length",
+    "func arg": "(n_samples_leaf)",
+    "comments": "The average path length in a n_samples iTree, which is equal to the average path length of an unsuccessful BST search since the latter has the same structure as an isolation tree. Parameters ---------- n_samples_leaf : array-like of shape (n_samples,) The number of training samples in each test sample leaf, for each estimators.\n\n\n##### Returns\n* **average_path_length **: ndarray of shape (n_samples,)\n\n"
+}

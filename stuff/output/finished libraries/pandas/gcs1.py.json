@@ -1,0 +1,7 @@
+{
+    "source file": "gcs1.py",
+    "line number": "9",
+    "func name": "get_filepath_or_buffer",
+    "func arg": "(filepath_or_buffer, encoding, compression, mode)",
+    "comments": ""
+}

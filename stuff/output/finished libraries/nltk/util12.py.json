@@ -1,0 +1,7 @@
+{
+    "source file": "util12.py",
+    "line number": "16",
+    "func name": "prefix_replace",
+    "func arg": "(original, old, new)",
+    "comments": "Replaces the old prefix of the original string by a new suffix :param original: string :param old: string :param new: string :return: string\n\n\n"
+}

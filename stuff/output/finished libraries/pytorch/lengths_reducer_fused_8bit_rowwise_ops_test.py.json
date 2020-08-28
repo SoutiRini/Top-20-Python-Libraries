@@ -1,0 +1,7 @@
+{
+    "source file": "lengths_reducer_fused_8bit_rowwise_ops_test.py",
+    "line number": "10",
+    "func name": "compare_rowwise",
+    "func arg": "(emb_orig, emb_reconstructed, fp16)",
+    "comments": ""
+}

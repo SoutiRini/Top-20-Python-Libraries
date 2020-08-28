@@ -1,0 +1,7 @@
+{
+    "source file": "strip_chart.py",
+    "line number": "42",
+    "func name": "emitter",
+    "func arg": "(p)",
+    "comments": "Return a random value in [0, 1) with probability p, else 0.\n\n\n"
+}

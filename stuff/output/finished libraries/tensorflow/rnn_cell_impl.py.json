@@ -1,0 +1,7 @@
+{
+    "source file": "rnn_cell_impl.py",
+    "line number": "1349",
+    "func name": "_check_supported_dtypes",
+    "func arg": "(dtype)",
+    "comments": ""
+}

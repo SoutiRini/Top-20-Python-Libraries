@@ -1,0 +1,403 @@
+{
+    "source file": "_fasttext_bin.py",
+    "line number": "638",
+    "func name": "save",
+    "func arg": "(model, fout, fb_fasttext_parameters, encoding)",
+    "comments": "Saves word embeddings to the Facebook's native fasttext `.bin` format.\n\nParameters ---------- fout: file name or writeable binary stream stream to which model is saved model: gensim.models.fasttext.FastText saved model fb_fasttext_parameters: dictionary dictionary contain parameters containing `lr_update_rate`, `word_ngrams` unused by gensim implementation, so they have to be provided externally encoding: str encoding used in the output file\n\nNotes ----- Unfortunately, there is no documentation of the Facebook's native fasttext `.bin` format\n\nThis is just reimplementation of [FastText::saveModel](https://github.com/facebookresearch/fastText/blob/master/src/fasttext.cc)\n\nBased on v0.9.1, more precisely commit da2745fcccb848c7a225a7d558218ee4c64d5333\n\nCode follows the original C++ code naming.\n"
+}{
+    "source file": "aggregation.py",
+    "line number": "15",
+    "func name": "arithmetic_mean",
+    "func arg": "(confirmed_measures)",
+    "comments": "Perform the arithmetic mean aggregation on the output obtained from the confirmation measure module.\n\nParameters ---------- confirmed_measures : list of float List of calculated confirmation measure on each set in the segmented topics.\n##### Returns\n* **.. sourcecode**: \n\n"
+}{
+    "source file": "atmodel.py",
+    "line number": "128",
+    "func name": "construct_author2doc",
+    "func arg": "(doc2author)",
+    "comments": "Make a mapping from author IDs to document IDs.\n\nParameters ---------- doc2author: dict of (int, list of str) Mapping of document id to authors.\n##### Returns\n"
+}{}{}{}{}{}{
+    "source file": "bm25.py",
+    "line number": "326",
+    "func name": "get_bm25_weights",
+    "func arg": "(corpus, n_jobs, k1, b, epsilon)",
+    "comments": "Returns BM25 scores (weights) of documents in corpus. Each document has to be weighted with every document in given corpus.\n\nParameters ---------- corpus : list of list of str Corpus of documents. n_jobs : int The number of processes to use for computing bm25. k1 : float Constant used for influencing the term frequency saturation. After saturation is reached, additional presence for the term adds a significantly less additional score. According to [1]_, experiments suggest that 1.2 < k1 < 2 yields reasonably good results, although the optimal value depends on factors such as the type of documents or queries. b : float Constant used for influencing the effects of different document lengths relative to average document length. When b is bigger, lengthier documents (compared to average) have more impact on its effect. According to [1]_, experiments suggest that 0.5 < b < 0.8 yields reasonably good results, although the optimal value depends on factors such as the type of documents or queries. epsilon : float Constant used as floor value for idf of a document in the corpus. When epsilon is positive, it restricts negative idf values. Negative idf implies that adding a very common term to a document penalize the overall score (with 'very common' meaning that it is present in more than half of the documents). That can be undesirable as it means that an identical document would score less than an almost identical one (by removing the referred term). Increasing epsilon above 0 raises the sense of how rare a word has to be (among different documents) to receive an extra score.\n##### Returns\n* **.. sourcecode**: \n\n"
+}{}{}{
+    "source file": "commons.py",
+    "line number": "56",
+    "func name": "remove_unreachable_nodes",
+    "func arg": "(graph)",
+    "comments": "Removes unreachable nodes (nodes with no edges), inplace.\n\nParameters ---------- graph : :class:`~gensim.summarization.graph.Graph` Given graph.\n"
+}{}{}{}{
+    "source file": "direct_confirmation_measure.py",
+    "line number": "128",
+    "func name": "log_ratio_measure",
+    "func arg": "(segmented_topics, accumulator, normalize, with_std, with_support)",
+    "comments": "Compute log ratio measure for `segment_topics`.\n\nParameters ---------- segmented_topics : list of lists of (int, int) Output from the :func:`~gensim.topic_coherence.segmentation.s_one_pre`, :func:`~gensim.topic_coherence.segmentation.s_one_one`. accumulator : :class:`~gensim.topic_coherence.text_analysis.InvertedIndexAccumulator` Word occurrence accumulator from :mod:`gensim.topic_coherence.probability_estimation`. normalize : bool, optional Details in the \"Notes\" section. with_std : bool, optional True to also include standard deviation across topic segment sets in addition to the mean coherence for each topic. with_support : bool, optional True to also include support across topic segments. The support is defined as the number of pairwise similarity comparisons were used to compute the overall topic coherence.\n\nNotes ----- If `normalize=False`: Calculate the log-ratio-measure, popularly known as **PMI** which is used by coherence measures such as `c_v`. This is defined as :math:`m_{lr}(S_i) = log \\frac{P(W', W^{*}) + \\epsilon}{P(W') * P(W^{*})}`\n\nIf `normalize=True`: Calculate the normalized-log-ratio-measure, popularly knowns as **NPMI** which is used by coherence measures such as `c_v`. This is defined as :math:`m_{nlr}(S_i) = \\frac{m_{lr}(S_i)}{-log(P(W', W^{*}) + \\epsilon)}`\n##### Returns\n* **.. sourcecode**: \n\n"
+}{
+    "source file": "doc2vec.py",
+    "line number": "994",
+    "func name": "_note_doctag",
+    "func arg": "(key, document_length, docvecs)",
+    "comments": "Note a document tag during initial corpus scan, for structure sizing.\n\n\n"
+}{
+    "source file": "doc2vec1.py",
+    "line number": "271",
+    "func name": "train_document_dm_concat",
+    "func arg": "(model, doc_words, doctag_indexes, alpha, work, neu1, learn_doctags, learn_words, learn_hidden, word_vectors, word_locks, doctag_vectors, doctag_locks)",
+    "comments": "Update distributed memory model (\"PV-DM\") by training on a single document, using a concatenation of the context window word vectors (rather than a sum or average).\n\nCalled internally from `Doc2Vec.train()` and `Doc2Vec.infer_vector()`.\n\nThe document is provided as `doc_words`, a list of word tokens which are looked up in the model's vocab dictionary, and `doctag_indexes`, which provide indexes into the doctag_vectors array.\n\nAny of `learn_doctags', `learn_words`, and `learn_hidden` may be set False to prevent learning-updates to those respective model weights, as if using the (partially-)frozen model to infer other compatible vectors.\n\nThis is the non-optimized, Python version. If you have a C compiler, gensim will use the optimized version from doc2vec_inner instead.\n"
+}{
+    "source file": "docsim.py",
+    "line number": "236",
+    "func name": "_nlargest",
+    "func arg": "(n, iterable)",
+    "comments": "Helper for extracting n documents with maximum similarity.\n\nParameters ---------- n : int Number of elements to be extracted iterable : iterable of list of (int, float) Iterable containing documents with computed similarities\n##### Returns\n* ****: class\n\n"
+}{
+    "source file": "downloader.py",
+    "line number": "434",
+    "func name": "load",
+    "func arg": "(name, return_path)",
+    "comments": "Download (if needed) dataset/model and load it to memory (unless `return_path` is set).\n\nParameters ---------- name: str Name of the model/dataset. return_path: bool, optional If True, return full path to file, otherwise, return loaded model / iterable dataset.\n##### Returns\n"
+}{}{
+    "source file": "fasttext_wrapper.py",
+    "line number": "448",
+    "func name": "ft_hash",
+    "func arg": "(string)",
+    "comments": "Reproduces [hash method](https://github.com/facebookresearch/fastText/blob/master/src/dictionary.cc) used in fastText.\n\n\n"
+}{
+    "source file": "fasttext.py",
+    "line number": "1302",
+    "func name": "save_facebook_model",
+    "func arg": "(model, path, encoding, lr_update_rate, word_ngrams)",
+    "comments": "Saves word embeddings to the Facebook's native fasttext `.bin` format.\n\nNotes ------ Facebook provides both `.vec` and `.bin` files with their modules. The former contains human-readable vectors. The latter contains machine-readable vectors along with other model parameters. **This function saves only the .bin file**.\n\nParameters ---------- model : gensim.models.fasttext.FastText FastText model to be saved. path : str Output path and filename (including `.bin` extension) encoding : str, optional Specifies the file encoding. Defaults to utf-8.\n\nlr_update_rate : int This parameter is used by Facebook fasttext tool, unused by Gensim. It defaults to Facebook fasttext default value `100`. In very rare circumstances you might wish to fiddle with it.\n\nword_ngrams : int This parameter is used by Facebook fasttext tool, unused by Gensim. It defaults to Facebook fasttext default value `1`. In very rare circumstances you might wish to fiddle with it.\n##### Returns\n"
+}{
+    "source file": "fasttext1.py",
+    "line number": "183",
+    "func name": "train_batch_sg",
+    "func arg": "(model, sentences, alpha, work, neu1)",
+    "comments": "Update skip-gram model by training on a sequence of sentences.\n\nEach sentence is a list of string tokens, which are looked up in the model's vocab dictionary. Called internally from :meth:`gensim.models.fasttext.FastText.train()`.\n\nThis is the non-optimized, Python version. If you have cython installed, gensim will use the optimized version from fasttext_inner instead.\n\nParameters ---------- model : :class:`~gensim.models.fasttext.FastText` `FastText` instance. sentences : iterable of iterables Iterable of the sentences directly from disk/network. alpha : float Learning rate. work : :class:`numpy.ndarray` Private working memory for each worker. neu1 : :class:`numpy.ndarray` Private working memory for each worker.\n##### Returns\n"
+}{}{}{
+    "source file": "glove2word2vec.py",
+    "line number": "88",
+    "func name": "glove2word2vec",
+    "func arg": "(glove_input_file, word2vec_output_file)",
+    "comments": "Convert `glove_input_file` in GloVe format to word2vec format and write it to `word2vec_output_file`.\n\nParameters ---------- glove_input_file : str Path to file in GloVe format. word2vec_output_file: str Path to output file.\n##### Returns\n"
+}{}{}{}{
+    "source file": "hdpmodel.py",
+    "line number": "104",
+    "func name": "lda_e_step",
+    "func arg": "(doc_word_ids, doc_word_counts, alpha, beta, max_iter)",
+    "comments": "Performs EM-iteration on a single document for calculation of likelihood for a maximum iteration of `max_iter`.\n\nParameters ---------- doc_word_ids : int Id of corresponding words in a document. doc_word_counts : int Count of words in a single document. alpha : numpy.ndarray Lda equivalent value of alpha. beta : numpy.ndarray Lda equivalent value of beta. max_iter : int, optional Maximum number of times the expectation will be maximised.\n##### Returns\n* **(numpy.ndarray, numpy.ndarray)\n    Computed (**: math\n\n"
+}{}{}{
+    "source file": "indirect_confirmation_measure.py",
+    "line number": "340",
+    "func name": "_key_for_segment",
+    "func arg": "(segment, topic_words)",
+    "comments": "A segment may have a single number of an iterable of them.\n\n\n"
+}{}{
+    "source file": "keyedvectors.py",
+    "line number": "2516",
+    "func name": "_try_upgrade",
+    "func arg": "(wv)",
+    "comments": ""
+}{}{
+    "source file": "keywords.py",
+    "line number": "538",
+    "func name": "get_graph",
+    "func arg": "(text)",
+    "comments": "Creates and returns graph from given text, cleans and tokenize text before building graph.\n\nParameters ---------- text : str Sequence of values.\n##### Returns\n* ****: class\n\n"
+}{
+    "source file": "lda_dispatcher.py",
+    "line number": "299",
+    "func name": "main",
+    "func arg": "()",
+    "comments": ""
+}{
+    "source file": "lda_worker.py",
+    "line number": "210",
+    "func name": "main",
+    "func arg": "()",
+    "comments": ""
+}{
+    "source file": "ldamallet.py",
+    "line number": "582",
+    "func name": "malletmodel2ldamodel",
+    "func arg": "(mallet_model, gamma_threshold, iterations)",
+    "comments": "Convert :class:`~gensim.models.wrappers.ldamallet.LdaMallet` to :class:`~gensim.models.ldamodel.LdaModel`.\n\nThis works by copying the training model weights (alpha, beta...) from a trained mallet model into the gensim model.\n\nParameters ---------- mallet_model : :class:`~gensim.models.wrappers.ldamallet.LdaMallet` Trained Mallet model gamma_threshold : float, optional To be used for inference in the new LdaModel. iterations : int, optional Number of iterations to be used for inference in the new LdaModel.\n##### Returns\n* ****: class\n\n"
+}{
+    "source file": "ldamodel.py",
+    "line number": "110",
+    "func name": "update_dir_prior",
+    "func arg": "(prior, N, logphat, rho)",
+    "comments": "Update a given prior using Newton's method, described in `J. Huang: \"Maximum Likelihood Estimation of Dirichlet Distribution Parameters\" <http://jonathan-huang.org/research/dirichlet/dirichlet.pdf>`_.\n\nParameters ---------- prior : list of float The prior for each possible outcome at the previous iteration (to be updated). N : int Number of observations. logphat : list of float Log probabilities for the current estimation, also called \"observed sufficient statistics\". rho : float Learning rate.\n##### Returns\n"
+}{}{
+    "source file": "ldamulticore.py",
+    "line number": "319",
+    "func name": "worker_e_step",
+    "func arg": "(input_queue, result_queue)",
+    "comments": "Perform E-step for each job.\n\nParameters ---------- input_queue : queue of (int, list of (int, float), :class:`~gensim.models.lda_worker.Worker`) Each element is a job characterized by its ID, the corpus chunk to be processed in BOW format and the worker responsible for processing it. result_queue : queue of :class:`~gensim.models.ldamodel.LdaState` After the worker finished the job, the state of the resulting (trained) worker model is appended to this queue.\n"
+}{
+    "source file": "ldaseqmodel.py",
+    "line number": "1603",
+    "func name": "df_obs",
+    "func arg": "(x)",
+    "comments": "Derivative of the objective function which optimises obs.\n\nParameters ---------- x : list of float The obs values for this word. sslm : :class:`~gensim.models.ldaseqmodel.sslm` The State Space Language Model for DTM. word_counts : list of int Total word counts for each time slice. totals : list of int of length `len(self.time_slice)` The totals for each time slice. mean_deriv_mtx : list of float Mean derivative for each time slice. word : int The word's ID. deriv : list of float Mean derivative for each time slice.\n##### Returns\n"
+}{}{
+    "source file": "ldavowpalwabbit.py",
+    "line number": "861",
+    "func name": "vwmodel2ldamodel",
+    "func arg": "(vw_model, iterations)",
+    "comments": "Convert :class:`~gensim.models.wrappers.ldavowpalwabbit.LdaVowpalWabbit` to :class:`~gensim.models.ldamodel.LdaModel`.\n\nThis works by simply copying the training model weights (alpha, beta...) from a trained vwmodel into the gensim model.\n\nParameters ---------- vw_model : :class:`~gensim.models.wrappers.ldavowpalwabbit.LdaVowpalWabbit` Trained Vowpal Wabbit model. iterations : int Number of iterations to be used for inference of the new :class:`~gensim.models.ldamodel.LdaModel`.\n##### Returns\n* ****: class\n\n"
+}{
+    "source file": "levenshtein.py",
+    "line number": "54",
+    "func name": "levsim",
+    "func arg": "(t1, t2, alpha, beta, min_similarity)",
+    "comments": "Get the Levenshtein similarity between two terms.\n\nReturn the Levenshtein similarity between two terms. The similarity is a number between <0.0, 1.0>, higher is more similar.\n\nParameters ---------- t1 : {bytes, str, unicode} The first compared term. t2 : {bytes, str, unicode} The second compared term. alpha : float, optional The multiplicative factor alpha defined by Charlet and Damnati (2017). beta : float, optional The exponential factor beta defined by Charlet and Damnati (2017). min_similarity : {int, float}, optional If you don't care about similarities smaller than a known threshold, a more efficient code path can be taken. For terms that are clearly \"too far apart\", we will not compute the distance exactly, but we will return zero more quickly, meaning \"less than `min_similarity`\". Default: always compute similarity exactly, no threshold clipping.\n##### Returns\n* **`Delphine Charlet and Geraldine Damnati, \"SimBow at SemEval-2017 Task 3**: \n\n* **Answering\", 2017 <http**: //www.aclweb.org/anthology/S/S17/S17-2051.pdf>`_.\n\n"
+}{}{
+    "source file": "lowcorpus.py",
+    "line number": "23",
+    "func name": "split_on_space",
+    "func arg": "(s)",
+    "comments": "Split line by spaces, used in :class:`gensim.corpora.lowcorpus.LowCorpus`.\n\nParameters ---------- s : str Some line.\n##### Returns\n"
+}{}{}{
+    "source file": "lsimodel.py",
+    "line number": "861",
+    "func name": "stochastic_svd",
+    "func arg": "(corpus, rank, num_terms, chunksize, extra_dims, power_iters, dtype, eps)",
+    "comments": "Run truncated Singular Value Decomposition (SVD) on a sparse input.\n\nParameters ---------- corpus : {iterable of list of (int, float), scipy.sparse} Input corpus as a stream (does not have to fit in RAM) or a sparse matrix of shape (`num_terms`, num_documents). rank : int Desired number of factors to be retained after decomposition. num_terms : int The number of features (terms) in `corpus`. chunksize :\n\nint, optional Number of documents to be used in each training chunk. extra_dims : int, optional Extra samples to be used besides the rank `k`. Can improve accuracy. power_iters: int, optional Number of power iteration steps to be used. Increasing the number of power iterations improves accuracy, but lowers performance. dtype : numpy.dtype, optional Enforces a type for elements of the decomposed matrix. eps: float, optional Percentage of the spectrum's energy to be discarded.\n\nNotes ----- The corpus may be larger than RAM (iterator of vectors), if `corpus` is a `scipy.sparse.csc` instead, it is assumed the whole corpus fits into core memory and a different (more efficient) code path is chosen. This may return less than the requested number of top `rank` factors, in case the input itself is of lower rank. The `extra_dims` (oversampling) and especially `power_iters` (power iterations) parameters affect accuracy of the decomposition.\n\nThis algorithm uses `2 + power_iters` passes over the input data. In case you can only afford a single pass, set `onepass=True` in :class:`~gensim.models.lsimodel.LsiModel` and avoid using this function directly.\n\nThe decomposition algorithm is based on `\"Finding structure with randomness: Probabilistic algorithms for constructing approximate matrix decompositions\" <https://arxiv.org/abs/0909.4061>`_.\n##### Returns\n"
+}{}{}{}{}{}{}{}{}{
+    "source file": "matutils.py",
+    "line number": "1170",
+    "func name": "qr_destroy",
+    "func arg": "(la)",
+    "comments": "Get QR decomposition of `la[0]`.\n\nParameters ---------- la : list of numpy.ndarray Run QR decomposition on the first elements of `la`. Must not be empty.\n##### Returns\n* **(numpy.ndarray, numpy.ndarray)\n    Matrices **: math\n\n"
+}{}{
+    "source file": "mz_entropy.py",
+    "line number": "133",
+    "func name": "__analytic_entropy",
+    "func arg": "(blocksize, n_blocks, n_words)",
+    "comments": ""
+}{}{}{}{
+    "source file": "nosy.py",
+    "line number": "30",
+    "func name": "check_sum",
+    "func arg": "()",
+    "comments": "Return a long which can be used to know if any .py files have changed.\n\n\n"
+}{
+    "source file": "old_saveload.py",
+    "line number": "384",
+    "func name": "pickle",
+    "func arg": "(obj, fname, protocol)",
+    "comments": "Pickle object `obj` to file `fname`.\n\nParameters ---------- obj : object Any python object. fname : str Path to pickle file. protocol : int, optional Pickle protocol number, default is 2 to support compatible across python 2.x and 3.x.\n"
+}{
+    "source file": "package_info.py",
+    "line number": "32",
+    "func name": "package_info",
+    "func arg": "()",
+    "comments": "Get the versions of Gensim and its dependencies, the location where Gensim is installed and platform on which the system is running.\n\n\n##### Returns\n"
+}{
+    "source file": "pagerank_weighted.py",
+    "line number": "169",
+    "func name": "process_results",
+    "func arg": "(graph, vec)",
+    "comments": "Get `graph` nodes and corresponding absolute values of provided eigenvector. This function is helper for :func:`~gensim.summarization.pagerank_weighted.pagerank_weighted`\n\nParameters ---------- graph : :class:`~gensim.summarization.graph.Graph` Given graph. vec : numpy.ndarray, shape = [n, ] Given eigenvector, n is number of nodes of `graph`.\n##### Returns\n"
+}{
+    "source file": "phrases.py",
+    "line number": "758",
+    "func name": "pseudocorpus",
+    "func arg": "(source_vocab, sep, common_terms)",
+    "comments": "Feeds `source_vocab`'s compound keys back to it, to discover phrases.\n\nParameters ---------- source_vocab : iterable of list of str Tokens vocabulary. sep : str Separator element. common_terms : set, optional Immutable set of stopwords.\n\nYields ------ list of str Phrase.\n"
+}{}{}{
+    "source file": "poincare1.py",
+    "line number": "103",
+    "func name": "poincare_distance_heatmap",
+    "func arg": "(origin_point, x_range, y_range, num_points)",
+    "comments": "Create a heatmap of Poincare distances from `origin_point` for each point (x, y), where x and y lie in `x_range` and `y_range` respectively, with `num_points` points chosen uniformly in both ranges.\n\nParameters ---------- origin_point : tuple (int, int) (x, y) from which distances are to be measured and plotted. x_range : tuple (int, int) Range for x-axis from which to choose `num_points` points. y_range : tuple (int, int) Range for y-axis from which to choose `num_points` points. num_points : int Number of points to choose from `x_range` and `y_range`.\n\nNotes ----- Points outside the unit circle are ignored, since the Poincare distance is defined only for points inside the circle boundaries (exclusive of the boundary).\n##### Returns\n* ****: class\n\n"
+}{}{
+    "source file": "preprocessing.py",
+    "line number": "408",
+    "func name": "read_files",
+    "func arg": "(pattern)",
+    "comments": ""
+}{
+    "source file": "probability_estimation.py",
+    "line number": "231",
+    "func name": "unique_ids_from_segments",
+    "func arg": "(segmented_topics)",
+    "comments": "Return the set of all unique ids in a list of segmented topics.\n\nParameters ---------- segmented_topics: list of (int, int). Each tuple (word_id_set1, word_id_set2) is either a single integer, or a `numpy.ndarray` of integers.\n##### Returns\n* **.. sourcecode**: \n\n"
+}{}{}{
+    "source file": "segment_wiki.py",
+    "line number": "209",
+    "func name": "segment",
+    "func arg": "(page_xml, include_interlinks)",
+    "comments": "Parse the content inside a page tag\n\nParameters ---------- page_xml : str Content from page tag.\n\ninclude_interlinks : bool Whether or not interlinks should be parsed.\n##### Returns\n"
+}{
+    "source file": "segmentation.py",
+    "line number": "98",
+    "func name": "s_one_set",
+    "func arg": "(topics)",
+    "comments": "Perform s_one_set segmentation on a list of topics. Segmentation is defined as :math:`s_{set} = {(W', W^{*}) | W' = {w_i}; w_{i} \\in W; W^{*} = W}`\n\nParameters ---------- topics : list of `numpy.ndarray` List of topics obtained from an algorithm such as LDA.\n##### Returns\n* **list of list of (int, int).\n    **: math\n\n* **.. sourcecode**: \n\n"
+}{}{}{}{
+    "source file": "summarizer.py",
+    "line number": "382",
+    "func name": "summarize",
+    "func arg": "(text, ratio, word_count, split)",
+    "comments": "Get a summarized version of the given text.\n\nThe output summary will consist of the most representative sentences and will be returned as a string, divided by newlines.\n\nNote ---- The input should be a string, and must be longer than :const:`~gensim.summarization.summarizer.INPUT_MIN_LENGTH` sentences for the summary to make sense. The text will be split into sentences using the split_sentences method in the :mod:`gensim.summarization.texcleaner` module. Note that newlines divide sentences.\n\n Parameters ---------- text : str Given text. ratio : float, optional Number between 0 and 1 that determines the proportion of the number of sentences of the original text to be chosen for the summary. word_count : int or None, optional Determines how many words will the output contain. If both parameters are provided, the ratio will be ignored. split : bool, optional If True, list of sentences will be returned. Otherwise joined strings will bwe returned.\n##### Returns\n"
+}{
+    "source file": "svd_error.py",
+    "line number": "64",
+    "func name": "print_error",
+    "func arg": "(name, aat, u, s, ideal_nf, ideal_n2)",
+    "comments": ""
+}{}{}{
+    "source file": "termsim.py",
+    "line number": "89",
+    "func name": "_shortest_uint_dtype",
+    "func arg": "(max_value)",
+    "comments": "Get the shortest unsingned integer data-type required for representing values up to a given maximum value.\n\n\n##### Returns\n"
+}{}{}{}{}{}{}{}{}{
+    "source file": "test_corpora.py",
+    "line number": "610",
+    "func name": "custom_tokenizer",
+    "func arg": "(content, token_min_len, token_max_len, lower)",
+    "comments": ""
+}{}{}{}{
+    "source file": "test_doc2vec.py",
+    "line number": "752",
+    "func name": "read_su_sentiment_rotten_tomatoes",
+    "func arg": "(dirname, lowercase)",
+    "comments": "Read and return documents from the Stanford Sentiment Treebank corpus (Rotten Tomatoes reviews), from http://nlp.Stanford.edu/sentiment/\n\nInitialize the corpus from a given directory, where http://nlp.stanford.edu/~socherr/stanfordSentimentTreebank.zip has been expanded. It's not too big, so compose entirely into memory.\n"
+}{}{}{
+    "source file": "test_fasttext.py",
+    "line number": "1473",
+    "func name": "_read_wordvectors_using_fasttext",
+    "func arg": "(fasttext_fname, words)",
+    "comments": ""
+}{}{}{}{}{}{}{}{}{
+    "source file": "test_ldamodel.py",
+    "line number": "30",
+    "func name": "testRandomState",
+    "func arg": "()",
+    "comments": ""
+}{}{
+    "source file": "test_ldavowpalwabbit_wrapper.py",
+    "line number": "41",
+    "func name": "get_corpus",
+    "func arg": "()",
+    "comments": ""
+}{}{}{}{
+    "source file": "test_matutils.py",
+    "line number": "145",
+    "func name": "manual_unitvec",
+    "func arg": "(vec)",
+    "comments": ""
+}{}{}{}{}{
+    "source file": "test_phrases.py",
+    "line number": "263",
+    "func name": "dumb_scorer",
+    "func arg": "(worda_count, wordb_count, bigram_count, len_vocab, min_count, corpus_word_count)",
+    "comments": ""
+}{
+    "source file": "test_poincare.py",
+    "line number": "35",
+    "func name": "testfile",
+    "func arg": "()",
+    "comments": ""
+}{}{}{}{}{}{}{}{
+    "source file": "test_sklearn_api.py",
+    "line number": "1242",
+    "func name": "dumb_scorer",
+    "func arg": "(worda_count, wordb_count, bigram_count, len_vocab, min_count, corpus_word_count)",
+    "comments": ""
+}{}{}{}{}{
+    "source file": "test_translation_matrix.py",
+    "line number": "77",
+    "func name": "read_sentiment_docs",
+    "func arg": "(filename)",
+    "comments": ""
+}{
+    "source file": "test_utils_any2vec.py",
+    "line number": "25",
+    "func name": "save_dict_to_word2vec_formated_file",
+    "func arg": "(fname, word2vec_dict)",
+    "comments": ""
+}{
+    "source file": "test_utils.py",
+    "line number": "474",
+    "func name": "_read_fb",
+    "func arg": "(fin)",
+    "comments": "Read ngrams from output of the FB utility.\n\n\n"
+}{}{
+    "source file": "test_word2vec.py",
+    "line number": "59",
+    "func name": "load_on_instance",
+    "func arg": "()",
+    "comments": ""
+}{}{
+    "source file": "text_analysis.py",
+    "line number": "26",
+    "func name": "_ids_to_words",
+    "func arg": "(ids, dictionary)",
+    "comments": "Convert an iterable of ids to their corresponding words using a dictionary. Abstract away the differences between the HashDictionary and the standard one.\n\nParameters ---------- ids: dict Dictionary of ids and their words. dictionary: :class:`~gensim.corpora.dictionary.Dictionary` Input gensim dictionary\n##### Returns\n* **.. sourcecode**: \n\n"
+}{}{
+    "source file": "textcleaner.py",
+    "line number": "286",
+    "func name": "tokenize_by_word",
+    "func arg": "(text)",
+    "comments": "Tokenize input text. Before tokenizing transforms text to lower case and removes accentuation and acronyms set :const:`~gensim.summarization.textcleaner.AB_ACRONYM_LETTERS`.\n\nParameters ---------- text : str Given text.\n##### Returns\n* **.. sourcecode**: \n\n"
+}{
+    "source file": "textcorpus.py",
+    "line number": "623",
+    "func name": "walk",
+    "func arg": "(top, topdown, onerror, followlinks, depth)",
+    "comments": "Generate the file names in a directory tree by walking the tree either top-down or bottom-up. For each directory in the tree rooted at directory top (including top itself), it yields a 4-tuple (depth, dirpath, dirnames, filenames).\n\nParameters ---------- top : str Root directory. topdown : bool, optional If True\n\n- you can modify dirnames in-place. onerror : function, optional Some function, will be called with one argument, an OSError instance. It can report the error to continue with the walk, or raise the exception to abort the walk. Note that the filename is available as the filename attribute of the exception object. followlinks : bool, optional If True\n\n- visit directories pointed to by symlinks, on systems that support them. depth : int, optional Height of file-tree, don't pass it manually (this used as accumulator for recursion).\n\nNotes ----- This is a mostly copied version of `os.walk` from the Python 2 source code. The only difference is that it returns the depth in the directory tree structure at which each yield is taking place.\n\nYields ------ (int, str, list of str, list of str) Depth, current path, visited directories, visited non-directories.\n\nSee Also -------- `os.walk documentation <https://docs.python.org/2/library/os.html#os.walk>`_\n"
+}{}{
+    "source file": "tfidfmodel.py",
+    "line number": "220",
+    "func name": "smartirs_normalize",
+    "func arg": "(x, norm_scheme, return_norm)",
+    "comments": "Normalize a vector using the normalization scheme specified in `norm_scheme`.\n\nParameters ---------- x : numpy.ndarray The tf-idf vector. norm_scheme : {'n', 'c'} Document length normalization scheme. return_norm : bool, optional Return the length of `x` as well?\n##### Returns\n"
+}{}{}{
+    "source file": "utils_any2vec.py",
+    "line number": "225",
+    "func name": "_load_word2vec_format",
+    "func arg": "(cls, fname, fvocab, binary, encoding, unicode_errors, limit, datatype, binary_chunk_size)",
+    "comments": "Load the input-hidden weight matrix from the original C word2vec-tool format.\n\nNote that the information stored in the file is incomplete (the binary tree is missing), so while you can query for word similarity etc., you cannot continue training with a model loaded this way.\n\nParameters ---------- fname : str The file path to the saved word2vec-format file. fvocab : str, optional File path to the vocabulary.Word counts are read from `fvocab` filename, if set (this is the file generated by `-save-vocab` flag of the original C tool). binary : bool, optional If True, indicates whether the data is in binary word2vec format. encoding : str, optional If you trained the C model using non-utf8 encoding for words, specify that encoding in `encoding`. unicode_errors : str, optional default 'strict', is a string suitable to be passed as the `errors` argument to the unicode() (Python 2.x) or str() (Python 3.x) function. If your source file may include word tokens truncated in the middle of a multibyte unicode character (as is common from the original word2vec.c tool), 'ignore' or 'replace' may help. limit : int, optional Sets a maximum number of word-vectors to read from the file. The default, None, means read all. datatype : type, optional (Experimental) Can coerce dimensions to a non-default float type (such as `np.float16`) to save memory. Such types may result in much slower bulk operations or incompatibility with optimized routines.) binary_chunk_size : int, optional Read input file in chunks of this many bytes for performance reasons.\n"
+}{
+    "source file": "utils.py",
+    "line number": "2102",
+    "func name": "effective_n_jobs",
+    "func arg": "(n_jobs)",
+    "comments": "Determines the number of jobs can run in parallel.\n\nJust like in sklearn, passing n_jobs=-1 means using all available CPU cores.\n\nParameters ---------- n_jobs : int Number of workers requested by caller.\n##### Returns\n"
+}{
+    "source file": "utils1.py",
+    "line number": "148",
+    "func name": "temporary_file",
+    "func arg": "(name)",
+    "comments": "This context manager creates file `name` in temporary directory and returns its full path. Temporary directory with included files will deleted at the end of context. Note, it won't create file.\n\nParameters ---------- name : str Filename.\n\nYields ------ str Path to file `name` in temporary directory.\n\nExamples -------- This example demonstrates that created temporary directory (and included files) will deleted at the end of context.\n\n.. sourcecode:: pycon\n\n>>> import os >>> from gensim.test.utils import temporary_file >>> with temporary_file(\"temp.txt\") as tf, open(tf, 'w') as outfile: ...\n\n\n\n outfile.write(\"my extremely useful information\") ...\n\n\n\n print(\"Is this file exists? {}\".format(os.path.exists(tf))) ...\n\n\n\n print(\"Is this folder exists? {}\".format(os.path.exists(os.path.dirname(tf)))) Is this file exists? True Is this folder exists? True >>> >>> print(\"Is this file exists? {}\".format(os.path.exists(tf))) Is this file exists? False >>> print(\"Is this folder exists? {}\".format(os.path.exists(os.path.dirname(tf)))) Is this folder exists? False\n"
+}{}{}{
+    "source file": "wikicorpus.py",
+    "line number": "516",
+    "func name": "_process_article",
+    "func arg": "(args)",
+    "comments": "Same as :func:`~gensim.corpora.wikicorpus.process_article`, but with args in list format.\n\nParameters ---------- args : [(str, bool, str, int), (function, int, int, bool)] First element\n\n- same as `args` from :func:`~gensim.corpora.wikicorpus.process_article`, second element is tokenizer function, token minimal length, token maximal length, lowercase flag.\n##### Returns\n* **Should not be called explicitly. Use **: func\n\n"
+}{}{
+    "source file": "word2vec.py",
+    "line number": "1628",
+    "func name": "_assign_binary_codes",
+    "func arg": "(vocab)",
+    "comments": "Appends a binary code to each vocab term.\n\nParameters ---------- vocab : dict A dictionary of :class:`gensim.models.word2vec.Vocab` objects.\n\nNotes ----- Expects each term to have an .index attribute that contains the order in which the term was added to the vocabulary.\n\nE.g. term.index == 0 means the term was added to the vocab first.\n\nSets the .code and .point attributes of each node. Each code is a numpy.array containing 0s and 1s. Each point is an integer.\n"
+}{
+    "source file": "word2vec1.py",
+    "line number": "492",
+    "func name": "score_cbow_pair",
+    "func arg": "(model, word, l1)",
+    "comments": ""
+}{
+    "source file": "word2vec2tensor.py",
+    "line number": "53",
+    "func name": "word2vec2tensor",
+    "func arg": "(word2vec_model_path, tensor_filename, binary)",
+    "comments": "Convert file in Word2Vec format and writes two files 2D tensor TSV file.\n\nFile \"tensor_filename\"_tensor.tsv contains word-vectors, \"tensor_filename\"_metadata.tsv contains words.\n\nParameters ---------- word2vec_model_path : str Path to file in Word2Vec format. tensor_filename : str Prefix for output files. binary : bool, optional True if input file in binary format.\n"
+}{}

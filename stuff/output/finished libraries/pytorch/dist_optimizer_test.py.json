@@ -1,0 +1,7 @@
+{
+    "source file": "dist_optimizer_test.py",
+    "line number": "79",
+    "func name": "rpc_async_method",
+    "func arg": "(method, obj_rref, **kwargs)",
+    "comments": "Call rpc.rpc_async on a method in a remote object.\n\n\n##### Args\n* **method**: the method (for example, Class.method)\n\n* **obj_rref (RRef)**: remote reference to the object\n\n* **args**: positional arguments to pass to the method\n\n* **kwargs**: keyword arguments to pass to the method\n\n"
+}

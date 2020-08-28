@@ -1,0 +1,7 @@
+{
+    "source file": "test_waveforms260.py",
+    "line number": "35",
+    "func name": "compute_frequency",
+    "func arg": "(t, theta)",
+    "comments": "Compute theta'(t)/(2*pi), where theta'(t) is the derivative of theta(t).\n\n\n"
+}

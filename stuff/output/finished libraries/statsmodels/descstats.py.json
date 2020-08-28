@@ -1,0 +1,7 @@
+{
+    "source file": "descstats.py",
+    "line number": "16",
+    "func name": "descstats",
+    "func arg": "(data, cols, axis)",
+    "comments": "Prints descriptive statistics for one or multiple variables.\n\nParameters ---------- data: numpy array `x` is the data\n\nv: list, optional A list of the column number or field names (for a recarray) of variables. Default is all columns.\n\naxis: 1 or 0 axis order of data.\n\nDefault is 0 for column-ordered data.\n\nExamples -------- >>> descstats(data.exog,v=['x_1','x_2','x_3'])\n"
+}

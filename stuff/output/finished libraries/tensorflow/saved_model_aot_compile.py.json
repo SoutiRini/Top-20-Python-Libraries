@@ -1,0 +1,7 @@
+{
+    "source file": "saved_model_aot_compile.py",
+    "line number": "441",
+    "func name": "_signature_to_tf2xla_config",
+    "func arg": "(signature_def, variable_nodes_to_feed)",
+    "comments": "Convert `signature_def` to tf2xla config.  Returns a `tf2xla.Config` proto.\n\n\n##### Args\n* **signature_def**: Instance of `SignatureDef`.\n\n* **variable_nodes_to_feed**: List of tuples of form `(node_def, modified)`\n  corresponding to VarHandleOp, and a boolean `modified` that describes\n  whether the variable was modified during execution.\n\n##### Returns\n"
+}

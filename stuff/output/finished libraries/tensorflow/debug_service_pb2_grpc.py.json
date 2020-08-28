@@ -1,0 +1,7 @@
+{
+    "source file": "debug_service_pb2_grpc.py",
+    "line number": "91",
+    "func name": "add_EventListenerServicer_to_server",
+    "func arg": "(servicer, server)",
+    "comments": ""
+}

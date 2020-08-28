@@ -1,0 +1,7 @@
+{
+    "source file": "recurrent_v2.py",
+    "line number": "1666",
+    "func name": "_read_variable_value",
+    "func arg": "(v)",
+    "comments": "Read the value of a resource variable if it is variable.\n\n\n"
+}

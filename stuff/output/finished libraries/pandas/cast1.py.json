@@ -1,0 +1,7 @@
+{
+    "source file": "cast1.py",
+    "line number": "1524",
+    "func name": "maybe_cast_to_integer_array",
+    "func arg": "(arr, dtype, copy)",
+    "comments": "Takes any dtype and returns the casted version, raising for when data is incompatible with integer/unsigned integer dtypes.\n\n.. versionadded:: 0.24.0\n\nParameters ---------- arr : array-like The array to cast. dtype : str, np.dtype The integer dtype to cast the array to. copy: bool, default False Whether to make a copy of the array before returning.\n##### Returns\n* **int_arr **: ndarray\n    An array of integer or unsigned integer dtype\n\n"
+}

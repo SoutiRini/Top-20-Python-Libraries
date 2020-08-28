@@ -1,0 +1,7 @@
+{
+    "source file": "arrow_demo.py",
+    "line number": "26",
+    "func name": "make_arrow_plot",
+    "func arg": "(data, size, display, shape, max_arrow_width, arrow_sep, alpha, normalize_data, ec, labelcolor, head_starts_at_zero, rate_labels, **kwargs)",
+    "comments": "Makes an arrow plot.\n\nParameters ---------- data Dict with probabilities for the bases and pair transitions. size Size of the graph in inches. display : {'length', 'width', 'alpha'} The arrow property to change. shape : {'full', 'left', 'right'} For full or half arrows. max_arrow_width : float Maximum width of an arrow, data coordinates. arrow_sep : float Separation between arrows in a pair, data coordinates. alpha : float Maximum opacity of arrows. **kwargs Can be anything allowed by a Arrow object, e.g. *linewidth* or *edgecolor*.\n"
+}

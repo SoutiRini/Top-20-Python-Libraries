@@ -1,0 +1,7 @@
+{
+    "source file": "test_collocations.py",
+    "line number": "12",
+    "func name": "close_enough",
+    "func arg": "(x, y)",
+    "comments": "Verify that two sequences of n-gram association values are within _EPSILON of each other.\n\n\n"
+}

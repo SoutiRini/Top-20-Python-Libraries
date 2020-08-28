@@ -1,0 +1,7 @@
+{
+    "source file": "dnn.py",
+    "line number": "4060",
+    "func name": "local_abstract_batch_norm_inference_cudnn",
+    "func arg": "(op, ctx_name, inputs, outputs)",
+    "comments": ""
+}

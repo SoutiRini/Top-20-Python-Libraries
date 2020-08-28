@@ -1,0 +1,7 @@
+{
+    "source file": "torch_integration_test.py",
+    "line number": "110",
+    "func name": "fused_rowwise_8bit_quantize_dequantize_reference",
+    "func arg": "(data)",
+    "comments": ""
+}

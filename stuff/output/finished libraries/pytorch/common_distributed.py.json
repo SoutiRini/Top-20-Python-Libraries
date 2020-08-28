@@ -1,0 +1,7 @@
+{
+    "source file": "common_distributed.py",
+    "line number": "135",
+    "func name": "simple_sparse_reduce_tests",
+    "func arg": "(rank, world_size, num_inputs)",
+    "comments": "Generate a number of basic test cases for sparse reduction. These cover tensors with a varying number of sparse dimensions and a varying number of dense dimensions. The only reduction operation we support is sum.\n\n\n"
+}

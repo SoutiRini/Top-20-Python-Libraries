@@ -1,0 +1,7 @@
+{
+    "source file": "svd_error.py",
+    "line number": "64",
+    "func name": "print_error",
+    "func arg": "(name, aat, u, s, ideal_nf, ideal_n2)",
+    "comments": ""
+}

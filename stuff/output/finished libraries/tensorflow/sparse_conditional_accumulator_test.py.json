@@ -1,0 +1,7 @@
+{
+    "source file": "sparse_conditional_accumulator_test.py",
+    "line number": "35",
+    "func name": "_indexedslice",
+    "func arg": "(x, noshape)",
+    "comments": ""
+}

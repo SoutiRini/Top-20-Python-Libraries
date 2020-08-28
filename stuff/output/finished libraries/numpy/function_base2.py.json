@@ -1,0 +1,7 @@
+{
+    "source file": "function_base2.py",
+    "line number": "4741",
+    "func name": "digitize",
+    "func arg": "(x, bins, right)",
+    "comments": "Return the indices of the bins to which each value in input array belongs.\n\n=========\n\n=============\n\n============================ `right`\n\n\n\norder of bins\n\nreturned index `i` satisfies =========\n\n=============\n\n============================ ``False``\n\nincreasing\n\n\n\n ``bins[i-1] <= x < bins[i]`` ``True``\n\n increasing\n\n\n\n ``bins[i-1] < x <= bins[i]`` ``False``\n\ndecreasing\n\n\n\n ``bins[i-1] > x >= bins[i]`` ``True``\n\n decreasing\n\n\n\n ``bins[i-1] >= x > bins[i]`` =========\n\n=============\n\n============================\n\nIf values in `x` are beyond the bounds of `bins`, 0 or ``len(bins)`` is returned as appropriate.\n\nParameters ---------- x : array_like Input array to be binned. Prior to NumPy 1.10.0, this array had to be 1-dimensional, but can now have any shape. bins : array_like Array of bins. It has to be 1-dimensional and monotonic. right : bool, optional Indicating whether the intervals include the right or the left bin edge. Default behavior is (right==False) indicating that the interval does not include the right edge. The left bin end is open in this case, i.e., bins[i-1] <= x < bins[i] is the default behavior for monotonically increasing bins.\n##### Returns\n* **indices **: ndarray of ints\n    Output array of indices, of same shape as `x`.\n\n"
+}

@@ -1,0 +1,7 @@
+{
+    "source file": "_trustregion_dogleg.py",
+    "line number": "9",
+    "func name": "_minimize_dogleg",
+    "func arg": "(fun, x0, args, jac, hess, **trust_region_options)",
+    "comments": "Minimization of scalar function of one or more variables using the dog-leg trust-region algorithm.\n\nOptions ------- initial_trust_radius : float Initial trust-region radius. max_trust_radius : float Maximum value of the trust-region radius. No steps that are longer than this value will be proposed. eta : float Trust region related acceptance stringency for proposed steps. gtol : float Gradient norm must be less than `gtol` before successful termination.\n"
+}

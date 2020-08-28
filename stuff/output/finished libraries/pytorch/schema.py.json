@@ -1,0 +1,7 @@
+{
+    "source file": "schema.py",
+    "line number": "1302",
+    "func name": "attach_metadata_to_scalars",
+    "func arg": "(field, metadata)",
+    "comments": ""
+}

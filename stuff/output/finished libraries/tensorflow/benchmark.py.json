@@ -1,0 +1,7 @@
+{
+    "source file": "benchmark.py",
+    "line number": "459",
+    "func name": "benchmarks_main",
+    "func arg": "(true_main, argv)",
+    "comments": "Run benchmarks as declared in argv.\n\n\n##### Args\n* **true_main**: True main function to run if benchmarks are not requested.\n\n* **argv**: the command line arguments (if None, uses sys.argv).\n\n"
+}

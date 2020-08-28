@@ -1,0 +1,7 @@
+{
+    "source file": "notebook1.py",
+    "line number": "51",
+    "func name": "notebook_content",
+    "func arg": "(model, notebook_comms_target, theme)",
+    "comments": "Return script and div that will display a Bokeh plot in a Jupyter Notebook.\n\nThe data for the plot is stored directly in the returned HTML.\n##### Args\n* **model (Model) **: Bokeh object to render\n\n* **notebook_comms_target (str, optional) **: A target name for a Jupyter Comms object that can update\n    the document that is rendered to this notebook div\n\n* **theme (Theme, optional) **: Defaults to the ``Theme`` instance in the current document.\n    Setting this to ``None`` uses the default theme or the theme\n    already specified in the document. Any other value must be an\n    instance of the ``Theme`` class.\n\n##### Returns\n* **ote**: \n\n* **Assumes **: func\n\n"
+}

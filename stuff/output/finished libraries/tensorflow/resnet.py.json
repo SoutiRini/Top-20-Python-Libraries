@@ -1,0 +1,7 @@
+{
+    "source file": "resnet.py",
+    "line number": "529",
+    "func name": "decode_predictions",
+    "func arg": "(preds, top)",
+    "comments": ""
+}

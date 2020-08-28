@@ -1,0 +1,7 @@
+{
+    "source file": "test_dtypes2.py",
+    "line number": "25",
+    "func name": "_check_cast",
+    "func arg": "(df, v)",
+    "comments": "Check if all dtypes of df are equal to v\n\n\n"
+}

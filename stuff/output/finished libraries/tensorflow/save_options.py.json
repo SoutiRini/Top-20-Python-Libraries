@@ -1,0 +1,7 @@
+{
+    "source file": "save_options.py",
+    "line number": "175",
+    "func name": "_validate_namespace_whitelist",
+    "func arg": "(namespace_whitelist)",
+    "comments": "Validates namespace whitelist argument.\n\n\n"
+}

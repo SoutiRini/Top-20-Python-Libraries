@@ -1,0 +1,7 @@
+{
+    "source file": "conf1.py",
+    "line number": "332",
+    "func name": "linkcode_resolve",
+    "func arg": "(domain, info)",
+    "comments": "Determine the URL corresponding to Python object\n\n\n"
+}

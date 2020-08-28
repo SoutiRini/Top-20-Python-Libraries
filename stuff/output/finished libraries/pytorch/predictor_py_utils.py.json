@@ -1,0 +1,7 @@
+{
+    "source file": "predictor_py_utils.py",
+    "line number": "168",
+    "func name": "AddModelIdArg",
+    "func arg": "(meta_net_def, net_def)",
+    "comments": "Takes the model_id from the predict_net of meta_net_def (if it is populated) and adds it to the net_def passed in. This is intended to be called on init_nets, as their model_id is not populated by default, but should be the same as that of the predict_net\n\n\n"
+}

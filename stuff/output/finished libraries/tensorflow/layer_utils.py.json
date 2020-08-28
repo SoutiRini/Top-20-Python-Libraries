@@ -1,0 +1,7 @@
+{
+    "source file": "layer_utils.py",
+    "line number": "399",
+    "func name": "is_builtin_layer",
+    "func arg": "(layer)",
+    "comments": ""
+}

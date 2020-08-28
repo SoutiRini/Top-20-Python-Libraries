@@ -1,0 +1,7 @@
+{
+    "source file": "string_ops.py",
+    "line number": "544",
+    "func name": "string_join",
+    "func arg": "(inputs, separator, name)",
+    "comments": "Perform element-wise concatenation of a list of string tensors.\n\nGiven a list of string tensors of same shape, performs element-wise concatenation of the strings of the same index in all tensors.\n\n >>> tf.strings.join(['abc','def']).numpy() b'abcdef' >>> tf.strings.join([['abc','123'], ...\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n['def','456'], ...\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n['ghi','789']]).numpy() array([b'abcdefghi', b'123456789'], dtype=object) >>> tf.strings.join([['abc','123'], ...\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n['def','456']], ...\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nseparator=\" \").numpy() array([b'abc def', b'123 456'], dtype=object)\n##### Args\n* **inputs**: A list of `tf.Tensor` objects of same size and `tf.string` dtype.\n\n* **separator**: A string added between each string being joined.\n\n* **name**: A name for the operation (optional).\n\n##### Returns\n"
+}

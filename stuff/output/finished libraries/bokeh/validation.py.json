@@ -1,0 +1,7 @@
+{
+    "source file": "validation.py",
+    "line number": "76",
+    "func name": "without_property_validation",
+    "func arg": "(input_function)",
+    "comments": "Turn off property validation during update callbacks\n\nExample: .. code-block:: python\n\n@without_property_validation def update(attr, old, new): # do things without validation\n\nSee Also: :class:`~bokeh.core.properties.validate`: context mangager for more fine-grained control\n"
+}

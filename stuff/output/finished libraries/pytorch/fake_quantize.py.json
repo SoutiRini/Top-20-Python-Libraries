@@ -1,0 +1,7 @@
+{
+    "source file": "fake_quantize.py",
+    "line number": "170",
+    "func name": "enable_observer",
+    "func arg": "(mod)",
+    "comments": ""
+}

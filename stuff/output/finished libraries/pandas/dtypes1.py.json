@@ -1,0 +1,7 @@
+{
+    "source file": "dtypes1.py",
+    "line number": "19",
+    "func name": "register_extension_dtype",
+    "func arg": "(cls)",
+    "comments": "Register an ExtensionType with pandas as class decorator.\n\n.. versionadded:: 0.24.0\n\nThis enables operations like ``.astype(name)`` for the name of the ExtensionDtype.\n##### Returns\n* **... class MyExtensionDtype(ExtensionDtype)**: \n\n"
+}

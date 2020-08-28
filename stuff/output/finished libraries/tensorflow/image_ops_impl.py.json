@@ -1,0 +1,7 @@
+{
+    "source file": "image_ops_impl.py",
+    "line number": "5044",
+    "func name": "generate_bounding_box_proposals",
+    "func arg": "(scores, bbox_deltas, image_info, anchors, nms_threshold, pre_nms_topn, min_size, post_nms_topn, name)",
+    "comments": "Generate bounding box proposals from encoded bounding boxes.\n\n\n##### Returns\n* **rois**: Region of interest boxes sorted by their scores.\n\n* **roi_probabilities**: scores of the ROI boxes in the ROIs' tensor.\n\n"
+}

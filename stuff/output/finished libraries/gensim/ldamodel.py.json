@@ -1,0 +1,7 @@
+{
+    "source file": "ldamodel.py",
+    "line number": "110",
+    "func name": "update_dir_prior",
+    "func arg": "(prior, N, logphat, rho)",
+    "comments": "Update a given prior using Newton's method, described in `J. Huang: \"Maximum Likelihood Estimation of Dirichlet Distribution Parameters\" <http://jonathan-huang.org/research/dirichlet/dirichlet.pdf>`_.\n\nParameters ---------- prior : list of float The prior for each possible outcome at the previous iteration (to be updated). N : int Number of observations. logphat : list of float Log probabilities for the current estimation, also called \"observed sufficient statistics\". rho : float Learning rate.\n##### Returns\n"
+}

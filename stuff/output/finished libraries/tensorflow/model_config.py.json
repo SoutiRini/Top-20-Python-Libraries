@@ -1,0 +1,7 @@
+{
+    "source file": "model_config.py",
+    "line number": "100",
+    "func name": "model_from_json",
+    "func arg": "(json_string, custom_objects)",
+    "comments": "Parses a JSON model configuration string and returns a model instance.\n\nUsage:\n\n>>> model = tf.keras.Sequential([ ...\n\n\n\n tf.keras.layers.Dense(5, input_shape=(3,)), ...\n\n\n\n tf.keras.layers.Softmax()]) >>> config = model.to_json() >>> loaded_model = tf.keras.models.model_from_json(config)\n\nArguments: json_string: JSON string encoding a model configuration. custom_objects: Optional dictionary mapping names (strings) to custom classes or functions to be considered during deserialization.\n##### Returns\n"
+}

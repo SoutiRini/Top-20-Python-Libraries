@@ -1,0 +1,7 @@
+{
+    "source file": "eye.py",
+    "line number": "28",
+    "func name": "make_eye_tests",
+    "func arg": "(options)",
+    "comments": "Make a set of tests for tf.eye op.\n\n\n"
+}

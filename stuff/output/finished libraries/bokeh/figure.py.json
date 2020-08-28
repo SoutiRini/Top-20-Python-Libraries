@@ -1,0 +1,7 @@
+{
+    "source file": "figure.py",
+    "line number": "1550",
+    "func name": "markers",
+    "func arg": "()",
+    "comments": "Prints a list of valid marker types for scatter()\n\n\n##### Returns\n"
+}

@@ -1,0 +1,7 @@
+{
+    "source file": "tools94.py",
+    "line number": "646",
+    "func name": "matrix_rank",
+    "func arg": "(m, tol, method)",
+    "comments": "Matrix rank calculation using QR or SVD\n\nParameters ---------- m : array_like A 2-d array-like object to test tol : float, optional The tolerance to use when testing the matrix rank. If not provided an appropriate value is selected. method : {\"ip\", \"qr\", \"svd\"} The method used. \"ip\" uses the inner-product of a normalized version of m and then computes the rank using NumPy's matrix_rank. \"qr\" uses a QR decomposition and is the default. \"svd\" defers to NumPy's matrix_rank.\n##### Returns\n"
+}

@@ -1,0 +1,7 @@
+{
+    "source file": "fused_nbit_rowwise_test_helper.py",
+    "line number": "45",
+    "func name": "_compress_uniform_simplified",
+    "func arg": "(X, bit_rate, xmin, xmax, fp16_scale_bias)",
+    "comments": ""
+}

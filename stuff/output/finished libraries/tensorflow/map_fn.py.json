@@ -1,0 +1,7 @@
+{
+    "source file": "map_fn.py",
+    "line number": "628",
+    "func name": "map_fn_v2",
+    "func arg": "(fn, elems, dtype, parallel_iterations, back_prop, swap_memory, infer_shape, name, fn_output_signature)",
+    "comments": "Transform `elems` by applying `fn` to each element unstacked on axis 0.\n\n\n"
+}

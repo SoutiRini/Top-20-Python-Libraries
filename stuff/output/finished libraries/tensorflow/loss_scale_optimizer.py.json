@@ -1,0 +1,7 @@
+{
+    "source file": "loss_scale_optimizer.py",
+    "line number": "603",
+    "func name": "strategy_supports_loss_scaling",
+    "func arg": "()",
+    "comments": "Returns True if the current Strategy supports loss scaling.\n\n\n"
+}

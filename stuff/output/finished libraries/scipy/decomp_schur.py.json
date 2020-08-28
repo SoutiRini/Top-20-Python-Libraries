@@ -1,0 +1,7 @@
+{
+    "source file": "decomp_schur.py",
+    "line number": "210",
+    "func name": "rsf2csf",
+    "func arg": "(T, Z, check_finite)",
+    "comments": "Convert real Schur form to complex Schur form.\n\nConvert a quasi-diagonal real-valued Schur form to the upper-triangular complex-valued Schur form.\n\nParameters ---------- T : (M, M) array_like Real Schur form of the original array Z : (M, M) array_like Schur transformation matrix check_finite : bool, optional Whether to check that the input arrays contain only finite numbers. Disabling may give a performance gain, but may result in problems (crashes, non-termination) if the inputs do contain infinities or NaNs.\n##### Returns\n* **T **: (M, M) ndarray\n    Complex Schur form of the original array\n\n* **Z **: (M, M) ndarray\n    Schur transformation matrix corresponding to the complex form\n\n* **schur **: Schur decomposition of an array\n\n"
+}

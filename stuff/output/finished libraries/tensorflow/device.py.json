@@ -1,0 +1,7 @@
+{
+    "source file": "device.py",
+    "line number": "67",
+    "func name": "merge_device",
+    "func arg": "(spec)",
+    "comments": "Returns a device function that merges devices specifications.\n\nThis can be used to merge partial specifications of devices. The innermost setting for a device field takes precedence. For example:\n\nwith tf.device(merge_device(\"/device:GPU:0\")) # Nodes created here have device \"/device:GPU:0\" with tf.device(merge_device(\"/job:worker\")): # Nodes created here have device \"/job:worker/device:GPU:0\" with tf.device(merge_device(\"/device:CPU:0\")): # Nodes created here have device \"/job:worker/device:CPU:0\" with tf.device(merge_device(\"/job:ps\")): # Nodes created here have device \"/job:ps/device:CPU:0\"\n##### Args\n* **spec**: A `DeviceSpec` or a device spec string (partially) describing the\n  device that should be used for all nodes created in the scope of\n  the returned device function's with block.\n\n##### Returns\n"
+}

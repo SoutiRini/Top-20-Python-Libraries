@@ -1,0 +1,7 @@
+{
+    "source file": "variable_scope_test.py",
+    "line number": "1386",
+    "func name": "axis0_into3_partitioner",
+    "func arg": "(shape, **unused_kwargs)",
+    "comments": ""
+}

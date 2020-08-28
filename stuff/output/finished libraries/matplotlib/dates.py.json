@@ -1,0 +1,7 @@
+{
+    "source file": "dates.py",
+    "line number": "1787",
+    "func name": "date_ticker_factory",
+    "func arg": "(span, tz, numticks)",
+    "comments": "Create a date locator with *numticks* (approx) and a date formatter for *span* in days.  Return value is (locator, formatter).\n\n\n"
+}

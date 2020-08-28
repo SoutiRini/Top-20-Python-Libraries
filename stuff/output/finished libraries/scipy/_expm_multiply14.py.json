@@ -1,0 +1,7 @@
+{
+    "source file": "_expm_multiply14.py",
+    "line number": "680",
+    "func name": "_expm_multiply_interval_core_2",
+    "func arg": "(A, X, h, mu, m_star, s, q, tol)",
+    "comments": "A helper function, for the case q > s and q % s > 0.\n\n\n"
+}

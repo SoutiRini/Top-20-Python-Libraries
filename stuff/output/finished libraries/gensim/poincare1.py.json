@@ -1,0 +1,7 @@
+{
+    "source file": "poincare1.py",
+    "line number": "103",
+    "func name": "poincare_distance_heatmap",
+    "func arg": "(origin_point, x_range, y_range, num_points)",
+    "comments": "Create a heatmap of Poincare distances from `origin_point` for each point (x, y), where x and y lie in `x_range` and `y_range` respectively, with `num_points` points chosen uniformly in both ranges.\n\nParameters ---------- origin_point : tuple (int, int) (x, y) from which distances are to be measured and plotted. x_range : tuple (int, int) Range for x-axis from which to choose `num_points` points. y_range : tuple (int, int) Range for y-axis from which to choose `num_points` points. num_points : int Number of points to choose from `x_range` and `y_range`.\n\nNotes ----- Points outside the unit circle are ignored, since the Poincare distance is defined only for points inside the circle boundaries (exclusive of the boundary).\n##### Returns\n* ****: class\n\n"
+}

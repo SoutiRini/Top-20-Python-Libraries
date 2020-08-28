@@ -1,0 +1,7 @@
+{
+    "source file": "loss_scale_optimizer_test1.py",
+    "line number": "69",
+    "func name": "create_identity_with_grad_check_fn",
+    "func arg": "(expected_gradient, expected_dtype)",
+    "comments": "Returns a function that asserts it's gradient has a certain value.\n\nThis serves as a hook to assert intermediate gradients have a certain value. This returns an identity function. The identity's gradient function is also the identity function, except it asserts that the gradient equals `expected_gradient` and has dtype `expected_dtype`.\n##### Args\n* **expected_gradient**: The gradient function asserts that the gradient is this\n  value.\n\n* **expected_dtype**: The gradient function asserts the gradient has this dtype.\n\n##### Returns\n"
+}

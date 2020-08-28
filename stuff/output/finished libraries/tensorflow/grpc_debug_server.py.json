@@ -1,0 +1,7 @@
+{
+    "source file": "grpc_debug_server.py",
+    "line number": "41",
+    "func name": "_state_change",
+    "func arg": "(new_state, node_name, output_slot, debug_op)",
+    "comments": ""
+}

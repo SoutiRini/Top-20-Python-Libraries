@@ -1,0 +1,7 @@
+{
+    "source file": "sparse_linalg_lobpcg.py",
+    "line number": "55",
+    "func name": "_precond",
+    "func arg": "(LorU, lower, x)",
+    "comments": ""
+}

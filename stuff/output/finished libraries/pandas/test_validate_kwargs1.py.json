@@ -1,0 +1,7 @@
+{
+    "source file": "test_validate_kwargs1.py",
+    "line number": "62",
+    "func name": "test_validate_bool_kwarg",
+    "func arg": "(name, value)",
+    "comments": ""
+}

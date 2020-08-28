@@ -1,0 +1,7 @@
+{
+    "source file": "bokeh_settings.py",
+    "line number": "113",
+    "func name": "setup",
+    "func arg": "(app)",
+    "comments": "Required Sphinx extension setup function.\n\n\n"
+}

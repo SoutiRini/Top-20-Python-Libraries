@@ -1,0 +1,7 @@
+{
+    "source file": "util.py",
+    "line number": "838",
+    "func name": "parallelize_preprocess",
+    "func arg": "(func, iterator, processes, progress_bar)",
+    "comments": ""
+}

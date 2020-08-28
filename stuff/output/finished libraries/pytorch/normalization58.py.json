@@ -1,0 +1,7 @@
+{
+    "source file": "normalization58.py",
+    "line number": "278",
+    "func name": "moments_with_running_stats",
+    "func arg": "(model, blob_in, blob_out, dim_in, RunningMeanInitializer, RunningVarianceInitializer, order, **kwargs)",
+    "comments": ""
+}

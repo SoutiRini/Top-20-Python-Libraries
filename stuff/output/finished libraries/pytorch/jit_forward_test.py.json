@@ -1,0 +1,7 @@
+{
+    "source file": "jit_forward_test.py",
+    "line number": "14",
+    "func name": "torch_sumall",
+    "func arg": "(a, iterations)",
+    "comments": ""
+}

@@ -1,0 +1,7 @@
+{
+    "source file": "_locales.py",
+    "line number": "12",
+    "func name": "find_comma_decimal_point_locale",
+    "func arg": "()",
+    "comments": "See if platform has a decimal point as comma locale.\n\nFind a locale that uses a comma instead of a period as the decimal point.\n##### Returns\n* **old_locale**: str\n    Locale when the function was called.\n\n* **new_locale**: {str, None)\n    First French locale found, None if none found.\n\n"
+}

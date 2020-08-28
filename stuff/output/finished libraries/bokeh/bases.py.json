@@ -1,0 +1,7 @@
+{
+    "source file": "bases.py",
+    "line number": "477",
+    "func name": "validation_on",
+    "func arg": "()",
+    "comments": "Check if property validation is currently active\n\n\n##### Returns\n"
+}

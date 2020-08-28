@@ -1,0 +1,7 @@
+{
+    "source file": "ImageMode.py",
+    "line number": "33",
+    "func name": "getmode",
+    "func arg": "(mode)",
+    "comments": "Gets a mode descriptor for the given mode.\n\n\n"
+}

@@ -1,0 +1,7 @@
+{
+    "source file": "formatting.py",
+    "line number": "356",
+    "func name": "dict_to_pdnode",
+    "func arg": "(d)",
+    "comments": "Create pydot node from dict.\n\n\n"
+}

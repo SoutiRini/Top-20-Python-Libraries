@@ -1,0 +1,7 @@
+{
+    "source file": "decomp_lu.py",
+    "line number": "151",
+    "func name": "lu",
+    "func arg": "(a, permute_l, overwrite_a, check_finite)",
+    "comments": "Compute pivoted LU decomposition of a matrix.\n\nThe decomposition is::\n\nA = P L U\n\nwhere P is a permutation matrix, L lower triangular with unit diagonal elements, and U upper triangular.\n\nParameters ---------- a : (M, N) array_like Array to decompose permute_l : bool, optional Perform the multiplication P*L (Default: do not permute) overwrite_a : bool, optional Whether to overwrite data in a (may improve performance) check_finite : bool, optional Whether to check that the input matrix contains only finite numbers. Disabling may give a performance gain, but may result in problems (crashes, non-termination) if the inputs do contain infinities or NaNs.\n##### Returns\n* **p **: (M, M) ndarray\n    Permutation matrix\n\n* **l **: (M, K) ndarray\n    Lower triangular or trapezoidal matrix with unit diagonal.\n    K = min(M, N)\n\n* **u **: (K, N) ndarray\n    Upper triangular or trapezoidal matrix\n\n* **pl **: (M, K) ndarray\n    Permuted L matrix.\n    K = min(M, N)\n\n"
+}

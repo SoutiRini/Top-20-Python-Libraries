@@ -1,0 +1,7 @@
+{
+    "source file": "lstm2.py",
+    "line number": "29",
+    "func name": "make_lstm_tests",
+    "func arg": "(options)",
+    "comments": "Make a set of tests to do basic Lstm cell.\n\n\n"
+}

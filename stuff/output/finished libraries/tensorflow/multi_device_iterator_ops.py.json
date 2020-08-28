@@ -1,0 +1,7 @@
+{
+    "source file": "multi_device_iterator_ops.py",
+    "line number": "193",
+    "func name": "_create_device_dataset",
+    "func arg": "(prototype_ds, incarnation_id, prefetch_buffer_size, experimental_slack)",
+    "comments": "Uses _prototype_device_datasets[i] to build a dataset for the device.\n\n\n"
+}

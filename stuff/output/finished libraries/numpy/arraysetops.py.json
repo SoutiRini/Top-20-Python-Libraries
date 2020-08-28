@@ -1,0 +1,7 @@
+{
+    "source file": "arraysetops.py",
+    "line number": "769",
+    "func name": "setdiff1d",
+    "func arg": "(ar1, ar2, assume_unique)",
+    "comments": "Find the set difference of two arrays.\n\nReturn the unique values in `ar1` that are not in `ar2`.\n\nParameters ---------- ar1 : array_like Input array. ar2 : array_like Input comparison array. assume_unique : bool If True, the input arrays are both assumed to be unique, which can speed up the calculation.\n\nDefault is False.\n##### Returns\n* **setdiff1d **: ndarray\n    1D array of values in `ar1` that are not in `ar2`. The result\n    is sorted when `assume_unique=False`, but otherwise only sorted\n    if the input is sorted.\n\n* **numpy.lib.arraysetops **: Module with a number of other functions for\n                        performing set operations on arrays.\n\n"
+}

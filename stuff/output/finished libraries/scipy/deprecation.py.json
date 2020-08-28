@@ -1,0 +1,7 @@
+{
+    "source file": "deprecation.py",
+    "line number": "46",
+    "func name": "deprecate_cython_api",
+    "func arg": "(module, routine_name, new_name, message)",
+    "comments": "Deprecate an exported cdef function in a public Cython API module.\n\nOnly functions can be deprecated; typedefs etc. cannot.\n\nParameters ---------- module : module Public Cython API module (e.g. scipy.linalg.cython_blas). routine_name : str Name of the routine to deprecate. May also be a fused-type routine (in which case its all specializations are deprecated). new_name : str New name to include in the deprecation warning message message : str Additional text in the deprecation warning message\n\nExamples -------- Usually, this function would be used in the top-level of the module ``.pyx`` file:\n\n>>> from scipy._lib.deprecation import deprecate_cython_api >>> import scipy.linalg.cython_blas as mod >>> deprecate_cython_api(mod, \"dgemm\", \"dgemm_new\", ...\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nmessage=\"Deprecated in Scipy 1.5.0\") >>> del deprecate_cython_api, mod\n\nAfter this, Cython modules that use the deprecated function emit a deprecation warning when they are imported.\n"
+}

@@ -1,0 +1,7 @@
+{
+    "source file": "explicit_resnet_forward.py",
+    "line number": "41",
+    "func name": "resnet_imagenet_create_model",
+    "func arg": "(model, data, labels, split, opts, dataset)",
+    "comments": ""
+}

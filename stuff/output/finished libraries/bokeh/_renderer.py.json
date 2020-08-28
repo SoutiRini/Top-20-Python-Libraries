@@ -1,0 +1,7 @@
+{
+    "source file": "_renderer.py",
+    "line number": "264",
+    "func name": "_process_sequence_literals",
+    "func arg": "(glyphclass, kwargs, source, is_user_source)",
+    "comments": ""
+}

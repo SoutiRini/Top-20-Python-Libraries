@@ -1,0 +1,7 @@
+{
+    "source file": "pickle1.py",
+    "line number": "100",
+    "func name": "read_pickle",
+    "func arg": "(filepath_or_buffer, compression)",
+    "comments": "Load pickled pandas object (or any object) from file.\n\n.. warning::\n\nLoading pickled data received from untrusted sources can be unsafe. See `here <https://docs.python.org/3/library/pickle.html>`__.\n\nParameters ---------- filepath_or_buffer : str, path object or file-like object File path, URL, or buffer where the pickled object will be loaded from.\n\n.. versionchanged:: 1.0.0 Accept URL. URL is not limited to S3 and GCS.\n\ncompression : {'infer', 'gzip', 'bz2', 'zip', 'xz', None}, default 'infer' If 'infer' and 'path_or_url' is path-like, then detect compression from the following extensions: '.gz', '.bz2', '.zip', or '.xz' (otherwise no compression) If 'infer' and 'path_or_url' is not path-like, then use None (= no decompression).\n##### Returns\n* **unpickled **: same type as object stored in file\n\n* **DataFrame.to_pickle **: Pickle (serialize) DataFrame object to file.\n\n* **Series.to_pickle **: Pickle (serialize) Series object to file.\n\n* **read_hdf **: Read HDF5 file into a DataFrame.\n\n* **read_sql **: Read SQL query or database table into a DataFrame.\n\n* **read_parquet **: Load a parquet object, returning a DataFrame.\n\n* **>>> original_df = pd.DataFrame({\"foo\"**: range(5), \"bar\"\n\n"
+}

@@ -1,0 +1,7 @@
+{
+    "source file": "snowball.py",
+    "line number": "5867",
+    "func name": "demo",
+    "func arg": "()",
+    "comments": "This function provides a demonstration of the Snowball stemmers.\n\nAfter invoking this function and specifying a language, it stems an excerpt of the Universal Declaration of Human Rights (which is a part of the NLTK corpus collection) and then prints out the original and the stemmed text.\n"
+}

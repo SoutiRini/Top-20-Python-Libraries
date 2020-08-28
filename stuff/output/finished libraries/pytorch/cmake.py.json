@@ -1,0 +1,7 @@
+{
+    "source file": "cmake.py",
+    "line number": "56",
+    "func name": "get_cmake_cache_variables_from_file",
+    "func arg": "(cmake_cache_file)",
+    "comments": "Gets values in CMakeCache.txt into a dictionary.\n\nArguments: cmake_cache_file: A CMakeCache.txt file object.\n##### Returns\n* **dict**: A ``dict`` containing the value of cached CMake variables.\n\n"
+}

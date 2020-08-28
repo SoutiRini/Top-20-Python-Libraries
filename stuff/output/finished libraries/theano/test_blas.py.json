@@ -1,0 +1,7 @@
+{
+    "source file": "test_blas.py",
+    "line number": "239",
+    "func name": "test_gemv_dot_strides",
+    "func arg": "()",
+    "comments": ""
+}

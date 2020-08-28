@@ -1,0 +1,7 @@
+{
+    "source file": "parameter_sharing.py",
+    "line number": "88",
+    "func name": "ParameterSharing",
+    "func arg": "(shared_scopes)",
+    "comments": "Helper function for sharing scopes. All the parameters within the shared_scopes, will be remapped with the respect of CurrentNamescope()\n\nI.e. if one calls ParameterSharing with {'scope_b': 'scope_'a'}, from the scope 'some_global_scope', it'll effectively mean, that all parameters from 'some_global_scope/scope_b' will shared with the parameters from 'some_global_scope/scope_a'\n"
+}

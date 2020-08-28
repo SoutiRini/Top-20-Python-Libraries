@@ -1,0 +1,7 @@
+{
+    "source file": "IcnsImagePlugin.py",
+    "line number": "305",
+    "func name": "_save",
+    "func arg": "(im, fp, filename)",
+    "comments": "Saves the image as a series of PNG files, that are then converted to a .icns file using the macOS command line utility 'iconutil'.\n\nmacOS only.\n"
+}

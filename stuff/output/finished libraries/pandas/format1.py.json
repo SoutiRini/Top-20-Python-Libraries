@@ -1,0 +1,7 @@
+{
+    "source file": "format1.py",
+    "line number": "1979",
+    "func name": "buffer_put_lines",
+    "func arg": "(buf, lines)",
+    "comments": "Appends lines to a buffer.\n\nParameters ---------- buf The buffer to write to lines The lines to append.\n"
+}

@@ -1,0 +1,7 @@
+{
+    "source file": "mlir_gen.py",
+    "line number": "444",
+    "func name": "mlir_gen_from_source",
+    "func arg": "(source, src_file)",
+    "comments": "Parse a function as either a string or from a supplied file path and return a TFProgram.\n\n\n"
+}

@@ -1,0 +1,7 @@
+{
+    "source file": "exceptions.py",
+    "line number": "83",
+    "func name": "_py_assert_stmt",
+    "func arg": "(expression1, expression2)",
+    "comments": "Overload of assert_stmt that executes a Python assert statement.\n\n\n"
+}

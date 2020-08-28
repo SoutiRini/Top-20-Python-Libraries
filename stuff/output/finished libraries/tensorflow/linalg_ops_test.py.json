@@ -1,0 +1,7 @@
+{
+    "source file": "linalg_ops_test.py",
+    "line number": "415",
+    "func name": "make_tensor_hiding_attributes",
+    "func arg": "(value, hide_shape, hide_value)",
+    "comments": ""
+}

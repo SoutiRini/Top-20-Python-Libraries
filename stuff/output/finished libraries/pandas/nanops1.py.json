@@ -1,0 +1,7 @@
+{
+    "source file": "nanops1.py",
+    "line number": "1375",
+    "func name": "nanpercentile",
+    "func arg": "(values, q, axis, na_value, mask, ndim, interpolation)",
+    "comments": "Wrapper for np.percentile that skips missing values.\n\nParameters ---------- values : array over which to find quantiles q : scalar or array of quantile indices to find axis : {0, 1} na_value : scalar value to return for empty or all-null values mask : ndarray[bool] locations in values that should be considered missing ndim : {1, 2} interpolation : str\n##### Returns\n* **quantiles **: scalar or array\n\n"
+}

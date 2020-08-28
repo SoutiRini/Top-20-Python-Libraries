@@ -1,0 +1,7 @@
+{
+    "source file": "debug_events_reader.py",
+    "line number": "891",
+    "func name": "_execution_from_debug_event_proto",
+    "func arg": "(debug_event, locator)",
+    "comments": "Convert a DebugEvent proto into an Execution data object.\n\n\n"
+}

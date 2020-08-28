@@ -1,0 +1,7 @@
+{
+    "source file": "evaluator.py",
+    "line number": "34",
+    "func name": "_parse_debug_tensor_name",
+    "func arg": "(debug_tensor_name)",
+    "comments": "Parse a debug tensor name in a to-be-evaluated expression.\n\n\n##### Args\n* **debug_tensor_name**: name of the debug tensor, with or without\n  device name as a prefix, with or without debug op, with or\n  without '[<exec_index>]' as a suffix.\n  E.g., without device name prefix, without debug op suffix\n\n##### Returns\n* **device_name**: If device name prefix exists, the device name; otherwise,\n  `None`.\n\n* **node_name**: Name of the node.\n\n* **output_slot**: Output slot index as an `int`.\n\n* **debug_op**: If the debug op suffix exists, the debug op name; otherwise,\n  `None`.\n\n* **exec_index**: Execution index (applicable to cases in which a debug tensor\n  is computed multiple times in a `tf.Session.run` call, e.g., due to\n  `tf.while_loop`). If the exec_index suffix does not exist, this value\n  defaults to `0`.\n\n"
+}

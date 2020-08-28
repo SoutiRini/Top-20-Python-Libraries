@@ -1,0 +1,7 @@
+{
+    "source file": "conftest8.py",
+    "line number": "21",
+    "func name": "month_classes",
+    "func arg": "(request)",
+    "comments": "Fixture for month based datetime offsets available for a time series.\n\n\n"
+}

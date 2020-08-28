@@ -1,0 +1,7 @@
+{
+    "source file": "tools2.py",
+    "line number": "6",
+    "func name": "ipynb_vega_init",
+    "func arg": "()",
+    "comments": "Initialize the IPython notebook display elements\n\nThis function borrows heavily from the excellent vincent package: http://github.com/wrobstory/vincent\n"
+}

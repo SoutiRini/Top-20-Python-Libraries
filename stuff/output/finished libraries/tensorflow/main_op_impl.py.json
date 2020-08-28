@@ -1,0 +1,7 @@
+{
+    "source file": "main_op_impl.py",
+    "line number": "57",
+    "func name": "main_op_with_restore",
+    "func arg": "(restore_op_name)",
+    "comments": "Returns a main op to init variables, tables and restore the graph.\n\n\n##### Args\n* **restore_op_name**: Name of the op to use to restore the graph.\n\n##### Returns\n"
+}

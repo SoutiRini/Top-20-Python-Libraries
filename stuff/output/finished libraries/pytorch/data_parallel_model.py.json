@@ -1,0 +1,7 @@
+{
+    "source file": "data_parallel_model.py",
+    "line number": "2073",
+    "func name": "_GPUInterDeviceBatchNormalization",
+    "func arg": "(model)",
+    "comments": ""
+}

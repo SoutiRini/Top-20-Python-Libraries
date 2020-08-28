@@ -1,0 +1,7 @@
+{
+    "source file": "metaestimators.py",
+    "line number": "148",
+    "func name": "_safe_split",
+    "func arg": "(estimator, X, y, indices, train_indices)",
+    "comments": "Create subset of dataset and properly handle kernels.\n\nSlice X, y according to indices for cross-validation, but take care of precomputed kernel-matrices or pairwise affinities / distances.\n\nIf ``estimator._pairwise is True``, X needs to be square and we slice rows and columns. If ``train_indices`` is not None, we slice rows using ``indices`` (assumed the test set) and columns using ``train_indices``, indicating the training set.\n\nLabels y will always be indexed only along the first axis.\n\nParameters ---------- estimator : object Estimator to determine whether we should slice only rows or rows and columns.\n\nX : array-like, sparse matrix or iterable Data to be indexed. If ``estimator._pairwise is True``, this needs to be a square array-like or sparse matrix.\n\ny : array-like, sparse matrix or iterable Targets to be indexed.\n\nindices : array of int Rows to select from X and y. If ``estimator._pairwise is True`` and ``train_indices is None`` then ``indices`` will also be used to slice columns.\n\ntrain_indices : array of int or None, default=None If ``estimator._pairwise is True`` and ``train_indices is not None``, then ``train_indices`` will be use to slice the columns of X.\n##### Returns\n* **X_subset **: array-like, sparse matrix or list\n    Indexed data.\n\n* **y_subset **: array-like, sparse matrix or list\n    Indexed targets.\n\n"
+}

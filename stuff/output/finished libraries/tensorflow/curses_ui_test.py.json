@@ -1,0 +1,7 @@
+{
+    "source file": "curses_ui_test.py",
+    "line number": "43",
+    "func name": "codes_to_string",
+    "func arg": "(cmd_code)",
+    "comments": ""
+}

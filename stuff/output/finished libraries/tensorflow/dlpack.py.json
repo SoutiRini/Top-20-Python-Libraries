@@ -1,0 +1,7 @@
+{
+    "source file": "dlpack.py",
+    "line number": "49",
+    "func name": "from_dlpack",
+    "func arg": "(dlcapsule)",
+    "comments": "Returns the Tensorflow eager tensor.\n\nThe returned tensor uses the memory shared by dlpack capsules from other framework.\n\n```python a = tf.experimental.dlpack.from_dlpack(dlcapsule) # `a` uses the memory shared by dlpack ```\n##### Args\n* **dlcapsule**: A PyCapsule named as dltensor\n\n##### Returns\n"
+}

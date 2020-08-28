@@ -1,0 +1,7 @@
+{
+    "source file": "keras_dnn_correctness_test.py",
+    "line number": "45",
+    "func name": "is_default_strategy",
+    "func arg": "(strategy)",
+    "comments": ""
+}

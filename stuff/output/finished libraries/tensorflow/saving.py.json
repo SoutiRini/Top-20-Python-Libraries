@@ -1,0 +1,7 @@
+{
+    "source file": "saving.py",
+    "line number": "117",
+    "func name": "independent_buffers",
+    "func arg": "(parallel_device)",
+    "comments": "Context manager which saves parallel buffers independently.\n\nCreates a ParallelDevice-aware variable subclass which saves buffers for each device separately.\n##### Args\n* **parallel_device**: A ParallelDevice object on which variables are placed.\n\n* **elds**: \n\n"
+}

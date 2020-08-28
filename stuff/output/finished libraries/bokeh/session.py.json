@@ -1,0 +1,7 @@
+{
+    "source file": "session.py",
+    "line number": "167",
+    "func name": "show_session",
+    "func arg": "(session_id, url, session, browser, new, controller)",
+    "comments": "Open a browser displaying a session document.\n\nIf you have a session from ``pull_session()`` or ``push_session`` you can ``show_session(session=mysession)``. If you don't need to open a connection to the server yourself, you can show a new session in a browser by providing just the ``url``.\n##### Args\n* **session_id (string, optional) **: The name of the session, None to autogenerate a random one (default\n\n* **url **: (str, optional)\n\n* **session (ClientSession, optional) **: session to get session ID and server URL from\n    If you specify this, you don't need to specify session_id and url\n\n* **browser (str, optional) **: browser to show with (default\n\n* **new (str, optional) **: new file output mode (default\n\n"
+}

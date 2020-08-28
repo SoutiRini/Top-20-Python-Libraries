@@ -1,0 +1,7 @@
+{
+    "source file": "multinomial16.py",
+    "line number": "494",
+    "func name": "local_gpua_multinomial_wor",
+    "func arg": "(op, context_name, inputs, outputs)",
+    "comments": ""
+}

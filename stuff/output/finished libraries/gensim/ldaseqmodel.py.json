@@ -1,0 +1,7 @@
+{
+    "source file": "ldaseqmodel.py",
+    "line number": "1603",
+    "func name": "df_obs",
+    "func arg": "(x)",
+    "comments": "Derivative of the objective function which optimises obs.\n\nParameters ---------- x : list of float The obs values for this word. sslm : :class:`~gensim.models.ldaseqmodel.sslm` The State Space Language Model for DTM. word_counts : list of int Total word counts for each time slice. totals : list of int of length `len(self.time_slice)` The totals for each time slice. mean_deriv_mtx : list of float Mean derivative for each time slice. word : int The word's ID. deriv : list of float Mean derivative for each time slice.\n##### Returns\n"
+}

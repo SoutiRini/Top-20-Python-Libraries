@@ -1,0 +1,7 @@
+{
+    "source file": "train.py",
+    "line number": "58",
+    "func name": "add_weight_decay",
+    "func arg": "(model, weight_decay)",
+    "comments": "Adds a decay to weights in the model.\n\nThis is a form of L2 regularization.\n##### Args\n* **weight_decay**: strength of the regularization\n\n"
+}

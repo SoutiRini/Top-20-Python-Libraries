@@ -1,0 +1,7 @@
+{
+    "source file": "_reduction.py",
+    "line number": "48",
+    "func name": "legacy_get_enum",
+    "func arg": "(size_average, reduce, emit_warning)",
+    "comments": ""
+}

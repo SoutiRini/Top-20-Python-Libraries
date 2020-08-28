@@ -1,0 +1,7 @@
+{
+    "source file": "check_ops.py",
+    "line number": "2340",
+    "func name": "_ensure_shape_grad",
+    "func arg": "(op, grad)",
+    "comments": ""
+}

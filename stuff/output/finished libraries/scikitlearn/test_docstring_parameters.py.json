@@ -1,0 +1,7 @@
+{
+    "source file": "test_docstring_parameters.py",
+    "line number": "174",
+    "func name": "test_fit_docstring_attributes",
+    "func arg": "(name, Estimator)",
+    "comments": ""
+}

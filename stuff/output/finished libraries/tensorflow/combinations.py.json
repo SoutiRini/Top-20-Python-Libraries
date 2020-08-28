@@ -1,0 +1,7 @@
+{
+    "source file": "combinations.py",
+    "line number": "474",
+    "func name": "_multi_worker_session",
+    "func arg": "(kwargs)",
+    "comments": "Returns a context manager that enters a session that is configured for the MultiWorkerMirroredStrategy.\n\n\n##### Args\n* **kwargs**: a dict. Keyword arguments passed to the test.\n\n##### Returns\n"
+}

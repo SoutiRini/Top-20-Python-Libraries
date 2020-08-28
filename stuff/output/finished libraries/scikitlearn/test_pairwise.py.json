@@ -1,0 +1,7 @@
+{
+    "source file": "test_pairwise.py",
+    "line number": "1260",
+    "func name": "test_pairwise_distances_data_derived_params",
+    "func arg": "(n_jobs, metric, dist_function, y_is_x)",
+    "comments": ""
+}

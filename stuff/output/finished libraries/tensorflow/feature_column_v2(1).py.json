@@ -1,0 +1,7 @@
+{
+    "source file": "feature_column_v2(1).py",
+    "line number": "870",
+    "func name": "_check_invalid_cases",
+    "func arg": "(embedding_lookup_device)",
+    "comments": "Checks for invalid embedding_lookup_device configurations.\n\n\n"
+}

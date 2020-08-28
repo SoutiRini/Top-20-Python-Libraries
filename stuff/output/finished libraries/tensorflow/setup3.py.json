@@ -1,0 +1,7 @@
+{
+    "source file": "setup3.py",
+    "line number": "216",
+    "func name": "find_files",
+    "func arg": "(pattern, root)",
+    "comments": "Return all the files matching pattern below root dir.\n\n\n"
+}

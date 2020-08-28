@@ -1,0 +1,7 @@
+{
+    "source file": "test_no_ipython_common.py",
+    "line number": "36",
+    "func name": "test_no_ipython_common",
+    "func arg": "()",
+    "comments": "Basic usage of Bokeh should not result in any IPython code being imported. This test ensures that importing basic modules does not bring in IPython.\n\n\n"
+}

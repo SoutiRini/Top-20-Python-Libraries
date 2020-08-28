@@ -1,0 +1,7 @@
+{
+    "source file": "control.py",
+    "line number": "555",
+    "func name": "IfNot",
+    "func arg": "(name, condition_blob_or_net, true_nets_or_steps, false_nets_or_steps)",
+    "comments": "If condition_blob_or_net returns false, executes true_nets_or_steps, otherwise executes false_nets_or_steps\n\n\n"
+}

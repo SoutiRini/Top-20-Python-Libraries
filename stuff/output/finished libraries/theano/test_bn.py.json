@@ -1,0 +1,7 @@
+{
+    "source file": "test_bn.py",
+    "line number": "474",
+    "func name": "test_batch_normalization_broadcastable",
+    "func arg": "()",
+    "comments": ""
+}

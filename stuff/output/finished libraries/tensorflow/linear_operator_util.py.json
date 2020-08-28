@@ -1,0 +1,7 @@
+{
+    "source file": "linear_operator_util.py",
+    "line number": "566",
+    "func name": "split_arg_into_blocks",
+    "func arg": "(block_dims, block_dims_fn, arg, axis)",
+    "comments": "Split `x` into blocks matching `operators`'s `domain_dimension`.\n\nSpecifically, if we have a blockwise lower-triangular matrix, with block sizes along the diagonal `[M_j, M_j] j = 0,1,2..J`,\n\nthis method splits `arg` on `axis` into `J` tensors, whose shape at `axis` is `M_j`.\n##### Args\n* **block_dims**: Iterable of `TensorShapes`.\n\n* **block_dims_fn**: Callable returning an iterable of `Tensor`s.\n\n* **arg**: `Tensor`. `arg` is split into `J` tensors.\n\n* **axis**: Python `Integer` representing the axis to split `arg` on.\n\n##### Returns\n"
+}

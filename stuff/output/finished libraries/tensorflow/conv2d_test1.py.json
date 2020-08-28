@@ -1,0 +1,7 @@
+{
+    "source file": "conv2d_test1.py",
+    "line number": "66",
+    "func name": "build_graph",
+    "func arg": "(inp, dtype, num_filters, data_format, kernel_sizes, dilation_rates, padding)",
+    "comments": ""
+}

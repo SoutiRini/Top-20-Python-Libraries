@@ -1,0 +1,7 @@
+{
+    "source file": "misc.py",
+    "line number": "182",
+    "func name": "_datacopied",
+    "func arg": "(arr, original)",
+    "comments": "Strict check for `arr` not sharing any data with `original`, under the assumption that arr = asarray(original)\n\n\n"
+}

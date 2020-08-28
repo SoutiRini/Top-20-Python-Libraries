@@ -1,0 +1,7 @@
+{
+    "source file": "readers.py",
+    "line number": "1082",
+    "func name": "_get_file_names",
+    "func arg": "(file_pattern, shuffle)",
+    "comments": "Parse list of file names from pattern, optionally shuffled.\n\n\n##### Args\n* **file_pattern**: File glob pattern, or list of glob patterns.\n\n* **shuffle**: Whether to shuffle the order of file names.\n\n##### Returns\n"
+}

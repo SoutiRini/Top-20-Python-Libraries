@@ -1,0 +1,7 @@
+{
+    "source file": "pooling_ops_3d_test.py",
+    "line number": "35",
+    "func name": "_AvgPoolGrad",
+    "func arg": "(inputs, outputs, output_gradients, ksize, strides, padding)",
+    "comments": ""
+}

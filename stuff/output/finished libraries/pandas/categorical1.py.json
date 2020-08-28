@@ -1,0 +1,7 @@
+{
+    "source file": "categorical1.py",
+    "line number": "77",
+    "func name": "recode_from_groupby",
+    "func arg": "(c, sort, ci)",
+    "comments": "Reverse the codes_to_groupby to account for sort / observed.\n\nParameters ---------- c : Categorical sort : boolean The value of the sort parameter groupby was called with. ci : CategoricalIndex The codes / categories to recode\n##### Returns\n"
+}

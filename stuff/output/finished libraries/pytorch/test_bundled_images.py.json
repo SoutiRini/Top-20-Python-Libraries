@@ -1,0 +1,7 @@
+{
+    "source file": "test_bundled_images.py",
+    "line number": "28",
+    "func name": "bundle_jpeg_image",
+    "func arg": "(img_tensor, quality)",
+    "comments": ""
+}

@@ -1,0 +1,7 @@
+{
+    "source file": "test_copy1.py",
+    "line number": "76",
+    "func name": "test_copy_method_kwargs",
+    "func arg": "(deep, kwarg, value)",
+    "comments": ""
+}

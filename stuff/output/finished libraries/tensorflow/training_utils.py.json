@@ -1,0 +1,7 @@
+{
+    "source file": "training_utils.py",
+    "line number": "2042",
+    "func name": "unpack_validation_data",
+    "func arg": "(validation_data, raise_if_ambiguous)",
+    "comments": "Unpack validation data based input type.\n\nThe validation data is not touched if its dataset or dataset iterator. For other type of input (Numpy or tensor), it will be unpacked into tuple of 3 which is x, y and sample weights.\n##### Args\n* **validation_data**: dataset, dataset iterator, or numpy, tensor tuple.\n\n* **raise_if_ambiguous**: boolean on whether to fail if validation_data cannot be\n  parsed. Otherwise simply return validation_data, None, None and defer the\n  decision to the caller.\n\n##### Returns\n"
+}

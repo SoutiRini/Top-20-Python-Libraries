@@ -1,0 +1,7 @@
+{
+    "source file": "all_util.py",
+    "line number": "86",
+    "func name": "remove_undocumented",
+    "func arg": "(module_name, allowed_exception_list, doc_string_modules)",
+    "comments": "Removes symbols in a module that are not referenced by a docstring.\n\n\n##### Args\n* **module_name**: the name of the module (usually `__name__`).\n\n* **allowed_exception_list**: a list of names that should not be removed.\n\n* **doc_string_modules**: a list of modules from which to take the docstrings.\n\n##### Returns\n"
+}

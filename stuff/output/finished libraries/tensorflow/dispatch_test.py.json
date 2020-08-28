@@ -1,0 +1,7 @@
+{
+    "source file": "dispatch_test.py",
+    "line number": "45",
+    "func name": "test_op",
+    "func arg": "(x, y, z)",
+    "comments": "A fake op for testing dispatch of Python ops.\n\n\n"
+}

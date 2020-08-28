@@ -1,0 +1,7 @@
+{
+    "source file": "scan_views.py",
+    "line number": "162",
+    "func name": "foldr",
+    "func arg": "(fn, sequences, outputs_info, non_sequences, mode, name)",
+    "comments": "Similar behaviour as haskell' foldr.\n\nParameters ---------- fn The function that ``foldr`` applies at each iteration step (see ``scan`` for more info). sequences List of sequences over which ``foldr`` iterates (see ``scan`` for more info). outputs_info List of dictionaries describing the outputs of reduce (see ``scan`` for more info). non_sequences List of arguments passed to `fn`. ``foldr`` will not iterate over these arguments (see ``scan`` for more info). mode See ``scan``. name See ``scan``.\n"
+}

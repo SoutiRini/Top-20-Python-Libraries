@@ -1,0 +1,7 @@
+{
+    "source file": "lift_to_graph.py",
+    "line number": "205",
+    "func name": "lift_to_graph",
+    "func arg": "(tensors, graph, sources, disallowed_placeholders, add_sources, handle_captures, base_graph, op_map)",
+    "comments": "Copies the tensor and all its inputs recursively to the outer graph.\n\n\n##### Args\n* **tensors**: The Tensors to lift.\n\n* **graph**: The graph to lift to.\n\n* **sources**: Optional sequence of nodes to start from. If omitted the whole\n  subgraph which feeds into `init_tensor` is lifted.\n\n* **disallowed_placeholders**: An optional set of ops which may not appear in the\n  lifted graph. Defaults to all placeholders.\n\n* **add_sources**: A boolean indicating whether placeholders which are not in\n  sources should be allowed.\n\n* **handle_captures**: A boolean indicating whether to re-capture s in the new\n  graph or simply create a vanilla placeholder.\n\n* **base_graph**: The graph from which to lift ops. This will be inferred if not\n  specified.\n\n* **op_map**: A map contains all the existing nodes that have been lifted to the\n  destination graph, so they won't be lifted and copied again.\n\n##### Returns\n"
+}

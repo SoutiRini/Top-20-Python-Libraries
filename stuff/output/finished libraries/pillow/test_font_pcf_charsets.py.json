@@ -1,0 +1,7 @@
+{
+    "source file": "test_font_pcf_charsets.py",
+    "line number": "119",
+    "func name": "test_textsize_cp1250",
+    "func arg": "(request, tmp_path)",
+    "comments": ""
+}

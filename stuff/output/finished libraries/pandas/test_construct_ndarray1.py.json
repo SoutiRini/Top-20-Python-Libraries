@@ -1,0 +1,7 @@
+{
+    "source file": "test_construct_ndarray1.py",
+    "line number": "19",
+    "func name": "test_construct_1d_ndarray_preserving_na",
+    "func arg": "(values, dtype, expected)",
+    "comments": ""
+}

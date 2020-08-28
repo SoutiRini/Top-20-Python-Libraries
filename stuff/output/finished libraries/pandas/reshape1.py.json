@@ -1,0 +1,7 @@
+{
+    "source file": "reshape1.py",
+    "line number": "1048",
+    "func name": "_reorder_for_extension_array_stack",
+    "func arg": "(arr, n_rows, n_columns)",
+    "comments": "Re-orders the values when stacking multiple extension-arrays.\n\nThe indirect stacking method used for EAs requires a followup take to get the order correct.\n\nParameters ---------- arr : ExtensionArray n_rows, n_columns : int The number of rows and columns in the original DataFrame.\n##### Returns\n* **taken **: ExtensionArray\n    The original `arr` with elements re-ordered appropriately\n\n"
+}

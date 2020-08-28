@@ -1,0 +1,7 @@
+{
+    "source file": "_minimize.py",
+    "line number": "818",
+    "func name": "standardize_constraints",
+    "func arg": "(constraints, x0, meth)",
+    "comments": "Converts constraints to the form required by the solver.\n\n\n"
+}

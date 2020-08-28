@@ -1,0 +1,7 @@
+{
+    "source file": "_graph.py",
+    "line number": "52",
+    "func name": "get_graph_kwargs",
+    "func arg": "(node_source, edge_source, **kwargs)",
+    "comments": ""
+}

@@ -1,0 +1,7 @@
+{
+    "source file": "tools.py",
+    "line number": "339",
+    "func name": "embed",
+    "func arg": "(file_owner_or_url, file_id, width, height)",
+    "comments": "Embeds existing Plotly figure in IPython Notebook\n\nPlotly uniquely identifies figures with a 'file_owner'/'file_id' pair. Since each file is given a corresponding unique url, you may also simply pass a valid plotly url as the first argument.\n\nNote, if you're using a file_owner string as the first argument, you MUST specify a `file_id` keyword argument. Else, if you're using a url string as the first argument, you MUST NOT specify a `file_id` keyword argument, or file_id must be set to Python's None value.\n\nPositional arguments: file_owner_or_url (string) -- a valid plotly username OR a valid plotly url\n\nKeyword arguments: file_id (default=None) -- an int or string that can be converted to int if you're using a url, don't fill this in! width (default=\"100%\") -- an int or string corresp. to width of the figure height (default=\"525\") -- same as width but corresp. to the height of the figure\n"
+}

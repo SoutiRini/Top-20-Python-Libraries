@@ -1,0 +1,7 @@
+{
+    "source file": "test_reloading.py",
+    "line number": "38",
+    "func name": "test_full_reimport",
+    "func arg": "()",
+    "comments": "At the time of writing this, it is *not* truly supported, but apparently enough users rely on it, for it to be an annoying change when it started failing previously.\n\n\n"
+}

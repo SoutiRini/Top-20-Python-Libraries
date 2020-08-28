@@ -1,0 +1,7 @@
+{
+    "source file": "gather_op_test.py",
+    "line number": "43",
+    "func name": "_to_str_elements",
+    "func arg": "(values)",
+    "comments": "Converts the inner list elements to strings.\n\n\n"
+}

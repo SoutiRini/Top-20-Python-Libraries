@@ -1,0 +1,7 @@
+{
+    "source file": "test_truncated_svd.py",
+    "line number": "176",
+    "func name": "test_truncated_svd_eq_pca",
+    "func arg": "(X_sparse)",
+    "comments": ""
+}

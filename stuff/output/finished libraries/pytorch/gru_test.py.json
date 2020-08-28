@@ -1,0 +1,7 @@
+{
+    "source file": "gru_test.py",
+    "line number": "175",
+    "func name": "_prepare_gru_unit_op",
+    "func arg": "(gc, n, d, outputs_with_grads, forward_only, drop_states, sequence_lengths, two_d_initial_states)",
+    "comments": ""
+}

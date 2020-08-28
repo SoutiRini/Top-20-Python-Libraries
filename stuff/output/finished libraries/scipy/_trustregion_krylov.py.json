@@ -1,0 +1,7 @@
+{
+    "source file": "_trustregion_krylov.py",
+    "line number": "6",
+    "func name": "_minimize_trust_krylov",
+    "func arg": "(fun, x0, args, jac, hess, hessp, inexact, **trust_region_options)",
+    "comments": "Minimization of a scalar function of one or more variables using a nearly exact trust-region algorithm that only requires matrix vector products with the hessian matrix.\n\n.. versionadded:: 1.0.0\n\nOptions ------- inexact : bool, optional Accuracy to solve subproblems. If True requires less nonlinear iterations, but more vector products.\n"
+}

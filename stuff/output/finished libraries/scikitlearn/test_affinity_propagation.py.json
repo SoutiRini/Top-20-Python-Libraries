@@ -1,0 +1,7 @@
+{
+    "source file": "test_affinity_propagation.py",
+    "line number": "222",
+    "func name": "test_affinity_propagation_convergence_warning_dense_sparse",
+    "func arg": "(centers)",
+    "comments": "Non-regression, see #13334\n\n\n"
+}

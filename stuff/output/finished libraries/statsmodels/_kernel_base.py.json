@@ -1,0 +1,7 @@
+{
+    "source file": "_kernel_base.py",
+    "line number": "456",
+    "func name": "gpke",
+    "func arg": "(bw, data, data_predict, var_type, ckertype, okertype, ukertype, tosum)",
+    "comments": "Returns the non-normalized Generalized Product Kernel Estimator\n\nParameters ---------- bw : 1-D ndarray The user-specified bandwidth parameters. data : 1D or 2-D ndarray The training data. data_predict : 1-D ndarray The evaluation points at which the kernel estimation is performed. var_type : str, optional The variable type (continuous, ordered, unordered). ckertype : str, optional The kernel used for the continuous variables. okertype : str, optional The kernel used for the ordered discrete variables. ukertype : str, optional The kernel used for the unordered discrete variables. tosum : bool, optional Whether or not to sum the calculated array of densities.\n\nDefault is True.\n##### Returns\n* **dens **: array_like\n    The generalized product kernel density estimator.\n\n* **The formula for the multivariate kernel estimator for the pdf is**: \n\n* **.. math**: \n\n"
+}

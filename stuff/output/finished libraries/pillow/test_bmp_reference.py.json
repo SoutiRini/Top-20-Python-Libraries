@@ -1,0 +1,7 @@
+{
+    "source file": "test_bmp_reference.py",
+    "line number": "58",
+    "func name": "test_good",
+    "func arg": "()",
+    "comments": "These should all work. There's a set of target files in the html directory that we can compare against.\n\n\n"
+}

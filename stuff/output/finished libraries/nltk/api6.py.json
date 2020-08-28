@@ -1,0 +1,7 @@
+{
+    "source file": "api6.py",
+    "line number": "59",
+    "func name": "_weighted_choice",
+    "func arg": "(population, weights, random_generator)",
+    "comments": "Like random.choice, but with weights.\n\nHeavily inspired by python 3.6 `random.choices`.\n"
+}

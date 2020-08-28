@@ -1,0 +1,7 @@
+{
+    "source file": "dependencies.py",
+    "line number": "62",
+    "func name": "import_required",
+    "func arg": "(mod_name, error_msg)",
+    "comments": "Attempt to import a required dependency.\n\n\n##### Args\n* **mod_name (str) **: name of the required module to try to import\n\n* **error_msg (str) **: error message to raise when the module is missing\n\n##### Returns\n"
+}

@@ -1,0 +1,7 @@
+{
+    "source file": "loss_scale_benchmark.py",
+    "line number": "38",
+    "func name": "_get_strategy",
+    "func arg": "(num_gpus)",
+    "comments": ""
+}

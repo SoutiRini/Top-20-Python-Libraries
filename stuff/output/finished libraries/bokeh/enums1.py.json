@@ -1,0 +1,7 @@
+{
+    "source file": "enums1.py",
+    "line number": "174",
+    "func name": "enumeration",
+    "func arg": "(**kwargs)",
+    "comments": "Create an |Enumeration| object from a sequence of values.\n\nCall ``enumeration`` with a sequence of (unique) strings to create an Enumeration object:\n\n.. code-block:: python\n\n#: Specify the horizontal alignment for rendering text TextAlign = enumeration(\"left\", \"right\", \"center\")\n##### Args\n* **values (str) **: string enumeration values, passed as positional arguments\n    The order of arguments is the order of the enumeration, and the\n    first element will be considered the default value when used\n    to create |Enum| properties.\n\n* **ord Args**: \n\n* **case_sensitive (bool, optional) **: Whether validation should consider case or not (default\n\n* **quote (bool, optional)**: Whether values should be quoted in the string representations\n    (default\n\n##### Returns\n"
+}

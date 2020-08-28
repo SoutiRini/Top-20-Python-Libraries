@@ -1,0 +1,7 @@
+{
+    "source file": "unique1.py",
+    "line number": "27",
+    "func name": "unique",
+    "func arg": "()",
+    "comments": "Creates a `Dataset` from another `Dataset`, discarding duplicates.\n\nUse this transformation to produce a dataset that contains one instance of each unique element in the input. For example:\n\n```python dataset = tf.data.Dataset.from_tensor_slices([1, 37, 2, 37, 2, 1])\n\n# Using `unique()` will drop the duplicate elements. dataset = dataset.apply(tf.data.experimental.unique())\n\n# ==> { 1, 37, 2 } ```\n##### Returns\n"
+}

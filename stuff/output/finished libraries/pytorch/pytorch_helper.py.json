@@ -1,0 +1,7 @@
+{
+    "source file": "pytorch_helper.py",
+    "line number": "22",
+    "func name": "PyTorchModule",
+    "func arg": "(helper, model, sample_arguments, caffe2_inputs, prefix_name)",
+    "comments": "Embed an ONNX-exportable PyTorch Model into a Caffe2 model being built.\n\nArguments: helper (caffe2.python.core.ModelHelder): the model helper where this imported network should be inserted model (torch.nn.Module): the model to be exported sample_arguments (tuple of arguments): the inputs to the model, e.g., such that ``model(*args)`` is a valid invocation of the model.\n\nAny non-Variable arguments will be hard-coded into the exported model; any Variable arguments will become inputs of the exported model, in the order they occur in args.\n\nIf args is a Variable, this is equivalent to having called it with a 1-ary tuple of that Variable. (Note: passing keyword arguments to the model is not currently supported.\n\nGive us a shout if you need it.) caffe2_inputs (list of str or caffe2.python.core.BlobReference): the caffe2 Blobs that should be inputs to this network. Must be the same length as sample_arguments prefix_name: prefix name to add to each member of the blob, if None then a fresh prefix pytorch_input_N/ is used\n##### Returns\n"
+}

@@ -1,0 +1,7 @@
+{
+    "source file": "doc_srcs.py",
+    "line number": "79",
+    "func name": "get_doc_sources",
+    "func arg": "(api_name)",
+    "comments": "Get a map from module to a DocSource object.\n\n\n##### Args\n* **api_name**: API you want to generate (e.g. `tensorflow` or `estimator`).\n\n##### Returns\n"
+}

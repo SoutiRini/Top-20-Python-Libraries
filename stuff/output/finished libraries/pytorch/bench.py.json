@@ -1,0 +1,7 @@
+{
+    "source file": "bench.py",
+    "line number": "168",
+    "func name": "bench_group",
+    "func arg": "(model_list, bench_name, bench_group, bench_args)",
+    "comments": ""
+}

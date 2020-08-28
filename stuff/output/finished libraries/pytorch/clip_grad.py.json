@@ -1,0 +1,7 @@
+{
+    "source file": "clip_grad.py",
+    "line number": "53",
+    "func name": "clip_grad_value_",
+    "func arg": "(parameters, clip_value)",
+    "comments": "Clips gradient of an iterable of parameters at specified value.\n\nGradients are modified in-place.\n\nArguments: parameters (Iterable[Tensor] or Tensor): an iterable of Tensors or a single Tensor that will have gradients normalized clip_value (float or int): maximum allowed value of the gradients. The gradients are clipped in the range :math:`\\left[\\text{-clip\\_value}, \\text{clip\\_value}\\right]`\n"
+}

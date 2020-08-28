@@ -1,0 +1,7 @@
+{
+    "source file": "readers1.py",
+    "line number": "66",
+    "func name": "_create_dataset_reader",
+    "func arg": "(dataset_creator, filenames, num_parallel_reads)",
+    "comments": "Creates a dataset that reads the given files using the given reader.\n\n\n##### Args\n* **dataset_creator**: A function that takes in a single file name and returns a\n  dataset.\n\n* **filenames**: A `tf.data.Dataset` containing one or more filenames.\n\n* **num_parallel_reads**: The number of parallel reads we should do.\n\n##### Returns\n"
+}

@@ -1,0 +1,7 @@
+{
+    "source file": "models.py",
+    "line number": "765",
+    "func name": "create_tiny_embedding_conv_model",
+    "func arg": "(fingerprint_input, model_settings, is_training)",
+    "comments": "Builds a convolutional model aimed at microcontrollers.\n\nDevices like DSPs and microcontrollers can have very small amounts of memory and limited processing power. This model is designed to use less than 20KB of working RAM, and fit within 32KB of read-only (flash) memory.\n\nHere's the layout of the graph:\n\n(fingerprint_input) v [Conv2D]<-(weights) v [BiasAdd]<-(bias) v [Relu] v [Conv2D]<-(weights) v [BiasAdd]<-(bias) v [Relu] v [Conv2D]<-(weights) v [BiasAdd]<-(bias) v [Relu] v [MatMul]<-(weights) v [BiasAdd]<-(bias) v\n\nThis doesn't produce particularly accurate results, but it's designed to be used as the first stage of a pipeline, running on a low-energy piece of hardware that can always be on, and then wake higher-power chips when a possible utterance has been found, so that more accurate analysis can be done.\n\nDuring training, a dropout node is introduced after the relu, controlled by a placeholder.\n##### Args\n* **fingerprint_input**: TensorFlow node that will output audio feature vectors.\n\n* **model_settings**: Dictionary of information about the model.\n\n* **is_training**: Whether the model is going to be used for training.\n\n##### Returns\n"
+}

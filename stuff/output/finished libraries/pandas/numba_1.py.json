@@ -1,0 +1,7 @@
+{
+    "source file": "numba_1.py",
+    "line number": "89",
+    "func name": "generate_numba_apply_func",
+    "func arg": "(args, kwargs, func, engine_kwargs)",
+    "comments": "Generate a numba jitted apply function specified by values from engine_kwargs.\n\n1. jit the user's function 2. Return a rolling apply function with the jitted function inline\n\nConfigurations specified in engine_kwargs apply to both the user's function _AND_ the rolling apply function.\n\nParameters ---------- args : tuple *args to be passed into the function kwargs : dict **kwargs to be passed into the function func : function function to be applied to each window and will be JITed engine_kwargs : dict dictionary of arguments to be passed into numba.jit\n##### Returns\n"
+}

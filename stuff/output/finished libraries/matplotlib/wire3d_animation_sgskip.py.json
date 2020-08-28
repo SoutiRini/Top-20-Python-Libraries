@@ -1,0 +1,7 @@
+{
+    "source file": "wire3d_animation_sgskip.py",
+    "line number": "17",
+    "func name": "generate",
+    "func arg": "(X, Y, phi)",
+    "comments": "Generates Z data for the points in the X, Y meshgrid and parameter phi.\n\n\n"
+}

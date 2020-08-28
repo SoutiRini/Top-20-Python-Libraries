@@ -1,0 +1,7 @@
+{
+    "source file": "groupby2.py",
+    "line number": "2529",
+    "func name": "get_groupby",
+    "func arg": "(obj, by, axis, level, grouper, exclusions, selection, as_index, sort, group_keys, squeeze, observed, mutated)",
+    "comments": ""
+}

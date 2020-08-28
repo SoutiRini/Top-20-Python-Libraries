@@ -1,0 +1,7 @@
+{
+    "source file": "test_trt.py",
+    "line number": "45",
+    "func name": "_download_onnx_model",
+    "func arg": "(model_name, opset_version)",
+    "comments": ""
+}

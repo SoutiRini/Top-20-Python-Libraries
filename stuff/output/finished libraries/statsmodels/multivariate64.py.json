@@ -1,0 +1,7 @@
+{
+    "source file": "multivariate64.py",
+    "line number": "506",
+    "func name": "test_cov_oneway",
+    "func arg": "(cov_list, nobs_list)",
+    "comments": "Multiple sample hypothesis test that covariance matrices are equal.\n\nThis is commonly known as Box-M test.\n\nThe Null and alternative hypotheses are\n\n.. math::\n\nH0 &: \\Sigma_i = \\Sigma_j\n\n\\text{ for all i and j} \\\\ H1 &: \\Sigma_i \\neq \\Sigma_j \\text{ for at least one i and j}\n\nwhere :math:`\\Sigma_i` is the covariance of sample `i`.\n\nParameters ---------- cov_list : list of array_like Covariance matrices of the sample, estimated with denominator ``(N\n\n- 1)``, i.e. `ddof=1`. nobs_list : list List of the number of observations used in the estimation of the covariance for each sample.\n##### Attributes\n* **Multivariate Analysis**: Rencher/Methods. Wiley Series in Probability and\n\n* **Statistics. Hoboken, NJ, USA**: John Wiley & Sons, Inc.\n\n* **https**: //doi.org/10.1002/9781118391686.\n\n* **StataCorp, L. P. Stata Multivariate Statistics**: Reference Manual.\n\n##### Returns\n* **res **: instance of HolderTuple\n    Results contains test statistic and pvalues for both chisquare and F\n    distribution based tests, identified by the name ending \"_chi2\" and\n    \"_f\".\n\n"
+}

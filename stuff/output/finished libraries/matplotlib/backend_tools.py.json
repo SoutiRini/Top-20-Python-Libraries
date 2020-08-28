@@ -1,0 +1,7 @@
+{
+    "source file": "backend_tools.py",
+    "line number": "1086",
+    "func name": "add_tools_to_container",
+    "func arg": "(container, tools)",
+    "comments": "Add multiple tools to the container.\n\nParameters ---------- container : Container `backend_bases.ToolContainerBase` object that will get the tools added. tools : list, optional List in the form ``[[group1, [tool1, tool2 ...]], [group2, [...]]]`` where the tools ``[tool1, tool2, ...]`` will display in group1. See `add_tool` for details.\n"
+}

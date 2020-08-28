@@ -1,0 +1,7 @@
+{
+    "source file": "keras_stateful_lstm_model_correctness_test.py",
+    "line number": "38",
+    "func name": "test_combinations_for_stateful_embedding_model",
+    "func arg": "()",
+    "comments": ""
+}

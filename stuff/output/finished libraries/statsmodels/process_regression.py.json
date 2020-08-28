@@ -1,0 +1,7 @@
+{
+    "source file": "process_regression.py",
+    "line number": "170",
+    "func name": "_check_args",
+    "func arg": "(endog, exog, exog_scale, exog_smooth, exog_noise, time, groups)",
+    "comments": ""
+}

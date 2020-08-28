@@ -1,0 +1,7 @@
+{
+    "source file": "mlab.py",
+    "line number": "912",
+    "func name": "cohere",
+    "func arg": "(x, y, NFFT, Fs, detrend, window, noverlap, pad_to, sides, scale_by_freq)",
+    "comments": "The coherence between *x* and *y*.  Coherence is the normalized cross spectral density\n\n.. math::\n\nC_{xy} = \\frac{|P_{xy}|^2}{P_{xx}P_{yy}}\n\nParameters ---------- x, y Array or sequence containing the data\n\n%(Spectral)s\n\n%(PSD)s\n\nnoverlap : int The number of points of overlap between blocks.\n\nThe default value is 0 (no overlap).\n##### Returns\n* **Cxy **: 1-D array\n    The coherence vector.\n\n* **freqs **: 1-D array\n        The frequencies for the elements in *Cxy*.\n\n* ****: func\n\n"
+}

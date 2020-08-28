@@ -1,0 +1,7 @@
+{
+    "source file": "_utils.py",
+    "line number": "67",
+    "func name": "pandas_wrapper_freq",
+    "func arg": "(func, trim_head, trim_tail, freq_kw, columns, **kwargs)",
+    "comments": "Return a new function that catches the incoming X, checks if it's pandas, calls the functions as is. Then wraps the results in the incoming index.\n\nDeals with frequencies. Expects that the function returns a tuple, a Bunch object, or a pandas-object.\n"
+}

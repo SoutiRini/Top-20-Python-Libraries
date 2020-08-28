@@ -1,0 +1,7 @@
+{
+    "source file": "record_function_bench.py",
+    "line number": "45",
+    "func name": "run_bench",
+    "func arg": "(model_names, bench_args)",
+    "comments": ""
+}

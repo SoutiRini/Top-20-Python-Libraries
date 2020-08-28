@@ -1,0 +1,7 @@
+{
+    "source file": "word2vec2tensor.py",
+    "line number": "53",
+    "func name": "word2vec2tensor",
+    "func arg": "(word2vec_model_path, tensor_filename, binary)",
+    "comments": "Convert file in Word2Vec format and writes two files 2D tensor TSV file.\n\nFile \"tensor_filename\"_tensor.tsv contains word-vectors, \"tensor_filename\"_metadata.tsv contains words.\n\nParameters ---------- word2vec_model_path : str Path to file in Word2Vec format. tensor_filename : str Prefix for output files. binary : bool, optional True if input file in binary format.\n"
+}

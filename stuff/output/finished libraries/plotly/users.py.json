@@ -1,0 +1,7 @@
+{
+    "source file": "users.py",
+    "line number": "9",
+    "func name": "current",
+    "func arg": "()",
+    "comments": "Retrieve information on the logged-in user from Plotly.\n\nreturns: (requests.Response) Returns response directly from requests.\n"
+}

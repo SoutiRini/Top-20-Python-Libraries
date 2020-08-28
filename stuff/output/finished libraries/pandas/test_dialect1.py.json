@@ -1,0 +1,7 @@
+{
+    "source file": "test_dialect1.py",
+    "line number": "133",
+    "func name": "test_dialect_conflict_delimiter",
+    "func arg": "(all_parsers, custom_dialect, kwargs, warning_klass)",
+    "comments": ""
+}

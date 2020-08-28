@@ -1,0 +1,7 @@
+{
+    "source file": "template.py",
+    "line number": "234",
+    "func name": "_skip_common_stack_elements",
+    "func arg": "(stacktrace, base_case)",
+    "comments": "Skips items that the target stacktrace shares with the base stacktrace.\n\n\n"
+}

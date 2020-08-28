@@ -1,0 +1,7 @@
+{
+    "source file": "core1.py",
+    "line number": "200",
+    "func name": "_check_append_ext_library",
+    "func arg": "(libraries, lib_name, build_info)",
+    "comments": ""
+}

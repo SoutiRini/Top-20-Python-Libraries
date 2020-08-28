@@ -1,0 +1,7 @@
+{
+    "source file": "tsa_arma_0.py",
+    "line number": "89",
+    "func name": "mean_forecast_err",
+    "func arg": "(y, yhat)",
+    "comments": ""
+}

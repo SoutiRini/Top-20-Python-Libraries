@@ -1,0 +1,7 @@
+{
+    "source file": "test_concat1.py",
+    "line number": "76",
+    "func name": "test_get_dtype_kinds_period",
+    "func arg": "(to_concat, expected)",
+    "comments": ""
+}

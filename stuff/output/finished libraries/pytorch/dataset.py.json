@@ -1,0 +1,7 @@
+{
+    "source file": "dataset.py",
+    "line number": "278",
+    "func name": "random_split",
+    "func arg": "(dataset, lengths, generator)",
+    "comments": "Randomly split a dataset into non-overlapping new datasets of given lengths. Optionally fix the generator for reproducible results, e.g.\n\n>>> random_split(range(10), [3, 7], generator=torch.Generator().manual_seed(42))\n\nArguments: dataset (Dataset): Dataset to be split lengths (sequence): lengths of splits to be produced generator (Generator): Generator used for the random permutation.\n"
+}

@@ -1,0 +1,7 @@
+{
+    "source file": "hdf5_format.py",
+    "line number": "862",
+    "func name": "_legacy_weights",
+    "func arg": "(layer)",
+    "comments": "DO NOT USE.\n\nFor legacy reason, the layer.weights was in the order of [self.trainable_weights + self.non_trainable_weights], and this order was used for preserving the weights in h5 format. The new order of layer.weights are the same as layer.get_weights() which is more intuitive for user. To keep supporting the existing saved h5 file, this method should be used to save/load weights. In future version, we will delete this method and introduce a breaking change for h5 and stay with the new order for weights.\n##### Args\n* **layer**: a `tf.keras.Model` or `tf.keras.layers.Layer` instance.\n\n##### Returns\n"
+}

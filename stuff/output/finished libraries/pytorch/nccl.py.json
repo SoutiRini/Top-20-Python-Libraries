@@ -1,0 +1,7 @@
+{
+    "source file": "nccl.py",
+    "line number": "84",
+    "func name": "reduce_scatter",
+    "func arg": "(inputs, outputs, op, streams, comms)",
+    "comments": ""
+}

@@ -1,0 +1,7 @@
+{
+    "source file": "test_compat3.py",
+    "line number": "31",
+    "func name": "test_invalid_numexpr_version",
+    "func arg": "(engine, parser)",
+    "comments": ""
+}

@@ -1,0 +1,7 @@
+{
+    "source file": "generate_ufunc_api.py",
+    "line number": "137",
+    "func name": "do_generate_api",
+    "func arg": "(targets, sources)",
+    "comments": ""
+}

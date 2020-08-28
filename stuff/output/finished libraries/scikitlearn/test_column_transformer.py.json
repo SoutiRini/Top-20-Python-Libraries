@@ -1,0 +1,7 @@
+{
+    "source file": "test_column_transformer.py",
+    "line number": "1358",
+    "func name": "test_feature_names_empty_columns",
+    "func arg": "(empty_col)",
+    "comments": ""
+}

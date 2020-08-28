@@ -1,0 +1,7 @@
+{
+    "source file": "test_missing3.py",
+    "line number": "1042",
+    "func name": "interp_methods_ind",
+    "func arg": "(request)",
+    "comments": "Fixture that returns a (method name, required kwargs) pair to be tested for various Index types.\n\nThis fixture does not include methods\n\n- 'time', 'index', 'nearest', 'values' as a parameterization\n"
+}

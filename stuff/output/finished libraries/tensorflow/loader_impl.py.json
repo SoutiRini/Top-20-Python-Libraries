@@ -1,0 +1,7 @@
+{
+    "source file": "loader_impl.py",
+    "line number": "275",
+    "func name": "load",
+    "func arg": "(sess, tags, export_dir, import_scope, **saver_kwargs)",
+    "comments": "Loads the model from a SavedModel as specified by tags.\n\n\n##### Args\n* **sess**: The TensorFlow session to restore the variables.\n\n* **tags**: Set of string tags to identify the required MetaGraphDef. These should\n    correspond to the tags used when saving the variables using the\n    SavedModel `save()` API.\n\n* **export_dir**: Directory in which the SavedModel protocol buffer and variables\n    to be loaded are located.\n\n* **import_scope**: Optional `string` -- if specified, prepend this string\n    followed by '/' to all loaded tensor names. This scope is applied to\n    tensor instances loaded into the passed session, but it is *not* written\n    through to the static `MetaGraphDef` protocol buffer that is returned.\n\n* ****saver_kwargs**: Optional keyword arguments passed through to Saver.\n\n##### Returns\n"
+}

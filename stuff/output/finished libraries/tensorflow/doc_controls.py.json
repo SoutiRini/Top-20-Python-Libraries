@@ -1,0 +1,7 @@
+{
+    "source file": "doc_controls.py",
+    "line number": "264",
+    "func name": "should_skip_class_attr",
+    "func arg": "(cls, name)",
+    "comments": "Returns true if docs should be skipped for this class attribute.\n\n\n##### Args\n* **cls**: The class the attribute belongs to.\n\n* **name**: The name of the attribute.\n\n##### Returns\n"
+}

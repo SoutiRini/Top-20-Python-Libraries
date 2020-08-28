@@ -1,0 +1,7 @@
+{
+    "source file": "serialization1.py",
+    "line number": "159",
+    "func name": "deserialize",
+    "func arg": "(config, custom_objects)",
+    "comments": "Instantiates a layer from a config dictionary.\n\nArguments: config: dict of the form {'class_name': str, 'config': dict} custom_objects: dict mapping class names (or function names) of custom (non-Keras) objects to class/functions\n##### Returns\n"
+}

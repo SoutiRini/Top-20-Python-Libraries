@@ -1,0 +1,7 @@
+{
+    "source file": "save2.py",
+    "line number": "1139",
+    "func name": "_build_meta_graph",
+    "func arg": "(obj, export_dir, signatures, options, meta_graph_def)",
+    "comments": "Creates a MetaGraph under a SaveContext.\n\n\n"
+}

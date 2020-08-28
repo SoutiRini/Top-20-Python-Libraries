@@ -1,0 +1,7 @@
+{
+    "source file": "test_getitem1.py",
+    "line number": "243",
+    "func name": "test_frame_mi_access_returns_frame",
+    "func arg": "(dataframe_with_duplicate_index)",
+    "comments": ""
+}

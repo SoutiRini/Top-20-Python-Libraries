@@ -1,0 +1,7 @@
+{
+    "source file": "efficientnet.py",
+    "line number": "741",
+    "func name": "decode_predictions",
+    "func arg": "(preds, top)",
+    "comments": ""
+}

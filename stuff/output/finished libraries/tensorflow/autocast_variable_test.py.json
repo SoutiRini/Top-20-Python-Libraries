@@ -1,0 +1,7 @@
+{
+    "source file": "autocast_variable_test.py",
+    "line number": "51",
+    "func name": "get_var",
+    "func arg": "(val, dtype, name)",
+    "comments": ""
+}

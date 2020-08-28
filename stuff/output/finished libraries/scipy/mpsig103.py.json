@@ -1,0 +1,7 @@
+{
+    "source file": "mpsig103.py",
+    "line number": "101",
+    "func name": "zpkfreqz",
+    "func arg": "(z, p, k, worN)",
+    "comments": "Frequency response of a filter in zpk format, using mpmath.\n\nThis is the same calculation as scipy.signal.freqz, but the input is in zpk format, the calculation is performed using mpath, and the results are returned in lists instead of NumPy arrays.\n"
+}

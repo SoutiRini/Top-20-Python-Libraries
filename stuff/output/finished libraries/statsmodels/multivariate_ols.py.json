@@ -1,0 +1,7 @@
+{
+    "source file": "multivariate_ols.py",
+    "line number": "266",
+    "func name": "_multivariate_test",
+    "func arg": "(hypotheses, exog_names, endog_names, fn)",
+    "comments": "Multivariate linear model hypotheses testing\n\nFor y = x * params, where y are the dependent variables and x are the independent variables, testing L * params * M = 0 where L is the contrast matrix for hypotheses testing and M is the transformation matrix for transforming the dependent variables in y.\n\nAlgorithm: T = L*inv(X'X)*L' H = M'B'L'*inv(T)*LBM E =\n\nM'(Y'Y\n\n- B'X'XB)M And then finding the eigenvalues of inv(H + E)*H\n\n.. [*] https://support.sas.com/documentation/cdl/en/statug/63033/HTML/default/viewer.htm#statug_introreg_sect012.htm\n\nParameters ---------- %(hypotheses_doc)s k_xvar : int The number of independent variables k_yvar : int The number of dependent variables fn : function a function fn(contrast_L, transform_M) that returns E, H, q, df_resid where q is the rank of T matrix\n##### Returns\n* **results **: MANOVAResults\n\n"
+}

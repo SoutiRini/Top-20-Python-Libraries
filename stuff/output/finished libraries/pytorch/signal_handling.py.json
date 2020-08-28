@@ -1,0 +1,7 @@
+{
+    "source file": "signal_handling.py",
+    "line number": "47",
+    "func name": "_set_SIGCHLD_handler",
+    "func arg": "()",
+    "comments": ""
+}

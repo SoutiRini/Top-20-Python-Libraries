@@ -1,0 +1,7 @@
+{
+    "source file": "bundled_inputs.py",
+    "line number": "158",
+    "func name": "bundle_large_tensor",
+    "func arg": "(t)",
+    "comments": "Wrap a tensor to allow bundling regardless of size.\n\n\n"
+}

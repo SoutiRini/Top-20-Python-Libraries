@@ -1,0 +1,7 @@
+{
+    "source file": "elemwise.py",
+    "line number": "2468",
+    "func name": "gpu_ca_reduce_cuda",
+    "func arg": "(scalar_op, axis, reduce_mask, dtype, acc_dtype, pre_scalar_op)",
+    "comments": ""
+}

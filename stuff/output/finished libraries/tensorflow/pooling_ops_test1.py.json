@@ -1,0 +1,7 @@
+{
+    "source file": "pooling_ops_test1.py",
+    "line number": "1983",
+    "func name": "GetMaxPoolGradGradTest",
+    "func arg": "(input_size, filter_size, output_size, strides, padding)",
+    "comments": ""
+}

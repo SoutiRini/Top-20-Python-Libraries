@@ -1,0 +1,7 @@
+{
+    "source file": "_shrunk_covariance.py",
+    "line number": "435",
+    "func name": "oas",
+    "func arg": "(X)",
+    "comments": "Estimate covariance with the Oracle Approximating Shrinkage algorithm.\n\nParameters ---------- X : array-like of shape (n_samples, n_features) Data from which to compute the covariance estimate.\n\nassume_centered : bool, default=False If True, data will not be centered before computation. Useful to work with data whose mean is significantly equal to zero but is not exactly zero. If False, data will be centered before computation.\n##### Returns\n* **shrunk_cov **: array-like of shape (n_features, n_features)\n    Shrunk covariance.\n\n* **shrinkage **: float\n    Coefficient in the convex combination used for the computation\n    of the shrunk estimate.\n\n* **The regularised (shrunk) covariance is**: \n\n* **to the one given in the article. See **: class\n\n"
+}

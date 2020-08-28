@@ -1,0 +1,7 @@
+{
+    "source file": "events_app.py",
+    "line number": "38",
+    "func name": "print_event",
+    "func arg": "(attributes)",
+    "comments": "Function that returns a Python callback to pretty print the events.\n\n\n"
+}

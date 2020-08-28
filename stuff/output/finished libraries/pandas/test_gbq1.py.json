@@ -1,0 +1,7 @@
+{
+    "source file": "test_gbq1.py",
+    "line number": "135",
+    "func name": "test_read_gbq_progress_bar_type_kwarg",
+    "func arg": "(monkeypatch, progress_bar)",
+    "comments": ""
+}

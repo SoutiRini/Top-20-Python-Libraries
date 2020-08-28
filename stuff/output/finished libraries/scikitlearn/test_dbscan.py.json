@@ -1,0 +1,7 @@
+{
+    "source file": "test_dbscan.py",
+    "line number": "401",
+    "func name": "test_dbscan_precomputed_metric_with_initial_rows_zero",
+    "func arg": "()",
+    "comments": ""
+}

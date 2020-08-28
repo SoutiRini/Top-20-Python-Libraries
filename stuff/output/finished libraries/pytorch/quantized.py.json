@@ -1,0 +1,7 @@
+{
+    "source file": "quantized.py",
+    "line number": "538",
+    "func name": "quantize_rnn_modules",
+    "func arg": "(module, dtype)",
+    "comments": ""
+}

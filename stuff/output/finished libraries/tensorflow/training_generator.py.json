@@ -1,0 +1,7 @@
+{
+    "source file": "training_generator.py",
+    "line number": "533",
+    "func name": "_get_num_samples_or_steps",
+    "func arg": "(data, steps_per_epoch)",
+    "comments": "Returns number of samples or steps, and whether to use steps count mode.\n\n\n"
+}

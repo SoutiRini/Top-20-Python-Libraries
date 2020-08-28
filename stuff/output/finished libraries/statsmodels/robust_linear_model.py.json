@@ -1,0 +1,7 @@
+{
+    "source file": "robust_linear_model.py",
+    "line number": "31",
+    "func name": "_check_convergence",
+    "func arg": "(criterion, iteration, tol, maxiter)",
+    "comments": ""
+}

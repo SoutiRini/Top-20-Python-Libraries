@@ -1,0 +1,7 @@
+{
+    "source file": "panelmod.py",
+    "line number": "39",
+    "func name": "repanel_cov",
+    "func arg": "(groups, sigmas)",
+    "comments": "calculate error covariance matrix for random effects model\n\nParameters ---------- groups : ndarray, (nobs, nre) or (nobs,) array of group/category observations sigma : ndarray, (nre+1,) array of standard deviations of random effects, last element is the standard deviation of the idiosyncratic error\n##### Returns\n* **omega **: ndarray, (nobs, nobs)\n    covariance matrix of error\n\n* **omegainv **: ndarray, (nobs, nobs)\n    inverse covariance matrix of error\n\n* **omegainvsqrt **: ndarray, (nobs, nobs)\n    squareroot inverse covariance matrix of error\n    such that omega = omegainvsqrt * omegainvsqrt.T\n\n"
+}

@@ -1,0 +1,7 @@
+{
+    "source file": "test_deprecations1.py",
+    "line number": "8",
+    "func name": "test_qr_mode_full_future_warning",
+    "func arg": "()",
+    "comments": "Check mode='full' FutureWarning.\n\nIn numpy 1.8 the mode options 'full' and 'economic' in linalg.qr were deprecated. The release date will probably be sometime in the summer of 2013.\n"
+}

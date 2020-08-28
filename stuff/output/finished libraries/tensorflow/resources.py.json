@@ -1,0 +1,7 @@
+{
+    "source file": "resources.py",
+    "line number": "108",
+    "func name": "initialize_resources",
+    "func arg": "(resource_list, name)",
+    "comments": "Initializes the resources in the given list.\n\n\n##### Args\n* **resource_list**: list of resources to initialize.\n\n* **name**: name of the initialization op.\n\n##### Returns\n"
+}

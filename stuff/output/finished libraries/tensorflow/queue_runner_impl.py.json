@@ -1,0 +1,7 @@
+{
+    "source file": "queue_runner_impl.py",
+    "line number": "417",
+    "func name": "start_queue_runners",
+    "func arg": "(sess, coord, daemon, start, collection)",
+    "comments": "Starts all queue runners collected in the graph.\n\nThis is a companion method to `add_queue_runner()`.\n\nIt just starts threads for all queue runners collected in the graph.\n\nIt returns the list of all threads.\n##### Args\n* **sess**: `Session` used to run the queue ops.  Defaults to the\n  default session.\n\n* **coord**: Optional `Coordinator` for coordinating the started threads.\n\n* **daemon**: Whether the threads should be marked as `daemons`, meaning\n  they don't block program exit.\n\n* **start**: Set to `False` to only create the threads, not start them.\n\n* **collection**: A `GraphKey` specifying the graph collection to\n  get the queue runners from.  Defaults to `GraphKeys.QUEUE_RUNNERS`.\n\n##### Returns\n"
+}

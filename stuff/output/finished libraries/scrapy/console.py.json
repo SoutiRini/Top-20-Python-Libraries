@@ -1,0 +1,7 @@
+{
+    "source file": "console.py",
+    "line number": "92",
+    "func name": "start_python_console",
+    "func arg": "(namespace, banner, shells)",
+    "comments": "Start Python console bound to the given namespace. Readline support and tab completion will be used on Unix, if available.\n\n\n"
+}

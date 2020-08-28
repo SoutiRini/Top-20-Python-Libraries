@@ -1,0 +1,7 @@
+{
+    "source file": "tensor_conversion_registry.py",
+    "line number": "114",
+    "func name": "get",
+    "func arg": "(query)",
+    "comments": "Get conversion function for objects of `cls`.\n\n\n##### Args\n* **query**: The type to query for.\n\n##### Returns\n"
+}

@@ -1,0 +1,7 @@
+{
+    "source file": "policy.py",
+    "line number": "624",
+    "func name": "deserialize",
+    "func arg": "(config, custom_objects)",
+    "comments": ""
+}

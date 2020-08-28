@@ -1,0 +1,7 @@
+{
+    "source file": "testing.py",
+    "line number": "1067",
+    "func name": "skipIf",
+    "func arg": "(condition, reason)",
+    "comments": ""
+}

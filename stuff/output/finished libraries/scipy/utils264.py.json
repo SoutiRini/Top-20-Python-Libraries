@@ -1,0 +1,7 @@
+{
+    "source file": "utils264.py",
+    "line number": "32",
+    "func name": "make_system",
+    "func arg": "(A, M, x0, b)",
+    "comments": "Make a linear system Ax=b\n\nParameters ---------- A : LinearOperator sparse or dense matrix (or any valid input to aslinearoperator) M : {LinearOperator, Nones} preconditioner sparse or dense matrix (or any valid input to aslinearoperator) x0 : {array_like, None} initial guess to iterative method b : array_like right hand side\n##### Returns\n* **(A, M, x, b, postprocess)\n    A **: LinearOperator\n        matrix of the linear system\n    M\n\n"
+}

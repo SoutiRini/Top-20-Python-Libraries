@@ -1,0 +1,7 @@
+{
+    "source file": "special_math_test1.py",
+    "line number": "70",
+    "func name": "_value_and_gradient",
+    "func arg": "(fn)",
+    "comments": "Calls `fn` and computes the gradient of the result wrt `arg`.\n\n\n"
+}

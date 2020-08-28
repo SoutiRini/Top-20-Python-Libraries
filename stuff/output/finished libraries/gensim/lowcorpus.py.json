@@ -1,0 +1,7 @@
+{
+    "source file": "lowcorpus.py",
+    "line number": "23",
+    "func name": "split_on_space",
+    "func arg": "(s)",
+    "comments": "Split line by spaces, used in :class:`gensim.corpora.lowcorpus.LowCorpus`.\n\nParameters ---------- s : str Some line.\n##### Returns\n"
+}

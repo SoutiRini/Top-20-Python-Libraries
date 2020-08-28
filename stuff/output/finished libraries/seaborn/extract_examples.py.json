@@ -1,0 +1,7 @@
+{
+    "source file": "extract_examples.py",
+    "line number": "18",
+    "func name": "add_cell",
+    "func arg": "(nb, lines, cell_type)",
+    "comments": ""
+}

@@ -1,0 +1,7 @@
+{
+    "source file": "core.py",
+    "line number": "2971",
+    "func name": "_extract_stacktrace",
+    "func arg": "()",
+    "comments": "This function extracts stacktrace without file system access by purely using sys._getframe() and removes part that belongs to this file (core.py). We are not using inspect module because its just a wrapper on top of sys._getframe() whose logic is based on accessing source files on disk - exactly what we are trying to avoid here. Same stands for traceback module\n\nThe reason for file system access avoidance is that if code is located on an NFS, file access might be slow\n\nFunction returns a list of tuples (file_name, line_number, function)\n"
+}

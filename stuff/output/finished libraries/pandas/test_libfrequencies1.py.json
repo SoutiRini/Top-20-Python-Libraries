@@ -1,0 +1,7 @@
+{
+    "source file": "test_libfrequencies1.py",
+    "line number": "98",
+    "func name": "test_assert_aliases_deprecated",
+    "func arg": "(freq, expected, aliases)",
+    "comments": ""
+}

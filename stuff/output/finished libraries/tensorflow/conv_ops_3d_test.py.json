@@ -1,0 +1,7 @@
+{
+    "source file": "conv_ops_3d_test.py",
+    "line number": "38",
+    "func name": "GetTestConfigs",
+    "func arg": "()",
+    "comments": "Get all the valid tests configs to run.\n\n\n##### Returns\n"
+}

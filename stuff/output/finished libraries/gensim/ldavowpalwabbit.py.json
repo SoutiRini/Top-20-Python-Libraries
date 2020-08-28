@@ -1,0 +1,7 @@
+{
+    "source file": "ldavowpalwabbit.py",
+    "line number": "861",
+    "func name": "vwmodel2ldamodel",
+    "func arg": "(vw_model, iterations)",
+    "comments": "Convert :class:`~gensim.models.wrappers.ldavowpalwabbit.LdaVowpalWabbit` to :class:`~gensim.models.ldamodel.LdaModel`.\n\nThis works by simply copying the training model weights (alpha, beta...) from a trained vwmodel into the gensim model.\n\nParameters ---------- vw_model : :class:`~gensim.models.wrappers.ldavowpalwabbit.LdaVowpalWabbit` Trained Vowpal Wabbit model. iterations : int Number of iterations to be used for inference of the new :class:`~gensim.models.ldamodel.LdaModel`.\n##### Returns\n* ****: class\n\n"
+}

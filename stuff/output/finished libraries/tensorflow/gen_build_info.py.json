@@ -1,0 +1,7 @@
+{
+    "source file": "gen_build_info.py",
+    "line number": "32",
+    "func name": "write_build_info",
+    "func arg": "(filename, key_value_list)",
+    "comments": "Writes a Python that describes the build.\n\n\n##### Args\n* **filename**: filename to write to.\n\n* **key_value_list**: A list of \"key=value\" strings that will be added to the\n  module's \"build_info\" dictionary as additional entries.\n\n"
+}

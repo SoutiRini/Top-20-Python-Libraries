@@ -1,0 +1,7 @@
+{
+    "source file": "ipython.py",
+    "line number": "40",
+    "func name": "ipython",
+    "func arg": "()",
+    "comments": "A PyTest fixture that will automatically skip a test if IPython is not installed.\n\n\n"
+}

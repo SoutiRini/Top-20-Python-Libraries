@@ -1,0 +1,7 @@
+{
+    "source file": "common_cuda.py",
+    "line number": "66",
+    "func name": "tf32_on_and_off",
+    "func arg": "(tf32_precision)",
+    "comments": ""
+}

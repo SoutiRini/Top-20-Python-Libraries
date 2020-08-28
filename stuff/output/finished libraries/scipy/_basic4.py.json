@@ -1,0 +1,7 @@
+{
+    "source file": "_basic4.py",
+    "line number": "1568",
+    "func name": "ihfft2",
+    "func arg": "(x, s, axes, norm, overwrite_x, workers)",
+    "comments": "Compute the 2-D inverse FFT of a real spectrum.\n\nParameters ---------- x : array_like The input array s : sequence of ints, optional Shape of the real input to the inverse FFT. axes : sequence of ints, optional The axes over which to compute the inverse fft. Default is the last two axes. norm : {None, \"ortho\"}, optional Normalization mode (see `fft`). Default is None. overwrite_x : bool, optional If True, the contents of `x` can be destroyed; the default is False. See :func:`fft` for more details. workers : int, optional Maximum number of workers to use for parallel computation. If negative, the value wraps around from ``os.cpu_count()``. See :func:`~scipy.fft.fft` for more details. plan: object, optional This argument is reserved for passing in a precomputed plan provided by downstream FFT vendors. It is currently not used in SciPy.\n\n.. versionadded:: 1.5.0\n##### Returns\n* **out **: ndarray\n    The result of the inverse real 2-D FFT.\n\n* **ihfftn **: Compute the inverse of the N-D FFT of Hermitian input.\n\n"
+}

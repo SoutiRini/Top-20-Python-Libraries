@@ -1,0 +1,7 @@
+{
+    "source file": "scope1.py",
+    "line number": "67",
+    "func name": "_get_pretty_string",
+    "func arg": "(obj)",
+    "comments": "Return a prettier version of obj.\n\nParameters ---------- obj : object Object to pretty print\n##### Returns\n"
+}

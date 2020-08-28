@@ -1,0 +1,7 @@
+{
+    "source file": "IptcImagePlugin.py",
+    "line number": "176",
+    "func name": "getiptcinfo",
+    "func arg": "(im)",
+    "comments": "Get IPTC information from TIFF, JPEG, or IPTC file.\n\nparam im: An image containing IPTC data. :returns: A dictionary containing IPTC information, or None if no IPTC information block was found.\n"
+}

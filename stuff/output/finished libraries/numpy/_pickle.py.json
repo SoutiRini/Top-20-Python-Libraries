@@ -1,0 +1,7 @@
+{
+    "source file": "_pickle.py",
+    "line number": "62",
+    "func name": "__randomstate_ctor",
+    "func arg": "(bit_generator_name)",
+    "comments": "Pickling helper function that returns a legacy RandomState-like object\n\nParameters ---------- bit_generator_name: str String containing the core BitGenerator\n##### Returns\n* **rs**: RandomState\n    Legacy RandomState using the named core BitGenerator\n\n"
+}

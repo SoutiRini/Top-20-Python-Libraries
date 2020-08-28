@@ -1,0 +1,7 @@
+{
+    "source file": "generate_examples_report.py",
+    "line number": "32",
+    "func name": "make_report_table",
+    "func arg": "(fp, title, reports)",
+    "comments": "Make an HTML report of the success/failure reports.\n\n\n##### Args\n* **fp**: File-like object in which to put the html.\n\n* **title**: \"Title of the zip file this pertains to.\"\n\n* **reports**: a list of conversion attempts. (report_args, report_vals) i.e.\n  ({\"shape\"\n\n"
+}

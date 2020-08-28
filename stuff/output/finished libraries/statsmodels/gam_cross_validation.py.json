@@ -1,0 +1,7 @@
+{
+    "source file": "gam_cross_validation.py",
+    "line number": "51",
+    "func name": "_split_train_test_smoothers",
+    "func arg": "(x, smoother, train_index, test_index)",
+    "comments": "split smoothers in test and train sets and create GenericSmoothers\n\nNote: this does not take exog_linear into account\n"
+}

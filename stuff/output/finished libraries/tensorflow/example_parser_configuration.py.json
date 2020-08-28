@@ -1,0 +1,7 @@
+{
+    "source file": "example_parser_configuration.py",
+    "line number": "135",
+    "func name": "_extract_from_parse_example_v2",
+    "func arg": "(parse_example_op, sess)",
+    "comments": "Extract ExampleParserConfig from ParseExampleV2 op.\n\n\n"
+}

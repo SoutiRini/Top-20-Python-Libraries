@@ -1,0 +1,7 @@
+{
+    "source file": "token1.py",
+    "line number": "289",
+    "func name": "_get_random_string",
+    "func arg": "(length, allowed_chars, secret_key)",
+    "comments": "Return a securely generated random string. With the a-z, A-Z, 0-9 character set: Length 12 is a 71-bit value. log_2((26+26+10)^12) =~ 71 Length 44 is a 261-bit value. log_2((26+26+10)^44) = 261\n\n\n"
+}

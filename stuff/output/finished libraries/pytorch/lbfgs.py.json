@@ -1,0 +1,7 @@
+{
+    "source file": "lbfgs.py",
+    "line number": "34",
+    "func name": "_strong_wolfe",
+    "func arg": "(obj_func, x, t, d, f, g, gtd, c1, c2, tolerance_change, max_ls)",
+    "comments": ""
+}

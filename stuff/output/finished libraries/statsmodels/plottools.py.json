@@ -1,0 +1,7 @@
+{
+    "source file": "plottools.py",
+    "line number": "3",
+    "func name": "rainbow",
+    "func arg": "(n)",
+    "comments": "Returns a list of colors sampled at equal intervals over the spectrum.\n\nParameters ---------- n : int The number of colors to return\n##### Returns\n* **R **: (n,3) array\n    An of rows of RGB color values\n\n"
+}

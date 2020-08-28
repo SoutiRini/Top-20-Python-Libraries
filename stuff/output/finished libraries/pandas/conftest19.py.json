@@ -1,0 +1,7 @@
+{
+    "source file": "conftest19.py",
+    "line number": "239",
+    "func name": "box_with_array",
+    "func arg": "(request)",
+    "comments": "Fixture to test behavior for Index, Series, DataFrame, and pandas Array classes\n\n\n"
+}

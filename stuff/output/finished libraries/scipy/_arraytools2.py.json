@@ -1,0 +1,7 @@
+{
+    "source file": "_arraytools2.py",
+    "line number": "210",
+    "func name": "zero_ext",
+    "func arg": "(x, n, axis)",
+    "comments": "Zero padding at the boundaries of an array\n\nGenerate a new ndarray that is a zero-padded extension of `x` along an axis.\n\nParameters ---------- x : ndarray The array to be extended. n : int The number of elements by which to extend `x` at each end of the axis. axis : int, optional The axis along which to extend `x`. Default is -1.\n\nExamples -------- >>> from scipy.signal._arraytools import zero_ext >>> a = np.array([[1, 2, 3, 4, 5], [0, 1, 4, 9, 16]]) >>> zero_ext(a, 2) array([[ 0,\n\n0,\n\n1,\n\n2,\n\n3,\n\n4,\n\n5,\n\n0,\n\n0], [ 0,\n\n0,\n\n0,\n\n1,\n\n4,\n\n9, 16,\n\n0,\n\n0]])\n"
+}

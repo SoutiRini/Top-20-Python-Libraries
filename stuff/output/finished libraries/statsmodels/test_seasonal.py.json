@@ -1,0 +1,7 @@
+{
+    "source file": "test_seasonal.py",
+    "line number": "316",
+    "func name": "test_seasonal_decompose_plot",
+    "func arg": "(model, freq, two_sided, extrapolate_trend)",
+    "comments": ""
+}

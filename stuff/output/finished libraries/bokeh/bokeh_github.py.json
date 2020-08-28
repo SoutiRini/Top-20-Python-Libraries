@@ -1,0 +1,7 @@
+{
+    "source file": "bokeh_github.py",
+    "line number": "171",
+    "func name": "_make_gh_link_node",
+    "func arg": "(app, rawtext, role, kind, api_type, id, options)",
+    "comments": "Return a link to a Bokeh Github resource.\n\n\n##### Args\n* **app (Sphinx app) **: current app\n\n* **rawtext (str) **: text being replaced with link node.\n\n* **role (str) **: role name\n\n* **kind (str) **: resource type (issue, pull, etc.)\n\n* **api_type (str) **: type for api link\n\n* **id **: (str)\n\n* **options (dict) **: options dictionary passed to role function\n\n"
+}

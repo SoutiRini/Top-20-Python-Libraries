@@ -1,0 +1,7 @@
+{
+    "source file": "matmul_benchmark.py",
+    "line number": "35",
+    "func name": "build_graph",
+    "func arg": "(device, n, m, k, transpose_a, transpose_b, dtype)",
+    "comments": "Build a graph containing a sequence of matmul operations.\n\n\n##### Args\n* **device**: String, the device to run on.\n\n* **n**: tensor A's first dimension size.\n\n* **m**: tensor A's second dimension size.\n\n* **k**: tensor B's second dimension size.\n\n* **transpose_a**: boolean value to show if tensor A is transposed.\n\n* **transpose_b**: boolean value to show if tensor B is transposed.\n\n* **dtype**: numpy data type of the input tensor.\n\n##### Returns\n"
+}

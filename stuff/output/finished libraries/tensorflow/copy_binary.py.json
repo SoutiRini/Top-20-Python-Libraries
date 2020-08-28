@@ -1,0 +1,7 @@
+{
+    "source file": "copy_binary.py",
+    "line number": "94",
+    "func name": "main",
+    "func arg": "()",
+    "comments": "This script copies binaries.\n\nRequirements: filename: The path to the whl file AND new_py_ver: Create a nightly tag with current date\n"
+}

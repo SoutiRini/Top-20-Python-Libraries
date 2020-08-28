@@ -1,0 +1,7 @@
+{
+    "source file": "grower.py",
+    "line number": "524",
+    "func name": "_fill_predictor_node_array",
+    "func arg": "(predictor_nodes, grower_node, bin_thresholds, n_bins_non_missing, next_free_idx)",
+    "comments": "Helper used in make_predictor to set the TreePredictor fields.\n\n\n"
+}

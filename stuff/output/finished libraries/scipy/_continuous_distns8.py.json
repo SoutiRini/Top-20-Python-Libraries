@@ -1,0 +1,7 @@
+{
+    "source file": "_continuous_distns8.py",
+    "line number": "8389",
+    "func name": "_argus_phi",
+    "func arg": "(chi)",
+    "comments": "Utility function for the argus distribution used in the CDF and norm of the Argus Funktion\n\n\n"
+}

@@ -1,0 +1,7 @@
+{
+    "source file": "anno.py",
+    "line number": "153",
+    "func name": "dup",
+    "func arg": "(node, copy_map, field_name)",
+    "comments": "Recursively copies annotations in an AST tree.\n\n\n##### Args\n* **node**: ast.AST\n\n* **copy_map**: Dict[Hashable, Hashable], maps a source anno key to a destination\n    key. All annotations with the source key will be copied to identical\n    annotations with the destination key.\n\n* **field_name**: str\n\n"
+}

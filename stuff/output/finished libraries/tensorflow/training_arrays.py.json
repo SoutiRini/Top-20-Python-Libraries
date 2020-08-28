@@ -1,0 +1,7 @@
+{
+    "source file": "training_arrays.py",
+    "line number": "560",
+    "func name": "_update_sample_weight_mode",
+    "func arg": "(model, mode, inputs)",
+    "comments": "Updates the sample_weight_mode of a given model.\n\n\n"
+}

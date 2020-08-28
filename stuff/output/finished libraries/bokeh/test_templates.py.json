@@ -1,0 +1,7 @@
+{
+    "source file": "test_templates.py",
+    "line number": "54",
+    "func name": "test_autoload_template_has_changed",
+    "func arg": "()",
+    "comments": "This is not really a test but a reminder that if you change the autoload_nb_js.js template then you should make sure that insertion of plots into notebooks is working as expected. In particular, this test was created as part of https://github.com/bokeh/bokeh/issues/7125.\n\n\n"
+}

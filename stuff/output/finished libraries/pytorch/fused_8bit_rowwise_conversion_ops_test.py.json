@@ -1,0 +1,7 @@
+{
+    "source file": "fused_8bit_rowwise_conversion_ops_test.py",
+    "line number": "53",
+    "func name": "fused_rowwise_8bit_quantize_dequantize_reference",
+    "func arg": "(data)",
+    "comments": ""
+}

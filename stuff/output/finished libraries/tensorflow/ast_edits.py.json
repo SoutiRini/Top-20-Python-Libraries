@@ -1,0 +1,7 @@
+{
+    "source file": "ast_edits.py",
+    "line number": "175",
+    "func name": "excluded_from_module_rename",
+    "func arg": "(module, import_rename_spec)",
+    "comments": "Check if this module import should not be renamed.\n\n\n##### Args\n* **module**: (string) module name.\n\n* **import_rename_spec**: ImportRename instance.\n\n##### Returns\n"
+}

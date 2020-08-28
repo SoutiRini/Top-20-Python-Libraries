@@ -1,0 +1,7 @@
+{
+    "source file": "utils103.py",
+    "line number": "26",
+    "func name": "benchmark_module",
+    "func arg": "(config, module, use_throughput_benchmark)",
+    "comments": ""
+}

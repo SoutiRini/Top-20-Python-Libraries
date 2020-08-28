@@ -1,0 +1,7 @@
+{
+    "source file": "string1.py",
+    "line number": "111",
+    "func name": "format_url_query_arguments",
+    "func arg": "(url, arguments)",
+    "comments": "Format a base URL with optional query arguments\n\n\n##### Args\n* **url (str) **: An base URL to append query arguments to\n\n* **arguments (dict or None, optional) **: A mapping of key/value URL query arguments, or None (default\n\n##### Returns\n"
+}

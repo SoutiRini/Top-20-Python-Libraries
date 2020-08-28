@@ -1,0 +1,7 @@
+{
+    "source file": "rendezvous_filestore.py",
+    "line number": "19",
+    "func name": "gen_rendezvous_ctx",
+    "func arg": "(model, dataset, is_train)",
+    "comments": ""
+}

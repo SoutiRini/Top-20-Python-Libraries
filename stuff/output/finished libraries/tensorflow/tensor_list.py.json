@@ -1,0 +1,7 @@
+{
+    "source file": "tensor_list.py",
+    "line number": "26",
+    "func name": "dynamic_list_append",
+    "func arg": "(target, element)",
+    "comments": "Converts a list append call inline.\n\n\n"
+}

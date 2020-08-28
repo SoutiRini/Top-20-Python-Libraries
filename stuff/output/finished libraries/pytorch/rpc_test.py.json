@@ -1,0 +1,7 @@
+{
+    "source file": "rpc_test.py",
+    "line number": "838",
+    "func name": "load_script_module_with_pickled_rref",
+    "func arg": "(pickled_script_module)",
+    "comments": ""
+}

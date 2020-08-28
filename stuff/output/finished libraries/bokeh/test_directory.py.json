@@ -1,0 +1,7 @@
+{
+    "source file": "test_directory.py",
+    "line number": "74",
+    "func name": "script_adds_two_roots",
+    "func arg": "(some_model_name, another_model_name)",
+    "comments": ""
+}

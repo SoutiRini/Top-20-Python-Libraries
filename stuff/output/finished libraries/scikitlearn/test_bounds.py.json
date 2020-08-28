@@ -1,0 +1,7 @@
+{
+    "source file": "test_bounds.py",
+    "line number": "143",
+    "func name": "test_newrand_bounded_rand_int_limits",
+    "func arg": "(range_)",
+    "comments": "Test that `bounded_rand_int_wrap` is defined for unsigned 32bits ints\n\n\n"
+}

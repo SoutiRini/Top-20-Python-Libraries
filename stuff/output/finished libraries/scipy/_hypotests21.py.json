@@ -1,0 +1,7 @@
+{
+    "source file": "_hypotests21.py",
+    "line number": "135",
+    "func name": "_get_wilcoxon_distr",
+    "func arg": "(n)",
+    "comments": "Distribution of counts of the Wilcoxon ranksum statistic r_plus (sum of ranks of positive differences). Returns an array with the counts/frequencies of all the possible ranks r = 0, ..., n*(n+1)/2\n\n\n"
+}

@@ -1,0 +1,7 @@
+{
+    "source file": "test_overrides.py",
+    "line number": "280",
+    "func name": "_new_duck_type_and_implements",
+    "func arg": "()",
+    "comments": "Create a duck array type and implements functions.\n\n\n"
+}

@@ -1,0 +1,7 @@
+{
+    "source file": "selective_registration_header_lib.py",
+    "line number": "194",
+    "func name": "get_header",
+    "func arg": "(graphs, proto_fileformat, default_ops)",
+    "comments": "Computes a header for use with tensorflow SELECTIVE_REGISTRATION.\n\n\n##### Args\n* **graphs**: a list of paths to GraphDef files to include.\n\n* **proto_fileformat**: optional format of proto file, either 'textproto',\n  'rawproto' (default) or ops_list. The ops_list is the file contain the\n  list of ops in JSON format, Ex\n\n* **default_ops**: optional comma-separated string of operator\n\n##### Returns\n"
+}

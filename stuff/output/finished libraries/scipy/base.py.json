@@ -1,0 +1,7 @@
+{
+    "source file": "base.py",
+    "line number": "4",
+    "func name": "check_arguments",
+    "func arg": "(fun, y0, support_complex)",
+    "comments": "Helper function for checking arguments common to all solvers.\n\n\n"
+}

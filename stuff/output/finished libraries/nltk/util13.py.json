@@ -1,0 +1,7 @@
+{
+    "source file": "util13.py",
+    "line number": "61",
+    "func name": "untag",
+    "func arg": "(tagged_sentence)",
+    "comments": "Given a tagged sentence, return an untagged version of that sentence.  I.e., return a list containing the first element of each tuple in *tagged_sentence*.\n\n>>> from nltk.tag.util import untag >>> untag([('John', 'NNP'), ('saw', 'VBD'), ('Mary', 'NNP')]) ['John', 'saw', 'Mary']\n"
+}

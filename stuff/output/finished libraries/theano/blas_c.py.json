@@ -1,0 +1,7 @@
+{
+    "source file": "blas_c.py",
+    "line number": "692",
+    "func name": "make_c_gemv_destructive",
+    "func arg": "(node)",
+    "comments": ""
+}

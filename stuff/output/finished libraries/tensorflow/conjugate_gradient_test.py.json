@@ -1,0 +1,7 @@
+{
+    "source file": "conjugate_gradient_test.py",
+    "line number": "41",
+    "func name": "_get_conjugate_gradient_test",
+    "func arg": "(dtype_, use_static_shape_, shape_)",
+    "comments": ""
+}

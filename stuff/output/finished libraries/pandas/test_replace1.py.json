@@ -1,0 +1,7 @@
+{
+    "source file": "test_replace1.py",
+    "line number": "29",
+    "func name": "test_replace",
+    "func arg": "(to_replace, value, expected, check_types, check_categorical)",
+    "comments": ""
+}

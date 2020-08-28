@@ -1,0 +1,7 @@
+{
+    "source file": "test_t_sne.py",
+    "line number": "946",
+    "func name": "test_tsne_n_jobs",
+    "func arg": "(method)",
+    "comments": "Make sure that the n_jobs parameter doesn't impact the output\n\n\n"
+}

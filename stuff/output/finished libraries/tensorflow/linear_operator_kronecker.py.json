@@ -1,0 +1,7 @@
+{
+    "source file": "linear_operator_kronecker.py",
+    "line number": "53",
+    "func name": "_rotate_last_dim",
+    "func arg": "(x, rotate_right)",
+    "comments": "Rotate the last dimension either left or right.\n\n\n"
+}

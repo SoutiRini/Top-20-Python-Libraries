@@ -1,0 +1,7 @@
+{
+    "source file": "shared_randomstreams.py",
+    "line number": "24",
+    "func name": "randomstate_constructor",
+    "func arg": "(value, name, strict, allow_downcast, borrow)",
+    "comments": "SharedVariable Constructor for RandomState.\n\n\n"
+}

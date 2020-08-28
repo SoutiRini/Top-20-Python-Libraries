@@ -1,0 +1,7 @@
+{
+    "source file": "histogram.py",
+    "line number": "8",
+    "func name": "make_plot",
+    "func arg": "(title, hist, edges, x, pdf, cdf)",
+    "comments": ""
+}

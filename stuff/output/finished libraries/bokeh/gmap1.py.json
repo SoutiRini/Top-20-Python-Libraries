@@ -1,0 +1,7 @@
+{
+    "source file": "gmap1.py",
+    "line number": "210",
+    "func name": "gmap",
+    "func arg": "(google_api_key, map_options, **kwargs)",
+    "comments": "Create a new :class:`~bokeh.plotting.gmap.GMap` for plotting.\n\n\n##### Args\n* **google_api_key (str)**: Google requires an API key be supplied for maps to function. See\n\n* **map_options**: (\n\n* **ddition to the standard **: class\n\n* **tional options can be passed as well**: \n\n* **okeh-options**: \n\n* ****: module\n\n##### Returns\n"
+}

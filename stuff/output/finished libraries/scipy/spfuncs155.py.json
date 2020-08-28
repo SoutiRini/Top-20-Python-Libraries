@@ -1,0 +1,7 @@
+{
+    "source file": "spfuncs155.py",
+    "line number": "84",
+    "func name": "count_blocks",
+    "func arg": "(A, blocksize)",
+    "comments": "For a given blocksize=(r,c) count the number of occupied blocks in a sparse matrix A\n\n\n"
+}

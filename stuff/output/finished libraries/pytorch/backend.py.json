@@ -1,0 +1,7 @@
+{
+    "source file": "backend.py",
+    "line number": "81",
+    "func name": "convertAttributeProto",
+    "func arg": "(onnx_arg)",
+    "comments": "Convert an ONNX AttributeProto into an appropriate Python object for the type.\n\nNB: Tensor attribute gets returned as the straight proto.\n"
+}

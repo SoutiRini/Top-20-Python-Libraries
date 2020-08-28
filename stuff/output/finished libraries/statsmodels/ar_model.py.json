@@ -1,0 +1,7 @@
+{
+    "source file": "ar_model.py",
+    "line number": "2342",
+    "func name": "ar_select_order",
+    "func arg": "(endog, maxlag, ic, glob, trend, seasonal, exog, hold_back, period, missing, old_names)",
+    "comments": "Autoregressive AR-X(p) model order selection.\n\nParameters ---------- endog : array_like A 1-d endogenous response variable. The independent variable. maxlag : int The maximum lag to consider. ic : {'aic', 'hqic', 'bic'} The information criterion to use in the selection. glob : bool Flag indicating where to use a global search\n\nacross all combinations of lags.\n\nIn practice, this option is not computational feasible when maxlag is larger than 15 (or perhaps 20) since the global search requires fitting 2**maxlag models. %(auto_reg_params)s\n##### Returns\n"
+}

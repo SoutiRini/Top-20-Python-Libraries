@@ -1,0 +1,7 @@
+{
+    "source file": "quantize.py",
+    "line number": "88",
+    "func name": "prob_quantize_cdf_old",
+    "func arg": "(binsx, binsy, cdf)",
+    "comments": "quantize a continuous distribution given by a cdf\n\nold version without precomputing cdf values\n\nParameters ---------- binsx : array_like, 1d binedges\n"
+}

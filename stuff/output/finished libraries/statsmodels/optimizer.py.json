@@ -1,0 +1,7 @@
+{
+    "source file": "optimizer.py",
+    "line number": "595",
+    "func name": "_fit_basinhopping",
+    "func arg": "(f, score, start_params, fargs, kwargs, disp, maxiter, callback, retall, full_output, hess)",
+    "comments": ""
+}

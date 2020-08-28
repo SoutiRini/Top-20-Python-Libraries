@@ -1,0 +1,7 @@
+{
+    "source file": "_text_layout.py",
+    "line number": "8",
+    "func name": "layout",
+    "func arg": "(string, font)",
+    "comments": "Render *string* with *font*.  For each character in *string*, yield a (glyph-index, x-position) pair.  When such a pair is yielded, the font's glyph is set to the corresponding character.\n\nParameters ---------- string : str The string to be rendered. font : FT2Font The font. kern_mode : int A FreeType kerning mode.\n\nYields ------ glyph_index : int x_position : float\n"
+}

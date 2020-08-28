@@ -1,0 +1,7 @@
+{
+    "source file": "_base7.py",
+    "line number": "785",
+    "func name": "_tree_query_radius_parallel_helper",
+    "func arg": "(tree, **kwargs)",
+    "comments": "Helper for the Parallel calls in RadiusNeighborsMixin.radius_neighbors\n\nThe Cython method tree.query_radius is not directly picklable by cloudpickle under PyPy.\n"
+}

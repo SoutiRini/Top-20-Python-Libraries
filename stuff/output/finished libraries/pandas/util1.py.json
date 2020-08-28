@@ -1,0 +1,7 @@
+{
+    "source file": "util1.py",
+    "line number": "8",
+    "func name": "cartesian_product",
+    "func arg": "(X)",
+    "comments": "Numpy version of itertools.product. Sometimes faster (for large inputs)...\n\nParameters ---------- X : list-like of list-likes\n##### Returns\n* **product **: list of ndarrays\n\n* **itertools.product **: Cartesian product of input iterables.  Equivalent to\n    nested for-loops.\n\n"
+}

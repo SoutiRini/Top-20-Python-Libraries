@@ -1,0 +1,7 @@
+{
+    "source file": "_proto_graph.py",
+    "line number": "28",
+    "func name": "node_proto",
+    "func arg": "(name, op, input, dtype, shape, outputsize, attributes)",
+    "comments": "Creates an object matching https://github.com/tensorflow/tensorboard/blob/master/tensorboard/compat/proto/node_def.proto\n\n\n"
+}

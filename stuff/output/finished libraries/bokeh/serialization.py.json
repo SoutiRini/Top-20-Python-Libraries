@@ -1,0 +1,7 @@
+{
+    "source file": "serialization.py",
+    "line number": "555",
+    "func name": "decode_base64_dict",
+    "func arg": "(data)",
+    "comments": "Decode a base64 encoded array into a NumPy array.\n\n\n##### Args\n* **data (dict) **: encoded array data to decode\n should have the format encoded by\n\n##### Returns\n"
+}

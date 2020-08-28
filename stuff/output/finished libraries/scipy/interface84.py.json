@@ -1,0 +1,7 @@
+{
+    "source file": "interface84.py",
+    "line number": "773",
+    "func name": "aslinearoperator",
+    "func arg": "(A)",
+    "comments": "Return A as a LinearOperator.\n\n'A' may be any of the following types:\n\n- ndarray\n\n- matrix\n\n- sparse matrix (e.g. csr_matrix, lil_matrix, etc.)\n\n- LinearOperator\n\n- An object with .shape and .matvec attributes\n\nSee the LinearOperator documentation for additional information.\n\nNotes ----- If 'A' has no .dtype attribute, the data type is determined by calling :func:`LinearOperator.matvec()`\n\n- set the .dtype attribute to prevent this call upon the linear operator creation.\n\nExamples -------- >>> from scipy.sparse.linalg import aslinearoperator >>> M = np.array([[1,2,3],[4,5,6]], dtype=np.int32) >>> aslinearoperator(M) <2x3 MatrixLinearOperator with dtype=int32>\n"
+}

@@ -1,0 +1,7 @@
+{
+    "source file": "tf_stack.py",
+    "line number": "131",
+    "func name": "extract_stack",
+    "func arg": "(limit)",
+    "comments": "A lightweight, extensible re-implementation of traceback.extract_stack.\n\nNOTE(mrry): traceback.extract_stack eagerly retrieves the line of code for each stack frame using linecache, which results in an abundance of stat() calls. This implementation does not retrieve the code, and any consumer should apply _convert_stack to the result to obtain a traceback that can be formatted etc. using traceback methods.\n##### Args\n* **limit**: A limit on the number of frames to return.\n\n##### Returns\n"
+}

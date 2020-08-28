@@ -1,0 +1,7 @@
+{
+    "source file": "linear_operator_block_diag_test.py",
+    "line number": "38",
+    "func name": "_block_diag_dense",
+    "func arg": "(expected_shape, blocks)",
+    "comments": "Convert a list of blocks, into a dense block diagonal matrix.\n\n\n"
+}

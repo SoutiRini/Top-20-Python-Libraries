@@ -1,0 +1,7 @@
+{
+    "source file": "serializers.py",
+    "line number": "68",
+    "func name": "_js_to_py",
+    "func arg": "(v, widget_manager)",
+    "comments": "Javascript -> Python ipywidget deserializer\n\nParameters ---------- v Object to be deserialized widget_manager ipywidget widget_manager (unused)\n##### Returns\n"
+}

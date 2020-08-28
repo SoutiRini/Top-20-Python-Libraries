@@ -1,0 +1,7 @@
+{
+    "source file": "iterator_ops.py",
+    "line number": "49",
+    "func name": "make_saveable_from_iterator",
+    "func arg": "(iterator, external_state_policy)",
+    "comments": "Returns a SaveableObject for saving/restoring iterator state using Saver.\n\n\n##### Args\n* **iterator**: Iterator.\n\n* **external_state_policy**: A string that identifies how to handle input\n  pipelines that depend on external state. Possible values are\n  'ignore'\n\n##### Returns\n"
+}

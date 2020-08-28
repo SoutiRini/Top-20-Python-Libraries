@@ -1,0 +1,7 @@
+{
+    "source file": "_laplacian24.py",
+    "line number": "112",
+    "func name": "_laplacian_dense",
+    "func arg": "(graph, normed, axis)",
+    "comments": ""
+}

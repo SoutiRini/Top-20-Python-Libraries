@@ -1,0 +1,7 @@
+{
+    "source file": "tf_text_graph_faster_rcnn.py",
+    "line number": "6",
+    "func name": "createFasterRCNNGraph",
+    "func arg": "(modelPath, configPath, outputPath)",
+    "comments": ""
+}

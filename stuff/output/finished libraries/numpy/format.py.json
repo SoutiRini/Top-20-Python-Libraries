@@ -1,0 +1,7 @@
+{
+    "source file": "format.py",
+    "line number": "889",
+    "func name": "_read_bytes",
+    "func arg": "(fp, size, error_template)",
+    "comments": "Read from file-like object until size bytes are read. Raises ValueError if not EOF is encountered before size bytes are read. Non-blocking objects only supported if they derive from io objects.\n\nRequired as e.g. ZipExtFile in python 2.6 can return less data than requested.\n"
+}

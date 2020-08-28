@@ -1,0 +1,7 @@
+{
+    "source file": "generate_lib.py",
+    "line number": "421",
+    "func name": "replace_refs",
+    "func arg": "(src_dir, output_dir, reference_resolver, file_pattern, api_docs_relpath)",
+    "comments": "Fix @{} references in all files under `src_dir` matching `file_pattern`.\n\nA matching directory structure, with the modified files is written to `output_dir`.\n\n`{\"__init__.py\",\"OWNERS\",\"README.txt\"}` are skipped.\n\nFiles not matching `file_pattern` (using `fnmatch`) are copied with no change.\n\nAlso, files in the `api_guides/python` directory get explicit ids set on all heading-2s to ensure back-links work.\n##### Args\n* **src_dir**: The directory to convert files from.\n\n* **output_dir**: The root directory to write the resulting files to.\n\n* **reference_resolver**: A `parser.ReferenceResolver` to make the replacements.\n\n* **file_pattern**: Only replace references in files matching file_patters,\n  using fnmatch. Non-matching files are copied unchanged.\n\n* **api_docs_relpath**: Relative-path string to the api_docs, from the src_dir.\n\n"
+}

@@ -1,0 +1,7 @@
+{
+    "source file": "traverse.py",
+    "line number": "25",
+    "func name": "obtain_all_variant_tensor_ops",
+    "func arg": "(dataset)",
+    "comments": "Given an input dataset, finds all dataset ops used for construction.\n\nA series of transformations would have created this dataset with each transformation including zero or more Dataset ops, each producing a dataset variant tensor. This method outputs all of them.\n##### Args\n* **dataset**: Dataset to find variant tensors for.\n\n##### Returns\n"
+}

@@ -1,0 +1,7 @@
+{
+    "source file": "malt.py",
+    "line number": "84",
+    "func name": "find_malt_model",
+    "func arg": "(model_filename)",
+    "comments": "A module to find pre-trained MaltParser model.\n\n\n"
+}

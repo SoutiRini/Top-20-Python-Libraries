@@ -1,0 +1,7 @@
+{
+    "source file": "sympy_diff.py",
+    "line number": "15",
+    "func name": "cdf",
+    "func arg": "(x, mu, sigma)",
+    "comments": "Return the cumulative density function as an expression in x\n\n\n"
+}

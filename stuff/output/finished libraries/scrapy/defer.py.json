@@ -1,0 +1,7 @@
+{
+    "source file": "defer.py",
+    "line number": "161",
+    "func name": "maybeDeferred_coro",
+    "func arg": "(f, **kw)",
+    "comments": "Copy of defer.maybeDeferred that also converts coroutines to Deferreds.\n\n\n"
+}

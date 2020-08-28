@@ -1,0 +1,7 @@
+{
+    "source file": "test_pt_onnx_trt.py",
+    "line number": "43",
+    "func name": "load_normalized_test_case",
+    "func arg": "(input_shape, test_image, pagelocked_buffer, normalization_hint)",
+    "comments": ""
+}

@@ -1,0 +1,7 @@
+{
+    "source file": "_axes.py",
+    "line number": "40",
+    "func name": "_make_inset_locator",
+    "func arg": "(bounds, trans, parent)",
+    "comments": "Helper function to locate inset axes, used in `.Axes.inset_axes`.\n\nA locator gets used in `Axes.set_aspect` to override the default locations...\n\nIt is a function that takes an axes object and a renderer and tells `set_aspect` where it is to be placed.\n\nHere *rect* is a rectangle [l, b, w, h] that specifies the location for the axes in the transform given by *trans* on the *parent*.\n"
+}

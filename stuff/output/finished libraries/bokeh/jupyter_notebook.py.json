@@ -1,0 +1,7 @@
+{
+    "source file": "jupyter_notebook.py",
+    "line number": "53",
+    "func name": "jupyter_notebook",
+    "func arg": "(request, log_file)",
+    "comments": "Starts a jupyter notebook server at the beginning of a session, and closes at the end of a session.\n\nAdds custom.js that runs all the cells on notebook opening. Cleans out this custom.js at the end of the test run.\n"
+}

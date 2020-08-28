@@ -1,0 +1,7 @@
+{
+    "source file": "generic_utils.py",
+    "line number": "797",
+    "func name": "populate_dict_with_module_objects",
+    "func arg": "(target_dict, modules, obj_filter)",
+    "comments": ""
+}

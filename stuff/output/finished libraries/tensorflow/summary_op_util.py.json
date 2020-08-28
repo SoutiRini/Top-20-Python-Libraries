@@ -1,0 +1,7 @@
+{
+    "source file": "summary_op_util.py",
+    "line number": "27",
+    "func name": "skip_summary",
+    "func arg": "()",
+    "comments": "Determines if summary should be skipped.\n\nIf using multiple replicas in distributed strategy, skip summaries on all replicas except the first one (replica_id=0).\n##### Returns\n"
+}

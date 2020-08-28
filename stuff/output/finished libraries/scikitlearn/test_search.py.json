@@ -1,0 +1,7 @@
+{
+    "source file": "test_search.py",
+    "line number": "1845",
+    "func name": "test_scalar_fit_param_compat",
+    "func arg": "(SearchCV, param_search)",
+    "comments": ""
+}

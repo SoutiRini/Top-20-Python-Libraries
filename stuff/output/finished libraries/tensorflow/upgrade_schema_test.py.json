@@ -1,0 +1,7 @@
+{
+    "source file": "upgrade_schema_test.py",
+    "line number": "242",
+    "func name": "JsonDumpAndFlush",
+    "func arg": "(data, fp)",
+    "comments": "Write the dictionary `data` to a JSON file `fp` (and flush).\n\n\n##### Args\n* **data**: in a dictionary that is JSON serializable.\n\n* **fp**: File-like object\n\n"
+}

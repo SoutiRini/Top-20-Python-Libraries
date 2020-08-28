@@ -1,0 +1,7 @@
+{
+    "source file": "pytables2.py",
+    "line number": "4983",
+    "func name": "_get_data_and_dtype_name",
+    "func arg": "(data)",
+    "comments": "Convert the passed data into a storable form and a dtype string.\n\n\n"
+}

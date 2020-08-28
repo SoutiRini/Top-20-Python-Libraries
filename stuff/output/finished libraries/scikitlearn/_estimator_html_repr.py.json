@@ -1,0 +1,7 @@
+{
+    "source file": "_estimator_html_repr.py",
+    "line number": "288",
+    "func name": "estimator_html_repr",
+    "func arg": "(estimator)",
+    "comments": "Build a HTML representation of an estimator.\n\nRead more in the :ref:`User Guide <visualizing_composite_estimators>`.\n\nParameters ---------- estimator : estimator object The estimator to visualize.\n##### Returns\n* **html**: str\n    HTML representation of estimator.\n\n"
+}

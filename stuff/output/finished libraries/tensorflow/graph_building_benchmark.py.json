@@ -1,0 +1,7 @@
+{
+    "source file": "graph_building_benchmark.py",
+    "line number": "44",
+    "func name": "run_benchmark",
+    "func arg": "(func, num_iters)",
+    "comments": ""
+}

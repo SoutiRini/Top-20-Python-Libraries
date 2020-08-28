@@ -1,0 +1,7 @@
+{
+    "source file": "joinstyle.py",
+    "line number": "26",
+    "func name": "plot_angle",
+    "func arg": "(ax, x, y, angle, style)",
+    "comments": ""
+}

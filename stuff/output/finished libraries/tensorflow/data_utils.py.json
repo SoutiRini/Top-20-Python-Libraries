@@ -1,0 +1,7 @@
+{
+    "source file": "data_utils.py",
+    "line number": "930",
+    "func name": "next_sample",
+    "func arg": "(uid)",
+    "comments": "Gets the next value from the generator `uid`.\n\nTo allow multiple generators to be used at the same time, we use `uid` to get a specific one. A single generator would cause the validation to overwrite the training generator.\n\nArguments: uid: int, generator identifier\n##### Returns\n"
+}

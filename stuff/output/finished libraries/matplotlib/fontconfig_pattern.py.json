@@ -1,0 +1,7 @@
+{
+    "source file": "fontconfig_pattern.py",
+    "line number": "190",
+    "func name": "generate_fontconfig_pattern",
+    "func arg": "(d)",
+    "comments": "Given a dictionary of key/value pairs, generates a fontconfig pattern string.\n\n\n"
+}

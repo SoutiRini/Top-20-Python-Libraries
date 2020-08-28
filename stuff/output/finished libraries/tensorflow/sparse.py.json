@@ -1,0 +1,7 @@
+{
+    "source file": "sparse.py",
+    "line number": "137",
+    "func name": "serialize_sparse_tensors",
+    "func arg": "(tensors)",
+    "comments": "Serializes sparse tensors.\n\n\n##### Args\n* **tensors**: a tensor structure to serialize.\n\n##### Returns\n"
+}

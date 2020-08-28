@@ -1,0 +1,7 @@
+{
+    "source file": "nomnigraph_transformations.py",
+    "line number": "9",
+    "func name": "transpose_network",
+    "func arg": "(nn)",
+    "comments": "Convert all Convolutions operators which are in the NCHW order to NHWC order and also transform their inputs and outputs so that the rest of the graph is not affected.\n\n\n"
+}

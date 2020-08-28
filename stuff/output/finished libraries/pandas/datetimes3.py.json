@@ -1,0 +1,7 @@
+{
+    "source file": "datetimes3.py",
+    "line number": "2126",
+    "func name": "_maybe_localize_point",
+    "func arg": "(ts, is_none, is_not_none, freq, tz, ambiguous, nonexistent)",
+    "comments": "Localize a start or end Timestamp to the timezone of the corresponding start or end Timestamp\n\nParameters ---------- ts : start or end Timestamp to potentially localize is_none : argument that should be None is_not_none : argument that should not be None freq : Tick, DateOffset, or None tz : str, timezone object or None ambiguous: str, localization behavior for ambiguous times nonexistent: str, localization behavior for nonexistent times\n##### Returns\n* **ts **: Timestamp\n\n"
+}

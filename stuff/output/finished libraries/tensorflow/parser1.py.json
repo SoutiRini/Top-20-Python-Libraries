@@ -1,0 +1,7 @@
+{
+    "source file": "parser1.py",
+    "line number": "1711",
+    "func name": "generate_global_index",
+    "func arg": "(library_name, index, reference_resolver)",
+    "comments": "Given a dict of full names to python objects, generate an index page.\n\nThe index page generated contains a list of links for all symbols in `index` that have their own documentation page.\n##### Args\n* **library_name**: The name for the documented library to use in the title.\n\n* **index**: A dict mapping full names to python objects.\n\n* **reference_resolver**: An instance of ReferenceResolver.\n\n##### Returns\n"
+}

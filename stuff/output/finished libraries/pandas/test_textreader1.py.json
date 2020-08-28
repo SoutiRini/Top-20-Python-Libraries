@@ -1,0 +1,7 @@
+{
+    "source file": "test_textreader1.py",
+    "line number": "345",
+    "func name": "assert_array_dicts_equal",
+    "func arg": "(left, right)",
+    "comments": ""
+}

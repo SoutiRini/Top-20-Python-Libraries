@@ -1,0 +1,7 @@
+{
+    "source file": "dirichlet.py",
+    "line number": "339",
+    "func name": "_kl_dirichlet_dirichlet",
+    "func arg": "(d1, d2, name)",
+    "comments": "Batchwise KL divergence KL(d1 || d2) with d1 and d2 Dirichlet.\n\n\n##### Args\n* **d1**: instance of a Dirichlet distribution object.\n\n* **d2**: instance of a Dirichlet distribution object.\n\n* **name**: (optional) Name to use for created operations.\n  default is \"kl_dirichlet_dirichlet\".\n\n##### Returns\n"
+}

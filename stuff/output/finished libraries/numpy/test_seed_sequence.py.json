@@ -1,0 +1,7 @@
+{
+    "source file": "test_seed_sequence.py",
+    "line number": "57",
+    "func name": "test_zero_padding",
+    "func arg": "()",
+    "comments": "Ensure that the implicit zero-padding does not cause problems.\n\n\n"
+}

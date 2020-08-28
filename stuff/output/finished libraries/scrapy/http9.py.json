@@ -1,0 +1,7 @@
+{
+    "source file": "http9.py",
+    "line number": "20",
+    "func name": "decode_chunked_transfer",
+    "func arg": "(chunked_body)",
+    "comments": "Parsed body received with chunked transfer encoding, and return the decoded body.\n\nFor more info see: https://en.wikipedia.org/wiki/Chunked_transfer_encoding\n"
+}

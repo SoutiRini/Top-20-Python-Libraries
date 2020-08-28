@@ -1,0 +1,7 @@
+{
+    "source file": "test_batchnorm_nnpi_fp16.py",
+    "line number": "28",
+    "func name": "reference_spatialbn_test16",
+    "func arg": "(X, scale, bias, mean, var, epsilon, order)",
+    "comments": ""
+}

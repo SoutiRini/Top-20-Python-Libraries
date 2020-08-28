@@ -1,0 +1,7 @@
+{
+    "source file": "merge1.py",
+    "line number": "2012",
+    "func name": "_items_overlap_with_suffix",
+    "func arg": "(left, lsuffix, right, rsuffix)",
+    "comments": "If two indices overlap, add suffixes to overlapping entries.\n\nIf corresponding suffix is empty, the entry is simply converted to string.\n"
+}

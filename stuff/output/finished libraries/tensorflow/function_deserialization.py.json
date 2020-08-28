@@ -1,0 +1,7 @@
+{
+    "source file": "function_deserialization.py",
+    "line number": "488",
+    "func name": "_clean_function_name",
+    "func arg": "(name)",
+    "comments": "Vanity function to keep the function names comprehensible.\n\n\n"
+}

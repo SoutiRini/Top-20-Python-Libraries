@@ -1,0 +1,7 @@
+{
+    "source file": "conftest2.py",
+    "line number": "29",
+    "func name": "pytest_runtest_setup",
+    "func arg": "(item)",
+    "comments": "Set the number of openmp threads based on the number of workers xdist is using to prevent oversubscription.\n\nParameters ---------- item : pytest item item to be processed\n"
+}

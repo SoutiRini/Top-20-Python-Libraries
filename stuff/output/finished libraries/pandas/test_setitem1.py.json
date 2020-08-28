@@ -1,0 +1,7 @@
+{
+    "source file": "test_setitem1.py",
+    "line number": "444",
+    "func name": "test_frame_setitem_copy_no_write",
+    "func arg": "(multiindex_dataframe_random_data)",
+    "comments": ""
+}

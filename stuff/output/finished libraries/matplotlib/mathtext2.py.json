@@ -1,0 +1,7 @@
+{
+    "source file": "mathtext2.py",
+    "line number": "3469",
+    "func name": "math_to_image",
+    "func arg": "(s, filename_or_obj, prop, dpi, format)",
+    "comments": "Given a math expression, renders it in a closely-clipped bounding box to an image file.\n\nParameters ---------- s : str A math expression.\n\nThe math portion must be enclosed in dollar signs. filename_or_obj : str or path-like or file-like Where to write the image data. prop : `.FontProperties`, optional The size and style of the text. dpi : float, optional The output dpi.\n\nIf not set, the dpi is determined as for `.Figure.savefig`. format : str, optional The output format, e.g., 'svg', 'pdf', 'ps' or 'png'.\n\nIf not set, the format is determined as for `.Figure.savefig`.\n"
+}

@@ -1,0 +1,7 @@
+{
+    "source file": "plots.py",
+    "line number": "76",
+    "func name": "plot_loadings",
+    "func arg": "(loadings, col_names, row_names, loading_pairs, percent_variance, title)",
+    "comments": "Plot factor loadings in 2-d plots\n\nParameters ---------- loadings : array like Each column is a component (or factor) col_names : a list of strings column names of `loadings` row_names : a list of strings row names of `loadings` loading_pairs : None or a list of tuples Specify plots. Each tuple (i, j) represent one figure, i and j is the loading number for x-axis and y-axis, respectively. If `None`, all combinations of the loadings will be plotted. percent_variance : array_like The percent variance explained by each factor.\n##### Returns\n* **figs **: a list of figure handles\n\n"
+}

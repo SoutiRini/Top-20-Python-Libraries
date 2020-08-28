@@ -1,0 +1,7 @@
+{
+    "source file": "resize_bilinear.py",
+    "line number": "27",
+    "func name": "make_resize_bilinear_tests",
+    "func arg": "(options)",
+    "comments": "Make a set of tests to do resize_bilinear.\n\n\n"
+}

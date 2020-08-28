@@ -1,0 +1,7 @@
+{
+    "source file": "output.py",
+    "line number": "113",
+    "func name": "reset_output",
+    "func arg": "(state)",
+    "comments": "Clear the default state of all output modes.\n\n\n##### Returns\n"
+}

@@ -1,0 +1,7 @@
+{
+    "source file": "tf_text_graph_common.py",
+    "line number": "309",
+    "func name": "writeTextGraph",
+    "func arg": "(modelPath, outputPath, outNodes)",
+    "comments": ""
+}

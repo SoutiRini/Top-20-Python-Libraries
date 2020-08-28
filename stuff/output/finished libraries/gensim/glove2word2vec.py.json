@@ -1,0 +1,7 @@
+{
+    "source file": "glove2word2vec.py",
+    "line number": "88",
+    "func name": "glove2word2vec",
+    "func arg": "(glove_input_file, word2vec_output_file)",
+    "comments": "Convert `glove_input_file` in GloVe format to word2vec format and write it to `word2vec_output_file`.\n\nParameters ---------- glove_input_file : str Path to file in GloVe format. word2vec_output_file: str Path to output file.\n##### Returns\n"
+}

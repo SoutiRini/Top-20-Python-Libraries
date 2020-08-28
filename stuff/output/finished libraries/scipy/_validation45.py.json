@@ -1,0 +1,7 @@
+{
+    "source file": "_validation45.py",
+    "line number": "9",
+    "func name": "validate_graph",
+    "func arg": "(csgraph, directed, dtype, csr_output, dense_output, copy_if_dense, copy_if_sparse, null_value_in, null_value_out, infinity_null, nan_null)",
+    "comments": "Routine for validation and conversion of csgraph inputs\n\n\n"
+}

@@ -1,0 +1,7 @@
+{
+    "source file": "fasttext1.py",
+    "line number": "183",
+    "func name": "train_batch_sg",
+    "func arg": "(model, sentences, alpha, work, neu1)",
+    "comments": "Update skip-gram model by training on a sequence of sentences.\n\nEach sentence is a list of string tokens, which are looked up in the model's vocab dictionary. Called internally from :meth:`gensim.models.fasttext.FastText.train()`.\n\nThis is the non-optimized, Python version. If you have cython installed, gensim will use the optimized version from fasttext_inner instead.\n\nParameters ---------- model : :class:`~gensim.models.fasttext.FastText` `FastText` instance. sentences : iterable of iterables Iterable of the sentences directly from disk/network. alpha : float Learning rate. work : :class:`numpy.ndarray` Private working memory for each worker. neu1 : :class:`numpy.ndarray` Private working memory for each worker.\n##### Returns\n"
+}

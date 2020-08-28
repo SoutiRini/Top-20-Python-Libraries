@@ -1,0 +1,7 @@
+{
+    "source file": "nested_structure_coder.py",
+    "line number": "157",
+    "func name": "_is_named_tuple",
+    "func arg": "(instance)",
+    "comments": "Returns True iff `instance` is a `namedtuple`.\n\n\n##### Args\n* **instance**: An instance of a Python object.\n\n##### Returns\n"
+}

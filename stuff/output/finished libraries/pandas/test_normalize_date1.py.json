@@ -1,0 +1,7 @@
+{
+    "source file": "test_normalize_date1.py",
+    "line number": "36",
+    "func name": "test_normalize_date_sub_types",
+    "func arg": "(dt, expected)",
+    "comments": ""
+}

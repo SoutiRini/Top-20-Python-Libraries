@@ -1,0 +1,7 @@
+{
+    "source file": "downloader.py",
+    "line number": "434",
+    "func name": "load",
+    "func arg": "(name, return_path)",
+    "comments": "Download (if needed) dataset/model and load it to memory (unless `return_path` is set).\n\nParameters ---------- name: str Name of the model/dataset. return_path: bool, optional If True, return full path to file, otherwise, return loaded model / iterable dataset.\n##### Returns\n"
+}

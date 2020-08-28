@@ -1,0 +1,7 @@
+{
+    "source file": "streamplot.py",
+    "line number": "666",
+    "func name": "_gen_starting_points",
+    "func arg": "(shape)",
+    "comments": "Yield starting points for streamlines.\n\nTrying points on the boundary first gives higher quality streamlines. This algorithm starts with a point on the mask corner and spirals inward. This algorithm is inefficient, but fast compared to rest of streamplot.\n"
+}

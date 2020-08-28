@@ -1,0 +1,7 @@
+{
+    "source file": "generic2.py",
+    "line number": "6",
+    "func name": "create_pandas_abc_type",
+    "func arg": "(name, attr, comp)",
+    "comments": ""
+}

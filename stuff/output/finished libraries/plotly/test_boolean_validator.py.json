@@ -1,0 +1,7 @@
+{
+    "source file": "test_boolean_validator.py",
+    "line number": "22",
+    "func name": "test_rejection",
+    "func arg": "(val, validator)",
+    "comments": ""
+}

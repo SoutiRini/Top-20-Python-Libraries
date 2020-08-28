@@ -1,0 +1,7 @@
+{
+    "source file": "py_guide_parser.py",
+    "line number": "29",
+    "func name": "md_files_in_dir",
+    "func arg": "(py_guide_src_dir)",
+    "comments": "Returns a list of filename (full_path, base) pairs for guide files.\n\n\n"
+}

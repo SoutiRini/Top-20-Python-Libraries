@@ -1,0 +1,7 @@
+{
+    "source file": "util9.py",
+    "line number": "196",
+    "func name": "extract_test_sentences",
+    "func arg": "(string, comment_chars, encoding)",
+    "comments": "Parses a string with one test sentence per line. Lines can optionally begin with: - a bool, saying if the sentence is grammatical or not, or - an int, giving the number of parse trees is should have, The result information is followed by a colon, and then the sentence. Empty lines and lines beginning with a comment char are ignored.\n\nreturn: a list of tuple of sentences and expected results, where a sentence is a list of str, and a result is None, or bool, or int\n\n:param comment_chars: ``str`` of possible comment characters. :param encoding: the encoding of the string, if it is binary\n"
+}

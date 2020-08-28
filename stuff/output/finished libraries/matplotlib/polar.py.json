@@ -1,0 +1,7 @@
+{
+    "source file": "polar.py",
+    "line number": "711",
+    "func name": "_is_full_circle_rad",
+    "func arg": "(thetamin, thetamax)",
+    "comments": "Determine if a wedge (in radians) spans the full circle.\n\nThe condition is derived from :class:`~matplotlib.patches.Wedge`.\n"
+}

@@ -1,0 +1,7 @@
+{
+    "source file": "window_ops.py",
+    "line number": "203",
+    "func name": "_raised_cosine_window",
+    "func arg": "(name, default_name, window_length, periodic, dtype, a, b)",
+    "comments": "Helper function for computing a raised cosine window.\n\n\n##### Args\n* **name**: Name to use for the scope.\n\n* **default_name**: Default name to use for the scope.\n\n* **window_length**: A scalar `Tensor` or integer indicating the window length.\n\n* **periodic**: A bool `Tensor` indicating whether to generate a periodic or\n  symmetric window.\n\n* **dtype**: A floating point `DType`.\n\n* **a**: The alpha parameter to the raised cosine window.\n\n* **b**: The beta parameter to the raised cosine window.\n\n##### Returns\n"
+}

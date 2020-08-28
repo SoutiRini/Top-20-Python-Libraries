@@ -1,0 +1,7 @@
+{
+    "source file": "html_functions.py",
+    "line number": "129",
+    "func name": "insert_or_replace",
+    "func arg": "(element_before, new_element, tag, tag_class)",
+    "comments": ""
+}

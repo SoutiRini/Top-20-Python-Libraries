@@ -1,0 +1,7 @@
+{
+    "source file": "sparse_tensor.py",
+    "line number": "443",
+    "func name": "is_sparse",
+    "func arg": "(x)",
+    "comments": "Check whether `x` is sparse.\n\nCheck whether an object is a `tf.sparse.SparseTensor` or `tf.compat.v1.SparseTensorValue`.\n##### Args\n* **x**: A python object to check.\n\n##### Returns\n"
+}

@@ -1,0 +1,7 @@
+{
+    "source file": "try_pot.py",
+    "line number": "10",
+    "func name": "mean_residual_life",
+    "func arg": "(x, frac, alpha)",
+    "comments": "empirical mean residual life or expected shortfall\n\nParameters ---------- x : 1-dimensional array_like frac : list[float], optional All entries must be between 0 and 1 alpha : float, default 0.05 FIXME: not actually used.\n\nTODO: check formula for std of mean does not include case for all observations last observations std is zero vectorize loop using cumsum frac does not work yet\n"
+}

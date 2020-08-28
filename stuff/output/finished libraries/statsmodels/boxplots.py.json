@@ -1,0 +1,7 @@
+{
+    "source file": "boxplots.py",
+    "line number": "410",
+    "func name": "_show_legend",
+    "func arg": "(ax)",
+    "comments": "Utility function to show legend.\n\n\n"
+}

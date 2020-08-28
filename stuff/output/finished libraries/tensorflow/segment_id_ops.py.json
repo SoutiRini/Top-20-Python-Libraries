@@ -1,0 +1,7 @@
+{
+    "source file": "segment_id_ops.py",
+    "line number": "80",
+    "func name": "segment_ids_to_row_splits",
+    "func arg": "(segment_ids, num_segments, out_type, name)",
+    "comments": "Generates the RaggedTensor `row_splits` corresponding to a segmentation.\n\n\n##### Args\n* **segment_ids**: A 1-D integer Tensor.\n\n* **num_segments**: A scalar integer indicating the number of segments.  Defaults\n  to `max(segment_ids) + 1` (or zero if `segment_ids` is empty).\n\n* **out_type**: The dtype for the return value.  Defaults to `segment_ids.dtype`,\n  or `tf.int64` if `segment_ids` does not have a dtype.\n\n* **name**: A name prefix for the returned tensor (optional).\n\n##### Returns\n"
+}

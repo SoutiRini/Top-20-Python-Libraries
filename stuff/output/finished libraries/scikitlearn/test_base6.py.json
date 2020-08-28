@@ -1,0 +1,7 @@
+{
+    "source file": "test_base6.py",
+    "line number": "23",
+    "func name": "test_log_loss_1_prob_finite",
+    "func arg": "(y_true, y_prob)",
+    "comments": ""
+}

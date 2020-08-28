@@ -1,0 +1,7 @@
+{
+    "source file": "align1.py",
+    "line number": "150",
+    "func name": "reconstruct_object",
+    "func arg": "(typ, obj, axes, dtype)",
+    "comments": "Reconstruct an object given its type, raw value, and possibly empty (None) axes.\n\nParameters ---------- typ : object A type obj : object The value to use in the type constructor axes : dict The axes to use to construct the resulting pandas object\n##### Returns\n* **ret **: typ\n    An object of type ``typ`` with the value `obj` and possible axes\n    `axes`.\n\n"
+}

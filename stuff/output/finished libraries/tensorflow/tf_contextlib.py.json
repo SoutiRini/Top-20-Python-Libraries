@@ -1,0 +1,7 @@
+{
+    "source file": "tf_contextlib.py",
+    "line number": "25",
+    "func name": "contextmanager",
+    "func arg": "(target)",
+    "comments": "A tf_decorator-aware wrapper for `contextlib.contextmanager`.\n\nUsage is identical to `contextlib.contextmanager`.\n##### Args\n* **target**: A callable to be wrapped in a contextmanager.\n\n##### Returns\n"
+}

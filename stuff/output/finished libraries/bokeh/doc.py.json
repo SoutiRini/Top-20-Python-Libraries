@@ -1,0 +1,7 @@
+{
+    "source file": "doc.py",
+    "line number": "48",
+    "func name": "set_curdoc",
+    "func arg": "(doc)",
+    "comments": "Configure the current document (returned by curdoc()).\n\n\n##### Args\n* **doc (Document) **: Document we will output.\n\n##### Returns\n* **arning**: \n\n"
+}

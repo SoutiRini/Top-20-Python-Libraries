@@ -1,0 +1,7 @@
+{
+    "source file": "client_test.py",
+    "line number": "43",
+    "func name": "mock_request_compute_metadata",
+    "func arg": "(path)",
+    "comments": ""
+}

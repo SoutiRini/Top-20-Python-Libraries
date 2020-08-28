@@ -1,0 +1,7 @@
+{
+    "source file": "test_warm_start.py",
+    "line number": "162",
+    "func name": "test_random_seeds_warm_start",
+    "func arg": "(GradientBoosting, X, y, rng_type)",
+    "comments": ""
+}

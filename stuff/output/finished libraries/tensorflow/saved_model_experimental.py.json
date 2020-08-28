@@ -1,0 +1,7 @@
+{
+    "source file": "saved_model_experimental.py",
+    "line number": "379",
+    "func name": "load_from_saved_model",
+    "func arg": "(saved_model_path, custom_objects)",
+    "comments": "Loads a keras Model from a SavedModel created by `export_saved_model()`.\n\nThis function reinstantiates model state by: 1) loading model topology from json (this will eventually come from metagraph). 2) loading model weights from checkpoint.\n\nExample:\n\n```python import tensorflow as tf\n\n# Create a tf.keras model. model = tf.keras.Sequential() model.add(tf.keras.layers.Dense(1, input_shape=[10])) model.summary()\n\n# Save the tf.keras model in the SavedModel format. path = '/tmp/simple_keras_model' tf.keras.experimental.export_saved_model(model, path)\n\n# Load the saved keras model back. new_model = tf.keras.experimental.load_from_saved_model(path) new_model.summary() ```\n##### Args\n* **saved_model_path**: a string specifying the path to an existing SavedModel.\n\n* **custom_objects**: Optional dictionary mapping names\n    (strings) to custom classes or functions to be\n    considered during deserialization.\n\n##### Returns\n"
+}

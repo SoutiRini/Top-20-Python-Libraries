@@ -1,0 +1,7 @@
+{
+    "source file": "animation.py",
+    "line number": "773",
+    "func name": "_embedded_frames",
+    "func arg": "(frame_list, frame_format)",
+    "comments": "frame_list should be a list of base64-encoded png files\n\n\n"
+}

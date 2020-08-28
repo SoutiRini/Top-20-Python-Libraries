@@ -1,0 +1,7 @@
+{
+    "source file": "virtual_try_on.py",
+    "line number": "46",
+    "func name": "get_pose_map",
+    "func arg": "(image, proto_path, model_path, backend, target, height, width)",
+    "comments": ""
+}

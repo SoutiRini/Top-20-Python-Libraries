@@ -1,0 +1,7 @@
+{
+    "source file": "human_parsing.py",
+    "line number": "140",
+    "func name": "parse_human",
+    "func arg": "(image, model_path, backend, target)",
+    "comments": "Prepare input for execution, run net and postprocess output to parse human. :param image: input image :param model_path: path to JPPNet model :param backend: name of computation backend :param target: name of computation target\n\n\n"
+}

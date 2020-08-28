@@ -1,0 +1,7 @@
+{
+    "source file": "common10.py",
+    "line number": "21",
+    "func name": "assert_is_on_offset",
+    "func arg": "(offset, date, expected)",
+    "comments": ""
+}

@@ -1,0 +1,7 @@
+{
+    "source file": "parameter_server_strategy_test.py",
+    "line number": "73",
+    "func name": "create_test_objects",
+    "func arg": "(cluster_spec, task_type, task_id, num_gpus, sess_config)",
+    "comments": ""
+}

@@ -1,0 +1,7 @@
+{
+    "source file": "sparse_reshape_op_test.py",
+    "line number": "28",
+    "func name": "test_reshape",
+    "func arg": "(old_shape, new_shape, stride_only)",
+    "comments": ""
+}

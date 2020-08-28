@@ -1,0 +1,7 @@
+{
+    "source file": "predict_functional.py",
+    "line number": "383",
+    "func name": "_glm_basic_scr",
+    "func arg": "(result, exog, alpha)",
+    "comments": "The basic SCR from (Sun et al. Annals of Statistics 2000).\n\nComputes simultaneous confidence regions (SCR).\n\nParameters ---------- result : results instance The fitted GLM results instance exog : array_like The exog values spanning the interval alpha : float `1\n\n- alpha` is the coverage probability.\n##### Returns\n"
+}

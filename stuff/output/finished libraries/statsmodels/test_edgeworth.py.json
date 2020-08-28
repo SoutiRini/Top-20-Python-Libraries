@@ -1,0 +1,7 @@
+{
+    "source file": "test_edgeworth.py",
+    "line number": "179",
+    "func name": "check_distribution_rvs",
+    "func arg": "(distfn, args, alpha, rvs)",
+    "comments": ""
+}

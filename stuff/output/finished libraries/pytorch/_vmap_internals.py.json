@@ -1,0 +1,7 @@
+{
+    "source file": "_vmap_internals.py",
+    "line number": "151",
+    "func name": "vmap",
+    "func arg": "(func, in_dims, out_dims)",
+    "comments": "vmap is the vectorizing map. Returns a new function that maps `func` over some dimension of the inputs. Semantically, vmap pushes the map into PyTorch operations called by `func`, effectively vectorizing those operations.\n\nvmap is useful for handling batch dimensions: one can write a function `func` that runs on examples and the lift it to a function that can take batches of examples with `vmap(func)`. Furthermore, it is possible to use vmap to obtain batched gradients when composed with autograd.\n##### Args\n* **func (function)**: A Python function that takes one or more arguments.\n    Must return one or more Tensors.\n\n* **in_dims (int or Tuple[Optional[int]])**: Specifies which dimension of the\n    inputs should be mapped over. If `in_dims` is a Tuple, then it should have\n    one element per input. If the `in_dim` for a particular input is\n    None, then that indicates there is no map dimension. Default\n\n* **out_dims (int or Tuple[int])**: Specifies where the mapped dimension\n    should appear in the outputs. If `out_dims` is a Tuple, then it should\n    have one element per output. Default\n\n##### Returns\n* **arning**: \n\n"
+}

@@ -1,0 +1,7 @@
+{
+    "source file": "context.py",
+    "line number": "117",
+    "func name": "_get_active_context",
+    "func arg": "(cls, val, required)",
+    "comments": ""
+}

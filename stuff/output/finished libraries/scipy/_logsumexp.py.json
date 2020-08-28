@@ -1,0 +1,7 @@
+{
+    "source file": "_logsumexp.py",
+    "line number": "217",
+    "func name": "log_softmax",
+    "func arg": "(x, axis)",
+    "comments": "Logarithm of softmax function\n\nlog_softmax(x) = log(softmax(x))\n\nParameters ---------- x : array_like Input array. axis : int or tuple of ints, optional Axis to compute values along. Default is None and softmax will be computed over the entire array `x`.\n##### Returns\n* **s **: ndarray or scalar\n    An array with the same shape as `x`. Exponential of the result will\n    sum to 1 along the specified axis. If `x` is a scalar, a scalar is\n    returned.\n\n* **.. versionadded**: \n\n* **>>> with np.errstate(divide='ignore')**: \n\n"
+}

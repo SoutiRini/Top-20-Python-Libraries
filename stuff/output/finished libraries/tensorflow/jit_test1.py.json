@@ -1,0 +1,7 @@
+{
+    "source file": "jit_test1.py",
+    "line number": "39",
+    "func name": "enable_jit_nonstateful",
+    "func arg": "(node_def)",
+    "comments": ""
+}

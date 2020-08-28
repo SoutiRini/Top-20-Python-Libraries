@@ -1,0 +1,7 @@
+{
+    "source file": "boxplot_demo.py",
+    "line number": "194",
+    "func name": "fake_bootstrapper",
+    "func arg": "(n)",
+    "comments": "This is just a placeholder for the user's method of bootstrapping the median and its confidence intervals.\n\n\n"
+}

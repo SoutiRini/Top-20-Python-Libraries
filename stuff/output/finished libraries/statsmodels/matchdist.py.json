@@ -1,0 +1,7 @@
+{
+    "source file": "matchdist.py",
+    "line number": "24",
+    "func name": "plothist",
+    "func arg": "(x, distfn, args, loc, scale, right)",
+    "comments": ""
+}

@@ -1,0 +1,7 @@
+{
+    "source file": "check_moments.py",
+    "line number": "113",
+    "func name": "nct_kurt_bug",
+    "func arg": "()",
+    "comments": "test for incorrect kurtosis of nct\n\nD. Hogben, R. S. Pinkham, M. B. Wilk: The Moments of the Non-Central t-DistributionAuthor(s): Biometrika, Vol. 48, No. 3/4 (Dec., 1961), pp. 465-468\n"
+}

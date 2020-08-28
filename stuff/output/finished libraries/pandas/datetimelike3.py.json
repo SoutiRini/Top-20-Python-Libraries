@@ -1,0 +1,7 @@
+{
+    "source file": "datetimelike3.py",
+    "line number": "52",
+    "func name": "_join_i8_wrapper",
+    "func arg": "(joinf, with_indexers)",
+    "comments": "Create the join wrapper methods.\n\n\n"
+}

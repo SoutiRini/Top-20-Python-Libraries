@@ -1,0 +1,7 @@
+{
+    "source file": "local.py",
+    "line number": "821",
+    "func name": "make_2d",
+    "func arg": "(tensor, split_dim)",
+    "comments": "Reshapes an N-dimensional tensor into a 2D tensor.\n\nDimensions before (excluding) and after (including) `split_dim` are grouped together.\n\nArguments: tensor: a tensor of shape `(d0, ..., d(N-1))`. split_dim: an integer from 1 to N-1, index of the dimension to group dimensions before (excluding) and after (including).\n##### Returns\n"
+}

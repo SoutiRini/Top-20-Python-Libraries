@@ -1,0 +1,7 @@
+{
+    "source file": "conv_test25.py",
+    "line number": "38",
+    "func name": "_cudnn_convolution_algo_count",
+    "func arg": "(direction)",
+    "comments": ""
+}

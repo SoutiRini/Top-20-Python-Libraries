@@ -1,0 +1,7 @@
+{
+    "source file": "ccompiler_opt.py",
+    "line number": "2438",
+    "func name": "new_ccompiler_opt",
+    "func arg": "(compiler, **kwargs)",
+    "comments": "Create a new instance of 'CCompilerOpt' and generate the dispatch header inside NumPy source dir.\n\nParameters ---------- 'compiler' : CCompiler instance '**kwargs': passed as-is to `CCompilerOpt(...)`\n##### Returns\n"
+}

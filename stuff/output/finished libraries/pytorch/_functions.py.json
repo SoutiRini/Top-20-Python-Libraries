@@ -1,0 +1,7 @@
+{
+    "source file": "_functions.py",
+    "line number": "111",
+    "func name": "_get_stream",
+    "func arg": "(device)",
+    "comments": "Gets a background stream for copying between CPU and GPU\n\n\n"
+}

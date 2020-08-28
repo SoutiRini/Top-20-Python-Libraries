@@ -1,0 +1,7 @@
+{
+    "source file": "less.py",
+    "line number": "27",
+    "func name": "make_less_tests",
+    "func arg": "(options)",
+    "comments": "Make a set of tests to do less.\n\n\n"
+}

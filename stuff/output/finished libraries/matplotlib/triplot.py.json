@@ -1,0 +1,7 @@
+{
+    "source file": "triplot.py",
+    "line number": "5",
+    "func name": "triplot",
+    "func arg": "(ax, **kwargs)",
+    "comments": "Draw a unstructured triangular grid as lines and/or markers.\n\nThe triangulation to plot can be specified in one of two ways; either::\n\ntriplot(triangulation, ...)\n\nwhere triangulation is a `.Triangulation` object, or\n\n::\n\ntriplot(x, y, ...) triplot(x, y, triangles, ...) triplot(x, y, triangles=triangles, ...) triplot(x, y, mask=mask, ...) triplot(x, y, triangles, mask=mask, ...)\n\nin which case a Triangulation object will be created.\n\nSee `.Triangulation` for a explanation of these possibilities.\n\nThe remaining args and kwargs are the same as for `~.Axes.plot`.\n##### Returns\n* **lines **: `~matplotlib.lines.Line2D`\n    The drawn triangles edges.\n\n* **markers **: `~matplotlib.lines.Line2D`\n    The drawn marker nodes.\n\n"
+}

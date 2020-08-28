@@ -1,0 +1,7 @@
+{
+    "source file": "opt23.py",
+    "line number": "7551",
+    "func name": "local_useless_topk",
+    "func arg": "(node)",
+    "comments": "TopKOp generates two outputs by default This opt removes the useless ones\n\n\n"
+}

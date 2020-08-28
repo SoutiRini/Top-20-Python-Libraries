@@ -1,0 +1,7 @@
+{
+    "source file": "ImageDraw.py",
+    "line number": "559",
+    "func name": "_color_diff",
+    "func arg": "(color1, color2)",
+    "comments": "Uses 1-norm distance to calculate difference between two values.\n\n\n"
+}

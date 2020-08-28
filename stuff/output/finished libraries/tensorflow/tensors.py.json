@@ -1,0 +1,7 @@
+{
+    "source file": "tensors.py",
+    "line number": "51",
+    "func name": "is_range_tensor",
+    "func arg": "(t)",
+    "comments": "Returns True if a tensor is the result of a tf.range op. Best effort.\n\n\n"
+}

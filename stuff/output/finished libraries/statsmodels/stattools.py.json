@@ -1,0 +1,7 @@
+{
+    "source file": "stattools.py",
+    "line number": "1907",
+    "func name": "_kpss_autolag",
+    "func arg": "(resids, nobs)",
+    "comments": "Computes the number of lags for covariance matrix estimation in KPSS test using method of Hobijn et al (1998). See also Andrews (1991), Newey & West (1994), and Schwert (1989). Assumes Bartlett / Newey-West kernel.\n\n\n"
+}

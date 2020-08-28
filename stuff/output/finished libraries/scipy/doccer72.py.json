@@ -1,0 +1,7 @@
+{
+    "source file": "doccer72.py",
+    "line number": "251",
+    "func name": "doc_replace",
+    "func arg": "(obj, oldval, newval)",
+    "comments": "Decorator to take the docstring from obj, with oldval replaced by newval\n\nEquivalent to ``func.__doc__ = obj.__doc__.replace(oldval, newval)``\n\nParameters ---------- obj: object The object to take the docstring from. oldval: string The string to replace from the original docstring. newval: string The string to replace ``oldval`` with.\n"
+}

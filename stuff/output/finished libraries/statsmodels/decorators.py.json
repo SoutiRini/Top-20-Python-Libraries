@@ -1,0 +1,7 @@
+{
+    "source file": "decorators.py",
+    "line number": "8",
+    "func name": "array_like",
+    "func arg": "(pos, name, dtype, ndim, maxdim, shape, order, contiguous)",
+    "comments": ""
+}

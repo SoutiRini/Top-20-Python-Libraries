@@ -1,0 +1,7 @@
+{
+    "source file": "summary_ops_v2.py",
+    "line number": "1359",
+    "func name": "trace_off",
+    "func arg": "()",
+    "comments": "Stops the current trace and discards any collected information.\n\n\n"
+}

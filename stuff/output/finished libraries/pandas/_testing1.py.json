@@ -1,0 +1,7 @@
+{
+    "source file": "_testing1.py",
+    "line number": "2737",
+    "func name": "convert_rows_list_to_csv_str",
+    "func arg": "(rows_list)",
+    "comments": "Convert list of CSV rows to single CSV-formatted string for current OS.\n\nThis method is used for creating expected value of to_csv() method.\n\nParameters ---------- rows_list : List[str] Each element represents the row of csv.\n##### Returns\n"
+}

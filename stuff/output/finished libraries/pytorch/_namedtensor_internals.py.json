@@ -1,0 +1,7 @@
+{
+    "source file": "_namedtensor_internals.py",
+    "line number": "98",
+    "func name": "update_names",
+    "func arg": "(tensor, names, rename_map, inplace)",
+    "comments": "There are two usages\n\ntensor.rename(*names) returns a view on tensor with named dims `names`. `names` must be of length `tensor.dim()`; otherwise, if '...' is in `names`, then it is expanded greedily to be equal to the corresponding names from `tensor.names`.\n\nFor example, ``` >>> x = torch.empty(2, 3, 5, 7, names=('N', 'C', 'H', 'W')) >>> x.rename('...', 'height', 'width').names ('N', 'C', 'height', 'width')\n\n>>> x.rename('batch', '...', 'width').names ('batch', 'C', 'H', 'width') ```\n\ntensor.rename(**rename_map) returns a view on tensor that has rename dims as specified in the mapping `rename_map`.\n\nFor example, ``` >>> x = torch.empty(2, 3, 5, 7, names=('N', 'C', 'H', 'W')) >>> x.rename(W='width', H='height').names ('N', 'C', 'height', 'width') ```\n\nFinally, tensor.rename has an in-place version called tensor.rename_.\n"
+}

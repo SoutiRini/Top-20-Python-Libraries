@@ -1,0 +1,7 @@
+{
+    "source file": "builder_impl.py",
+    "line number": "795",
+    "func name": "_add_op_to_signature_def_map",
+    "func arg": "(signature_def_map, op, key)",
+    "comments": ""
+}

@@ -1,0 +1,7 @@
+{
+    "source file": "mirrored_run.py",
+    "line number": "128",
+    "func name": "_call_for_each_replica",
+    "func arg": "(distribution, fn, args, kwargs)",
+    "comments": "Run `fn` in separate threads, once per replica/worker device.\n\n\n##### Args\n* **distribution**: the DistributionStrategy object.\n\n* **fn**: function to run (will be run once per replica, each in its own thread).\n\n* **args**: positional arguments for `fn`\n\n* **kwargs**: keyword arguments for `fn`.\n\n##### Returns\n"
+}

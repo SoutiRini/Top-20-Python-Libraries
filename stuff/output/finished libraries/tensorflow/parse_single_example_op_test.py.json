@@ -1,0 +1,7 @@
+{
+    "source file": "parse_single_example_op_test.py",
+    "line number": "69",
+    "func name": "_compare_output_to_expected",
+    "func arg": "(tester, dict_tensors, expected_tensors, flat_output)",
+    "comments": ""
+}

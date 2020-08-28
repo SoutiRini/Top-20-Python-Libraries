@@ -1,0 +1,7 @@
+{
+    "source file": "distribute_utils.py",
+    "line number": "248",
+    "func name": "create_mirrored_variable",
+    "func arg": "(strategy, real_mirrored_creator, mirrored_cls, sync_on_read_cls, **kwargs)",
+    "comments": ""
+}

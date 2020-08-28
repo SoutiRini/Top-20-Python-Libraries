@@ -1,0 +1,7 @@
+{
+    "source file": "backprop.py",
+    "line number": "726",
+    "func name": "_handle_or_self",
+    "func arg": "(x)",
+    "comments": "Unwrap resource variable/ndarray to return tensors.\n\n\n"
+}

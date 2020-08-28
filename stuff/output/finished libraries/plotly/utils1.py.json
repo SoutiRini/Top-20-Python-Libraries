@@ -1,0 +1,7 @@
+{
+    "source file": "utils1.py",
+    "line number": "22",
+    "func name": "basic_auth",
+    "func arg": "(username, password)",
+    "comments": "Creates the basic auth value to be used in an authorization header.\n\nThis is mostly copied from the requests library.\n\n:param (str) username: A Plotly username. :param (str) password: The password for the given Plotly username. :returns: (str) An 'authorization' header for use in a request header.\n"
+}

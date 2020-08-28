@@ -1,0 +1,7 @@
+{
+    "source file": "mlir.py",
+    "line number": "26",
+    "func name": "convert_graph_def",
+    "func arg": "(graph_def, pass_pipeline)",
+    "comments": "Import a GraphDef and convert it to a textual MLIR module.\n\n\n##### Args\n* **graph_def**: An object of type graph_pb2.GraphDef or a textual proto\n  representation of a valid GraphDef.\n\n* **pass_pipeline**: A textual description of an MLIR Pass Pipeline to run on the\n  module, see MLIR documentation for the\n  [textual pass pipeline syntax](https\n\n##### Returns\n"
+}

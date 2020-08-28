@@ -1,0 +1,7 @@
+{
+    "source file": "_tensorboard_vis.py",
+    "line number": "95",
+    "func name": "visualize_rec",
+    "func arg": "(graph, value_map, name_prefix, pb_graph, executors_it)",
+    "comments": "Recursive part of visualize (basically skips setting up the input and output nodes).\n\n\n"
+}

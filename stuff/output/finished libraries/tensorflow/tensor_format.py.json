@@ -1,0 +1,7 @@
+{
+    "source file": "tensor_format.py",
+    "line number": "488",
+    "func name": "numeric_summary",
+    "func arg": "(tensor)",
+    "comments": "Get a text summary of a numeric tensor.\n\nThis summary is only available for numeric (int*, float*, complex*) and Boolean tensors.\n##### Args\n* **tensor**: (`numpy.ndarray`) the tensor value object to be summarized.\n\n##### Returns\n"
+}

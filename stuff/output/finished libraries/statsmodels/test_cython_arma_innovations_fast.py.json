@@ -1,0 +1,7 @@
+{
+    "source file": "test_cython_arma_innovations_fast.py",
+    "line number": "334",
+    "func name": "test_regression_with_arma_errors",
+    "func arg": "(ar_params, ma_params, sigma2)",
+    "comments": ""
+}

@@ -1,0 +1,7 @@
+{
+    "source file": "operators.py",
+    "line number": "19",
+    "func name": "reshape_from_tensor_shape",
+    "func arg": "(x, shape)",
+    "comments": ""
+}

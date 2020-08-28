@@ -1,0 +1,7 @@
+{
+    "source file": "nasnet.py",
+    "line number": "792",
+    "func name": "decode_predictions",
+    "func arg": "(preds, top)",
+    "comments": ""
+}

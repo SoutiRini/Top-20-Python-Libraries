@@ -1,0 +1,7 @@
+{
+    "source file": "profiler.py",
+    "line number": "157",
+    "func name": "start_profiler_server",
+    "func arg": "(port)",
+    "comments": "Start a profiler grpc server that listens to given port.\n\nThe profiler server will keep the program running even the training finishes. Please shutdown the server with CTRL-C. It can be used in both eager mode and graph mode. The service defined in tensorflow/core/profiler/profiler_service.proto. Please use tensorflow/contrib/tpu/profiler/capture_tpu_profile to capture tracable file following https://cloud.google.com/tpu/docs/cloud-tpu-tools#capture_trace\n##### Args\n* **port**: port profiler server listens to.\n\n"
+}

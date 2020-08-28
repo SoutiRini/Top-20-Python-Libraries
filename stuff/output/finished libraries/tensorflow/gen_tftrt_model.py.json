@@ -1,0 +1,7 @@
+{
+    "source file": "gen_tftrt_model.py",
+    "line number": "90",
+    "func name": "GenerateModelV1",
+    "func arg": "(tf_saved_model_dir, tftrt_saved_model_dir)",
+    "comments": "Generate and convert a model using TFv1 API.\n\n\n"
+}

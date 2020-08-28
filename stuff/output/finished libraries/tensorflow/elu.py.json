@@ -1,0 +1,7 @@
+{
+    "source file": "elu.py",
+    "line number": "28",
+    "func name": "make_elu_tests",
+    "func arg": "(options)",
+    "comments": "Make a set of tests to do (float) tf.nn.elu.\n\n\n"
+}

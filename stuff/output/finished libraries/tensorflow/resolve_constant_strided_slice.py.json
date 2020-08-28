@@ -1,0 +1,7 @@
+{
+    "source file": "resolve_constant_strided_slice.py",
+    "line number": "29",
+    "func name": "make_resolve_constant_strided_slice_tests",
+    "func arg": "(options)",
+    "comments": "Make a set of tests to show strided_slice yields incorrect results.\n\n\n"
+}

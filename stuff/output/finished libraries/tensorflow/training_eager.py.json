@@ -1,0 +1,7 @@
+{
+    "source file": "training_eager.py",
+    "line number": "326",
+    "func name": "test_on_batch",
+    "func arg": "(model, inputs, targets, sample_weights, output_loss_metrics)",
+    "comments": "Calculates the loss for one input batch.\n\nArguments: model: Model whose loss has to be calculated. inputs: Input batch data. targets: Target batch data. sample_weights: Sample weight batch data. output_loss_metrics: List of metrics that are used to aggregated output loss values.\n##### Returns\n* **Dict with three items**: 'total_loss'\n\n"
+}

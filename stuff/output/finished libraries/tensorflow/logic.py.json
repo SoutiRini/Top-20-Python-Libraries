@@ -1,0 +1,7 @@
+{
+    "source file": "logic.py",
+    "line number": "77",
+    "func name": "make_logical_xor_tests",
+    "func arg": "(options)",
+    "comments": "Make a set of tests to do logical_xor, test logical_not as well.\n\n\n"
+}

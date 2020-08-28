@@ -1,0 +1,7 @@
+{
+    "source file": "test_fasttext.py",
+    "line number": "1473",
+    "func name": "_read_wordvectors_using_fasttext",
+    "func arg": "(fasttext_fname, words)",
+    "comments": ""
+}

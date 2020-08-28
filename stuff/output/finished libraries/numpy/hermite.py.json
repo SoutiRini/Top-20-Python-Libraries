@@ -1,0 +1,7 @@
+{
+    "source file": "hermite.py",
+    "line number": "1609",
+    "func name": "hermweight",
+    "func arg": "(x)",
+    "comments": "Weight function of the Hermite polynomials.\n\nThe weight function is :math:`\\exp(-x^2)` and the interval of integration is :math:`[-\\inf, \\inf]`. the Hermite polynomials are orthogonal, but not normalized, with respect to this weight function.\n\nParameters ---------- x : array_like Values at which the weight function will be computed.\n##### Returns\n* **w **: ndarray\n   The weight function at `x`.\n\n* **.. versionadded**: \n\n"
+}

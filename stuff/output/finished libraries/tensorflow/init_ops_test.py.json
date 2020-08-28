@@ -1,0 +1,7 @@
+{
+    "source file": "init_ops_test.py",
+    "line number": "92",
+    "func name": "_init_sampler",
+    "func arg": "(tc, init, num)",
+    "comments": "Returns a func to generate a random tensor of shape [num].\n\n\n##### Args\n* **tc**: An instance of TensorFlowTestCase.\n\n* **init**: An Initializer that generates a tensor of a given shape\n\n* **num**: Size of 1D tensor to create.\n\n##### Returns\n"
+}

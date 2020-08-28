@@ -1,0 +1,7 @@
+{
+    "source file": "eval_measures.py",
+    "line number": "528",
+    "func name": "hqic_sigma",
+    "func arg": "(sigma2, nobs, df_modelwc, islog)",
+    "comments": "Hannan-Quinn information criterion (HQC)\n\nParameters ---------- sigma2 : float estimate of the residual variance or determinant of Sigma_hat in the multivariate case. If islog is true, then it is assumed that sigma is already log-ed, for example logdetSigma. nobs : int number of observations df_modelwc : int number of parameters including constant\n##### Returns\n* **hqic **: float\n    information criterion\n\n"
+}

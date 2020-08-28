@@ -1,0 +1,7 @@
+{
+    "source file": "test_array_coercion.py",
+    "line number": "126",
+    "func name": "is_parametric_dtype",
+    "func arg": "(dtype)",
+    "comments": "Returns True if the the dtype is a parametric legacy dtype (itemsize is 0, or a datetime without units)\n\n\n"
+}

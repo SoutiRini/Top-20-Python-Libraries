@@ -1,0 +1,7 @@
+{
+    "source file": "norm_op_test.py",
+    "line number": "67",
+    "func name": "_GetNormOpTest",
+    "func arg": "(dtype_, shape_, ord_, axis_, keep_dims_, use_static_shape_)",
+    "comments": ""
+}

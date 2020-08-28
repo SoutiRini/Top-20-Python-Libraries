@@ -1,0 +1,7 @@
+{
+    "source file": "_optional1.py",
+    "line number": "47",
+    "func name": "import_optional_dependency",
+    "func arg": "(name, extra, raise_on_missing, on_version)",
+    "comments": "Import an optional dependency.\n\nBy default, if a dependency is missing an ImportError with a nice message will be raised. If a dependency is present, but too old, we raise.\n\nParameters ---------- name : str The module name. This should be top-level only, so that the version may be checked. extra : str Additional text to include in the ImportError message. raise_on_missing : bool, default True Whether to raise if the optional dependency is not found. When False and the module is not present, None is returned. on_version : str {'raise', 'warn'} What to do when a dependency's version is too old.\n\n* raise : Raise an ImportError * warn : Warn that the version is too old. Returns None * ignore: Return the module, even if the version is too old. It's expected that users validate the version locally when using ``on_version=\"ignore\"`` (see. ``io/html.py``)\n##### Returns\n* **maybe_module **: Optional[ModuleType]\n    The imported module, when found and the version is correct.\n    None is returned when the package is not found and `raise_on_missing`\n    is False, or when the package's version is too old and `on_version`\n    is ``'warn'``.\n\n"
+}

@@ -1,0 +1,7 @@
+{
+    "source file": "nonlin.py",
+    "line number": "1534",
+    "func name": "_nonlin_wrapper",
+    "func arg": "(name, jac)",
+    "comments": "Construct a solver wrapper with given name and Jacobian approx.\n\nIt inspects the keyword arguments of ``jac.__init__``, and allows to use the same arguments in the wrapper function, in addition to the keyword arguments of `nonlin_solve`\n"
+}

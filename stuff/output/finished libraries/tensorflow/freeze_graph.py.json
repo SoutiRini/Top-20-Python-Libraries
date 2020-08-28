@@ -1,0 +1,7 @@
+{
+    "source file": "freeze_graph.py",
+    "line number": "381",
+    "func name": "run_main",
+    "func arg": "()",
+    "comments": "Main function of freeze_graph.\n\n\n"
+}

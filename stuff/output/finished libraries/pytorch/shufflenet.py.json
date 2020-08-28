@@ -1,0 +1,7 @@
+{
+    "source file": "shufflenet.py",
+    "line number": "176",
+    "func name": "create_shufflenet",
+    "func arg": "(model, data, num_input_channels, num_labels, label, is_test, no_loss)",
+    "comments": ""
+}

@@ -1,0 +1,7 @@
+{
+    "source file": "_weight_boosting.py",
+    "line number": "265",
+    "func name": "_samme_proba",
+    "func arg": "(estimator, n_classes, X)",
+    "comments": "Calculate algorithm 4, step 2, equation c) of Zhu et al [1].\n\nReferences ---------- .. [1] J. Zhu, H. Zou, S. Rosset, T. Hastie, \"Multi-class AdaBoost\", 2009.\n"
+}

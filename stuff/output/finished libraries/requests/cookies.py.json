@@ -1,0 +1,7 @@
+{
+    "source file": "cookies.py",
+    "line number": "529",
+    "func name": "merge_cookies",
+    "func arg": "(cookiejar, cookies)",
+    "comments": "Add cookies to cookiejar and returns a merged CookieJar.\n\nparam cookiejar: CookieJar object to add the cookies to. :param cookies: Dictionary or CookieJar object to be added. :rtype: CookieJar\n"
+}

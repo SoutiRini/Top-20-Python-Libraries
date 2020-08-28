@@ -1,0 +1,7 @@
+{
+    "source file": "tools.py",
+    "line number": "31",
+    "func name": "video_input",
+    "func arg": "(model, blob_in, blob_out, **kwargs)",
+    "comments": ""
+}

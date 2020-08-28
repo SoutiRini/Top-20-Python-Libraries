@@ -1,0 +1,7 @@
+{
+    "source file": "less_equal.py",
+    "line number": "27",
+    "func name": "make_less_equal_tests",
+    "func arg": "(options)",
+    "comments": "Make a set of tests to do less_equal.\n\n\n"
+}

@@ -1,0 +1,7 @@
+{
+    "source file": "mosaic.py",
+    "line number": "41",
+    "func name": "identify_axes",
+    "func arg": "(ax_dict, fontsize)",
+    "comments": "Helper to identify the Axes in the examples below.\n\nDraws the label in a large font in the center of the Axes.\n\nParameters ---------- ax_dict : Dict[str, Axes] Mapping between the title / label and the Axes.\n\nfontsize : int, optional How big the label should be\n"
+}

@@ -1,0 +1,7 @@
+{
+    "source file": "download_sample_data.py",
+    "line number": "26",
+    "func name": "extract_zip",
+    "func arg": "(zip_name, exclude_term)",
+    "comments": "Extracts a zip file to its containing directory.\n\n\n"
+}

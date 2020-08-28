@@ -1,0 +1,7 @@
+{
+    "source file": "linear_operator_test_util.py",
+    "line number": "1087",
+    "func name": "random_normal_correlated_columns",
+    "func arg": "(shape, mean, stddev, dtype, eps, seed)",
+    "comments": "Batch matrix with (possibly complex) Gaussian entries and correlated cols.\n\n\n##### Args\n* **shape**: Python list of integers.\n  Shape of the returned tensor.  Must be at least length two.\n\n* **mean**: `Tensor` giving mean of normal to sample from.\n\n* **stddev**: `Tensor` giving stdev of normal to sample from.\n\n* **dtype**: `TensorFlow` `dtype` or numpy dtype\n\n* **eps**: Distance each column is perturbed from the low-dimensional subspace.\n\n* **seed**: Python integer seed for the RNG.\n\n##### Returns\n"
+}

@@ -1,0 +1,7 @@
+{
+    "source file": "metrics_correctness_test.py",
+    "line number": "48",
+    "func name": "custom_generator_multi_io",
+    "func arg": "(sample_weights)",
+    "comments": ""
+}

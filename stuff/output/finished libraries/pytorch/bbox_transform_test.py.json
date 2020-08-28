@@ -1,0 +1,7 @@
+{
+    "source file": "bbox_transform_test.py",
+    "line number": "193",
+    "func name": "generate_rois_rotated",
+    "func arg": "(roi_counts, im_dims)",
+    "comments": ""
+}

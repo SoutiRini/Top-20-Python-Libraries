@@ -1,0 +1,7 @@
+{
+    "source file": "test_gradient_boosting2.py",
+    "line number": "760",
+    "func name": "test_staged_predict",
+    "func arg": "(HistGradientBoosting, X, y)",
+    "comments": ""
+}

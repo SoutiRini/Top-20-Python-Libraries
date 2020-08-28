@@ -1,0 +1,7 @@
+{
+    "source file": "test_compare_images.py",
+    "line number": "45",
+    "func name": "test_image_comparison_expect_rms",
+    "func arg": "(im1, im2, tol, expect_rms)",
+    "comments": "Compare two images, expecting a particular RMS error.\n\nim1 and im2 are filenames relative to the baseline_dir directory.\n\ntol is the tolerance to pass to compare_images.\n\nexpect_rms is the expected RMS value, or None. If None, the test will succeed if compare_images succeeds. Otherwise, the test will succeed if compare_images fails and returns an RMS error almost equal to this value.\n"
+}

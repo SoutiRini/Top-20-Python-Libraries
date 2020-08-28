@@ -1,0 +1,7 @@
+{
+    "source file": "hb.py",
+    "line number": "518",
+    "func name": "hb_write",
+    "func arg": "(path_or_open_file, m, hb_info)",
+    "comments": "Write HB-format file.\n\nParameters ---------- path_or_open_file : path-like or file-like If a file-like object, it is used as-is. Otherwise, it is opened before writing. m : sparse-matrix the sparse matrix to write hb_info : HBInfo contains the meta-data for write\n##### Returns\n* **features are**: - assembled, non-symmetric, real matrices\n    - integer for pointer/indices\n    - exponential format for float values, and int format\n\n* **We can read and write a harwell-boeing format file**: \n\n"
+}

@@ -1,0 +1,7 @@
+{
+    "source file": "test_spidermiddleware_httperror.py",
+    "line number": "52",
+    "func name": "_responses",
+    "func arg": "(request, status_codes)",
+    "comments": ""
+}

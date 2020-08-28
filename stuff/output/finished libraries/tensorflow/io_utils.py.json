@@ -1,0 +1,7 @@
+{
+    "source file": "io_utils.py",
+    "line number": "236",
+    "func name": "ask_to_proceed_with_overwrite",
+    "func arg": "(filepath)",
+    "comments": "Produces a prompt asking about overwriting a file.\n\nArguments: filepath: the path to the file to be overwritten.\n##### Returns\n"
+}

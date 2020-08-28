@@ -1,0 +1,7 @@
+{
+    "source file": "caffe2_resnet50_default_param_update.py",
+    "line number": "7",
+    "func name": "gen_param_update_builder_fun",
+    "func arg": "(model, dataset, is_train)",
+    "comments": ""
+}

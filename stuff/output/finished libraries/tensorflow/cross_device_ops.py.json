@@ -1,0 +1,7 @@
+{
+    "source file": "cross_device_ops.py",
+    "line number": "1167",
+    "func name": "choose_the_best",
+    "func arg": "(devices, session_config)",
+    "comments": "Find the best CrossDeviceOps locally given a `tf.compat.v1.ConfigProto`.\n\n\n##### Args\n* **devices**: a list of devices passed to `tf.distribute.Strategy`.\n\n* **session_config**: a `tf.compat.v1.ConfigProto` or `None`. If `None`, it will\n  make decision based on all logical devices.\n\n##### Returns\n"
+}

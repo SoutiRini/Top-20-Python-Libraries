@@ -1,0 +1,7 @@
+{
+    "source file": "index_lookup_adapt_benchmark.py",
+    "line number": "50",
+    "func name": "get_top_k",
+    "func arg": "(dataset, k)",
+    "comments": "Python implementation of vocabulary building using a defaultdict.\n\n\n"
+}

@@ -1,0 +1,7 @@
+{
+    "source file": "sql1.py",
+    "line number": "1760",
+    "func name": "get_schema",
+    "func arg": "(frame, name, keys, con, dtype)",
+    "comments": "Get the SQL db table schema for the given frame.\n\nParameters ---------- frame : DataFrame name : string name of SQL table keys : string or sequence, default: None columns to use a primary key con: an open SQL database connection object or a SQLAlchemy connectable Using SQLAlchemy makes it possible to use any DB supported by that library, default: None If a DBAPI2 object, only sqlite3 is supported. dtype : dict of column name to SQL type, default None Optional specifying the datatype for columns. The SQL type should be a SQLAlchemy type, or a string for sqlite3 fallback connection.\n"
+}

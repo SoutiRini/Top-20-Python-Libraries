@@ -1,0 +1,7 @@
+{
+    "source file": "inspect_utils.py",
+    "line number": "339",
+    "func name": "getfutureimports",
+    "func arg": "(entity)",
+    "comments": "Detects what future imports are necessary to safely execute entity source.\n\n\n##### Args\n* **entity**: Any object\n\n##### Returns\n"
+}

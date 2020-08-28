@@ -1,0 +1,7 @@
+{
+    "source file": "selenium.py",
+    "line number": "82",
+    "func name": "has_no_console_errors",
+    "func arg": "(pytestconfig)",
+    "comments": "Provide a function to assert no browser console errors are present.\n\nUnfortunately logs are only accessibly with Chrome web driver, see e.g.\n\nhttps://github.com/mozilla/geckodriver/issues/284\n\nFor non-Chrome webdrivers this check always returns True.\n"
+}

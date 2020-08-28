@@ -1,0 +1,7 @@
+{
+    "source file": "rank.py",
+    "line number": "27",
+    "func name": "make_rank_tests",
+    "func arg": "(options)",
+    "comments": "Make a set of tests to do rank.\n\n\n"
+}

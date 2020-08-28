@@ -1,0 +1,7 @@
+{
+    "source file": "regex.py",
+    "line number": "15",
+    "func name": "clean_link",
+    "func arg": "(link_text)",
+    "comments": "Remove leading and trailing whitespace and punctuation\n\n\n"
+}

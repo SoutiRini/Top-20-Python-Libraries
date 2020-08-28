@@ -1,0 +1,7 @@
+{
+    "source file": "distributed_c10d.py",
+    "line number": "1720",
+    "func name": "new_group",
+    "func arg": "(ranks, timeout, backend)",
+    "comments": "Creates a new distributed group.\n\nThis function requires that all processes in the main group (i.e. all processes that are part of the distributed job) enter this function, even if they are not going to be members of the group. Additionally, groups should be created in the same order in all processes.\n\nArguments: ranks (list[int]): List of ranks of group members. timeout (timedelta, optional): Timeout for operations executed against the process group. Default value equals 30 minutes. This is only applicable for the ``gloo`` backend. backend (str or Backend, optional): The backend to use. Depending on build-time configurations, valid values are ``gloo`` and ``nccl``. By default uses the same backend as the global group. This field should be given as a lowercase string (e.g., ``\"gloo\"``), which can also be accessed via :class:`Backend` attributes (e.g., ``Backend.GLOO``).\n##### Returns\n"
+}

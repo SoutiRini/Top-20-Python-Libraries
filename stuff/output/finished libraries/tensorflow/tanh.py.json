@@ -1,0 +1,7 @@
+{
+    "source file": "tanh.py",
+    "line number": "28",
+    "func name": "make_tanh_tests",
+    "func arg": "(options)",
+    "comments": "Make a set of tests to do tanh.\n\n\n"
+}

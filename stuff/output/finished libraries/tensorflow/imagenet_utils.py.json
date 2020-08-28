@@ -1,0 +1,7 @@
+{
+    "source file": "imagenet_utils.py",
+    "line number": "411",
+    "func name": "validate_activation",
+    "func arg": "(classifier_activation, weights)",
+    "comments": "validates that the classifer_activation is compatible with the weights.\n\n\n##### Args\n* **classifier_activation**: str or callable activation function\n\n* **weights**: The pretrained weights to load.\n\n"
+}

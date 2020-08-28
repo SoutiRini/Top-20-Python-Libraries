@@ -1,0 +1,7 @@
+{
+    "source file": "function_serialization.py",
+    "line number": "110",
+    "func name": "wrap_cached_variables",
+    "func arg": "(concrete_function)",
+    "comments": "Wraps the concrete function if it uses cached read tensors.\n\nThis function creates a new concrete function that captures variables instead of the cached read tensors.\n##### Args\n* **concrete_function**: A Concrete function that maybe captures cached read\n  tensors.\n\n##### Returns\n"
+}

@@ -1,0 +1,7 @@
+{
+    "source file": "gauges.py",
+    "line number": "49",
+    "func name": "add_gauge",
+    "func arg": "(radius, max_value, length, direction, color, major_step, minor_step)",
+    "comments": ""
+}

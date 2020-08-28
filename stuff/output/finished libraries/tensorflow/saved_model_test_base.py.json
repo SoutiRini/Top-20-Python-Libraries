@@ -1,0 +1,7 @@
+{
+    "source file": "saved_model_test_base.py",
+    "line number": "108",
+    "func name": "load_and_run_with_saved_model_api",
+    "func arg": "(distribution, saved_dir, predict_dataset, output_name)",
+    "comments": "Loads a saved_model using tf.saved_model API, and runs it.\n\n\n"
+}

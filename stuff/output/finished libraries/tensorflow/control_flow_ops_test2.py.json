@@ -1,0 +1,7 @@
+{
+    "source file": "control_flow_ops_test2.py",
+    "line number": "1298",
+    "func name": "create_dynamic_lstm",
+    "func arg": "(cell_fn, batch_size, state_size, max_steps)",
+    "comments": ""
+}

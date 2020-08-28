@@ -1,0 +1,7 @@
+{
+    "source file": "_expm_frechet.py",
+    "line number": "351",
+    "func name": "expm_cond",
+    "func arg": "(A, check_finite)",
+    "comments": "Relative condition number of the matrix exponential in the Frobenius norm.\n\nParameters ---------- A : 2-D array_like Square input matrix with shape (N, N). check_finite : bool, optional Whether to check that the input matrix contains only finite numbers. Disabling may give a performance gain, but may result in problems (crashes, non-termination) if the inputs do contain infinities or NaNs.\n##### Returns\n* **kappa **: float\n    The relative condition number of the matrix exponential\n    in the Frobenius norm\n\n* **.. versionadded**: \n\n* **expm **: Compute the exponential of a matrix.\n\n* **expm_frechet **: Compute the Frechet derivative of the matrix exponential.\n\n"
+}

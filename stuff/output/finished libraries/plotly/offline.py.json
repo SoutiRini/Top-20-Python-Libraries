@@ -1,0 +1,7 @@
+{
+    "source file": "offline.py",
+    "line number": "796",
+    "func name": "enable_mpl_offline",
+    "func arg": "(resize, strip_style, verbose, show_link, link_text, validate)",
+    "comments": "Convert mpl plots to locally hosted HTML documents.\n\nThis function should be used with the inline matplotlib backend that ships with IPython that can be enabled with `%pylab inline` or `%matplotlib inline`. This works by adding an HTML formatter for Figure objects; the existing SVG/PNG formatters will remain enabled.\n\n(idea taken from `mpld3._display.enable_notebook`)\n\nExample: ``` from plotly.offline import enable_mpl_offline import matplotlib.pyplot as plt\n\nenable_mpl_offline()\n\nfig = plt.figure() x = [10, 15, 20, 25, 30] y = [100, 250, 200, 150, 300] plt.plot(x, y, \"o\") fig ```\n"
+}

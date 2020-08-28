@@ -1,0 +1,7 @@
+{
+    "source file": "optimizers1.py",
+    "line number": "873",
+    "func name": "get",
+    "func arg": "(identifier)",
+    "comments": "Retrieves a Keras Optimizer instance.\n\nArguments: identifier: Optimizer identifier, one of\n\n- String: name of an optimizer\n\n- Dictionary: configuration dictionary.\n\n- Keras Optimizer instance (it will be returned unchanged).\n\n- TensorFlow Optimizer instance (it will be wrapped as a Keras Optimizer).\n##### Returns\n"
+}

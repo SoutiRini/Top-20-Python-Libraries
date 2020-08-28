@@ -1,0 +1,7 @@
+{
+    "source file": "try_ols_anova.py",
+    "line number": "169",
+    "func name": "dropname",
+    "func arg": "(ss, li)",
+    "comments": "drop names from a list of strings, names to drop are in space delimited list does not change original list\n\n\n"
+}

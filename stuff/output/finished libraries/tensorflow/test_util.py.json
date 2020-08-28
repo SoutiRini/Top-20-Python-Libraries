@@ -1,0 +1,7 @@
+{
+    "source file": "test_util.py",
+    "line number": "50",
+    "func name": "_gather",
+    "func arg": "(strategy, value)",
+    "comments": "Gathers a single value.\n\n\n"
+}

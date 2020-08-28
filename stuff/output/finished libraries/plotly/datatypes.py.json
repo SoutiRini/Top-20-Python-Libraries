@@ -1,0 +1,7 @@
+{
+    "source file": "datatypes.py",
+    "line number": "584",
+    "func name": "write_datatype_py",
+    "func arg": "(outdir, node)",
+    "comments": "Build datatype (graph_objs) class source code and write to a file\n\nParameters ---------- outdir : Root outdir in which the graph_objs package should reside node : The datatype node (node.is_datatype must evaluate to true) for which to build the datatype class\n##### Returns\n"
+}

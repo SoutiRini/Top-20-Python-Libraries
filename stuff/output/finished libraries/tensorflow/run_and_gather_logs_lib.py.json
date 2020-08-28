@@ -1,0 +1,7 @@
+{
+    "source file": "run_and_gather_logs_lib.py",
+    "line number": "101",
+    "func name": "run_and_gather_logs",
+    "func arg": "(name, test_name, test_args, benchmark_type)",
+    "comments": "Run the bazel test given by test_name.  Gather and return the logs.\n\n\n##### Args\n* **name**: Benchmark target identifier.\n\n* **test_name**: A unique bazel target, e.g. \"//path/to\n\n* **test_args**: A string containing all arguments to run the target with.\n\n* **benchmark_type**: A string representing the BenchmarkType enum; the\n  benchmark type for this target.\n\n##### Returns\n* **test_results**: A test_log_pb2.TestResults proto\n\n* **test_adjusted_name**: Unique benchmark name that consists of\n  benchmark name optionally followed by GPU type.\n\n"
+}

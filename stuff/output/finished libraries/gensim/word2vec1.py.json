@@ -1,0 +1,7 @@
+{
+    "source file": "word2vec1.py",
+    "line number": "492",
+    "func name": "score_cbow_pair",
+    "func arg": "(model, word, l1)",
+    "comments": ""
+}

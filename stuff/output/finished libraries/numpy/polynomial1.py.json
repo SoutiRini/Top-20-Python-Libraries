@@ -1,0 +1,7 @@
+{
+    "source file": "polynomial1.py",
+    "line number": "1393",
+    "func name": "polyroots",
+    "func arg": "(c)",
+    "comments": "Compute the roots of a polynomial.\n\nReturn the roots (a.k.a. \"zeros\") of the polynomial\n\n.. math:: p(x) = \\sum_i c[i] * x^i.\n\nParameters ---------- c : 1-D array_like 1-D array of polynomial coefficients.\n##### Returns\n* **out **: ndarray\n    Array of the roots of the polynomial. If all the roots are real,\n    then `out` is also real, otherwise it is complex.\n\n"
+}

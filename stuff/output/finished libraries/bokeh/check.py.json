@@ -1,0 +1,7 @@
+{
+    "source file": "check.py",
+    "line number": "87",
+    "func name": "check_integrity",
+    "func arg": "(models)",
+    "comments": "Apply validation and integrity checks to a collection of Bokeh models.\n\n\n##### Args\n* **models (seq[Model]) **: a collection of Models to test\n\n##### Returns\n* **dren will trigger a warning**: \n\n* **ode-block**: \n\n* **W-1002 (EMPTY_LAYOUT)**: Layout has no children\n\n"
+}

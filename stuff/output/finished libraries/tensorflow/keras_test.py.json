@@ -1,0 +1,7 @@
+{
+    "source file": "keras_test.py",
+    "line number": "107",
+    "func name": "create_central_storage_strategy",
+    "func arg": "()",
+    "comments": "Create a CentralStorageStrategy, using a GPU if it is available.\n\n\n"
+}

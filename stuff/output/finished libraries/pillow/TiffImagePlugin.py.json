@@ -1,0 +1,7 @@
+{
+    "source file": "TiffImagePlugin.py",
+    "line number": "1854",
+    "func name": "_save_all",
+    "func arg": "(im, fp, filename)",
+    "comments": ""
+}

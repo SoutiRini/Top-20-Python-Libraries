@@ -1,0 +1,7 @@
+{
+    "source file": "fc.py",
+    "line number": "185",
+    "func name": "fc_sparse",
+    "func arg": "(model, blob_in, blob_out, w_csr, iw, jw, bias, **kwargs)",
+    "comments": "FC_Sparse: Only takes in allocated weights\n\n\n"
+}

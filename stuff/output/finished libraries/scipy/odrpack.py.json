@@ -1,0 +1,7 @@
+{
+    "source file": "odrpack.py",
+    "line number": "103",
+    "func name": "_report_error",
+    "func arg": "(info)",
+    "comments": "Interprets the return code of the odr routine.\n\nParameters ---------- info : int The return code of the odr routine.\n##### Returns\n* **problems **: list(str)\n    A list of messages about why the odr() routine stopped.\n\n"
+}

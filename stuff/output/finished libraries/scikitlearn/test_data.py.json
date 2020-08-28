@@ -1,0 +1,7 @@
+{
+    "source file": "test_data.py",
+    "line number": "2534",
+    "func name": "test_minmax_scaler_clip",
+    "func arg": "(feature_range)",
+    "comments": ""
+}

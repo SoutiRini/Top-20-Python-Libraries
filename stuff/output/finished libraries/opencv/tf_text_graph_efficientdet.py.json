@@ -1,0 +1,7 @@
+{
+    "source file": "tf_text_graph_efficientdet.py",
+    "line number": "36",
+    "func name": "createGraph",
+    "func arg": "(modelPath, outputPath, min_level, aspect_ratios, num_scales, anchor_scale, num_classes, image_width, image_height)",
+    "comments": ""
+}

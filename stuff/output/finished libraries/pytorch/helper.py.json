@@ -1,0 +1,7 @@
+{
+    "source file": "helper.py",
+    "line number": "106",
+    "func name": "benchmark_pytorch_model",
+    "func arg": "(model, inputs, training, warmup_iters, main_iters, verbose)",
+    "comments": "Run the model several times, and measure the execution time. Return the execution time per iteration (millisecond).\n\n\n"
+}

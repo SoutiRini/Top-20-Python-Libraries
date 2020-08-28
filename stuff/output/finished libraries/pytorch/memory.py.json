@@ -1,0 +1,7 @@
+{
+    "source file": "memory.py",
+    "line number": "371",
+    "func name": "memory_summary",
+    "func arg": "(device, abbreviated)",
+    "comments": "Returns a human-readable printout of the current memory allocator statistics for a given device.\n\nThis can be useful to display periodically during training, or when handling out-of-memory exceptions.\n\nArguments: device (torch.device or int, optional): selected device. Returns printout for the current device, given by :func:`~torch.cuda.current_device`, if :attr:`device` is ``None`` (default). abbreviated (bool, optional): whether to return an abbreviated summary (default: False).\n\n.. note:: See :ref:`cuda-memory-management` for more details about GPU memory management.\n"
+}

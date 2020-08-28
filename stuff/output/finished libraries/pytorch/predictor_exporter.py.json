@@ -1,0 +1,7 @@
+{
+    "source file": "predictor_exporter.py",
+    "line number": "230",
+    "func name": "load_from_db",
+    "func arg": "(filename, db_type, device_option, **kwargs)",
+    "comments": ""
+}

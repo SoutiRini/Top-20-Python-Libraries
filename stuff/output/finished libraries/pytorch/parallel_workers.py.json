@@ -1,0 +1,7 @@
+{
+    "source file": "parallel_workers.py",
+    "line number": "287",
+    "func name": "run_worker",
+    "func arg": "(coordinator, worker)",
+    "comments": ""
+}

@@ -1,0 +1,7 @@
+{
+    "source file": "reduce_join_op_test.py",
+    "line number": "48",
+    "func name": "_joined_array",
+    "func arg": "(num_dims, reduce_dim)",
+    "comments": "Creates an ndarray with the result from reduce_join on input_array.\n\n\n##### Args\n* **num_dims**: The number of dimensions of the original input array.\n\n* **reduce_dim**: The dimension to reduce.\n\n##### Returns\n"
+}

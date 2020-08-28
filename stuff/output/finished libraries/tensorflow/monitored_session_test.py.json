@@ -1,0 +1,7 @@
+{
+    "source file": "monitored_session_test.py",
+    "line number": "636",
+    "func name": "busy_wait_for_coord_stop",
+    "func arg": "(coord)",
+    "comments": ""
+}

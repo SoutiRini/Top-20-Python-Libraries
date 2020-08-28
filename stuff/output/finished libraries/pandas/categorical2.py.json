@@ -1,0 +1,7 @@
+{
+    "source file": "categorical2.py",
+    "line number": "2690",
+    "func name": "factorize_from_iterables",
+    "func arg": "(iterables)",
+    "comments": "A higher-level wrapper over `factorize_from_iterable`.\n\n*This is an internal function*\n\nParameters ---------- iterables : list-like of list-likes\n##### Returns\n* **codes_list **: list of ndarrays\n\n* **categories_list **: list of Indexes\n\n"
+}

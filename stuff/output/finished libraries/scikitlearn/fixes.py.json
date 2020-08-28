@@ -1,0 +1,7 @@
+{
+    "source file": "fixes.py",
+    "line number": "165",
+    "func name": "_take_along_axis",
+    "func arg": "(arr, indices, axis)",
+    "comments": "Implements a simplified version of np.take_along_axis if numpy version < 1.15\n\n\n"
+}

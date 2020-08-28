@@ -1,0 +1,7 @@
+{
+    "source file": "bsplines52.py",
+    "line number": "601",
+    "func name": "qspline1d_eval",
+    "func arg": "(cj, newx, dx, x0)",
+    "comments": "Evaluate a quadratic spline at the new set of points.\n\nParameters ---------- cj : ndarray Quadratic spline coefficients newx : ndarray New set of points. dx : float, optional Old sample-spacing, the default value is 1.0. x0 : int, optional Old origin, the default value is 0.\n##### Returns\n* **res **: ndarray\n    Evaluated a quadratic spline points.\n\n* **qspline1d **: Compute quadratic spline coefficients for rank-1 array.\n\n* **represent spline coefficients were at equally-spaced points of**: \n\n* **a quadratic spline**: \n\n"
+}

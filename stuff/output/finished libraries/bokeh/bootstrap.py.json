@@ -1,0 +1,7 @@
+{
+    "source file": "bootstrap.py",
+    "line number": "69",
+    "func name": "main",
+    "func arg": "(argv)",
+    "comments": "Execute the Bokeh command.\n\n\n##### Args\n* **argv (seq[str]) **: a list of command line arguments to process\n\n##### Returns\n* **he name of one of the available subcommands**: \n\n* **ef**: `static <bokeh.command.subcommands.static>`\n\n"
+}

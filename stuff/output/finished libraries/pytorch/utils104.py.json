@@ -1,0 +1,7 @@
+{
+    "source file": "utils104.py",
+    "line number": "457",
+    "func name": "create_int8_bias_tensor_fill",
+    "func arg": "(tensor, out_blob_name, x_q_param, w_q_param)",
+    "comments": "Similar to create_int8_given_tensor_fill, but for bias blobs to be stored as int32.\n\n\n"
+}

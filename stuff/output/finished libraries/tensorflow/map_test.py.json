@@ -1,0 +1,7 @@
+{
+    "source file": "map_test.py",
+    "line number": "119",
+    "func name": "_make_coordinated_sloppy_dataset",
+    "func arg": "(apply_map, num_elements, num_parallel_calls)",
+    "comments": "Produces a dataset iterator and events to control the order of elements.\n\n\n##### Args\n* **apply_map**: method that applies the `map` transformation\n\n* **num_elements**: the number of input elements\n\n* **num_parallel_calls**: the degree of map parallelism\n\n##### Returns\n"
+}

@@ -1,0 +1,7 @@
+{
+    "source file": "keras.py",
+    "line number": "27",
+    "func name": "mnist_model",
+    "func arg": "()",
+    "comments": "Creates a MNIST model.\n\n\n"
+}

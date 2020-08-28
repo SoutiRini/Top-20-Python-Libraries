@@ -1,0 +1,7 @@
+{
+    "source file": "compat_util.py",
+    "line number": "34",
+    "func name": "deprecated_py2_support",
+    "func arg": "(module_name)",
+    "comments": "Swaps calling module with a Py2-specific implementation. Noop in Py3.\n\n\n"
+}

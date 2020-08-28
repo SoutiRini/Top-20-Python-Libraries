@@ -1,0 +1,7 @@
+{
+    "source file": "ltisys97.py",
+    "line number": "3771",
+    "func name": "dbode",
+    "func arg": "(system, w, n)",
+    "comments": "Calculate Bode magnitude and phase data of a discrete-time system.\n\nParameters ---------- system : an instance of the LTI class or a tuple describing the system. The following gives the number of elements in the tuple and the interpretation:\n\n* 1 (instance of `dlti`) * 2 (num, den, dt) * 3 (zeros, poles, gain, dt) * 4 (A, B, C, D, dt)\n\nw : array_like, optional Array of frequencies (in radians/sample). Magnitude and phase data is calculated for every value in this array. If not given a reasonable set will be calculated. n : int, optional Number of frequency points to compute if `w` is not given. The `n` frequencies are logarithmically spaced in an interval chosen to include the influence of the poles and zeros of the system.\n##### Returns\n* **w **: 1D ndarray\n    Frequency array [rad/time_unit]\n\n* **mag **: 1D ndarray\n    Magnitude array [dB]\n\n* **phase **: 1D ndarray\n    Phase array [deg]\n\n* **.. versionadded**: \n\n* **Transfer function**: H(z) = 1 / (z^2 + 2z + 3)\n\n* **Equivalent**: sys.bode()\n\n"
+}

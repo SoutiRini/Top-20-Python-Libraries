@@ -1,0 +1,7 @@
+{
+    "source file": "tsa.py",
+    "line number": "25",
+    "func name": "acovf_fft",
+    "func arg": "(x, demean)",
+    "comments": "autocovariance function with call to fftconvolve, biased\n\nParameters ---------- x : array_like timeseries, signal demean : bool If true, then demean time series\n##### Returns\n* **acovf **: ndarray\n    autocovariance for data, same length as x\n\n"
+}

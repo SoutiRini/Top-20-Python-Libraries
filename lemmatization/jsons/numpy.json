@@ -1,0 +1,1569 @@
+{"function":
+[{
+    "source file": "_add_newdocs.py",
+    "line number": "6242",
+    "func name": "add_newdoc_for_scalar_type",
+    "func arg": "(obj, fixed_aliases, doc)",
+    "comments": ""
+},{
+    "source file": "_asarray.py",
+    "line number": "229",
+    "func name": "require",
+    "func arg": "(a, dtype, requirements)",
+    "comments": "Return an ndarray of the provided type that satisfies requirements.\n\nThis function is useful to be sure that an array with the correct flags is returned for passing to compiled code (perhaps through ctypes).\n\nParameters ---------- a : array_like The object to be converted to a type-and-requirement-satisfying array. dtype : data-type The required data-type. If None preserve the current dtype. If your application requires the data to be in native byteorder, include a byteorder specification as a part of the dtype specification. requirements : str or list of str The requirements list can be any of the following\n\n* 'F_CONTIGUOUS' ('F')\n\n- ensure a Fortran-contiguous array * 'C_CONTIGUOUS' ('C')\n\n- ensure a C-contiguous array * 'ALIGNED' ('A')\n\n\n\n\n\n- ensure a data-type aligned array * 'WRITEABLE' ('W')\n\n\n\n- ensure a writable array * 'OWNDATA' ('O')\n\n\n\n\n\n- ensure an array that owns its own data * 'ENSUREARRAY', ('E')\n\n- ensure a base array, instead of a subclass\n##### Returns\n* **out **: ndarray\n    Array with specified requirements and type if given.\n\n* **asarray **: Convert input to an ndarray.\n\n* **asanyarray **: Convert to an ndarray, but pass through ndarray subclasses.\n\n* **ascontiguousarray **: Convert input to a contiguous array.\n\n* **asfortranarray **: Convert input to an ndarray with column-major\n                 memory order.\n\n* **ndarray.flags **: Information about the memory layout of the array.\n\n* **>>> x.flags\n  C_CONTIGUOUS **: True\n  F_CONTIGUOUS\n\n* **>>> y.flags\n  C_CONTIGUOUS **: False\n  F_CONTIGUOUS\n\n"
+},{
+    "source file": "_datasource.py",
+    "line number": "156",
+    "func name": "open",
+    "func arg": "(path, mode, destpath, encoding, newline)",
+    "comments": "Open `path` with `mode` and return the file object.\n\nIf ``path`` is an URL, it will be downloaded, stored in the `DataSource` `destpath` directory and opened from there.\n\nParameters ---------- path : str Local file path or URL to open. mode : str, optional Mode to open `path`. Mode 'r' for reading, 'w' for writing, 'a' to append. Available modes depend on the type of object specified by path.\n\nDefault is 'r'. destpath : str, optional Path to the directory where the source file gets downloaded to for use.\n\nIf `destpath` is None, a temporary directory will be created. The default path is the current directory. encoding : {None, str}, optional Open text file with given encoding. The default encoding will be what `io.open` uses. newline : {None, str}, optional Newline to use when reading text file.\n##### Returns\n* **out **: file object\n    The opened file.\n\n"
+},{
+    "source file": "_dtype_ctypes.py",
+    "line number": "100",
+    "func name": "dtype_from_ctypes_type",
+    "func arg": "(t)",
+    "comments": "Construct a dtype object from a ctypes type\n\n\n"
+},{
+    "source file": "_dtype.py",
+    "line number": "321",
+    "func name": "_name_get",
+    "func arg": "(dtype)",
+    "comments": ""
+},{
+    "source file": "_exceptions.py",
+    "line number": "17",
+    "func name": "_display_as_base",
+    "func arg": "(cls)",
+    "comments": "A decorator that makes an exception class look like its base.\n\nWe use this to hide subclasses that are implementation details\n\n- the user should catch the base type, which is what the traceback will show them.\n\nClasses decorated with this decorator are subject to removal without a deprecation warning.\n"
+},{
+    "source file": "_inspect.py",
+    "line number": "168",
+    "func name": "formatargvalues",
+    "func arg": "(args, varargs, varkw, locals, formatarg, formatvarargs, formatvarkw, formatvalue, join)",
+    "comments": "Format an argument spec from the 4 values returned by getargvalues.\n\nThe first four arguments are (args, varargs, varkw, locals).\n\nThe next four arguments are the corresponding optional formatting functions that are called to turn names and values into strings.\n\nThe ninth argument is an optional function to format the sequence of arguments.\n"
+},{
+    "source file": "_internal.py",
+    "line number": "828",
+    "func name": "npy_ctypes_check",
+    "func arg": "(cls)",
+    "comments": ""
+},{
+    "source file": "_iotools.py",
+    "line number": "822",
+    "func name": "easy_dtype",
+    "func arg": "(ndtype, names, defaultfmt, **validationargs)",
+    "comments": "Convenience function to create a `np.dtype` object.\n\nThe function processes the input `dtype` and matches it with the given names.\n\nParameters ---------- ndtype : var Definition of the dtype. Can be any string or dictionary recognized by the `np.dtype` function, or a sequence of types. names : str or sequence, optional Sequence of strings to use as field names for a structured dtype. For convenience, `names` can be a string of a comma-separated list of names. defaultfmt : str, optional Format string used to define missing names, such as ``\"f%i\"`` (default) or ``\"fields_%02i\"``. validationargs : optional A series of optional arguments used to initialize a `NameValidator`.\n\nExamples -------- >>> np.lib._iotools.easy_dtype(float) dtype('float64') >>> np.lib._iotools.easy_dtype(\"i4, f8\") dtype([('f0', '<i4'), ('f1', '<f8')]) >>> np.lib._iotools.easy_dtype(\"i4, f8\", defaultfmt=\"field_%03i\") dtype([('field_000', '<i4'), ('field_001', '<f8')])\n\n>>> np.lib._iotools.easy_dtype((int, float, float), names=\"a,b,c\") dtype([('a', '<i8'), ('b', '<f8'), ('c', '<f8')]) >>> np.lib._iotools.easy_dtype(float, names=\"a,b,c\") dtype([('a', '<f8'), ('b', '<f8'), ('c', '<f8')])\n"
+},{
+    "source file": "_locales.py",
+    "line number": "12",
+    "func name": "find_comma_decimal_point_locale",
+    "func arg": "()",
+    "comments": "See if platform has a decimal point as comma locale.\n\nFind a locale that uses a comma instead of a period as the decimal point.\n##### Returns\n* **old_locale**: str\n    Locale when the function was called.\n\n* **new_locale**: {str, None)\n    First French locale found, None if none found.\n\n"
+},{
+    "source file": "_methods.py",
+    "line number": "260",
+    "func name": "_dumps",
+    "func arg": "(protocol)",
+    "comments": ""
+},{
+    "source file": "_pickle.py",
+    "line number": "62",
+    "func name": "__randomstate_ctor",
+    "func arg": "(bit_generator_name)",
+    "comments": "Pickling helper function that returns a legacy RandomState-like object\n\nParameters ---------- bit_generator_name: str String containing the core BitGenerator\n##### Returns\n* **rs**: RandomState\n    Legacy RandomState using the named core BitGenerator\n\n"
+},{
+    "source file": "_pocketfft.py",
+    "line number": "1360",
+    "func name": "irfft2",
+    "func arg": "(a, s, axes, norm)",
+    "comments": "Compute the 2-dimensional inverse FFT of a real array.\n\nParameters ---------- a : array_like The input array s : sequence of ints, optional Shape of the real output to the inverse FFT. axes : sequence of ints, optional The axes over which to compute the inverse fft. Default is the last two axes. norm : {\"backward\", \"ortho\", \"forward\"}, optional .. versionadded:: 1.10.0\n\nNormalization mode (see `numpy.fft`). Default is \"backward\". Indicates which direction of the forward/backward pair of transforms is scaled and with what normalization factor.\n\n.. versionadded:: 1.20.0\n\nThe \"backward\", \"forward\" values were added.\n##### Returns\n* **out **: ndarray\n    The result of the inverse real 2-D FFT.\n\n* **irfftn **: Compute the inverse of the N-dimensional FFT of real input.\n\n"
+},{
+    "source file": "_pytesttester.py",
+    "line number": "37",
+    "func name": "_show_numpy_info",
+    "func arg": "()",
+    "comments": ""
+},{
+    "source file": "_string_helpers.py",
+    "line number": "72",
+    "func name": "english_capitalize",
+    "func arg": "(s)",
+    "comments": "Apply English case rules to convert the first character of an ASCII string to upper case.\n\nThis is an internal utility function to replace calls to str.capitalize() such that we can avoid changing behavior with changing locales.\n\nParameters ---------- s : str\n##### Returns\n* **capitalized **: str\n\n"
+},{
+    "source file": "_type_aliases.py",
+    "line number": "210",
+    "func name": "_set_array_types",
+    "func arg": "()",
+    "comments": ""
+},{
+    "source file": "_ufunc_config.py",
+    "line number": "444",
+    "func name": "_setdef",
+    "func arg": "()",
+    "comments": ""
+},{
+    "source file": "arraypad.py",
+    "line number": "533",
+    "func name": "pad",
+    "func arg": "(array, pad_width, mode, **kwargs)",
+    "comments": "Pad an array.\n\nParameters ---------- array : array_like of rank N The array to pad. pad_width : {sequence, array_like, int} Number of values padded to the edges of each axis. ((before_1, after_1), ... (before_N, after_N)) unique pad widths for each axis. ((before, after),) yields same before and after pad for each axis. (pad,) or int is a shortcut for before = after = pad width for all axes. mode : str or function, optional One of the following string values or a user supplied function.\n\n'constant' (default) Pads with a constant value. 'edge' Pads with the edge values of array. 'linear_ramp' Pads with the linear ramp between end_value and the array edge value. 'maximum' Pads with the maximum value of all or part of the vector along each axis. 'mean' Pads with the mean value of all or part of the vector along each axis. 'median' Pads with the median value of all or part of the vector along each axis. 'minimum' Pads with the minimum value of all or part of the vector along each axis. 'reflect' Pads with the reflection of the vector mirrored on the first and last values of the vector along each axis. 'symmetric' Pads with the reflection of the vector mirrored along the edge of the array. 'wrap' Pads with the wrap of the vector along the axis. The first values are used to pad the end and the end values are used to pad the beginning. 'empty' Pads with undefined values.\n\n.. versionadded:: 1.17\n\n<function> Padding function, see Notes. stat_length : sequence or int, optional Used in 'maximum', 'mean', 'median', and 'minimum'.\n\nNumber of values at edge of each axis used to calculate the statistic value.\n\n((before_1, after_1), ... (before_N, after_N)) unique statistic lengths for each axis.\n\n((before, after),) yields same before and after statistic lengths for each axis.\n\n(stat_length,) or int is a shortcut for before = after = statistic length for all axes.\n\nDefault is ``None``, to use the entire axis. constant_values : sequence or scalar, optional Used in 'constant'.\n\nThe values to set the padded values for each axis.\n\n``((before_1, after_1), ... (before_N, after_N))`` unique pad constants for each axis.\n\n``((before, after),)`` yields same before and after constants for each axis.\n\n``(constant,)`` or ``constant`` is a shortcut for ``before = after = constant`` for all axes.\n\nDefault is 0. end_values : sequence or scalar, optional Used in 'linear_ramp'.\n\nThe values used for the ending value of the linear_ramp and that will form the edge of the padded array.\n\n``((before_1, after_1), ... (before_N, after_N))`` unique end values for each axis.\n\n``((before, after),)`` yields same before and after end values for each axis.\n\n``(constant,)`` or ``constant`` is a shortcut for ``before = after = constant`` for all axes.\n\nDefault is 0. reflect_type : {'even', 'odd'}, optional Used in 'reflect', and 'symmetric'.\n\nThe 'even' style is the default with an unaltered reflection around the edge value.\n\nFor the 'odd' style, the extended part of the array is created by subtracting the reflected values from two times the edge value.\n##### Returns\n* **pad **: ndarray\n    Padded array of rank equal to `array` with shape increased\n    according to `pad_width`.\n\n* **.. versionadded**: \n\n* **has the following signature**: \n\n* **where\n    vector **: ndarray\n        A rank 1 array already padded with zeros.  Padded values are\n        vector[\n\n* **>>> def pad_with(vector, pad_width, iaxis, kwargs)**: \n\n* **...     vector[**: pad_width[0]] = pad_value\n\n* **...     vector[-pad_width[1]**: ] = pad_value\n\n"
+},{
+    "source file": "arrayprint.py",
+    "line number": "1573",
+    "func name": "set_string_function",
+    "func arg": "(f, repr)",
+    "comments": "Set a Python function to be used when pretty printing arrays.\n\nParameters ---------- f : function or None Function to be used to pretty print arrays. The function should expect a single array argument and return a string of the representation of the array. If None, the function is reset to the default NumPy function to print arrays. repr : bool, optional If True (default), the function for pretty printing (``__repr__``) is set, if False the function that returns the default string representation (``__str__``) is set.\n\nSee Also -------- set_printoptions, get_printoptions\n\nExamples -------- >>> def pprint(arr): ...\n\n\n\n return 'HA!\n\n- What are you going to do now?' ... >>> np.set_string_function(pprint) >>> a = np.arange(10) >>> a HA!\n\n- What are you going to do now? >>> _ = a >>> # [0 1 2 3 4 5 6 7 8 9]\n\nWe can reset the function to the default:\n\n>>> np.set_string_function(None) >>> a array([0, 1, 2, 3, 4, 5, 6, 7, 8, 9])\n\n`repr` affects either pretty printing or normal string representation. Note that ``__repr__`` is still affected by setting ``__str__`` because the width of each array element in the returned string becomes equal to the length of the result of ``__str__()``.\n\n>>> x = np.arange(4) >>> np.set_string_function(lambda x:'random', repr=False) >>> x.__str__() 'random' >>> x.__repr__() 'array([0, 1, 2, 3])'\n"
+},{
+    "source file": "arraysetops.py",
+    "line number": "769",
+    "func name": "setdiff1d",
+    "func arg": "(ar1, ar2, assume_unique)",
+    "comments": "Find the set difference of two arrays.\n\nReturn the unique values in `ar1` that are not in `ar2`.\n\nParameters ---------- ar1 : array_like Input array. ar2 : array_like Input comparison array. assume_unique : bool If True, the input arrays are both assumed to be unique, which can speed up the calculation.\n\nDefault is False.\n##### Returns\n* **setdiff1d **: ndarray\n    1D array of values in `ar1` that are not in `ar2`. The result\n    is sorted when `assume_unique=False`, but otherwise only sorted\n    if the input is sorted.\n\n* **numpy.lib.arraysetops **: Module with a number of other functions for\n                        performing set operations on arrays.\n\n"
+},{
+    "source file": "autodist.py",
+    "line number": "108",
+    "func name": "check_gcc_variable_attribute",
+    "func arg": "(cmd, attribute)",
+    "comments": "Return True if the given variable attribute is supported.\n\n\n"
+},{
+    "source file": "auxfuncs.py",
+    "line number": "793",
+    "func name": "applyrules",
+    "func arg": "(rules, d, var)",
+    "comments": ""
+},{
+    "source file": "bench_function_base.py",
+    "line number": "96",
+    "func name": "memoize",
+    "func arg": "(f)",
+    "comments": ""
+},{
+    "source file": "bench_overrides.py",
+    "line number": "32",
+    "func name": "mock_concatenate",
+    "func arg": "(arrays, axis, out)",
+    "comments": ""
+},{
+    "source file": "bench.py",
+    "line number": "82",
+    "func name": "compare_functions_2v",
+    "func arg": "(func, nloop, test, xs, nmxs, ys, nmys, xl, nmxl, yl, nmyl)",
+    "comments": ""
+},{
+    "source file": "build_index.py",
+    "line number": "18",
+    "func name": "nep_metadata",
+    "func arg": "()",
+    "comments": ""
+},{
+    "source file": "build_src.py",
+    "line number": "761",
+    "func name": "get_f2py_modulename",
+    "func arg": "(source)",
+    "comments": ""
+},{
+    "source file": "c_coverage_report.py",
+    "line number": "118",
+    "func name": "collect_stats",
+    "func arg": "(files, fd, pattern)",
+    "comments": ""
+},{
+    "source file": "capi_maps.py",
+    "line number": "821",
+    "func name": "common_sign2map",
+    "func arg": "(a, var)",
+    "comments": ""
+},{
+    "source file": "cb_rules.py",
+    "line number": "484",
+    "func name": "buildcallback",
+    "func arg": "(rout, um)",
+    "comments": ""
+},{
+    "source file": "ccompiler_opt.py",
+    "line number": "2438",
+    "func name": "new_ccompiler_opt",
+    "func arg": "(compiler, **kwargs)",
+    "comments": "Create a new instance of 'CCompilerOpt' and generate the dispatch header inside NumPy source dir.\n\nParameters ---------- 'compiler' : CCompiler instance '**kwargs': passed as-is to `CCompilerOpt(...)`\n##### Returns\n"
+},{
+    "source file": "ccompiler.py",
+    "line number": "765",
+    "func name": "gen_lib_options",
+    "func arg": "(compiler, library_dirs, runtime_library_dirs, libraries)",
+    "comments": ""
+},{
+    "source file": "cfuncs.py",
+    "line number": "1246",
+    "func name": "get_needs",
+    "func arg": "()",
+    "comments": ""
+},{
+    "source file": "changelog.py",
+    "line number": "103",
+    "func name": "main",
+    "func arg": "(token, revision_range)",
+    "comments": ""
+},{
+    "source file": "chebyshev.py",
+    "line number": "1945",
+    "func name": "chebpts2",
+    "func arg": "(npts)",
+    "comments": "Chebyshev points of the second kind.\n\nThe Chebyshev points of the second kind are the points ``cos(x)``, where ``x = [pi*k/(npts\n\n- 1) for k in range(npts)]``.\n\nParameters ---------- npts : int Number of sample points desired.\n##### Returns\n* **pts **: ndarray\n    The Chebyshev points of the second kind.\n\n* **.. versionadded**: \n\n"
+},{
+    "source file": "clapack_scrub.py",
+    "line number": "268",
+    "func name": "scrubSource",
+    "func arg": "(source, nsteps, verbose)",
+    "comments": ""
+},{
+    "source file": "commitstats.py",
+    "line number": "9",
+    "func name": "get_count",
+    "func arg": "(filename, repo)",
+    "comments": ""
+},{
+    "source file": "common_rules.py",
+    "line number": "49",
+    "func name": "buildhooks",
+    "func arg": "(m)",
+    "comments": ""
+},{
+    "source file": "common.py",
+    "line number": "107",
+    "func name": "get_indexes_rand_",
+    "func arg": "()",
+    "comments": ""
+},{
+    "source file": "compat3.py",
+    "line number": "43",
+    "func name": "coerce_text",
+    "func arg": "(v)",
+    "comments": ""
+},{
+    "source file": "conf1.py",
+    "line number": "332",
+    "func name": "linkcode_resolve",
+    "func arg": "(domain, info)",
+    "comments": "Determine the URL corresponding to Python object\n\n\n"
+},{
+    "source file": "config_compiler.py",
+    "line number": "6",
+    "func name": "show_fortran_compilers",
+    "func arg": "(_cache)",
+    "comments": ""
+},{
+    "source file": "conftest.py",
+    "line number": "93",
+    "func name": "add_np",
+    "func arg": "(doctest_namespace)",
+    "comments": ""
+},{
+    "source file": "constants.py",
+    "line number": "21",
+    "func name": "add_newdoc",
+    "func arg": "(module, name, doc)",
+    "comments": ""
+},{
+    "source file": "conv_template.py",
+    "line number": "309",
+    "func name": "main",
+    "func arg": "()",
+    "comments": ""
+},{
+    "source file": "core1.py",
+    "line number": "200",
+    "func name": "_check_append_ext_library",
+    "func arg": "(libraries, lib_name, build_info)",
+    "comments": ""
+},{
+    "source file": "core2.py",
+    "line number": "8136",
+    "func name": "append",
+    "func arg": "(a, b, axis)",
+    "comments": "Append values to the end of an array.\n\n.. versionadded:: 1.9.0\n\nParameters ---------- a : array_like Values are appended to a copy of this array. b : array_like These values are appended to a copy of `a`.\n\nIt must be of the correct shape (the same shape as `a`, excluding `axis`).\n\nIf `axis` is not specified, `b` can be any shape and will be flattened before use. axis : int, optional The axis along which `v` are appended.\n\nIf `axis` is not given, both `a` and `b` are flattened before use.\n##### Returns\n* **append **: MaskedArray\n    A copy of `a` with `b` appended to `axis`.  Note that `append`\n    does not occur in-place\n\n* **numpy.append **: Equivalent function in the top-level NumPy module.\n\n"
+},{
+    "source file": "cpuinfo.py",
+    "line number": "54",
+    "func name": "key_value_from_command",
+    "func arg": "(cmd, sep, successful_status, stacklevel)",
+    "comments": ""
+},{
+    "source file": "crackfortran.py",
+    "line number": "3262",
+    "func name": "crack2fortran",
+    "func arg": "(block)",
+    "comments": ""
+},{
+    "source file": "ctypeslib.py",
+    "line number": "229",
+    "func name": "ndpointer",
+    "func arg": "(dtype, ndim, shape, flags)",
+    "comments": "Array-checking restype/argtypes.\n\nAn ndpointer instance is used to describe an ndarray in restypes and argtypes specifications.\n\nThis approach is more flexible than using, for example, ``POINTER(c_double)``, since several restrictions can be specified, which are verified upon calling the ctypes function. These include data type, number of dimensions, shape and flags.\n\nIf a given array does not satisfy the specified restrictions, a ``TypeError`` is raised.\n\nParameters ---------- dtype : data-type, optional Array data-type. ndim : int, optional Number of array dimensions. shape : tuple of ints, optional Array shape. flags : str or tuple of str Array flags; may be one or more of:\n\n- C_CONTIGUOUS / C / CONTIGUOUS\n\n- F_CONTIGUOUS / F / FORTRAN\n\n- OWNDATA / O\n\n- WRITEABLE / W\n\n- ALIGNED / A\n\n- WRITEBACKIFCOPY / X\n\n- UPDATEIFCOPY / U\n##### Returns\n* **klass **: ndpointer type object\n    A type object, which is an ``_ndtpr`` instance containing\n    dtype, ndim, shape and flags information.\n\n"
+},{
+    "source file": "cythonize.py",
+    "line number": "226",
+    "func name": "main",
+    "func arg": "()",
+    "comments": ""
+},{
+    "source file": "decorators.py",
+    "line number": "268",
+    "func name": "parametrize",
+    "func arg": "(vars, input)",
+    "comments": "Pytest compatibility class. This implements the simplest level of pytest.mark.parametrize for use in nose as an aid in making the transition to pytest. It achieves that by adding a dummy var parameter and ignoring the doc_func parameter of the base class. It does not support variable substitution by name, nor does it support nesting or classes. See the pytest documentation for usage.\n\n.. versionadded:: 1.14.0\n"
+},{
+    "source file": "defchararray.py",
+    "line number": "2746",
+    "func name": "asarray",
+    "func arg": "(obj, itemsize, unicode, order)",
+    "comments": "Convert the input to a `chararray`, copying the data only if necessary.\n\nVersus a regular NumPy array of type `str` or `unicode`, this class adds the following functionality:\n\n1) values automatically have whitespace removed from the end when indexed\n\n2) comparison operators automatically remove whitespace from the end when comparing values\n\n3) vectorized string operations are provided as methods (e.g. `str.endswith`) and infix operators (e.g. ``+``, ``*``,``%``)\n\nParameters ---------- obj : array of str or unicode-like\n\nitemsize : int, optional `itemsize` is the number of characters per scalar in the resulting array.\n\nIf `itemsize` is None, and `obj` is an object array or a Python list, the `itemsize` will be automatically determined.\n\nIf `itemsize` is provided and `obj` is of type str or unicode, then the `obj` string will be chunked into `itemsize` pieces.\n\nunicode : bool, optional When true, the resulting `chararray` can contain Unicode characters, when false only 8-bit characters.\n\nIf unicode is None and `obj` is one of the following:\n\n- a `chararray`,\n\n- an ndarray of type `str` or 'unicode`\n\n- a Python str or unicode object,\n\nthen the unicode setting of the output array will be automatically determined.\n\norder : {'C', 'F'}, optional Specify the order of the array.\n\nIf order is 'C' (default), then the array will be in C-contiguous order (last-index varies the fastest).\n\nIf order is 'F', then the returned array will be in Fortran-contiguous order (first-index varies the fastest).\n"
+},{
+    "source file": "defmatrix.py",
+    "line number": "1036",
+    "func name": "bmat",
+    "func arg": "(obj, ldict, gdict)",
+    "comments": "Build a matrix object from a string, nested sequence, or array.\n\nParameters ---------- obj : str or array_like Input data. If a string, variables in the current scope may be referenced by name. ldict : dict, optional A dictionary that replaces local operands in current frame. Ignored if `obj` is not a string or `gdict` is None. gdict : dict, optional A dictionary that replaces global operands in current frame. Ignored if `obj` is not a string.\n##### Returns\n* **block **: A generalization of this function for N-d arrays, that returns normal\n    ndarrays.\n\n* **All the following expressions construct the same block matrix**: \n\n"
+},{
+    "source file": "diagnose.py",
+    "line number": "13",
+    "func name": "run",
+    "func arg": "()",
+    "comments": ""
+},{
+    "source file": "download-wheels.py",
+    "line number": "41",
+    "func name": "download_wheels",
+    "func arg": "(version, wheelhouse)",
+    "comments": "Download release wheels.\n\nThe release wheels for the given NumPy version are downloaded into the given directory.\n\nParameters ---------- version : str The release version. For instance, \"1.18.3\". wheelhouse : str Directory in which to download the wheels.\n"
+},{
+    "source file": "dual.py",
+    "line number": "81",
+    "func name": "restore_all",
+    "func arg": "()",
+    "comments": ""
+},{
+    "source file": "einsumfunc.py",
+    "line number": "998",
+    "func name": "einsum",
+    "func arg": "(**kwargs)",
+    "comments": "einsum(subscripts, *operands, out=None, dtype=None, order='K', casting='safe', optimize=False)\n\nEvaluates the Einstein summation convention on the operands.\n\nUsing the Einstein summation convention, many common multi-dimensional, linear algebraic array operations can be represented in a simple fashion. In *implicit* mode `einsum` computes these values.\n\nIn *explicit* mode, `einsum` provides further flexibility to compute other array operations that might not be considered classical Einstein summation operations, by disabling, or forcing summation over specified subscript labels.\n\nSee the notes and examples for clarification.\n\nParameters ---------- subscripts : str Specifies the subscripts for summation as comma separated list of subscript labels. An implicit (classical Einstein summation) calculation is performed unless the explicit indicator '->' is included as well as subscript labels of the precise output form. operands : list of array_like These are the arrays for the operation. out : ndarray, optional If provided, the calculation is done into this array. dtype : {data-type, None}, optional If provided, forces the calculation to use the data type specified. Note that you may have to also give a more liberal `casting` parameter to allow the conversions. Default is None. order : {'C', 'F', 'A', 'K'}, optional Controls the memory layout of the output. 'C' means it should be C contiguous. 'F' means it should be Fortran contiguous, 'A' means it should be 'F' if the inputs are all 'F', 'C' otherwise. 'K' means it should be as close to the layout as the inputs as is possible, including arbitrarily permuted axes. Default is 'K'. casting : {'no', 'equiv', 'safe', 'same_kind', 'unsafe'}, optional Controls what kind of data casting may occur.\n\nSetting this to 'unsafe' is not recommended, as it can adversely affect accumulations.\n\n* 'no' means the data types should not be cast at all. * 'equiv' means only byte-order changes are allowed. * 'safe' means only casts which can preserve values are allowed. * 'same_kind' means only safe casts or casts within a kind, like float64 to float32, are allowed. * 'unsafe' means any data conversions may be done.\n\nDefault is 'safe'. optimize : {False, True, 'greedy', 'optimal'}, optional Controls if intermediate optimization should occur. No optimization will occur if False and True will default to the 'greedy' algorithm. Also accepts an explicit contraction list from the ``np.einsum_path`` function. See ``np.einsum_path`` for more details. Defaults to False.\n##### Returns\n* **output **: ndarray\n    The calculation based on the Einstein summation convention.\n\n* **.. versionadded**: \n\n* **which can be computed by `einsum`, is shown below along with examples**: \n\n* *** Trace of an array, **: py\n\n* *** Return a diagonal, **: py\n\n* *** Array axis summations, **: py\n\n* *** Transpositions and permutations, **: py\n\n* *** Matrix multiplication and dot product, **: py\n\n* *** Vector inner and outer products, **: py\n\n* *** Broadcasting, element-wise and scalar multiplication, **: py\n\n* *** Tensor contractions, **: py\n\n* *** Chained array operations, in efficient calculation order, **: py\n\n* **is equivalent to **: py\n\n* ****: py\n\n* **to **: py\n\n* **``np.einsum('i->', a)`` is like **: py\n\n* **and ``np.einsum('ii->i', a)`` is like **: py\n\n* **have the same effect as **: py\n\n* **See **: py\n\n* **Trace of a matrix**: \n\n* **Extract the diagonal (requires explicit form)**: \n\n* **Sum over an axis (requires explicit form)**: \n\n* **For higher dimensional arrays summing a single axis can be done with ellipsis**: \n\n* **Compute a matrix transpose, or reorder any number of axes**: \n\n* **Vector inner products**: \n\n* **Matrix vector multiplication**: \n\n* **Broadcasting and scalar multiplication**: \n\n* **Vector outer product**: \n\n* **Tensor contraction**: \n\n* **Writeable returned arrays (since version 1.10.0)**: \n\n* **>>> np.einsum('ii->i', a)[**: ] = 1\n\n* **Example of ellipsis use**: \n\n* **particularly significant with larger arrays**: \n\n* **Basic `einsum`**: ~1520ms  (benchmarked on 3.1GHz Intel i5.)\n\n* **>>> for iteration in range(500)**: \n\n* **Sub-optimal `einsum` (due to repeated path calculation time)**: ~330ms\n\n* **Greedy `einsum` (faster optimal path approximation)**: ~160ms\n\n* **Optimal `einsum` (best usage pattern in some use cases)**: ~110ms\n\n"
+},{
+    "source file": "example.py",
+    "line number": "36",
+    "func name": "foo",
+    "func arg": "(var1, var2, long_var_name)",
+    "comments": "A one-line summary that does not use variable names or the function name.\n\nSeveral sentences providing an extended description. Refer to variables using back-ticks, e.g. `var`.\n\nParameters ---------- var1 : array_like Array_like means all those objects -- lists, nested lists, etc. -- that can be converted to an array.\n\nWe can also refer to variables like `var1`. var2 : int The type above can either refer to an actual Python type (e.g. ``int``), or describe the type of the variable in more detail, e.g. ``(N,) ndarray`` or ``array_like``. long_var_name : {'hi', 'ho'}, optional Choices in brackets, default first when optional.\n##### Returns\n* **describe **: type\n    Explanation of return value named `describe`.\n\n* **out **: type\n    Explanation of `out`.\n\n* **only_seldom_used_keywords **: type\n    Explanation\n\n* **common_parameters_listed_above **: type\n    Explanation\n\n"
+},{
+    "source file": "exec_command.py",
+    "line number": "306",
+    "func name": "_quote_arg",
+    "func arg": "(arg)",
+    "comments": "Quote the argument for safe use in a shell command line.\n\n\n"
+},{
+    "source file": "extending_distributions.py",
+    "line number": "53",
+    "func name": "normals",
+    "func arg": "(n, bit_generator)",
+    "comments": ""
+},{
+    "source file": "extending.py",
+    "line number": "76",
+    "func name": "bounded_uints",
+    "func arg": "(lb, ub, n, state)",
+    "comments": ""
+},{
+    "source file": "extras.py",
+    "line number": "1889",
+    "func name": "polyfit",
+    "func arg": "(x, y, deg, rcond, full, w, cov)",
+    "comments": "Any masked values in x is propagated in y, and vice-versa.\n\n\n"
+},{
+    "source file": "f2py_testing.py",
+    "line number": "20",
+    "func name": "run",
+    "func arg": "(runtest, test_functions, repeat)",
+    "comments": ""
+},{
+    "source file": "f2py2e.py",
+    "line number": "667",
+    "func name": "main",
+    "func arg": "()",
+    "comments": ""
+},{
+    "source file": "f90mod_rules.py",
+    "line number": "87",
+    "func name": "buildhooks",
+    "func arg": "(pymod)",
+    "comments": ""
+},{
+    "source file": "financial.py",
+    "line number": "921",
+    "func name": "mirr",
+    "func arg": "(values, finance_rate, reinvest_rate)",
+    "comments": "Modified internal rate of return.\n\n.. deprecated:: 1.18\n\n`mirr` is deprecated; for details, see NEP 32 [1]_. Use the corresponding function in the numpy-financial library, https://pypi.org/project/numpy-financial.\n\nParameters ---------- values : array_like Cash flows (must contain at least one positive and one negative value) or nan is returned.\n\nThe first value is considered a sunk cost at time zero. finance_rate : scalar Interest rate paid on the cash flows reinvest_rate : scalar Interest rate received on the cash flows upon reinvestment\n##### Returns\n* **out **: float\n    Modified internal rate of return\n\n* **.. [1] NumPy Enhancement Proposal (NEP) 32,\n   https**: //numpy.org/neps/nep-0032-remove-financial-functions.html\n\n"
+},{
+    "source file": "find_deprecated_escaped_characters.py",
+    "line number": "12",
+    "func name": "main",
+    "func arg": "(root)",
+    "comments": "Find deprecated escape sequences.\n\nChecks for deprecated escape sequences in ``*.py files``. If `root` is a file, that file is checked, if `root` is a directory all ``*.py`` files found in a recursive descent are checked.\n\nIf a deprecated escape sequence is found, the file and line where found is printed. Note that for multiline strings the line where the string ends is printed and the error(s) are somewhere in the body of the string.\n\nParameters ---------- root : str File or directory to check.\n##### Returns\n"
+},{
+    "source file": "format.py",
+    "line number": "889",
+    "func name": "_read_bytes",
+    "func arg": "(fp, size, error_template)",
+    "comments": "Read from file-like object until size bytes are read. Raises ValueError if not EOF is encountered before size bytes are read. Non-blocking objects only supported if they derive from io objects.\n\nRequired as e.g. ZipExtFile in python 2.6 can return less data than requested.\n"
+},{
+    "source file": "fortran.py",
+    "line number": "103",
+    "func name": "getDependencies",
+    "func arg": "(filename)",
+    "comments": "For a Fortran source file, return a list of routines declared as EXTERNAL in it.\n\n\n"
+},{
+    "source file": "from_template.py",
+    "line number": "244",
+    "func name": "main",
+    "func arg": "()",
+    "comments": ""
+},{
+    "source file": "fromnumeric.py",
+    "line number": "3694",
+    "func name": "alltrue",
+    "func arg": "(**kwargs)",
+    "comments": "Check if all elements of input array are true.\n\nSee Also -------- numpy.all : Equivalent function; see for details.\n"
+},{
+    "source file": "func2subr.py",
+    "line number": "264",
+    "func name": "assubr",
+    "func arg": "(rout)",
+    "comments": ""
+},{
+    "source file": "function_base1.py",
+    "line number": "467",
+    "func name": "add_newdoc",
+    "func arg": "(place, obj, doc, warn_on_python)",
+    "comments": "Add documentation to an existing object, typically one defined in C\n\nThe purpose is to allow easier editing of the docstrings without requiring a re-compile. This exists primarily for internal use within numpy itself.\n\nParameters ---------- place : str The absolute name of the module to import from obj : str The name of the object to add documentation to, typically a class or function name doc : {str, Tuple[str, str], List[Tuple[str, str]]} If a string, the documentation to apply to `obj`\n\nIf a tuple, then the first element is interpreted as an attribute of `obj` and the second as the docstring to apply\n\n- ``(method, docstring)``\n\nIf a list, then each element of the list should be a tuple of length two\n\n- ``[(method1, docstring1), (method2, docstring2), ...]`` warn_on_python : bool If True, the default, emit `UserWarning` if this is used to attach documentation to a pure-python object.\n\nNotes ----- This routine never raises an error if the docstring can't be written, but will raise an error if the object being documented does not exist.\n\nThis routine cannot modify read-only docstrings, as appear in new-style classes or built-in functions. Because this routine never raises an error the caller must check manually that the docstrings were changed.\n\nSince this function grabs the ``char *`` from a c-level str object and puts it into the ``tp_doc`` slot of the type of `obj`, it violates a number of C-API best-practices, by:\n\n- modifying a `PyTypeObject` after calling `PyType_Ready`\n\n- calling `Py_INCREF` on the str and losing the reference, so the str will never be released\n\nIf possible it should be avoided.\n"
+},{
+    "source file": "function_base2.py",
+    "line number": "4741",
+    "func name": "digitize",
+    "func arg": "(x, bins, right)",
+    "comments": "Return the indices of the bins to which each value in input array belongs.\n\n=========\n\n=============\n\n============================ `right`\n\n\n\norder of bins\n\nreturned index `i` satisfies =========\n\n=============\n\n============================ ``False``\n\nincreasing\n\n\n\n ``bins[i-1] <= x < bins[i]`` ``True``\n\n increasing\n\n\n\n ``bins[i-1] < x <= bins[i]`` ``False``\n\ndecreasing\n\n\n\n ``bins[i-1] > x >= bins[i]`` ``True``\n\n decreasing\n\n\n\n ``bins[i-1] >= x > bins[i]`` =========\n\n=============\n\n============================\n\nIf values in `x` are beyond the bounds of `bins`, 0 or ``len(bins)`` is returned as appropriate.\n\nParameters ---------- x : array_like Input array to be binned. Prior to NumPy 1.10.0, this array had to be 1-dimensional, but can now have any shape. bins : array_like Array of bins. It has to be 1-dimensional and monotonic. right : bool, optional Indicating whether the intervals include the right or the left bin edge. Default behavior is (right==False) indicating that the interval does not include the right edge. The left bin end is open in this case, i.e., bins[i-1] <= x < bins[i] is the default behavior for monotonically increasing bins.\n##### Returns\n* **indices **: ndarray of ints\n    Output array of indices, of same shape as `x`.\n\n"
+},{
+    "source file": "functions_missing_types.py",
+    "line number": "131",
+    "func name": "main",
+    "func arg": "()",
+    "comments": ""
+},{
+    "source file": "genapi.py",
+    "line number": "515",
+    "func name": "main",
+    "func arg": "()",
+    "comments": ""
+},{
+    "source file": "generate_numpy_api.py",
+    "line number": "157",
+    "func name": "do_generate_api",
+    "func arg": "(targets, sources)",
+    "comments": ""
+},{
+    "source file": "generate_ufunc_api.py",
+    "line number": "137",
+    "func name": "do_generate_api",
+    "func arg": "(targets, sources)",
+    "comments": ""
+},{
+    "source file": "generate_umath.py",
+    "line number": "1136",
+    "func name": "make_code",
+    "func arg": "(funcdict, filename)",
+    "comments": ""
+},{
+    "source file": "getlimits.py",
+    "line number": "284",
+    "func name": "_discovered_machar",
+    "func arg": "(ftype)",
+    "comments": "Create MachAr instance with found information on float types\n\n\n"
+},{
+    "source file": "gnu.py",
+    "line number": "526",
+    "func name": "_can_target",
+    "func arg": "(cmd, arch)",
+    "comments": "Return true if the architecture supports the -arch flag\n\n\n"
+},{
+    "source file": "helper.py",
+    "line number": "174",
+    "func name": "rfftfreq",
+    "func arg": "(n, d)",
+    "comments": "Return the Discrete Fourier Transform sample frequencies (for usage with rfft, irfft).\n\nThe returned float array `f` contains the frequency bin centers in cycles per unit of the sample spacing (with zero at the start).\n\nFor instance, if the sample spacing is in seconds, then the frequency unit is cycles/second.\n\nGiven a window length `n` and a sample spacing `d`::\n\nf = [0, 1, ...,\n\n\n\n n/2-1,\n\n\n\n n/2] / (d*n)\n\n if n is even f = [0, 1, ..., (n-1)/2-1, (n-1)/2] / (d*n)\n\n if n is odd\n\nUnlike `fftfreq` (but like `scipy.fftpack.rfftfreq`) the Nyquist frequency component is considered to be positive.\n\nParameters ---------- n : int Window length. d : scalar, optional Sample spacing (inverse of the sampling rate). Defaults to 1.\n##### Returns\n* **f **: ndarray\n    Array of length ``n//2 + 1`` containing the sample frequencies.\n\n"
+},{
+    "source file": "hermite_e.py",
+    "line number": "1604",
+    "func name": "hermeweight",
+    "func arg": "(x)",
+    "comments": "Weight function of the Hermite_e polynomials.\n\nThe weight function is :math:`\\exp(-x^2/2)` and the interval of integration is :math:`[-\\inf, \\inf]`. the HermiteE polynomials are orthogonal, but not normalized, with respect to this weight function.\n\nParameters ---------- x : array_like Values at which the weight function will be computed.\n##### Returns\n* **w **: ndarray\n   The weight function at `x`.\n\n* **.. versionadded**: \n\n"
+},{
+    "source file": "hermite.py",
+    "line number": "1609",
+    "func name": "hermweight",
+    "func arg": "(x)",
+    "comments": "Weight function of the Hermite polynomials.\n\nThe weight function is :math:`\\exp(-x^2)` and the interval of integration is :math:`[-\\inf, \\inf]`. the Hermite polynomials are orthogonal, but not normalized, with respect to this weight function.\n\nParameters ---------- x : array_like Values at which the weight function will be computed.\n##### Returns\n* **w **: ndarray\n   The weight function at `x`.\n\n* **.. versionadded**: \n\n"
+},{
+    "source file": "histograms.py",
+    "line number": "943",
+    "func name": "histogramdd",
+    "func arg": "(sample, bins, range, normed, weights, density)",
+    "comments": "Compute the multidimensional histogram of some data.\n\nParameters ---------- sample : (N, D) array, or (D, N) array_like The data to be histogrammed.\n\nNote the unusual interpretation of sample when an array_like:\n\n* When an array, each row is a coordinate in a D-dimensional space\n\n- such as ``histogramdd(np.array([p1, p2, p3]))``. * When an array_like, each element is the list of values for single coordinate\n\n- such as ``histogramdd((X, Y, Z))``.\n\nThe first form should be preferred.\n\nbins : sequence or int, optional The bin specification:\n\n* A sequence of arrays describing the monotonically increasing bin edges along each dimension. * The number of bins for each dimension (nx, ny, ... =bins) * The number of bins for all dimensions (nx=ny=...=bins).\n\nrange : sequence, optional A sequence of length D, each an optional (lower, upper) tuple giving the outer bin edges to be used if the edges are not given explicitly in `bins`. An entry of None in the sequence results in the minimum and maximum values being used for the corresponding dimension. The default, None, is equivalent to passing a tuple of D None values. density : bool, optional If False, the default, returns the number of samples in each bin. If True, returns the probability *density* function at the bin, ``bin_count / sample_count / bin_volume``. normed : bool, optional An alias for the density argument that behaves identically. To avoid confusion with the broken normed argument to `histogram`, `density` should be preferred. weights : (N,) array_like, optional An array of values `w_i` weighing each sample `(x_i, y_i, z_i, ...)`. Weights are normalized to 1 if normed is True. If normed is False, the values of the returned histogram are equal to the sum of the weights belonging to the samples falling into each bin.\n##### Returns\n* **H **: ndarray\n    The multidimensional histogram of sample x. See normed and weights\n    for the different possible semantics.\n\n* **edges **: list\n    A list of D arrays describing the bin edges for each dimension.\n\n* **histogram**: 1-D histogram\n\n* **histogram2d**: 2-D histogram\n\n"
+},{
+    "source file": "index_tricks.py",
+    "line number": "965",
+    "func name": "diag_indices_from",
+    "func arg": "(arr)",
+    "comments": "Return the indices to access the main diagonal of an n-dimensional array.\n\nSee `diag_indices` for full details.\n\nParameters ---------- arr : array, at least 2-D\n\nSee Also -------- diag_indices\n\nNotes ----- .. versionadded:: 1.4.0\n"
+},{
+    "source file": "intel.py",
+    "line number": "12",
+    "func name": "intel_version_match",
+    "func arg": "(type)",
+    "comments": ""
+},{
+    "source file": "laguerre.py",
+    "line number": "1561",
+    "func name": "lagweight",
+    "func arg": "(x)",
+    "comments": "Weight function of the Laguerre polynomials.\n\nThe weight function is :math:`exp(-x)` and the interval of integration is :math:`[0, \\inf]`. The Laguerre polynomials are orthogonal, but not normalized, with respect to this weight function.\n\nParameters ---------- x : array_like Values at which the weight function will be computed.\n##### Returns\n* **w **: ndarray\n   The weight function at `x`.\n\n* **.. versionadded**: \n\n"
+},{
+    "source file": "legendre.py",
+    "line number": "1577",
+    "func name": "legweight",
+    "func arg": "(x)",
+    "comments": "Weight function of the Legendre polynomials.\n\nThe weight function is :math:`1` and the interval of integration is :math:`[-1, 1]`. The Legendre polynomials are orthogonal, but not normalized, with respect to this weight function.\n\nParameters ---------- x : array_like Values at which the weight function will be computed.\n##### Returns\n* **w **: ndarray\n   The weight function at `x`.\n\n* **.. versionadded**: \n\n"
+},{
+    "source file": "lib2def.py",
+    "line number": "96",
+    "func name": "output_def",
+    "func arg": "(dlist, flist, header, file)",
+    "comments": "Outputs the final DEF file to a file defaulting to stdout.\n\noutput_def(dlist, flist, header, file = sys.stdout)\n"
+},{
+    "source file": "linalg.py",
+    "line number": "2803",
+    "func name": "_multi_dot",
+    "func arg": "(arrays, order, i, j, out)",
+    "comments": "Actually do the multiplication with the given order.\n\n\n"
+},{
+    "source file": "line_endings.py",
+    "line number": "71",
+    "func name": "unix2dos_dir",
+    "func arg": "(dir_name)",
+    "comments": ""
+},{
+    "source file": "log.py",
+    "line number": "67",
+    "func name": "set_verbosity",
+    "func arg": "(v, force)",
+    "comments": ""
+},{
+    "source file": "make_lite.py",
+    "line number": "327",
+    "func name": "main",
+    "func arg": "()",
+    "comments": ""
+},{
+    "source file": "matlib.py",
+    "line number": "328",
+    "func name": "repmat",
+    "func arg": "(a, m, n)",
+    "comments": "Repeat a 0-D to 2-D array or matrix MxN times.\n\nParameters ---------- a : array_like The array or matrix to be repeated. m, n : int The number of times `a` is repeated along the first and second axes.\n##### Returns\n* **out **: ndarray\n    The result of repeating `a`.\n\n"
+},{
+    "source file": "mingw32ccompiler.py",
+    "line number": "641",
+    "func name": "generate_manifest",
+    "func arg": "(config)",
+    "comments": ""
+},{
+    "source file": "misc_util.py",
+    "line number": "2387",
+    "func name": "get_build_architecture",
+    "func arg": "()",
+    "comments": ""
+},{
+    "source file": "mixins.py",
+    "line number": "51",
+    "func name": "_unary_method",
+    "func arg": "(ufunc, name)",
+    "comments": "Implement a unary special method with a ufunc.\n\n\n"
+},{
+    "source file": "mrecords.py",
+    "line number": "736",
+    "func name": "addfield",
+    "func arg": "(mrecord, newfield, newfieldname)",
+    "comments": "Adds a new field to the masked record array\n\nUses `newfield` as data and `newfieldname` as name. If `newfieldname` is None, the new field name is set to 'fi', where `i` is the number of existing fields.\n"
+},{
+    "source file": "msvc9compiler.py",
+    "line number": "7",
+    "func name": "_merge",
+    "func arg": "(old, new)",
+    "comments": "Concatenate two environment paths avoiding repeats.\n\nHere `old` is the environment string before the base class initialize function is called and `new` is the string after the call. The new string will be a fixed string if it is not obtained from the current environment, or the same as the old string if obtained from the same environment. The aim here is not to append the new string if it is already contained in the old string so as to limit the growth of the environment string.\n\nParameters ---------- old : string Previous environment string. new : string New environment string.\n##### Returns\n* **ret **: string\n    Updated environment string.\n\n"
+},{
+    "source file": "msvccompiler.py",
+    "line number": "7",
+    "func name": "_merge",
+    "func arg": "(old, new)",
+    "comments": "Concatenate two environment paths avoiding repeats.\n\nHere `old` is the environment string before the base class initialize function is called and `new` is the string after the call. The new string will be a fixed string if it is not obtained from the current environment, or the same as the old string if obtained from the same environment. The aim here is not to append the new string if it is already contained in the old string so as to limit the growth of the environment string.\n\nParameters ---------- old : string Previous environment string. new : string New environment string.\n##### Returns\n* **ret **: string\n    Updated environment string.\n\n"
+},{
+    "source file": "multiarray.py",
+    "line number": "1600",
+    "func name": "datetime_as_string",
+    "func arg": "(arr, unit, timezone, casting)",
+    "comments": "datetime_as_string(arr, unit=None, timezone='naive', casting='same_kind')\n\nConvert an array of datetimes into an array of strings.\n\nParameters ---------- arr : array_like of datetime64 The array of UTC timestamps to format. unit : str One of None, 'auto', or a :ref:`datetime unit <arrays.dtypes.dateunits>`. timezone : {'naive', 'UTC', 'local'} or tzinfo Timezone information to use when displaying the datetime. If 'UTC', end with a Z to indicate UTC time. If 'local', convert to the local timezone first, and suffix with a +-#### timezone offset. If a tzinfo object, then do as with 'local', but use the specified timezone. casting : {'no', 'equiv', 'safe', 'same_kind', 'unsafe'} Casting to allow when changing between datetime units.\n##### Returns\n* **str_arr **: ndarray\n    An array of strings the same shape as `arr`.\n\n* **>>> d = np.arange('2002-10-27T04**: 30', 4*60, 60, dtype='M8[m]')\n\n* **array(['2002-10-27T04**: 30\n\n* **array(['2002-10-27T00**: 30-0400', '2002-10-27T01\n\n* **Traceback (most recent call last)**: ...\n\n* **TypeError**: Cannot create a datetime string as units 'h' from a NumPy\n\n"
+},{
+    "source file": "nanfunctions.py",
+    "line number": "1570",
+    "func name": "nanstd",
+    "func arg": "(a, axis, dtype, out, ddof, keepdims)",
+    "comments": "Compute the standard deviation along the specified axis, while ignoring NaNs.\n\n\n##### Returns\n* **standard_deviation **: ndarray, see dtype parameter above.\n    If `out` is None, return a new array containing the standard\n    deviation, otherwise return a reference to the output array. If\n    ddof is >= the number of non-NaN elements in a slice or the slice\n    contains only NaNs, then the result for that slice is NaN.\n\n* **deviations from the mean**: ``std = sqrt(mean(abs(x - x.mean())**2))``.\n\n"
+},{
+    "source file": "nep-0016-benchmark.py",
+    "line number": "33",
+    "func name": "t",
+    "func arg": "(name, statement)",
+    "comments": ""
+},{
+    "source file": "nosetester.py",
+    "line number": "539",
+    "func name": "_numpy_tester",
+    "func arg": "()",
+    "comments": ""
+},{
+    "source file": "npy_pkg_config.py",
+    "line number": "326",
+    "func name": "read_config",
+    "func arg": "(pkgname, dirs)",
+    "comments": "Return library info for a package from its configuration file.\n\nParameters ---------- pkgname : str Name of the package (should match the name of the .ini file, without the extension, e.g. foo for the file foo.ini). dirs : sequence, optional If given, should be a sequence of directories\n\n- usually including the NumPy base directory\n\n- where to look for npy-pkg-config files.\n##### Returns\n* **pkginfo **: class instance\n    The `LibraryInfo` instance containing the build information.\n\n"
+},{
+    "source file": "npyio.py",
+    "line number": "2340",
+    "func name": "recfromcsv",
+    "func arg": "(fname, **kwargs)",
+    "comments": "Load ASCII data stored in a comma-separated file.\n\nThe returned array is a record array (if ``usemask=False``, see `recarray`) or a masked record array (if ``usemask=True``, see `ma.mrecords.MaskedRecords`).\n\nParameters ---------- fname, kwargs : For a description of input parameters, see `genfromtxt`.\n\nSee Also -------- numpy.genfromtxt : generic function to load ASCII data.\n\nNotes ----- By default, `dtype` is None, which means that the data-type of the output array will be determined from the data.\n"
+},{
+    "source file": "numeric.py",
+    "line number": "2448",
+    "func name": "extend_all",
+    "func arg": "(module)",
+    "comments": ""
+},{
+    "source file": "numerictypes.py",
+    "line number": "568",
+    "func name": "find_common_type",
+    "func arg": "(array_types, scalar_types)",
+    "comments": "Determine common type following standard coercion rules.\n\nParameters ---------- array_types : sequence A list of dtypes or dtype convertible objects representing arrays. scalar_types : sequence A list of dtypes or dtype convertible objects representing scalars.\n##### Returns\n* **datatype **: dtype\n    The common data type, which is the maximum of `array_types` ignoring\n    `scalar_types`, unless the maximum of `scalar_types` is of a\n    different kind (`dtype.kind`). If the kind is not understood, then\n    None is returned.\n\n* **the array**: \n\n* **`array_types` argument**: \n\n* **be used instead of dtypes**: \n\n"
+},{
+    "source file": "numpyfilter.py",
+    "line number": "82",
+    "func name": "render_html",
+    "func arg": "(text)",
+    "comments": ""
+},{
+    "source file": "openblas_support.py",
+    "line number": "359",
+    "func name": "test_version",
+    "func arg": "(expected_version, ilp64)",
+    "comments": "Assert that expected OpenBLAS version is actually available via NumPy\n\n\n"
+},{
+    "source file": "overrides.py",
+    "line number": "202",
+    "func name": "array_function_from_dispatcher",
+    "func arg": "(implementation, module, verify, docs_from_dispatcher)",
+    "comments": "Like array_function_dispatcher, but with function arguments flipped.\n\n\n"
+},{
+    "source file": "parameterized.py",
+    "line number": "246",
+    "func name": "detect_runner",
+    "func arg": "()",
+    "comments": "Guess which test runner we're using by traversing the stack and looking for the first matching module. This *should* be reasonably safe, as it's done during test discovery where the test runner should be the stack frame immediately outside.\n\n\n"
+},{
+    "source file": "parse.py",
+    "line number": "4",
+    "func name": "parse_distributions_h",
+    "func arg": "(ffi, inc_dir)",
+    "comments": "Parse distributions.h located in inc_dir for CFFI, filling in the ffi.cdef\n\nRead the function declarations without the \"#define ...\" macros that will be filled in when loading the library.\n"
+},{
+    "source file": "PARSER.py",
+    "line number": "309",
+    "func name": "main",
+    "func arg": "()",
+    "comments": ""
+},{
+    "source file": "pavement.py",
+    "line number": "245",
+    "func name": "write_release",
+    "func arg": "(options)",
+    "comments": "Write the README files.\n\nTwo README files are generated from the release notes, one in ``rst`` markup for the general release, the other in ``md`` markup for the github release notes.\n\nParameters ---------- options : Set by ``task`` decorator.\n"
+},{
+    "source file": "polynomial1.py",
+    "line number": "1393",
+    "func name": "polyroots",
+    "func arg": "(c)",
+    "comments": "Compute the roots of a polynomial.\n\nReturn the roots (a.k.a. \"zeros\") of the polynomial\n\n.. math:: p(x) = \\sum_i c[i] * x^i.\n\nParameters ---------- c : 1-D array_like 1-D array of polynomial coefficients.\n##### Returns\n* **out **: ndarray\n    Array of the roots of the polynomial. If all the roots are real,\n    then `out` is also real, otherwise it is complex.\n\n"
+},{
+    "source file": "polynomial2.py",
+    "line number": "1040",
+    "func name": "_raise_power",
+    "func arg": "(astr, wrap)",
+    "comments": ""
+},{
+    "source file": "polyutils.py",
+    "line number": "762",
+    "func name": "_deprecate_as_int",
+    "func arg": "(x, desc)",
+    "comments": "Like `operator.index`, but emits a deprecation warning when passed a float\n\nParameters ---------- x : int-like, or float with integral value Value to interpret as an integer desc : str description to include in any error message\n"
+},{
+    "source file": "postprocess.py",
+    "line number": "30",
+    "func name": "process_tex",
+    "func arg": "(lines)",
+    "comments": "Remove unnecessary section titles from the LaTeX file.\n\n\n"
+},{
+    "source file": "print_coercion_tables.py",
+    "line number": "31",
+    "func name": "print_coercion_table",
+    "func arg": "(ntypes, inputfirstvalue, inputsecondvalue, firstarray, use_promote_types)",
+    "comments": ""
+},{
+    "source file": "push_docs_to_repo.py",
+    "line number": "35",
+    "func name": "run",
+    "func arg": "(cmd, stdout)",
+    "comments": ""
+},{
+    "source file": "py3k.py",
+    "line number": "109",
+    "func name": "npy_load_module",
+    "func arg": "(name, fn, info)",
+    "comments": "Load a module.\n\n.. versionadded:: 1.11.2\n\nParameters ---------- name : str Full module name. fn : str Path to module file. info : tuple, optional Only here for backward compatibility with Python 2.*.\n##### Returns\n* **mod **: module\n\n"
+},{
+    "source file": "recfunctions.py",
+    "line number": "1582",
+    "func name": "rec_join",
+    "func arg": "(key, r1, r2, jointype, r1postfix, r2postfix, defaults)",
+    "comments": "Join arrays `r1` and `r2` on keys. Alternative to join_by, that always returns a np.recarray.\n\nSee Also -------- join_by : equivalent function\n"
+},{
+    "source file": "records.py",
+    "line number": "955",
+    "func name": "array",
+    "func arg": "(obj, dtype, shape, offset, strides, formats, names, titles, aligned, byteorder, copy)",
+    "comments": "Construct a record array from a wide-variety of objects.\n\nA general-purpose record array constructor that dispatches to the appropriate `recarray` creation function based on the inputs (see Notes).\n\nParameters ---------- obj: any Input object. See Notes for details on how various input types are treated. dtype: data-type, optional Valid dtype for array. shape: int or tuple of ints, optional Shape of each array. offset: int, optional Position in the file or buffer to start reading from. strides: tuple of ints, optional Buffer (`buf`) is interpreted according to these strides (strides define how many bytes each array element, row, column, etc. occupy in memory). formats, names, titles, aligned, byteorder : If `dtype` is ``None``, these arguments are passed to `numpy.format_parser` to construct a dtype. See that function for detailed documentation. copy: bool, optional Whether to copy the input object (True), or to use a reference instead. This option only applies when the input is an ndarray or recarray. Defaults to True.\n##### Returns\n"
+},{
+    "source file": "refguide_check.py",
+    "line number": "1103",
+    "func name": "main",
+    "func arg": "(argv)",
+    "comments": "Validates the docstrings of all the pre decided set of modules for errors and docstring standards.\n\n\n"
+},{
+    "source file": "rules.py",
+    "line number": "1336",
+    "func name": "buildapi",
+    "func arg": "(rout)",
+    "comments": ""
+},{
+    "source file": "runtests.py",
+    "line number": "482",
+    "func name": "lcov_generate",
+    "func arg": "()",
+    "comments": ""
+},{
+    "source file": "scimath.py",
+    "line number": "554",
+    "func name": "arctanh",
+    "func arg": "(x)",
+    "comments": "Compute the inverse hyperbolic tangent of `x`.\n\nReturn the \"principal value\" (for a description of this, see `numpy.arctanh`) of `arctanh(x)`. For real `x` such that `abs(x) < 1`, this is a real number.\n\nIf `abs(x) > 1`, or if `x` is complex, the result is complex. Finally, `x = 1` returns``inf`` and `x=-1` returns ``-inf``.\n\nParameters ---------- x : array_like The value(s) whose arctanh is (are) required.\n##### Returns\n* **out **: ndarray or scalar\n   The inverse hyperbolic tangent(s) of the `x` value(s). If `x` was\n   a scalar so is `out`, otherwise an array is returned.\n\n* **>>> with suppress_warnings() as sup**: \n\n"
+},{
+    "source file": "setup_common.py",
+    "line number": "413",
+    "func name": "check_for_right_shift_internal_compiler_error",
+    "func arg": "(cmd)",
+    "comments": "On our arm CI, this fails with an internal compilation error\n\nThe failure looks like the following, and can be reproduced on ARM64 GCC 5.4:\n\n<source>: In function 'right_shift': <source>:4:20: internal compiler error: in expand_shift_1, at expmed.c:2349 ip1[i] = ip1[i] >> in2; ^ Please submit a full bug report, with preprocessed source if appropriate. See <http://gcc.gnu.org/bugs.html> for instructions. Compiler returned: 1\n\nThis function returns True if this compiler bug is present, and we need to turn off optimization for the function\n"
+},{
+    "source file": "setup1.py",
+    "line number": "416",
+    "func name": "setup_package",
+    "func arg": "()",
+    "comments": ""
+},{
+    "source file": "setup4.py",
+    "line number": "3",
+    "func name": "configuration",
+    "func arg": "(parent_package, top_path)",
+    "comments": ""
+},{
+    "source file": "setup5.py",
+    "line number": "1",
+    "func name": "configuration",
+    "func arg": "(parent_package, top_path)",
+    "comments": ""
+},{
+    "source file": "setup6.py",
+    "line number": "3",
+    "func name": "configuration",
+    "func arg": "(parent_package, top_path)",
+    "comments": ""
+},{
+    "source file": "setup7.py",
+    "line number": "1",
+    "func name": "configuration",
+    "func arg": "(parent_package, top_path)",
+    "comments": ""
+},{
+    "source file": "setup8.py",
+    "line number": "12",
+    "func name": "configuration",
+    "func arg": "(parent_package, top_path)",
+    "comments": ""
+},{
+    "source file": "setup10.py",
+    "line number": "2",
+    "func name": "configuration",
+    "func arg": "(parent_package, top_path)",
+    "comments": ""
+},{
+    "source file": "setup11.py",
+    "line number": "3",
+    "func name": "configuration",
+    "func arg": "(parent_package, top_path)",
+    "comments": ""
+},{
+    "source file": "setup12.py",
+    "line number": "4",
+    "func name": "configuration",
+    "func arg": "(parent_package, top_path)",
+    "comments": ""
+},{
+    "source file": "setup13.py",
+    "line number": "2",
+    "func name": "configuration",
+    "func arg": "(parent_package, top_path)",
+    "comments": ""
+},{
+    "source file": "setup14.py",
+    "line number": "390",
+    "func name": "configuration",
+    "func arg": "(parent_package, top_path)",
+    "comments": ""
+},{
+    "source file": "setup16.py",
+    "line number": "1",
+    "func name": "configuration",
+    "func arg": "(parent_package, top_path)",
+    "comments": ""
+},{
+    "source file": "setup17.py",
+    "line number": "2",
+    "func name": "configuration",
+    "func arg": "(parent_package, top_path)",
+    "comments": ""
+},{
+    "source file": "setup18.py",
+    "line number": "26",
+    "func name": "configuration",
+    "func arg": "(parent_package, top_path)",
+    "comments": ""
+},{
+    "source file": "setup20.py",
+    "line number": "1",
+    "func name": "configuration",
+    "func arg": "(parent_package, top_path)",
+    "comments": ""
+},{
+    "source file": "shape_base1.py",
+    "line number": "892",
+    "func name": "_block_concatenate",
+    "func arg": "(arrays, list_ndim, result_ndim)",
+    "comments": ""
+},{
+    "source file": "shape_base2.py",
+    "line number": "1172",
+    "func name": "tile",
+    "func arg": "(A, reps)",
+    "comments": "Construct an array by repeating A the number of times given by reps.\n\nIf `reps` has length ``d``, the result will have dimension of ``max(d, A.ndim)``.\n\nIf ``A.ndim < d``, `A` is promoted to be d-dimensional by prepending new axes. So a shape (3,) array is promoted to (1, 3) for 2-D replication, or shape (1, 1, 3) for 3-D replication. If this is not the desired behavior, promote `A` to d-dimensions manually before calling this function.\n\nIf ``A.ndim > d``, `reps` is promoted to `A`.ndim by pre-pending 1's to it. Thus for an `A` of shape (2, 3, 4, 5), a `reps` of (2, 2) is treated as (1, 1, 2, 2).\n\nNote : Although tile may be used for broadcasting, it is strongly recommended to use numpy's broadcasting operations and functions.\n\nParameters ---------- A : array_like The input array. reps : array_like The number of repetitions of `A` along each axis.\n##### Returns\n* **c **: ndarray\n    The tiled output array.\n\n* **repeat **: Repeat elements of an array.\n\n* **broadcast_to **: Broadcast an array to a new shape\n\n"
+},{
+    "source file": "simd-optimizations.py",
+    "line number": "114",
+    "func name": "features_table_diff",
+    "func arg": "(arch, cc, cc_vs, pretty_name, **kwargs)",
+    "comments": ""
+},{
+    "source file": "simple.py",
+    "line number": "70",
+    "func name": "iterable_func",
+    "func arg": "(x)",
+    "comments": ""
+},{
+    "source file": "stride_tricks.py",
+    "line number": "205",
+    "func name": "broadcast_arrays",
+    "func arg": "()",
+    "comments": "Broadcast any number of arrays against each other.\n\nParameters ---------- `*args` : array_likes The arrays to broadcast.\n\nsubok : bool, optional If True, then sub-classes will be passed-through, otherwise the returned arrays will be forced to be a base-class array (default).\n##### Returns\n* **broadcasted **: list of arrays\n    These arrays are views on the original arrays.  They are typically\n    not contiguous.  Furthermore, more than one element of a\n    broadcasted array may refer to a single memory location. If you need\n    to write to the arrays, make copies first. While you can set the\n    ``writable`` flag True, writing to a single output value may end up\n    changing more than one location in the output array.\n    .. deprecated\n\n"
+},{
+    "source file": "system_info.py",
+    "line number": "2976",
+    "func name": "show_all",
+    "func arg": "(argv)",
+    "comments": ""
+},{
+    "source file": "test__datasource.py",
+    "line number": "337",
+    "func name": "test_del_attr_handling",
+    "func arg": "()",
+    "comments": ""
+},{
+    "source file": "test__iotools.py",
+    "line number": "137",
+    "func name": "_bytes_to_date",
+    "func arg": "(s)",
+    "comments": ""
+},{
+    "source file": "test__version.py",
+    "line number": "62",
+    "func name": "test_raises",
+    "func arg": "()",
+    "comments": ""
+},{
+    "source file": "test_api.py",
+    "line number": "549",
+    "func name": "test_full_from_list",
+    "func arg": "(shape, fill_value, expected_output)",
+    "comments": ""
+},{
+    "source file": "test_array_coercion.py",
+    "line number": "126",
+    "func name": "is_parametric_dtype",
+    "func arg": "(dtype)",
+    "comments": "Returns True if the the dtype is a parametric legacy dtype (itemsize is 0, or a datetime without units)\n\n\n"
+},{
+    "source file": "test_array_from_pyobj.py",
+    "line number": "46",
+    "func name": "flags2names",
+    "func arg": "(flags)",
+    "comments": ""
+},{
+    "source file": "test_arraypad.py",
+    "line number": "1361",
+    "func name": "test_dtype_persistence",
+    "func arg": "(dtype, mode)",
+    "comments": ""
+},{
+    "source file": "test_arrayprint.py",
+    "line number": "926",
+    "func name": "test_unicode_object_array",
+    "func arg": "()",
+    "comments": ""
+},{
+    "source file": "test_arrayterator.py",
+    "line number": "10",
+    "func name": "test",
+    "func arg": "()",
+    "comments": ""
+},{
+    "source file": "test_assumed_shape.py",
+    "line number": "9",
+    "func name": "_path",
+    "func arg": "()",
+    "comments": ""
+},{
+    "source file": "test_ccompiler_opt.py",
+    "line number": "755",
+    "func name": "new_test",
+    "func arg": "(arch, cc)",
+    "comments": ""
+},{
+    "source file": "test_chebyshev.py",
+    "line number": "14",
+    "func name": "trim",
+    "func arg": "(x)",
+    "comments": ""
+},{
+    "source file": "test_classes.py",
+    "line number": "566",
+    "func name": "test_ufunc_override",
+    "func arg": "(Poly)",
+    "comments": ""
+},{
+    "source file": "test_common.py",
+    "line number": "10",
+    "func name": "_path",
+    "func arg": "()",
+    "comments": ""
+},{
+    "source file": "test_compat.py",
+    "line number": "8",
+    "func name": "test_isfileobj",
+    "func arg": "()",
+    "comments": ""
+},{
+    "source file": "test_compile_function.py",
+    "line number": "114",
+    "func name": "test_compile_from_strings",
+    "func arg": "(tmpdir, fsource)",
+    "comments": ""
+},{
+    "source file": "test_core.py",
+    "line number": "5300",
+    "func name": "test_doc_note",
+    "func arg": "()",
+    "comments": ""
+},{
+    "source file": "test_cpu_dispatcher.py",
+    "line number": "5",
+    "func name": "test_dispatcher",
+    "func arg": "()",
+    "comments": "Testing the utilites of the CPU dispatcher\n\n\n"
+},{
+    "source file": "test_cpu_features.py",
+    "line number": "4",
+    "func name": "assert_features_equal",
+    "func arg": "(actual, desired, fname)",
+    "comments": ""
+},{
+    "source file": "test_cython.py",
+    "line number": "117",
+    "func name": "test_get_datetime64_unit",
+    "func arg": "(install_temp)",
+    "comments": ""
+},{
+    "source file": "test_defchararray.py",
+    "line number": "662",
+    "func name": "test_empty_indexing",
+    "func arg": "()",
+    "comments": "Regression test for ticket 1948.\n\n\n"
+},{
+    "source file": "test_deprecations1.py",
+    "line number": "8",
+    "func name": "test_qr_mode_full_future_warning",
+    "func arg": "()",
+    "comments": "Check mode='full' FutureWarning.\n\nIn numpy 1.8 the mode options 'full' and 'economic' in linalg.qr were deprecated. The release date will probably be sometime in the summer of 2013.\n"
+},{
+    "source file": "test_deprecations2.py",
+    "line number": "528",
+    "func name": "test_deprecate_ragged_arrays",
+    "func arg": "()",
+    "comments": ""
+},{
+    "source file": "test_direct.py",
+    "line number": "129",
+    "func name": "test_seedsequence",
+    "func arg": "()",
+    "comments": ""
+},{
+    "source file": "test_doctesting.py",
+    "line number": "43",
+    "func name": "check_skip",
+    "func arg": "()",
+    "comments": "Check skip directive\n\nThe test below should not run\n\n>>> 1/0 #doctest: +SKIP\n"
+},{
+    "source file": "test_dtype.py",
+    "line number": "1059",
+    "func name": "test_keyword_argument",
+    "func arg": "()",
+    "comments": ""
+},{
+    "source file": "test_einsum.py",
+    "line number": "1053",
+    "func name": "test_overlap",
+    "func arg": "()",
+    "comments": ""
+},{
+    "source file": "test_exec_command.py",
+    "line number": "80",
+    "func name": "test_exec_command_stderr",
+    "func arg": "()",
+    "comments": ""
+},{
+    "source file": "test_extending.py",
+    "line number": "94",
+    "func name": "test_cffi",
+    "func arg": "()",
+    "comments": ""
+},{
+    "source file": "test_extint128.py",
+    "line number": "212",
+    "func name": "test_ceildiv_128_64",
+    "func arg": "()",
+    "comments": ""
+},{
+    "source file": "test_fcompiler.py",
+    "line number": "15",
+    "func name": "test_fcompiler_flags",
+    "func arg": "(monkeypatch)",
+    "comments": ""
+},{
+    "source file": "test_financial.py",
+    "line number": "10",
+    "func name": "filter_deprecation",
+    "func arg": "(func)",
+    "comments": ""
+},{
+    "source file": "test_format.py",
+    "line number": "965",
+    "func name": "test_metadata_dtype",
+    "func arg": "(dt, fail)",
+    "comments": ""
+},{
+    "source file": "test_from_template.py",
+    "line number": "39",
+    "func name": "test_from_template",
+    "func arg": "()",
+    "comments": "Regression test for gh-10712.\n\n\n"
+},{
+    "source file": "test_function_base2.py",
+    "line number": "2634",
+    "func name": "compare_results",
+    "func arg": "(res, desired)",
+    "comments": ""
+},{
+    "source file": "test_generator_mt19937.py",
+    "line number": "2445",
+    "func name": "test_broadcast_size_scalar",
+    "func arg": "()",
+    "comments": ""
+},{
+    "source file": "test_getlimits.py",
+    "line number": "115",
+    "func name": "test_plausible_finfo",
+    "func arg": "()",
+    "comments": ""
+},{
+    "source file": "test_half.py",
+    "line number": "9",
+    "func name": "assert_raises_fpe",
+    "func arg": "(strmatch, callable, **kwargs)",
+    "comments": ""
+},{
+    "source file": "test_hermite_e.py",
+    "line number": "27",
+    "func name": "trim",
+    "func arg": "(x)",
+    "comments": ""
+},{
+    "source file": "test_hermite.py",
+    "line number": "27",
+    "func name": "trim",
+    "func arg": "(x)",
+    "comments": ""
+},{
+    "source file": "test_index_tricks.py",
+    "line number": "477",
+    "func name": "test_ndindex",
+    "func arg": "()",
+    "comments": ""
+},{
+    "source file": "test_interaction.py",
+    "line number": "340",
+    "func name": "test_array_almost_equal_matrix",
+    "func arg": "()",
+    "comments": ""
+},{
+    "source file": "test_io.py",
+    "line number": "2576",
+    "func name": "test_load_refcount",
+    "func arg": "()",
+    "comments": ""
+},{
+    "source file": "test_kind.py",
+    "line number": "12",
+    "func name": "_path",
+    "func arg": "()",
+    "comments": ""
+},{
+    "source file": "test_laguerre.py",
+    "line number": "24",
+    "func name": "trim",
+    "func arg": "(x)",
+    "comments": ""
+},{
+    "source file": "test_legendre.py",
+    "line number": "27",
+    "func name": "trim",
+    "func arg": "(x)",
+    "comments": ""
+},{
+    "source file": "test_linalg.py",
+    "line number": "2066",
+    "func name": "test_blas64_geqrf_lwork_smoketest",
+    "func arg": "()",
+    "comments": ""
+},{
+    "source file": "test_longdouble.py",
+    "line number": "368",
+    "func name": "test_longdouble_from_bool",
+    "func arg": "(bool_val)",
+    "comments": ""
+},{
+    "source file": "test_matlib.py",
+    "line number": "53",
+    "func name": "test_repmat",
+    "func arg": "()",
+    "comments": ""
+},{
+    "source file": "test_mem_overlap.py",
+    "line number": "576",
+    "func name": "assert_copy_equivalent",
+    "func arg": "(operation, args, out, **kwargs)",
+    "comments": "Check that operation(*args, out=out) produces results equivalent to out[...] = operation(*args, out=out.copy())\n\n\n"
+},{
+    "source file": "test_mingw32ccompiler.py",
+    "line number": "10",
+    "func name": "test_build_import",
+    "func arg": "()",
+    "comments": "Test the mingw32ccompiler.build_import_library, which builds a `python.a` from the MSVC `python.lib`\n\n\n"
+},{
+    "source file": "test_misc_util.py",
+    "line number": "76",
+    "func name": "test_installed_npymath_ini",
+    "func arg": "()",
+    "comments": ""
+},{
+    "source file": "test_mixed.py",
+    "line number": "9",
+    "func name": "_path",
+    "func arg": "()",
+    "comments": ""
+},{
+    "source file": "test_mixins.py",
+    "line number": "59",
+    "func name": "_assert_equal_type_and_value",
+    "func arg": "(result, expected, err_msg)",
+    "comments": ""
+},{
+    "source file": "test_mrecords.py",
+    "line number": "486",
+    "func name": "test_record_array_with_object_field",
+    "func arg": "()",
+    "comments": ""
+},{
+    "source file": "test_multiarray2.py",
+    "line number": "8429",
+    "func name": "test_getfield",
+    "func arg": "()",
+    "comments": ""
+},{
+    "source file": "test_nanfunctions.py",
+    "line number": "956",
+    "func name": "test__replace_nan",
+    "func arg": "()",
+    "comments": "Test that _replace_nan returns the original array if there are no NaNs, not a copy.\n\n\n"
+},{
+    "source file": "test_nditer.py",
+    "line number": "2874",
+    "func name": "test_warn_noclose",
+    "func arg": "()",
+    "comments": ""
+},{
+    "source file": "test_numeric1.py",
+    "line number": "10",
+    "func name": "test_diagonal",
+    "func arg": "()",
+    "comments": ""
+},{
+    "source file": "test_numeric2.py",
+    "line number": "3092",
+    "func name": "test_outer_out_param",
+    "func arg": "()",
+    "comments": ""
+},{
+    "source file": "test_numerictypes.py",
+    "line number": "509",
+    "func name": "test_issctype",
+    "func arg": "(rep, expected)",
+    "comments": ""
+},{
+    "source file": "test_numpy_version.py",
+    "line number": "7",
+    "func name": "test_valid_numpy_version",
+    "func arg": "()",
+    "comments": ""
+},{
+    "source file": "test_old_ma.py",
+    "line number": "853",
+    "func name": "eqmask",
+    "func arg": "(m1, m2)",
+    "comments": ""
+},{
+    "source file": "test_overrides.py",
+    "line number": "280",
+    "func name": "_new_duck_type_and_implements",
+    "func arg": "()",
+    "comments": "Create a duck array type and implements functions.\n\n\n"
+},{
+    "source file": "test_packbits.py",
+    "line number": "274",
+    "func name": "test_unpackbits_large",
+    "func arg": "()",
+    "comments": ""
+},{
+    "source file": "test_parameter.py",
+    "line number": "10",
+    "func name": "_path",
+    "func arg": "()",
+    "comments": ""
+},{
+    "source file": "test_pocketfft.py",
+    "line number": "240",
+    "func name": "test_fft_with_order",
+    "func arg": "(dtype, order, fft)",
+    "comments": ""
+},{
+    "source file": "test_polynomial1.py",
+    "line number": "13",
+    "func name": "trim",
+    "func arg": "(x)",
+    "comments": ""
+},{
+    "source file": "test_print.py",
+    "line number": "157",
+    "func name": "test_scalar_format",
+    "func arg": "()",
+    "comments": "Test the str.format method with NumPy scalar types\n\n\n"
+},{
+    "source file": "test_printing.py",
+    "line number": "275",
+    "func name": "test_nonnumeric_object_coefficients",
+    "func arg": "(coefs, tgt)",
+    "comments": "Test coef fallback for object arrays of non-numeric coefficients.\n\n\n"
+},{
+    "source file": "test_protocols.py",
+    "line number": "34",
+    "func name": "test_array_called",
+    "func arg": "()",
+    "comments": ""
+},{
+    "source file": "test_public_api.py",
+    "line number": "451",
+    "func name": "test_api_importable",
+    "func arg": "()",
+    "comments": "Check that all submodules listed higher up in this file can be imported\n\nNote that if a PRIVATE_BUT_PRESENT_MODULES entry goes missing, it may simply need to be removed from the list (deprecation may or may not be needed\n\n- apply common sense).\n"
+},{
+    "source file": "test_randomstate.py",
+    "line number": "1994",
+    "func name": "test_broadcast_size_error",
+    "func arg": "()",
+    "comments": ""
+},{
+    "source file": "test_records.py",
+    "line number": "493",
+    "func name": "test_find_duplicate",
+    "func arg": "()",
+    "comments": ""
+},{
+    "source file": "test_regression.py",
+    "line number": "10",
+    "func name": "_path",
+    "func arg": "()",
+    "comments": ""
+},{
+    "source file": "test_reloading.py",
+    "line number": "38",
+    "func name": "test_full_reimport",
+    "func arg": "()",
+    "comments": "At the time of writing this, it is *not* truly supported, but apparently enough users rely on it, for it to be an annoying change when it started failing previously.\n\n\n"
+},{
+    "source file": "test_scalarmath.py",
+    "line number": "196",
+    "func name": "_signs",
+    "func arg": "(dt)",
+    "comments": ""
+},{
+    "source file": "test_scripts.py",
+    "line number": "44",
+    "func name": "test_pep338",
+    "func arg": "()",
+    "comments": ""
+},{
+    "source file": "test_seed_sequence.py",
+    "line number": "57",
+    "func name": "test_zero_padding",
+    "func arg": "()",
+    "comments": "Ensure that the implicit zero-padding does not cause problems.\n\n\n"
+},{
+    "source file": "test_shape_base1.py",
+    "line number": "715",
+    "func name": "test_block_dispatcher",
+    "func arg": "()",
+    "comments": ""
+},{
+    "source file": "test_shape_base2.py",
+    "line number": "715",
+    "func name": "compare_results",
+    "func arg": "(res, desired)",
+    "comments": ""
+},{
+    "source file": "test_shell_utils.py",
+    "line number": "68",
+    "func name": "test_roundtrip",
+    "func arg": "(Parser, argv)",
+    "comments": "Test that split is the inverse operation of join\n\n\n"
+},{
+    "source file": "test_size.py",
+    "line number": "8",
+    "func name": "_path",
+    "func arg": "()",
+    "comments": ""
+},{
+    "source file": "test_smoke.py",
+    "line number": "79",
+    "func name": "warmup",
+    "func arg": "(rg, n)",
+    "comments": ""
+},{
+    "source file": "test_stride_tricks.py",
+    "line number": "472",
+    "func name": "test_reference_types",
+    "func arg": "()",
+    "comments": ""
+},{
+    "source file": "test_string.py",
+    "line number": "9",
+    "func name": "_path",
+    "func arg": "()",
+    "comments": ""
+},{
+    "source file": "test_subclassing.py",
+    "line number": "18",
+    "func name": "assert_startswith",
+    "func arg": "(a, b)",
+    "comments": ""
+},{
+    "source file": "test_system_info.py",
+    "line number": "64",
+    "func name": "have_compiler",
+    "func arg": "()",
+    "comments": "Return True if there appears to be an executable compiler\n\n\n"
+},{
+    "source file": "test_twodim_base.py",
+    "line number": "390",
+    "func name": "test_tril_indices",
+    "func arg": "()",
+    "comments": ""
+},{
+    "source file": "test_type_check.py",
+    "line number": "11",
+    "func name": "assert_all",
+    "func arg": "(x)",
+    "comments": ""
+},{
+    "source file": "test_typing.py",
+    "line number": "137",
+    "func name": "test_code_runs",
+    "func arg": "(path)",
+    "comments": ""
+},{
+    "source file": "test_ufunc.py",
+    "line number": "2062",
+    "func name": "test_ufunc_warn_with_nan",
+    "func arg": "(ufunc)",
+    "comments": ""
+},{
+    "source file": "test_umath_accuracy.py",
+    "line number": "19",
+    "func name": "convert",
+    "func arg": "(s, datatype)",
+    "comments": ""
+},{
+    "source file": "test_umath_complex.py",
+    "line number": "535",
+    "func name": "check_complex_value",
+    "func arg": "(f, x1, y1, x2, y2, exact)",
+    "comments": ""
+},{
+    "source file": "test_umath.py",
+    "line number": "3281",
+    "func name": "test_outer_subclass_preserve",
+    "func arg": "(arr)",
+    "comments": ""
+},{
+    "source file": "test_unicode.py",
+    "line number": "31",
+    "func name": "test_string_cast",
+    "func arg": "()",
+    "comments": ""
+},{
+    "source file": "test_utils1.py",
+    "line number": "1531",
+    "func name": "test_clear_and_catch_warnings_inherit",
+    "func arg": "()",
+    "comments": ""
+},{
+    "source file": "test_utils2.py",
+    "line number": "140",
+    "func name": "test_assert_raises_regex_context_manager",
+    "func arg": "()",
+    "comments": ""
+},{
+    "source file": "test_warnings.py",
+    "line number": "59",
+    "func name": "test_warning_calls",
+    "func arg": "()",
+    "comments": ""
+},{
+    "source file": "testutils.py",
+    "line number": "279",
+    "func name": "assert_mask_equal",
+    "func arg": "(m1, m2, err_msg)",
+    "comments": "Asserts the equality of two masks.\n\n\n"
+},{
+    "source file": "twodim_base.py",
+    "line number": "986",
+    "func name": "triu_indices_from",
+    "func arg": "(arr, k)",
+    "comments": "Return the indices for the upper-triangle of arr.\n\nSee `triu_indices` for full details.\n\nParameters ---------- arr : ndarray, shape(N, N) The indices will be valid for square arrays. k : int, optional Diagonal offset (see `triu` for details).\n##### Returns\n* **triu_indices_from **: tuple, shape(2) of ndarray, shape(N)\n    Indices for the upper-triangle of `arr`.\n\n* **.. versionadded**: \n\n"
+},{
+    "source file": "type_check.py",
+    "line number": "680",
+    "func name": "common_type",
+    "func arg": "()",
+    "comments": "Return a scalar type which is common to the input arrays.\n\nThe return type will always be an inexact (i.e. floating point) scalar type, even if all the arrays are integer arrays. If one of the inputs is an integer array, the minimum precision type that is returned is a 64-bit floating point dtype.\n\nAll input arrays except int64 and uint64 can be safely cast to the returned dtype without loss of information.\n\nParameters ---------- array1, array2, ... : ndarrays Input arrays.\n##### Returns\n* **out **: data type code\n    Data type code.\n\n"
+},{
+    "source file": "ufunc_docstrings.py",
+    "line number": "45",
+    "func name": "add_newdoc",
+    "func arg": "(place, name, doc)",
+    "comments": ""
+},{
+    "source file": "ufunclike.py",
+    "line number": "200",
+    "func name": "isneginf",
+    "func arg": "(x, out)",
+    "comments": "Test element-wise for negative infinity, return result as bool array.\n\nParameters ---------- x : array_like The input array. out : array_like, optional A location into which the result is stored. If provided, it must have a shape that the input broadcasts to. If not provided or None, a freshly-allocated boolean array is returned.\n##### Returns\n* **out **: ndarray\n    A boolean array with the same dimensions as the input.\n    If second argument is not supplied then a numpy boolean array is\n    returned with values True where the corresponding element of the\n    input is negative infinity and values False where the element of\n    the input is not negative infinity.\n    If a second argument is supplied the result is stored there. If the\n    type of that array is a numeric type the result is represented as\n    zeros and ones, if the type is boolean then as False and True. The\n    return value `out` is then a reference to that array.\n\n"
+},{
+    "source file": "unixccompiler.py",
+    "line number": "64",
+    "func name": "UnixCCompiler_create_static_lib",
+    "func arg": "(objects, output_libname, output_dir, debug, target_lang)",
+    "comments": "Build a static library in a separate sub-process.\n\nParameters ---------- objects : list or tuple of str List of paths to object files used to build the static library. output_libname : str The library name as an absolute or relative (if `output_dir` is used) path. output_dir : str, optional The path to the output directory. Default is None, in which case the ``output_dir`` attribute of the UnixCCompiler instance. debug : bool, optional This parameter is not used. target_lang : str, optional This parameter is not used.\n##### Returns\n"
+},{
+    "source file": "use_rules.py",
+    "line number": "88",
+    "func name": "buildusevar",
+    "func arg": "(name, realname, vars, usemodulename)",
+    "comments": ""
+},{
+    "source file": "util.py",
+    "line number": "242",
+    "func name": "build_module_distutils",
+    "func arg": "(source_files, config_code, module_name, **kw)",
+    "comments": "Build a module via distutils and import it.\n\n\n"
+},{
+    "source file": "utils1.py",
+    "line number": "982",
+    "func name": "_median_nancheck",
+    "func arg": "(data, result, axis, out)",
+    "comments": "Utility function to check median result from data for NaN values at the end and return NaN in that case. Input result can also be a MaskedArray.\n\nParameters ---------- data : array Input data to median function result : Array or MaskedArray Result of median function axis : {int, sequence of int, None}, optional Axis or axes along which the median was computed. out : ndarray, optional Output array in which to place the result.\n##### Returns\n* **median **: scalar or ndarray\n    Median or NaN in axes which contained NaN in the input.\n\n"
+},{
+    "source file": "utils2.py",
+    "line number": "2504",
+    "func name": "_no_tracing",
+    "func arg": "(func)",
+    "comments": "Decorator to temporarily turn off tracing for the duration of a test. Needed in tests that check refcounting, otherwise the tracing itself influences the refcounts\n\n\n"
+}]
+}

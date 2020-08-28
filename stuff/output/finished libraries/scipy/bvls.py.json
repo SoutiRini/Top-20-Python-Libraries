@@ -1,0 +1,7 @@
+{
+    "source file": "bvls.py",
+    "line number": "17",
+    "func name": "bvls",
+    "func arg": "(A, b, x_lsq, lb, ub, tol, max_iter, verbose)",
+    "comments": ""
+}

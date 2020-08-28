@@ -1,0 +1,7 @@
+{
+    "source file": "boston_housing.py",
+    "line number": "28",
+    "func name": "load_data",
+    "func arg": "(path, test_split, seed)",
+    "comments": "Loads the Boston Housing dataset.\n\nThis is a dataset taken from the StatLib library which is maintained at Carnegie Mellon University.\n\nSamples contain 13 attributes of houses at different locations around the Boston suburbs in the late 1970s. Targets are the median values of the houses at a location (in k$).\n\nThe attributes themselves are defined in the [StatLib website](http://lib.stat.cmu.edu/datasets/boston).\n\nArguments: path: path where to cache the dataset locally (relative to `~/.keras/datasets`). test_split: fraction of the data to reserve as test set. seed: Random seed for shuffling the data before computing the test split.\n##### Returns\n* **Tuple of Numpy arrays**: `(x_train, y_train), (x_test, y_test)`.\n\n* ****x_train, x_test****: numpy arrays with shape `(num_samples, 13)`\n  containing either the training samples (for x_train),\n  or test samples (for y_train).\n\n* ****y_train, y_test****: numpy arrays of shape `(num_samples,)` containing the\n  target scalars. The targets are float scalars typically between 10 and\n  50 that represent the home prices in k$.\n\n"
+}

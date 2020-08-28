@@ -1,0 +1,7 @@
+{
+    "source file": "_rcv1.py",
+    "line number": "285",
+    "func name": "_find_permutation",
+    "func arg": "(a, b)",
+    "comments": "find the permutation from a to b\n\n\n"
+}

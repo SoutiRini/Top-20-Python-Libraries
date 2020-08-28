@@ -1,0 +1,7 @@
+{
+    "source file": "test_slerp248.py",
+    "line number": "10",
+    "func name": "_generate_spherical_points",
+    "func arg": "(ndim, n_pts)",
+    "comments": ""
+}

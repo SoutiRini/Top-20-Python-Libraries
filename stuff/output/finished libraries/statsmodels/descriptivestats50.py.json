@@ -1,0 +1,7 @@
+{
+    "source file": "descriptivestats50.py",
+    "line number": "35",
+    "func name": "sign_test",
+    "func arg": "(samp, mu0)",
+    "comments": "Signs test.\n\nParameters ---------- samp : array_like 1d array. The sample for which you want to perform the signs test. mu0 : float See Notes for the definition of the sign test. mu0 is 0 by default, but it is common to set it to the median.\n##### Returns\n"
+}

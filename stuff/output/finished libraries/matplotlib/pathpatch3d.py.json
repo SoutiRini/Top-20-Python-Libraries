@@ -1,0 +1,7 @@
+{
+    "source file": "pathpatch3d.py",
+    "line number": "17",
+    "func name": "text3d",
+    "func arg": "(ax, xyz, s, zdir, size, angle, usetex, **kwargs)",
+    "comments": "Plots the string 's' on the axes 'ax', with position 'xyz', size 'size', and rotation angle 'angle'.  'zdir' gives the axis which is to be treated as the third dimension.  usetex is a boolean indicating whether the string should be interpreted as latex or not.  Any additional keyword arguments are passed on to transform_path.\n\nNote: zdir affects the interpretation of xyz.\n"
+}

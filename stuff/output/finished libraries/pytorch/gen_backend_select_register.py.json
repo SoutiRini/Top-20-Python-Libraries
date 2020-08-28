@@ -1,0 +1,7 @@
+{
+    "source file": "gen_backend_select_register.py",
+    "line number": "58",
+    "func name": "register_backend_select_methods",
+    "func arg": "(declarations, template_path, file_manager)",
+    "comments": ""
+}

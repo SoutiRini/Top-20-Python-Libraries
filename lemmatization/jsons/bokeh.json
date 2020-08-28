@@ -1,0 +1,2535 @@
+{"function":
+[{
+    "source file": "__main__.py",
+    "line number": "48",
+    "func name": "main",
+    "func arg": "()",
+    "comments": "Execute the \"bokeh\" command line program.\n\n\n"
+},{
+    "source file": "_decorators.py",
+    "line number": "42",
+    "func name": "glyph_method",
+    "func arg": "(glyphclass)",
+    "comments": ""
+},{
+    "source file": "_docstring.py",
+    "line number": "105",
+    "func name": "_docstring_other",
+    "func arg": "()",
+    "comments": ""
+},{
+    "source file": "_dummy_auth.py",
+    "line number": "1",
+    "func name": "get_user",
+    "func arg": "(request)",
+    "comments": ""
+},{
+    "source file": "_graph.py",
+    "line number": "52",
+    "func name": "get_graph_kwargs",
+    "func arg": "(node_source, edge_source, **kwargs)",
+    "comments": ""
+},{
+    "source file": "_legends.py",
+    "line number": "129",
+    "func name": "_handle_legend_label",
+    "func arg": "(label, legend, glyph_renderer)",
+    "comments": ""
+},{
+    "source file": "_plot.py",
+    "line number": "144",
+    "func name": "_get_num_minor_ticks",
+    "func arg": "(axis_class, num_minor_ticks)",
+    "comments": ""
+},{
+    "source file": "_renderer.py",
+    "line number": "264",
+    "func name": "_process_sequence_literals",
+    "func arg": "(glyphclass, kwargs, source, is_user_source)",
+    "comments": ""
+},{
+    "source file": "_setup_support.py",
+    "line number": "292",
+    "func name": "install_js",
+    "func arg": "()",
+    "comments": "Copy built BokehJS files into the Python source tree.\n\n\n##### Returns\n"
+},{
+    "source file": "_stack.py",
+    "line number": "71",
+    "func name": "double_stack",
+    "func arg": "(stackers, spec0, spec1, **kw)",
+    "comments": ""
+},{
+    "source file": "_tools.py",
+    "line number": "174",
+    "func name": "_collect_repeated_tools",
+    "func arg": "(tool_objs)",
+    "comments": ""
+},{
+    "source file": "_util_models.py",
+    "line number": "92",
+    "func name": "check_marker_properties",
+    "func arg": "(marker)",
+    "comments": ""
+},{
+    "source file": "_util_server.py",
+    "line number": "46",
+    "func name": "ws_url",
+    "func arg": "(server, prefix)",
+    "comments": ""
+},{
+    "source file": "_version.py",
+    "line number": "477",
+    "func name": "get_versions",
+    "func arg": "()",
+    "comments": "Get version information or return default if unable to do so.\n\n\n"
+},{
+    "source file": "airports_map.py",
+    "line number": "9",
+    "func name": "plot",
+    "func arg": "(tile_source)",
+    "comments": ""
+},{
+    "source file": "airports.py",
+    "line number": "55",
+    "func name": "_read_data",
+    "func arg": "()",
+    "comments": "\n\n\n"
+},{
+    "source file": "ajax_source.py",
+    "line number": "51",
+    "func name": "data",
+    "func arg": "()",
+    "comments": ""
+},{
+    "source file": "annotations.py",
+    "line number": "116",
+    "func name": "_DEFAULT_TEE",
+    "func arg": "()",
+    "comments": ""
+},{
+    "source file": "anscombe.py",
+    "line number": "49",
+    "func name": "make_plot",
+    "func arg": "(title, xname, yname)",
+    "comments": ""
+},{
+    "source file": "api.py",
+    "line number": "39",
+    "func name": "verify_all",
+    "func arg": "(module, ALL)",
+    "comments": "\n\n\n"
+},{
+    "source file": "app_hooks.py",
+    "line number": "6",
+    "func name": "on_server_loaded",
+    "func arg": "(server_context)",
+    "comments": ""
+},{
+    "source file": "app_hooks1.py",
+    "line number": "8",
+    "func name": "on_server_loaded",
+    "func arg": "(server_context)",
+    "comments": ""
+},{
+    "source file": "app.py",
+    "line number": "54",
+    "func name": "update_data",
+    "func arg": "(attrname, old, new)",
+    "comments": ""
+},{
+    "source file": "aspect.py",
+    "line number": "9",
+    "func name": "draw_test_figure",
+    "func arg": "(aspect_scale, width, height)",
+    "comments": ""
+},{
+    "source file": "auth_provider.py",
+    "line number": "284",
+    "func name": "probably_relative_url",
+    "func arg": "(url)",
+    "comments": "Return True if a URL is not one of the common absolute URL formats.\n\nArguments: url (str): a URL string\n##### Returns\n"
+},{
+    "source file": "auth.py",
+    "line number": "6",
+    "func name": "get_user",
+    "func arg": "(request_handler)",
+    "comments": ""
+},{
+    "source file": "autoload_static.py",
+    "line number": "45",
+    "func name": "make_plot",
+    "func arg": "()",
+    "comments": ""
+},{
+    "source file": "autompg.py",
+    "line number": "46",
+    "func name": "_clean_data",
+    "func arg": "(df)",
+    "comments": "\n\n\n"
+},{
+    "source file": "autompg2.py",
+    "line number": "50",
+    "func name": "_read_data",
+    "func arg": "()",
+    "comments": "\n\n\n"
+},{
+    "source file": "bases.py",
+    "line number": "477",
+    "func name": "validation_on",
+    "func arg": "()",
+    "comments": "Check if property validation is currently active\n\n\n##### Returns\n"
+},{
+    "source file": "bokeh_autodoc.py",
+    "line number": "106",
+    "func name": "setup",
+    "func arg": "(app)",
+    "comments": "Required Sphinx extension setup function.\n\n\n"
+},{
+    "source file": "bokeh_color.py",
+    "line number": "77",
+    "func name": "setup",
+    "func arg": "(app)",
+    "comments": "Required Sphinx extension setup function.\n\n\n"
+},{
+    "source file": "bokeh_enum.py",
+    "line number": "121",
+    "func name": "setup",
+    "func arg": "(app)",
+    "comments": "Required Sphinx extension setup function.\n\n\n"
+},{
+    "source file": "bokeh_gallery.py",
+    "line number": "122",
+    "func name": "setup",
+    "func arg": "(app)",
+    "comments": "Required Sphinx extension setup function.\n\n\n"
+},{
+    "source file": "bokeh_github.py",
+    "line number": "171",
+    "func name": "_make_gh_link_node",
+    "func arg": "(app, rawtext, role, kind, api_type, id, options)",
+    "comments": "Return a link to a Bokeh Github resource.\n\n\n##### Args\n* **app (Sphinx app) **: current app\n\n* **rawtext (str) **: text being replaced with link node.\n\n* **role (str) **: role name\n\n* **kind (str) **: resource type (issue, pull, etc.)\n\n* **api_type (str) **: type for api link\n\n* **id **: (str)\n\n* **options (dict) **: options dictionary passed to role function\n\n"
+},{
+    "source file": "bokeh_jinja.py",
+    "line number": "104",
+    "func name": "setup",
+    "func arg": "(app)",
+    "comments": "Required Sphinx extension setup function.\n\n\n"
+},{
+    "source file": "bokeh_model.py",
+    "line number": "141",
+    "func name": "setup",
+    "func arg": "(app)",
+    "comments": "Required Sphinx extension setup function.\n\n\n"
+},{
+    "source file": "bokeh_options.py",
+    "line number": "129",
+    "func name": "setup",
+    "func arg": "(app)",
+    "comments": "Required Sphinx extension setup function.\n\n\n"
+},{
+    "source file": "bokeh_palette_group.py",
+    "line number": "102",
+    "func name": "setup",
+    "func arg": "(app)",
+    "comments": "Required Sphinx extension setup function.\n\n\n"
+},{
+    "source file": "bokeh_palette.py",
+    "line number": "113",
+    "func name": "setup",
+    "func arg": "(app)",
+    "comments": "Required Sphinx extension setup function.\n\n\n"
+},{
+    "source file": "bokeh_plot.py",
+    "line number": "226",
+    "func name": "_process_script",
+    "func arg": "(source, filename, env, js_name, use_relative_paths)",
+    "comments": ""
+},{
+    "source file": "bokeh_prop.py",
+    "line number": "129",
+    "func name": "setup",
+    "func arg": "(app)",
+    "comments": "Required Sphinx extension setup function.\n\n\n"
+},{
+    "source file": "bokeh_releases.py",
+    "line number": "123",
+    "func name": "setup",
+    "func arg": "(app)",
+    "comments": "Required Sphinx extension setup function.\n\n\n"
+},{
+    "source file": "bokeh_server.py",
+    "line number": "62",
+    "func name": "update_data",
+    "func arg": "(attrname, old, new)",
+    "comments": ""
+},{
+    "source file": "bokeh_server2.py",
+    "line number": "52",
+    "func name": "bokeh_server",
+    "func arg": "(request, log_file)",
+    "comments": ""
+},{
+    "source file": "bokeh_settings.py",
+    "line number": "113",
+    "func name": "setup",
+    "func arg": "(app)",
+    "comments": "Required Sphinx extension setup function.\n\n\n"
+},{
+    "source file": "bokeh_sitemap.py",
+    "line number": "84",
+    "func name": "setup",
+    "func arg": "(app)",
+    "comments": "Required Sphinx extension setup function.\n\n\n"
+},{
+    "source file": "bokehjs_content.py",
+    "line number": "263",
+    "func name": "setup",
+    "func arg": "(app)",
+    "comments": "Required Sphinx extension setup function.\n\n\n"
+},{
+    "source file": "bootstrap.py",
+    "line number": "69",
+    "func name": "main",
+    "func arg": "(argv)",
+    "comments": "Execute the Bokeh command.\n\n\n##### Args\n* **argv (seq[str]) **: a list of command line arguments to process\n\n##### Returns\n* **he name of one of the available subcommands**: \n\n* **ef**: `static <bokeh.command.subcommands.static>`\n\n"
+},{
+    "source file": "boxplot.py",
+    "line number": "24",
+    "func name": "outliers",
+    "func arg": "(group)",
+    "comments": ""
+},{
+    "source file": "brewer.py",
+    "line number": "11",
+    "func name": "stacked",
+    "func arg": "(df)",
+    "comments": ""
+},{
+    "source file": "browser.py",
+    "line number": "90",
+    "func name": "view",
+    "func arg": "(location, browser, new, autoraise)",
+    "comments": "Open a browser to view the specified location.\n\n\n##### Args\n* **location (str) **: Location to open\n    If location does not begin with \"http\n\n* **browser (str or None) **: what browser to use (default\n\n* **new (str) **: How to open the location. Valid values are\n\n* **autoraise (bool) **: Whether to automatically raise the location\n    in a new browser window (default\n\n##### Returns\n"
+},{
+    "source file": "browsers.py",
+    "line number": "52",
+    "func name": "_read_data",
+    "func arg": "()",
+    "comments": "\n\n\n"
+},{
+    "source file": "build.py",
+    "line number": "150",
+    "func name": "update_hash_manifest",
+    "func arg": "(config, system)",
+    "comments": ""
+},{
+    "source file": "bundle.py",
+    "line number": "378",
+    "func name": "_ext_use_widgets",
+    "func arg": "(objs)",
+    "comments": ""
+},{
+    "source file": "burtin.py",
+    "line number": "56",
+    "func name": "rad",
+    "func arg": "(mic)",
+    "comments": ""
+},{
+    "source file": "button_server.py",
+    "line number": "21",
+    "func name": "button_click",
+    "func arg": "()",
+    "comments": ""
+},{
+    "source file": "calendars.py",
+    "line number": "15",
+    "func name": "make_calendar",
+    "func arg": "(year, month, firstweekday)",
+    "comments": ""
+},{
+    "source file": "callback_manager.py",
+    "line number": "174",
+    "func name": "_check_callback",
+    "func arg": "(callback, fargs, what)",
+    "comments": "Bokeh-internal function to check callback signature\n\n\n"
+},{
+    "source file": "categorical_ridgeplot.py",
+    "line number": "12",
+    "func name": "ridge",
+    "func arg": "(category, data, scale)",
+    "comments": ""
+},{
+    "source file": "check.py",
+    "line number": "87",
+    "func name": "check_integrity",
+    "func arg": "(models)",
+    "comments": "Apply validation and integrity checks to a collection of Bokeh models.\n\n\n##### Args\n* **models (seq[Model]) **: a collection of Models to test\n\n##### Returns\n* **dren will trigger a warning**: \n\n* **ode-block**: \n\n* **W-1002 (EMPTY_LAYOUT)**: Layout has no children\n\n"
+},{
+    "source file": "checkbox_button_server.py",
+    "line number": "23",
+    "func name": "checkbox_button_click",
+    "func arg": "(attr, old, new)",
+    "comments": ""
+},{
+    "source file": "checkbox_server.py",
+    "line number": "20",
+    "func name": "checkbox_click",
+    "func arg": "(attr, old, new)",
+    "comments": ""
+},{
+    "source file": "checks.py",
+    "line number": "183",
+    "func name": "check_milestone_labels",
+    "func arg": "(config, system)",
+    "comments": ""
+},{
+    "source file": "collapsible_code_block.py",
+    "line number": "120",
+    "func name": "setup",
+    "func arg": "(app)",
+    "comments": "Required Sphinx extension setup function.\n\n\n"
+},{
+    "source file": "color_bar.py",
+    "line number": "53",
+    "func name": "test_color_bar_with_scale_alpha",
+    "func arg": "()",
+    "comments": ""
+},{
+    "source file": "color_data_map.py",
+    "line number": "13",
+    "func name": "make_plot",
+    "func arg": "(mapper_type, palette)",
+    "comments": ""
+},{
+    "source file": "color_scatter_server.py",
+    "line number": "51",
+    "func name": "plot_js",
+    "func arg": "()",
+    "comments": ""
+},{
+    "source file": "color_sliders.py",
+    "line number": "26",
+    "func name": "hex_to_dec",
+    "func arg": "(hex)",
+    "comments": ""
+},{
+    "source file": "commits.py",
+    "line number": "44",
+    "func name": "_read_data",
+    "func arg": "()",
+    "comments": "\n\n\n"
+},{
+    "source file": "compare.py",
+    "line number": "36",
+    "func name": "cds_data_almost_equal",
+    "func arg": "(data1, data2, rtol, atol)",
+    "comments": "Compares data dictionaries containing floats, lists and arrays Also supports nested lists and arrays\n\n\n"
+},{
+    "source file": "compiler.py",
+    "line number": "495",
+    "func name": "_bundle_models",
+    "func arg": "(custom_models)",
+    "comments": "Create a JavaScript bundle with selected `models`.\n\n\n"
+},{
+    "source file": "conftest.py",
+    "line number": "29",
+    "func name": "pytest_addoption",
+    "func arg": "(parser)",
+    "comments": ""
+},{
+    "source file": "create_hdf5.py",
+    "line number": "8",
+    "func name": "generate_data",
+    "func arg": "(path)",
+    "comments": ""
+},{
+    "source file": "credentials.py",
+    "line number": "107",
+    "func name": "verify_aws_credentials",
+    "func arg": "(config, system)",
+    "comments": "\n\n\n"
+},{
+    "source file": "css_grid_simple_no_extend.py",
+    "line number": "8",
+    "func name": "make_figure",
+    "func arg": "(axes)",
+    "comments": ""
+},{
+    "source file": "css_grid_simple.py",
+    "line number": "6",
+    "func name": "make_figure",
+    "func arg": "(axes)",
+    "comments": ""
+},{
+    "source file": "customjs_transform.py",
+    "line number": "10",
+    "func name": "datetime",
+    "func arg": "(x)",
+    "comments": ""
+},{
+    "source file": "dashboard.py",
+    "line number": "74",
+    "func name": "linked_panning",
+    "func arg": "()",
+    "comments": ""
+},{
+    "source file": "data_transforming_customjs_transform.py",
+    "line number": "10",
+    "func name": "datetime",
+    "func arg": "(x)",
+    "comments": ""
+},{
+    "source file": "data.py",
+    "line number": "4",
+    "func name": "process_data",
+    "func arg": "()",
+    "comments": ""
+},{
+    "source file": "dataspec.py",
+    "line number": "607",
+    "func name": "value",
+    "func arg": "(val, transform)",
+    "comments": "Convenience function to explicitly return a \"value\" specification for a Bokeh :class:`~bokeh.core.properties.DataSpec` property.\n\n\n##### Args\n* **val (any) **: a fixed value to specify for a ``DataSpec`` property.\n\n* **transform (Transform, optional) **: a transform to apply (default\n\n##### Returns\n* **dict **: ``{ \"value\"\n\n* **ote**: \n\n* **ple**: \n\n* **.. code-block**: \n\n"
+},{
+    "source file": "daylight1.py",
+    "line number": "44",
+    "func name": "_read_data",
+    "func arg": "()",
+    "comments": "\n\n\n"
+},{
+    "source file": "decorators.py",
+    "line number": "127",
+    "func name": "warning",
+    "func arg": "(code_or_name)",
+    "comments": "Decorator to mark a validator method for a Bokeh error condition\n\n\n##### Args\n* **code_or_name (int or str) **: a code from ``bokeh.validation.errors`` or a string label for a custom check\n\n##### Returns\n* **callable **: decorator for Bokeh model methods\n\n* **ples**: \n\n* **ode-block**: \n\n* **def _check_no_glyph_renderers(self)**: if bad_condition\n\n* **def _check_my_custom_warning(self)**: if bad_condition\n\n"
+},{
+    "source file": "dependencies.py",
+    "line number": "62",
+    "func name": "import_required",
+    "func arg": "(mod_name, error_msg)",
+    "comments": "Attempt to import a required dependency.\n\n\n##### Args\n* **mod_name (str) **: name of the required module to try to import\n\n* **error_msg (str) **: error message to raise when the module is missing\n\n##### Returns\n"
+},{
+    "source file": "deprecation.py",
+    "line number": "51",
+    "func name": "deprecated",
+    "func arg": "(since_or_msg, old, new, extra)",
+    "comments": "Issue a nicely formatted deprecation warning.\n\n\n"
+},{
+    "source file": "deps.py",
+    "line number": "20",
+    "func name": "load_setup_py_data",
+    "func arg": "()",
+    "comments": ""
+},{
+    "source file": "doc.py",
+    "line number": "48",
+    "func name": "set_curdoc",
+    "func arg": "(doc)",
+    "comments": "Configure the current document (returned by curdoc()).\n\n\n##### Args\n* **doc (Document) **: Document we will output.\n\n##### Returns\n* **arning**: \n\n"
+},{
+    "source file": "docserver.py",
+    "line number": "63",
+    "func name": "ui",
+    "func arg": "()",
+    "comments": ""
+},{
+    "source file": "document_lifecycle.py",
+    "line number": "54",
+    "func name": "_on_session_destroyed",
+    "func arg": "(session_context)",
+    "comments": "Calls any on_session_destroyed callbacks defined on the Document\n\n\n"
+},{
+    "source file": "document.py",
+    "line number": "1168",
+    "func name": "_combine_document_events",
+    "func arg": "(new_event, old_events)",
+    "comments": "Attempt to combine a new event with a list of previous events.\n\nThe ``old_event`` will be scanned in reverse, and ``.combine(new_event)`` will be called on each. If a combination can be made, the function will return immediately. Otherwise, ``new_event`` will be appended to ``old_events``.\n##### Args\n* **new_event (DocumentChangedEvent) **: The new event to attempt to combine\n\n##### Returns\n"
+},{
+    "source file": "donut.py",
+    "line number": "82",
+    "func name": "to_base64",
+    "func arg": "(png)",
+    "comments": ""
+},{
+    "source file": "download_sample_data.py",
+    "line number": "26",
+    "func name": "extract_zip",
+    "func arg": "(zip_name, exclude_term)",
+    "comments": "Extracts a zip file to its containing directory.\n\n\n"
+},{
+    "source file": "driving.py",
+    "line number": "192",
+    "func name": "_advance",
+    "func arg": "(f)",
+    "comments": "Yield a sequence generated by calling a given function with successively incremented integer values.\n\n\n##### Args\n* **f (callable) **: The function to advance\n\n* **ds**: \n\n"
+},{
+    "source file": "dropdown_menu_server.py",
+    "line number": "21",
+    "func name": "dropdown_click",
+    "func arg": "(attr, old, new)",
+    "comments": ""
+},{
+    "source file": "elements1.py",
+    "line number": "129",
+    "func name": "script_for_render_items",
+    "func arg": "(docs_json_or_id, render_items, app_path, absolute_url)",
+    "comments": "Render an script for Bokeh render items. Args: docs_json_or_id: can be None\n\nrender_items (RenderItems) : Specific items to render from the document and where\n\napp_path (str, optional) :\n\nabsolute_url (Theme, optional)\n##### Returns\n"
+},{
+    "source file": "enums1.py",
+    "line number": "174",
+    "func name": "enumeration",
+    "func arg": "(**kwargs)",
+    "comments": "Create an |Enumeration| object from a sequence of values.\n\nCall ``enumeration`` with a sequence of (unique) strings to create an Enumeration object:\n\n.. code-block:: python\n\n#: Specify the horizontal alignment for rendering text TextAlign = enumeration(\"left\", \"right\", \"center\")\n##### Args\n* **values (str) **: string enumeration values, passed as positional arguments\n    The order of arguments is the order of the enumeration, and the\n    first element will be considered the default value when used\n    to create |Enum| properties.\n\n* **ord Args**: \n\n* **case_sensitive (bool, optional) **: Whether validation should consider case or not (default\n\n* **quote (bool, optional)**: Whether values should be quoted in the string representations\n    (default\n\n##### Returns\n"
+},{
+    "source file": "events_app.py",
+    "line number": "38",
+    "func name": "print_event",
+    "func arg": "(attributes)",
+    "comments": "Function that returns a Python callback to pretty print the events.\n\n\n"
+},{
+    "source file": "examples.py",
+    "line number": "232",
+    "func name": "_store_binary",
+    "func arg": "(path, data)",
+    "comments": ""
+},{
+    "source file": "export.py",
+    "line number": "418",
+    "func name": "_tmp_html",
+    "func arg": "()",
+    "comments": ""
+},{
+    "source file": "ext.py",
+    "line number": "93",
+    "func name": "_run_command",
+    "func arg": "(command, base_dir, args, debug)",
+    "comments": ""
+},{
+    "source file": "figure.py",
+    "line number": "1550",
+    "func name": "markers",
+    "func arg": "()",
+    "comments": "Prints a list of valid marker types for scatter()\n\n\n##### Returns\n"
+},{
+    "source file": "file_html.py",
+    "line number": "38",
+    "func name": "selected_name",
+    "func arg": "(name, medal, year)",
+    "comments": ""
+},{
+    "source file": "file_server.py",
+    "line number": "120",
+    "func name": "file_server",
+    "func arg": "(request)",
+    "comments": ""
+},{
+    "source file": "filesystem.py",
+    "line number": "108",
+    "func name": "with_temporary_file",
+    "func arg": "(func, dir, suffix)",
+    "comments": "\n\n\n"
+},{
+    "source file": "flask_embed.py",
+    "line number": "46",
+    "func name": "bk_worker",
+    "func arg": "()",
+    "comments": ""
+},{
+    "source file": "flask_gunicorn_embed.py",
+    "line number": "70",
+    "func name": "bk_worker",
+    "func arg": "()",
+    "comments": ""
+},{
+    "source file": "flask_server.py",
+    "line number": "59",
+    "func name": "visualization",
+    "func arg": "(batchid)",
+    "comments": ""
+},{
+    "source file": "formatters.py",
+    "line number": "63",
+    "func name": "_DATETIME_TICK_FORMATTER_HELP",
+    "func arg": "(field)",
+    "comments": ""
+},{
+    "source file": "fourier_animated.py",
+    "line number": "189",
+    "func name": "cb",
+    "func arg": "(gind)",
+    "comments": ""
+},{
+    "source file": "frame_clipping_multi_backend.py",
+    "line number": "6",
+    "func name": "make_figure",
+    "func arg": "(output_backend)",
+    "comments": ""
+},{
+    "source file": "functions.py",
+    "line number": "45",
+    "func name": "get_param_info",
+    "func arg": "(sig)",
+    "comments": "Find parameters with defaults and return them.\n\nArguments: sig (Signature) : a function signature\n##### Returns\n* **tuple(list, list) **: parameters with defaults\n\n"
+},{
+    "source file": "gauges.py",
+    "line number": "49",
+    "func name": "add_gauge",
+    "func arg": "(radius, max_value, length, direction, color, major_step, minor_step)",
+    "comments": ""
+},{
+    "source file": "gears.py",
+    "line number": "60",
+    "func name": "epicyclic_gear",
+    "func arg": "(module, sun_teeth, planet_teeth)",
+    "comments": ""
+},{
+    "source file": "generate_defaults.py",
+    "line number": "70",
+    "func name": "output_defaults_module",
+    "func arg": "(filename, defaults)",
+    "comments": ""
+},{
+    "source file": "git.py",
+    "line number": "91",
+    "func name": "tag_release_version",
+    "func arg": "(config, system)",
+    "comments": ""
+},{
+    "source file": "glyphs.py",
+    "line number": "107",
+    "func name": "make_tabs",
+    "func arg": "(objs)",
+    "comments": ""
+},{
+    "source file": "gmap1.py",
+    "line number": "210",
+    "func name": "gmap",
+    "func arg": "(google_api_key, map_options, **kwargs)",
+    "comments": "Create a new :class:`~bokeh.plotting.gmap.GMap` for plotting.\n\n\n##### Args\n* **google_api_key (str)**: Google requires an API key be supplied for maps to function. See\n\n* **map_options**: (\n\n* **ddition to the standard **: class\n\n* **tional options can be passed as well**: \n\n* **okeh-options**: \n\n* ****: module\n\n##### Returns\n"
+},{
+    "source file": "graph_static_paths.py",
+    "line number": "32",
+    "func name": "bezier",
+    "func arg": "(start, end, control, steps)",
+    "comments": ""
+},{
+    "source file": "graph.py",
+    "line number": "135",
+    "func name": "_handle_sublists",
+    "func arg": "(values)",
+    "comments": ""
+},{
+    "source file": "graphs.py",
+    "line number": "21",
+    "func name": "create_graph",
+    "func arg": "(layout_func, inspection_policy, selection_policy, **kwargs)",
+    "comments": ""
+},{
+    "source file": "graphs2.py",
+    "line number": "113",
+    "func name": "from_networkx",
+    "func arg": "(graph, layout_function, **kwargs)",
+    "comments": ""
+},{
+    "source file": "handler.py",
+    "line number": "218",
+    "func name": "handle_exception",
+    "func arg": "(handler, e)",
+    "comments": "Record an exception and details on a Handler.\n\n\n"
+},{
+    "source file": "has_props.py",
+    "line number": "208",
+    "func name": "accumulate_dict_from_superclasses",
+    "func arg": "(cls, propname)",
+    "comments": "Traverse the class hierarchy and accumulate the special dicts ``MetaHasProps`` stores on classes\n\n\n##### Args\n* **name (str) **: name of the special attribute to collect.\n    Typically meaningful values are\n\n"
+},{
+    "source file": "hex1.py",
+    "line number": "214",
+    "func name": "_round_hex",
+    "func arg": "(q, r)",
+    "comments": "Round floating point axial hex coordinates to integer *(q,r)* coordinates.\n\nThis code was adapted from:\n\nhttps://www.redblobgames.com/grids/hexagons/#rounding\n##### Args\n* **q (array[float]) **: NumPy array of Floating point axial *q* coordinates to round\n\n* **r (array[float]) **: NumPy array of Floating point axial *q* coordinates to round\n\n##### Returns\n"
+},{
+    "source file": "histogram.py",
+    "line number": "8",
+    "func name": "make_plot",
+    "func arg": "(title, hist, edges, x, pdf, cdf)",
+    "comments": ""
+},{
+    "source file": "hold_app.py",
+    "line number": "21",
+    "func name": "scb",
+    "func arg": "(attr, old, new)",
+    "comments": ""
+},{
+    "source file": "image_blur.py",
+    "line number": "29",
+    "func name": "update",
+    "func arg": "(attr, old, new)",
+    "comments": ""
+},{
+    "source file": "info.py",
+    "line number": "86",
+    "func name": "_version",
+    "func arg": "(modname, attr)",
+    "comments": ""
+},{
+    "source file": "interactive_tester.py",
+    "line number": "222",
+    "func name": "logger",
+    "func arg": "(error_array, name)",
+    "comments": "Log errors by appending to a .txt file.  The name and directory the file is saved into is provided by the name and log_dir args.\n\n\n"
+},{
+    "source file": "ipython.py",
+    "line number": "40",
+    "func name": "ipython",
+    "func arg": "()",
+    "comments": "A PyTest fixture that will automatically skip a test if IPython is not installed.\n\n\n"
+},{
+    "source file": "ipyvolume_camera.py",
+    "line number": "46",
+    "func name": "change_z",
+    "func arg": "(_attr, _old, new)",
+    "comments": ""
+},{
+    "source file": "iris_splom.py",
+    "line number": "28",
+    "func name": "make_plot",
+    "func arg": "(xname, yname, xax, yax)",
+    "comments": ""
+},{
+    "source file": "js_events.py",
+    "line number": "14",
+    "func name": "display_event",
+    "func arg": "(div, attributes)",
+    "comments": "Function to build a suitable CustomJS to display the current event in the div model.\n\n\n"
+},{
+    "source file": "js_events1.py",
+    "line number": "13",
+    "func name": "display_event",
+    "func arg": "(div, attributes, style)",
+    "comments": "Build a suitable CustomJS to display the current event in the div model.\n\n\n"
+},{
+    "source file": "json_encoder.py",
+    "line number": "91",
+    "func name": "serialize_json",
+    "func arg": "(obj, pretty, indent, **kwargs)",
+    "comments": "Return a serialized JSON representation of objects, suitable to send to BokehJS.\n\nThis function is typically used to serialize single python objects in the manner expected by BokehJS. In particular, many datetime values are automatically normalized to an expected format. Some Bokeh objects can also be passed, but note that Bokeh models are typically properly serialized in the context of an entire Bokeh document.\n\nThe resulting JSON always has sorted keys. By default. the output is as compact as possible unless pretty output or indentation is requested.\n##### Args\n* **obj (obj) **: the object to serialize to JSON format\n\n* **pretty (bool, optional) **: Whether to generate prettified output. If ``True``, spaces are\n    added after added after separators, and indentation and newlines\n    are applied. (default\n\n* **indent (int or None, optional) **: Amount of indentation to use in generated JSON output. If ``None``\n    then no indentation is used, unless pretty output is enabled,\n    in which case two spaces are used. (default\n\n* **additional keyword arguments are passed to ``json.dumps``, except for\n that  are computed internally, and cannot be overridden**: \n\n* **ples**: \n\n* **.. code-block**: \n\n"
+},{
+    "source file": "json_item_themed.py",
+    "line number": "59",
+    "func name": "plot2",
+    "func arg": "()",
+    "comments": ""
+},{
+    "source file": "json_item.py",
+    "line number": "56",
+    "func name": "plot2",
+    "func arg": "()",
+    "comments": ""
+},{
+    "source file": "jupyter_notebook.py",
+    "line number": "53",
+    "func name": "jupyter_notebook",
+    "func arg": "(request, log_file)",
+    "comments": "Starts a jupyter notebook server at the beginning of a session, and closes at the end of a session.\n\nAdds custom.js that runs all the cells on notebook opening. Cleans out this custom.js at the end of the test run.\n"
+},{
+    "source file": "layouts.py",
+    "line number": "599",
+    "func name": "_chunks",
+    "func arg": "(l, ncols)",
+    "comments": "Yield successive n-sized chunks from list, l.\n\n\n"
+},{
+    "source file": "legends.py",
+    "line number": "42",
+    "func name": "add_legend",
+    "func arg": "(location, orientation, side)",
+    "comments": ""
+},{
+    "source file": "lifecycle.py",
+    "line number": "120",
+    "func name": "_do_nothing",
+    "func arg": "(ignored)",
+    "comments": ""
+},{
+    "source file": "line_compare.py",
+    "line number": "60",
+    "func name": "make_dropdown",
+    "func arg": "(prop, menu)",
+    "comments": ""
+},{
+    "source file": "line_on_off.py",
+    "line number": "22",
+    "func name": "update",
+    "func arg": "(attr, old, new)",
+    "comments": ""
+},{
+    "source file": "line_on_off2.py",
+    "line number": "24",
+    "func name": "update",
+    "func arg": "(attr, old, new)",
+    "comments": ""
+},{
+    "source file": "locking.py",
+    "line number": "37",
+    "func name": "without_document_lock",
+    "func arg": "(func)",
+    "comments": "Wrap a callback function to execute without first obtaining the document lock.\n\n\n##### Args\n* **func (callable) **: The function to wrap\n\n##### Returns\n* **callable **: a function wrapped to execute without a |Document| lock.\n\n* **h are**: \n\n* **unc**: `~bokeh.document.Document.remove_next_tick_callback`\n these may be used safely without taking the document lock. To make\n\n"
+},{
+    "source file": "log_file.py",
+    "line number": "37",
+    "func name": "log_file",
+    "func arg": "(request)",
+    "comments": ""
+},{
+    "source file": "log_scale_multi_backend.py",
+    "line number": "8",
+    "func name": "make_figure",
+    "func arg": "(output_backend)",
+    "comments": ""
+},{
+    "source file": "logconfig.py",
+    "line number": "81",
+    "func name": "trace",
+    "func arg": "(message, **kws)",
+    "comments": ""
+},{
+    "source file": "lorenz.py",
+    "line number": "11",
+    "func name": "lorenz",
+    "func arg": "(xyz, t)",
+    "comments": ""
+},{
+    "source file": "main.py",
+    "line number": "163",
+    "func name": "update_samples_or_dataset",
+    "func arg": "(attrname, old, new)",
+    "comments": ""
+},{
+    "source file": "main1.py",
+    "line number": "66",
+    "func name": "update",
+    "func arg": "(attr, old, new)",
+    "comments": ""
+},{
+    "source file": "main3.py",
+    "line number": "14",
+    "func name": "update",
+    "func arg": "()",
+    "comments": ""
+},{
+    "source file": "main4.py",
+    "line number": "47",
+    "func name": "update",
+    "func arg": "()",
+    "comments": ""
+},{
+    "source file": "main5.py",
+    "line number": "71",
+    "func name": "animate",
+    "func arg": "()",
+    "comments": ""
+},{
+    "source file": "main6.py",
+    "line number": "84",
+    "func name": "update",
+    "func arg": "()",
+    "comments": ""
+},{
+    "source file": "main7.py",
+    "line number": "62",
+    "func name": "update",
+    "func arg": "(t)",
+    "comments": ""
+},{
+    "source file": "main8.py",
+    "line number": "37",
+    "func name": "update",
+    "func arg": "()",
+    "comments": ""
+},{
+    "source file": "main9.py",
+    "line number": "71",
+    "func name": "update",
+    "func arg": "()",
+    "comments": ""
+},{
+    "source file": "main10.py",
+    "line number": "113",
+    "func name": "selection_change",
+    "func arg": "(attrname, old, new)",
+    "comments": ""
+},{
+    "source file": "main11.py",
+    "line number": "26",
+    "func name": "update",
+    "func arg": "(t)",
+    "comments": ""
+},{
+    "source file": "main12.py",
+    "line number": "51",
+    "func name": "update_plot",
+    "func arg": "(attrname, old, new)",
+    "comments": ""
+},{
+    "source file": "manage.py",
+    "line number": "7",
+    "func name": "main",
+    "func arg": "()",
+    "comments": ""
+},{
+    "source file": "managed_server_loop.py",
+    "line number": "45",
+    "func name": "ManagedServerLoop",
+    "func arg": "(unused_tcp_port)",
+    "comments": ""
+},{
+    "source file": "marker_compare.py",
+    "line number": "15",
+    "func name": "make_plot",
+    "func arg": "(title, marker, backend)",
+    "comments": ""
+},{
+    "source file": "milestone.py",
+    "line number": "291",
+    "func name": "main",
+    "func arg": "(milestone, log_level, verbose, check_only, section_only, allow_closed)",
+    "comments": "Generates a bokeh changelog which includes the given milestone.\n\nRequires that you set GITHUB_TOKEN to your GitHub API Token. Exit code 2 indicates there was a verification problem whereas exit code 1 indicates a general error in the script. Otherwise you can expect an exit code of 0 for success.\n"
+},{
+    "source file": "model.py",
+    "line number": "799",
+    "func name": "_visit_value_and_its_immediate_references",
+    "func arg": "(obj, visitor)",
+    "comments": "Recurse down Models, HasProps, and Python containers\n\nThe ordering in this function is to optimize performance.\n\nWe check the most comomn types (int, float, str) first so that we can quickly return in the common case.\n\nWe avoid isinstance and issubclass checks in a couple places with `type` checks because isinstance checks can be slow.\n"
+},{
+    "source file": "multi_legend.py",
+    "line number": "8",
+    "func name": "datetime",
+    "func arg": "(x)",
+    "comments": ""
+},{
+    "source file": "multi_plot_layout.py",
+    "line number": "6",
+    "func name": "fig",
+    "func arg": "(color, row, col)",
+    "comments": ""
+},{
+    "source file": "multi_select_server.py",
+    "line number": "25",
+    "func name": "multiselect_click",
+    "func arg": "(attr, old, new)",
+    "comments": ""
+},{
+    "source file": "notebook1.py",
+    "line number": "51",
+    "func name": "notebook_content",
+    "func arg": "(model, notebook_comms_target, theme)",
+    "comments": "Return script and div that will display a Bokeh plot in a Jupyter Notebook.\n\nThe data for the plot is stored directly in the returned HTML.\n##### Args\n* **model (Model) **: Bokeh object to render\n\n* **notebook_comms_target (str, optional) **: A target name for a Jupyter Comms object that can update\n    the document that is rendered to this notebook div\n\n* **theme (Theme, optional) **: Defaults to the ``Theme`` instance in the current document.\n    Setting this to ``None`` uses the default theme or the theme\n    already specified in the document. Any other value must be an\n    instance of the ``Theme`` class.\n\n##### Returns\n* **ote**: \n\n* **Assumes **: func\n\n"
+},{
+    "source file": "notebook2.py",
+    "line number": "552",
+    "func name": "_server_url",
+    "func arg": "(url, port)",
+    "comments": "\n\n\n"
+},{
+    "source file": "output.py",
+    "line number": "113",
+    "func name": "reset_output",
+    "func arg": "(state)",
+    "comments": "Clear the default state of all output modes.\n\n\n##### Returns\n"
+},{
+    "source file": "palettes.py",
+    "line number": "1500",
+    "func name": "gray",
+    "func arg": "(n)",
+    "comments": "Generate a palette of colors or from the Greys palette.\n\nThe full Greys palette that serves as input for deriving new palettes has 256 colors, and looks like:\n\n:bokeh-palette:`grey(256)`\n##### Args\n* **n (int) **: size of the palette to generate\n\n##### Returns\n* **seq[str] **: a sequence of hex RGB color strings\n\n"
+},{
+    "source file": "pandas.py",
+    "line number": "40",
+    "func name": "pd",
+    "func arg": "()",
+    "comments": "A PyTest fixture that will automatically skip a test if Pandas is not installed.\n\n\n"
+},{
+    "source file": "panels.py",
+    "line number": "31",
+    "func name": "add_title",
+    "func arg": "(text, loc, bg)",
+    "comments": ""
+},{
+    "source file": "parallel_plot.py",
+    "line number": "13",
+    "func name": "parallel_plot",
+    "func arg": "(df, color, palette)",
+    "comments": "From a dataframe create a parallel coordinate plot\n\n\n"
+},{
+    "source file": "patch_app.py",
+    "line number": "45",
+    "func name": "update",
+    "func arg": "()",
+    "comments": ""
+},{
+    "source file": "patch_doc.py",
+    "line number": "102",
+    "func name": "process_document_events",
+    "func arg": "(events, use_buffers)",
+    "comments": "Create a JSON string describing a patch to be applied as well as any optional buffers.\n\n\n##### Args\n* **events **: list of events to be translated into patches\n\n##### Returns\n* **str, list **: JSON string which can be applied to make the given updates to obj\n  as well as any optional buffers\n\n"
+},{
+    "source file": "paths.py",
+    "line number": "47",
+    "func name": "bokehjsdir",
+    "func arg": "(dev)",
+    "comments": "Get the location of the bokehjs source files. If dev is True, the files in bokehjs/build are preferred. Otherwise uses the files in bokeh/server/static.\n\n\n"
+},{
+    "source file": "pipeline.py",
+    "line number": "26",
+    "func name": "is_check",
+    "func arg": "(step)",
+    "comments": ""
+},{
+    "source file": "plots.py",
+    "line number": "767",
+    "func name": "_select_helper",
+    "func arg": "(args, kwargs)",
+    "comments": "Allow flexible selector syntax.\n\n\n##### Returns\n"
+},{
+    "source file": "plotting_color_bars.py",
+    "line number": "8",
+    "func name": "normal2d",
+    "func arg": "(X, Y, sigx, sigy, mux, muy)",
+    "comments": ""
+},{
+    "source file": "population.py",
+    "line number": "66",
+    "func name": "update",
+    "func arg": "()",
+    "comments": ""
+},{
+    "source file": "population1.py",
+    "line number": "44",
+    "func name": "_read_data",
+    "func arg": "()",
+    "comments": "\n\n\n"
+},{
+    "source file": "project.py",
+    "line number": "274",
+    "func name": "bokeh_server_page",
+    "func arg": "(driver, bokeh_app_info, has_no_console_errors)",
+    "comments": ""
+},{
+    "source file": "publish.py",
+    "line number": "67",
+    "func name": "upload_deployment_tarball",
+    "func arg": "(config, system)",
+    "comments": ""
+},{
+    "source file": "query.py",
+    "line number": "351",
+    "func name": "_or",
+    "func arg": "(obj, selectors)",
+    "comments": ""
+},{
+    "source file": "radio_button_group_server.py",
+    "line number": "24",
+    "func name": "radiogroup_click",
+    "func arg": "(attr, old, new)",
+    "comments": ""
+},{
+    "source file": "radio_group_server.py",
+    "line number": "24",
+    "func name": "radiogroup_click",
+    "func arg": "(attr, old, new)",
+    "comments": ""
+},{
+    "source file": "range_slider_server.py",
+    "line number": "23",
+    "func name": "slider_change",
+    "func arg": "(attr, old, new)",
+    "comments": ""
+},{
+    "source file": "request_handler.py",
+    "line number": "70",
+    "func name": "_return_empty",
+    "func arg": "(request)",
+    "comments": ""
+},{
+    "source file": "resources.py",
+    "line number": "702",
+    "func name": "_compute_single_hash",
+    "func arg": "(path)",
+    "comments": ""
+},{
+    "source file": "ridgeplot.py",
+    "line number": "12",
+    "func name": "ridge",
+    "func arg": "(category, data, scale)",
+    "comments": ""
+},{
+    "source file": "routing1.py",
+    "line number": "139",
+    "func name": "is_bokeh_app",
+    "func arg": "(entry)",
+    "comments": ""
+},{
+    "source file": "sampledata1.py",
+    "line number": "177",
+    "func name": "_download_file",
+    "func arg": "(base_url, filename, data_dir, progress)",
+    "comments": "\n\n\n"
+},{
+    "source file": "saving.py",
+    "line number": "144",
+    "func name": "_save_helper",
+    "func arg": "(obj, filename, resources, title, template, theme)",
+    "comments": "\n\n\n"
+},{
+    "source file": "screenshot.py",
+    "line number": "56",
+    "func name": "_run_in_browser",
+    "func arg": "(engine, url, local_wait, global_wait)",
+    "comments": "wait is in milliseconds\n\n\n"
+},{
+    "source file": "sea_surface_temperature.py",
+    "line number": "44",
+    "func name": "_read_data",
+    "func arg": "()",
+    "comments": ""
+},{
+    "source file": "sea_surface.py",
+    "line number": "14",
+    "func name": "callback",
+    "func arg": "(attr, old, new)",
+    "comments": ""
+},{
+    "source file": "select_server.py",
+    "line number": "24",
+    "func name": "select_click",
+    "func arg": "(attr, old, new)",
+    "comments": ""
+},{
+    "source file": "selection_histogram.py",
+    "line number": "83",
+    "func name": "update",
+    "func arg": "(attr, old, new)",
+    "comments": ""
+},{
+    "source file": "selection_nonselection.py",
+    "line number": "6",
+    "func name": "mkglyph",
+    "func arg": "(x, y, selection)",
+    "comments": ""
+},{
+    "source file": "selenium.py",
+    "line number": "82",
+    "func name": "has_no_console_errors",
+    "func arg": "(pytestconfig)",
+    "comments": "Provide a function to assert no browser console errors are present.\n\nUnfortunately logs are only accessibly with Chrome web driver, see e.g.\n\nhttps://github.com/mozilla/geckodriver/issues/284\n\nFor non-Chrome webdrivers this check always returns True.\n"
+},{
+    "source file": "selenium1.py",
+    "line number": "297",
+    "func name": "get_slider_bar_color",
+    "func arg": "(driver, css_class)",
+    "comments": ""
+},{
+    "source file": "serialization.py",
+    "line number": "555",
+    "func name": "decode_base64_dict",
+    "func arg": "(data)",
+    "comments": "Decode a base64 encoded array into a NumPy array.\n\n\n##### Args\n* **data (dict) **: encoded array data to decode\n should have the format encoded by\n\n##### Returns\n"
+},{
+    "source file": "serve.py",
+    "line number": "11",
+    "func name": "bkapp_page",
+    "func arg": "()",
+    "comments": ""
+},{
+    "source file": "server_sent_events_source.py",
+    "line number": "51",
+    "func name": "stream",
+    "func arg": "()",
+    "comments": ""
+},{
+    "source file": "server.py",
+    "line number": "346",
+    "func name": "_src_path",
+    "func arg": "(url, elementid)",
+    "comments": "Return a base autoload URL for a given element ID\n\n\n##### Args\n* **url (str) **: The base server URL\n\n* **elementid (str) **: The div ID for autload to target\n\n##### Returns\n"
+},{
+    "source file": "session.py",
+    "line number": "167",
+    "func name": "show_session",
+    "func arg": "(session_id, url, session, browser, new, controller)",
+    "comments": "Open a browser displaying a session document.\n\nIf you have a session from ``pull_session()`` or ``push_session`` you can ``show_session(session=mysession)``. If you don't need to open a connection to the server yourself, you can show a new session in a browser by providing just the ``url``.\n##### Args\n* **session_id (string, optional) **: The name of the session, None to autogenerate a random one (default\n\n* **url **: (str, optional)\n\n* **session (ClientSession, optional) **: session to get session ID and server URL from\n    If you specify this, you don't need to specify session_id and url\n\n* **browser (str, optional) **: browser to show with (default\n\n* **new (str, optional) **: new file output mode (default\n\n"
+},{
+    "source file": "session1.py",
+    "line number": "89",
+    "func name": "current_time",
+    "func arg": "()",
+    "comments": "Return the time in milliseconds since the epoch as a floating point number.\n\n\n"
+},{
+    "source file": "settings1.py",
+    "line number": "248",
+    "func name": "is_dev",
+    "func arg": "()",
+    "comments": ""
+},{
+    "source file": "shape_viewer.py",
+    "line number": "66",
+    "func name": "shape_viewer",
+    "func arg": "()",
+    "comments": ""
+},{
+    "source file": "showing.py",
+    "line number": "163",
+    "func name": "_show_with_state",
+    "func arg": "(obj, state, browser, new, notebook_handle)",
+    "comments": "\n\n\n"
+},{
+    "source file": "slider_server.py",
+    "line number": "24",
+    "func name": "slider_change",
+    "func arg": "(attr, old, new)",
+    "comments": ""
+},{
+    "source file": "sliders.py",
+    "line number": "53",
+    "func name": "update_data",
+    "func arg": "(attrname, old, new)",
+    "comments": ""
+},{
+    "source file": "sliders1.py",
+    "line number": "24",
+    "func name": "color_picker",
+    "func arg": "()",
+    "comments": ""
+},{
+    "source file": "sources.py",
+    "line number": "821",
+    "func name": "_check_slice",
+    "func arg": "(s)",
+    "comments": ""
+},{
+    "source file": "spec.py",
+    "line number": "12",
+    "func name": "_proto",
+    "func arg": "(obj, defaults)",
+    "comments": ""
+},{
+    "source file": "sprint.py",
+    "line number": "41",
+    "func name": "selected_name",
+    "func arg": "(name, medal, year)",
+    "comments": ""
+},{
+    "source file": "sri.py",
+    "line number": "55",
+    "func name": "update_package",
+    "func arg": "(version)",
+    "comments": ""
+},{
+    "source file": "standalone_embed.py",
+    "line number": "9",
+    "func name": "bkapp",
+    "func arg": "(doc)",
+    "comments": ""
+},{
+    "source file": "standalone.py",
+    "line number": "416",
+    "func name": "_title_from_models",
+    "func arg": "(models, title)",
+    "comments": ""
+},{
+    "source file": "state.py",
+    "line number": "213",
+    "func name": "curstate",
+    "func arg": "()",
+    "comments": "Return the current State object\n\n\n##### Returns\n* **State **: the current default State object\n\n"
+},{
+    "source file": "static1.py",
+    "line number": "49",
+    "func name": "static_extensions",
+    "func arg": "(prefix)",
+    "comments": ""
+},{
+    "source file": "stocks.py",
+    "line number": "8",
+    "func name": "datetime",
+    "func arg": "(x)",
+    "comments": ""
+},{
+    "source file": "stocks1.py",
+    "line number": "66",
+    "func name": "_read_data",
+    "func arg": "(name)",
+    "comments": "\n\n\n"
+},{
+    "source file": "string1.py",
+    "line number": "111",
+    "func name": "format_url_query_arguments",
+    "func arg": "(url, arguments)",
+    "comments": "Format a base URL with optional query arguments\n\n\n##### Args\n* **url (str) **: An base URL to append query arguments to\n\n* **arguments (dict or None, optional) **: A mapping of key/value URL query arguments, or None (default\n\n##### Returns\n"
+},{
+    "source file": "structure.py",
+    "line number": "67",
+    "func name": "generate_structure_plot",
+    "func arg": "(f)",
+    "comments": "Given a bokeh model f, return a model that displays the graph of its submodels.\n\nClicking on the nodes of the graph reveals the attributes of that submodel.\n"
+},{
+    "source file": "synthetic.py",
+    "line number": "21",
+    "func name": "fds",
+    "func arg": "(x, y, e, n)",
+    "comments": ""
+},{
+    "source file": "taylor.py",
+    "line number": "44",
+    "func name": "update",
+    "func arg": "()",
+    "comments": ""
+},{
+    "source file": "templates.py",
+    "line number": "70",
+    "func name": "get_env",
+    "func arg": "()",
+    "comments": "Get the correct Jinja2 Environment, also for frozen scripts.\n\n\n"
+},{
+    "source file": "terminal.py",
+    "line number": "94",
+    "func name": "warn",
+    "func arg": "(msg, label)",
+    "comments": ""
+},{
+    "source file": "test___init___command.py",
+    "line number": "32",
+    "func name": "test_doc",
+    "func arg": "()",
+    "comments": ""
+},{
+    "source file": "test___init___io.py",
+    "line number": "46",
+    "func name": "test_jupyter_notebook_hook_installed",
+    "func arg": "()",
+    "comments": ""
+},{
+    "source file": "test___init___subcommands.py",
+    "line number": "42",
+    "func name": "test_all_count",
+    "func arg": "()",
+    "comments": ""
+},{
+    "source file": "test___init__.py",
+    "line number": "81",
+    "func name": "test_license",
+    "func arg": "(capsys)",
+    "comments": ""
+},{
+    "source file": "test___main__.py",
+    "line number": "41",
+    "func name": "test_main",
+    "func arg": "(mock_main)",
+    "comments": ""
+},{
+    "source file": "test__decorators.py",
+    "line number": "54",
+    "func name": "test__glyph_receives_renderer_arg",
+    "func arg": "(arg, values)",
+    "comments": ""
+},{
+    "source file": "test__lengends.py",
+    "line number": "60",
+    "func name": "test__find_legend_item",
+    "func arg": "()",
+    "comments": ""
+},{
+    "source file": "test__tools.py",
+    "line number": "36",
+    "func name": "test__collect_repeated_tools",
+    "func arg": "()",
+    "comments": ""
+},{
+    "source file": "test_airport_routes.py",
+    "line number": "46",
+    "func name": "test_routes",
+    "func arg": "(pd)",
+    "comments": ""
+},{
+    "source file": "test_airports.py",
+    "line number": "38",
+    "func name": "test_data",
+    "func arg": "(pd)",
+    "comments": ""
+},{
+    "source file": "test_annotations.py",
+    "line number": "502",
+    "func name": "test_legend_item_with_field_label_raises_error_if_field_not_in_cds",
+    "func arg": "()",
+    "comments": ""
+},{
+    "source file": "test_auth_provider.py",
+    "line number": "352",
+    "func name": "test_probably_relative_url",
+    "func arg": "()",
+    "comments": ""
+},{
+    "source file": "test_autocomplete_input.py",
+    "line number": "43",
+    "func name": "modify_doc",
+    "func arg": "(doc)",
+    "comments": ""
+},{
+    "source file": "test_autompg.py",
+    "line number": "48",
+    "func name": "test_autompg_clean",
+    "func arg": "(pd)",
+    "comments": ""
+},{
+    "source file": "test_autompg2.py",
+    "line number": "38",
+    "func name": "test_autompg2",
+    "func arg": "(pd)",
+    "comments": ""
+},{
+    "source file": "test_axes.py",
+    "line number": "31",
+    "func name": "test_ticker_accepts_number_sequences",
+    "func arg": "()",
+    "comments": ""
+},{
+    "source file": "test_black.py",
+    "line number": "29",
+    "func name": "test_balck",
+    "func arg": "()",
+    "comments": "Assures that the Python codebase imports are correctly formatted.\n\n\n"
+},{
+    "source file": "test_bootstrap.py",
+    "line number": "63",
+    "func name": "test_error",
+    "func arg": "(capsys)",
+    "comments": ""
+},{
+    "source file": "test_box_edit_tool.py",
+    "line number": "62",
+    "func name": "_make_server_plot",
+    "func arg": "(expected, num_objects)",
+    "comments": ""
+},{
+    "source file": "test_box_zoom_tool.py",
+    "line number": "39",
+    "func name": "_make_plot",
+    "func arg": "(tool)",
+    "comments": ""
+},{
+    "source file": "test_browser.py",
+    "line number": "116",
+    "func name": "test_NEW_PARAM",
+    "func arg": "()",
+    "comments": ""
+},{
+    "source file": "test_browsers.py",
+    "line number": "47",
+    "func name": "test_icons",
+    "func arg": "()",
+    "comments": ""
+},{
+    "source file": "test_bundle.py",
+    "line number": "57",
+    "func name": "test_widget",
+    "func arg": "()",
+    "comments": ""
+},{
+    "source file": "test_callback_manager.py",
+    "line number": "98",
+    "func name": "_partially_bad_event",
+    "func arg": "(event)",
+    "comments": ""
+},{
+    "source file": "test_callbacks__models.py",
+    "line number": "34",
+    "func name": "test_js_callback",
+    "func arg": "()",
+    "comments": ""
+},{
+    "source file": "test_callbacks__server.py",
+    "line number": "47",
+    "func name": "run",
+    "func arg": "(loop)",
+    "comments": ""
+},{
+    "source file": "test_client_server.py",
+    "line number": "1001",
+    "func name": "test_session_show_adds_obj_to_curdoc_if_necessary",
+    "func arg": "(m)",
+    "comments": ""
+},{
+    "source file": "test_code_quality.py",
+    "line number": "128",
+    "func name": "bad_files",
+    "func arg": "()",
+    "comments": ""
+},{
+    "source file": "test_color_picker.py",
+    "line number": "59",
+    "func name": "enter_value_in_color_picker",
+    "func arg": "(driver, el, color)",
+    "comments": ""
+},{
+    "source file": "test_commits.py",
+    "line number": "38",
+    "func name": "test_data",
+    "func arg": "(pd)",
+    "comments": ""
+},{
+    "source file": "test_compiler.py",
+    "line number": "138",
+    "func name": "test_inline_extension",
+    "func arg": "()",
+    "comments": ""
+},{
+    "source file": "test_datarange1d.py",
+    "line number": "39",
+    "func name": "_make_plot",
+    "func arg": "(**kw)",
+    "comments": ""
+},{
+    "source file": "test_daylight.py",
+    "line number": "38",
+    "func name": "test_daylight_warsaw_2013",
+    "func arg": "(pd)",
+    "comments": ""
+},{
+    "source file": "test_defaults.py",
+    "line number": "42",
+    "func name": "test_default_values",
+    "func arg": "(name, descriptor)",
+    "comments": ""
+},{
+    "source file": "test_degrees.py",
+    "line number": "38",
+    "func name": "test_data",
+    "func arg": "(pd)",
+    "comments": ""
+},{
+    "source file": "test_deprecation.py",
+    "line number": "83",
+    "func name": "test_since_with_extra",
+    "func arg": "(mock_warn)",
+    "comments": ""
+},{
+    "source file": "test_directory.py",
+    "line number": "74",
+    "func name": "script_adds_two_roots",
+    "func arg": "(some_model_name, another_model_name)",
+    "comments": ""
+},{
+    "source file": "test_doc.py",
+    "line number": "39",
+    "func name": "test_set_curdoc_sets_curstate",
+    "func arg": "()",
+    "comments": ""
+},{
+    "source file": "test_driving.py",
+    "line number": "123",
+    "func name": "test__advance",
+    "func arg": "()",
+    "comments": ""
+},{
+    "source file": "test_enums.py",
+    "line number": "306",
+    "func name": "test_enums_contents",
+    "func arg": "()",
+    "comments": ""
+},{
+    "source file": "test_events.py",
+    "line number": "263",
+    "func name": "test_pinch_callbacks",
+    "func arg": "()",
+    "comments": ""
+},{
+    "source file": "test_examples.py",
+    "line number": "226",
+    "func name": "_run_example",
+    "func arg": "(example)",
+    "comments": ""
+},{
+    "source file": "test_export.py",
+    "line number": "202",
+    "func name": "test_layout_html_on_parent_first",
+    "func arg": "()",
+    "comments": ""
+},{
+    "source file": "test_ext.py",
+    "line number": "69",
+    "func name": "_names",
+    "func arg": "(path)",
+    "comments": ""
+},{
+    "source file": "test_figure.py",
+    "line number": "554",
+    "func name": "p",
+    "func arg": "()",
+    "comments": ""
+},{
+    "source file": "test_flake8.py",
+    "line number": "29",
+    "func name": "test_flake8",
+    "func arg": "()",
+    "comments": "Assures that the Python codebase passes configured Flake8 checks\n\n\n"
+},{
+    "source file": "test_freehand_draw_tool.py",
+    "line number": "59",
+    "func name": "_make_server_plot",
+    "func arg": "(expected, num_objects)",
+    "comments": ""
+},{
+    "source file": "test_gapminder.py",
+    "line number": "42",
+    "func name": "test_data",
+    "func arg": "(pd, name)",
+    "comments": ""
+},{
+    "source file": "test_glucose.py",
+    "line number": "38",
+    "func name": "test_data",
+    "func arg": "(pd)",
+    "comments": ""
+},{
+    "source file": "test_glyphs.py",
+    "line number": "663",
+    "func name": "test_X",
+    "func arg": "()",
+    "comments": ""
+},{
+    "source file": "test_graph.py",
+    "line number": "164",
+    "func name": "test_from_networkx_with_missing_layout",
+    "func arg": "()",
+    "comments": ""
+},{
+    "source file": "test_graphs.py",
+    "line number": "36",
+    "func name": "test_from_networkx_deprecated",
+    "func arg": "()",
+    "comments": ""
+},{
+    "source file": "test_grids.py",
+    "line number": "41",
+    "func name": "test_ticker_accepts_axis",
+    "func arg": "()",
+    "comments": ""
+},{
+    "source file": "test_groups.py",
+    "line number": "205",
+    "func name": "test_color",
+    "func arg": "(group)",
+    "comments": ""
+},{
+    "source file": "test_haar_cascade.py",
+    "line number": "38",
+    "func name": "test_data",
+    "func arg": "(pd)",
+    "comments": ""
+},{
+    "source file": "test_has_props.py",
+    "line number": "358",
+    "func name": "test_HasProps_apply_theme_func_default",
+    "func arg": "()",
+    "comments": ""
+},{
+    "source file": "test_info.py",
+    "line number": "80",
+    "func name": "test__version_missing",
+    "func arg": "(ipython)",
+    "comments": ""
+},{
+    "source file": "test_iris.py",
+    "line number": "38",
+    "func name": "test_flowers",
+    "func arg": "(pd)",
+    "comments": ""
+},{
+    "source file": "test_isort.py",
+    "line number": "29",
+    "func name": "test_isort",
+    "func arg": "()",
+    "comments": "Assures that the Python codebase imports are correctly sorted.\n\n\n"
+},{
+    "source file": "test_js_license_set.py",
+    "line number": "38",
+    "func name": "test_js_license_set",
+    "func arg": "()",
+    "comments": "If the current set of JS licenses changes, they should be noted in the bokehjs/LICENSE file.\n\n\n"
+},{
+    "source file": "test_json__subcommands.py",
+    "line number": "126",
+    "func name": "test_basic_script_with_output_before",
+    "func arg": "(capsys)",
+    "comments": ""
+},{
+    "source file": "test_layouts__models.py",
+    "line number": "98",
+    "func name": "test_widgetbox_deprecated",
+    "func arg": "()",
+    "comments": ""
+},{
+    "source file": "test_layouts.py",
+    "line number": "171",
+    "func name": "test_repeated_children",
+    "func arg": "()",
+    "comments": ""
+},{
+    "source file": "test_les_mis.py",
+    "line number": "38",
+    "func name": "test_data",
+    "func arg": "()",
+    "comments": ""
+},{
+    "source file": "test_locking.py",
+    "line number": "53",
+    "func name": "test_without_document_lock",
+    "func arg": "()",
+    "comments": ""
+},{
+    "source file": "test_markers.py",
+    "line number": "24",
+    "func name": "test_all_markers_in_markers_dictionary",
+    "func arg": "()",
+    "comments": ""
+},{
+    "source file": "test_message.py",
+    "line number": "28",
+    "func name": "test_create_header",
+    "func arg": "(monkeypatch)",
+    "comments": ""
+},{
+    "source file": "test_model.py",
+    "line number": "181",
+    "func name": "test_select",
+    "func arg": "()",
+    "comments": ""
+},{
+    "source file": "test_movies_data.py",
+    "line number": "38",
+    "func name": "test_movie_path",
+    "func arg": "()",
+    "comments": ""
+},{
+    "source file": "test_mtb.py",
+    "line number": "38",
+    "func name": "test_obiszow_mtb_xcm",
+    "func arg": "(pd)",
+    "comments": ""
+},{
+    "source file": "test_multi_choice.py",
+    "line number": "43",
+    "func name": "modify_doc",
+    "func arg": "(doc)",
+    "comments": ""
+},{
+    "source file": "test_named.py",
+    "line number": "182",
+    "func name": "test_color",
+    "func arg": "(name, R, G, B)",
+    "comments": ""
+},{
+    "source file": "test_no_client_server_common.py",
+    "line number": "37",
+    "func name": "test_no_client_server_common",
+    "func arg": "()",
+    "comments": "Basic usage of Bokeh should not result in any client/server code being imported. This test ensures that importing basic modules does not bring in bokeh.client or bokeh.server.\n\n\n"
+},{
+    "source file": "test_no_ipython_common.py",
+    "line number": "36",
+    "func name": "test_no_ipython_common",
+    "func arg": "()",
+    "comments": "Basic usage of Bokeh should not result in any IPython code being imported. This test ensures that importing basic modules does not bring in IPython.\n\n\n"
+},{
+    "source file": "test_no_request_host.py",
+    "line number": "44",
+    "func name": "collect_errors",
+    "func arg": "()",
+    "comments": ""
+},{
+    "source file": "test_no_selenium_common.py",
+    "line number": "36",
+    "func name": "test_no_tornado_common",
+    "func arg": "()",
+    "comments": "Basic usage of Bokeh should not result in any Selenium code being imported. This test ensures that importing basic modules does not bring in Tornado.\n\n\n"
+},{
+    "source file": "test_no_tornado_common.py",
+    "line number": "34",
+    "func name": "test_no_tornado_common",
+    "func arg": "()",
+    "comments": "Basic usage of Bokeh should not result in any Tornado code being imported. This test ensures that importing basic modules does not bring in Tornado.\n\n\n"
+},{
+    "source file": "test_notebook__embed.py",
+    "line number": "30",
+    "func name": "test_plot",
+    "func arg": "()",
+    "comments": ""
+},{
+    "source file": "test_notebook__handlers.py",
+    "line number": "41",
+    "func name": "with_script_contents",
+    "func arg": "(contents, func)",
+    "comments": ""
+},{
+    "source file": "test_notebook__io.py",
+    "line number": "118",
+    "func name": "test__server_url",
+    "func arg": "()",
+    "comments": ""
+},{
+    "source file": "test_objects.py",
+    "line number": "32",
+    "func name": "large_plot",
+    "func arg": "(n)",
+    "comments": ""
+},{
+    "source file": "test_olympics2014.py",
+    "line number": "38",
+    "func name": "test_data",
+    "func arg": "()",
+    "comments": ""
+},{
+    "source file": "test_options.py",
+    "line number": "56",
+    "func name": "test_mixed",
+    "func arg": "()",
+    "comments": ""
+},{
+    "source file": "test_output.py",
+    "line number": "72",
+    "func name": "test_reset_output",
+    "func arg": "(mock_reset)",
+    "comments": ""
+},{
+    "source file": "test_palettes.py",
+    "line number": "41",
+    "func name": "test_palettes_dir",
+    "func arg": "()",
+    "comments": ""
+},{
+    "source file": "test_pan_tool.py",
+    "line number": "38",
+    "func name": "_make_plot",
+    "func arg": "(dimensions)",
+    "comments": ""
+},{
+    "source file": "test_password_input.py",
+    "line number": "42",
+    "func name": "modify_doc",
+    "func arg": "(doc)",
+    "comments": ""
+},{
+    "source file": "test_patch_doc.py",
+    "line number": "253",
+    "func name": "test_process_document_events_with_buffers_and_use_buffers_false",
+    "func arg": "()",
+    "comments": ""
+},{
+    "source file": "test_perceptions.py",
+    "line number": "47",
+    "func name": "test_probly",
+    "func arg": "(pd)",
+    "comments": ""
+},{
+    "source file": "test_periodic_table.py",
+    "line number": "38",
+    "func name": "test_elements",
+    "func arg": "(pd)",
+    "comments": ""
+},{
+    "source file": "test_plots.py",
+    "line number": "309",
+    "func name": "test__check_compatible_scale_and_ranges_incompat_factor_scale_and_numeric_range",
+    "func arg": "()",
+    "comments": ""
+},{
+    "source file": "test_point_draw_tool.py",
+    "line number": "59",
+    "func name": "_make_server_plot",
+    "func arg": "(expected)",
+    "comments": ""
+},{
+    "source file": "test_poly_draw_tool.py",
+    "line number": "64",
+    "func name": "_make_server_plot",
+    "func arg": "(expected)",
+    "comments": ""
+},{
+    "source file": "test_poly_edit_tool.py",
+    "line number": "65",
+    "func name": "_make_server_plot",
+    "func arg": "(expected)",
+    "comments": ""
+},{
+    "source file": "test_population.py",
+    "line number": "38",
+    "func name": "test_data",
+    "func arg": "(pd)",
+    "comments": ""
+},{
+    "source file": "test_properties.py",
+    "line number": "484",
+    "func name": "test_HasProps_clone",
+    "func arg": "()",
+    "comments": ""
+},{
+    "source file": "test_python_execution_with_OO.py",
+    "line number": "32",
+    "func name": "test_python_execution_with_OO",
+    "func arg": "()",
+    "comments": "Running python with -OO will discard docstrings (__doc__ is None) which can cause problems if docstrings are naively formatted.\n\nThis test ensures that the all modules are importable, even with -OO set.\n\nIf you encounter a new problem with docstrings being formatted, try using format_docstring.\n"
+},{
+    "source file": "test_query.py",
+    "line number": "273",
+    "func name": "test_with_context",
+    "func arg": "()",
+    "comments": ""
+},{
+    "source file": "test_range_tool.py",
+    "line number": "41",
+    "func name": "_make_plot",
+    "func arg": "()",
+    "comments": ""
+},{
+    "source file": "test_receiver.py",
+    "line number": "34",
+    "func name": "test_creation",
+    "func arg": "()",
+    "comments": ""
+},{
+    "source file": "test_reset_tool.py",
+    "line number": "40",
+    "func name": "_make_plot",
+    "func arg": "()",
+    "comments": ""
+},{
+    "source file": "test_resources.py",
+    "line number": "421",
+    "func name": "test_external_js_and_css_resource_ordering",
+    "func arg": "()",
+    "comments": ""
+},{
+    "source file": "test_sample_geojson.py",
+    "line number": "38",
+    "func name": "test_geojson",
+    "func arg": "()",
+    "comments": ""
+},{
+    "source file": "test_sampledata__subcommands.py",
+    "line number": "62",
+    "func name": "_mock_download",
+    "func arg": "()",
+    "comments": ""
+},{
+    "source file": "test_saving.py",
+    "line number": "100",
+    "func name": "test__save_helper",
+    "func arg": "(mock_file_html, mock_io_open)",
+    "comments": ""
+},{
+    "source file": "test_sea_surface_temperature.py",
+    "line number": "38",
+    "func name": "test_sea_surface_temperature",
+    "func arg": "(pd)",
+    "comments": ""
+},{
+    "source file": "test_secret.py",
+    "line number": "52",
+    "func name": "test_run",
+    "func arg": "(capsys)",
+    "comments": ""
+},{
+    "source file": "test_select.py",
+    "line number": "42",
+    "func name": "modify_doc",
+    "func arg": "(doc)",
+    "comments": ""
+},{
+    "source file": "test_serialization.py",
+    "line number": "414",
+    "func name": "test_transform_column_source_data_with_buffers",
+    "func arg": "(pd, cols, dt1, dt2)",
+    "comments": ""
+},{
+    "source file": "test_serve.py",
+    "line number": "525",
+    "func name": "test_auth_module_printed",
+    "func arg": "()",
+    "comments": ""
+},{
+    "source file": "test_server__embed.py",
+    "line number": "251",
+    "func name": "Test__src_path",
+    "func arg": "(object)",
+    "comments": ""
+},{
+    "source file": "test_server__server.py",
+    "line number": "866",
+    "func name": "test__ioloop_not_forcibly_stopped",
+    "func arg": "()",
+    "comments": ""
+},{
+    "source file": "test_session__client.py",
+    "line number": "34",
+    "func name": "test_DEFAULT_SERVER_WEBSOCKET_URL",
+    "func arg": "()",
+    "comments": ""
+},{
+    "source file": "test_session__server.py",
+    "line number": "56",
+    "func name": "test_destroy_calls",
+    "func arg": "()",
+    "comments": ""
+},{
+    "source file": "test_showing.py",
+    "line number": "153",
+    "func name": "test",
+    "func arg": "(mock_save, mock_abspath)",
+    "comments": ""
+},{
+    "source file": "test_source_updates.py",
+    "line number": "59",
+    "func name": "has_cds_data_patches",
+    "func arg": "(msgs)",
+    "comments": ""
+},{
+    "source file": "test_sources.py",
+    "line number": "40",
+    "func name": "is_cds_data_streamed",
+    "func arg": "(evt)",
+    "comments": ""
+},{
+    "source file": "test_spinner.py",
+    "line number": "59",
+    "func name": "enter_value_in_spinner",
+    "func arg": "(driver, el, value, del_prev)",
+    "comments": ""
+},{
+    "source file": "test_sprint.py",
+    "line number": "38",
+    "func name": "test_sprint",
+    "func arg": "(pd)",
+    "comments": ""
+},{
+    "source file": "test_standalone.py",
+    "line number": "57",
+    "func name": "test_plot_and_widget",
+    "func arg": "()",
+    "comments": ""
+},{
+    "source file": "test_state.py",
+    "line number": "107",
+    "func name": "test_curstate",
+    "func arg": "()",
+    "comments": ""
+},{
+    "source file": "test_stocks.py",
+    "line number": "43",
+    "func name": "test_data",
+    "func arg": "(name)",
+    "comments": ""
+},{
+    "source file": "test_string.py",
+    "line number": "103",
+    "func name": "test_snakify",
+    "func arg": "()",
+    "comments": ""
+},{
+    "source file": "test_structure1.py",
+    "line number": "9",
+    "func name": "test_structure",
+    "func arg": "(pd)",
+    "comments": ""
+},{
+    "source file": "test_subcommand.py",
+    "line number": "66",
+    "func name": "test_base_invoke",
+    "func arg": "()",
+    "comments": ""
+},{
+    "source file": "test_templates.py",
+    "line number": "54",
+    "func name": "test_autoload_template_has_changed",
+    "func arg": "()",
+    "comments": "This is not really a test but a reminder that if you change the autoload_nb_js.js template then you should make sure that insertion of plots into notebooks is working as expected. In particular, this test was created as part of https://github.com/bokeh/bokeh/issues/7125.\n\n\n"
+},{
+    "source file": "test_text_input.py",
+    "line number": "42",
+    "func name": "modify_doc",
+    "func arg": "(doc)",
+    "comments": ""
+},{
+    "source file": "test_textarea_input.py",
+    "line number": "50",
+    "func name": "modify_doc",
+    "func arg": "(doc)",
+    "comments": ""
+},{
+    "source file": "test_token.py",
+    "line number": "50",
+    "func name": "_nie",
+    "func arg": "()",
+    "comments": ""
+},{
+    "source file": "test_tools.py",
+    "line number": "108",
+    "func name": "test_toolbar_box_with_no_children_does_not_raise_a_bokeh_warning",
+    "func arg": "(mock__show_with_state)",
+    "comments": ""
+},{
+    "source file": "test_tornado__server.py",
+    "line number": "167",
+    "func name": "test_log_stats",
+    "func arg": "(ManagedServerLoop)",
+    "comments": ""
+},{
+    "source file": "test_transforms.py",
+    "line number": "59",
+    "func name": "test_StepInterpolator",
+    "func arg": "()",
+    "comments": ""
+},{
+    "source file": "test_unemployment.py",
+    "line number": "38",
+    "func name": "test_data",
+    "func arg": "()",
+    "comments": ""
+},{
+    "source file": "test_unemployment1948.py",
+    "line number": "38",
+    "func name": "test_data",
+    "func arg": "(pd)",
+    "comments": ""
+},{
+    "source file": "test_us_cities.py",
+    "line number": "38",
+    "func name": "test_data",
+    "func arg": "()",
+    "comments": ""
+},{
+    "source file": "test_us_counties.py",
+    "line number": "38",
+    "func name": "test_data",
+    "func arg": "()",
+    "comments": ""
+},{
+    "source file": "test_us_holidays.py",
+    "line number": "38",
+    "func name": "test_us_holidays",
+    "func arg": "()",
+    "comments": ""
+},{
+    "source file": "test_us_marriages_divorces.py",
+    "line number": "38",
+    "func name": "test_data",
+    "func arg": "(pd)",
+    "comments": ""
+},{
+    "source file": "test_us_states.py",
+    "line number": "38",
+    "func name": "test_data",
+    "func arg": "()",
+    "comments": ""
+},{
+    "source file": "test_util__command.py",
+    "line number": "73",
+    "func name": "test_build_single_handler_application_main_py",
+    "func arg": "(mock_warn)",
+    "comments": ""
+},{
+    "source file": "test_util__embed.py",
+    "line number": "41",
+    "func name": "test_plot",
+    "func arg": "()",
+    "comments": ""
+},{
+    "source file": "test_util__io.py",
+    "line number": "107",
+    "func name": "test__shares_exec_prefix",
+    "func arg": "()",
+    "comments": ""
+},{
+    "source file": "test_util.py",
+    "line number": "108",
+    "func name": "test_match_host",
+    "func arg": "()",
+    "comments": ""
+},{
+    "source file": "test_validation.py",
+    "line number": "174",
+    "func name": "test_silence_remove_warning_that_is_not_in_silencers_is_ok",
+    "func arg": "(mock_warn, mock_error)",
+    "comments": ""
+},{
+    "source file": "test_webdriver.py",
+    "line number": "45",
+    "func name": "test_create_chromium_webdriver",
+    "func arg": "()",
+    "comments": ""
+},{
+    "source file": "test_wheel_zoom_tool.py",
+    "line number": "38",
+    "func name": "_make_plot",
+    "func arg": "(dimensions)",
+    "comments": ""
+},{
+    "source file": "test_widgets.py",
+    "line number": "30",
+    "func name": "get_prop_set",
+    "func arg": "(class_object)",
+    "comments": ""
+},{
+    "source file": "test_windows_reserved_filenames.py",
+    "line number": "26",
+    "func name": "test_windows_reserved_filenames",
+    "func arg": "()",
+    "comments": "Certain seemingly innocuous filenames like \"aux.js\" will cause Windows packages to fail spectacularly. This test ensures those reserved names are not present in the codebase.\n\n\n"
+},{
+    "source file": "test_world_cities.py",
+    "line number": "38",
+    "func name": "test_data",
+    "func arg": "(pd)",
+    "comments": ""
+},{
+    "source file": "test_wrappers__embed.py",
+    "line number": "82",
+    "func name": "test__SAFELY",
+    "func arg": "()",
+    "comments": ""
+},{
+    "source file": "test_zoom_in_tool.py",
+    "line number": "38",
+    "func name": "_make_plot",
+    "func arg": "()",
+    "comments": ""
+},{
+    "source file": "test_zoom_out_tool.py",
+    "line number": "38",
+    "func name": "_make_plot",
+    "func arg": "()",
+    "comments": ""
+},{
+    "source file": "text.py",
+    "line number": "41",
+    "func name": "ys",
+    "func arg": "(cat)",
+    "comments": ""
+},{
+    "source file": "theme.py",
+    "line number": "149",
+    "func name": "setup",
+    "func arg": "(app)",
+    "comments": ""
+},{
+    "source file": "tile_demo.py",
+    "line number": "20",
+    "func name": "lnglat_to_meters",
+    "func arg": "(longitude, latitude)",
+    "comments": "Projects the given (longitude, latitude) values into Web Mercator coordinates (meters East of Greenwich and meters North of the Equator).\n\nLongitude and latitude can be provided as scalars, Pandas columns, or Numpy arrays, and will be returned in the same form.\n\nLists or tuples will be converted to Numpy arrays.\n\nExamples: easting, northing = lnglat_to_meters(-74,40.71)\n\neasting, northing = lnglat_to_meters(np.array([-74]),np.array([40.71]))\n\ndf=pandas.DataFrame(dict(longitude=np.array([-74]),latitude=np.array([40.71]))) df.loc[:, 'longitude'], df.loc[:, 'latitude'] = lnglat_to_meters(df.longitude,df.latitude)\n"
+},{
+    "source file": "title.py",
+    "line number": "10",
+    "func name": "make_plot",
+    "func arg": "(location, title_align, two_axes)",
+    "comments": ""
+},{
+    "source file": "token1.py",
+    "line number": "289",
+    "func name": "_get_random_string",
+    "func arg": "(length, allowed_chars, secret_key)",
+    "comments": "Return a securely generated random string. With the a-z, A-Z, 0-9 character set: Length 12 is a 71-bit value. log_2((26+26+10)^12) =~ 71 Length 44 is a 261-bit value. log_2((26+26+10)^44) = 261\n\n\n"
+},{
+    "source file": "toolbar_autohide.py",
+    "line number": "12",
+    "func name": "make_plot",
+    "func arg": "(autohide)",
+    "comments": ""
+},{
+    "source file": "toolbars.py",
+    "line number": "14",
+    "func name": "mkplot",
+    "func arg": "(toolbar, xaxis, yaxis)",
+    "comments": ""
+},{
+    "source file": "toolbars2.py",
+    "line number": "19",
+    "func name": "mkgrid",
+    "func arg": "(plots, location)",
+    "comments": ""
+},{
+    "source file": "toolbars3.py",
+    "line number": "15",
+    "func name": "mkplot",
+    "func arg": "()",
+    "comments": ""
+},{
+    "source file": "tools_hover_tooltip_formatting.py",
+    "line number": "10",
+    "func name": "datetime",
+    "func arg": "(x)",
+    "comments": ""
+},{
+    "source file": "tornado_embed.py",
+    "line number": "20",
+    "func name": "bkapp",
+    "func arg": "(doc)",
+    "comments": ""
+},{
+    "source file": "trail.py",
+    "line number": "91",
+    "func name": "altitude_profile",
+    "func arg": "(data)",
+    "comments": ""
+},{
+    "source file": "transform.py",
+    "line number": "302",
+    "func name": "transform",
+    "func arg": "(field_name, transform)",
+    "comments": "Create a ``DataSpec`` dict that applies an arbitrary client-side ``Transform`` to a ``ColumnDataSource`` column.\n\n\n##### Args\n* **field_name (str) **: A field name to configure ``DataSpec`` with\n\n* **transform (Transform) **: A transforms to apply to that field\n\n##### Returns\n"
+},{
+    "source file": "ui.py",
+    "line number": "115",
+    "func name": "task",
+    "func arg": "(msg)",
+    "comments": "\n\n\n"
+},{
+    "source file": "unemployment1.py",
+    "line number": "49",
+    "func name": "_read_data",
+    "func arg": "()",
+    "comments": "\n\n\n"
+},{
+    "source file": "us_counties.py",
+    "line number": "65",
+    "func name": "_read_data",
+    "func arg": "()",
+    "comments": "\n\n\n"
+},{
+    "source file": "us_holidays.py",
+    "line number": "47",
+    "func name": "_read_data",
+    "func arg": "()",
+    "comments": "\n\n\n"
+},{
+    "source file": "us_marriages_divorces.py",
+    "line number": "49",
+    "func name": "_read_data",
+    "func arg": "()",
+    "comments": "\n\n\n"
+},{
+    "source file": "us_states.py",
+    "line number": "58",
+    "func name": "_read_data",
+    "func arg": "()",
+    "comments": "\n\n\n"
+},{
+    "source file": "util.py",
+    "line number": "17",
+    "func name": "skip_for_prerelease",
+    "func arg": "(func)",
+    "comments": ""
+},{
+    "source file": "util2.py",
+    "line number": "65",
+    "func name": "websocket_url_for_server_url",
+    "func arg": "(url)",
+    "comments": "Convert an ``http(s)`` URL for a Bokeh server websocket endpoint into the appropriate ``ws(s)`` URL\n\n\n##### Args\n* **url (str)**: An ``http(s)`` URL\n\n##### Returns\n* **str**: The corresponding ``ws(s)`` URL ending in ``/ws``\n\n"
+},{
+    "source file": "util3.py",
+    "line number": "113",
+    "func name": "references_json",
+    "func arg": "(references)",
+    "comments": "Given a list of all models in a graph, return JSON representing them and their properties.\n\n\n##### Args\n* **references (seq[Model]) **: A list of models to convert to JSON\n\n##### Returns\n"
+},{
+    "source file": "util4.py",
+    "line number": "218",
+    "func name": "set_single_plot_width_height",
+    "func arg": "(doc, width, height)",
+    "comments": ""
+},{
+    "source file": "util5.py",
+    "line number": "158",
+    "func name": "match_host",
+    "func arg": "(host, pattern)",
+    "comments": "Match a host string against a pattern\n\n\n##### Args\n##### Returns\n* **ples**: \n\n* **>>> match_host('192.168.0.1**: 80', '192.168.0.1\n\n* **>>> match_host('alice**: 8080', '*\n\n* **>>> match_host('alice', '***: *')\n\n"
+},{
+    "source file": "util6.py",
+    "line number": "116",
+    "func name": "_shares_exec_prefix",
+    "func arg": "(basedir)",
+    "comments": "Whether a give base directory is on the system exex prefix\n\n\n"
+},{
+    "source file": "util7.py",
+    "line number": "42",
+    "func name": "get_sphinx_resources",
+    "func arg": "(include_bokehjs_api)",
+    "comments": ""
+},{
+    "source file": "util8.py",
+    "line number": "358",
+    "func name": "_unset_temp_theme",
+    "func arg": "(doc)",
+    "comments": ""
+},{
+    "source file": "validation.py",
+    "line number": "76",
+    "func name": "without_property_validation",
+    "func arg": "(input_function)",
+    "comments": "Turn off property validation during update callbacks\n\nExample: .. code-block:: python\n\n@without_property_validation def update(attr, old, new): # do things without validation\n\nSee Also: :class:`~bokeh.core.properties.validate`: context mangager for more fine-grained control\n"
+},{
+    "source file": "vector.py",
+    "line number": "9",
+    "func name": "streamlines",
+    "func arg": "(x, y, u, v, density)",
+    "comments": "Return streamlines of a vector flow.\n\n* x and y are 1d arrays defining an *evenly spaced* grid. * u and v are 2d arrays (shape [y,x]) giving velocities. * density controls the closeness of the streamlines.\n"
+},{
+    "source file": "version.py",
+    "line number": "73",
+    "func name": "_base_version_helper",
+    "func arg": "(version)",
+    "comments": ""
+},{
+    "source file": "versioneer.py",
+    "line number": "1777",
+    "func name": "scan_setup_py",
+    "func arg": "()",
+    "comments": "Validate the contents of setup.py against Versioneer's expectations.\n\n\n"
+},{
+    "source file": "views.py",
+    "line number": "73",
+    "func name": "sea_surface_custom_uri",
+    "func arg": "(request)",
+    "comments": ""
+},{
+    "source file": "webdriver.py",
+    "line number": "83",
+    "func name": "_try_create_chromium_webdriver",
+    "func arg": "()",
+    "comments": ""
+},{
+    "source file": "widgets.py",
+    "line number": "64",
+    "func name": "mk_tab",
+    "func arg": "(color)",
+    "comments": ""
+},{
+    "source file": "words_and_plots.py",
+    "line number": "63",
+    "func name": "intro",
+    "func arg": "()",
+    "comments": ""
+},{
+    "source file": "wrappers.py",
+    "line number": "95",
+    "func name": "notify_owner",
+    "func arg": "(func)",
+    "comments": "A decorator for mutating methods of property container classes that notifies owners of the property container about mutating changes.\n\n\n##### Args\n* **func (callable) **: the container method to wrap in a notification\n\n##### Returns\n* **ples**: \n\n* **A ``__setitem__`` could be wrapped like this**: \n\n* **.. code-block**: \n\n"
+},{
+    "source file": "wrappers1.py",
+    "line number": "58",
+    "func name": "wrap_in_script_tag",
+    "func arg": "(js, type, id)",
+    "comments": "\n\n\n"
+}]
+}

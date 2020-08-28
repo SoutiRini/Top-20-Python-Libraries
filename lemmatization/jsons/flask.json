@@ -1,0 +1,51 @@
+{"function":
+[{
+    "source file": "app.py",
+    "line number": "66",
+    "func name": "setupmethod",
+    "func arg": "(f)",
+    "comments": "Wraps a method so that it performs a check in debug mode if the first request was already handled.\n\n\n"
+},{
+    "source file": "cli.py",
+    "line number": "965",
+    "func name": "main",
+    "func arg": "(as_module)",
+    "comments": ""
+},{
+    "source file": "ctx.py",
+    "line number": "183",
+    "func name": "has_app_context",
+    "func arg": "()",
+    "comments": "Works like :func:`has_request_context` but for the application context.  You can also just do a boolean check on the :data:`current_app` object instead.\n\n.. versionadded:: 0.9\n"
+},{
+    "source file": "debughelpers.py",
+    "line number": "160",
+    "func name": "explain_ignored_app_run",
+    "func arg": "()",
+    "comments": ""
+},{
+    "source file": "globals.py",
+    "line number": "38",
+    "func name": "_find_app",
+    "func arg": "()",
+    "comments": ""
+},{
+    "source file": "helpers.py",
+    "line number": "1108",
+    "func name": "is_ip",
+    "func arg": "(value)",
+    "comments": "Determine if the given string is an IP address.\n\nparam value: value to check :type value: str\n\n:return: True if string is an IP address :rtype: bool\n"
+},{
+    "source file": "logging.py",
+    "line number": "49",
+    "func name": "create_logger",
+    "func arg": "(app)",
+    "comments": "Get the Flask app's logger and configure it if needed.\n\nThe logger name will be the same as :attr:`app.import_name <flask.Flask.name>`.\n\nWhen :attr:`~flask.Flask.debug` is enabled, set the logger level to :data:`logging.DEBUG` if it is not set.\n\nIf there is no handler for the logger's effective level, add a :class:`~logging.StreamHandler` for :func:`~flask.logging.wsgi_errors_stream` with a basic format.\n"
+},{
+    "source file": "templating.py",
+    "line number": "134",
+    "func name": "render_template_string",
+    "func arg": "(source, **context)",
+    "comments": "Renders a template from the given template source string with the given context. Template variables will be autoescaped.\n\nparam source: the source code of the template to be rendered :param context: the variables that should be available in the context of the template.\n"
+}]
+}

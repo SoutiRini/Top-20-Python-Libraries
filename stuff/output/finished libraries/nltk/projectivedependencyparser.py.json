@@ -1,0 +1,7 @@
+{
+    "source file": "projectivedependencyparser.py",
+    "line number": "695",
+    "func name": "projective_prob_parse_demo",
+    "func arg": "()",
+    "comments": "A demo showing the training and use of a projective dependency parser.\n\n\n"
+}

@@ -1,0 +1,7 @@
+{
+    "source file": "old_saveload.py",
+    "line number": "384",
+    "func name": "pickle",
+    "func arg": "(obj, fname, protocol)",
+    "comments": "Pickle object `obj` to file `fname`.\n\nParameters ---------- obj : object Any python object. fname : str Path to pickle file. protocol : int, optional Pickle protocol number, default is 2 to support compatible across python 2.x and 3.x.\n"
+}

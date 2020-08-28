@@ -1,0 +1,7 @@
+{
+    "source file": "has_props.py",
+    "line number": "208",
+    "func name": "accumulate_dict_from_superclasses",
+    "func arg": "(cls, propname)",
+    "comments": "Traverse the class hierarchy and accumulate the special dicts ``MetaHasProps`` stores on classes\n\n\n##### Args\n* **name (str) **: name of the special attribute to collect.\n    Typically meaningful values are\n\n"
+}

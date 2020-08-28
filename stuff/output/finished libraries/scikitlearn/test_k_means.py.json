@@ -1,0 +1,7 @@
+{
+    "source file": "test_k_means.py",
+    "line number": "1097",
+    "func name": "test_minibatch_kmeans_wrong_params",
+    "func arg": "(param, match)",
+    "comments": ""
+}

@@ -1,0 +1,7 @@
+{
+    "source file": "control_ops_grad.py",
+    "line number": "693",
+    "func name": "disambiguate_grad_if_op_output",
+    "func arg": "(grad_op, idx, new_grad_output)",
+    "comments": ""
+}

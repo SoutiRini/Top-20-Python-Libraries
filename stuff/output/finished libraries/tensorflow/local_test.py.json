@@ -1,0 +1,7 @@
+{
+    "source file": "local_test.py",
+    "line number": "529",
+    "func name": "copy_model_weights",
+    "func arg": "(model_from, model_to)",
+    "comments": ""
+}

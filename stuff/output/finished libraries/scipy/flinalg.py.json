@@ -1,0 +1,7 @@
+{
+    "source file": "flinalg.py",
+    "line number": "27",
+    "func name": "get_flinalg_funcs",
+    "func arg": "(names, arrays, debug)",
+    "comments": "Return optimal available _flinalg function objects with names. Arrays are used to determine optimal prefix.\n\n\n"
+}

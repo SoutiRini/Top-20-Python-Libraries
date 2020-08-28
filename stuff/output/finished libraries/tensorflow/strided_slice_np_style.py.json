@@ -1,0 +1,7 @@
+{
+    "source file": "strided_slice_np_style.py",
+    "line number": "29",
+    "func name": "make_strided_slice_np_style_tests",
+    "func arg": "(options)",
+    "comments": "Make a set of tests to test strided_slice in np style.\n\n\n"
+}

@@ -1,0 +1,7 @@
+{
+    "source file": "extract74.py",
+    "line number": "165",
+    "func name": "_masked_coo",
+    "func arg": "(A, mask)",
+    "comments": ""
+}

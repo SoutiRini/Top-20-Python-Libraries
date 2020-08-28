@@ -1,0 +1,7 @@
+{
+    "source file": "kullback_leibler.py",
+    "line number": "132",
+    "func name": "cross_entropy",
+    "func arg": "(ref, other, allow_nan_stats, name)",
+    "comments": "Computes the (Shannon) cross entropy.\n\nDenote two distributions by `P` (`ref`) and `Q` (`other`). Assuming `P, Q` are absolutely continuous with respect to one another and permit densities `p(x) dr(x)` and `q(x) dr(x)`, (Shanon) cross entropy is defined as:\n\n```none H[P, Q] = E_p[-log q(X)] = -int_F p(x) log q(x) dr(x) ```\n\nwhere `F` denotes the support of the random variable `X ~ P`.\n##### Args\n* **ref**: `tfd.Distribution` instance.\n\n* **other**: `tfd.Distribution` instance.\n\n* **allow_nan_stats**: Python `bool`, default `True`. When `True`,\n  statistics (e.g., mean, mode, variance) use the value \"`NaN`\" to\n  indicate the result is undefined. When `False`, an exception is raised\n  if one or more of the statistic's batch members are undefined.\n\n* **name**: Python `str` prepended to names of ops created by this function.\n\n##### Returns\n* **cross_entropy**: `ref.dtype` `Tensor` with shape `[B1, ..., Bn]`\n  representing `n` different calculations of (Shanon) cross entropy.\n\n"
+}

@@ -1,0 +1,7 @@
+{
+    "source file": "structured_tensor.py",
+    "line number": "1129",
+    "func name": "_merge_dims",
+    "func arg": "(value, outer_axis, inner_axis)",
+    "comments": "Merges `outer_axis...inner_axis` of `value` into a single dimension.\n\n\n"
+}

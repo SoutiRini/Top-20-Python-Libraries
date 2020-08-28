@@ -1,0 +1,7 @@
+{
+    "source file": "discriminant_analysis.py",
+    "line number": "96",
+    "func name": "_class_cov",
+    "func arg": "(X, y, priors, shrinkage)",
+    "comments": "Compute weighted within-class covariance matrix.\n\nThe per-class covariance are weighted by the class priors.\n\nParameters ---------- X : array-like of shape (n_samples, n_features) Input data.\n\ny : array-like of shape (n_samples,) or (n_samples, n_targets) Target values.\n\npriors : array-like of shape (n_classes,) Class priors.\n\nshrinkage : 'auto' or float, default=None Shrinkage parameter, possible values:\n\n- None: no shrinkage (default).\n\n- 'auto': automatic shrinkage using the Ledoit-Wolf lemma.\n\n- float between 0 and 1: fixed shrinkage parameter.\n##### Returns\n* **cov **: array-like of shape (n_features, n_features)\n    Weighted within-class covariance matrix\n\n"
+}

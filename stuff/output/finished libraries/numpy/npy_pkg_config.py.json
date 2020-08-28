@@ -1,0 +1,7 @@
+{
+    "source file": "npy_pkg_config.py",
+    "line number": "326",
+    "func name": "read_config",
+    "func arg": "(pkgname, dirs)",
+    "comments": "Return library info for a package from its configuration file.\n\nParameters ---------- pkgname : str Name of the package (should match the name of the .ini file, without the extension, e.g. foo for the file foo.ini). dirs : sequence, optional If given, should be a sequence of directories\n\n- usually including the NumPy base directory\n\n- where to look for npy-pkg-config files.\n##### Returns\n* **pkginfo **: class instance\n    The `LibraryInfo` instance containing the build information.\n\n"
+}

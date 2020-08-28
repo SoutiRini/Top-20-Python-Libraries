@@ -1,0 +1,7 @@
+{
+    "source file": "file_io.py",
+    "line number": "842",
+    "func name": "file_crc32",
+    "func arg": "(filename, block_size)",
+    "comments": "Get the crc32 of the passed file.\n\nThe crc32 of a file can be used for error checking; two files with the same crc32 are considered equivalent. Note that the entire file must be read to produce the crc32.\n##### Args\n* **filename**: string, path to a file\n\n* **block_size**: Integer, process the files by reading blocks of `block_size`\n  bytes. Use -1 to read the file as once.\n\n##### Returns\n"
+}

@@ -1,0 +1,7 @@
+{
+    "source file": "_kernel_estimates.py",
+    "line number": "119",
+    "func name": "_kernel_survfunc",
+    "func arg": "(time, status, exog, kfunc, freq_weights)",
+    "comments": "Estimate the marginal survival function under dependent censoring.\n\nParameters ---------- time : array_like The observed times for each subject status : array_like The status for each subject (1 indicates event, 0 indicates censoring) exog : array_like Covariates such that censoring is independent conditional on exog kfunc : function Kernel function freq_weights : array_like Optional frequency weights\n##### Returns\n* **probs **: array_like\n    The estimated survival probabilities\n\n* **times **: array_like\n    The times at which the survival probabilities are estimated\n\n* **Annals of Statistics 32 (4)**: 1533 55.\n\n* **doi**: 10.1214/009053604000000508.\n\n* **https**: //arxiv.org/pdf/math/0409180.pdf\n\n"
+}

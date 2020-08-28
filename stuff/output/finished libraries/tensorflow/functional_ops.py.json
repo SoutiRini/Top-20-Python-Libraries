@@ -1,0 +1,7 @@
+{
+    "source file": "functional_ops.py",
+    "line number": "1217",
+    "func name": "_set_read_only_resource_inputs_attr",
+    "func arg": "(op, func_graph)",
+    "comments": "Sets the list of resource inputs which are read-only.\n\nThis is used by AutomaticControlDependencies.\n##### Args\n* **op**: PartitionedCall Operation.\n\n* **func_graph**: FuncGraph.\n\n"
+}

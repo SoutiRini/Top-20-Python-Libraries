@@ -1,0 +1,7 @@
+{
+    "source file": "imagenet_trainer_test_utils.py",
+    "line number": "152",
+    "func name": "test_forward_only_fast_simplenet",
+    "func arg": "(create_model, last_out_blob, data_blob, num_labels)",
+    "comments": ""
+}

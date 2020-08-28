@@ -1,0 +1,7 @@
+{
+    "source file": "cross_device_utils.py",
+    "line number": "972",
+    "func name": "_control_input",
+    "func arg": "(devices, control_inputs, idx)",
+    "comments": "Returns the `idx`-th item in control_inputs to be used in ops.control_dependencies.\n\nThis is a helper function for building collective ops.\n##### Args\n* **devices**: a list of device strings the collective run on.\n\n* **control_inputs**: a list or None.\n\n* **idx**: the index into `inputs` and `control_inputs`.\n\n##### Returns\n"
+}

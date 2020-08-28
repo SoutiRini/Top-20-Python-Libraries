@@ -1,0 +1,7 @@
+{
+    "source file": "filled_step.py",
+    "line number": "79",
+    "func name": "stack_hist",
+    "func arg": "(ax, stacked_data, sty_cycle, bottoms, hist_func, labels, plot_func, plot_kwargs)",
+    "comments": "Parameters ---------- ax : axes.Axes The axes to add artists too\n\nstacked_data : array or Mapping A (N, M) shaped array.\n\nThe first dimension will be iterated over to compute histograms row-wise\n\nsty_cycle : Cycler or operable of dict Style to apply to each set\n\nbottoms : array, default: 0 The initial positions of the bottoms.\n\nhist_func : callable, optional Must have signature `bin_vals, bin_edges = f(data)`. `bin_edges` expected to be one longer than `bin_vals`\n\nlabels : list of str, optional The label for each set.\n\nIf not given and stacked data is an array defaults to 'default set {n}'\n\nIf stacked_data is a mapping, and labels is None, default to the keys (which may come out in a random order).\n\nIf stacked_data is a mapping and labels is given then only the columns listed by be plotted.\n\nplot_func : callable, optional Function to call to draw the histogram must have signature:\n\nret = plot_func(ax, edges, top, bottoms=bottoms, label=label, **kwargs)\n\nplot_kwargs : dict, optional Any extra kwargs to pass through to the plotting function.\n\nThis will be the same for all calls to the plotting function and will over-ride the values in cycle.\n##### Returns\n* **arts **: dict\n    Dictionary of artists keyed on their labels\n\n"
+}

@@ -1,0 +1,7 @@
+{
+    "source file": "test_regression.py",
+    "line number": "37",
+    "func name": "test_gh_issue_3025",
+    "func arg": "()",
+    "comments": "Github issue #3025 - improper merging of labels\n\n\n"
+}

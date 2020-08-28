@@ -1,0 +1,7 @@
+{
+    "source file": "module.py",
+    "line number": "120",
+    "func name": "register_module_backward_hook",
+    "func arg": "(hook)",
+    "comments": "Registers a backward hook common to all the modules.\n\n.. warning :: This adds global state to the `nn.module` module and it is only intended for debugging/profiling purposes.\n\nThe current implementation will not have the presented behavior for complex :class:`Module` that perform many operations. In some failure cases, :attr:`grad_input` and :attr:`grad_output` will only contain the gradients for a subset of the inputs and outputs. For such :class:`Module`, you should use :func:`torch.Tensor.register_hook` directly on a specific input or output to get the required gradients.\n\nThe hook will be called every time the gradients with respect to module inputs are computed. The hook should have the following signature::\n\nhook(module, grad_input, grad_output) -> Tensor or None\n\nThe :attr:`grad_input` and :attr:`grad_output` may be tuples if the module has multiple inputs or outputs. The hook should not modify its arguments, but it can optionally return a new gradient with respect to input that will be used in place of :attr:`grad_input` in subsequent computations. :attr:`grad_input` will only correspond to the inputs given as positional arguments.\n\nGlobal hooks are called before hooks registered with `register_backward_hook`\n##### Returns\n* ****: class\n\n"
+}

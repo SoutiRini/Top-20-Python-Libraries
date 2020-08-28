@@ -1,0 +1,7 @@
+{
+    "source file": "_kddcup99.py",
+    "line number": "310",
+    "func name": "_mkdirp",
+    "func arg": "(d)",
+    "comments": "Ensure directory d exists (like mkdir -p on Unix) No guarantee that the directory is writable.\n\n\n"
+}

@@ -1,0 +1,7 @@
+{
+    "source file": "test_autograd.py",
+    "line number": "4394",
+    "func name": "add_test",
+    "func arg": "(name, self_size, args, variant_name, check_ad, dim_args_idx, skipTestIf, output_process_fn, kwargs)",
+    "comments": ""
+}

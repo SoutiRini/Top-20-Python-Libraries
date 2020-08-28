@@ -1,0 +1,7 @@
+{
+    "source file": "test_requests.py",
+    "line number": "2372",
+    "func name": "test_urllib3_pool_connection_closed",
+    "func arg": "(httpbin)",
+    "comments": ""
+}

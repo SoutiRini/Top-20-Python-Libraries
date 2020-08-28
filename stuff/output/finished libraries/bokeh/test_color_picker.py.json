@@ -1,0 +1,7 @@
+{
+    "source file": "test_color_picker.py",
+    "line number": "59",
+    "func name": "enter_value_in_color_picker",
+    "func arg": "(driver, el, color)",
+    "comments": ""
+}

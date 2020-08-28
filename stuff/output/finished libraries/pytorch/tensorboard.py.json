@@ -1,0 +1,7 @@
+{
+    "source file": "tensorboard.py",
+    "line number": "137",
+    "func name": "tensorboard_events",
+    "func arg": "(c2_dir, tf_dir)",
+    "comments": ""
+}

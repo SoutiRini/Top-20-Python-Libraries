@@ -1,0 +1,7 @@
+{
+    "source file": "linalg_covmat.py",
+    "line number": "187",
+    "func name": "mvn_nloglike_obs",
+    "func arg": "(x, sigma)",
+    "comments": "loglike multivariate normal\n\nassumes x is 1d, (nobs,) and sigma is 2d (nobs, nobs)\n\nbrute force from formula no checking of correct inputs use of inv and log-det should be replace with something more efficient\n"
+}

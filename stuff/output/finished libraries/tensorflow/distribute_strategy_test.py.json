@@ -1,0 +1,7 @@
+{
+    "source file": "distribute_strategy_test.py",
+    "line number": "2336",
+    "func name": "_functional_with_layer_reuse",
+    "func arg": "(input_shape, num_classes, l1, l2)",
+    "comments": ""
+}

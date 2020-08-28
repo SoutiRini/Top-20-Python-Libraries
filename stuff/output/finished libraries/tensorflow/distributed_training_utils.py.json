@@ -1,0 +1,7 @@
+{
+    "source file": "distributed_training_utils.py",
+    "line number": "1195",
+    "func name": "concat_along_batch_dimension",
+    "func arg": "(outputs)",
+    "comments": "Concats prediction outputs along the batch dimension.\n\n\n"
+}

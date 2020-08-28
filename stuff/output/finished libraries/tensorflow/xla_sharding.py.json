@@ -1,0 +1,7 @@
+{
+    "source file": "xla_sharding.py",
+    "line number": "279",
+    "func name": "manual_to_auto_spmd_partition",
+    "func arg": "(tensor, manual_sharding, full_shape)",
+    "comments": "Switches from manual partitioning to automatic SPMD partitioning.\n\nConverts a shard-shaped tensor (manually partitioned in SPMD-style) to a full-shaped tensor to be partitioned automatically by the SPMD partitioner.\n##### Args\n* **tensor**: A tf.Tensor in shard shape.\n\n* **manual_sharding**: a serialized string of OpSharding to be used in manual\n  partitioning.\n\n* **full_shape**: the shape of tensor before partitioning.\n\n##### Returns\n"
+}

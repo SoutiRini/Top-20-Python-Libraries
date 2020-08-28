@@ -1,0 +1,7 @@
+{
+    "source file": "compiler_helper58.py",
+    "line number": "87",
+    "func name": "set_cxx_flags_clib_hook",
+    "func arg": "(build_clib, build_info)",
+    "comments": ""
+}

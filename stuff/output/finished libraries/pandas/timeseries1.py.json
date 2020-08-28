@@ -1,0 +1,7 @@
+{
+    "source file": "timeseries1.py",
+    "line number": "269",
+    "func name": "format_dateaxis",
+    "func arg": "(subplot, freq, index)",
+    "comments": "Pretty-formats the date axis (x-axis).\n\nMajor and minor ticks are automatically set for the frequency of the current underlying series.\n\nAs the dynamic mode is activated by default, changing the limits of the x axis will intelligently change the positions of the ticks.\n"
+}

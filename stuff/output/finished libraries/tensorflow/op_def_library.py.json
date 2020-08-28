@@ -1,0 +1,7 @@
+{
+    "source file": "op_def_library.py",
+    "line number": "299",
+    "func name": "_apply_op_helper",
+    "func arg": "(op_type_name, name, **keywords)",
+    "comments": "Implementation of apply_op that returns output_structure, op.\n\n\n"
+}

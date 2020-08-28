@@ -1,0 +1,7 @@
+{
+    "source file": "l2norm_shared_epsilon.py",
+    "line number": "28",
+    "func name": "make_l2norm_shared_epsilon_tests",
+    "func arg": "(options)",
+    "comments": "Regression test for a bug (b/122651451).\n\n\n"
+}

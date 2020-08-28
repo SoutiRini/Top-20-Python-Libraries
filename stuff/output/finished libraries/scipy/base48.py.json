@@ -1,0 +1,7 @@
+{
+    "source file": "base48.py",
+    "line number": "1205",
+    "func name": "isspmatrix",
+    "func arg": "(x)",
+    "comments": "Is x of a sparse matrix type?\n\nParameters ---------- x object to check for being a sparse matrix\n##### Returns\n"
+}

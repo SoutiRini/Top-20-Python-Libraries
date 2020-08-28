@@ -1,0 +1,7 @@
+{
+    "source file": "keywords.py",
+    "line number": "538",
+    "func name": "get_graph",
+    "func arg": "(text)",
+    "comments": "Creates and returns graph from given text, cleans and tokenize text before building graph.\n\nParameters ---------- text : str Sequence of values.\n##### Returns\n* ****: class\n\n"
+}

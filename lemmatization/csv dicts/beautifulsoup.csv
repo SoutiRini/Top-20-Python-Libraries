@@ -1,0 +1,4 @@
+0,"{'func name': '_invert', 'comments': 'Invert a dictionary.\n\n\n', 'stemmed comments': ['invert', 'dictionari']}"
+1,"{'func name': 'profile', 'comments': ""Use Python's profiler on a randomly generated document.\n\n\n"", 'stemmed comments': ['s', 'python', 'document', 'randomli', 'profil', 'use', 'gener']}"
+2,"{'func name': '_alias', 'comments': 'Alias one attribute name to another for backward compatibility\n\n\n', 'stemmed comments': ['alia', 'attribut', 'compat', 'one', 'anoth', 'name', 'backward']}"
+3,"{'func name': 'skipIf', 'comments': '', 'stemmed comments': []}"

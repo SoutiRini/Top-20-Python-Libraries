@@ -1,0 +1,7 @@
+{
+    "source file": "conv2d_benchmark.py",
+    "line number": "44",
+    "func name": "build_graph",
+    "func arg": "(device, dtype, data_format, input_shape, filter_shape, strides, padding, num_iters, warmup_iters)",
+    "comments": "builds a graph containing a sequence of conv2d operations.\n\n\n##### Args\n* **device**: String, the device to run on.\n\n* **dtype**: Data type for the convolution.\n\n* **data_format**: A string from\n\n* **input_shape**: Shape of the input tensor.\n\n* **filter_shape**: Shape of the filter tensor.\n\n* **strides**: A list of ints. 1-D of length 4. The stride of sliding\n         window for each dimension of input.\n\n* **padding**: A string from\n\n* **num_iters**: number of iterations to run conv2d.\n\n* **warmup_iters**: number of iterations for warmup runs.\n\n##### Returns\n"
+}

@@ -1,0 +1,7 @@
+{
+    "source file": "backend_pdf.py",
+    "line number": "417",
+    "func name": "_paint_path",
+    "func arg": "(fill, stroke)",
+    "comments": "Return the PDF operator to paint a path.\n\nParameters ---------- fill: bool Fill the path with the fill color. stroke: bool Stroke the outline of the path with the line color.\n"
+}

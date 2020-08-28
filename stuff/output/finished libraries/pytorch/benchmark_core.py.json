@@ -1,0 +1,7 @@
+{
+    "source file": "benchmark_core.py",
+    "line number": "71",
+    "func name": "_build_test",
+    "func arg": "(configs, bench_op, OperatorTestCase, run_backward, op_name_function)",
+    "comments": "Generate PyTorch/Caffe2 tests of operators with different inputs. Args: configs: a dictionary that has the input shapes bench_op: a subclass of Caffe2BenchmarkBase/TorchBenchmarkBase which includes tensor creation and operator execution OperatorTestCase: a named tuple to save the metadata of an test run_backward: a bool parameter indicating backward path op_name_function: a dictionary includes operator name and function\n\n\n"
+}

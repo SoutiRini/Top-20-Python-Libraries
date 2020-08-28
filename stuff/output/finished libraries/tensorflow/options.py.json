@@ -1,0 +1,7 @@
+{
+    "source file": "options.py",
+    "line number": "89",
+    "func name": "merge_options",
+    "func arg": "()",
+    "comments": "Merges the given options, returning the result as a new options object.\n\nThe input arguments are expected to have a matching type that derives from `OptionsBase` (and thus each represent a set of options). The method outputs an object of the same type created by merging the sets of options represented by the input arguments.\n\nThe sets of options can be merged as long as there does not exist an option with different non-default values.\n\nIf an option is an instance of `OptionsBase` itself, then this method is applied recursively to the set of options represented by this option.\n##### Args\n* ***options_list**: options to merge\n\n##### Returns\n"
+}

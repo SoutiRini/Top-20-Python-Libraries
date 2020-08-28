@@ -1,0 +1,7 @@
+{
+    "source file": "orthogonal.py",
+    "line number": "2135",
+    "func name": "sh_legendre",
+    "func arg": "(n, monic)",
+    "comments": "Shifted Legendre polynomial.\n\nDefined as :math:`P^*_n(x) = P_n(2x\n\n- 1)` for :math:`P_n` the nth Legendre polynomial.\n\nParameters ---------- n : int Degree of the polynomial. monic : bool, optional If `True`, scale the leading coefficient to be 1. Default is `False`.\n##### Returns\n* **P **: orthopoly1d\n    Shifted Legendre polynomial.\n\n* **The polynomials **: math\n\n"
+}

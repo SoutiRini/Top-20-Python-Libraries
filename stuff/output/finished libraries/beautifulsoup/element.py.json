@@ -1,0 +1,7 @@
+{
+    "source file": "element.py",
+    "line number": "34",
+    "func name": "_alias",
+    "func arg": "(attr)",
+    "comments": "Alias one attribute name to another for backward compatibility\n\n\n"
+}

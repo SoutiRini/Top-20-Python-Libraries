@@ -1,0 +1,7 @@
+{
+    "source file": "test_js_license_set.py",
+    "line number": "38",
+    "func name": "test_js_license_set",
+    "func arg": "()",
+    "comments": "If the current set of JS licenses changes, they should be noted in the bokehjs/LICENSE file.\n\n\n"
+}

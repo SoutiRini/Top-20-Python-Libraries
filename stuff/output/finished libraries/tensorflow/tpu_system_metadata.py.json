@@ -1,0 +1,7 @@
+{
+    "source file": "tpu_system_metadata.py",
+    "line number": "198",
+    "func name": "master_job",
+    "func arg": "(master, cluster_def)",
+    "comments": "Returns the canonical job name to use to place TPU computations on.\n\n\n##### Args\n* **master**: A `string` representing the TensorFlow master to use.\n\n* **cluster_def**: A ClusterDef object describing the TPU cluster.\n\n##### Returns\n"
+}

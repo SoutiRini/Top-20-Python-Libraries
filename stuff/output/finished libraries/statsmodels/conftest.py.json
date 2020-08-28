@@ -1,0 +1,7 @@
+{
+    "source file": "conftest.py",
+    "line number": "107",
+    "func name": "reset_randomstate",
+    "func arg": "()",
+    "comments": "Fixture that set the global RandomState to the fixed seed 1\n\nNotes ----- Used by passing as an argument to the function that uses the global RandomState\n\ndef test_some_plot(reset_randomstate): <test code>\n"
+}

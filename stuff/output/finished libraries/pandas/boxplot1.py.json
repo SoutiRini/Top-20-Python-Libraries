@@ -1,0 +1,7 @@
+{
+    "source file": "boxplot1.py",
+    "line number": "381",
+    "func name": "boxplot_frame_groupby",
+    "func arg": "(grouped, subplots, column, fontsize, rot, grid, ax, figsize, layout, sharex, sharey, **kwds)",
+    "comments": ""
+}

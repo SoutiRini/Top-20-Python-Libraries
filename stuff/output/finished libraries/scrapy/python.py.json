@@ -1,0 +1,7 @@
+{
+    "source file": "python.py",
+    "line number": "311",
+    "func name": "global_object_name",
+    "func arg": "(obj)",
+    "comments": "Return full name of a global object.\n\n>>> from scrapy import Request >>> global_object_name(Request) 'scrapy.http.request.Request'\n"
+}

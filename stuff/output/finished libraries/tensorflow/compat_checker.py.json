@@ -1,0 +1,7 @@
+{
+    "source file": "compat_checker.py",
+    "line number": "110",
+    "func name": "_get_func_name",
+    "func arg": "()",
+    "comments": "Get the name of current function.\n\n\n##### Returns\n"
+}

@@ -1,0 +1,7 @@
+{
+    "source file": "_factor_analysis.py",
+    "line number": "392",
+    "func name": "_ortho_rotation",
+    "func arg": "(components, method, tol, max_iter)",
+    "comments": "Return rotated components.\n\n\n"
+}

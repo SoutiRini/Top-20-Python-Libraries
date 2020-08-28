@@ -1,0 +1,7 @@
+{
+    "source file": "statespace_arma_0.py",
+    "line number": "94",
+    "func name": "mean_forecast_err",
+    "func arg": "(y, yhat)",
+    "comments": ""
+}

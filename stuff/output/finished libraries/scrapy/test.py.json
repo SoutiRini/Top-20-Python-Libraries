@@ -1,0 +1,7 @@
+{
+    "source file": "test.py",
+    "line number": "131",
+    "func name": "mock_google_cloud_storage",
+    "func arg": "()",
+    "comments": "Creates autospec mocks for google-cloud-storage Client, Bucket and Blob classes and set their proper return values.\n\n\n"
+}

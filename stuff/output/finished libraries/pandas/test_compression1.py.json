@@ -1,0 +1,7 @@
+{
+    "source file": "test_compression1.py",
+    "line number": "144",
+    "func name": "test_invalid_compression",
+    "func arg": "(all_parsers, invalid_compression)",
+    "comments": ""
+}

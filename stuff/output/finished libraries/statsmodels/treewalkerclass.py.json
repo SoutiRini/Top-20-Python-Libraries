@@ -1,0 +1,7 @@
+{
+    "source file": "treewalkerclass.py",
+    "line number": "167",
+    "func name": "getnodes",
+    "func arg": "(tree)",
+    "comments": "walk tree to get list of branches and list of leaves\n\nParameters ---------- tree : list of tuples tree as defined for RU2NMNL\n##### Returns\n* **branch **: list\n    list of all branch names\n\n* **leaves **: list\n    list of all leaves names\n\n"
+}

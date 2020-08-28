@@ -1,0 +1,7 @@
+{
+    "source file": "_stochastic_gradient.py",
+    "line number": "354",
+    "func name": "fit_binary",
+    "func arg": "(est, i, X, y, alpha, C, learning_rate, max_iter, pos_weight, neg_weight, sample_weight, validation_mask, random_state)",
+    "comments": "Fit a single binary classifier.\n\nThe i'th class is considered the \"positive\" class.\n\nParameters ---------- est : Estimator object The estimator to fit\n\ni : int Index of the positive class\n\nX : numpy array or sparse matrix of shape [n_samples,n_features] Training data\n\ny : numpy array of shape [n_samples, ] Target values\n\nalpha : float The regularization parameter\n\nC : float Maximum step size for passive aggressive\n\nlearning_rate : string The learning rate. Accepted values are 'constant', 'optimal', 'invscaling', 'pa1' and 'pa2'.\n\nmax_iter : int The maximum number of iterations (epochs)\n\npos_weight : float The weight of the positive class\n\nneg_weight : float The weight of the negative class\n\nsample_weight : numpy array of shape [n_samples, ] The weight of each sample\n\nvalidation_mask : numpy array of shape [n_samples, ], default=None Precomputed validation mask in case _fit_binary is called in the context of a one-vs-rest reduction.\n\nrandom_state : int, RandomState instance, default=None If int, random_state is the seed used by the random number generator; If RandomState instance, random_state is the random number generator; If None, the random number generator is the RandomState instance used by `np.random`.\n"
+}

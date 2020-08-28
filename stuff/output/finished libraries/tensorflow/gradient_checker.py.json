@@ -1,0 +1,7 @@
+{
+    "source file": "gradient_checker.py",
+    "line number": "354",
+    "func name": "compute_gradient_error",
+    "func arg": "(x, x_shape, y, y_shape, x_init_value, delta, init_targets, extra_feed_dict)",
+    "comments": "Computes the gradient error.\n\nComputes the maximum error for dy/dx between the computed Jacobian and the numerically estimated Jacobian.\n\nThis function will modify the tensors passed in as it adds more operations and hence changing the consumers of the operations of the input tensors.\n\nThis function adds operations to the current session. To compute the error using a particular device, such as a GPU, use the standard methods for setting a device (e.g. using with sess.graph.device() or setting a device function in the session constructor).\n##### Args\n* **x**: a tensor or list of tensors\n\n* **x_shape**: the dimensions of x as a tuple or an array of ints. If x is a list,\n\n* **y**: a tensor\n\n* **y_shape**: the dimensions of y as a tuple or an array of ints.\n\n* **x_init_value**: (optional) a numpy array of the same shape as \"x\"\n  representing the initial value of x. If x is a list, this should be a list\n  of numpy arrays.  If this is none, the function will pick a random tensor\n  as the initial value.\n\n* **delta**: (optional) the amount of perturbation.\n\n* **init_targets**: list of targets to run to initialize model params.\n\n* **extra_feed_dict**: dict that allows fixing specified tensor values\n  during the Jacobian calculation.\n\n##### Returns\n"
+}

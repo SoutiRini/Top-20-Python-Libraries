@@ -1,0 +1,7 @@
+{
+    "source file": "PdfImagePlugin.py",
+    "line number": "48",
+    "func name": "_save",
+    "func arg": "(im, fp, filename, save_all)",
+    "comments": ""
+}

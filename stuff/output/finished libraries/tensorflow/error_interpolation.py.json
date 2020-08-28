@@ -1,0 +1,7 @@
+{
+    "source file": "error_interpolation.py",
+    "line number": "487",
+    "func name": "interpolate",
+    "func arg": "(error_message, graph)",
+    "comments": "Interpolates an error message.\n\nThe error message can contain tags of the form `{{type name}}` which will be replaced. For example: \"{{node <name>}}\" would get expanded to: \"node <name>(defined at <path>)\".\n##### Args\n* **error_message**: A string to interpolate.\n\n* **graph**: ops.Graph object containing all nodes referenced in the error\n    message.\n\n##### Returns\n"
+}

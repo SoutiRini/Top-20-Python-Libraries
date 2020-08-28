@@ -1,0 +1,7 @@
+{
+    "source file": "hatch.py",
+    "line number": "184",
+    "func name": "get_path",
+    "func arg": "(hatchpattern, density)",
+    "comments": "Given a hatch specifier, *hatchpattern*, generates Path to render the hatch in a unit square.  *density* is the number of lines per unit square.\n\n\n"
+}

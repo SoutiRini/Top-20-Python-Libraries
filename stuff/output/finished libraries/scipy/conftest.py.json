@@ -1,0 +1,7 @@
+{
+    "source file": "conftest.py",
+    "line number": "44",
+    "func name": "check_fpu_mode",
+    "func arg": "(request)",
+    "comments": "Check FPU mode was not changed during the test.\n\n\n"
+}

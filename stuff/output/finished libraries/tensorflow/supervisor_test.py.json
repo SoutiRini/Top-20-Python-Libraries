@@ -1,0 +1,7 @@
+{
+    "source file": "supervisor_test.py",
+    "line number": "56",
+    "func name": "_summary_iterator",
+    "func arg": "(test_dir)",
+    "comments": "Reads events from test_dir/events.\n\n\n##### Args\n* **test_dir**: Name of the test directory.\n\n##### Returns\n"
+}

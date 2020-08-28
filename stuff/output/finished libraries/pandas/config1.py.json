@@ -1,0 +1,7 @@
+{
+    "source file": "config1.py",
+    "line number": "854",
+    "func name": "is_callable",
+    "func arg": "(obj)",
+    "comments": "Parameters ---------- `obj` - the object to be checked\n\n\n##### Returns\n"
+}

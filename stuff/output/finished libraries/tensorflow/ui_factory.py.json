@@ -1,0 +1,7 @@
+{
+    "source file": "ui_factory.py",
+    "line number": "26",
+    "func name": "get_ui",
+    "func arg": "(ui_type, on_ui_exit, available_ui_types, config)",
+    "comments": "Create a `base_ui.BaseUI` subtype.\n\nThis factory method attempts to fallback to other available ui_types on ImportError. For example, if `ui_type` is `curses`, but `curses` cannot be imported properly, e.g., on Windows, will fallback to `readline`.\n##### Args\n* **ui_type**: (`str`) requested UI type. Currently supported\n\n* **on_ui_exit**: (`Callable`) the callback to be called when the UI exits.\n\n* **available_ui_types**: (`None` or `list` of `str`) Manually-set available\n  ui_types.\n\n* **config**: An instance of `cli_config.CLIConfig()` carrying user-facing\n  configurations.\n\n##### Returns\n"
+}

@@ -1,0 +1,7 @@
+{
+    "source file": "msvccompiler.py",
+    "line number": "7",
+    "func name": "_merge",
+    "func arg": "(old, new)",
+    "comments": "Concatenate two environment paths avoiding repeats.\n\nHere `old` is the environment string before the base class initialize function is called and `new` is the string after the call. The new string will be a fixed string if it is not obtained from the current environment, or the same as the old string if obtained from the same environment. The aim here is not to append the new string if it is already contained in the old string so as to limit the growth of the environment string.\n\nParameters ---------- old : string Previous environment string. new : string New environment string.\n##### Returns\n* **ret **: string\n    Updated environment string.\n\n"
+}

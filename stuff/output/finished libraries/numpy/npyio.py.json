@@ -1,0 +1,7 @@
+{
+    "source file": "npyio.py",
+    "line number": "2340",
+    "func name": "recfromcsv",
+    "func arg": "(fname, **kwargs)",
+    "comments": "Load ASCII data stored in a comma-separated file.\n\nThe returned array is a record array (if ``usemask=False``, see `recarray`) or a masked record array (if ``usemask=True``, see `ma.mrecords.MaskedRecords`).\n\nParameters ---------- fname, kwargs : For a description of input parameters, see `genfromtxt`.\n\nSee Also -------- numpy.genfromtxt : generic function to load ASCII data.\n\nNotes ----- By default, `dtype` is None, which means that the data-type of the output array will be determined from the data.\n"
+}

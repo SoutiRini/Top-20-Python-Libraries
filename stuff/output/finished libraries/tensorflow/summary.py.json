@@ -1,0 +1,7 @@
+{
+    "source file": "summary.py",
+    "line number": "410",
+    "func name": "get_summary_description",
+    "func arg": "(node_def)",
+    "comments": "Given a TensorSummary node_def, retrieve its SummaryDescription.\n\nWhen a Summary op is instantiated, a SummaryDescription of associated metadata is stored in its NodeDef. This method retrieves the description.\n##### Args\n* **node_def**: the node_def_pb2.NodeDef of a TensorSummary op\n\n##### Returns\n"
+}

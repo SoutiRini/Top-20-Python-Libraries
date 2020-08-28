@@ -1,0 +1,7 @@
+{
+    "source file": "test_numpy2.py",
+    "line number": "115",
+    "func name": "skip_numpy_object",
+    "func arg": "(dtype)",
+    "comments": "Tests for PandasArray with nested data. Users typically won't create these objects via `pd.array`, but they can show up through `.array` on a Series with nested data. Many of the base tests fail, as they aren't appropriate for nested data.\n\nThis fixture allows these tests to be skipped when used as a usefixtures marker to either an individual test or a test class.\n"
+}

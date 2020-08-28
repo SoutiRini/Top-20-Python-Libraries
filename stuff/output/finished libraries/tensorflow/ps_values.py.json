@@ -1,0 +1,7 @@
+{
+    "source file": "ps_values.py",
+    "line number": "307",
+    "func name": "_tensor_conversion_aggregate",
+    "func arg": "(var, dtype, name, as_ref)",
+    "comments": ""
+}

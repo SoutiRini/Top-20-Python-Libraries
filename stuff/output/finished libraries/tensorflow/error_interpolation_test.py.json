@@ -1,0 +1,7 @@
+{
+    "source file": "error_interpolation_test.py",
+    "line number": "48",
+    "func name": "_modify_op_stack_with_filenames",
+    "func arg": "(op, num_user_frames, user_filename, num_inner_tf_frames)",
+    "comments": "Replace op._traceback with a new traceback using special filenames.\n\n\n"
+}

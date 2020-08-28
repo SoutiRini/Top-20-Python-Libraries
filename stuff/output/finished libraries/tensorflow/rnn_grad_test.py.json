@@ -1,0 +1,7 @@
+{
+    "source file": "rnn_grad_test.py",
+    "line number": "143",
+    "func name": "icfo_to_ifco",
+    "func arg": "(w, b)",
+    "comments": "Convert gates' weights and biases from ICFO to IFCO layout.\n\n\n"
+}

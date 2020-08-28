@@ -1,0 +1,7 @@
+{
+    "source file": "destroyhandler.py",
+    "line number": "233",
+    "func name": "fast_inplace_check",
+    "func arg": "(inputs)",
+    "comments": "Return the variables in inputs that are posible candidate for as inputs of inplace operation.\n\nParameters ---------- inputs : list Inputs Variable that you want to use as inplace destination.\n"
+}

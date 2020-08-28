@@ -1,0 +1,7 @@
+{
+    "source file": "imagenet_cls_test_alexnet.py",
+    "line number": "98",
+    "func name": "get_correct_answers",
+    "func arg": "(img_list, img_classes, net_output_blob)",
+    "comments": ""
+}

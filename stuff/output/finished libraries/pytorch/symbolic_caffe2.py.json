@@ -1,0 +1,7 @@
+{
+    "source file": "symbolic_caffe2.py",
+    "line number": "249",
+    "func name": "sigmoid",
+    "func arg": "(g, input)",
+    "comments": ""
+}

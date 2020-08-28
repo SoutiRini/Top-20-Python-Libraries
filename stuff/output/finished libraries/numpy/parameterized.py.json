@@ -1,0 +1,7 @@
+{
+    "source file": "parameterized.py",
+    "line number": "246",
+    "func name": "detect_runner",
+    "func arg": "()",
+    "comments": "Guess which test runner we're using by traversing the stack and looking for the first matching module. This *should* be reasonably safe, as it's done during test discovery where the test runner should be the stack frame immediately outside.\n\n\n"
+}

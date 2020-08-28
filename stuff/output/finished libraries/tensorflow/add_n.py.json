@@ -1,0 +1,7 @@
+{
+    "source file": "add_n.py",
+    "line number": "27",
+    "func name": "make_add_n_tests",
+    "func arg": "(options)",
+    "comments": "Make a set of tests for AddN op.\n\n\n"
+}

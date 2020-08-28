@@ -1,0 +1,7 @@
+{
+    "source file": "gpu_info_lib.py",
+    "line number": "167",
+    "func name": "gather_gpu_devices",
+    "func arg": "()",
+    "comments": "Gather gpu device info.\n\n\n##### Returns\n"
+}

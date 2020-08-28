@@ -1,0 +1,7 @@
+{
+    "source file": "xla_shape.py",
+    "line number": "147",
+    "func name": "CreateShapeFromDtypeAndTuple",
+    "func arg": "(dtype, shape_tuple)",
+    "comments": "Create a shape from a Numpy dtype and a sequence of nonnegative integers.\n\n\n##### Args\n* **dtype**: a numpy dtype, e.g. np.dtype('int32').\n\n* **shape_tuple**: a sequence of nonnegative integers.\n\n##### Returns\n"
+}

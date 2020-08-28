@@ -1,0 +1,7 @@
+{
+    "source file": "ragged_gather_ops.py",
+    "line number": "473",
+    "func name": "_ragged_gather_grad",
+    "func arg": "(op)",
+    "comments": "Gradient for RaggedGather op.\n\n\n"
+}

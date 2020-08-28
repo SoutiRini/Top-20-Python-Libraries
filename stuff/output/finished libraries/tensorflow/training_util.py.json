@@ -1,0 +1,7 @@
+{
+    "source file": "training_util.py",
+    "line number": "242",
+    "func name": "_increment_global_step",
+    "func arg": "(increment, graph)",
+    "comments": ""
+}

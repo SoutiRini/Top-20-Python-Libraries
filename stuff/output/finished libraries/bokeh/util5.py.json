@@ -1,0 +1,7 @@
+{
+    "source file": "util5.py",
+    "line number": "158",
+    "func name": "match_host",
+    "func arg": "(host, pattern)",
+    "comments": "Match a host string against a pattern\n\n\n##### Args\n##### Returns\n* **ples**: \n\n* **>>> match_host('192.168.0.1**: 80', '192.168.0.1\n\n* **>>> match_host('alice**: 8080', '*\n\n* **>>> match_host('alice', '***: *')\n\n"
+}

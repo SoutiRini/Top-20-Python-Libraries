@@ -1,0 +1,7 @@
+{
+    "source file": "_nnls.py",
+    "line number": "7",
+    "func name": "nnls",
+    "func arg": "(A, b, maxiter)",
+    "comments": "Solve ``argmin_x || Ax - b ||_2`` for ``x>=0``. This is a wrapper for a FORTRAN non-negative least squares solver.\n\nParameters ---------- A : ndarray Matrix ``A`` as shown above. b : ndarray Right-hand side vector. maxiter: int, optional Maximum number of iterations, optional. Default is ``3 * A.shape[1]``.\n##### Returns\n* **x **: ndarray\n    Solution vector.\n\n* **rnorm **: float\n    The residual, ``|| Ax-b ||_2``.\n\n* **lsq_linear **: Linear least squares with bounds on the variables\n\n"
+}

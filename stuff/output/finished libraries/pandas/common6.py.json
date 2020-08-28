@@ -1,0 +1,7 @@
+{
+    "source file": "common6.py",
+    "line number": "1844",
+    "func name": "pandas_dtype",
+    "func arg": "(dtype)",
+    "comments": "Convert input into a pandas only dtype object or a numpy dtype object.\n\nParameters ---------- dtype : object to be converted\n##### Returns\n"
+}

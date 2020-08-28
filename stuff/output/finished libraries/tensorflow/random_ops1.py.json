@@ -1,0 +1,7 @@
+{
+    "source file": "random_ops1.py",
+    "line number": "614",
+    "func name": "random_poisson_v2",
+    "func arg": "(shape, lam, dtype, seed, name)",
+    "comments": "Draws `shape` samples from each of the given Poisson distribution(s).\n\n`lam` is the rate parameter describing the distribution(s).\n\nExample:\n\n```python samples = tf.random.poisson([10], [0.5, 1.5]) # samples has shape [10, 2], where each slice [:, 0] and [:, 1] represents # the samples drawn from each distribution\n\nsamples = tf.random.poisson([7, 5], [12.2, 3.3]) # samples has shape [7, 5, 2], where each slice [:, :, 0] and [:, :, 1] # represents the 7x5 samples drawn from each of the two distributions ```\n##### Args\n* **shape**: A 1-D integer Tensor or Python array. The shape of the output samples\n  to be drawn per \"rate\"-parameterized distribution.\n\n* **lam**: A Tensor or Python value or N-D array of type `dtype`.\n  `lam` provides the rate parameter(s) describing the poisson\n  distribution(s) to sample.\n\n* **dtype**: The type of the output\n\n* **seed**: A Python integer. Used to create a random seed for the distributions.\n  See\n  `tf.random.set_seed`\n  for behavior.\n\n* **name**: Optional name for the operation.\n\n##### Returns\n* **samples**: a `Tensor` of shape `tf.concat([shape, tf.shape(lam)], axis=0)`\n  with values of type `dtype`.\n\n"
+}

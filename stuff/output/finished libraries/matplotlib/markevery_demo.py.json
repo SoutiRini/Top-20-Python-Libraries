@@ -1,0 +1,7 @@
+{
+    "source file": "markevery_demo.py",
+    "line number": "44",
+    "func name": "trim_axs",
+    "func arg": "(axs, N)",
+    "comments": "Reduce *axs* to *N* Axes. All further Axes are removed from the figure.\n\n\n"
+}

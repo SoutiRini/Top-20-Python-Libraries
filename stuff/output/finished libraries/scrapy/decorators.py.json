@@ -1,0 +1,7 @@
+{
+    "source file": "decorators.py",
+    "line number": "38",
+    "func name": "inthread",
+    "func arg": "(func)",
+    "comments": "Decorator to call a function in a thread and return a deferred with the result\n\n\n"
+}

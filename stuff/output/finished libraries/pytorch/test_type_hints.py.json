@@ -1,0 +1,7 @@
+{
+    "source file": "test_type_hints.py",
+    "line number": "56",
+    "func name": "get_all_examples",
+    "func arg": "()",
+    "comments": "get_all_examples() -> str\n\nThis function grabs (hopefully all) examples from the torch documentation strings and puts them in one nonsensical module returned as a string.\n"
+}

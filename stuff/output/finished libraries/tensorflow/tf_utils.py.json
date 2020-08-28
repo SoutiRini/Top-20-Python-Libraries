@@ -1,0 +1,7 @@
+{
+    "source file": "tf_utils.py",
+    "line number": "540",
+    "func name": "_astuple",
+    "func arg": "(attrs)",
+    "comments": "Converts the given attrs to tuple non-recursively.\n\n\n"
+}

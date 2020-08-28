@@ -1,0 +1,7 @@
+{
+    "source file": "train2.py",
+    "line number": "111",
+    "func name": "train_net",
+    "func arg": "(model, model_path, train_len, train_data, valid_len, valid_data, test_len, test_data, kind)",
+    "comments": "Trains the model.\n\n\n"
+}

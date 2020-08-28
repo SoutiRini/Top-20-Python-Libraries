@@ -1,0 +1,7 @@
+{
+    "source file": "segmentation.py",
+    "line number": "98",
+    "func name": "s_one_set",
+    "func arg": "(topics)",
+    "comments": "Perform s_one_set segmentation on a list of topics. Segmentation is defined as :math:`s_{set} = {(W', W^{*}) | W' = {w_i}; w_{i} \\in W; W^{*} = W}`\n\nParameters ---------- topics : list of `numpy.ndarray` List of topics obtained from an algorithm such as LDA.\n##### Returns\n* **list of list of (int, int).\n    **: math\n\n* **.. sourcecode**: \n\n"
+}

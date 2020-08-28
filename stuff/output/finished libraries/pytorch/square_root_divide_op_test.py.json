@@ -1,0 +1,7 @@
+{
+    "source file": "square_root_divide_op_test.py",
+    "line number": "54",
+    "func name": "grad",
+    "func arg": "(output_grad, ref_outputs, inputs)",
+    "comments": ""
+}

@@ -1,0 +1,7 @@
+{
+    "source file": "diagnose.py",
+    "line number": "226",
+    "func name": "profile",
+    "func arg": "(num_elements, parser)",
+    "comments": "Use Python's profiler on a randomly generated document.\n\n\n"
+}

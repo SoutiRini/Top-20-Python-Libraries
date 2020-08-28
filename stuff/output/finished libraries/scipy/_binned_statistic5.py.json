@@ -1,0 +1,7 @@
+{
+    "source file": "_binned_statistic5.py",
+    "line number": "705",
+    "func name": "_bin_numbers",
+    "func arg": "(sample, nbin, edges, dedges)",
+    "comments": "Compute the bin number each sample falls into, in each dimension\n\n\n"
+}

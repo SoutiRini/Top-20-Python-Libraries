@@ -1,0 +1,7 @@
+{
+    "source file": "conv29.py",
+    "line number": "269",
+    "func name": "group_conv_deprecated",
+    "func arg": "(model, blob_in, blob_out, dim_in, dim_out, kernel, weight_init, bias_init, group, use_cudnn, order, cudnn_exhaustive_search, ws_nbytes_limit, **kwargs)",
+    "comments": "GroupConvolution's deprecated interface.\n\nThis is used to simulate a group convolution via split and concat. You should always use the new group convolution in your new code.\n"
+}

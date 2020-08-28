@@ -1,0 +1,7 @@
+{
+    "source file": "smooth_basis.py",
+    "line number": "261",
+    "func name": "make_poly_basis",
+    "func arg": "(x, degree, intercept)",
+    "comments": "given a vector x returns poly=(1, x, x^2, ..., x^degree) and its first and second derivative\n\n\n"
+}

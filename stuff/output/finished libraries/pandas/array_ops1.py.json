@@ -1,0 +1,7 @@
+{
+    "source file": "array_ops1.py",
+    "line number": "372",
+    "func name": "get_array_op",
+    "func arg": "(op, str_rep)",
+    "comments": "Return a binary array operation corresponding to the given operator op.\n\nParameters ---------- op : function Binary operator from operator or roperator module. str_rep : str or None, default None str_rep to pass to arithmetic_op\n##### Returns\n"
+}

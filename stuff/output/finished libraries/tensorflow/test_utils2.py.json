@@ -1,0 +1,7 @@
+{
+    "source file": "test_utils2.py",
+    "line number": "218",
+    "func name": "build_mock_model",
+    "func arg": "()",
+    "comments": "Creates an object containing an example model.\n\n\n"
+}

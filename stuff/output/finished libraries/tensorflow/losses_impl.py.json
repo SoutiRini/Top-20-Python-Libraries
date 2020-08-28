@@ -1,0 +1,7 @@
+{
+    "source file": "losses_impl.py",
+    "line number": "847",
+    "func name": "sparse_softmax_cross_entropy",
+    "func arg": "(labels, logits, weights, scope, loss_collection, reduction)",
+    "comments": "Cross-entropy loss using `tf.nn.sparse_softmax_cross_entropy_with_logits`.\n\n`weights` acts as a coefficient for the loss. If a scalar is provided, then the loss is simply scaled by the given value. If `weights` is a tensor of shape `[batch_size]`, then the loss weights apply to each corresponding sample.\n##### Args\n* **labels**: `Tensor` of shape `[d_0, d_1, ..., d_{r-1}]` (where `r` is rank of\n  `labels` and result) and dtype `int32` or `int64`. Each entry in `labels`\n  must be an index in `[0, num_classes)`. Other values will raise an\n  exception when this op is run on CPU, and return `NaN` for corresponding\n  loss and gradient rows on GPU.\n\n* **logits**: Unscaled log probabilities of shape\n  `[d_0, d_1, ..., d_{r-1}, num_classes]` and dtype `float16`, `float32` or\n  `float64`.\n\n* **weights**: Coefficients for the loss. This must be scalar or broadcastable to\n  `labels` (i.e. same rank and each dimension is either 1 or the same).\n\n* **scope**: the scope for the operations performed in computing the loss.\n\n* **loss_collection**: collection to which the loss will be added.\n\n* **reduction**: Type of reduction to apply to loss.\n\n##### Returns\n"
+}

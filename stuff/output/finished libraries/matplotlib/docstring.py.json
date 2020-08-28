@@ -1,0 +1,7 @@
+{
+    "source file": "docstring.py",
+    "line number": "77",
+    "func name": "dedent_interpd",
+    "func arg": "(func)",
+    "comments": "Dedent *func*'s docstring, then interpolate it with ``interpd``.\n\n\n"
+}

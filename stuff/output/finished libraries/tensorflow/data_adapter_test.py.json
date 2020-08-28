@@ -1,0 +1,7 @@
+{
+    "source file": "data_adapter_test.py",
+    "line number": "65",
+    "func name": "fail_on_convert",
+    "func arg": "(x, **kwargs)",
+    "comments": ""
+}

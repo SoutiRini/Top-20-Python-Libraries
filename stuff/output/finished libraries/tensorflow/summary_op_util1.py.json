@@ -1,0 +1,7 @@
+{
+    "source file": "summary_op_util1.py",
+    "line number": "72",
+    "func name": "summary_scope",
+    "func arg": "(name, family, default_name, values)",
+    "comments": "Enters a scope used for the summary and yields both the name and tag.\n\nTo ensure that the summary tag name is always unique, we create a name scope based on `name` and use the full scope name in the tag.\n\nIf `family` is set, then the tag name will be '<family>/<scope_name>', where `scope_name` is `<outer_scope>/<family>/<name>`. This ensures that `family` is always the prefix of the tag (and unmodified), while ensuring the scope respects the outer scope from this summary was created.\n##### Args\n* **name**: A name for the generated summary node.\n\n* **family**: Optional; if provided, used as the prefix of the summary tag name.\n\n* **default_name**: Optional; if provided, used as default name of the summary.\n\n* **values**: Optional; passed as `values` parameter to name_scope.\n\n* **elds**: \n\n"
+}

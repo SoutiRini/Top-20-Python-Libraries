@@ -1,0 +1,7 @@
+{
+    "source file": "mio5.py",
+    "line number": "451",
+    "func name": "to_writeable",
+    "func arg": "(source)",
+    "comments": "Convert input object ``source`` to something we can write\n\nParameters ---------- source : object\n##### Returns\n* **arr **: None or ndarray or EmptyStructMarker\n    If `source` cannot be converted to something we can write to a matfile,\n    return None.  If `source` is equivalent to an empty dictionary, return\n    ``EmptyStructMarker``.  Otherwise return `source` converted to an\n    ndarray with contents for writing to matfile.\n\n"
+}

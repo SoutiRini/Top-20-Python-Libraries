@@ -1,0 +1,7 @@
+{
+    "source file": "setup.py",
+    "line number": "68",
+    "func name": "has_flag",
+    "func arg": "(flagname)",
+    "comments": "Return whether a flag name is supported on the specified compiler.\n\n\n"
+}

@@ -1,0 +1,7 @@
+{
+    "source file": "callbacks.py",
+    "line number": "187",
+    "func name": "make_logs",
+    "func arg": "(model, logs, outputs, mode, prefix)",
+    "comments": "Computes logs for sending to `on_batch_end` methods.\n\n\n"
+}

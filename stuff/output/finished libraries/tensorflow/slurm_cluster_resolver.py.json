@@ -1,0 +1,7 @@
+{
+    "source file": "slurm_cluster_resolver.py",
+    "line number": "159",
+    "func name": "get_num_gpus",
+    "func arg": "()",
+    "comments": "Returns the number of GPUs visible on the current node.\n\nCurrently only implemented for NVIDIA GPUs.\n"
+}

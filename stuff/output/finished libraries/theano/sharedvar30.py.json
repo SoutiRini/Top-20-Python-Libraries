@@ -1,0 +1,7 @@
+{
+    "source file": "sharedvar30.py",
+    "line number": "14",
+    "func name": "sparse_constructor",
+    "func arg": "(value, name, strict, allow_downcast, borrow, format)",
+    "comments": "SharedVariable Constructor for SparseType.\n\nwriteme\n"
+}

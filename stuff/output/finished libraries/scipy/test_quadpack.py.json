@@ -1,0 +1,7 @@
+{
+    "source file": "test_quadpack.py",
+    "line number": "26",
+    "func name": "get_clib_test_routine",
+    "func arg": "(name, restype)",
+    "comments": ""
+}

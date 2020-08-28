@@ -1,0 +1,7 @@
+{
+    "source file": "source_remote.py",
+    "line number": "200",
+    "func name": "send_eager_tracebacks",
+    "func arg": "(destinations, origin_stack, send_source)",
+    "comments": "Send the tracebacks of an eager execution call to debug server(s).\n\n\n##### Args\n* **destinations**: gRPC destination addresses, a `str` or a `list` of `str`s,\n  e.g., \"localhost\n\n* **origin_stack**: The traceback of the eager operation invocation.\n\n* **send_source**: Whether the source files involved in the op tracebacks but\n  outside the TensorFlow library are to be sent.\n\n"
+}

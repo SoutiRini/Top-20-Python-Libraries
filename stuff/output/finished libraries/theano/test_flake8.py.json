@@ -1,0 +1,7 @@
+{
+    "source file": "test_flake8.py",
+    "line number": "188",
+    "func name": "check_all_files",
+    "func arg": "(dir_path, pattern)",
+    "comments": "List all .py files under dir_path (theano path), check if they follow flake8 format, save all the error-formatted files into theano_filelist.txt. This function is used for generating the \"whitelist_flake8\" in this file.\n\n\n"
+}

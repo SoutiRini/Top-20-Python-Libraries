@@ -1,0 +1,7 @@
+{
+    "source file": "test_boxplots.py",
+    "line number": "102",
+    "func name": "test_beanplot_legend_text",
+    "func arg": "(age_and_labels, close_figures)",
+    "comments": ""
+}

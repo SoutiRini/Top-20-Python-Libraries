@@ -1,0 +1,7 @@
+{
+    "source file": "viterbi.py",
+    "line number": "331",
+    "func name": "demo",
+    "func arg": "()",
+    "comments": "A demonstration of the probabilistic parsers.  The user is prompted to select which demo to run, and how many parses should be found; and then each parser is run on the same demo, and a summary of the results are displayed.\n\n\n"
+}

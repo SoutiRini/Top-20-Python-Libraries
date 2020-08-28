@@ -1,0 +1,7 @@
+{
+    "source file": "bokehjs_content.py",
+    "line number": "263",
+    "func name": "setup",
+    "func arg": "(app)",
+    "comments": "Required Sphinx extension setup function.\n\n\n"
+}

@@ -1,0 +1,7 @@
+{
+    "source file": "tools_pca.py",
+    "line number": "87",
+    "func name": "pcasvd",
+    "func arg": "(data, keepdim, demean)",
+    "comments": "principal components with svd\n\nParameters ---------- data : ndarray, 2d data with observations by rows and variables in columns keepdim : int number of eigenvectors to keep if keepdim is zero, then all eigenvectors are included demean : bool if true, then the column mean is subtracted from the data\n##### Returns\n* **xreduced **: ndarray, 2d, (nobs, nvars)\n    projection of the data x on the kept eigenvectors\n\n* **factors **: ndarray, 2d, (nobs, nfactors)\n    factor matrix, given by np.dot(x, evecs)\n\n* **evals **: ndarray, 2d, (nobs, nfactors)\n    eigenvalues\n\n* **evecs **: ndarray, 2d, (nobs, nfactors)\n    eigenvectors, normalized if normalize is true\n\n* **pca **: principal component analysis using eigenvector decomposition\n\n"
+}

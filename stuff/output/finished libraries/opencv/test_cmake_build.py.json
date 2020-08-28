@@ -1,0 +1,7 @@
+{
+    "source file": "test_cmake_build.py",
+    "line number": "113",
+    "func name": "suite",
+    "func arg": "(workdir, opencv_cmake_path)",
+    "comments": ""
+}

@@ -1,0 +1,7 @@
+{
+    "source file": "op_callbacks.py",
+    "line number": "152",
+    "func name": "invoke_op_callbacks",
+    "func arg": "(op_type, inputs, attrs, outputs, op_name, graph)",
+    "comments": "Invoke the callbacks that exist in the current scope (if any).\n\nIf no callbacks are present in the current scope, this method returns immediately.\n##### Args\n* **op_type**: Type of the operation (e.g., \"MatMul\").\n\n* **inputs**: Input tensors to the op. These are `EagerTensor`s in the case of\n  eager execution of ops or `FuncGraph`s, and are non-eager `Tensor`s in the\n  case of graph construction.\n\n* **attrs**: Attributes of the op, as `tuple` of alternating keys and values.\n\n* **outputs**: Output tensors from the op. These are `EagerTensor`s in the case of\n  eager execution and are non-eager `Tensor`s in the case of graph\n  construction.\n\n* **op_name**: Name of the op. Applicable if and only if this method is invoked\n  due to the graph construction of an op or the eager execution of of a\n  `FuncGraph`.\n\n* **graph**: The graph involved (if any).\n  - In the case if the eager execution of an op or FuncGraph, this is\n    `None`.\n  - In the case of the graph construction of an op, this is the `tf.Graph`\n    object being built.\n\n##### Returns\n"
+}

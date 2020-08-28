@@ -1,0 +1,7 @@
+{
+    "source file": "get_single_element.py",
+    "line number": "27",
+    "func name": "get_single_element",
+    "func arg": "(dataset)",
+    "comments": "Returns the single element in `dataset` as a nested structure of tensors.\n\nThis function enables you to use a `tf.data.Dataset` in a stateless \"tensor-in tensor-out\" expression, without creating an iterator. This can be useful when your preprocessing transformations are expressed as a `Dataset`, and you want to use the transformation at serving time.\n\nFor example:\n\n```python def preprocessing_fn(input_str): # ... return image, label\n\ninput_batch = ...\n\n# input batch of BATCH_SIZE elements dataset = (tf.data.Dataset.from_tensor_slices(input_batch) .map(preprocessing_fn, num_parallel_calls=BATCH_SIZE) .batch(BATCH_SIZE))\n\nimage_batch, label_batch = tf.data.experimental.get_single_element(dataset) ```\n##### Args\n* **dataset**: A `tf.data.Dataset` object containing a single element.\n\n##### Returns\n"
+}

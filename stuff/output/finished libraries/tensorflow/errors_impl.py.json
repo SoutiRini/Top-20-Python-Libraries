@@ -1,0 +1,7 @@
+{
+    "source file": "errors_impl.py",
+    "line number": "527",
+    "func name": "_make_specific_exception",
+    "func arg": "(node_def, op, message, error_code)",
+    "comments": ""
+}

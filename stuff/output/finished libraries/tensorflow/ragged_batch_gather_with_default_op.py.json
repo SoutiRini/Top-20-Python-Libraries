@@ -1,0 +1,7 @@
+{
+    "source file": "ragged_batch_gather_with_default_op.py",
+    "line number": "144",
+    "func name": "_get_pad_shape",
+    "func arg": "(params, indices, row_splits_dtype)",
+    "comments": "Gets the RaggedTensorDynamicShape for the pad tensor.\n\n\n"
+}

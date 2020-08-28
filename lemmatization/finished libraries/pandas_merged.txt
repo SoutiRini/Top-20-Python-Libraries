@@ -1,0 +1,2977 @@
+{
+    "source file": "_arrow_utils1.py",
+    "line number": "12",
+    "func name": "pyarrow_array_to_numpy_and_mask",
+    "func arg": "(arr, dtype)",
+    "comments": "Convert a primitive pyarrow.Array to a numpy array and boolean mask based on the buffers of the Array.\n\nParameters ---------- arr : pyarrow.Array dtype : numpy.dtype\n##### Returns\n"
+}{
+    "source file": "_base1.py",
+    "line number": "271",
+    "func name": "read_excel",
+    "func arg": "(io, sheet_name, header, names, index_col, usecols, squeeze, dtype, engine, converters, true_values, false_values, skiprows, nrows, na_values, keep_default_na, verbose, parse_dates, date_parser, thousands, comment, skipfooter, convert_float, mangle_dupe_cols, **kwds)",
+    "comments": ""
+}{
+    "source file": "_core1.py",
+    "line number": "1645",
+    "func name": "_get_plot_backend",
+    "func arg": "(backend)",
+    "comments": "Return the plotting backend to use (e.g. `pandas.plotting._matplotlib`).\n\nThe plotting system of pandas has been using matplotlib, but the idea here is that it can also work with other third-party backends. In the future, this function will return the backend from a pandas option, and all the rest of the code in this file will use the backend specified there for the plotting.\n\nThe backend is imported lazily, as matplotlib is a soft dependency, and pandas can be used without it being installed.\n"
+}{
+    "source file": "_decorators1.py",
+    "line number": "338",
+    "func name": "indent",
+    "func arg": "(text, indents)",
+    "comments": ""
+}{}{}{
+    "source file": "_exceptions1.py",
+    "line number": "6",
+    "func name": "rewrite_exception",
+    "func arg": "(old_name, new_name)",
+    "comments": "Rewrite the message of an exception.\n\n\n"
+}{
+    "source file": "_json1.py",
+    "line number": "350",
+    "func name": "read_json",
+    "func arg": "(path_or_buf, orient, typ, dtype, convert_axes, convert_dates, keep_default_dates, numpy, precise_float, date_unit, encoding, lines, chunksize, compression)",
+    "comments": "Convert a JSON string to pandas object.\n\nParameters ---------- path_or_buf : a valid JSON str, path object or file-like object Any valid string path is acceptable. The string could be a URL. Valid URL schemes include http, ftp, s3, and file. For file URLs, a host is expected. A local file could be: ``file://localhost/path/to/table.json``.\n\nIf you want to pass in a path object, pandas accepts any ``os.PathLike``.\n\nBy file-like object, we refer to objects with a ``read()`` method, such as a file handler (e.g. via builtin ``open`` function) or ``StringIO``. orient : str Indication of expected JSON string format. Compatible JSON strings can be produced by ``to_json()`` with a corresponding orient value. The set of possible orients is:\n\n- ``'split'`` : dict like ``{index -> [index], columns -> [columns], data -> [values]}``\n\n- ``'records'`` : list like ``[{column -> value}, ... , {column -> value}]``\n\n- ``'index'`` : dict like ``{index -> {column -> value}}``\n\n- ``'columns'`` : dict like ``{column -> {index -> value}}``\n\n- ``'values'`` : just the values array\n\nThe allowed and default values depend on the value of the `typ` parameter.\n\n* when ``typ == 'series'``,\n\n- allowed orients are ``{'split','records','index'}``\n\n- default is ``'index'``\n\n- The Series index must be unique for orient ``'index'``.\n\n* when ``typ == 'frame'``,\n\n- allowed orients are ``{'split','records','index', 'columns','values', 'table'}``\n\n- default is ``'columns'``\n\n- The DataFrame index must be unique for orients ``'index'`` and ``'columns'``.\n\n- The DataFrame columns must be unique for orients ``'index'``, ``'columns'``, and ``'records'``.\n\n.. versionadded:: 0.23.0 'table' as an allowed value for the ``orient`` argument\n\ntyp : {'frame', 'series'}, default 'frame' The type of object to recover.\n\ndtype : bool or dict, default None If True, infer dtypes; if a dict of column to dtype, then use those; if False, then don't infer dtypes at all, applies only to the data.\n\nFor all ``orient`` values except ``'table'``, default is True.\n\n.. versionchanged:: 0.25.0\n\nNot applicable for ``orient='table'``.\n\nconvert_axes : bool, default None Try to convert the axes to the proper dtypes.\n\nFor all ``orient`` values except ``'table'``, default is True.\n\n.. versionchanged:: 0.25.0\n\nNot applicable for ``orient='table'``.\n\nconvert_dates : bool or list of str, default True List of columns to parse for dates. If True, then try to parse datelike columns. A column label is datelike if\n\n* it ends with ``'_at'``,\n\n* it ends with ``'_time'``,\n\n* it begins with ``'timestamp'``,\n\n* it is ``'modified'``, or\n\n* it is ``'date'``.\n\nkeep_default_dates : bool, default True If parsing dates, then parse the default datelike columns.\n\nnumpy : bool, default False Direct decoding to numpy arrays. Supports numeric data only, but non-numeric column and index labels are supported. Note also that the JSON ordering MUST be the same for each term if numpy=True.\n\n.. deprecated:: 1.0.0\n\nprecise_float : bool, default False Set to enable usage of higher precision (strtod) function when decoding string to double values. Default (False) is to use fast but less precise builtin functionality.\n\ndate_unit : str, default None The timestamp unit to detect if converting dates. The default behaviour is to try and detect the correct precision, but if this is not desired then pass one of 's', 'ms', 'us' or 'ns' to force parsing only seconds, milliseconds, microseconds or nanoseconds respectively.\n\nencoding : str, default is 'utf-8' The encoding to use to decode py3 bytes.\n\nlines : bool, default False Read the file as a json object per line.\n\nchunksize : int, optional Return JsonReader object for iteration. See the `line-delimited json docs <https://pandas.pydata.org/pandas-docs/stable/user_guide/io.html#line-delimited-json>`_ for more information on ``chunksize``. This can only be passed if `lines=True`. If this is None, the file will be read into memory all at once.\n\n.. versionadded:: 0.21.0\n\ncompression : {'infer', 'gzip', 'bz2', 'zip', 'xz', None}, default 'infer' For on-the-fly decompression of on-disk data. If 'infer', then use gzip, bz2, zip or xz if path_or_buf is a string ending in '.gz', '.bz2', '.zip', or 'xz', respectively, and no decompression otherwise. If using 'zip', the ZIP file must contain only one data file to be read in. Set to None for no decompression.\n\n.. versionadded:: 0.21.0\n##### Returns\n* **DataFrame.to_json **: Convert a DataFrame to a JSON string.\n\n* **Series.to_json **: Convert a Series to a JSON string.\n\n* **Specific to ``orient='table'``, if a **: class\n\n* ****: func\n\n* **subsequent read operation will incorrectly set the **: class\n\n* **``None``. This is because `index` is also used by **: func\n\n* **to denote a missing **: class\n\n* **limitation is encountered with a **: class\n\n* **Encoding/decoding a Dataframe using ``'split'`` formatted JSON**: \n\n* **'{\"columns\"**: [\"col 1\",\"col 2\"],\n  \"index\"\n\n* **Encoding/decoding a Dataframe using ``'index'`` formatted JSON**: \n\n* **'{\"row 1\"**: {\"col 1\"\n\n* **'[{\"col 1\"**: \"a\",\"col 2\"\n\n* **'{\"schema\"**: {\"fields\"\n\n"
+}{
+    "source file": "_misc1.py",
+    "line number": "404",
+    "func name": "autocorrelation_plot",
+    "func arg": "(series, ax, **kwargs)",
+    "comments": "Autocorrelation plot for time series.\n\nParameters ---------- series : Time series ax : Matplotlib axis object, optional **kwargs Options to pass to matplotlib plotting method.\n##### Returns\n* **class**: `matplotlib.axis.Axes`\n\n"
+}{
+    "source file": "_normalize1.py",
+    "line number": "114",
+    "func name": "_json_normalize",
+    "func arg": "(data, record_path, meta, meta_prefix, record_prefix, errors, sep, max_level)",
+    "comments": "Normalize semi-structured JSON data into a flat table.\n\nParameters ---------- data : dict or list of dicts Unserialized JSON objects. record_path : str or list of str, default None Path in each object to list of records. If not passed, data will be assumed to be an array of records. meta : list of paths (str or list of str), default None Fields to use as metadata for each record in resulting table. meta_prefix : str, default None If True, prefix records with dotted (?) path, e.g. foo.bar.field if meta is ['foo', 'bar']. record_prefix : str, default None If True, prefix records with dotted (?) path, e.g. foo.bar.field if path to records is ['foo', 'bar']. errors : {'raise', 'ignore'}, default 'raise' Configures error handling.\n\n* 'ignore' : will ignore KeyError if keys listed in meta are not always present. * 'raise' : will raise KeyError if keys listed in meta are not always present. sep : str, default '.' Nested records will generate names separated by sep. e.g., for sep='.', {'foo': {'bar': 0}} -> foo.bar. max_level : int, default None Max number of levels(depth of dict) to normalize. if None, normalizes all levels.\n\n.. versionadded:: 0.25.0\n"
+}{}{}{
+    "source file": "_optional1.py",
+    "line number": "47",
+    "func name": "import_optional_dependency",
+    "func arg": "(name, extra, raise_on_missing, on_version)",
+    "comments": "Import an optional dependency.\n\nBy default, if a dependency is missing an ImportError with a nice message will be raised. If a dependency is present, but too old, we raise.\n\nParameters ---------- name : str The module name. This should be top-level only, so that the version may be checked. extra : str Additional text to include in the ImportError message. raise_on_missing : bool, default True Whether to raise if the optional dependency is not found. When False and the module is not present, None is returned. on_version : str {'raise', 'warn'} What to do when a dependency's version is too old.\n\n* raise : Raise an ImportError * warn : Warn that the version is too old. Returns None * ignore: Return the module, even if the version is too old. It's expected that users validate the version locally when using ``on_version=\"ignore\"`` (see. ``io/html.py``)\n##### Returns\n* **maybe_module **: Optional[ModuleType]\n    The imported module, when found and the version is correct.\n    None is returned when the package is not found and `raise_on_missing`\n    is False, or when the package's version is too old and `on_version`\n    is ``'warn'``.\n\n"
+}{
+    "source file": "_print_versions1.py",
+    "line number": "127",
+    "func name": "main",
+    "func arg": "()",
+    "comments": ""
+}{}{
+    "source file": "_ranges1.py",
+    "line number": "153",
+    "func name": "_generate_range_overflow_safe_signed",
+    "func arg": "(endpoint, periods, stride, side)",
+    "comments": "A special case for _generate_range_overflow_safe where `periods * stride` can be calculated without overflowing int64 bounds.\n\n\n"
+}{
+    "source file": "_table_schema1.py",
+    "line number": "271",
+    "func name": "parse_table_schema",
+    "func arg": "(json, precise_float)",
+    "comments": "Builds a DataFrame from a given schema\n\nParameters ---------- json : A JSON table schema precise_float : boolean Flag controlling precision when decoding string to double values, as dictated by ``read_json``\n##### Returns\n* **df **: DataFrame\n\n"
+}{
+    "source file": "_test_decorators1.py",
+    "line number": "257",
+    "func name": "async_mark",
+    "func arg": "()",
+    "comments": ""
+}{
+    "source file": "_tester1.py",
+    "line number": "10",
+    "func name": "test",
+    "func arg": "(extra_args)",
+    "comments": ""
+}{
+    "source file": "_testing1.py",
+    "line number": "2737",
+    "func name": "convert_rows_list_to_csv_str",
+    "func arg": "(rows_list)",
+    "comments": "Convert list of CSV rows to single CSV-formatted string for current OS.\n\nThis method is used for creating expected value of to_csv() method.\n\nParameters ---------- rows_list : List[str] Each element represents the row of csv.\n##### Returns\n"
+}{
+    "source file": "_util1.py",
+    "line number": "205",
+    "func name": "_pop_header_name",
+    "func arg": "(row, index_col)",
+    "comments": "Pop the header name for MultiIndex parsing.\n\nParameters ---------- row : list The data row to parse for the header name. index_col : int, list The index columns for our data. Assumed to be non-null.\n##### Returns\n* **header_name **: str\n    The extracted header name.\n\n* **trimmed_row **: list\n    The original data row with the header name removed.\n\n"
+}{
+    "source file": "_validators1.py",
+    "line number": "349",
+    "func name": "validate_percentile",
+    "func arg": "(q)",
+    "comments": "Validate percentiles (used by describe and quantile).\n\nThis function checks if the given float oriterable of floats is a valid percentile otherwise raises a ValueError.\n\nParameters ---------- q: float or iterable of floats A single percentile or an iterable of percentiles.\n##### Returns\n"
+}{
+    "source file": "_version1.py",
+    "line number": "22",
+    "func name": "get_versions",
+    "func arg": "()",
+    "comments": ""
+}{}{}{}{}{
+    "source file": "accessor2.py",
+    "line number": "313",
+    "func name": "register_index_accessor",
+    "func arg": "(name)",
+    "comments": ""
+}{}{
+    "source file": "algorithms1.py",
+    "line number": "1940",
+    "func name": "safe_sort",
+    "func arg": "(values, codes, na_sentinel, assume_unique, verify)",
+    "comments": "Sort ``values`` and reorder corresponding ``codes``.\n\n``values`` should be unique if ``codes`` is not None. Safe for use with mixed types (int, str), orders ints before strs.\n\nParameters ---------- values : list-like Sequence; must be unique if ``codes`` is not None. codes : list_like, optional Indices to ``values``. All out of bound indices are treated as \"not found\" and will be masked with ``na_sentinel``. na_sentinel : int, default -1 Value in ``codes`` to mark \"not found\". Ignored when ``codes`` is None. assume_unique : bool, default False When True, ``values`` are assumed to be unique, which can speed up the calculation. Ignored when ``codes`` is None. verify : bool, default True Check if codes are out of bound for the values and put out of bound codes equal to na_sentinel. If ``verify=False``, it is assumed there are no out of bound codes. Ignored when ``codes`` is None.\n\n.. versionadded:: 0.25.0\n##### Returns\n* **ordered **: ndarray\n    Sorted ``values``\n\n* **new_codes **: ndarray\n    Reordered ``codes``; returned when ``codes`` is not None.\n\n"
+}{
+    "source file": "align1.py",
+    "line number": "150",
+    "func name": "reconstruct_object",
+    "func arg": "(typ, obj, axes, dtype)",
+    "comments": "Reconstruct an object given its type, raw value, and possibly empty (None) axes.\n\nParameters ---------- typ : object A type obj : object The value to use in the type constructor axes : dict The axes to use to construct the resulting pandas object\n##### Returns\n* **ret **: typ\n    An object of type ``typ`` with the value `obj` and possible axes\n    `axes`.\n\n"
+}{
+    "source file": "api1.py",
+    "line number": "284",
+    "func name": "all_indexes_same",
+    "func arg": "(indexes)",
+    "comments": "Determine if all indexes contain the same elements.\n\nParameters ---------- indexes : list of Index objects\n##### Returns\n"
+}{
+    "source file": "apply1.py",
+    "line number": "26",
+    "func name": "frame_apply",
+    "func arg": "(obj, func, axis, raw, result_type, ignore_failures, args, kwds)",
+    "comments": "construct and return a row or column based frame apply object\n\n\n"
+}{
+    "source file": "array_ops1.py",
+    "line number": "372",
+    "func name": "get_array_op",
+    "func arg": "(op, str_rep)",
+    "comments": "Return a binary array operation corresponding to the given operator op.\n\nParameters ---------- op : function Binary operator from operator or roperator module. str_rep : str or None, default None str_rep to pass to arithmetic_op\n##### Returns\n"
+}{
+    "source file": "array1.py",
+    "line number": "197",
+    "func name": "make_data",
+    "func arg": "()",
+    "comments": ""
+}{
+    "source file": "array2.py",
+    "line number": "201",
+    "func name": "make_data",
+    "func arg": "()",
+    "comments": ""
+}{
+    "source file": "array3.py",
+    "line number": "1543",
+    "func name": "_make_index",
+    "func arg": "(length, indices, kind)",
+    "comments": ""
+}{
+    "source file": "array4.py",
+    "line number": "126",
+    "func name": "make_data",
+    "func arg": "()",
+    "comments": ""
+}{}{
+    "source file": "base1.py",
+    "line number": "5535",
+    "func name": "_try_convert_to_int_array",
+    "func arg": "(data, copy, dtype)",
+    "comments": "Attempt to convert an array of data into an integer array.\n\nParameters ---------- data : The data to convert. copy : bool Whether to copy the data or not. dtype : np.dtype\n##### Returns\n* **int_array **: data converted to either an ndarray[int64] or ndarray[uint64]\n\n"
+}{}{
+    "source file": "base3.py",
+    "line number": "34",
+    "func name": "try_cast_to_ea",
+    "func arg": "(cls_or_instance, obj, dtype)",
+    "comments": "Call to `_from_sequence` that returns the object unchanged on Exception.\n\nParameters ---------- cls_or_instance : ExtensionArray subclass or instance obj : arraylike Values to pass to cls._from_sequence dtype : ExtensionDtype, optional\n##### Returns\n"
+}{}{}{
+    "source file": "blocks1.py",
+    "line number": "3139",
+    "func name": "_putmask_smart",
+    "func arg": "(v, mask, n)",
+    "comments": "Return a new ndarray, try to preserve dtype if possible.\n\nParameters ---------- v : `values`, updated in-place (array like) mask : np.ndarray Applies to both sides (array like). n : `new values` either scalar or an array like aligned with `values`\n##### Returns\n* **values **: ndarray with updated values\n    this *may* be a copy of the original\n\n"
+}{
+    "source file": "boolean1.py",
+    "line number": "114",
+    "func name": "coerce_to_array",
+    "func arg": "(values, mask, copy)",
+    "comments": "Coerce the input values array to numpy arrays with a mask.\n\nParameters ---------- values : 1D list-like mask : bool 1D array, optional copy : bool, default False if True, copy the input\n##### Returns\n"
+}{
+    "source file": "boxplot1.py",
+    "line number": "381",
+    "func name": "boxplot_frame_groupby",
+    "func arg": "(grouped, subplots, column, fontsize, rot, grid, ax, figsize, layout, sharex, sharey, **kwds)",
+    "comments": ""
+}{
+    "source file": "cast1.py",
+    "line number": "1524",
+    "func name": "maybe_cast_to_integer_array",
+    "func arg": "(arr, dtype, copy)",
+    "comments": "Takes any dtype and returns the casted version, raising for when data is incompatible with integer/unsigned integer dtypes.\n\n.. versionadded:: 0.24.0\n\nParameters ---------- arr : array-like The array to cast. dtype : str, np.dtype The integer dtype to cast the array to. copy: bool, default False Whether to make a copy of the array before returning.\n##### Returns\n* **int_arr **: ndarray\n    An array of integer or unsigned integer dtype\n\n"
+}{}{
+    "source file": "categorical1.py",
+    "line number": "77",
+    "func name": "recode_from_groupby",
+    "func arg": "(c, sort, ci)",
+    "comments": "Reverse the codes_to_groupby to account for sort / observed.\n\nParameters ---------- c : Categorical sort : boolean The value of the sort parameter groupby was called with. ci : CategoricalIndex The codes / categories to recode\n##### Returns\n"
+}{
+    "source file": "categorical2.py",
+    "line number": "2690",
+    "func name": "factorize_from_iterables",
+    "func arg": "(iterables)",
+    "comments": "A higher-level wrapper over `factorize_from_iterable`.\n\n*This is an internal function*\n\nParameters ---------- iterables : list-like of list-likes\n##### Returns\n* **codes_list **: list of ndarrays\n\n* **categories_list **: list of Indexes\n\n"
+}{}{}{
+    "source file": "clipboards1.py",
+    "line number": "79",
+    "func name": "to_clipboard",
+    "func arg": "(obj, excel, sep, **kwargs)",
+    "comments": "Attempt to write text representation of object to the system clipboard The clipboard can be then pasted into Excel for example.\n\nParameters ---------- obj : the object to write to the clipboard excel : boolean, defaults to True if True, use the provided separator, writing in a csv format for allowing easy pasting into excel. if False, write a string representation of the object to the clipboard sep : optional, defaults to tab other keywords are passed to to_csv\n\nNotes ----- Requirements for your platform\n\n- Linux: xclip, or xsel (with PyQt4 modules)\n\n- Windows:\n\n- OS X\n"
+}{
+    "source file": "common1.py",
+    "line number": "76",
+    "func name": "_maybe_remove",
+    "func arg": "(store, key)",
+    "comments": "For tests using tables, try removing the table to be sure there is no content from previous tests using the same table name.\n\n\n"
+}{}{
+    "source file": "common3.py",
+    "line number": "44",
+    "func name": "assert_invalid_comparison",
+    "func arg": "(left, right, box)",
+    "comments": "Assert that comparison operations with mismatched types behave correctly.\n\nParameters ---------- left : np.ndarray, ExtensionArray, Index, or Series right : object box : {pd.DataFrame, pd.Series, pd.Index, tm.to_array}\n"
+}{
+    "source file": "common4.py",
+    "line number": "369",
+    "func name": "check_binary_ew_min_periods",
+    "func arg": "(name, min_periods, A, B)",
+    "comments": ""
+}{
+    "source file": "common5.py",
+    "line number": "18",
+    "func name": "_check_mixed_int",
+    "func arg": "(df, dtype)",
+    "comments": ""
+}{
+    "source file": "common6.py",
+    "line number": "1844",
+    "func name": "pandas_dtype",
+    "func arg": "(dtype)",
+    "comments": "Convert input into a pandas only dtype object or a numpy dtype object.\n\nParameters ---------- dtype : object to be converted\n##### Returns\n"
+}{
+    "source file": "common7.py",
+    "line number": "30",
+    "func name": "_unpack_zerodim_and_defer",
+    "func arg": "(method, name)",
+    "comments": "Boilerplate for pandas conventions in arithmetic and comparison methods.\n\nEnsure method returns NotImplemented when operating against \"senior\" classes.\n\nEnsure zero-dimensional ndarrays are always unpacked.\n\nParameters ---------- method : binary method name : str\n##### Returns\n"
+}{
+    "source file": "common8.py",
+    "line number": "314",
+    "func name": "get_handle",
+    "func arg": "(path_or_buf, mode, encoding, compression, memory_map, is_text)",
+    "comments": "Get file handle for given path/buffer and mode.\n\nParameters ---------- path_or_buf : str or file handle File path or object. mode : str Mode to open path_or_buf with. encoding : str or None Encoding to use. compression : str or dict, default None If string, specifies compression mode. If dict, value at key 'method' specifies compression mode. Compression mode must be one of {'infer', 'gzip', 'bz2', 'zip', 'xz', None}. If compression mode is 'infer' and `filepath_or_buffer` is path-like, then detect compression from the following extensions: '.gz', '.bz2', '.zip', or '.xz' (otherwise no compression). If dict and compression mode is 'zip' or inferred as 'zip', other entries passed as additional compression options.\n\n.. versionchanged:: 1.0.0\n\nMay now be a dict with key 'method' as compression mode and other keys as compression options if compression mode is 'zip'.\n\nmemory_map : boolean, default False See parsers._parser_params for more information. is_text : boolean, default True whether file/buffer is in text format (csv, json, etc.), or in binary mode (pickle, etc.).\n##### Returns\n* **f **: file-like\n    A file-like object.\n\n* **handles **: list of file-like objects\n    A list of file-like object that were opened in this function.\n\n"
+}{
+    "source file": "common9.py",
+    "line number": "464",
+    "func name": "get_rename_function",
+    "func arg": "(mapper)",
+    "comments": "Returns a function that will map names/labels, dependent if mapper is a dict, Series or just a function.\n\n\n"
+}{
+    "source file": "common10.py",
+    "line number": "21",
+    "func name": "assert_is_on_offset",
+    "func arg": "(offset, date, expected)",
+    "comments": ""
+}{
+    "source file": "common11.py",
+    "line number": "561",
+    "func name": "curpath",
+    "func arg": "()",
+    "comments": ""
+}{
+    "source file": "common12.py",
+    "line number": "17",
+    "func name": "result_type_many",
+    "func arg": "()",
+    "comments": "Wrapper around numpy.result_type which overcomes the NPY_MAXARGS (32) argument limit.\n\n\n"
+}{}{
+    "source file": "common14.py",
+    "line number": "17",
+    "func name": "_axify",
+    "func arg": "(obj, key, axis)",
+    "comments": ""
+}{
+    "source file": "common15.py",
+    "line number": "320",
+    "func name": "get_weighted_roll_func",
+    "func arg": "(cfunc)",
+    "comments": ""
+}{
+    "source file": "compat1.py",
+    "line number": "6",
+    "func name": "_mpl_version",
+    "func arg": "(version, op)",
+    "comments": ""
+}{
+    "source file": "concat1.py",
+    "line number": "452",
+    "func name": "_concat_sparse",
+    "func arg": "(to_concat, axis, typs)",
+    "comments": "provide concatenation of an sparse/dense array of arrays each of which is a single dtype\n\nParameters ---------- to_concat : array of arrays axis : axis to provide concatenation typs : set of to_concat dtypes\n##### Returns\n"
+}{
+    "source file": "concat2.py",
+    "line number": "590",
+    "func name": "_make_concat_multiindex",
+    "func arg": "(indexes, keys, levels, names)",
+    "comments": ""
+}{
+    "source file": "concat3.py",
+    "line number": "434",
+    "func name": "combine_concat_plans",
+    "func arg": "(plans, concat_axis)",
+    "comments": "Combine multiple concatenation plans into one.\n\nexisting_plan is updated in-place.\n"
+}{
+    "source file": "config_init1.py",
+    "line number": "638",
+    "func name": "register_converter_cb",
+    "func arg": "(key)",
+    "comments": ""
+}{
+    "source file": "config1.py",
+    "line number": "854",
+    "func name": "is_callable",
+    "func arg": "(obj)",
+    "comments": "Parameters ---------- `obj` - the object to be checked\n\n\n##### Returns\n"
+}{
+    "source file": "conftest1.py",
+    "line number": "49",
+    "func name": "zero",
+    "func arg": "(request)",
+    "comments": ""
+}{
+    "source file": "conftest2.py",
+    "line number": "22",
+    "func name": "multiindex_year_month_day_dataframe_random_data",
+    "func arg": "()",
+    "comments": "DataFrame with 3 level MultiIndex (year, month, day) covering first 100 business days from 2000-01-01 with random data\n\n\n"
+}{
+    "source file": "conftest3.py",
+    "line number": "22",
+    "func name": "multiindex_year_month_day_dataframe_random_data",
+    "func arg": "()",
+    "comments": "DataFrame with 3 level MultiIndex (year, month, day) covering first 100 business days from 2000-01-01 with random data\n\n\n"
+}{
+    "source file": "conftest4.py",
+    "line number": "152",
+    "func name": "series_and_frame",
+    "func arg": "(request, series, frame)",
+    "comments": "Fixture for parametrization of Series and DataFrame with date_range, period_range and timedelta_range indexes\n\n\n"
+}{
+    "source file": "conftest5.py",
+    "line number": "19",
+    "func name": "min_periods",
+    "func arg": "(request)",
+    "comments": ""
+}{
+    "source file": "conftest6.py",
+    "line number": "306",
+    "func name": "frame_of_index_cols",
+    "func arg": "()",
+    "comments": "Fixture for DataFrame of columns that can be used for indexing\n\nColumns are ['A', 'B', 'C', 'D', 'E', ('tuple', 'as', 'label')]; 'A' & 'B' contain duplicates (but are jointly unique), the rest are unique.\n\nA\n\n\n\n\n\nB\n\nC\n\n\n\n\n\n\n\n D\n\n\n\n\n\n\n\n E\n\n(tuple, as, label) 0\n\nfoo\n\n\n\none\n\na\n\n0.608477 -0.012500\n\n\n\n\n\n\n\n\n\n -1.664297 1\n\nfoo\n\n\n\ntwo\n\nb -0.633460\n\n0.249614\n\n\n\n\n\n\n\n\n\n -0.364411 2\n\nfoo\n\nthree\n\nc\n\n0.615256\n\n2.154968\n\n\n\n\n\n\n\n\n\n -0.834666 3\n\nbar\n\n\n\none\n\nd\n\n0.234246\n\n1.085675\n\n\n\n\n\n\n\n\n\n\n\n0.718445 4\n\nbar\n\n\n\ntwo\n\ne\n\n0.533841 -0.005702\n\n\n\n\n\n\n\n\n\n -3.533912\n"
+}{
+    "source file": "conftest7.py",
+    "line number": "5",
+    "func name": "orient",
+    "func arg": "(request)",
+    "comments": "Fixture for orients excluding the table format.\n\n\n"
+}{
+    "source file": "conftest8.py",
+    "line number": "21",
+    "func name": "month_classes",
+    "func arg": "(request)",
+    "comments": "Fixture for month based datetime offsets available for a time series.\n\n\n"
+}{
+    "source file": "conftest9.py",
+    "line number": "47",
+    "func name": "check_for_file_leaks",
+    "func arg": "()",
+    "comments": "Fixture to run around every test to ensure that we are not leaking files.\n\nSee also -------- _test_decorators.check_file_leaks\n"
+}{
+    "source file": "conftest10.py",
+    "line number": "916",
+    "func name": "non_mapping_dict_subclass",
+    "func arg": "()",
+    "comments": "Fixture for a non-mapping dictionary subclass.\n\n\n"
+}{
+    "source file": "conftest11.py",
+    "line number": "174",
+    "func name": "as_array",
+    "func arg": "(request)",
+    "comments": "Boolean fixture to support ExtensionDtype _from_sequence method testing.\n\n\n"
+}{
+    "source file": "conftest12.py",
+    "line number": "22",
+    "func name": "numeric_indexing_engine_type_and_dtype",
+    "func arg": "(request)",
+    "comments": ""
+}{
+    "source file": "conftest13.py",
+    "line number": "29",
+    "func name": "s3_resource",
+    "func arg": "(tips_file, jsonl_file)",
+    "comments": "Fixture for mocking S3 interaction.\n\nThe primary bucket name is \"pandas-test\". The following datasets are loaded.\n\n- tips.csv\n\n- tips.csv.gz\n\n- tips.csv.bz2\n\n- items.jsonl\n\nA private bucket \"cant_get_it\" is also created. The boto3 s3 resource is yielded by the fixture.\n"
+}{
+    "source file": "conftest14.py",
+    "line number": "25",
+    "func name": "check_categorical",
+    "func arg": "(request)",
+    "comments": ""
+}{
+    "source file": "conftest15.py",
+    "line number": "13",
+    "func name": "setup_mode",
+    "func arg": "()",
+    "comments": "Reset testing mode fixture\n\n\n"
+}{
+    "source file": "conftest16.py",
+    "line number": "5",
+    "func name": "allow_fill",
+    "func arg": "(request)",
+    "comments": "Boolean 'allow_fill' parameter for Categorical.take\n\n\n"
+}{
+    "source file": "conftest17.py",
+    "line number": "76",
+    "func name": "wide_multi_index",
+    "func arg": "()",
+    "comments": "Return a MultiIndex that is wider than the display (>80 characters).\n\n\n"
+}{
+    "source file": "conftest18.py",
+    "line number": "87",
+    "func name": "engine_and_raw",
+    "func arg": "(request)",
+    "comments": "engine and raw keyword arguments for rolling.apply\n\n\n"
+}{
+    "source file": "conftest19.py",
+    "line number": "239",
+    "func name": "box_with_array",
+    "func arg": "(request)",
+    "comments": "Fixture to test behavior for Index, Series, DataFrame, and pandas Array classes\n\n\n"
+}{
+    "source file": "conftest20.py",
+    "line number": "119",
+    "func name": "encoding_fmt",
+    "func arg": "(request)",
+    "comments": "Fixture for all possible string formats of a UTF encoding.\n\n\n"
+}{
+    "source file": "conftest21.py",
+    "line number": "27",
+    "func name": "object_series",
+    "func arg": "()",
+    "comments": "Fixture for Series of dtype object with Index of unique strings\n\n\n"
+}{
+    "source file": "conftest22.py",
+    "line number": "122",
+    "func name": "groupby_func",
+    "func arg": "(request)",
+    "comments": "yields both aggregation and transformation functions.\n\n\n"
+}{
+    "source file": "console1.py",
+    "line number": "77",
+    "func name": "in_ipython_frontend",
+    "func arg": "()",
+    "comments": "Check if we're inside an an IPython zmq frontend.\n\n\n##### Returns\n"
+}{
+    "source file": "construction1.py",
+    "line number": "601",
+    "func name": "sanitize_index",
+    "func arg": "(data, index, copy)",
+    "comments": "Sanitize an index type to return an ndarray of the underlying, pass through a non-Index.\n\n\n"
+}{
+    "source file": "construction2.py",
+    "line number": "590",
+    "func name": "create_series_with_explicit_dtype",
+    "func arg": "(data, index, dtype, name, copy, fastpath, dtype_if_empty)",
+    "comments": "Helper to pass an explicit dtype when instantiating an empty Series.\n\nThis silences a DeprecationWarning described in GitHub-17261.\n\nParameters ---------- data : Mirrored from Series.__init__ index : Mirrored from Series.__init__ dtype : Mirrored from Series.__init__ name : Mirrored from Series.__init__ copy : Mirrored from Series.__init__ fastpath : Mirrored from Series.__init__ dtype_if_empty : str, numpy.dtype, or ExtensionDtype This dtype will be passed explicitly if an empty Series will be instantiated.\n##### Returns\n"
+}{}{
+    "source file": "converter1.py",
+    "line number": "927",
+    "func name": "get_finder",
+    "func arg": "(freq)",
+    "comments": ""
+}{}{
+    "source file": "css1.py",
+    "line number": "17",
+    "func name": "_side_expander",
+    "func arg": "(prop_fmt)",
+    "comments": ""
+}{}{
+    "source file": "date_converters1.py",
+    "line number": "49",
+    "func name": "_check_columns",
+    "func arg": "(cols)",
+    "comments": ""
+}{}{
+    "source file": "datetimelike2.py",
+    "line number": "1690",
+    "func name": "maybe_infer_freq",
+    "func arg": "(freq)",
+    "comments": "Comparing a DateOffset to the string \"infer\" raises, so we need to be careful about comparisons.  Make a dummy variable `freq_infer` to signify the case where the given freq is \"infer\" and set freq to None to avoid comparison trouble later on.\n\nParameters ---------- freq : {DateOffset, None, str}\n##### Returns\n* **freq **: {DateOffset, None}\n\n* **freq_infer **: bool\n\n"
+}{
+    "source file": "datetimelike3.py",
+    "line number": "52",
+    "func name": "_join_i8_wrapper",
+    "func arg": "(joinf, with_indexers)",
+    "comments": "Create the join wrapper methods.\n\n\n"
+}{
+    "source file": "datetimes1.py",
+    "line number": "954",
+    "func name": "to_time",
+    "func arg": "(arg, format, infer_time_format, errors)",
+    "comments": "Parse time strings to time objects using fixed strptime formats (\"%H:%M\", \"%H%M\", \"%I:%M%p\", \"%I%M%p\", \"%H:%M:%S\", \"%H%M%S\", \"%I:%M:%S%p\", \"%I%M%S%p\")\n\nUse infer_time_format if all the strings are in the same format to speed up conversion.\n\nParameters ---------- arg : string in time format, datetime.time, list, tuple, 1-d array,\n\nSeries format : str, default None Format used to convert arg into a time object.\n\nIf None, fixed formats are used. infer_time_format: bool, default False Infer the time format based on the first non-NaN element.\n\nIf all strings are in the same format, this will speed up conversion. errors : {'ignore', 'raise', 'coerce'}, default 'raise'\n\n- If 'raise', then invalid parsing will raise an exception\n\n- If 'coerce', then invalid parsing will be set as None\n\n- If 'ignore', then invalid parsing will return the input\n##### Returns\n"
+}{
+    "source file": "datetimes2.py",
+    "line number": "1293",
+    "func name": "_time_to_micros",
+    "func arg": "(time)",
+    "comments": ""
+}{
+    "source file": "datetimes3.py",
+    "line number": "2126",
+    "func name": "_maybe_localize_point",
+    "func arg": "(ts, is_none, is_not_none, freq, tz, ambiguous, nonexistent)",
+    "comments": "Localize a start or end Timestamp to the timezone of the corresponding start or end Timestamp\n\nParameters ---------- ts : start or end Timestamp to potentially localize is_none : argument that should be None is_not_none : argument that should not be None freq : Tick, DateOffset, or None tz : str, timezone object or None ambiguous: str, localization behavior for ambiguous times nonexistent: str, localization behavior for nonexistent times\n##### Returns\n* **ts **: Timestamp\n\n"
+}{
+    "source file": "dispatch1.py",
+    "line number": "96",
+    "func name": "dispatch_to_extension_op",
+    "func arg": "(op, left, right)",
+    "comments": "Assume that left or right is a Series backed by an ExtensionArray, apply the operator defined by op.\n\nParameters ---------- op : binary operator left : ExtensionArray or np.ndarray right : object\n##### Returns\n"
+}{
+    "source file": "display1.py",
+    "line number": "14",
+    "func name": "detect_console_encoding",
+    "func arg": "()",
+    "comments": "Try to find the most capable encoding supported by the console. slightly modified from the way IPython handles the same issue.\n\n\n"
+}{
+    "source file": "docstrings1.py",
+    "line number": "7",
+    "func name": "_make_flex_doc",
+    "func arg": "(op_name, typ)",
+    "comments": "Make the appropriate substitutions for the given operation and class-typ into either _flex_doc_SERIES or _flex_doc_FRAME to return the docstring to attach to a generated method.\n\nParameters ---------- op_name : str {'__add__', '__sub__', ... '__eq__', '__ne__', ...} typ : str {series, 'dataframe']}\n##### Returns\n* **doc **: str\n\n"
+}{}{}{
+    "source file": "dtypes1.py",
+    "line number": "19",
+    "func name": "register_extension_dtype",
+    "func arg": "(cls)",
+    "comments": "Register an ExtensionType with pandas as class decorator.\n\n.. versionadded:: 0.24.0\n\nThis enables operations like ``.astype(name)`` for the name of the ExtensionDtype.\n##### Returns\n* **... class MyExtensionDtype(ExtensionDtype)**: \n\n"
+}{
+    "source file": "engines1.py",
+    "line number": "20",
+    "func name": "_check_ne_builtin_clash",
+    "func arg": "(expr)",
+    "comments": "Attempt to prevent foot-shooting in a helpful way.\n\nParameters ---------- terms : Term Terms can contain\n"
+}{
+    "source file": "eval1.py",
+    "line number": "170",
+    "func name": "eval",
+    "func arg": "(expr, parser, engine, truediv, local_dict, global_dict, resolvers, level, target, inplace)",
+    "comments": "Evaluate a Python expression as a string using various backends.\n\nThe following arithmetic operations are supported: ``+``, ``-``, ``*``, ``/``, ``**``, ``%``, ``//`` (python engine only) along with the following boolean operations: ``|`` (or), ``&`` (and), and ``~`` (not). Additionally, the ``'pandas'`` parser allows the use of :keyword:`and`, :keyword:`or`, and :keyword:`not` with the same semantics as the corresponding bitwise operators.\n\n:class:`~pandas.Series` and :class:`~pandas.DataFrame` objects are supported and behave as they would with plain ol' Python evaluation.\n\nParameters ---------- expr : str The expression to evaluate. This string cannot contain any Python `statements <https://docs.python.org/3/reference/simple_stmts.html#simple-statements>`__, only Python `expressions <https://docs.python.org/3/reference/simple_stmts.html#expression-statements>`__. parser : {'pandas', 'python'}, default 'pandas' The parser to use to construct the syntax tree from the expression. The default of ``'pandas'`` parses code slightly different than standard Python. Alternatively, you can parse an expression using the ``'python'`` parser to retain strict Python semantics.\n\nSee the :ref:`enhancing performance <enhancingperf.eval>` documentation for more details. engine : {'python', 'numexpr'}, default 'numexpr'\n\nThe engine used to evaluate the expression. Supported engines are\n\n- None\n\n\n\n\n\n\n\n : tries to use ``numexpr``, falls back to ``python``\n\n- ``'numexpr'``: This default engine evaluates pandas objects using numexpr for large speed ups in complex expressions with large frames.\n\n- ``'python'``: Performs operations as if you had ``eval``'d in top level python. This engine is generally not that useful.\n\nMore backends may be available in the future.\n\ntruediv : bool, optional Whether to use true division, like in Python >= 3. deprecated:: 1.0.0\n\nlocal_dict : dict or None, optional A dictionary of local variables, taken from locals() by default. global_dict : dict or None, optional A dictionary of global variables, taken from globals() by default. resolvers : list of dict-like or None, optional A list of objects implementing the ``__getitem__`` special method that you can use to inject an additional collection of namespaces to use for variable lookup. For example, this is used in the :meth:`~DataFrame.query` method to inject the ``DataFrame.index`` and ``DataFrame.columns`` variables that refer to their respective :class:`~pandas.DataFrame` instance attributes. level : int, optional The number of prior stack frames to traverse and add to the current scope. Most users will **not** need to change this parameter. target : object, optional, default None This is the target object for assignment. It is used when there is variable assignment in the expression. If so, then `target` must support item assignment with string keys, and if a copy is being returned, it must also support `.copy()`. inplace : bool, default False If `target` is provided, and the expression mutates `target`, whether to modify `target` inplace. Otherwise, return a copy of `target` with the mutation.\n##### Returns\n"
+}{}{}{}{
+    "source file": "expr1.py",
+    "line number": "286",
+    "func name": "add_ops",
+    "func arg": "(op_classes)",
+    "comments": "Decorator to add default implementation of ops.\n\n\n"
+}{
+    "source file": "expressions1.py",
+    "line number": "247",
+    "func name": "get_test_result",
+    "func arg": "()",
+    "comments": "get test result and reset test_results\n\n\n"
+}{
+    "source file": "extension1.py",
+    "line number": "175",
+    "func name": "_maybe_unwrap_index",
+    "func arg": "(obj)",
+    "comments": "If operating against another Index object, we need to unwrap the underlying data before deferring to the DatetimeArray/TimedeltaArray/PeriodArray implementation, otherwise we will incorrectly return NotImplemented.\n\nParameters ---------- obj : object\n##### Returns\n"
+}{
+    "source file": "feather_format1.py",
+    "line number": "67",
+    "func name": "read_feather",
+    "func arg": "(path, columns, use_threads)",
+    "comments": "Load a feather-format object from the file path.\n\nParameters ---------- path : str, path object or file-like object Any valid string path is acceptable. The string could be a URL. Valid URL schemes include http, ftp, s3, and file. For file URLs, a host is expected. A local file could be: ``file://localhost/path/to/table.feather``.\n\nIf you want to pass in a path object, pandas accepts any ``os.PathLike``.\n\nBy file-like object, we refer to objects with a ``read()`` method, such as a file handler (e.g. via builtin ``open`` function) or ``StringIO``. columns : sequence, default None If not provided, all columns are read.\n\n.. versionadded:: 0.24.0 use_threads : bool, default True Whether to parallelize reading using multiple threads.\n\n.. versionadded:: 0.24.0\n##### Returns\n"
+}{
+    "source file": "format1.py",
+    "line number": "1979",
+    "func name": "buffer_put_lines",
+    "func arg": "(buf, lines)",
+    "comments": "Appends lines to a buffer.\n\nParameters ---------- buf The buffer to write to lines The lines to append.\n"
+}{
+    "source file": "frame1.py",
+    "line number": "8479",
+    "func name": "_put_str",
+    "func arg": "(s, space)",
+    "comments": ""
+}{
+    "source file": "frequencies1.py",
+    "line number": "532",
+    "func name": "_maybe_add_count",
+    "func arg": "(base, count)",
+    "comments": ""
+}{}{
+    "source file": "function1.py",
+    "line number": "388",
+    "func name": "validate_minmax_axis",
+    "func arg": "(axis)",
+    "comments": "Ensure that the axis argument passed to min, max, argmin, or argmax is zero or None, as otherwise it will be incorrectly ignored.\n\nParameters ---------- axis : int or None\n"
+}{
+    "source file": "gbq1.py",
+    "line number": "190",
+    "func name": "to_gbq",
+    "func arg": "(dataframe, destination_table, project_id, chunksize, reauth, if_exists, auth_local_webserver, table_schema, location, progress_bar, credentials, verbose, private_key)",
+    "comments": ""
+}{
+    "source file": "gcs1.py",
+    "line number": "9",
+    "func name": "get_filepath_or_buffer",
+    "func arg": "(filepath_or_buffer, encoding, compression, mode)",
+    "comments": ""
+}{
+    "source file": "generate_legacy_storage_files1.py",
+    "line number": "340",
+    "func name": "write_legacy_file",
+    "func arg": "()",
+    "comments": ""
+}{
+    "source file": "generic1.py",
+    "line number": "2057",
+    "func name": "_recast_datetimelike_result",
+    "func arg": "(result)",
+    "comments": "If we have date/time like in the original, then coerce dates as we are stacking can easily have object dtypes here.\n\nParameters ---------- result : DataFrame\n##### Returns\n"
+}{
+    "source file": "generic2.py",
+    "line number": "6",
+    "func name": "create_pandas_abc_type",
+    "func arg": "(name, attr, comp)",
+    "comments": ""
+}{
+    "source file": "generic3.py",
+    "line number": "11338",
+    "func name": "_make_logical_function",
+    "func arg": "(cls, name, name1, name2, axis_descr, desc, f, see_also, examples, empty_value)",
+    "comments": ""
+}{}{}{
+    "source file": "groupby2.py",
+    "line number": "2529",
+    "func name": "get_groupby",
+    "func arg": "(obj, by, axis, level, grouper, exclusions, selection, as_index, sort, group_keys, squeeze, observed, mutated)",
+    "comments": ""
+}{
+    "source file": "groupe1.py",
+    "line number": "647",
+    "func name": "_convert_grouper",
+    "func arg": "(axis, grouper)",
+    "comments": ""
+}{
+    "source file": "hashing1.py",
+    "line number": "327",
+    "func name": "_hash_scalar",
+    "func arg": "(val, encoding, hash_key)",
+    "comments": "Hash scalar value.\n\nParameters ---------- val : scalar encoding : str, default \"utf8\" hash_key : str, default _default_hash_key\n##### Returns\n"
+}{
+    "source file": "hist1.py",
+    "line number": "344",
+    "func name": "hist_frame",
+    "func arg": "(data, column, by, grid, xlabelsize, xrot, ylabelsize, yrot, ax, sharex, sharey, figsize, layout, bins, **kwds)",
+    "comments": ""
+}{
+    "source file": "holiday1.py",
+    "line number": "531",
+    "func name": "HolidayCalendarFactory",
+    "func arg": "(name, base, other, base_class)",
+    "comments": ""
+}{}{
+    "source file": "html2.py",
+    "line number": "926",
+    "func name": "read_html",
+    "func arg": "(io, match, flavor, header, index_col, skiprows, attrs, parse_dates, thousands, encoding, decimal, converters, na_values, keep_default_na, displayed_only)",
+    "comments": "Read HTML tables into a ``list`` of ``DataFrame`` objects.\n\nParameters ---------- io : str, path object or file-like object A URL, a file-like object, or a raw string containing HTML. Note that lxml only accepts the http, ftp and file url protocols. If you have a URL that starts with ``'https'`` you might try removing the ``'s'``.\n\nmatch : str or compiled regular expression, optional The set of tables containing text matching this regex or string will be returned. Unless the HTML is extremely simple you will probably need to pass a non-empty string here. Defaults to '.+' (match any non-empty string). The default value will return all tables contained on a page. This value is converted to a regular expression so that there is consistent behavior between Beautiful Soup and lxml.\n\nflavor : str or None The parsing engine to use. 'bs4' and 'html5lib' are synonymous with each other, they are both there for backwards compatibility. The default of ``None`` tries to use ``lxml`` to parse and if that fails it falls back on ``bs4`` + ``html5lib``.\n\nheader : int or list-like or None, optional The row (or list of rows for a :class:`~pandas.MultiIndex`) to use to make the columns headers.\n\nindex_col : int or list-like or None, optional The column (or list of columns) to use to create the index.\n\nskiprows : int or list-like or slice or None, optional Number of rows to skip after parsing the column integer. 0-based. If a sequence of integers or a slice is given, will skip the rows indexed by that sequence.\n\nNote that a single element sequence means 'skip the nth row' whereas an integer means 'skip n rows'.\n\nattrs : dict or None, optional This is a dictionary of attributes that you can pass to use to identify the table in the HTML. These are not checked for validity before being passed to lxml or Beautiful Soup. However, these attributes must be valid HTML table attributes to work correctly. For example, ::\n\nattrs = {'id': 'table'}\n\nis a valid attribute dictionary because the 'id' HTML tag attribute is a valid HTML attribute for *any* HTML tag as per `this document <http://www.w3.org/TR/html-markup/global-attributes.html>`__. ::\n\nattrs = {'asdf': 'table'}\n\nis *not* a valid attribute dictionary because 'asdf' is not a valid HTML attribute even if it is a valid XML attribute.\n\nValid HTML 4.01 table attributes can be found `here <http://www.w3.org/TR/REC-html40/struct/tables.html#h-11.2>`__. A working draft of the HTML 5 spec can be found `here <http://www.w3.org/TR/html-markup/table.html>`__. It contains the latest information on table attributes for the modern web.\n\nparse_dates : bool, optional See :func:`~read_csv` for more details.\n\nthousands : str, optional Separator to use to parse thousands. Defaults to ``','``.\n\nencoding : str or None, optional The encoding used to decode the web page. Defaults to ``None``.``None`` preserves the previous encoding behavior, which depends on the underlying parser library (e.g., the parser library will try to use the encoding provided by the document).\n\ndecimal : str, default '.' Character to recognize as decimal point (e.g. use ',' for European data).\n\nconverters : dict, default None Dict of functions for converting values in certain columns. Keys can either be integers or column labels, values are functions that take one input argument, the cell (not column) content, and return the transformed content.\n\nna_values : iterable, default None Custom NA values.\n\nkeep_default_na : bool, default True If na_values are specified and keep_default_na is False the default NaN values are overridden, otherwise they're appended to.\n\ndisplayed_only : bool, default True Whether elements with \"display: none\" should be parsed.\n##### Returns\n* **Before using this function you should read the **: ref\n\n* **the body (by putting rows with only ``<th>`` elements into the header).\n    .. versionadded**: \n\n* **Similar to **: func\n\n* **This function will *always* return a list of **: class\n\n* **See the **: ref\n\n"
+}{}{
+    "source file": "indexers2.py",
+    "line number": "278",
+    "func name": "check_array_indexer",
+    "func arg": "(array, indexer)",
+    "comments": "Check if `indexer` is a valid array indexer for `array`.\n\nFor a boolean mask, `array` and `indexer` are checked to have the same length. The dtype is validated, and if it is an integer or boolean ExtensionArray, it is checked if there are missing values present, and it is converted to the appropriate numpy array. Other dtypes will raise an error.\n\nNon-array indexers (integer, slice, Ellipsis, tuples, ..) are passed through as is.\n\n.. versionadded:: 1.0.0\n\nParameters ---------- array : array-like The array that is being indexed (only used for the length). indexer : array-like or list-like The array-like that's used to index. List-like input that is not yet a numpy array or an ExtensionArray is converted to one. Other input types are passed through as is\n##### Returns\n"
+}{
+    "source file": "indexing.py",
+    "line number": "2469",
+    "func name": "_can_do_equal_len",
+    "func arg": "(labels, value, plane_indexer, lplane_indexer, obj)",
+    "comments": "Returns ------- bool True if we have an equal len settable.\n\n\n"
+}{
+    "source file": "inference1.py",
+    "line number": "395",
+    "func name": "is_sequence",
+    "func arg": "(obj)",
+    "comments": "Check if the object is a sequence of objects. String types are not included as sequences here.\n\nParameters ---------- obj : The object to check\n##### Returns\n* **is_sequence **: bool\n    Whether `obj` is a sequence of objects.\n\n"
+}{
+    "source file": "integer1.py",
+    "line number": "160",
+    "func name": "coerce_to_array",
+    "func arg": "(values, dtype, mask, copy)",
+    "comments": "Coerce the input values array to numpy arrays with a mask\n\nParameters ---------- values : 1D list-like dtype : integer dtype mask : bool 1D array, optional copy : bool, default False if True, copy the input\n##### Returns\n"
+}{}{
+    "source file": "interval1.py",
+    "line number": "1222",
+    "func name": "interval_range",
+    "func arg": "(start, end, periods, freq, name, closed)",
+    "comments": "Return a fixed frequency IntervalIndex.\n\nParameters ---------- start : numeric or datetime-like, default None Left bound for generating intervals. end : numeric or datetime-like, default None Right bound for generating intervals. periods : int, default None Number of periods to generate. freq : numeric, str, or DateOffset, default None The length of each interval. Must be consistent with the type of start and end, e.g. 2 for numeric, or '5H' for datetime-like.\n\nDefault is 1 for numeric and 'D' for datetime-like. name : str, default None Name of the resulting IntervalIndex. closed : {'left', 'right', 'both', 'neither'}, default 'right' Whether the intervals are closed on the left-side, right-side, both or neither.\n##### Returns\n* **IntervalIndex **: An Index of intervals that are all closed on the same side.\n\n* **<https**: //pandas.pydata.org/pandas-docs/stable/user_guide/timeseries.html#offset-aliases>`__.\n\n"
+}{
+    "source file": "interval2.py",
+    "line number": "1337",
+    "func name": "maybe_convert_platform_interval",
+    "func arg": "(values)",
+    "comments": "Try to do platform conversion, with special casing for IntervalArray. Wrapper around maybe_convert_platform that alters the default return dtype in certain cases to be compatible with IntervalArray.  For example, empty lists return with integer dtype instead of object dtype, which is prohibited for IntervalArray.\n\nParameters ---------- values : array-like\n##### Returns\n"
+}{
+    "source file": "invalid1.py",
+    "line number": "38",
+    "func name": "make_invalid_op",
+    "func arg": "(name)",
+    "comments": "Return a binary method that always raises a TypeError.\n\nParameters ---------- name : str\n##### Returns\n* **invalid_op **: function\n\n"
+}{}{}{
+    "source file": "localization1.py",
+    "line number": "105",
+    "func name": "get_locales",
+    "func arg": "(prefix, normalize, locale_getter)",
+    "comments": "Get all the locales that are available on the system.\n\nParameters ---------- prefix : str If not ``None`` then return only those locales with the prefix provided. For example to get all English language locales (those that start with ``\"en\"``), pass ``prefix=\"en\"``. normalize : bool Call ``locale.normalize`` on the resulting list of available locales. If ``True``, only locales that can be set without throwing an ``Exception`` are returned. locale_getter : callable The function to use to retrieve the current locales. This should return a string with each locale separated by a newline character.\n##### Returns\n* **locales **: list of strings\n    A list of locale strings that can be set with ``locale.setlocale()``.\n    For example\n\n"
+}{
+    "source file": "managers1.py",
+    "line number": "1988",
+    "func name": "concatenate_block_managers",
+    "func arg": "(mgrs_indexers, axes, concat_axis, copy)",
+    "comments": "Concatenate block managers into one.\n\nParameters ---------- mgrs_indexers : list of (BlockManager, {axis: indexer,...}) tuples axes : list of Index concat_axis : int copy : bool\n"
+}{
+    "source file": "mask_ops1.py",
+    "line number": "176",
+    "func name": "raise_for_nan",
+    "func arg": "(value, method)",
+    "comments": ""
+}{}{
+    "source file": "melt1.py",
+    "line number": "195",
+    "func name": "wide_to_long",
+    "func arg": "(df, stubnames, i, j, sep, suffix)",
+    "comments": "Wide panel to long format. Less flexible but more user-friendly than melt.\n\nWith stubnames ['A', 'B'], this function expects to find one or more group of columns with format A-suffix1, A-suffix2,..., B-suffix1, B-suffix2,... You specify what you want to call this suffix in the resulting long format with `j` (for example `j='year'`)\n\nEach row of these wide variables are assumed to be uniquely identified by `i` (can be a single column name or a list of column names)\n\nAll remaining variables in the data frame are left intact.\n\nParameters ---------- df : DataFrame The wide-format DataFrame. stubnames : str or list-like The stub name(s). The wide format variables are assumed to start with the stub names. i : str or list-like Column(s) to use as id variable(s). j : str The name of the sub-observation variable. What you wish to name your suffix in the long format. sep : str, default \"\" A character indicating the separation of the variable names in the wide format, to be stripped from the names in the long format. For example, if your column names are A-suffix1, A-suffix2, you can strip the hyphen by specifying `sep='-'`. suffix : str, default '\\\\d+' A regular expression capturing the wanted suffixes. '\\\\d+' captures numeric suffixes. Suffixes with no numbers could be specified with the negated character class '\\\\D+'. You can also further disambiguate suffixes, for example, if your wide variables are of the form A-one, B-two,.., and you have an unrelated column A-rating, you can ignore the last one by specifying `suffix='(!?one|two)'`.\n\n.. versionchanged:: 0.23.0 When all suffixes are numeric, they are cast to int64/float64.\n##### Returns\n* **>>> df = pd.DataFrame({\"A1970\" **: {0\n\n* **...                    \"A1980\" **: {0\n\n* **...                    \"B1970\" **: {0\n\n* **...                    \"B1980\" **: {0\n\n* **...                    \"X\"     **: dict(zip(range(3), np.random.randn(3)))\n\n* **... # doctest**: +NORMALIZE_WHITESPACE\n                  ht\n\n* **...     'famid'**: [1, 1, 1, 2, 2, 2, 3, 3, 3],\n\n* **...     'birth'**: [1, 2, 3, 1, 2, 3, 1, 2, 3],\n\n* **...     'ht1'**: [2.8, 2.9, 2.2, 2, 1.8, 1.9, 2.2, 2.3, 2.1],\n\n* **...     'ht2'**: [3.4, 3.8, 2.9, 3.2, 2.8, 2.4, 3.3, 3.4, 2.9]\n\n* **>>> df = pd.DataFrame({'A(weekly)-2010'**: np.random.rand(3),\n\n* **...                    'A(weekly)-2011'**: np.random.rand(3),\n\n* **...                    'B(weekly)-2010'**: np.random.rand(3),\n\n* **...                    'B(weekly)-2011'**: np.random.rand(3),\n\n* **...                    'X' **: np.random.randint(3, size=3)})\n\n* **>>> df # doctest**: +NORMALIZE_WHITESPACE, +ELLIPSIS\n   A(weekly)-2010  A(weekly)-2011  B(weekly)-2010  B(weekly)-2011  X  id\n\n* **...     'ht_one'**: [2.8, 2.9, 2.2, 2, 1.8, 1.9, 2.2, 2.3, 2.1],\n\n* **...     'ht_two'**: [3.4, 3.8, 2.9, 3.2, 2.8, 2.4, 3.3, 3.4, 2.9]\n\n"
+}{
+    "source file": "merge1.py",
+    "line number": "2012",
+    "func name": "_items_overlap_with_suffix",
+    "func arg": "(left, lsuffix, right, rsuffix)",
+    "comments": "If two indices overlap, add suffixes to overlapping entries.\n\nIf corresponding suffix is empty, the entry is simply converted to string.\n"
+}{}{
+    "source file": "methods2.py",
+    "line number": "225",
+    "func name": "_add_methods",
+    "func arg": "(cls, new_methods)",
+    "comments": ""
+}{
+    "source file": "misc1.py",
+    "line number": "403",
+    "func name": "autocorrelation_plot",
+    "func arg": "(series, ax, **kwds)",
+    "comments": ""
+}{}{
+    "source file": "missing2.py",
+    "line number": "596",
+    "func name": "is_valid_nat_for_dtype",
+    "func arg": "(obj, dtype)",
+    "comments": "isna check that excludes incompatible dtypes\n\nParameters ---------- obj : object dtype : np.datetime64, np.timedelta64, DatetimeTZDtype, or PeriodDtype\n##### Returns\n"
+}{
+    "source file": "missing3.py",
+    "line number": "136",
+    "func name": "dispatch_fill_zeros",
+    "func arg": "(op, left, right, result)",
+    "comments": "Call fill_zeros with the appropriate fill value depending on the operation, with special logic for divmod and rdivmod.\n\nParameters ---------- op : function (operator.add, operator.div, ...) left : object (np.ndarray for non-reversed ops) right : object (np.ndarray for reversed ops) result : ndarray\n##### Returns\n* **result **: np.ndarray\n\n"
+}{
+    "source file": "missing4.py",
+    "line number": "670",
+    "func name": "_rolling_window",
+    "func arg": "(a, window)",
+    "comments": "[True, True, False, True, False], 2 ->\n\n[ [True,\n\nTrue], [True, False], [False, True], [True, False], ]\n"
+}{
+    "source file": "multi1.py",
+    "line number": "3499",
+    "func name": "_coerce_indexer_frozen",
+    "func arg": "(array_like, categories, copy)",
+    "comments": "Coerce the array_like indexer to the smallest integer dtype that can encode all of the given categories.\n\nParameters ---------- array_like : array-like categories : array-like copy : bool\n##### Returns\n"
+}{
+    "source file": "nanops1.py",
+    "line number": "1375",
+    "func name": "nanpercentile",
+    "func arg": "(values, q, axis, na_value, mask, ndim, interpolation)",
+    "comments": "Wrapper for np.percentile that skips missing values.\n\nParameters ---------- values : array over which to find quantiles q : scalar or array of quantile indices to find axis : {0, 1} na_value : scalar value to return for empty or all-null values mask : ndarray[bool] locations in values that should be considered missing ndim : {1, 2} interpolation : str\n##### Returns\n* **quantiles **: scalar or array\n\n"
+}{
+    "source file": "numba_1.py",
+    "line number": "89",
+    "func name": "generate_numba_apply_func",
+    "func arg": "(args, kwargs, func, engine_kwargs)",
+    "comments": "Generate a numba jitted apply function specified by values from engine_kwargs.\n\n1. jit the user's function 2. Return a rolling apply function with the jitted function inline\n\nConfigurations specified in engine_kwargs apply to both the user's function _AND_ the rolling apply function.\n\nParameters ---------- args : tuple *args to be passed into the function kwargs : dict **kwargs to be passed into the function func : function function to be applied to each window and will be JITed engine_kwargs : dict dictionary of arguments to be passed into numba.jit\n##### Returns\n"
+}{
+    "source file": "numeric1.py",
+    "line number": "19",
+    "func name": "to_numeric",
+    "func arg": "(arg, errors, downcast)",
+    "comments": "Convert argument to a numeric type.\n\nThe default return dtype is `float64` or `int64` depending on the data supplied. Use the `downcast` parameter to obtain other dtypes.\n\nPlease note that precision loss may occur if really large numbers are passed in. Due to the internal limitations of `ndarray`, if numbers smaller than `-9223372036854775808` (np.iinfo(np.int64).min) or larger than `18446744073709551615` (np.iinfo(np.uint64).max) are passed in, it is very likely they will be converted to float so that they can stored in an `ndarray`. These warnings apply similarly to `Series` since it internally leverages `ndarray`.\n\nParameters ---------- arg : scalar, list, tuple, 1-d array, or Series errors : {'ignore', 'raise', 'coerce'}, default 'raise'\n\n- If 'raise', then invalid parsing will raise an exception.\n\n- If 'coerce', then invalid parsing will be set as NaN.\n\n- If 'ignore', then invalid parsing will return the input. downcast : {'integer', 'signed', 'unsigned', 'float'}, default None If not None, and if the data has been successfully cast to a numerical dtype (or if the data was numeric to begin with), downcast that resulting data to the smallest numerical dtype possible according to the following rules:\n\n- 'integer' or 'signed': smallest signed int dtype (min.: np.int8)\n\n- 'unsigned': smallest unsigned int dtype (min.: np.uint8)\n\n- 'float': smallest float dtype (min.: np.float32)\n\nAs this behaviour is separate from the core conversion to numeric values, any errors raised during the downcasting will be surfaced regardless of the value of the 'errors' input.\n\nIn addition, downcasting will only occur if the size of the resulting data's dtype is strictly larger than the dtype it is to be cast to, so if none of the dtypes checked satisfy that specification, no downcasting will be performed on the data.\n##### Returns\n* **ret **: numeric if parsing succeeded.\n    Return type depends on input.  Series if Series, otherwise ndarray.\n\n* **DataFrame.astype **: Cast argument to a specified dtype.\n\n* **to_datetime **: Convert argument to datetime.\n\n* **to_timedelta **: Convert argument to timedelta.\n\n* **numpy.ndarray.astype **: Cast a numpy array to a specified type.\n\n* **convert_dtypes **: Convert dtypes.\n\n* **dtype**: float64\n\n"
+}{}{}{
+    "source file": "offsets1.py",
+    "line number": "2723",
+    "func name": "generate_range",
+    "func arg": "(start, end, periods, offset)",
+    "comments": "Generates a sequence of dates corresponding to the specified time offset. Similar to dateutil.rrule except uses pandas DateOffset objects to represent time increments.\n\nParameters ---------- start : datetime, (default None) end : datetime, (default None) periods : int, (default None) offset : DateOffset, (default BDay())\n\nNotes ----- * This method is faster for generating weekdays than dateutil.rrule * At least two of (start, end, periods) must be specified. * If both start and end are specified, the returned dates will satisfy start <= date <= end.\n##### Returns\n* **dates **: generator object\n\n"
+}{}{
+    "source file": "ops2.py",
+    "line number": "940",
+    "func name": "get_splitter",
+    "func arg": "(data, **kwargs)",
+    "comments": ""
+}{
+    "source file": "ops3.py",
+    "line number": "490",
+    "func name": "isnumeric",
+    "func arg": "(dtype)",
+    "comments": ""
+}{
+    "source file": "orc1.py",
+    "line number": "14",
+    "func name": "read_orc",
+    "func arg": "(path, columns, **kwargs)",
+    "comments": "Load an ORC object from the file path, returning a DataFrame.\n\n.. versionadded:: 1.0.0\n\nParameters ---------- path : str, path object or file-like object Any valid string path is acceptable. The string could be a URL. Valid URL schemes include http, ftp, s3, and file. For file URLs, a host is expected. A local file could be: ``file://localhost/path/to/table.orc``.\n\nIf you want to pass in a path object, pandas accepts any ``os.PathLike``.\n\nBy file-like object, we refer to objects with a ``read()`` method, such as a file handler (e.g. via builtin ``open`` function) or ``StringIO``. columns : list, default None If not None, only these columns will be read from the file. **kwargs Any additional kwargs are passed to pyarrow.\n##### Returns\n"
+}{
+    "source file": "parquet1.py",
+    "line number": "270",
+    "func name": "read_parquet",
+    "func arg": "(path, engine, columns, **kwargs)",
+    "comments": "Load a parquet object from the file path, returning a DataFrame.\n\n.. versionadded:: 0.21.0\n\nParameters ---------- path : str, path object or file-like object Any valid string path is acceptable. The string could be a URL. Valid URL schemes include http, ftp, s3, and file. For file URLs, a host is expected. A local file could be: ``file://localhost/path/to/table.parquet``. A file URL can also be a path to a directory that contains multiple partitioned parquet files. Both pyarrow and fastparquet support paths to directories as well as file URLs. A directory path could be: ``file://localhost/path/to/tables``\n\nIf you want to pass in a path object, pandas accepts any ``os.PathLike``.\n\nBy file-like object, we refer to objects with a ``read()`` method, such as a file handler (e.g. via builtin ``open`` function) or ``StringIO``. engine : {'auto', 'pyarrow', 'fastparquet'}, default 'auto' Parquet library to use. If 'auto', then the option ``io.parquet.engine`` is used. The default ``io.parquet.engine`` behavior is to try 'pyarrow', falling back to 'fastparquet' if 'pyarrow' is unavailable. columns : list, default=None If not None, only these columns will be read from the file.\n\n.. versionadded:: 0.21.1 **kwargs Any additional kwargs are passed to the engine.\n##### Returns\n"
+}{
+    "source file": "PARSER.py",
+    "line number": "309",
+    "func name": "main",
+    "func arg": "()",
+    "comments": ""
+}{
+    "source file": "parsers1.py",
+    "line number": "3534",
+    "func name": "_get_col_names",
+    "func arg": "(colspec, columns)",
+    "comments": ""
+}{
+    "source file": "parsing1.py",
+    "line number": "162",
+    "func name": "tokenize_string",
+    "func arg": "(source)",
+    "comments": "Tokenize a Python source code string.\n\nParameters ---------- source : str The Python source code string.\n##### Returns\n* **tok_generator **: Iterator[Tuple[int, str]]\n    An iterator yielding all tokens with only toknum and tokval (Tuple[ing, str]).\n\n"
+}{
+    "source file": "period1.py",
+    "line number": "852",
+    "func name": "period_range",
+    "func arg": "(start, end, periods, freq, name)",
+    "comments": "Return a fixed frequency PeriodIndex.\n\nThe day (calendar) is the default frequency.\n\nParameters ---------- start : str or period-like, default None Left bound for generating periods. end : str or period-like, default None Right bound for generating periods. periods : int, default None Number of periods to generate. freq : str or DateOffset, optional Frequency alias. By default the freq is taken from `start` or `end` if those are Period objects. Otherwise, the default is ``\"D\"`` for daily frequency. name : str, default None Name of the resulting PeriodIndex.\n##### Returns\n* **Of the three parameters**: ``start``, ``end``, and ``periods``, exactly two\n\n* **<https**: //pandas.pydata.org/pandas-docs/stable/user_guide/timeseries.html#offset-aliases>`__.\n\n"
+}{
+    "source file": "period2.py",
+    "line number": "1038",
+    "func name": "_make_field_arrays",
+    "func arg": "()",
+    "comments": ""
+}{
+    "source file": "pickle_compat1.py",
+    "line number": "222",
+    "func name": "load",
+    "func arg": "(fh, encoding, is_verbose)",
+    "comments": "Load a pickle, with a provided encoding,\n\nParameters ---------- fh : a filelike object encoding : an optional encoding is_verbose : show exception output\n"
+}{
+    "source file": "pickle1.py",
+    "line number": "100",
+    "func name": "read_pickle",
+    "func arg": "(filepath_or_buffer, compression)",
+    "comments": "Load pickled pandas object (or any object) from file.\n\n.. warning::\n\nLoading pickled data received from untrusted sources can be unsafe. See `here <https://docs.python.org/3/library/pickle.html>`__.\n\nParameters ---------- filepath_or_buffer : str, path object or file-like object File path, URL, or buffer where the pickled object will be loaded from.\n\n.. versionchanged:: 1.0.0 Accept URL. URL is not limited to S3 and GCS.\n\ncompression : {'infer', 'gzip', 'bz2', 'zip', 'xz', None}, default 'infer' If 'infer' and 'path_or_url' is path-like, then detect compression from the following extensions: '.gz', '.bz2', '.zip', or '.xz' (otherwise no compression) If 'infer' and 'path_or_url' is not path-like, then use None (= no decompression).\n##### Returns\n* **unpickled **: same type as object stored in file\n\n* **DataFrame.to_pickle **: Pickle (serialize) DataFrame object to file.\n\n* **Series.to_pickle **: Pickle (serialize) Series object to file.\n\n* **read_hdf **: Read HDF5 file into a DataFrame.\n\n* **read_sql **: Read SQL query or database table into a DataFrame.\n\n* **read_parquet **: Load a parquet object, returning a DataFrame.\n\n* **>>> original_df = pd.DataFrame({\"foo\"**: range(5), \"bar\"\n\n"
+}{
+    "source file": "pivot1.py",
+    "line number": "693",
+    "func name": "_get_names",
+    "func arg": "(arrs, names, prefix)",
+    "comments": ""
+}{}{
+    "source file": "printing2.py",
+    "line number": "497",
+    "func name": "format_object_attrs",
+    "func arg": "(obj, include_dtype)",
+    "comments": "Return a list of tuples of the (attr, formatted_value) for common attrs, including dtype, name, length\n\nParameters ---------- obj : object must be iterable include_dtype : bool If False, dtype won't be in the returned list\n##### Returns\n"
+}{
+    "source file": "pytables1.py",
+    "line number": "617",
+    "func name": "maybe_expression",
+    "func arg": "(s)",
+    "comments": "loose checking if s is a pytables-acceptable expression\n\n\n"
+}{
+    "source file": "pytables2.py",
+    "line number": "4983",
+    "func name": "_get_data_and_dtype_name",
+    "func arg": "(data)",
+    "comments": "Convert the passed data into a storable form and a dtype string.\n\n\n"
+}{}{}{
+    "source file": "resample1.py",
+    "line number": "1774",
+    "func name": "asfreq",
+    "func arg": "(obj, freq, method, how, normalize, fill_value)",
+    "comments": "Utility frequency conversion method for Series/DataFrame.\n\n\n"
+}{
+    "source file": "reshape1.py",
+    "line number": "1048",
+    "func name": "_reorder_for_extension_array_stack",
+    "func arg": "(arr, n_rows, n_columns)",
+    "comments": "Re-orders the values when stacking multiple extension-arrays.\n\nThe indirect stacking method used for EAs requires a followup take to get the order correct.\n\nParameters ---------- arr : ExtensionArray n_rows, n_columns : int The number of rows and columns in the original DataFrame.\n##### Returns\n* **taken **: ExtensionArray\n    The original `arr` with elements re-ordered appropriately\n\n"
+}{}{}{
+    "source file": "roperator1.py",
+    "line number": "59",
+    "func name": "rxor",
+    "func arg": "(left, right)",
+    "comments": ""
+}{
+    "source file": "s3(1).py",
+    "line number": "42",
+    "func name": "get_filepath_or_buffer",
+    "func arg": "(filepath_or_buffer, encoding, compression, mode)",
+    "comments": ""
+}{}{
+    "source file": "sas_xport1.py",
+    "line number": "196",
+    "func name": "_parse_float_vec",
+    "func arg": "(vec)",
+    "comments": "Parse a vector of float values representing IBM 8 byte floats into native 8 byte floats.\n\n\n"
+}{}{
+    "source file": "sasreader1.py",
+    "line number": "7",
+    "func name": "read_sas",
+    "func arg": "(filepath_or_buffer, format, index, encoding, chunksize, iterator)",
+    "comments": "Read SAS files stored as either XPORT or SAS7BDAT format files.\n\nParameters ---------- filepath_or_buffer : str, path object or file-like object Any valid string path is acceptable. The string could be a URL. Valid URL schemes include http, ftp, s3, and file. For file URLs, a host is expected. A local file could be: ``file://localhost/path/to/table.sas``.\n\nIf you want to pass in a path object, pandas accepts any ``os.PathLike``.\n\nBy file-like object, we refer to objects with a ``read()`` method, such as a file handler (e.g. via builtin ``open`` function) or ``StringIO``. format : str {'xport', 'sas7bdat'} or None If None, file format is inferred from file extension. If 'xport' or 'sas7bdat', uses the corresponding format. index : identifier of index column, defaults to None Identifier of column that should be used as index of the DataFrame. encoding : str, default is None Encoding for text data.\n\nIf None, text data are stored as raw bytes. chunksize : int Read file `chunksize` lines at a time, returns iterator. iterator : bool, defaults to False If True, returns an iterator for reading the file incrementally.\n##### Returns\n"
+}{
+    "source file": "scipy_sparse1.py",
+    "line number": "115",
+    "func name": "_coo_to_sparse_series",
+    "func arg": "(A, dense_index)",
+    "comments": "Convert a scipy.sparse.coo_matrix to a SparseSeries.\n\nParameters ---------- A : scipy.sparse.coo.coo_matrix dense_index : bool, default False\n##### Returns\n"
+}{
+    "source file": "scope1.py",
+    "line number": "67",
+    "func name": "_get_pretty_string",
+    "func arg": "(obj)",
+    "comments": "Return a prettier version of obj.\n\nParameters ---------- obj : object Object to pretty print\n##### Returns\n"
+}{
+    "source file": "series1.py",
+    "line number": "104",
+    "func name": "_coerce_method",
+    "func arg": "(converter)",
+    "comments": "Install the scalar coercion methods.\n\n\n"
+}{}{
+    "source file": "sorting1.py",
+    "line number": "394",
+    "func name": "_reorder_by_uniques",
+    "func arg": "(uniques, labels)",
+    "comments": ""
+}{
+    "source file": "spss1.py",
+    "line number": "11",
+    "func name": "read_spss",
+    "func arg": "(path, usecols, convert_categoricals)",
+    "comments": "Load an SPSS file from the file path, returning a DataFrame.\n\n.. versionadded:: 0.25.0\n\nParameters ---------- path : string or Path File path. usecols : list-like, optional Return a subset of the columns. If None, return all columns. convert_categoricals : bool, default is True Convert categorical columns into pd.Categorical.\n##### Returns\n"
+}{
+    "source file": "sql1.py",
+    "line number": "1760",
+    "func name": "get_schema",
+    "func arg": "(frame, name, keys, con, dtype)",
+    "comments": "Get the SQL db table schema for the given frame.\n\nParameters ---------- frame : DataFrame name : string name of SQL table keys : string or sequence, default: None columns to use a primary key con: an open SQL database connection object or a SQLAlchemy connectable Using SQLAlchemy makes it possible to use any DB supported by that library, default: None If a DBAPI2 object, only sqlite3 is supported. dtype : dict of column name to SQL type, default None Optional specifying the datatype for columns. The SQL type should be a SQLAlchemy type, or a string for sqlite3 fallback connection.\n"
+}{
+    "source file": "stata1.py",
+    "line number": "2629",
+    "func name": "_pad_bytes_new",
+    "func arg": "(name, length)",
+    "comments": "Takes a bytes instance and pads it with null bytes until it's length chars.\n\n\n"
+}{}{
+    "source file": "strings1.py",
+    "line number": "2017",
+    "func name": "copy",
+    "func arg": "(source)",
+    "comments": "Copy a docstring from another source function (if present)\n\n\n"
+}{
+    "source file": "style1.py",
+    "line number": "13",
+    "func name": "_get_standard_colors",
+    "func arg": "(num_colors, colormap, color_type, color)",
+    "comments": ""
+}{
+    "source file": "style2.py",
+    "line number": "1513",
+    "func name": "_maybe_wrap_formatter",
+    "func arg": "(formatter, na_rep)",
+    "comments": ""
+}{}{
+    "source file": "test_aggregate1.py",
+    "line number": "787",
+    "func name": "test_groupby_aggregate_period_frame",
+    "func arg": "(func)",
+    "comments": ""
+}{
+    "source file": "test_algos1.py",
+    "line number": "95",
+    "func name": "test_diff",
+    "func arg": "()",
+    "comments": ""
+}{
+    "source file": "test_algos2.py",
+    "line number": "2111",
+    "func name": "test_int64_add_overflow",
+    "func arg": "()",
+    "comments": ""
+}{}{}{
+    "source file": "test_alter_index1.py",
+    "line number": "566",
+    "func name": "test_drop_non_empty_list",
+    "func arg": "(data, index, drop_labels)",
+    "comments": ""
+}{}{
+    "source file": "test_analytics2.py",
+    "line number": "229",
+    "func name": "assert_bool_op_api",
+    "func arg": "(opname, bool_frame_with_na, float_string_frame, has_bool_only)",
+    "comments": "Check that API for boolean operator opname works as advertised on frame\n\nParameters ---------- opname : string Name of the operator to test on frame float_frame : DataFrame DataFrame with columns of type float float_string_frame : DataFrame DataFrame with both float and string columns has_bool_only : bool, default False Whether the method \"opname\" has the kwarg \"bool_only\"\n"
+}{}{
+    "source file": "test_analytics4.py",
+    "line number": "349",
+    "func name": "test_numpy_type_funcs",
+    "func arg": "(idx, func)",
+    "comments": ""
+}{}{}{
+    "source file": "test_api3.py",
+    "line number": "271",
+    "func name": "test_np",
+    "func arg": "()",
+    "comments": ""
+}{}{}{
+    "source file": "test_api6.py",
+    "line number": "6",
+    "func name": "test_namespace",
+    "func arg": "()",
+    "comments": ""
+}{}{}{
+    "source file": "test_apply1.py",
+    "line number": "144",
+    "func name": "test_rolling_apply_args_kwargs",
+    "func arg": "(args_kwargs)",
+    "comments": ""
+}{
+    "source file": "test_apply2.py",
+    "line number": "963",
+    "func name": "zip_frames",
+    "func arg": "(frames, axis)",
+    "comments": "take a list of frames, zip them together under the assumption that these all have the first frames' index/columns.\n\n\n##### Returns\n* **new_frame **: DataFrame\n\n"
+}{}{
+    "source file": "test_apply4.py",
+    "line number": "806",
+    "func name": "test_apply_function_returns_non_pandas_non_scalar",
+    "func arg": "(function, expected_values)",
+    "comments": ""
+}{}{
+    "source file": "test_arithmetic1.py",
+    "line number": "13",
+    "func name": "_permute",
+    "func arg": "(obj)",
+    "comments": ""
+}{}{
+    "source file": "test_arithmetic3.py",
+    "line number": "772",
+    "func name": "test_pow_nan_with_zero",
+    "func arg": "()",
+    "comments": ""
+}{}{
+    "source file": "test_arithmetics1.py",
+    "line number": "490",
+    "func name": "test_unary_op",
+    "func arg": "(op, fill_value)",
+    "comments": ""
+}{
+    "source file": "test_array_to_datetime1.py",
+    "line number": "188",
+    "func name": "test_datetime_subclass",
+    "func arg": "(data, expected)",
+    "comments": ""
+}{
+    "source file": "test_array1.py",
+    "line number": "1244",
+    "func name": "test_map_missing",
+    "func arg": "()",
+    "comments": ""
+}{
+    "source file": "test_array2.py",
+    "line number": "320",
+    "func name": "test_array_not_registered",
+    "func arg": "(registry_without_decimal)",
+    "comments": ""
+}{}{}{}{
+    "source file": "test_asof2.py",
+    "line number": "9",
+    "func name": "date_range_frame",
+    "func arg": "()",
+    "comments": "Fixture for DataFrame of ints with date_range index\n\nColumns are ['A', 'B'].\n"
+}{
+    "source file": "test_assert_almost_equal1.py",
+    "line number": "353",
+    "func name": "test_assert_almost_equal_iterable_values_mismatch",
+    "func arg": "()",
+    "comments": ""
+}{
+    "source file": "test_assert_categorical_equal1.py",
+    "line number": "78",
+    "func name": "test_categorical_equal_object_override",
+    "func arg": "(obj)",
+    "comments": ""
+}{
+    "source file": "test_assert_extension_array_equal1.py",
+    "line number": "95",
+    "func name": "test_assert_extension_array_equal_non_extension_array",
+    "func arg": "(side)",
+    "comments": ""
+}{
+    "source file": "test_assert_frame_equal1.py",
+    "line number": "217",
+    "func name": "test_frame_equal_unicode",
+    "func arg": "(df1, df2, msg, by_blocks_fixture, obj_fixture)",
+    "comments": ""
+}{
+    "source file": "test_assert_index_equal1.py",
+    "line number": "157",
+    "func name": "test_index_equal_category_mismatch",
+    "func arg": "(check_categorical)",
+    "comments": ""
+}{
+    "source file": "test_assert_interval_array_equal1.py",
+    "line number": "68",
+    "func name": "test_interval_array_equal_start_mismatch",
+    "func arg": "()",
+    "comments": ""
+}{
+    "source file": "test_assert_numpy_array_equal1.py",
+    "line number": "202",
+    "func name": "test_numpy_array_equal_different_na",
+    "func arg": "()",
+    "comments": ""
+}{
+    "source file": "test_assert_produces_warning1.py",
+    "line number": "14",
+    "func name": "test_assert_produces_warning_honors_filter",
+    "func arg": "()",
+    "comments": ""
+}{
+    "source file": "test_assert_series_equal1.py",
+    "line number": "181",
+    "func name": "test_series_equal_categorical_mismatch",
+    "func arg": "(check_categorical)",
+    "comments": ""
+}{
+    "source file": "test_astype1.py",
+    "line number": "21",
+    "func name": "test_astype_category",
+    "func arg": "(idx, ordered)",
+    "comments": ""
+}{}{}{}{}{}{
+    "source file": "test_backend1.py",
+    "line number": "99",
+    "func name": "test_extra_kinds_ok",
+    "func arg": "(monkeypatch, restore_backend)",
+    "comments": ""
+}{
+    "source file": "test_base_indexer1.py",
+    "line number": "74",
+    "func name": "test_win_type_not_implemented",
+    "func arg": "()",
+    "comments": ""
+}{
+    "source file": "test_base1.py",
+    "line number": "262",
+    "func name": "test_resample_quantile",
+    "func arg": "(series)",
+    "comments": ""
+}{}{
+    "source file": "test_base3.py",
+    "line number": "2816",
+    "func name": "test_validate_1d_input",
+    "func arg": "()",
+    "comments": ""
+}{
+    "source file": "test_bin_groupby1.py",
+    "line number": "106",
+    "func name": "test_group_ohlc",
+    "func arg": "()",
+    "comments": ""
+}{}{}{
+    "source file": "test_bool1.py",
+    "line number": "68",
+    "func name": "test_is_bool_dtype",
+    "func arg": "(data)",
+    "comments": ""
+}{
+    "source file": "test_boolean1.py",
+    "line number": "918",
+    "func name": "test_diff",
+    "func arg": "()",
+    "comments": ""
+}{
+    "source file": "test_boolean2.py",
+    "line number": "616",
+    "func name": "test_mask_inplace",
+    "func arg": "()",
+    "comments": ""
+}{
+    "source file": "test_boolean3.py",
+    "line number": "73",
+    "func name": "data_for_grouping",
+    "func arg": "(dtype)",
+    "comments": ""
+}{}{
+    "source file": "test_c_parser_only1.py",
+    "line number": "602",
+    "func name": "test_unix_style_breaks",
+    "func arg": "(c_parser_only)",
+    "comments": ""
+}{
+    "source file": "test_calendar1.py",
+    "line number": "87",
+    "func name": "test_calendar_2031",
+    "func arg": "()",
+    "comments": ""
+}{}{
+    "source file": "test_callable2.py",
+    "line number": "25",
+    "func name": "test_setitem_other_callable",
+    "func arg": "()",
+    "comments": ""
+}{}{}{
+    "source file": "test_categorical3.py",
+    "line number": "76",
+    "func name": "data_for_grouping",
+    "func arg": "()",
+    "comments": ""
+}{
+    "source file": "test_categorical4.py",
+    "line number": "1368",
+    "func name": "test_groupby_agg_non_numeric",
+    "func arg": "()",
+    "comments": ""
+}{}{
+    "source file": "test_ccalendar1.py",
+    "line number": "22",
+    "func name": "test_get_day_of_year_dt",
+    "func arg": "()",
+    "comments": ""
+}{
+    "source file": "test_chaining_and_caching1.py",
+    "line number": "51",
+    "func name": "test_indexer_caching",
+    "func arg": "()",
+    "comments": ""
+}{}{
+    "source file": "test_check_indexer1.py",
+    "line number": "95",
+    "func name": "test_pass_through_non_array_likes",
+    "func arg": "(indexer)",
+    "comments": ""
+}{}{}{
+    "source file": "test_clipboard1.py",
+    "line number": "253",
+    "func name": "test_raw_roundtrip",
+    "func arg": "(data)",
+    "comments": ""
+}{
+    "source file": "test_coercion1.py",
+    "line number": "18",
+    "func name": "check_comprehensiveness",
+    "func arg": "(request)",
+    "comments": ""
+}{}{}{}{
+    "source file": "test_comment1.py",
+    "line number": "125",
+    "func name": "test_comment_first_line",
+    "func arg": "(all_parsers, header)",
+    "comments": ""
+}{
+    "source file": "test_common1.py",
+    "line number": "2065",
+    "func name": "test_integer_precision",
+    "func arg": "(all_parsers)",
+    "comments": ""
+}{
+    "source file": "test_common2.py",
+    "line number": "79",
+    "func name": "test_is_extension_array_dtype",
+    "func arg": "(dtype)",
+    "comments": ""
+}{
+    "source file": "test_common3.py",
+    "line number": "302",
+    "func name": "mmap_file",
+    "func arg": "(datapath)",
+    "comments": ""
+}{
+    "source file": "test_common4.py",
+    "line number": "753",
+    "func name": "test_astype_object_preserves_datetime_na",
+    "func arg": "(from_type)",
+    "comments": ""
+}{}{
+    "source file": "test_common6.py",
+    "line number": "124",
+    "func name": "test_version_tag",
+    "func arg": "()",
+    "comments": ""
+}{
+    "source file": "test_comparisons1.py",
+    "line number": "165",
+    "func name": "test_rich_comparison_with_unsupported_type",
+    "func arg": "()",
+    "comments": ""
+}{
+    "source file": "test_compat1.py",
+    "line number": "11",
+    "func name": "pytables_hdf5_file",
+    "func arg": "()",
+    "comments": "Use PyTables to create a simple HDF5 file.\n\n\n"
+}{
+    "source file": "test_compat2.py",
+    "line number": "119",
+    "func name": "test_pickle_compat_construction",
+    "func arg": "(holder)",
+    "comments": ""
+}{
+    "source file": "test_compat3.py",
+    "line number": "31",
+    "func name": "test_invalid_numexpr_version",
+    "func arg": "(engine, parser)",
+    "comments": ""
+}{}{
+    "source file": "test_complex1.py",
+    "line number": "176",
+    "func name": "test_complex_append",
+    "func arg": "(setup_path)",
+    "comments": ""
+}{
+    "source file": "test_compression1.py",
+    "line number": "144",
+    "func name": "test_invalid_compression",
+    "func arg": "(all_parsers, invalid_compression)",
+    "comments": ""
+}{
+    "source file": "test_compression2.py",
+    "line number": "88",
+    "func name": "test_to_json_compression",
+    "func arg": "(compression_only, read_infer, to_infer)",
+    "comments": ""
+}{
+    "source file": "test_compression3.py",
+    "line number": "130",
+    "func name": "test_with_missing_lzma_runtime",
+    "func arg": "()",
+    "comments": "Tests if RuntimeError is hit when calling lzma without having the module available.\n\n\n"
+}{
+    "source file": "test_concat1.py",
+    "line number": "76",
+    "func name": "test_get_dtype_kinds_period",
+    "func arg": "(to_concat, expected)",
+    "comments": ""
+}{
+    "source file": "test_concat2.py",
+    "line number": "2745",
+    "func name": "test_concat_sparse",
+    "func arg": "()",
+    "comments": ""
+}{}{
+    "source file": "test_console1.py",
+    "line number": "62",
+    "func name": "test_detect_console_encoding_fallback_to_default",
+    "func arg": "(monkeypatch, std, locale)",
+    "comments": ""
+}{
+    "source file": "test_construct_from_scalar1.py",
+    "line number": "8",
+    "func name": "test_cast_1d_array_like_from_scalar_categorical",
+    "func arg": "()",
+    "comments": ""
+}{
+    "source file": "test_construct_ndarray1.py",
+    "line number": "19",
+    "func name": "test_construct_1d_ndarray_preserving_na",
+    "func arg": "(values, dtype, expected)",
+    "comments": ""
+}{
+    "source file": "test_construct_object_arr1.py",
+    "line number": "18",
+    "func name": "test_cast_1d_array_invalid_scalar",
+    "func arg": "(val)",
+    "comments": ""
+}{}{}{
+    "source file": "test_constructors3.py",
+    "line number": "274",
+    "func name": "test_td_constructor_value_error",
+    "func arg": "()",
+    "comments": ""
+}{
+    "source file": "test_constructors4.py",
+    "line number": "721",
+    "func name": "test_index_equal_empty_iterable",
+    "func arg": "()",
+    "comments": ""
+}{}{
+    "source file": "test_constructors6.py",
+    "line number": "28",
+    "func name": "name",
+    "func arg": "(request)",
+    "comments": ""
+}{}{}{}{}{}{}{
+    "source file": "test_contains1.py",
+    "line number": "121",
+    "func name": "test_isin_multi_index_with_missing_value",
+    "func arg": "(labels, expected, level)",
+    "comments": ""
+}{
+    "source file": "test_conversion1.py",
+    "line number": "429",
+    "func name": "test_to_numpy_kwargs_raises",
+    "func arg": "()",
+    "comments": ""
+}{
+    "source file": "test_conversion2.py",
+    "line number": "95",
+    "func name": "test_localize_pydatetime_dt_types",
+    "func arg": "(dt, expected)",
+    "comments": ""
+}{
+    "source file": "test_conversion3.py",
+    "line number": "184",
+    "func name": "test_to_flat_index",
+    "func arg": "(idx)",
+    "comments": ""
+}{}{
+    "source file": "test_convert_objects1.py",
+    "line number": "8",
+    "func name": "test_maybe_convert_objects_copy",
+    "func arg": "(data)",
+    "comments": ""
+}{
+    "source file": "test_converter1.py",
+    "line number": "47",
+    "func name": "test_timtetonum_accepts_unicode",
+    "func arg": "()",
+    "comments": ""
+}{
+    "source file": "test_converters1.py",
+    "line number": "150",
+    "func name": "test_converter_index_col_bug",
+    "func arg": "(all_parsers)",
+    "comments": ""
+}{
+    "source file": "test_copy1.py",
+    "line number": "76",
+    "func name": "test_copy_method_kwargs",
+    "func arg": "(deep, kwarg, value)",
+    "comments": ""
+}{}{}{}{}{}{
+    "source file": "test_css1.py",
+    "line number": "225",
+    "func name": "test_css_relative_font_size",
+    "func arg": "(size, relative_to, resolved)",
+    "comments": ""
+}{
+    "source file": "test_cumulativ1.py",
+    "line number": "18",
+    "func name": "_check_accum_op",
+    "func arg": "(name, series, check_dtype)",
+    "comments": ""
+}{}{
+    "source file": "test_cut1.py",
+    "line number": "620",
+    "func name": "test_cut_nullable_integer",
+    "func arg": "(bins, right, include_lowest)",
+    "comments": ""
+}{
+    "source file": "test_cython1.py",
+    "line number": "229",
+    "func name": "test_cython_with_timestamp_and_nat",
+    "func arg": "(op, data)",
+    "comments": ""
+}{
+    "source file": "test_date_converters1.py",
+    "line number": "29",
+    "func name": "test_parse_all_fields",
+    "func arg": "()",
+    "comments": ""
+}{
+    "source file": "test_date_range1.py",
+    "line number": "950",
+    "func name": "test_date_range_with_custom_holidays",
+    "func arg": "()",
+    "comments": ""
+}{
+    "source file": "test_datetime_index1.py",
+    "line number": "1569",
+    "func name": "test_resample_apply_product",
+    "func arg": "()",
+    "comments": ""
+}{}{
+    "source file": "test_datetime1.py",
+    "line number": "8",
+    "func name": "test_multiindex_period_datetime",
+    "func arg": "()",
+    "comments": ""
+}{
+    "source file": "test_datetime2.py",
+    "line number": "764",
+    "func name": "test_setitem_tuple_with_datetimetz",
+    "func arg": "()",
+    "comments": ""
+}{}{}{
+    "source file": "test_datetime5.py",
+    "line number": "69",
+    "func name": "na_value",
+    "func arg": "()",
+    "comments": ""
+}{
+    "source file": "test_datetime6.py",
+    "line number": "2383",
+    "func name": "test_shift_months",
+    "func arg": "(years, months)",
+    "comments": ""
+}{}{
+    "source file": "test_datetimelike1.py",
+    "line number": "788",
+    "func name": "test_to_numpy_extra",
+    "func arg": "(array)",
+    "comments": ""
+}{
+    "source file": "test_datetimelike2.py",
+    "line number": "1475",
+    "func name": "_check_plot_works",
+    "func arg": "(f, freq, series, **kwargs)",
+    "comments": ""
+}{}{}{
+    "source file": "test_decimal1.py",
+    "line number": "504",
+    "func name": "test_to_numpy_keyword",
+    "func arg": "()",
+    "comments": ""
+}{
+    "source file": "test_deprecate_kwarg1.py",
+    "line number": "79",
+    "func name": "test_deprecate_keyword",
+    "func arg": "(key)",
+    "comments": ""
+}{
+    "source file": "test_deprecate1.py",
+    "line number": "59",
+    "func name": "test_deprecate_wrong_docstring",
+    "func arg": "()",
+    "comments": ""
+}{}{}{
+    "source file": "test_dialect1.py",
+    "line number": "133",
+    "func name": "test_dialect_conflict_delimiter",
+    "func arg": "(all_parsers, custom_dialect, kwargs, warning_klass)",
+    "comments": ""
+}{}{}{
+    "source file": "test_downcast1.py",
+    "line number": "91",
+    "func name": "test_datetime_with_timezone",
+    "func arg": "(as_asi)",
+    "comments": ""
+}{
+    "source file": "test_downstream1.py",
+    "line number": "165",
+    "func name": "test_missing_required_dependency",
+    "func arg": "()",
+    "comments": ""
+}{
+    "source file": "test_drop_duplicates1.py",
+    "line number": "37",
+    "func name": "test_drop_duplicates_bool",
+    "func arg": "(keep, expected)",
+    "comments": ""
+}{
+    "source file": "test_drop_duplicates2.py",
+    "line number": "406",
+    "func name": "test_drop_duplicates_ignore_index",
+    "func arg": "(inplace, origin_dict, output_dict, ignore_index, output_index)",
+    "comments": ""
+}{
+    "source file": "test_drop1.py",
+    "line number": "177",
+    "func name": "test_drop_with_non_unique_datetime_index_and_invalid_keys",
+    "func arg": "()",
+    "comments": ""
+}{
+    "source file": "test_dtype1.py",
+    "line number": "196",
+    "func name": "test_update_dtype_raises",
+    "func arg": "(original, dtype, expected_error_msg)",
+    "comments": ""
+}{
+    "source file": "test_dtypes1.py",
+    "line number": "555",
+    "func name": "test_boolean_dtype",
+    "func arg": "(all_parsers)",
+    "comments": ""
+}{
+    "source file": "test_dtypes2.py",
+    "line number": "25",
+    "func name": "_check_cast",
+    "func arg": "(df, v)",
+    "comments": "Check if all dtypes of df are equal to v\n\n\n"
+}{}{}{}{
+    "source file": "test_dtypes6.py",
+    "line number": "950",
+    "func name": "test_is_dtype_no_warning",
+    "func arg": "(check)",
+    "comments": ""
+}{
+    "source file": "test_duplicated1.py",
+    "line number": "31",
+    "func name": "test_duplicated_nan_none",
+    "func arg": "(keep, expected)",
+    "comments": ""
+}{
+    "source file": "test_duplicated2.py",
+    "line number": "92",
+    "func name": "test_duplicated_on_empty_frame",
+    "func arg": "()",
+    "comments": ""
+}{
+    "source file": "test_duplicates1.py",
+    "line number": "78",
+    "func name": "test_is_unique_class_ne",
+    "func arg": "(capsys)",
+    "comments": ""
+}{
+    "source file": "test_duplicates2.py",
+    "line number": "254",
+    "func name": "test_duplicated2",
+    "func arg": "()",
+    "comments": ""
+}{
+    "source file": "test_encoding1.py",
+    "line number": "180",
+    "func name": "test_encoding_named_temp_file",
+    "func arg": "(all_parsers)",
+    "comments": ""
+}{}{
+    "source file": "test_equivalence1.py",
+    "line number": "211",
+    "func name": "test_multiindex_compare",
+    "func arg": "()",
+    "comments": ""
+}{
+    "source file": "test_errors1.py",
+    "line number": "55",
+    "func name": "test_AbstractMethodError_classmethod",
+    "func arg": "()",
+    "comments": ""
+}{
+    "source file": "test_eval1.py",
+    "line number": "2030",
+    "func name": "test_negate_lt_eq_le",
+    "func arg": "(engine, parser)",
+    "comments": ""
+}{}{
+    "source file": "test_expanding1.py",
+    "line number": "127",
+    "func name": "test_expanding_count_default_min_periods_with_null_values",
+    "func arg": "(constructor)",
+    "comments": ""
+}{
+    "source file": "test_explode1.py",
+    "line number": "116",
+    "func name": "test_duplicate_index",
+    "func arg": "()",
+    "comments": ""
+}{
+    "source file": "test_explode2.py",
+    "line number": "159",
+    "func name": "test_duplicate_index",
+    "func arg": "(input_dict, input_index, expected_dict, expected_index)",
+    "comments": ""
+}{}{
+    "source file": "test_external_block1.py",
+    "line number": "51",
+    "func name": "test_concat_axis1",
+    "func arg": "(df)",
+    "comments": ""
+}{}{
+    "source file": "test_federal1.py",
+    "line number": "21",
+    "func name": "test_memorial_day",
+    "func arg": "()",
+    "comments": ""
+}{
+    "source file": "test_fields1.py",
+    "line number": "8",
+    "func name": "test_fields_readonly",
+    "func arg": "()",
+    "comments": ""
+}{
+    "source file": "test_filters1.py",
+    "line number": "587",
+    "func name": "test_filter_dropna_with_empty_groups",
+    "func arg": "()",
+    "comments": ""
+}{
+    "source file": "test_find_common_type1.py",
+    "line number": "119",
+    "func name": "test_period_dtype_mismatch",
+    "func arg": "(dtype2)",
+    "comments": ""
+}{
+    "source file": "test_fiscal1.py",
+    "line number": "684",
+    "func name": "test_fy5253qtr_onoffset_last",
+    "func arg": "()",
+    "comments": ""
+}{}{
+    "source file": "test_format1.py",
+    "line number": "3285",
+    "func name": "test_filepath_or_buffer_bad_arg_raises",
+    "func arg": "(float_frame, method)",
+    "comments": ""
+}{
+    "source file": "test_format2.py",
+    "line number": "70",
+    "func name": "test_repr_max_seq_item_setting",
+    "func arg": "(idx)",
+    "comments": ""
+}{
+    "source file": "test_formats1.py",
+    "line number": "43",
+    "func name": "test_isoformat",
+    "func arg": "(td, expected_iso)",
+    "comments": ""
+}{
+    "source file": "test_formats2.py",
+    "line number": "9",
+    "func name": "test_to_native_types",
+    "func arg": "()",
+    "comments": ""
+}{
+    "source file": "test_formats3.py",
+    "line number": "13",
+    "func name": "test_to_native_types",
+    "func arg": "()",
+    "comments": ""
+}{}{}{
+    "source file": "test_frame1.py",
+    "line number": "3303",
+    "func name": "_generate_4_axes_via_gridspec",
+    "func arg": "()",
+    "comments": ""
+}{}{
+    "source file": "test_freq_code1.py",
+    "line number": "190",
+    "func name": "test_get_code_invalid",
+    "func arg": "()",
+    "comments": ""
+}{}{
+    "source file": "test_function1.py",
+    "line number": "1604",
+    "func name": "test_apply_to_nullable_integer_returns_float",
+    "func arg": "(values, function)",
+    "comments": ""
+}{
+    "source file": "test_gbq1.py",
+    "line number": "135",
+    "func name": "test_read_gbq_progress_bar_type_kwarg",
+    "func arg": "(monkeypatch, progress_bar)",
+    "comments": ""
+}{
+    "source file": "test_gcs1.py",
+    "line number": "98",
+    "func name": "test_gcs_not_present_exception",
+    "func arg": "()",
+    "comments": ""
+}{}{
+    "source file": "test_generic2.py",
+    "line number": "55",
+    "func name": "test_setattr_warnings",
+    "func arg": "()",
+    "comments": ""
+}{
+    "source file": "test_get_set1.py",
+    "line number": "405",
+    "func name": "test_set_levels_with_iterable",
+    "func arg": "()",
+    "comments": ""
+}{
+    "source file": "test_getitem1.py",
+    "line number": "243",
+    "func name": "test_frame_mi_access_returns_frame",
+    "func arg": "(dataframe_with_duplicate_index)",
+    "comments": ""
+}{}{
+    "source file": "test_groupby2.py",
+    "line number": "2028",
+    "func name": "test_groupby_list_level",
+    "func arg": "()",
+    "comments": ""
+}{}{}{
+    "source file": "test_hashing.py",
+    "line number": "379",
+    "func name": "test_hash_object_none_key",
+    "func arg": "()",
+    "comments": ""
+}{
+    "source file": "test_header1.py",
+    "line number": "545",
+    "func name": "test_read_csv_multiindex_columns",
+    "func arg": "(all_parsers)",
+    "comments": ""
+}{}{
+    "source file": "test_holiday1.py",
+    "line number": "258",
+    "func name": "test_both_offset_observance_raises",
+    "func arg": "()",
+    "comments": ""
+}{
+    "source file": "test_html1.py",
+    "line number": "80",
+    "func name": "test_same_ordering",
+    "func arg": "(datapath)",
+    "comments": ""
+}{
+    "source file": "test_iloc1.py",
+    "line number": "167",
+    "func name": "test_getitem_iloc",
+    "func arg": "(multiindex_dataframe_random_data)",
+    "comments": ""
+}{}{
+    "source file": "test_iloc3.py",
+    "line number": "30",
+    "func name": "test_iloc_nonunique",
+    "func arg": "()",
+    "comments": ""
+}{
+    "source file": "test_index_as_string1.py",
+    "line number": "70",
+    "func name": "test_grouper_index_level_as_string_series",
+    "func arg": "(series, levels)",
+    "comments": ""
+}{
+    "source file": "test_index_col1.py",
+    "line number": "178",
+    "func name": "test_no_multi_index_level_names_empty",
+    "func arg": "(all_parsers)",
+    "comments": ""
+}{}{
+    "source file": "test_indexing_slow1.py",
+    "line number": "89",
+    "func name": "test_large_mi_dataframe_indexing",
+    "func arg": "()",
+    "comments": ""
+}{}{}{
+    "source file": "test_indexing2.py",
+    "line number": "2310",
+    "func name": "test_object_casting_indexing_wraps_datetimelike",
+    "func arg": "()",
+    "comments": ""
+}{
+    "source file": "test_indexing3.py",
+    "line number": "276",
+    "func name": "test_series_at",
+    "func arg": "(non_coercible_categorical)",
+    "comments": ""
+}{
+    "source file": "test_indexing4.py",
+    "line number": "1179",
+    "func name": "test_setitem_with_bool_mask_and_values_matching_n_trues_in_length",
+    "func arg": "()",
+    "comments": ""
+}{}{}{
+    "source file": "test_indexing7.py",
+    "line number": "524",
+    "func name": "test_slice_locs_with_missing_value",
+    "func arg": "(index_arr, expected, start_idx, end_idx)",
+    "comments": ""
+}{
+    "source file": "test_indexing8.py",
+    "line number": "930",
+    "func name": "test_getitem_2d_no_warning",
+    "func arg": "()",
+    "comments": ""
+}{}{
+    "source file": "test_infer_datetimelike1.py",
+    "line number": "20",
+    "func name": "test_maybe_infer_to_datetimelike_ser_construct",
+    "func arg": "()",
+    "comments": ""
+}{
+    "source file": "test_infer_dtype1.py",
+    "line number": "191",
+    "func name": "test_cast_scalar_to_array",
+    "func arg": "(obj, dtype)",
+    "comments": ""
+}{
+    "source file": "test_inference1.py",
+    "line number": "530",
+    "func name": "test_ms_vs_capital_ms",
+    "func arg": "()",
+    "comments": ""
+}{
+    "source file": "test_inference2.py",
+    "line number": "1478",
+    "func name": "test_ensure_categorical",
+    "func arg": "()",
+    "comments": ""
+}{
+    "source file": "test_integer1.py",
+    "line number": "94",
+    "func name": "data_for_grouping",
+    "func arg": "(dtype)",
+    "comments": ""
+}{
+    "source file": "test_integer2.py",
+    "line number": "1083",
+    "func name": "test_array_setitem",
+    "func arg": "()",
+    "comments": ""
+}{
+    "source file": "test_integrity1.py",
+    "line number": "293",
+    "func name": "test_nlevels",
+    "func arg": "(idx)",
+    "comments": ""
+}{
+    "source file": "test_internals1.py",
+    "line number": "234",
+    "func name": "test_hasnans_unchached_for_series",
+    "func arg": "()",
+    "comments": ""
+}{
+    "source file": "test_internals2.py",
+    "line number": "1281",
+    "func name": "test_dataframe_not_equal",
+    "func arg": "()",
+    "comments": ""
+}{}{
+    "source file": "test_interval_range1.py",
+    "line number": "24",
+    "func name": "name",
+    "func arg": "(request)",
+    "comments": ""
+}{
+    "source file": "test_interval_tree1.py",
+    "line number": "45",
+    "func name": "tree",
+    "func arg": "(request, leaf_size)",
+    "comments": ""
+}{}{
+    "source file": "test_interval2.py",
+    "line number": "66",
+    "func name": "data_for_grouping",
+    "func arg": "()",
+    "comments": ""
+}{
+    "source file": "test_interval3.py",
+    "line number": "215",
+    "func name": "test_arrow_table_roundtrip",
+    "func arg": "(breaks)",
+    "comments": ""
+}{
+    "source file": "test_interval4.py",
+    "line number": "69",
+    "func name": "create_series_categorical_intervals",
+    "func arg": "(left, right, closed)",
+    "comments": ""
+}{
+    "source file": "test_interval5.py",
+    "line number": "9",
+    "func name": "interval",
+    "func arg": "()",
+    "comments": ""
+}{
+    "source file": "test_interval6.py",
+    "line number": "864",
+    "func name": "test_dir",
+    "func arg": "()",
+    "comments": ""
+}{}{}{}{}{
+    "source file": "test_join1.py",
+    "line number": "199",
+    "func name": "test_suppress_future_warning_with_sort_kw",
+    "func arg": "(sort_kw)",
+    "comments": ""
+}{}{
+    "source file": "test_join3.py",
+    "line number": "92",
+    "func name": "test_join_multi_wrong_order",
+    "func arg": "()",
+    "comments": ""
+}{}{
+    "source file": "test_join5.py",
+    "line number": "293",
+    "func name": "test_merge_join_categorical_multiindex",
+    "func arg": "()",
+    "comments": ""
+}{}{
+    "source file": "test_json1.py",
+    "line number": "62",
+    "func name": "data_for_grouping",
+    "func arg": "()",
+    "comments": ""
+}{
+    "source file": "test_label_or_level_utils1.py",
+    "line number": "325",
+    "func name": "test_drop_labels_or_levels_series",
+    "func arg": "(df)",
+    "comments": ""
+}{
+    "source file": "test_lib1.py",
+    "line number": "194",
+    "func name": "test_cache_readonly_preserve_docstrings",
+    "func arg": "()",
+    "comments": ""
+}{
+    "source file": "test_libfrequencies1.py",
+    "line number": "98",
+    "func name": "test_assert_aliases_deprecated",
+    "func arg": "(freq, expected, aliases)",
+    "comments": ""
+}{
+    "source file": "test_liboffsets1.py",
+    "line number": "168",
+    "func name": "test_roll_convention",
+    "func arg": "(n, expected, compare)",
+    "comments": ""
+}{
+    "source file": "test_libsparse1.py",
+    "line number": "53",
+    "func name": "check_cases",
+    "func arg": "(_check_case)",
+    "comments": ""
+}{
+    "source file": "test_list1.py",
+    "line number": "24",
+    "func name": "test_to_csv",
+    "func arg": "(data)",
+    "comments": ""
+}{
+    "source file": "test_loc1.py",
+    "line number": "442",
+    "func name": "test_loc_period_string_indexing",
+    "func arg": "()",
+    "comments": ""
+}{
+    "source file": "test_loc2.py",
+    "line number": "988",
+    "func name": "test_loc_axis_1_slice",
+    "func arg": "()",
+    "comments": ""
+}{
+    "source file": "test_loc3.py",
+    "line number": "100",
+    "func name": "test_basic_setitem_with_labels",
+    "func arg": "(datetime_series)",
+    "comments": ""
+}{
+    "source file": "test_localization1.py",
+    "line number": "98",
+    "func name": "test_encoding_detected",
+    "func arg": "()",
+    "comments": ""
+}{
+    "source file": "test_mangle_dupes1.py",
+    "line number": "114",
+    "func name": "test_mangled_unnamed_placeholders",
+    "func arg": "(all_parsers)",
+    "comments": ""
+}{}{}{
+    "source file": "test_merge_index_as_string1.py",
+    "line number": "166",
+    "func name": "test_join_indexes_and_columns_on",
+    "func arg": "(df1, df2, left_index, join_type)",
+    "comments": ""
+}{}{
+    "source file": "test_merge1.py",
+    "line number": "2158",
+    "func name": "test_merge_datetime_upcast_dtype",
+    "func arg": "()",
+    "comments": ""
+}{
+    "source file": "test_misc1.py",
+    "line number": "28",
+    "func name": "test_get_accessor_args",
+    "func arg": "()",
+    "comments": ""
+}{
+    "source file": "test_misc2.py",
+    "line number": "379",
+    "func name": "test_iter_readonly",
+    "func arg": "()",
+    "comments": ""
+}{}{
+    "source file": "test_missing2.py",
+    "line number": "435",
+    "func name": "test_na_value_for_dtype",
+    "func arg": "(dtype, na_value)",
+    "comments": ""
+}{
+    "source file": "test_missing3.py",
+    "line number": "1042",
+    "func name": "interp_methods_ind",
+    "func arg": "(request)",
+    "comments": "Fixture that returns a (method name, required kwargs) pair to be tested for various Index types.\n\nThis fixture does not include methods\n\n- 'time', 'index', 'nearest', 'values' as a parameterization\n"
+}{
+    "source file": "test_missing4.py",
+    "line number": "126",
+    "func name": "test_nan_stays_float",
+    "func arg": "()",
+    "comments": ""
+}{}{}{}{}{
+    "source file": "test_moments_rolling1.py",
+    "line number": "926",
+    "func name": "_rolling_consistency_cases",
+    "func arg": "()",
+    "comments": ""
+}{
+    "source file": "test_monotonic1.py",
+    "line number": "181",
+    "func name": "test_searchsorted_monotonic",
+    "func arg": "(indices)",
+    "comments": ""
+}{
+    "source file": "test_multi_thread1.py",
+    "line number": "131",
+    "func name": "test_multi_thread_path_multipart_read_csv",
+    "func arg": "(all_parsers)",
+    "comments": ""
+}{
+    "source file": "test_multi1.py",
+    "line number": "71",
+    "func name": "idx_cols_multi",
+    "func arg": "()",
+    "comments": ""
+}{}{}{}{
+    "source file": "test_na_indexing1.py",
+    "line number": "65",
+    "func name": "test_na_treated_as_false",
+    "func arg": "(frame)",
+    "comments": ""
+}{
+    "source file": "test_na_scalar1.py",
+    "line number": "289",
+    "func name": "test_pickle_roundtrip_containers",
+    "func arg": "(as_frame, values, dtype)",
+    "comments": ""
+}{
+    "source file": "test_na_values1.py",
+    "line number": "542",
+    "func name": "test_str_nan_dropped",
+    "func arg": "(all_parsers)",
+    "comments": ""
+}{
+    "source file": "test_names1.py",
+    "line number": "129",
+    "func name": "test_setting_names_from_levels_raises",
+    "func arg": "()",
+    "comments": ""
+}{
+    "source file": "test_nanops1.py",
+    "line number": "1068",
+    "func name": "test_nanops_independent_of_mask_param",
+    "func arg": "(operation)",
+    "comments": ""
+}{
+    "source file": "test_nat1.py",
+    "line number": "507",
+    "func name": "test_nat_comparisons",
+    "func arg": "(compare_operators_no_eq_ne, other)",
+    "comments": ""
+}{
+    "source file": "test_network1.py",
+    "line number": "49",
+    "func name": "tips_df",
+    "func arg": "(datapath)",
+    "comments": "DataFrame with the tips dataset.\n\n\n"
+}{
+    "source file": "test_nlargest1.py",
+    "line number": "77",
+    "func name": "assert_check_nselect_boundary",
+    "func arg": "(vals, dtype, method)",
+    "comments": ""
+}{
+    "source file": "test_nlargest2.py",
+    "line number": "34",
+    "func name": "df_main_dtypes",
+    "func arg": "()",
+    "comments": ""
+}{}{
+    "source file": "test_normalize_date1.py",
+    "line number": "36",
+    "func name": "test_normalize_date_sub_types",
+    "func arg": "(dt, expected)",
+    "comments": ""
+}{
+    "source file": "test_normalize1.py",
+    "line number": "117",
+    "func name": "max_level_test_input_data",
+    "func arg": "()",
+    "comments": "input data to test json_normalize with max_level param\n\n\n"
+}{
+    "source file": "test_nth1.py",
+    "line number": "598",
+    "func name": "test_nth_nan_in_grouper",
+    "func arg": "(dropna)",
+    "comments": ""
+}{}{
+    "source file": "test_numeric1.py",
+    "line number": "1275",
+    "func name": "test_dataframe_div_silenced",
+    "func arg": "()",
+    "comments": ""
+}{
+    "source file": "test_numeric2.py",
+    "line number": "618",
+    "func name": "test_non_coerce_uint64_conflict",
+    "func arg": "(errors, exp)",
+    "comments": ""
+}{
+    "source file": "test_numeric3.py",
+    "line number": "311",
+    "func name": "test_getitem_int64",
+    "func arg": "(datetime_series)",
+    "comments": ""
+}{
+    "source file": "test_numeric4.py",
+    "line number": "1220",
+    "func name": "test_uint_index_does_not_convert_to_float64",
+    "func arg": "()",
+    "comments": ""
+}{
+    "source file": "test_numpy_compat1.py",
+    "line number": "118",
+    "func name": "test_elementwise_comparison_warning",
+    "func arg": "()",
+    "comments": ""
+}{
+    "source file": "test_numpy1.py",
+    "line number": "236",
+    "func name": "test_setitem_preserves_views",
+    "func arg": "()",
+    "comments": ""
+}{
+    "source file": "test_numpy2.py",
+    "line number": "115",
+    "func name": "skip_numpy_object",
+    "func arg": "(dtype)",
+    "comments": "Tests for PandasArray with nested data. Users typically won't create these objects via `pd.array`, but they can show up through `.array` on a Series with nested data. Many of the base tests fail, as they aren't appropriate for nested data.\n\nThis fixture allows these tests to be skipped when used as a usefixtures marker to either an individual test or a test class.\n"
+}{
+    "source file": "test_object1.py",
+    "line number": "356",
+    "func name": "test_index_ops_defer_to_unknown_subclasses",
+    "func arg": "(other)",
+    "comments": ""
+}{
+    "source file": "test_observance1.py",
+    "line number": "86",
+    "func name": "test_after_nearest_workday",
+    "func arg": "(day, expected)",
+    "comments": ""
+}{
+    "source file": "test_odf1.py",
+    "line number": "41",
+    "func name": "test_nonexistent_sheetname_raises",
+    "func arg": "(read_ext)",
+    "comments": ""
+}{
+    "source file": "test_offsets_properties1.py",
+    "line number": "130",
+    "func name": "test_shift_across_dst",
+    "func arg": "(offset)",
+    "comments": ""
+}{
+    "source file": "test_offsets1.py",
+    "line number": "4409",
+    "func name": "test_week_add_invalid",
+    "func arg": "()",
+    "comments": ""
+}{
+    "source file": "test_openpyxl1.py",
+    "line number": "110",
+    "func name": "test_to_excel_with_openpyxl_engine",
+    "func arg": "(ext, tmpdir)",
+    "comments": ""
+}{}{}{}{
+    "source file": "test_ops1.py",
+    "line number": "26",
+    "func name": "start_shift",
+    "func arg": "(request)",
+    "comments": "Fixture for generating intervals of different types from a start value and a shift value that can be added to start to generate an endpoint.\n\n\n"
+}{}{
+    "source file": "test_ops3.py",
+    "line number": "15",
+    "func name": "start_shift",
+    "func arg": "(request)",
+    "comments": "Fixture for generating intervals of types from a start value and a shift value that can be added to start to generate an endpoint\n\n\n"
+}{}{}{}{
+    "source file": "test_optional_dependency1.py",
+    "line number": "45",
+    "func name": "test_no_version_raises",
+    "func arg": "()",
+    "comments": ""
+}{
+    "source file": "test_orc1.py",
+    "line number": "189",
+    "func name": "test_orc_reader_snappy_compressed",
+    "func arg": "(dirpath)",
+    "comments": ""
+}{
+    "source file": "test_other1.py",
+    "line number": "622",
+    "func name": "test_groupby_agg_err_catching",
+    "func arg": "(err_cls)",
+    "comments": ""
+}{}{
+    "source file": "test_pandas1.py",
+    "line number": "35",
+    "func name": "assert_json_roundtrip_equal",
+    "func arg": "(result, expected, orient)",
+    "comments": ""
+}{
+    "source file": "test_parquet1.py",
+    "line number": "242",
+    "func name": "test_cross_engine_fp_pa",
+    "func arg": "(df_cross_compat, pa, fp)",
+    "comments": ""
+}{
+    "source file": "test_parse_dates1.py",
+    "line number": "1496",
+    "func name": "test_hypothesis_delimited_date",
+    "func arg": "(date_format, dayfirst, delimiter, test_datetime)",
+    "comments": ""
+}{
+    "source file": "test_parse_iso8601.py",
+    "line number": "68",
+    "func name": "test_parsers_iso8601_leading_space",
+    "func arg": "()",
+    "comments": ""
+}{
+    "source file": "test_parsing1.py",
+    "line number": "220",
+    "func name": "test_parse_time_string_check_instance_type_raise_exception",
+    "func arg": "()",
+    "comments": ""
+}{
+    "source file": "test_partial_indexing1.py",
+    "line number": "9",
+    "func name": "test_partial_string_timestamp_multiindex",
+    "func arg": "()",
+    "comments": ""
+}{}{}{}{
+    "source file": "test_partial1.py",
+    "line number": "186",
+    "func name": "test_loc_getitem_partial_both_axis",
+    "func arg": "()",
+    "comments": ""
+}{}{
+    "source file": "test_pct_change1.py",
+    "line number": "74",
+    "func name": "test_pct_change_with_duplicated_indices",
+    "func arg": "(fill_method)",
+    "comments": ""
+}{
+    "source file": "test_pct_change2.py",
+    "line number": "82",
+    "func name": "test_pct_change_with_duplicated_indices",
+    "func arg": "(fill_method)",
+    "comments": ""
+}{
+    "source file": "test_period_asfreq1.py",
+    "line number": "76",
+    "func name": "test_period_ordinal_business_day",
+    "func arg": "(day, expected)",
+    "comments": ""
+}{
+    "source file": "test_period_index1.py",
+    "line number": "28",
+    "func name": "_series_name",
+    "func arg": "()",
+    "comments": ""
+}{}{
+    "source file": "test_period1.py",
+    "line number": "397",
+    "func name": "test_arrow_table_roundtrip",
+    "func arg": "()",
+    "comments": ""
+}{}{
+    "source file": "test_period3.py",
+    "line number": "53",
+    "func name": "na_value",
+    "func arg": "()",
+    "comments": ""
+}{
+    "source file": "test_period4.py",
+    "line number": "20",
+    "func name": "_permute",
+    "func arg": "(obj)",
+    "comments": ""
+}{}{
+    "source file": "test_period6.py",
+    "line number": "1564",
+    "func name": "test_small_year_parsing",
+    "func arg": "()",
+    "comments": ""
+}{
+    "source file": "test_period7.py",
+    "line number": "655",
+    "func name": "test_maybe_convert_timedelta",
+    "func arg": "()",
+    "comments": ""
+}{
+    "source file": "test_pickle1.py",
+    "line number": "482",
+    "func name": "test_pickle_s3url_roundtrip",
+    "func arg": "(monkeypatch, mockurl)",
+    "comments": ""
+}{}{
+    "source file": "test_pivot1.py",
+    "line number": "29",
+    "func name": "interval_values",
+    "func arg": "(request, closed)",
+    "comments": ""
+}{
+    "source file": "test_printing1.py",
+    "line number": "21",
+    "func name": "test_repr_binary_type",
+    "func arg": "()",
+    "comments": ""
+}{
+    "source file": "test_promote1.py",
+    "line number": "607",
+    "func name": "test_maybe_promote_dimensions",
+    "func arg": "(any_numpy_dtype_reduced, dim)",
+    "comments": ""
+}{
+    "source file": "test_pytables_missing1.py",
+    "line number": "10",
+    "func name": "test_pytables_raises",
+    "func arg": "()",
+    "comments": ""
+}{
+    "source file": "test_python_parser_only1.py",
+    "line number": "287",
+    "func name": "test_malformed_skipfooter",
+    "func arg": "(python_parser_only)",
+    "comments": ""
+}{
+    "source file": "test_qcut1.py",
+    "line number": "293",
+    "func name": "test_qcut_nullable_integer",
+    "func arg": "(q, any_nullable_int_dtype)",
+    "comments": ""
+}{}{}{
+    "source file": "test_query_eval1.py",
+    "line number": "28",
+    "func name": "skip_if_no_pandas_parser",
+    "func arg": "(parser)",
+    "comments": ""
+}{
+    "source file": "test_quoting1.py",
+    "line number": "141",
+    "func name": "test_unbalanced_quoting",
+    "func arg": "(all_parsers, balanced)",
+    "comments": ""
+}{}{
+    "source file": "test_rank1.py",
+    "line number": "561",
+    "func name": "test_pct_max_many_rows",
+    "func arg": "()",
+    "comments": ""
+}{}{
+    "source file": "test_rank3.py",
+    "line number": "439",
+    "func name": "test_rank_zero_div",
+    "func arg": "(input_key, input_value, output_value)",
+    "comments": ""
+}{
+    "source file": "test_read_fwf1.py",
+    "line number": "598",
+    "func name": "test_fwf_compression",
+    "func arg": "(compression_only, infer)",
+    "comments": ""
+}{
+    "source file": "test_readers1.py",
+    "line number": "117",
+    "func name": "read_ext",
+    "func arg": "(engine_and_read_ext)",
+    "comments": ""
+}{
+    "source file": "test_readlines1.py",
+    "line number": "173",
+    "func name": "test_readjson_unicode",
+    "func arg": "(monkeypatch)",
+    "comments": ""
+}{
+    "source file": "test_reductions1.py",
+    "line number": "28",
+    "func name": "get_objs",
+    "func arg": "()",
+    "comments": ""
+}{
+    "source file": "test_register_accessor1.py",
+    "line number": "82",
+    "func name": "test_raises_attribute_error",
+    "func arg": "()",
+    "comments": ""
+}{
+    "source file": "test_reindex1.py",
+    "line number": "96",
+    "func name": "test_reindex_non_unique",
+    "func arg": "()",
+    "comments": ""
+}{}{
+    "source file": "test_replace1.py",
+    "line number": "29",
+    "func name": "test_replace",
+    "func arg": "(to_replace, value, expected, check_types, check_categorical)",
+    "comments": ""
+}{}{
+    "source file": "test_replace3.py",
+    "line number": "20",
+    "func name": "mix_abc",
+    "func arg": "()",
+    "comments": ""
+}{}{}{}{
+    "source file": "test_resample_api1.py",
+    "line number": "585",
+    "func name": "test_resample_agg_readonly",
+    "func arg": "()",
+    "comments": ""
+}{
+    "source file": "test_resampler_grouper1.py",
+    "line number": "275",
+    "func name": "test_median_duplicate_columns",
+    "func arg": "()",
+    "comments": ""
+}{
+    "source file": "test_reshape1.py",
+    "line number": "1133",
+    "func name": "test_unstacking_multi_index_df",
+    "func arg": "()",
+    "comments": ""
+}{}{
+    "source file": "test_reshape3.py",
+    "line number": "116",
+    "func name": "test_delete_base",
+    "func arg": "(idx)",
+    "comments": ""
+}{
+    "source file": "test_rolling1.py",
+    "line number": "440",
+    "func name": "test_rolling_count_default_min_periods_with_null_values",
+    "func arg": "(constructor)",
+    "comments": ""
+}{}{}{
+    "source file": "test_s3(1).py",
+    "line number": "16",
+    "func name": "test_streaming_s3_objects",
+    "func arg": "()",
+    "comments": ""
+}{
+    "source file": "test_safe_import1.py",
+    "line number": "28",
+    "func name": "test_safe_import_dummy",
+    "func arg": "(monkeypatch, min_version, valid)",
+    "comments": ""
+}{}{
+    "source file": "test_sas7bdat1.py",
+    "line number": "212",
+    "func name": "test_zero_variables",
+    "func arg": "(datapath)",
+    "comments": ""
+}{}{}{}{}{}{}{}{}{
+    "source file": "test_setitem1.py",
+    "line number": "444",
+    "func name": "test_frame_setitem_copy_no_write",
+    "func arg": "(multiindex_dataframe_random_data)",
+    "comments": ""
+}{
+    "source file": "test_setops1.py",
+    "line number": "358",
+    "func name": "test_setops_disallow_true",
+    "func arg": "(method)",
+    "comments": ""
+}{
+    "source file": "test_setops2.py",
+    "line number": "22",
+    "func name": "empty_index",
+    "func arg": "(dtype, closed)",
+    "comments": ""
+}{}{}{
+    "source file": "test_setops5.py",
+    "line number": "101",
+    "func name": "test_union_dtypes",
+    "func arg": "(left, right, expected)",
+    "comments": ""
+}{}{
+    "source file": "test_setops7.py",
+    "line number": "11",
+    "func name": "_permute",
+    "func arg": "(obj)",
+    "comments": ""
+}{}{}{}{}{}{
+    "source file": "test_skiprows1.py",
+    "line number": "246",
+    "func name": "test_skip_rows_bad_callable",
+    "func arg": "(all_parsers)",
+    "comments": ""
+}{}{}{}{
+    "source file": "test_sort_values_level_as_str1.py",
+    "line number": "67",
+    "func name": "test_sort_column_level_and_index_label",
+    "func arg": "(df_none, df_idx, sort_names, ascending)",
+    "comments": ""
+}{}{}{}{}{
+    "source file": "test_sorting2.py",
+    "line number": "273",
+    "func name": "test_argsort",
+    "func arg": "(idx)",
+    "comments": ""
+}{
+    "source file": "test_sorting3.py",
+    "line number": "316",
+    "func name": "test_decons",
+    "func arg": "()",
+    "comments": ""
+}{
+    "source file": "test_sparse1.py",
+    "line number": "80",
+    "func name": "data_for_grouping",
+    "func arg": "(request)",
+    "comments": ""
+}{
+    "source file": "test_spss1.py",
+    "line number": "68",
+    "func name": "test_spss_usecols",
+    "func arg": "(datapath)",
+    "comments": ""
+}{
+    "source file": "test_sql1.py",
+    "line number": "2326",
+    "func name": "tquery",
+    "func arg": "(query, con, cur)",
+    "comments": "Replace removed sql.tquery function\n\n\n"
+}{}{
+    "source file": "test_stata1.py",
+    "line number": "46",
+    "func name": "parsed_114",
+    "func arg": "(dirpath)",
+    "comments": ""
+}{}{
+    "source file": "test_string1.py",
+    "line number": "263",
+    "func name": "test_value_counts_na",
+    "func arg": "()",
+    "comments": ""
+}{
+    "source file": "test_string2.py",
+    "line number": "10",
+    "func name": "test_constructor_from_list",
+    "func arg": "()",
+    "comments": ""
+}{
+    "source file": "test_string3.py",
+    "line number": "47",
+    "func name": "data_for_grouping",
+    "func arg": "()",
+    "comments": ""
+}{
+    "source file": "test_strings1.py",
+    "line number": "3594",
+    "func name": "test_string_array_extract",
+    "func arg": "()",
+    "comments": ""
+}{
+    "source file": "test_style1.py",
+    "line number": "1772",
+    "func name": "test_from_custom_template",
+    "func arg": "(tmpdir)",
+    "comments": ""
+}{
+    "source file": "test_style2.py",
+    "line number": "24",
+    "func name": "test_styler_to_excel",
+    "func arg": "(engine)",
+    "comments": ""
+}{}{}{}{
+    "source file": "test_take1.py",
+    "line number": "67",
+    "func name": "dtype_fill_out_dtype",
+    "func arg": "(request)",
+    "comments": ""
+}{
+    "source file": "test_textreader1.py",
+    "line number": "345",
+    "func name": "assert_array_dicts_equal",
+    "func arg": "(left, right)",
+    "comments": ""
+}{
+    "source file": "test_ticks1.py",
+    "line number": "304",
+    "func name": "test_compare_ticks_to_strs",
+    "func arg": "(cls)",
+    "comments": ""
+}{
+    "source file": "test_time_grouper1.py",
+    "line number": "270",
+    "func name": "test_upsample_sum",
+    "func arg": "(method, method_args, expected_values)",
+    "comments": ""
+}{}{
+    "source file": "test_timedelta1.py",
+    "line number": "821",
+    "func name": "test_truthiness",
+    "func arg": "(value, expected)",
+    "comments": ""
+}{
+    "source file": "test_timedelta2.py",
+    "line number": "112",
+    "func name": "test_resample_timedelta_values",
+    "func arg": "()",
+    "comments": ""
+}{}{}{}{}{
+    "source file": "test_timedeltas2.py",
+    "line number": "26",
+    "func name": "test_delta_to_nanoseconds_error",
+    "func arg": "()",
+    "comments": ""
+}{}{}{
+    "source file": "test_timeseries1.py",
+    "line number": "34",
+    "func name": "assert_range_equal",
+    "func arg": "(left, right)",
+    "comments": ""
+}{
+    "source file": "test_timeseries2.py",
+    "line number": "25",
+    "func name": "close_open_fixture",
+    "func arg": "(request)",
+    "comments": ""
+}{
+    "source file": "test_timestamp1.py",
+    "line number": "1081",
+    "func name": "test_dt_subclass_add_timedelta",
+    "func arg": "(lh, rh)",
+    "comments": ""
+}{
+    "source file": "test_timezones1.py",
+    "line number": "375",
+    "func name": "test_py2_created_with_datetimez",
+    "func arg": "(datapath, setup_path)",
+    "comments": ""
+}{}{}{}{
+    "source file": "test_timezones5.py",
+    "line number": "97",
+    "func name": "test_infer_tz_mismatch",
+    "func arg": "(infer_setup, ordered)",
+    "comments": ""
+}{}{}{}{}{}{
+    "source file": "test_to_excel1.py",
+    "line number": "297",
+    "func name": "test_css_to_excel_bad_colors",
+    "func arg": "(input_color)",
+    "comments": ""
+}{
+    "source file": "test_to_html1.py",
+    "line number": "781",
+    "func name": "test_html_repr_min_rows",
+    "func arg": "(datapath, max_rows, min_rows, expected)",
+    "comments": ""
+}{}{
+    "source file": "test_to_markdown1.py",
+    "line number": "50",
+    "func name": "test_no_buf",
+    "func arg": "(capsys)",
+    "comments": ""
+}{
+    "source file": "test_to_offset1.py",
+    "line number": "174",
+    "func name": "test_anchored_shortcuts",
+    "func arg": "(shortcut, expected)",
+    "comments": ""
+}{}{
+    "source file": "test_tools1.py",
+    "line number": "2321",
+    "func name": "test_na_to_datetime",
+    "func arg": "(nulls_fixture, klass)",
+    "comments": ""
+}{}{}{
+    "source file": "test_transform1.py",
+    "line number": "1136",
+    "func name": "test_transform_lambda_indexing",
+    "func arg": "()",
+    "comments": ""
+}{}{}{}{}{
+    "source file": "test_ufunc1.py",
+    "line number": "298",
+    "func name": "test_outer",
+    "func arg": "()",
+    "comments": ""
+}{
+    "source file": "test_ujson1.py",
+    "line number": "48",
+    "func name": "numpy",
+    "func arg": "(request)",
+    "comments": ""
+}{}{}{
+    "source file": "test_unsupported1.py",
+    "line number": "22",
+    "func name": "python_engine",
+    "func arg": "(request)",
+    "comments": ""
+}{
+    "source file": "test_upcast1.py",
+    "line number": "54",
+    "func name": "test_upcast_datetime",
+    "func arg": "()",
+    "comments": ""
+}{
+    "source file": "test_usecols1.py",
+    "line number": "565",
+    "func name": "test_usecols_subset_names_mismatch_orig_columns",
+    "func arg": "(all_parsers, usecols)",
+    "comments": ""
+}{
+    "source file": "test_util1.py",
+    "line number": "69",
+    "func name": "test_rng_context",
+    "func arg": "()",
+    "comments": ""
+}{}{
+    "source file": "test_validate_args_and_kwargs1.py",
+    "line number": "73",
+    "func name": "test_validation",
+    "func arg": "()",
+    "comments": ""
+}{
+    "source file": "test_validate_args1.py",
+    "line number": "62",
+    "func name": "test_validation",
+    "func arg": "()",
+    "comments": ""
+}{
+    "source file": "test_validate_kwargs1.py",
+    "line number": "62",
+    "func name": "test_validate_bool_kwarg",
+    "func arg": "(name, value)",
+    "comments": ""
+}{}{
+    "source file": "test_validate2.py",
+    "line number": "7",
+    "func name": "dataframe",
+    "func arg": "()",
+    "comments": ""
+}{}{
+    "source file": "test_value_counts2.py",
+    "line number": "84",
+    "func name": "test_series_groupby_value_counts_with_grouper",
+    "func arg": "()",
+    "comments": ""
+}{}{}{
+    "source file": "test_whitelist1.py",
+    "line number": "393",
+    "func name": "test_all_methods_categorized",
+    "func arg": "(mframe)",
+    "comments": ""
+}{}{
+    "source file": "test_writers1.py",
+    "line number": "35",
+    "func name": "set_engine",
+    "func arg": "(engine, ext)",
+    "comments": "Fixture to set engine for use in each test case.\n\nRather than requiring `engine=...` to be provided explicitly as an argument in each test, this fixture sets a global option to dictate which engine should be used to write Excel files. After executing the test it rolls back said change to the global option.\n"
+}{
+    "source file": "test_xlrd1.py",
+    "line number": "39",
+    "func name": "test_excel_table_sheet_by_index",
+    "func arg": "(datapath, read_ext)",
+    "comments": ""
+}{
+    "source file": "test_xlsxwriter1.py",
+    "line number": "59",
+    "func name": "test_write_append_mode_raises",
+    "func arg": "(ext)",
+    "comments": ""
+}{
+    "source file": "test_xlwt1.py",
+    "line number": "62",
+    "func name": "test_write_append_mode_raises",
+    "func arg": "(ext)",
+    "comments": ""
+}{
+    "source file": "test_xport1.py",
+    "line number": "17",
+    "func name": "numeric_as_float",
+    "func arg": "(data)",
+    "comments": ""
+}{
+    "source file": "test_xs1.py",
+    "line number": "234",
+    "func name": "test_series_getitem_multiindex_xs_by_label",
+    "func arg": "()",
+    "comments": ""
+}{
+    "source file": "test_yqm_offsets1.py",
+    "line number": "80",
+    "func name": "test_on_offset",
+    "func arg": "(offset)",
+    "comments": ""
+}{
+    "source file": "tile1.py",
+    "line number": "592",
+    "func name": "_infer_precision",
+    "func arg": "(base_precision, bins)",
+    "comments": "Infer an appropriate precision for _round_frac\n\n\n"
+}{
+    "source file": "tile2.py",
+    "line number": "552",
+    "func name": "_infer_precision",
+    "func arg": "(base_precision, bins)",
+    "comments": "Infer an appropriate precision for _round_frac\n\n\n"
+}{
+    "source file": "timedeltas1.py",
+    "line number": "129",
+    "func name": "_convert_listlike",
+    "func arg": "(arg, unit, errors, name)",
+    "comments": "Convert a list of objects to a timedelta index object.\n\n\n"
+}{
+    "source file": "timedeltas2.py",
+    "line number": "1072",
+    "func name": "_generate_regular_range",
+    "func arg": "(start, end, periods, offset)",
+    "comments": ""
+}{
+    "source file": "timedeltas3.py",
+    "line number": "436",
+    "func name": "timedelta_range",
+    "func arg": "(start, end, periods, freq, name, closed)",
+    "comments": "Return a fixed frequency TimedeltaIndex, with day as the default frequency.\n\nParameters ---------- start : str or timedelta-like, default None Left bound for generating timedeltas. end : str or timedelta-like, default None Right bound for generating timedeltas. periods : int, default None Number of periods to generate. freq : str or DateOffset, default 'D' Frequency strings can have multiples, e.g. '5H'. name : str, default None Name of the resulting TimedeltaIndex. closed : str, default None Make the interval closed with respect to the given frequency to the 'left', 'right', or both sides (None).\n##### Returns\n* **rng **: TimedeltaIndex\n\n* **<https**: //pandas.pydata.org/pandas-docs/stable/user_guide/timeseries.html#offset-aliases>`__.\n\n* **TimedeltaIndex(['1 days 00**: 00\n\n"
+}{
+    "source file": "timeseries1.py",
+    "line number": "269",
+    "func name": "format_dateaxis",
+    "func arg": "(subplot, freq, index)",
+    "comments": "Pretty-formats the date axis (x-axis).\n\nMajor and minor ticks are automatically set for the frequency of the current underlying series.\n\nAs the dynamic mode is activated by default, changing the limits of the x axis will intelligently change the positions of the ticks.\n"
+}{
+    "source file": "tools1.py",
+    "line number": "372",
+    "func name": "_get_xlim",
+    "func arg": "(lines)",
+    "comments": ""
+}{
+    "source file": "util1.py",
+    "line number": "8",
+    "func name": "cartesian_product",
+    "func arg": "(X)",
+    "comments": "Numpy version of itertools.product. Sometimes faster (for large inputs)...\n\nParameters ---------- X : list-like of list-likes\n##### Returns\n* **product **: list of ndarrays\n\n* **itertools.product **: Cartesian product of input iterables.  Equivalent to\n    nested for-loops.\n\n"
+}

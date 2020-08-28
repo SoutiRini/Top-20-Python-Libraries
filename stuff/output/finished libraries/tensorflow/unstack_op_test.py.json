@@ -1,0 +1,7 @@
+{
+    "source file": "unstack_op_test.py",
+    "line number": "31",
+    "func name": "np_split_squeeze",
+    "func arg": "(array, axis)",
+    "comments": ""
+}

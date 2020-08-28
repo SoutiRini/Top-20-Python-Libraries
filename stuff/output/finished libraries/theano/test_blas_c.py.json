@@ -1,0 +1,7 @@
+{
+    "source file": "test_blas_c.py",
+    "line number": "29",
+    "func name": "skip_if_blas_ldflags_empty",
+    "func arg": "()",
+    "comments": ""
+}

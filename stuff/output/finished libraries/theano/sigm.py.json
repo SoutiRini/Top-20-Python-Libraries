@@ -1,0 +1,7 @@
+{
+    "source file": "sigm.py",
+    "line number": "988",
+    "func name": "local_1msigmoid",
+    "func arg": "(node)",
+    "comments": "1-sigm(x) -> sigm(-x)\n\n\n"
+}

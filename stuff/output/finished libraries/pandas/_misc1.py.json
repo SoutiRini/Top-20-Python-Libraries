@@ -1,0 +1,7 @@
+{
+    "source file": "_misc1.py",
+    "line number": "404",
+    "func name": "autocorrelation_plot",
+    "func arg": "(series, ax, **kwargs)",
+    "comments": "Autocorrelation plot for time series.\n\nParameters ---------- series : Time series ax : Matplotlib axis object, optional **kwargs Options to pass to matplotlib plotting method.\n##### Returns\n* **class**: `matplotlib.axis.Axes`\n\n"
+}

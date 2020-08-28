@@ -1,0 +1,7 @@
+{
+    "source file": "bfloat16_test.py",
+    "line number": "35",
+    "func name": "numpy_assert_allclose",
+    "func arg": "(a, b, **kwargs)",
+    "comments": ""
+}

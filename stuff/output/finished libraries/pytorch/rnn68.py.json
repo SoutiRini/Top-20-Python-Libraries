@@ -1,0 +1,7 @@
+{
+    "source file": "rnn68.py",
+    "line number": "13",
+    "func name": "apply_permutation",
+    "func arg": "(tensor, permutation, dim)",
+    "comments": ""
+}

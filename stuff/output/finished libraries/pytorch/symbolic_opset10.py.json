@@ -1,0 +1,7 @@
+{
+    "source file": "symbolic_opset10.py",
+    "line number": "183",
+    "func name": "fake_quantize_per_tensor_affine",
+    "func arg": "(g, inputs, scale, zero_point, quant_min, quant_max)",
+    "comments": ""
+}

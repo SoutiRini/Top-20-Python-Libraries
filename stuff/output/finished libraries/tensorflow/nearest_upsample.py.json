@@ -1,0 +1,7 @@
+{
+    "source file": "nearest_upsample.py",
+    "line number": "27",
+    "func name": "make_nearest_upsample_tests",
+    "func arg": "(options)",
+    "comments": "Make a set of tests to do nearest_upsample.\n\n\n"
+}

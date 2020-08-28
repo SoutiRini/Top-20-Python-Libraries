@@ -1,0 +1,7 @@
+{
+    "source file": "test_dash_validator.py",
+    "line number": "57",
+    "func name": "test_rejection_by_bad_dash_list",
+    "func arg": "(val, validator)",
+    "comments": ""
+}

@@ -1,0 +1,7 @@
+{
+    "source file": "load_derivatives.py",
+    "line number": "370",
+    "func name": "match_declarations_with_differentiability_info",
+    "func arg": "(declarations, differentiability_infos)",
+    "comments": "Sets the \"derivative\" and \"output_differentiability\" key on declarations to matching differentiability info\n\nIn-place functions will use the out-of-place derivative definition if there is no in-place specific derivative.\n"
+}

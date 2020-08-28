@@ -1,0 +1,7 @@
+{
+    "source file": "serialization.py",
+    "line number": "333",
+    "func name": "_get_registered_object",
+    "func arg": "(name, custom_objects, module_objects)",
+    "comments": ""
+}

@@ -1,0 +1,7 @@
+{
+    "source file": "cells.py",
+    "line number": "116",
+    "func name": "rnn_tanh_cell",
+    "func arg": "(input, hidden, w_ih, w_hh, b_ih, b_hh)",
+    "comments": ""
+}

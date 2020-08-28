@@ -1,0 +1,7 @@
+{
+    "source file": "timedeltas2.py",
+    "line number": "1072",
+    "func name": "_generate_regular_range",
+    "func arg": "(start, end, periods, offset)",
+    "comments": ""
+}

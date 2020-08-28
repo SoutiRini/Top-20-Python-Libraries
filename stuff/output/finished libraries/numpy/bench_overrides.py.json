@@ -1,0 +1,7 @@
+{
+    "source file": "bench_overrides.py",
+    "line number": "32",
+    "func name": "mock_concatenate",
+    "func arg": "(arrays, axis, out)",
+    "comments": ""
+}

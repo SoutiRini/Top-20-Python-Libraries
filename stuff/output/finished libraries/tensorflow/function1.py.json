@@ -1,0 +1,7 @@
+{
+    "source file": "function1.py",
+    "line number": "1346",
+    "func name": "function_def_from_tf_function",
+    "func arg": "(c_func)",
+    "comments": "Converts a SWIG-wrapped TF_Function* to a FunctionDef proto.\n\n\n"
+}

@@ -1,0 +1,7 @@
+{
+    "source file": "sharedvar31.py",
+    "line number": "72",
+    "func name": "scalar_constructor",
+    "func arg": "(value, name, strict, allow_downcast, borrow, target)",
+    "comments": "SharedVariable constructor for scalar values. Default: int64 or float64.\n\nNotes ----- We implement this using 0-d tensors for now.\n\nWe ignore the borrow parameter as we convert ``value`` to an ndarray (this is a new object). This respects the semantic of borrow, as it is a hint to Theano that we can reuse it.\n"
+}

@@ -1,0 +1,7 @@
+{
+    "source file": "_cpp_extension_versioner.py",
+    "line number": "21",
+    "func name": "hash_build_arguments",
+    "func arg": "(hash_value, build_arguments)",
+    "comments": ""
+}

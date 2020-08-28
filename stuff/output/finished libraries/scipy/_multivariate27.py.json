@@ -1,0 +1,7 @@
+{
+    "source file": "_multivariate27.py",
+    "line number": "2314",
+    "func name": "_cho_inv_batch",
+    "func arg": "(a, check_finite)",
+    "comments": "Invert the matrices a_i, using a Cholesky factorization of A, where a_i resides in the last two dimensions of a and the other indices describe the index i.\n\nOverwrites the data in a.\n\nParameters ---------- a : array Array of matrices to invert, where the matrices themselves are stored in the last two dimensions. check_finite : bool, optional Whether to check that the input matrices contain only finite numbers. Disabling may give a performance gain, but may result in problems (crashes, non-termination) if the inputs do contain infinities or NaNs.\n##### Returns\n* **x **: array\n    Array of inverses of the matrices ``a_i``.\n\n* **scipy.linalg.cholesky **: Cholesky factorization of a matrix\n\n"
+}

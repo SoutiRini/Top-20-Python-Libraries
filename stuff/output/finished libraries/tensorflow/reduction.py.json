@@ -1,0 +1,7 @@
+{
+    "source file": "reduction.py",
+    "line number": "28",
+    "func name": "get_reduce_op",
+    "func arg": "(reduction_str)",
+    "comments": "Translate a reduction string name to a reduction op.\n\n\n"
+}

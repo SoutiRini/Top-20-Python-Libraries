@@ -1,0 +1,7 @@
+{
+    "source file": "unidirectional_sequence_rnn.py",
+    "line number": "29",
+    "func name": "make_unidirectional_sequence_rnn_tests",
+    "func arg": "(options)",
+    "comments": "Make a set of tests to do unidirectional_sequence_rnn.\n\n\n"
+}

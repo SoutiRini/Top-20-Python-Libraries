@@ -1,0 +1,7 @@
+{
+    "source file": "tensor_util.py",
+    "line number": "1042",
+    "func name": "maybe_set_static_shape",
+    "func arg": "(tensor, shape)",
+    "comments": "Sets the shape of `tensor` to the `shape`'s constant value, if inferrable.\n\nThis is a temporary workaround to fix shape inference across functional op boundaries. E.g.\n\n```python shape = tf.constant([3]) @tf.function def f(): u = tf.random_uniform(shape) return u ```\n\nIf we were to rely solely on C++ shape inference, the shape of `u` inside `f` would be unknown because C++ shape inference is not aware of the outer graph and all it sees is a Placeholder node when backtracing the captured tensor for `shape`. `maybe_set_static_shape` computes the static shape value of `shape` by traversing the `FuncGraph` boundaries and sets the correct shape.\n\nA longer term solution would be to fix C++ shape inference.\n##### Args\n* **tensor**: A tensor.\n\n* **shape**: A shape tensor.\n\n"
+}

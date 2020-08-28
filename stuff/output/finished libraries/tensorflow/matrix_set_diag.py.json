@@ -1,0 +1,7 @@
+{
+    "source file": "matrix_set_diag.py",
+    "line number": "27",
+    "func name": "make_matrix_set_diag_tests",
+    "func arg": "(options)",
+    "comments": "Make a set of tests for tf.linalg.set_diag op.\n\n\n"
+}

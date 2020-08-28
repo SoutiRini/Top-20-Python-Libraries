@@ -1,0 +1,7 @@
+{
+    "source file": "mnist2.py",
+    "line number": "130",
+    "func name": "evaluation",
+    "func arg": "(logits, labels)",
+    "comments": "Evaluate the quality of the logits at predicting the label.\n\n\n##### Args\n* **logits**: Logits tensor, float - [batch_size, NUM_CLASSES].\n\n* **labels**: Labels tensor, int32 - [batch_size], with values in the\n  range [0, NUM_CLASSES).\n\n##### Returns\n"
+}

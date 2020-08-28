@@ -1,0 +1,7 @@
+{
+    "source file": "tpu_strategy_util.py",
+    "line number": "139",
+    "func name": "shutdown_tpu_system",
+    "func arg": "(cluster_resolver)",
+    "comments": "Shuts down the TPU devices.\n\nThis will clear all caches, even those that are maintained through sequential calls to tf.tpu.experimental.initialize_tpu_system, such as the compilation cache.\n##### Args\n* **cluster_resolver**: A tf.distribute.cluster_resolver.TPUClusterResolver,\n    which provides information about the TPU cluster.\n\n"
+}

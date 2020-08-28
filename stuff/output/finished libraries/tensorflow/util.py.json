@@ -1,0 +1,7 @@
+{
+    "source file": "util.py",
+    "line number": "399",
+    "func name": "convert_bytes_to_c_source",
+    "func arg": "(data, array_name, max_line_width, include_guard, include_path, use_tensorflow_license)",
+    "comments": "Returns strings representing a C constant array containing `data`.\n\n\n##### Args\n* **data**: Byte array that will be converted into a C constant.\n\n* **array_name**: String to use as the variable name for the constant array.\n\n* **max_line_width**: The longest line length, for formatting purposes.\n\n* **include_guard**: Name to use for the include guard macro definition.\n\n* **include_path**: Optional path to include in the source file.\n\n* **use_tensorflow_license**: Whether to include the standard TensorFlow Apache2\n  license in the generated files.\n\n##### Returns\n"
+}

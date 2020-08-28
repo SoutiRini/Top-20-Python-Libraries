@@ -1,0 +1,7 @@
+{
+    "source file": "glm.py",
+    "line number": "38",
+    "func name": "_y_pred_deviance_derivative",
+    "func arg": "(coef, X, y, weights, family, link)",
+    "comments": "Compute y_pred and the derivative of the deviance w.r.t coef.\n\n\n"
+}

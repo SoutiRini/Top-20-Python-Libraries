@@ -1,0 +1,7 @@
+{
+    "source file": "inverse_registrations.py",
+    "line number": "224",
+    "func name": "_inverse_householder",
+    "func arg": "(householder_operator)",
+    "comments": ""
+}

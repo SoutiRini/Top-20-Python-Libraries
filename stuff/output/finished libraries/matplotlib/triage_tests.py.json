@@ -1,0 +1,7 @@
+{
+    "source file": "triage_tests.py",
+    "line number": "338",
+    "func name": "launch",
+    "func arg": "(result_images, source)",
+    "comments": "Launch the GUI.\n\n\n"
+}

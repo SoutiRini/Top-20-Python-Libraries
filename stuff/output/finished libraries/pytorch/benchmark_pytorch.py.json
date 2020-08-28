@@ -1,0 +1,7 @@
+{
+    "source file": "benchmark_pytorch.py",
+    "line number": "185",
+    "func name": "create_pytorch_op_test_case",
+    "func arg": "(op_bench, test_config)",
+    "comments": "This method is used to generate est. func_name is a global unique string. For PyTorch add operator with M=8, N=2, K=1, tag = long, here are the values for the members in test_case: op.module_name: add framework: PyTorch test_config: TestConfig(test_name='add_M8_N2_K1', input_config='M: 8, N: 2, K: 1', tag='long', run_backward=False) func_name: addPyTorchTestConfig(test_name='add_M8_N2_K1', input_config='M: 8, N: 2, K: 1', tag='long', run_backward=False)\n\n\n"
+}

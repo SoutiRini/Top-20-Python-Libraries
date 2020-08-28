@@ -1,0 +1,7 @@
+{
+    "source file": "util5.py",
+    "line number": "138",
+    "func name": "_make_bound_method",
+    "func arg": "(func)",
+    "comments": "Magic for creating bound methods (used for _unload).\n\n\n"
+}

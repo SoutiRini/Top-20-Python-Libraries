@@ -1,0 +1,7 @@
+{
+    "source file": "_utils_internal.py",
+    "line number": "37",
+    "func name": "get_source_lines_and_file",
+    "func arg": "(obj, error_msg)",
+    "comments": "Wrapper around inspect.getsourcelines and inspect.getsourcefile.\n\n\n"
+}

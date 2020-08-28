@@ -1,0 +1,7 @@
+{
+    "source file": "templating.py",
+    "line number": "134",
+    "func name": "render_template_string",
+    "func arg": "(source, **context)",
+    "comments": "Renders a template from the given template source string with the given context. Template variables will be autoescaped.\n\nparam source: the source code of the template to be rendered :param context: the variables that should be available in the context of the template.\n"
+}

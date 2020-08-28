@@ -1,0 +1,7 @@
+{
+    "source file": "_birch.py",
+    "line number": "40",
+    "func name": "_split_node",
+    "func arg": "(node, threshold, branching_factor)",
+    "comments": "The node has to be split if there is no place for a new subcluster in the node. 1. Two empty nodes and two empty subclusters are initialized. 2. The pair of distant subclusters are found. 3. The properties of the empty subclusters and nodes are updated according to the nearest distance between the subclusters to the pair of distant subclusters. 4. The two nodes are set as children to the two subclusters.\n\n\n"
+}

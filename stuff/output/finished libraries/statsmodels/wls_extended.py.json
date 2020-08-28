@@ -1,0 +1,7 @@
+{
+    "source file": "wls_extended.py",
+    "line number": "116",
+    "func name": "index_trim_outlier",
+    "func arg": "(resid, k)",
+    "comments": "returns indices to residual array with k outliers removed\n\nParameters ---------- resid : array_like, 1d data vector, usually residuals of a regression k : int number of outliers to remove\n##### Returns\n* **trimmed_index **: ndarray, 1d\n    index array with k outliers removed\n\n* **outlier_index **: ndarray, 1d\n    index array of k outliers\n\n"
+}

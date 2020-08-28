@@ -1,0 +1,7 @@
+{
+    "source file": "disable_internet.py",
+    "line number": "137",
+    "func name": "no_internet",
+    "func arg": "(verbose)",
+    "comments": "Temporarily disables internet access (if not already disabled).\n\nIf it was already disabled before entering the context manager (i.e. `turn_off_internet` was called previously) then this is a no-op and leaves internet access disabled until a manual call to `turn_on_internet`.\n"
+}

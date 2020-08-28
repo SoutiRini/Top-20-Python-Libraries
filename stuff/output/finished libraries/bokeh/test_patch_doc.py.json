@@ -1,0 +1,7 @@
+{
+    "source file": "test_patch_doc.py",
+    "line number": "253",
+    "func name": "test_process_document_events_with_buffers_and_use_buffers_false",
+    "func arg": "()",
+    "comments": ""
+}

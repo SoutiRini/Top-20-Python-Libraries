@@ -1,0 +1,7 @@
+{
+    "source file": "function_def_to_graph.py",
+    "line number": "258",
+    "func name": "_get_num_args",
+    "func arg": "(arg_def, node_def)",
+    "comments": ""
+}

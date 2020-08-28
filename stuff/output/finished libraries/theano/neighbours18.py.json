@@ -1,0 +1,7 @@
+{
+    "source file": "neighbours18.py",
+    "line number": "717",
+    "func name": "neibs2images",
+    "func arg": "(neibs, neib_shape, original_shape, mode)",
+    "comments": "Function :func:`neibs2images <theano.sandbox.neighbours.neibs2images>` performs the inverse operation of :func:`images2neibs <theano.sandbox.neigbours.neibs2images>`. It inputs the output of :func:`images2neibs <theano.sandbox.neigbours.neibs2images>` and reconstructs its input.\n\nParameters ---------- neibs : 2d tensor Like the one obtained by :func:`images2neibs <theano.sandbox.neigbours.neibs2images>`. neib_shape `neib_shape` that was used in :func:`images2neibs <theano.sandbox.neigbours.neibs2images>`. original_shape Original shape of the 4d tensor given to :func:`images2neibs <theano.sandbox.neigbours.neibs2images>`\n##### Returns\n* **object\n    Reconstructs the input of\n    **: func\n\n* ****: func\n\n* **.. code-block**: \n\n* **.. note**: \n\n"
+}

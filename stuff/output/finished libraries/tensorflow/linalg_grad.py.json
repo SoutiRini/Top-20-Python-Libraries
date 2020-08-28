@@ -1,0 +1,7 @@
+{
+    "source file": "linalg_grad.py",
+    "line number": "1017",
+    "func name": "_MatmulExtractingThreeDiagonals",
+    "func arg": "(x, y_tr)",
+    "comments": "Multiplies matrices and extracts three diagonals from the product.\n\nWith sizes M x K and K x M, this function takes O(MK) time and O(M) space, while using math_ops.matmul, and then extracting the diagonals would take O(M^2 K) time and O(M^2) space.\n##### Args\n* **x**: first matrix\n\n* **y_tr**: second matrix transposed\n\n##### Returns\n"
+}

@@ -1,0 +1,7 @@
+{
+    "source file": "_base1.py",
+    "line number": "1157",
+    "func name": "_fetch_remote",
+    "func arg": "(remote, dirname)",
+    "comments": "Helper function to download a remote dataset into path\n\nFetch a dataset pointed by remote's url, save into path using remote's filename and ensure its integrity based on the SHA256 Checksum of the downloaded file.\n\nParameters ---------- remote : RemoteFileMetadata Named tuple containing remote dataset meta information: url, filename and checksum\n\ndirname : string Directory to save the file to.\n##### Returns\n* **file_path**: string\n    Full path of the created file.\n\n"
+}

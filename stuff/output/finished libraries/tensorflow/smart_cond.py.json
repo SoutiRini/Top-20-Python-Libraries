@@ -1,0 +1,7 @@
+{
+    "source file": "smart_cond.py",
+    "line number": "93",
+    "func name": "smart_case",
+    "func arg": "(pred_fn_pairs, default, exclusive, name)",
+    "comments": "Like tf.case, except attempts to statically evaluate predicates.\n\nIf any predicate in `pred_fn_pairs` is a bool or has a constant value, the associated callable will be called or omitted depending on its value. Otherwise this functions like tf.case.\n##### Args\n* **pred_fn_pairs**: Dict or list of pairs of a boolean scalar tensor and a\n               callable which returns a list of tensors.\n\n* **default**: Optional callable that returns a list of tensors.\n\n* **exclusive**: True iff at most one predicate is allowed to evaluate to `True`.\n\n* **name**: A name for this operation (optional).\n\n##### Returns\n"
+}

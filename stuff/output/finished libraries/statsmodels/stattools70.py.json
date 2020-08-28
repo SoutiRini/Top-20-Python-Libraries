@@ -1,0 +1,7 @@
+{
+    "source file": "stattools70.py",
+    "line number": "442",
+    "func name": "medcouple",
+    "func arg": "(y, axis)",
+    "comments": "Calculate the medcouple robust measure of skew.\n\nParameters ---------- y : array_like Data to compute use in the estimator. axis : {int, None} Axis along which the medcouple statistic is computed.\n\nIf `None`, the entire array is used.\n##### Returns\n* **mc **: ndarray\n    The medcouple statistic with the same shape as `y`, with the specified\n    axis removed.\n\n"
+}

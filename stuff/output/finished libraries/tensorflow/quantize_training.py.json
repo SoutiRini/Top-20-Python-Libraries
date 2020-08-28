@@ -1,0 +1,7 @@
+{
+    "source file": "quantize_training.py",
+    "line number": "31",
+    "func name": "do_quantize_training_on_graphdef",
+    "func arg": "(input_graph, num_bits)",
+    "comments": "A general quantization scheme is being developed in `tf.contrib.quantize`.\n\nConsider using that instead, though since it is in the tf.contrib namespace, it is not subject to backward compatibility guarantees.\n##### Args\n* **input_graph**: A `GraphDef`.\n\n* **num_bits**: The number of bits for quantize training.\n\n##### Returns\n"
+}

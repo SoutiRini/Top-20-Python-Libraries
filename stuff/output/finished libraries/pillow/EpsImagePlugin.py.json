@@ -1,0 +1,7 @@
+{
+    "source file": "EpsImagePlugin.py",
+    "line number": "347",
+    "func name": "_save",
+    "func arg": "(im, fp, filename, eps)",
+    "comments": "EPS Writer for the Python Imaging Library.\n\n\n"
+}

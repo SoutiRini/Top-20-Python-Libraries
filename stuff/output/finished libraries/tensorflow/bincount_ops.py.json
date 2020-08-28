@@ -1,0 +1,7 @@
+{
+    "source file": "bincount_ops.py",
+    "line number": "502",
+    "func name": "validate_ragged_weights",
+    "func arg": "(values, weights, dtype)",
+    "comments": "Validates the passed weight tensor or creates an empty one.\n\n\n"
+}

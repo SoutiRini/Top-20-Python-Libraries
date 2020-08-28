@@ -1,0 +1,7 @@
+{
+    "source file": "initializers.py",
+    "line number": "123",
+    "func name": "update_initializer",
+    "func arg": "(initializer_class, operator_name_and_kwargs, default_operator_name_and_kwargs)",
+    "comments": "A helper function to convert from operator_name_and_kwargs to new object of type initializer_class. This function serves two purposes\n\n1. Support for custom initialization operators being passed in 2. Allow user to specify a custom Initializer without overwriting default operators used for initialization\n\nIf initializer_class is None, creates a default initializer using the Initializer class and operator_name_and_kwargs provided\n\nIf operator_name_and_kwargs is None, uses default_operator_name_and_kwargs\n\nreturns an instantiated Initializer object\n"
+}

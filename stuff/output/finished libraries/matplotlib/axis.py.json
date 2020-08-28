@@ -1,0 +1,7 @@
+{
+    "source file": "axis.py",
+    "line number": "1942",
+    "func name": "_make_getset_interval",
+    "func arg": "(method_name, lim_name, attr_name)",
+    "comments": "Helper to generate ``get_{data,view}_interval`` and ``set_{data,view}_interval`` implementations.\n\n\n"
+}

@@ -1,0 +1,7 @@
+{
+    "source file": "cc.py",
+    "line number": "1874",
+    "func name": "_default_checker",
+    "func arg": "(x, y)",
+    "comments": "Default checker for DualLinker. This checks that the variables contain the same data using ==.\n\nParameters: ---------- x,y the variables to compare data\n"
+}

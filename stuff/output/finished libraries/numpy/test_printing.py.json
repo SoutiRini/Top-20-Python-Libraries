@@ -1,0 +1,7 @@
+{
+    "source file": "test_printing.py",
+    "line number": "275",
+    "func name": "test_nonnumeric_object_coefficients",
+    "func arg": "(coefs, tgt)",
+    "comments": "Test coef fallback for object arrays of non-numeric coefficients.\n\n\n"
+}

@@ -1,0 +1,7 @@
+{
+    "source file": "outliers_influence.py",
+    "line number": "1063",
+    "func name": "summary_table",
+    "func arg": "(res, alpha)",
+    "comments": "Generate summary table of outlier and influence similar to SAS\n\nParameters ---------- alpha : float significance level for confidence interval\n##### Returns\n* **st **: SimpleTable\n   table with results that can be printed\n\n* **data **: ndarray\n   calculated measures and statistics for the table\n\n* **ss2 **: list[str]\n   column_names for table (Note\n\n"
+}

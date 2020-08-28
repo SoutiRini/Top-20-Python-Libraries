@@ -1,0 +1,7 @@
+{
+    "source file": "factorplots.py",
+    "line number": "160",
+    "func name": "_recode",
+    "func arg": "(x, levels)",
+    "comments": "Recode categorial data to int factor.\n\nParameters ---------- x : array_like array like object supporting with numpy array methods of categorially coded data. levels : dict mapping of labels to integer-codings\n##### Returns\n* **out **: instance numpy.ndarray\n\n"
+}

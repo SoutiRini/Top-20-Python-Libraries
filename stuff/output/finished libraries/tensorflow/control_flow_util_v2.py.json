@@ -1,0 +1,7 @@
+{
+    "source file": "control_flow_util_v2.py",
+    "line number": "293",
+    "func name": "get_func_graph",
+    "func arg": "(op, input_shapes, func_name)",
+    "comments": "Generates and returns a FuncGraph for the given op and input_shapes.\n\n\n"
+}

@@ -1,0 +1,7 @@
+{
+    "source file": "_diagnostics_count.py",
+    "line number": "280",
+    "func name": "test_poisson_zeroinflation_brock",
+    "func arg": "(results_poisson)",
+    "comments": "score test for zero modification in Poisson, special case\n\nThis assumes that the Poisson model has a constant and that the zero modification probability is constant.\n\nThis is a special case of test_poisson_zeroinflation derived by van den Brock 1995.\n\nThe test reports two sided and one sided alternatives based on the normal distribution of the test statistic.\n"
+}

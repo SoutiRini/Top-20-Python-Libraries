@@ -1,0 +1,7 @@
+{
+    "source file": "tpu_test.py",
+    "line number": "158",
+    "func name": "find_xla_einsum",
+    "func arg": "(g)",
+    "comments": ""
+}

@@ -1,0 +1,7 @@
+{
+    "source file": "module_wrapper.py",
+    "line number": "56",
+    "func name": "has_deprecation_decorator",
+    "func arg": "(symbol)",
+    "comments": "Checks if given object has a deprecation decorator.\n\nWe check if deprecation decorator is in decorators as well as whether symbol is a class whose __init__ method has a deprecation decorator.\n##### Args\n* **symbol**: Python object.\n\n##### Returns\n"
+}

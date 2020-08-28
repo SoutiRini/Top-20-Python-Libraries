@@ -1,0 +1,7 @@
+{
+    "source file": "test_interval4.py",
+    "line number": "69",
+    "func name": "create_series_categorical_intervals",
+    "func arg": "(left, right, closed)",
+    "comments": ""
+}

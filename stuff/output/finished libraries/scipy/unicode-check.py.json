@@ -1,0 +1,7 @@
+{
+    "source file": "unicode-check.py",
+    "line number": "17",
+    "func name": "unicode_check",
+    "func arg": "(showall)",
+    "comments": "If showall is True, all non-ASCII characters are displayed.\n\n\n"
+}

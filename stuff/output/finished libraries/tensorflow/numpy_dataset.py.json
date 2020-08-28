@@ -1,0 +1,7 @@
+{
+    "source file": "numpy_dataset.py",
+    "line number": "76",
+    "func name": "one_host_numpy_dataset",
+    "func arg": "(numpy_input, colocate_with, session)",
+    "comments": "Create a dataset on `colocate_with` from `numpy_input`.\n\n\n"
+}

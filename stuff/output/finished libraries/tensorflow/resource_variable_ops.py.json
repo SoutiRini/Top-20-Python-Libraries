@@ -1,0 +1,7 @@
+{
+    "source file": "resource_variable_ops.py",
+    "line number": "2140",
+    "func name": "copy_to_graph_uninitialized",
+    "func arg": "(var)",
+    "comments": "Copies an existing variable to a new graph, with no initializer.\n\n\n"
+}

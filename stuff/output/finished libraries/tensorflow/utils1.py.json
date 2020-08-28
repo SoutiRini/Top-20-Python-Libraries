@@ -1,0 +1,7 @@
+{
+    "source file": "utils1.py",
+    "line number": "242",
+    "func name": "remove_training_arg",
+    "func arg": "(index, args, kwargs)",
+    "comments": ""
+}

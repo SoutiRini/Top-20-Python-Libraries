@@ -1,0 +1,7 @@
+{
+    "source file": "conftest22.py",
+    "line number": "122",
+    "func name": "groupby_func",
+    "func arg": "(request)",
+    "comments": "yields both aggregation and transformation functions.\n\n\n"
+}

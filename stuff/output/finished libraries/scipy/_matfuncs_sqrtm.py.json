@@ -1,0 +1,7 @@
+{
+    "source file": "_matfuncs_sqrtm.py",
+    "line number": "114",
+    "func name": "sqrtm",
+    "func arg": "(A, disp, blocksize)",
+    "comments": "Matrix square root.\n\nParameters ---------- A : (N, N) array_like Matrix whose square root to evaluate disp : bool, optional Print warning if error in the result is estimated large instead of returning estimated error. (Default: True) blocksize : integer, optional If the blocksize is not degenerate with respect to the size of the input array, then use a blocked algorithm. (Default: 64)\n##### Returns\n* **sqrtm **: (N, N) ndarray\n    Value of the sqrt function at `A`\n\n* **errest **: float\n    (if disp == False)\n    Frobenius norm of the estimated error, ||err||_F / ||A||_F\n\n"
+}

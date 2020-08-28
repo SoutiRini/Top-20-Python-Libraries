@@ -1,0 +1,7 @@
+{
+    "source file": "reduce.py",
+    "line number": "266",
+    "func name": "make_reduce_any_tests",
+    "func arg": "(options)",
+    "comments": "Make a set of tests to do any.\n\n\n"
+}

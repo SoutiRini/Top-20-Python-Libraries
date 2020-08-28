@@ -1,0 +1,7 @@
+{
+    "source file": "test_arima.py",
+    "line number": "2742",
+    "func name": "test_arma_exog_const_trend_nc",
+    "func arg": "(reset_randomstate)",
+    "comments": ""
+}

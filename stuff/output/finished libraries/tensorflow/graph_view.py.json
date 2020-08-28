@@ -1,0 +1,7 @@
+{
+    "source file": "graph_view.py",
+    "line number": "89",
+    "func name": "_serialize_slot_variables",
+    "func arg": "(trackable_objects, node_ids, object_names)",
+    "comments": "Gather and name slot variables.\n\n\n"
+}

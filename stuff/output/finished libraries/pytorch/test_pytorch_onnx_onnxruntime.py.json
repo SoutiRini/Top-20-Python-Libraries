@@ -1,0 +1,7 @@
+{
+    "source file": "test_pytorch_onnx_onnxruntime.py",
+    "line number": "3734",
+    "func name": "setup_rnn_tests",
+    "func arg": "()",
+    "comments": ""
+}

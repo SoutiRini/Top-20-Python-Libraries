@@ -1,0 +1,7 @@
+{
+    "source file": "colorbar1.py",
+    "line number": "781",
+    "func name": "colorbar",
+    "func arg": "(mappable, cax, ax, **kw)",
+    "comments": "Create a colorbar for a ScalarMappable instance.\n\nDocumentation for the pyplot thin wrapper:\n\n%s\n"
+}

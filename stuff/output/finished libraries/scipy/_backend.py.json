@@ -1,0 +1,7 @@
+{
+    "source file": "_backend.py",
+    "line number": "404",
+    "func name": "wrap_single_convertor",
+    "func arg": "(convert_single)",
+    "comments": "Wraps a ``__ua_convert__`` defined for a single element to all elements. If any of them return ``NotImplemented``, the operation is assumed to be undefined.\n\nAccepts a signature of (value, type, coerce).\n"
+}

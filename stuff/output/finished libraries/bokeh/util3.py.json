@@ -1,0 +1,7 @@
+{
+    "source file": "util3.py",
+    "line number": "113",
+    "func name": "references_json",
+    "func arg": "(references)",
+    "comments": "Given a list of all models in a graph, return JSON representing them and their properties.\n\n\n##### Args\n* **references (seq[Model]) **: A list of models to convert to JSON\n\n##### Returns\n"
+}

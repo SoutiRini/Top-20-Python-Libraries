@@ -1,0 +1,7 @@
+{
+    "source file": "test_optimize.py",
+    "line number": "2154",
+    "func name": "test_memoize_jac_with_bfgs",
+    "func arg": "(function_with_gradient)",
+    "comments": "Tests that using MemoizedJac in combination with ScalarFunction and BFGS does not lead to repeated function evaluations. Tests changes made in response to GH11868.\n\n\n"
+}

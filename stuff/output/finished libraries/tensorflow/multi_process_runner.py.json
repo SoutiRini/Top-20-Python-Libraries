@@ -1,0 +1,7 @@
+{
+    "source file": "multi_process_runner.py",
+    "line number": "994",
+    "func name": "test_main",
+    "func arg": "()",
+    "comments": "Main function to be called within `__main__` of a test file.\n\n\n"
+}

@@ -1,0 +1,7 @@
+{
+    "source file": "utils1.py",
+    "line number": "982",
+    "func name": "_median_nancheck",
+    "func arg": "(data, result, axis, out)",
+    "comments": "Utility function to check median result from data for NaN values at the end and return NaN in that case. Input result can also be a MaskedArray.\n\nParameters ---------- data : array Input data to median function result : Array or MaskedArray Result of median function axis : {int, sequence of int, None}, optional Axis or axes along which the median was computed. out : ndarray, optional Output array in which to place the result.\n##### Returns\n* **median **: scalar or ndarray\n    Median or NaN in axes which contained NaN in the input.\n\n"
+}

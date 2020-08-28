@@ -1,0 +1,7 @@
+{
+    "source file": "nb_to_doc.py",
+    "line number": "102",
+    "func name": "strip_output",
+    "func arg": "(nb, keep_output, keep_count, extra_keys)",
+    "comments": "Strip the outputs, execution count/prompt number and miscellaneous metadata from a notebook object, unless specified to keep either the outputs or counts. `extra_keys` could be 'metadata.foo cell.metadata.bar metadata.baz'\n\n\n"
+}

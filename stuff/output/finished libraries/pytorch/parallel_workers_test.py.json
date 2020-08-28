@@ -1,0 +1,7 @@
+{
+    "source file": "parallel_workers_test.py",
+    "line number": "47",
+    "func name": "dequeue_value",
+    "func arg": "(queue)",
+    "comments": ""
+}

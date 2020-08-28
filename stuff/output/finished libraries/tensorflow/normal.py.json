@@ -1,0 +1,7 @@
+{
+    "source file": "normal.py",
+    "line number": "275",
+    "func name": "_kl_normal_normal",
+    "func arg": "(n_a, n_b, name)",
+    "comments": "Calculate the batched KL divergence KL(n_a || n_b) with n_a and n_b Normal.\n\n\n##### Args\n* **n_a**: instance of a Normal distribution object.\n\n* **n_b**: instance of a Normal distribution object.\n\n* **name**: (optional) Name to use for created operations.\n  default is \"kl_normal_normal\".\n\n##### Returns\n"
+}

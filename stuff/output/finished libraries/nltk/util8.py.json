@@ -1,0 +1,7 @@
+{
+    "source file": "util8.py",
+    "line number": "15",
+    "func name": "log_base2",
+    "func arg": "(score)",
+    "comments": "Convenience function for computing logarithms with base 2.\n\n\n"
+}

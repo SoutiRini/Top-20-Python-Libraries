@@ -1,0 +1,7 @@
+{
+    "source file": "ragged_concat_ops.py",
+    "line number": "315",
+    "func name": "_concat_ragged_splits",
+    "func arg": "(splits_list)",
+    "comments": "Concatenates a list of RaggedTensor splits to form a single splits.\n\n\n"
+}

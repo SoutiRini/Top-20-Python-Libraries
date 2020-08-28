@@ -1,0 +1,7 @@
+{
+    "source file": "fasttext_wrapper.py",
+    "line number": "448",
+    "func name": "ft_hash",
+    "func arg": "(string)",
+    "comments": "Reproduces [hash method](https://github.com/facebookresearch/fastText/blob/master/src/dictionary.cc) used in fastText.\n\n\n"
+}

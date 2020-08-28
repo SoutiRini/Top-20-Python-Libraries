@@ -1,0 +1,7 @@
+{
+    "source file": "layer_model_instantiator.py",
+    "line number": "98",
+    "func name": "generate_training_nets",
+    "func arg": "(model, include_tags)",
+    "comments": ""
+}

@@ -1,0 +1,7 @@
+{
+    "source file": "test_supervised.py",
+    "line number": "348",
+    "func name": "test_mutual_info_score_positive_constant_label",
+    "func arg": "(labels_true, labels_pred)",
+    "comments": ""
+}

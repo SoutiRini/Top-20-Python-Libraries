@@ -1,0 +1,7 @@
+{
+    "source file": "data_parallel.py",
+    "line number": "177",
+    "func name": "data_parallel",
+    "func arg": "(module, inputs, device_ids, output_device, dim, module_kwargs)",
+    "comments": "Evaluates module(input) in parallel across the GPUs given in device_ids.\n\nThis is the functional version of the DataParallel module.\n##### Args\n* **module (Module)**: the module to evaluate in parallel\n\n* **inputs (Tensor)**: inputs to the module\n\n* **device_ids (list of int or torch.device)**: GPU ids on which to replicate module\n\n* **output_device (list of int or torch.device)**: GPU location of the output  Use -1 to indicate the CPU.\n    (default\n\n##### Returns\n"
+}

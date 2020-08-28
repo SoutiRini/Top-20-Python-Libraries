@@ -1,0 +1,7 @@
+{
+    "source file": "sparse_csr_matrix_ops.py",
+    "line number": "147",
+    "func name": "matmul",
+    "func arg": "(a, b, transpose_a, transpose_b, adjoint_a, adjoint_b, name)",
+    "comments": "Perform a sparse matrix matmul between `a` and `b`.\n\nPerforms a contraction between `a` and `b` along the two innermost dimensions. If both `a` and `b` are instances of `SparseMatrix`, returns a new instance of `SparseMatrix` (same type as `a`).\n\nIf one is not an instance of `SparseMatrix`, returns a dense `Tensor`:\n\n``` c = opA(a) . opB(b) ``` where `opA` (resp. `opB`) is the transpose or hermitian transpose depending on the values of `transpose_a` (resp. `transpose_b`) and `adjoint_a` (resp. `adjoint_b`).\n##### Args\n* **a**: `Tensor` or `SparseMatrix`, having rank `2` or `3`.\n\n* **b**: `Tensor` or `SparseMatrix`, having rank `2` or `3`.\n\n* **transpose_a**: Python `bool`.\n\n* **transpose_b**: Python `bool`.\n\n* **adjoint_a**: Python `bool`.\n\n* **adjoint_b**: Python `bool`.\n\n* **name**: Optional name to use when creating ops.\n\n##### Returns\n"
+}

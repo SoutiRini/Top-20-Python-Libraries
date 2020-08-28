@@ -1,0 +1,7 @@
+{
+    "source file": "extras.py",
+    "line number": "1889",
+    "func name": "polyfit",
+    "func arg": "(x, y, deg, rcond, full, w, cov)",
+    "comments": "Any masked values in x is propagated in y, and vice-versa.\n\n\n"
+}

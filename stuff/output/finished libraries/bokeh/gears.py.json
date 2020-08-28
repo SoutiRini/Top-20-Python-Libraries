@@ -1,0 +1,7 @@
+{
+    "source file": "gears.py",
+    "line number": "60",
+    "func name": "epicyclic_gear",
+    "func arg": "(module, sun_teeth, planet_teeth)",
+    "comments": ""
+}

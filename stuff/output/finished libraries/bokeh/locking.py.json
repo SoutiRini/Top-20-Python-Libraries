@@ -1,0 +1,7 @@
+{
+    "source file": "locking.py",
+    "line number": "37",
+    "func name": "without_document_lock",
+    "func arg": "(func)",
+    "comments": "Wrap a callback function to execute without first obtaining the document lock.\n\n\n##### Args\n* **func (callable) **: The function to wrap\n\n##### Returns\n* **callable **: a function wrapped to execute without a |Document| lock.\n\n* **h are**: \n\n* **unc**: `~bokeh.document.Document.remove_next_tick_callback`\n these may be used safely without taking the document lock. To make\n\n"
+}

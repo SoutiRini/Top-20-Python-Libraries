@@ -1,0 +1,7 @@
+{
+    "source file": "functional_test.py",
+    "line number": "18",
+    "func name": "_tensor_splits",
+    "func arg": "(draw, add_axis)",
+    "comments": "Generates (axis, split_info, tensor_splits) tuples.\n\n\n"
+}

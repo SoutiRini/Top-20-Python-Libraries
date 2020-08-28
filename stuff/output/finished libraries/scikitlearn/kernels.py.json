@@ -1,0 +1,7 @@
+{
+    "source file": "kernels.py",
+    "line number": "2119",
+    "func name": "_approx_fprime",
+    "func arg": "(xk, f, epsilon, args)",
+    "comments": ""
+}

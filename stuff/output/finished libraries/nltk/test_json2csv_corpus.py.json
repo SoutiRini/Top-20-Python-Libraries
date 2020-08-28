@@ -1,0 +1,7 @@
+{
+    "source file": "test_json2csv_corpus.py",
+    "line number": "23",
+    "func name": "are_files_identical",
+    "func arg": "(filename1, filename2, debug)",
+    "comments": "Compare two files, ignoring carriage returns.\n\n\n"
+}

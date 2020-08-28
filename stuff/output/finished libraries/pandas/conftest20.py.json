@@ -1,0 +1,7 @@
+{
+    "source file": "conftest20.py",
+    "line number": "119",
+    "func name": "encoding_fmt",
+    "func arg": "(request)",
+    "comments": "Fixture for all possible string formats of a UTF encoding.\n\n\n"
+}

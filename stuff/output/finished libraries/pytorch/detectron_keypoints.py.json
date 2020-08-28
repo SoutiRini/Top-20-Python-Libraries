@@ -1,0 +1,7 @@
+{
+    "source file": "detectron_keypoints.py",
+    "line number": "90",
+    "func name": "approx_heatmap_keypoint",
+    "func arg": "(heatmaps_in, bboxes_in)",
+    "comments": "Mask R-CNN uses bicubic upscaling before taking the maximum of the heat map for keypoints. We are using bilinear upscaling, which means we can approximate the maximum coordinate with the low dimension maximum coordinates. We would like to avoid bicubic upscaling, because it is computationally expensive. Brown and Lowe  (Invariant Features from Interest Point Groups, 2002) uses a method  for fitting a 3D quadratic function to the local sample points to determine the interpolated location of the maximum of scale space, and his experiments showed that this provides a substantial improvement to matching and stability for keypoint extraction. This approach uses the Taylor expansion (up to the quadratic terms) of the scale-space function. It is equivalent with the Newton method. This efficient method were used in many keypoint estimation algorithms like SIFT, SURF etc...\n\nThe implementation of Newton methods with numerical analysis is straight forward and super simple, though we need a linear solver.\n"
+}

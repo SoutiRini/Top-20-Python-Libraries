@@ -1,0 +1,7 @@
+{
+    "source file": "test_nn.py",
+    "line number": "9069",
+    "func name": "_buildEquivalentAffineTransforms3d",
+    "func arg": "(device, input_size, output_size, angle_rad, axis_vector)",
+    "comments": ""
+}

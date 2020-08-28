@@ -1,0 +1,7 @@
+{
+    "source file": "op_hint.py",
+    "line number": "1305",
+    "func name": "convert_op_hints_to_stubs",
+    "func arg": "(session, graph_def, write_callback)",
+    "comments": "Converts a graphdef with LiteOp hints into stub operations.\n\nThis is used to prepare for toco conversion of complex intrinsic usages. Note: only one of session or graph_def should be used, not both.\n##### Args\n* **session**: A TensorFlow session that contains the graph to convert.\n\n* **graph_def**: A graph def that we should convert.\n\n* **write_callback**: A function pointer that can be used to write intermediate\n  steps of graph transformation (optional).\n\n##### Returns\n"
+}

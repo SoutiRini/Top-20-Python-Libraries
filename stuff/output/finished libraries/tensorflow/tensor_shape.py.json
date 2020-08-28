@@ -1,0 +1,7 @@
+{
+    "source file": "tensor_shape.py",
+    "line number": "1238",
+    "func name": "unknown_shape",
+    "func arg": "(rank, **kwargs)",
+    "comments": "Returns an unknown TensorShape, optionally with a known rank.\n\n\n##### Args\n* **rank**: (Optional) If specified, the number of dimensions in the shape.\n\n* ****kwargs**: For backwards compatibility.\n\n##### Returns\n"
+}

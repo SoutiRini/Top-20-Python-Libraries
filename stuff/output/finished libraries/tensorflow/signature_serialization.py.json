@@ -1,0 +1,7 @@
+{
+    "source file": "signature_serialization.py",
+    "line number": "265",
+    "func name": "validate_saveable_view",
+    "func arg": "(saveable_view)",
+    "comments": "Performs signature-related sanity checks on `saveable_view`.\n\n\n"
+}

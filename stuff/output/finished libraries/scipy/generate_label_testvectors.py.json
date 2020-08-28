@@ -1,0 +1,7 @@
+{
+    "source file": "generate_label_testvectors.py",
+    "line number": "5",
+    "func name": "generate_test_vecs",
+    "func arg": "(infile, strelfile, resultfile)",
+    "comments": "test label with different structuring element neighborhoods\n\n\n"
+}

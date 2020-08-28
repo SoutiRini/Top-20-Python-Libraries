@@ -1,0 +1,7 @@
+{
+    "source file": "palettes.py",
+    "line number": "1029",
+    "func name": "set_color_codes",
+    "func arg": "(palette)",
+    "comments": "Change how matplotlib color shorthands are interpreted.\n\nCalling this will change how shorthand codes like \"b\" or \"g\" are interpreted by matplotlib in subsequent plots.\n\nParameters ---------- palette : {deep, muted, pastel, dark, bright, colorblind} Named seaborn palette to use as the source of colors.\n\nSee Also -------- set : Color codes can be set through the high-level seaborn style manager. set_palette : Color codes can also be set through the function that sets the matplotlib color cycle.\n\nExamples --------\n\nMap matplotlib color codes to the default seaborn palette.\n\n.. plot:: :context: close-figs\n\n>>> import matplotlib.pyplot as plt >>> import seaborn as sns; sns.set() >>> sns.set_color_codes() >>> _ = plt.plot([0, 1], color=\"r\")\n\nUse a different seaborn palette.\n\n.. plot:: :context: close-figs\n\n>>> sns.set_color_codes(\"dark\") >>> _ = plt.plot([0, 1], color=\"g\") >>> _ = plt.plot([0, 2], color=\"m\")\n"
+}

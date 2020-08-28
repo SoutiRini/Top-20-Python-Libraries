@@ -1,0 +1,7 @@
+{
+    "source file": "type_check.py",
+    "line number": "680",
+    "func name": "common_type",
+    "func arg": "()",
+    "comments": "Return a scalar type which is common to the input arrays.\n\nThe return type will always be an inexact (i.e. floating point) scalar type, even if all the arrays are integer arrays. If one of the inputs is an integer array, the minimum precision type that is returned is a 64-bit floating point dtype.\n\nAll input arrays except int64 and uint64 can be safely cast to the returned dtype without loss of information.\n\nParameters ---------- array1, array2, ... : ndarrays Input arrays.\n##### Returns\n* **out **: data type code\n    Data type code.\n\n"
+}

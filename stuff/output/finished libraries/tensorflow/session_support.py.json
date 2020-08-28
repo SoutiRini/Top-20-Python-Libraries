@@ -1,0 +1,7 @@
+{
+    "source file": "session_support.py",
+    "line number": "301",
+    "func name": "stop_worker_watchdog",
+    "func arg": "()",
+    "comments": "Stop global worker watchdog.\n\n\n"
+}

@@ -1,0 +1,7 @@
+{
+    "source file": "graphs2.py",
+    "line number": "113",
+    "func name": "from_networkx",
+    "func arg": "(graph, layout_function, **kwargs)",
+    "comments": ""
+}

@@ -1,0 +1,7 @@
+{
+    "source file": "onnxifi.py",
+    "line number": "19",
+    "func name": "onnxifi_caffe2_net",
+    "func arg": "(pred_net, input_shapes, max_batch_size, max_seq_size, debug, use_onnx, merge_fp32_inputs_into_fp16, adjust_batch, black_list, weight_names, timeout)",
+    "comments": "Transform the caffe2_net by collapsing ONNXIFI-runnable nodes into Onnxifi c2 ops\n\n\n"
+}

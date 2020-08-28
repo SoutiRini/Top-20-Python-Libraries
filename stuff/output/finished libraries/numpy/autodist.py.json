@@ -1,0 +1,7 @@
+{
+    "source file": "autodist.py",
+    "line number": "108",
+    "func name": "check_gcc_variable_attribute",
+    "func arg": "(cmd, attribute)",
+    "comments": "Return True if the given variable attribute is supported.\n\n\n"
+}

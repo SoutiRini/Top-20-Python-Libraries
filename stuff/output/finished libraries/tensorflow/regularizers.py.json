@@ -1,0 +1,7 @@
+{
+    "source file": "regularizers.py",
+    "line number": "372",
+    "func name": "get",
+    "func arg": "(identifier)",
+    "comments": "Retrieve a regularizer instance from a config or identifier.\n\n\n"
+}

@@ -1,0 +1,7 @@
+{
+    "source file": "hex1.py",
+    "line number": "214",
+    "func name": "_round_hex",
+    "func arg": "(q, r)",
+    "comments": "Round floating point axial hex coordinates to integer *(q,r)* coordinates.\n\nThis code was adapted from:\n\nhttps://www.redblobgames.com/grids/hexagons/#rounding\n##### Args\n* **q (array[float]) **: NumPy array of Floating point axial *q* coordinates to round\n\n* **r (array[float]) **: NumPy array of Floating point axial *q* coordinates to round\n\n##### Returns\n"
+}

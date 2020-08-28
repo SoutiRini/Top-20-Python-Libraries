@@ -1,0 +1,7 @@
+{
+    "source file": "test_stacking.py",
+    "line number": "502",
+    "func name": "test_stacking_without_n_features_in",
+    "func arg": "(make_dataset, Stacking, Estimator)",
+    "comments": ""
+}

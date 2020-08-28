@@ -1,0 +1,7 @@
+{
+    "source file": "_cython_signature_generator.py",
+    "line number": "55",
+    "func name": "sigs_from_dir",
+    "func arg": "(directory, outfile, manual_wrappers, exclusions)",
+    "comments": ""
+}

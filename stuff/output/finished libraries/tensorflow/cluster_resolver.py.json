@@ -1,0 +1,7 @@
+{
+    "source file": "cluster_resolver.py",
+    "line number": "42",
+    "func name": "get_accelerator_devices",
+    "func arg": "(master, config_proto)",
+    "comments": "Returns accelerator devices given a master and a configuration.\n\n\n"
+}

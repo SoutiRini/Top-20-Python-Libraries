@@ -1,0 +1,7 @@
+{
+    "source file": "_layoutbox.py",
+    "line number": "655",
+    "func name": "plot_children",
+    "func arg": "(fig, box, level, printit)",
+    "comments": "Simple plotting to show where boxes are.\n\n\n"
+}

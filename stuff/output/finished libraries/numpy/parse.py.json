@@ -1,0 +1,7 @@
+{
+    "source file": "parse.py",
+    "line number": "4",
+    "func name": "parse_distributions_h",
+    "func arg": "(ffi, inc_dir)",
+    "comments": "Parse distributions.h located in inc_dir for CFFI, filling in the ffi.cdef\n\nRead the function declarations without the \"#define ...\" macros that will be filled in when loading the library.\n"
+}

@@ -1,0 +1,7 @@
+{
+    "source file": "_stats_mstats_common40.py",
+    "line number": "288",
+    "func name": "siegelslopes",
+    "func arg": "(y, x, method)",
+    "comments": "Computes the Siegel estimator for a set of points (x, y).\n\n`siegelslopes` implements a method for robust linear regression using repeated medians (see [1]_) to fit a line to the points (x, y). The method is robust to outliers with an asymptotic breakdown point of 50%.\n\nParameters ---------- y : array_like Dependent variable. x : array_like or None, optional Independent variable. If None, use ``arange(len(y))`` instead. method : {'hierarchical', 'separate'} If 'hierarchical', estimate the intercept using the estimated slope ``medslope`` (default option). If 'separate', estimate the intercept independent of the estimated slope. See Notes for details.\n##### Returns\n* **medslope **: float\n    Estimate of the slope of the regression line.\n\n* **medintercept **: float\n    Estimate of the intercept of the regression line.\n\n* **theilslopes **: a similar technique without repeated medians\n\n* **The other approach estimates the intercept separately as follows**: for\n\n* **>>> y[11**: 15] += 10  # add outliers\n\n* **>>> y[-5**: ] -= 7\n\n* **least-squares fit with `linregress`**: \n\n"
+}

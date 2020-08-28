@@ -1,0 +1,7 @@
+{
+    "source file": "tight_bbox.py",
+    "line number": "72",
+    "func name": "process_figure_for_rasterizing",
+    "func arg": "(fig, bbox_inches_restore, fixed_dpi)",
+    "comments": "A function that needs to be called when figure dpi changes during the drawing (e.g., rasterizing).  It recovers the bbox and re-adjust it with the new dpi.\n\n\n"
+}

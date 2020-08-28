@@ -1,0 +1,7 @@
+{
+    "source file": "test_common3.py",
+    "line number": "93",
+    "func name": "test_imputers_pandas_na_integer_array_support",
+    "func arg": "(imputer, add_indicator)",
+    "comments": ""
+}

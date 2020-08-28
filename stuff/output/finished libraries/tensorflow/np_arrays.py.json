@@ -1,0 +1,7 @@
+{
+    "source file": "np_arrays.py",
+    "line number": "330",
+    "func name": "ndarray_to_tensor",
+    "func arg": "(arr, dtype, name, as_ref)",
+    "comments": ""
+}

@@ -1,0 +1,7 @@
+{
+    "source file": "backend_nbagg.py",
+    "line number": "28",
+    "func name": "connection_info",
+    "func arg": "()",
+    "comments": "Return a string showing the figure and connection status for the backend.\n\nThis is intended as a diagnostic tool, and not for general use.\n"
+}

@@ -1,0 +1,7 @@
+{
+    "source file": "ragged_operators.py",
+    "line number": "72",
+    "func name": "_dummy_bool",
+    "func arg": "(_)",
+    "comments": "Dummy method to prevent a RaggedTensor from being used as a Python bool.\n\n\n"
+}

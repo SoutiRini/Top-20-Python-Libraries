@@ -1,0 +1,7 @@
+{
+    "source file": "tf_text_graph_ssd.py",
+    "line number": "63",
+    "func name": "createSSDGraph",
+    "func arg": "(modelPath, configPath, outputPath)",
+    "comments": ""
+}

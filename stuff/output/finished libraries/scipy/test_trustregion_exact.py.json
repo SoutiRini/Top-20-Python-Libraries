@@ -1,0 +1,7 @@
+{
+    "source file": "test_trustregion_exact.py",
+    "line number": "18",
+    "func name": "random_entry",
+    "func arg": "(n, min_eig, max_eig, case)",
+    "comments": ""
+}

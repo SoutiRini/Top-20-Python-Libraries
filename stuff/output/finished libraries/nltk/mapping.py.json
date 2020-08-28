@@ -1,0 +1,7 @@
+{
+    "source file": "mapping.py",
+    "line number": "117",
+    "func name": "map_tag",
+    "func arg": "(source, target, source_tag)",
+    "comments": "Maps the tag from the source tagset to the target tagset.\n\n>>> map_tag('en-ptb', 'universal', 'VBZ') 'VERB' >>> map_tag('en-ptb', 'universal', 'VBP') 'VERB' >>> map_tag('en-ptb', 'universal', '``') '.'\n"
+}

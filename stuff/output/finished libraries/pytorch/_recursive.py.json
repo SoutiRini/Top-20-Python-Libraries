@@ -1,0 +1,7 @@
+{
+    "source file": "_recursive.py",
+    "line number": "618",
+    "func name": "lazy_bind",
+    "func arg": "(concrete_type, unbound_method)",
+    "comments": "Returns a function that lazily binds `unbound_method` to a provided Module IValue, then invokes the method. We do this so that any Python shenanigans that will poison type sharing are impossible at compile time.\n\n\n"
+}

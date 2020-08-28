@@ -1,0 +1,7 @@
+{
+    "source file": "tree.py",
+    "line number": "1705",
+    "func name": "demo",
+    "func arg": "()",
+    "comments": "A demonstration showing how Trees and Trees can be used.  This demonstration creates a Tree, and loads a Tree from the Treebank corpus, and shows the results of calling several of their methods.\n\n\n"
+}

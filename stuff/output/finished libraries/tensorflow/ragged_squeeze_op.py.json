@@ -1,0 +1,7 @@
+{
+    "source file": "ragged_squeeze_op.py",
+    "line number": "31",
+    "func name": "squeeze",
+    "func arg": "(input, axis, name)",
+    "comments": "Ragged compatible squeeze.\n\nIf `input` is a `tf.Tensor`, then this calls `tf.squeeze`.\n\nIf `input` is a `tf.RaggedTensor`, then this operation takes `O(N)` time, where `N` is the number of elements in the squeezed dimensions.\n##### Args\n* **input**: A potentially ragged tensor. The input to squeeze.\n\n* **axis**: An optional list of ints. Defaults to `None`. If the `input` is\n  ragged, it only squeezes the dimensions listed. It fails if `input` is\n  ragged and axis is []. If `input` is not ragged it calls tf.squeeze. Note\n  that it is an error to squeeze a dimension that is not 1. It must be in\n  the range of [-rank(input), rank(input)).\n\n* **ame**: A name for the operation (optional).\n\n##### Returns\n"
+}

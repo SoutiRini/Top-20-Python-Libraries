@@ -1,0 +1,7 @@
+{
+    "source file": "test_apply2.py",
+    "line number": "963",
+    "func name": "zip_frames",
+    "func arg": "(frames, axis)",
+    "comments": "take a list of frames, zip them together under the assumption that these all have the first frames' index/columns.\n\n\n##### Returns\n* **new_frame **: DataFrame\n\n"
+}

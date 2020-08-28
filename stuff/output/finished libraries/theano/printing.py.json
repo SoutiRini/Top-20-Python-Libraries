@@ -1,0 +1,7 @@
+{
+    "source file": "printing.py",
+    "line number": "1263",
+    "func name": "hex_digest",
+    "func arg": "(x)",
+    "comments": "Returns a short, mostly hexadecimal hash of a numpy ndarray\n\n\n"
+}

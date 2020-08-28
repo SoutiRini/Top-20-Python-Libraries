@@ -1,0 +1,7 @@
+{
+    "source file": "api.py",
+    "line number": "152",
+    "func name": "delete",
+    "func arg": "(url, **kwargs)",
+    "comments": "Sends a DELETE request.\n\nparam url: URL for the new :class:`Request` object. :param \\*\\*kwargs: Optional arguments that ``request`` takes. :return: :class:`Response <Response>` object :rtype: requests.Response\n"
+}

@@ -1,0 +1,7 @@
+{
+    "source file": "_lda.py",
+    "line number": "31",
+    "func name": "_update_doc_distribution",
+    "func arg": "(X, exp_topic_word_distr, doc_topic_prior, max_iters, mean_change_tol, cal_sstats, random_state)",
+    "comments": "E-step: update document-topic distribution.\n\nParameters ---------- X : array-like or sparse matrix, shape=(n_samples, n_features) Document word matrix.\n\nexp_topic_word_distr : dense matrix, shape=(n_topics, n_features) Exponential value of expectation of log topic word distribution. In the literature, this is `exp(E[log(beta)])`.\n\ndoc_topic_prior : float Prior of document topic distribution `theta`.\n\nmax_iters : int Max number of iterations for updating document topic distribution in the E-step.\n\nmean_change_tol : float Stopping tolerance for updating document topic distribution in E-setp.\n\ncal_sstats : boolean Parameter that indicate to calculate sufficient statistics or not. Set `cal_sstats` to `True` when we need to run M-step.\n\nrandom_state : RandomState instance or None Parameter that indicate how to initialize document topic distribution. Set `random_state` to None will initialize document topic distribution to a constant number.\n##### Returns\n* **(doc_topic_distr, suff_stats) **: `doc_topic_distr` is unnormalized topic distribution for each document.\n    In the literature, this is `gamma`. we can calculate `E[log(theta)]`\n    from it.\n    `suff_stats` is expected sufficient statistics for the M-step.\n        When `cal_sstats == False`, this will be None.\n\n"
+}

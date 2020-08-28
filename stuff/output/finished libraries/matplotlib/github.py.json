@@ -1,0 +1,7 @@
+{
+    "source file": "github.py",
+    "line number": "154",
+    "func name": "setup",
+    "func arg": "(app)",
+    "comments": "Install the plugin.\n\nparam app: Sphinx application context.\n"
+}

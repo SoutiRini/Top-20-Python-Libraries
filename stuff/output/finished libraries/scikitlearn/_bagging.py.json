@@ -1,0 +1,7 @@
+{
+    "source file": "_bagging.py",
+    "line number": "179",
+    "func name": "_parallel_predict_regression",
+    "func arg": "(estimators, estimators_features, X)",
+    "comments": "Private function used to compute predictions within a job.\n\n\n"
+}

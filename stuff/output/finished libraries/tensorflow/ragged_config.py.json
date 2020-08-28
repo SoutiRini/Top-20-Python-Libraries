@@ -1,0 +1,7 @@
+{
+    "source file": "ragged_config.py",
+    "line number": "22",
+    "func name": "auto_cast_partition_dtype",
+    "func arg": "()",
+    "comments": "Whether incompatible row-partitioning dtypes should be auto-converted.\n\nIf true, then operations that combine RaggedTensors but have different row-partitioning tensor dtypes will be automatically cast to a compatible dtype (`tf.int64`).\n\nIf false, then such operations will result in an error.\n##### Returns\n"
+}

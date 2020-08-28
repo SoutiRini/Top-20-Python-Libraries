@@ -1,0 +1,7 @@
+{
+    "source file": "partitioned_variables_test.py",
+    "line number": "310",
+    "func name": "_IotaInitializer",
+    "func arg": "(shape, dtype, partition_info)",
+    "comments": ""
+}

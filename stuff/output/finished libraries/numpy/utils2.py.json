@@ -1,0 +1,7 @@
+{
+    "source file": "utils2.py",
+    "line number": "2504",
+    "func name": "_no_tracing",
+    "func arg": "(func)",
+    "comments": "Decorator to temporarily turn off tracing for the duration of a test. Needed in tests that check refcounting, otherwise the tracing itself influences the refcounts\n\n\n"
+}

@@ -1,0 +1,7 @@
+{
+    "source file": "plot_grids.py",
+    "line number": "41",
+    "func name": "scatter_ellipse",
+    "func arg": "(data, level, varnames, ell_kwds, plot_kwds, add_titles, keep_ticks, fig)",
+    "comments": "Create a grid of scatter plots with confidence ellipses.\n\nell_kwds, plot_kdes not used yet\n\nlooks ok with 5 or 6 variables, too crowded with 8, too empty with 1\n\nParameters ---------- data : array_like Input data. level : scalar, optional Default is 0.9. varnames : list[str], optional Variable names.\n\nUsed for y-axis labels, and if `add_titles` is True also for titles.\n\nIf not given, integers 1..data.shape[1] are used. ell_kwds : dict, optional UNUSED plot_kwds : dict, optional UNUSED add_titles : bool, optional Whether or not to add titles to each subplot.\n\nDefault is False. Titles are constructed from `varnames`. keep_ticks : bool, optional If False (default), remove all axis ticks. fig : Figure, optional If given, this figure is simply returned.\n\nOtherwise a new figure is created.\n##### Returns\n* **..plot **: \n\n"
+}

@@ -1,0 +1,7 @@
+{
+    "source file": "tensor_array_ops.py",
+    "line number": "1308",
+    "func name": "_check_dtypes",
+    "func arg": "(value, dtype)",
+    "comments": ""
+}

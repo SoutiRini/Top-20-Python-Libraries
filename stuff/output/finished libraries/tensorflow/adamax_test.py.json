@@ -1,0 +1,7 @@
+{
+    "source file": "adamax_test.py",
+    "line number": "72",
+    "func name": "get_beta_accumulators",
+    "func arg": "(opt, dtype)",
+    "comments": ""
+}

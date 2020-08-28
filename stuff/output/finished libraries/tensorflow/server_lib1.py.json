@@ -1,0 +1,7 @@
+{
+    "source file": "server_lib1.py",
+    "line number": "31",
+    "func name": "_make_server_def",
+    "func arg": "(server_or_cluster_def, job_name, task_index, protocol, config)",
+    "comments": "Creates a `tf.train.ServerDef` protocol buffer.\n\n\n##### Args\n* **server_or_cluster_def**: A `tf.train.ServerDef` or `tf.train.ClusterDef`\n  protocol buffer, or a `tf.train.ClusterSpec` object, describing the server\n  to be defined and/or the cluster of which it is a member.\n\n* **job_name**: (Optional.) Specifies the name of the job of which the server is a\n  member. Defaults to the value in `server_or_cluster_def`, if specified.\n\n* **task_index**: (Optional.) Specifies the task index of the server in its job.\n  Defaults to the value in `server_or_cluster_def`, if specified. Otherwise\n  defaults to 0 if the server's job has only one task.\n\n* **protocol**: (Optional.) Specifies the protocol to be used by the server.\n  Acceptable values include `\"grpc\", \"grpc+verbs\"`. Defaults to the value in\n  `server_or_cluster_def`, if specified. Otherwise defaults to `\"grpc\"`.\n\n* **config**: (Options.) A `tf.compat.v1.ConfigProto` that specifies default\n  configuration options for all sessions that run on this server.\n\n##### Returns\n"
+}

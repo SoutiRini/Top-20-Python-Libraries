@@ -1,0 +1,7 @@
+{
+    "source file": "converter_testing.py",
+    "line number": "47",
+    "func name": "is_inside_generated_code",
+    "func arg": "()",
+    "comments": "Tests whether the caller is generated code. Implementation-specific.\n\n\n"
+}

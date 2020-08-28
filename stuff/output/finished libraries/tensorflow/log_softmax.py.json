@@ -1,0 +1,7 @@
+{
+    "source file": "log_softmax.py",
+    "line number": "27",
+    "func name": "make_log_softmax_tests",
+    "func arg": "(options)",
+    "comments": "Make a set of tests to do log_softmax.\n\n\n"
+}

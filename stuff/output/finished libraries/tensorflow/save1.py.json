@@ -1,0 +1,7 @@
+{
+    "source file": "save1.py",
+    "line number": "40",
+    "func name": "save",
+    "func arg": "(model, filepath, overwrite, include_optimizer, signatures, options)",
+    "comments": "Saves a model as a SavedModel to the filepath.\n\n\n##### Args\n* **model**: Keras model instance to be saved.\n\n* **filepath**: String path to save the model.\n\n* **overwrite**: whether to overwrite the existing filepath.\n\n* **include_optimizer**: If True, save the model's optimizer state.\n\n* **signatures**: Signatures to save with the SavedModel. Applicable to the 'tf'\n  format only. Please see the `signatures` argument in `tf.saved_model.save`\n  for details.\n\n* **options**: Optional `tf.saved_model.SaveOptions` object that specifies\n  options for saving to SavedModel.\n\n"
+}

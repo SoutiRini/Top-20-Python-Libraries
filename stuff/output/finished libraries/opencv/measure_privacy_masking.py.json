@@ -1,0 +1,7 @@
+{
+    "source file": "measure_privacy_masking.py",
+    "line number": "13",
+    "func name": "fmt_bin",
+    "func arg": "(base, prec, model)",
+    "comments": ""
+}

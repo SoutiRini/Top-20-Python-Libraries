@@ -1,0 +1,7 @@
+{
+    "source file": "test_rolling1.py",
+    "line number": "440",
+    "func name": "test_rolling_count_default_min_periods_with_null_values",
+    "func arg": "(constructor)",
+    "comments": ""
+}

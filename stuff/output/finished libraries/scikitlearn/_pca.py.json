@@ -1,0 +1,7 @@
+{
+    "source file": "_pca.py",
+    "line number": "100",
+    "func name": "_infer_dimension",
+    "func arg": "(spectrum, n_samples)",
+    "comments": "Infers the dimension of a dataset with a given spectrum.\n\nThe returned value will be in [1, n_features\n\n- 1].\n"
+}

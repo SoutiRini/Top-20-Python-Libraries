@@ -1,0 +1,7 @@
+{
+    "source file": "multi_worker_test.py",
+    "line number": "67",
+    "func name": "_clone_and_build_model",
+    "func arg": "(model, strategy)",
+    "comments": ""
+}

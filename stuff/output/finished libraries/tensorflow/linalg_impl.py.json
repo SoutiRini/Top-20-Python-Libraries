@@ -1,0 +1,7 @@
+{
+    "source file": "linalg_impl.py",
+    "line number": "1177",
+    "func name": "_lu_solve_assertions",
+    "func arg": "(lower_upper, perm, rhs, validate_args)",
+    "comments": "Returns list of assertions related to `lu_solve` assumptions.\n\n\n"
+}

@@ -1,0 +1,7 @@
+{
+    "source file": "conv3d2d.py",
+    "line number": "297",
+    "func name": "local_inplace_DiagonalSubtensor",
+    "func arg": "(node)",
+    "comments": "Also work for IncDiagonalSubtensor.\n\n\n"
+}

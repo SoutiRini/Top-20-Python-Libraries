@@ -1,0 +1,7 @@
+{
+    "source file": "data20.py",
+    "line number": "122",
+    "func name": "_is_recarray",
+    "func arg": "(data)",
+    "comments": "Returns true if data is a recarray\n\n\n"
+}

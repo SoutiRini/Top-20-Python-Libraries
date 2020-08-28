@@ -1,0 +1,7 @@
+{
+    "source file": "doc2vec.py",
+    "line number": "994",
+    "func name": "_note_doctag",
+    "func arg": "(key, document_length, docvecs)",
+    "comments": "Note a document tag during initial corpus scan, for structure sizing.\n\n\n"
+}

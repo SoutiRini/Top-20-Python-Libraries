@@ -1,0 +1,7 @@
+{
+    "source file": "utils2.py",
+    "line number": "203",
+    "func name": "constant_value",
+    "func arg": "(pred)",
+    "comments": "Return the bool value for `pred`, or None if `pred` had a dynamic value.\n\nArguments: pred: A scalar, either a Python bool or a TensorFlow boolean variable or tensor, or the Python integer 1 or 0.\n##### Returns\n"
+}

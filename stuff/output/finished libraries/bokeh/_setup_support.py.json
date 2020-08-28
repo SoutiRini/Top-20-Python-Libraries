@@ -1,0 +1,7 @@
+{
+    "source file": "_setup_support.py",
+    "line number": "292",
+    "func name": "install_js",
+    "func arg": "()",
+    "comments": "Copy built BokehJS files into the Python source tree.\n\n\n##### Returns\n"
+}

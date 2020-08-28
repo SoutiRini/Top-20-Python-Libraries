@@ -1,0 +1,7 @@
+{
+    "source file": "replicate_test.py",
+    "line number": "187",
+    "func name": "_get_server_def",
+    "func arg": "(job_name, local_server_port, remote_server_addresses, task_index)",
+    "comments": "Returns a server def with a single job + multiple tasks.\n\n\n"
+}

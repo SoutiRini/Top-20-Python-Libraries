@@ -1,0 +1,7 @@
+{
+    "source file": "morestats102.py",
+    "line number": "3457",
+    "func name": "circstd",
+    "func arg": "(samples, high, low, axis, nan_policy)",
+    "comments": "Compute the circular standard deviation for samples assumed to be in the range [low to high].\n\nParameters ---------- samples : array_like Input array. high : float or int, optional High boundary for circular standard deviation range. Default is ``2*pi``. low : float or int, optional Low boundary for circular standard deviation range.\n\nDefault is 0. axis : int, optional Axis along which standard deviations are computed.\n\nThe default is to compute the standard deviation of the flattened array. nan_policy : {'propagate', 'raise', 'omit'}, optional Defines how to handle when input contains nan. 'propagate' returns nan, 'raise' throws an error, 'omit' performs the calculations ignoring nan values. Default is 'propagate'.\n##### Returns\n* **circstd **: float\n    Circular standard deviation.\n\n"
+}

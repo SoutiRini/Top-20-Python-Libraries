@@ -1,0 +1,7 @@
+{
+    "source file": "base1.py",
+    "line number": "790",
+    "func name": "is_outlier_detector",
+    "func arg": "(estimator)",
+    "comments": "Return True if the given estimator is (probably) an outlier detector.\n\nParameters ---------- estimator : object Estimator object to test.\n##### Returns\n* **out **: bool\n    True if estimator is an outlier detector and False otherwise.\n\n"
+}

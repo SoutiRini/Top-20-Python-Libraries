@@ -1,0 +1,7 @@
+{
+    "source file": "test_weight_boosting.py",
+    "line number": "574",
+    "func name": "test_adaboost_negative_weight_error",
+    "func arg": "(model, X, y)",
+    "comments": ""
+}

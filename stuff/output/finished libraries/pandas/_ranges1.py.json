@@ -1,0 +1,7 @@
+{
+    "source file": "_ranges1.py",
+    "line number": "153",
+    "func name": "_generate_range_overflow_safe_signed",
+    "func arg": "(endpoint, periods, stride, side)",
+    "comments": "A special case for _generate_range_overflow_safe where `periods * stride` can be calculated without overflowing int64 bounds.\n\n\n"
+}

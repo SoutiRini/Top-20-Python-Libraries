@@ -1,0 +1,7 @@
+{
+    "source file": "indirect_confirmation_measure.py",
+    "line number": "340",
+    "func name": "_key_for_segment",
+    "func arg": "(segment, topic_words)",
+    "comments": "A segment may have a single number of an iterable of them.\n\n\n"
+}

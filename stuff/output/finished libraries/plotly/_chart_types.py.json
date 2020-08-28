@@ -1,0 +1,7 @@
+{
+    "source file": "_chart_types.py",
+    "line number": "1503",
+    "func name": "funnel_area",
+    "func arg": "(data_frame, names, values, color, color_discrete_sequence, color_discrete_map, hover_name, hover_data, custom_data, labels, title, template, width, height, opacity)",
+    "comments": "In a funnel area plot, each row of `data_frame` is represented as a trapezoidal sector of a funnel.\n\n\n"
+}

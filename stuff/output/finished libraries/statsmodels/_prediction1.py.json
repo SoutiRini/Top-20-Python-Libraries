@@ -1,0 +1,7 @@
+{
+    "source file": "_prediction1.py",
+    "line number": "111",
+    "func name": "get_prediction",
+    "func arg": "(exog, transform, weights, row_labels, pred_kwds)",
+    "comments": "Compute prediction results.\n\nParameters ---------- exog : array_like, optional The values for which you want to predict. transform : bool, optional If the model was fit via a formula, do you want to pass exog through the formula. Default is True. E.g., if you fit a model y ~ log(x1) + log(x2), and transform is True, then you can pass a data structure that contains x1 and x2 in their original form. Otherwise, you'd need to log the data first. weights : array_like, optional Weights interpreted as in WLS, used for the variance of the predicted residual. row_labels : list A list of row labels to use.\n\nIf not provided, read `exog` is available. **kwargs Some models can take additional keyword arguments, see the predict method of the model for the details.\n##### Returns\n"
+}

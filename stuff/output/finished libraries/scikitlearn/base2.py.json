@@ -1,0 +1,7 @@
+{
+    "source file": "base2.py",
+    "line number": "48",
+    "func name": "_get_response",
+    "func arg": "(X, estimator, response_method, pos_label)",
+    "comments": "Return response and positive label.\n\nParameters ---------- X : {array-like, sparse matrix} of shape (n_samples, n_features) Input values.\n\nestimator : estimator instance Fitted classifier or a fitted :class:`~sklearn.pipeline.Pipeline` in which the last estimator is a classifier.\n\nresponse_method: {'auto', 'predict_proba', 'decision_function'} Specifies whether to use :term:`predict_proba` or :term:`decision_function` as the target response. If set to 'auto', :term:`predict_proba` is tried first and if it does not exist :term:`decision_function` is tried next.\n\npos_label : str or int, default=None The class considered as the positive class when computing the metrics. By default, `estimators.classes_[1]` is considered as the positive class.\n##### Returns\n* **y_pred**: ndarray of shape (n_samples,)\n    Target scores calculated from the provided response_method\n    and pos_label.\n\n* **pos_label**: str or int\n    The class considered as the positive class when computing\n    the metrics.\n\n"
+}

@@ -1,0 +1,7 @@
+{
+    "source file": "postprocess.py",
+    "line number": "30",
+    "func name": "process_tex",
+    "func arg": "(lines)",
+    "comments": "Remove unnecessary section titles from the LaTeX file.\n\n\n"
+}

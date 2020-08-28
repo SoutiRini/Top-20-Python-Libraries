@@ -1,0 +1,7 @@
+{
+    "source file": "try_ar.py",
+    "line number": "11",
+    "func name": "armaloop",
+    "func arg": "(arcoefs, macoefs, x)",
+    "comments": "get arma recursion in simple loop\n\nfor simplicity assumes that ma polynomial is not longer than the ar-polynomial\n\nParameters ---------- arcoefs : array_like autoregressive coefficients in right hand side parameterization macoefs : array_like moving average coefficients, without leading 1\n##### Returns\n* **y **: ndarray\n    predicted values, initial values are the same as the observed values\n\n* **e **: ndarray\n    predicted residuals, zero for initial observations\n\n"
+}

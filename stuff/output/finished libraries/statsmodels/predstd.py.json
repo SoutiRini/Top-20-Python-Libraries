@@ -1,0 +1,7 @@
+{
+    "source file": "predstd.py",
+    "line number": "27",
+    "func name": "wls_prediction_std",
+    "func arg": "(res, exog, weights, alpha)",
+    "comments": "calculate standard deviation and confidence interval for prediction\n\napplies to WLS and OLS, not to general GLS, that is independently but not identically distributed observations\n\nParameters ---------- res : regression result instance results of WLS or OLS regression required attributes see notes exog : array_like (optional) exogenous variables for points to predict weights : scalar or array_like (optional) weights as defined for WLS (inverse of variance of observation) alpha : float (default: alpha = 0.05) confidence level for two-sided hypothesis\n##### Returns\n* **predstd **: array_like, 1d\n    standard error of prediction\n    same length as rows of exog\n\n* **interval_l, interval_u **: array_like\n    lower und upper confidence bounds\n\n* **res.model.predict() **: predicted values or\n\n* **res.fittedvalues **: values used in estimation\n\n* **res.cov_params() **: covariance matrix of parameter estimates\n\n* **testing status**: not compared with other packages\n\n"
+}

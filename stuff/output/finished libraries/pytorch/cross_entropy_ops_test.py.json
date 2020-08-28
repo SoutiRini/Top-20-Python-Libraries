@@ -1,0 +1,7 @@
+{
+    "source file": "cross_entropy_ops_test.py",
+    "line number": "39",
+    "func name": "unjoined_sigmoid_cross_entropy_grad",
+    "func arg": "(x, z)",
+    "comments": ""
+}

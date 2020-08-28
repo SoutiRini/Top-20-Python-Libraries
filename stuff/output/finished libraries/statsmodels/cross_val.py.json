@@ -1,0 +1,7 @@
+{
+    "source file": "cross_val.py",
+    "line number": "256",
+    "func name": "split",
+    "func arg": "(train_indexes, test_indexes)",
+    "comments": "For each arg return a train and test subsets defined by indexes provided in train_indexes and test_indexes\n\n\n"
+}

@@ -1,0 +1,7 @@
+{
+    "source file": "spectral_norm.py",
+    "line number": "258",
+    "func name": "remove_spectral_norm",
+    "func arg": "(module, name)",
+    "comments": "Removes the spectral normalization reparameterization from a module.\n\n\n##### Args\n* **module (Module)**: containing module\n\n* **name (str, optional)**: name of weight parameter\n\n* **ple**: \n\n"
+}

@@ -1,0 +1,7 @@
+{
+    "source file": "test_string_validator.py",
+    "line number": "199",
+    "func name": "test_rejection_no_blanks_aok",
+    "func arg": "(val, validator_no_blanks_aok)",
+    "comments": ""
+}

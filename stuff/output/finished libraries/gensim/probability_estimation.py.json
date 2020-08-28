@@ -1,0 +1,7 @@
+{
+    "source file": "probability_estimation.py",
+    "line number": "231",
+    "func name": "unique_ids_from_segments",
+    "func arg": "(segmented_topics)",
+    "comments": "Return the set of all unique ids in a list of segmented topics.\n\nParameters ---------- segmented_topics: list of (int, int). Each tuple (word_id_set1, word_id_set2) is either a single integer, or a `numpy.ndarray` of integers.\n##### Returns\n* **.. sourcecode**: \n\n"
+}

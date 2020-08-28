@@ -1,0 +1,7 @@
+{
+    "source file": "minpack.py",
+    "line number": "894",
+    "func name": "fixed_point",
+    "func arg": "(func, x0, args, xtol, maxiter, method)",
+    "comments": "Find a fixed point of the function.\n\nGiven a function of one or more variables and a starting point, find a fixed point of the function: i.e., where ``func(x0) == x0``.\n\nParameters ---------- func : function Function to evaluate. x0 : array_like Fixed point of function. args : tuple, optional Extra arguments to `func`. xtol : float, optional Convergence tolerance, defaults to 1e-08. maxiter : int, optional Maximum number of iterations, defaults to 500. method : {\"del2\", \"iteration\"}, optional Method of finding the fixed-point, defaults to \"del2\", which uses Steffensen's Method with Aitken's ``Del^2`` convergence acceleration [1]_. The \"iteration\" method simply iterates the function until convergence is detected, without attempting to accelerate the convergence.\n\nReferences ---------- .. [1] Burden, Faires, \"Numerical Analysis\", 5th edition, pg. 80\n\nExamples -------- >>> from scipy import optimize >>> def func(x, c1, c2): ...\n\n\n\nreturn np.sqrt(c1/(x+c2)) >>> c1 = np.array([10,12.]) >>> c2 = np.array([3, 5.]) >>> optimize.fixed_point(func, [1.2, 1.3], args=(c1,c2)) array([ 1.4920333 ,\n\n1.37228132])\n"
+}

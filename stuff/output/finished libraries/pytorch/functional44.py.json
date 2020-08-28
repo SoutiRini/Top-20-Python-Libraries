@@ -1,0 +1,7 @@
+{
+    "source file": "functional44.py",
+    "line number": "15",
+    "func name": "namedtupledict",
+    "func arg": "(typename, field_names, **kwargs)",
+    "comments": ""
+}

@@ -1,0 +1,7 @@
+{
+    "source file": "concat_split_op_test19.py",
+    "line number": "17",
+    "func name": "_tensor_splits",
+    "func arg": "(draw, add_axis)",
+    "comments": "Generates (axis, split_info, tensor_splits) tuples.\n\n\n"
+}

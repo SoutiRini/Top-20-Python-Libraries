@@ -1,0 +1,7 @@
+{
+    "source file": "tile_demo.py",
+    "line number": "20",
+    "func name": "lnglat_to_meters",
+    "func arg": "(longitude, latitude)",
+    "comments": "Projects the given (longitude, latitude) values into Web Mercator coordinates (meters East of Greenwich and meters North of the Equator).\n\nLongitude and latitude can be provided as scalars, Pandas columns, or Numpy arrays, and will be returned in the same form.\n\nLists or tuples will be converted to Numpy arrays.\n\nExamples: easting, northing = lnglat_to_meters(-74,40.71)\n\neasting, northing = lnglat_to_meters(np.array([-74]),np.array([40.71]))\n\ndf=pandas.DataFrame(dict(longitude=np.array([-74]),latitude=np.array([40.71]))) df.loc[:, 'longitude'], df.loc[:, 'latitude'] = lnglat_to_meters(df.longitude,df.latitude)\n"
+}

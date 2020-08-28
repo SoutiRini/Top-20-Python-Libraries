@@ -1,0 +1,7 @@
+{
+    "source file": "ModuleRegister.py",
+    "line number": "111",
+    "func name": "getClassFromModule",
+    "func arg": "(moduleName, className)",
+    "comments": ""
+}

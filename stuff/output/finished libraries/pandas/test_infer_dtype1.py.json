@@ -1,0 +1,7 @@
+{
+    "source file": "test_infer_dtype1.py",
+    "line number": "191",
+    "func name": "test_cast_scalar_to_array",
+    "func arg": "(obj, dtype)",
+    "comments": ""
+}

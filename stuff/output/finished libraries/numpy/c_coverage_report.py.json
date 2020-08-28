@@ -1,0 +1,7 @@
+{
+    "source file": "c_coverage_report.py",
+    "line number": "118",
+    "func name": "collect_stats",
+    "func arg": "(files, fd, pattern)",
+    "comments": ""
+}

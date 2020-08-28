@@ -1,0 +1,7 @@
+{
+    "source file": "ImageSequence.py",
+    "line number": "56",
+    "func name": "all_frames",
+    "func arg": "(im, func)",
+    "comments": "Applies a given function to all frames in an image or a list of images. The frames are returned as a list of separate images.\n\nparam im: An image, or a list of images. :param func: The function to apply to all of the image frames. :returns: A list of images.\n"
+}

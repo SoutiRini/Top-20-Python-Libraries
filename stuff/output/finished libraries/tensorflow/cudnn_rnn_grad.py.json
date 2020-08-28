@@ -1,0 +1,7 @@
+{
+    "source file": "cudnn_rnn_grad.py",
+    "line number": "77",
+    "func name": "_cudnn_rnn_backwardv3",
+    "func arg": "(op)",
+    "comments": "Gradients for the CudnnRNNV3 op.\n\n\n"
+}

@@ -1,0 +1,7 @@
+{
+    "source file": "observer.py",
+    "line number": "12",
+    "func name": "_with_args",
+    "func arg": "(cls_or_self, **kwargs)",
+    "comments": "Wrapper that allows creation of class factories.\n\nThis can be useful when there is a need to create classes with the same constructor arguments, but different instances.\n\nExample::\n\n>>> Foo.with_args = classmethod(_with_args) >>> foo_builder = Foo.with_args(a=3, b=4).with_args(answer=42) >>> foo_instance1 = foo_builder() >>> foo_instance2 = foo_builder() >>> id(foo_instance1) == id(foo_instance2) False\n"
+}

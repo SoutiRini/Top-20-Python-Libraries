@@ -1,0 +1,7 @@
+{
+    "source file": "categorical_test.py",
+    "line number": "40",
+    "func name": "make_categorical",
+    "func arg": "(batch_shape, num_classes, dtype)",
+    "comments": ""
+}

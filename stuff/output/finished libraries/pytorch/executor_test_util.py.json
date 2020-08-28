@@ -1,0 +1,7 @@
+{
+    "source file": "executor_test_util.py",
+    "line number": "206",
+    "func name": "run_resnet50_epoch",
+    "func arg": "(train_model, batch_size, epoch_size, skip_first_n_iter)",
+    "comments": ""
+}

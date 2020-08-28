@@ -1,0 +1,7 @@
+{
+    "source file": "misc.py",
+    "line number": "55",
+    "func name": "get_range_len",
+    "func arg": "(start, limit, delta)",
+    "comments": ""
+}

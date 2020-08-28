@@ -1,0 +1,7 @@
+{
+    "source file": "sleep.py",
+    "line number": "37",
+    "func name": "sleep",
+    "func arg": "(sleep_microseconds)",
+    "comments": "Sleeps for `sleep_microseconds` before producing each input element.\n\n\n##### Args\n* **sleep_microseconds**: The number of microseconds to sleep before producing an\n  input element.\n\n##### Returns\n"
+}

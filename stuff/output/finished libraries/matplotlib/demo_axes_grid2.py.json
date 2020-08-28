@@ -1,0 +1,7 @@
+{
+    "source file": "demo_axes_grid2.py",
+    "line number": "19",
+    "func name": "add_inner_title",
+    "func arg": "(ax, title, loc, **kwargs)",
+    "comments": ""
+}

@@ -1,0 +1,7 @@
+{
+    "source file": "linalg.py",
+    "line number": "2803",
+    "func name": "_multi_dot",
+    "func arg": "(arrays, order, i, j, out)",
+    "comments": "Actually do the multiplication with the given order.\n\n\n"
+}

@@ -1,0 +1,7 @@
+{
+    "source file": "utils102.py",
+    "line number": "75",
+    "func name": "probs_to_logits",
+    "func arg": "(probs, is_binary)",
+    "comments": "Converts a tensor of probabilities into logits. For the binary case, this denotes the probability of occurrence of the event indexed by `1`. For the multi-dimensional case, the values along the last dimension denote the probabilities of occurrence of each of the events.\n\n\n"
+}

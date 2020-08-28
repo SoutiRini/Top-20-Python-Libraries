@@ -1,0 +1,7 @@
+{
+    "source file": "test_cpu_features.py",
+    "line number": "4",
+    "func name": "assert_features_equal",
+    "func arg": "(actual, desired, fname)",
+    "comments": ""
+}

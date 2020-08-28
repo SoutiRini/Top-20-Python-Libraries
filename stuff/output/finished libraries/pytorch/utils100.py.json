@@ -1,0 +1,7 @@
+{
+    "source file": "utils100.py",
+    "line number": "944",
+    "func name": "_validate_dynamic_axes",
+    "func arg": "(dynamic_axes, model, input_names, output_names)",
+    "comments": ""
+}

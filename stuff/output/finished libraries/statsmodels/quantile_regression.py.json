@@ -1,0 +1,7 @@
+{
+    "source file": "quantile_regression.py",
+    "line number": "260",
+    "func name": "chamberlain",
+    "func arg": "(n, q, alpha)",
+    "comments": ""
+}

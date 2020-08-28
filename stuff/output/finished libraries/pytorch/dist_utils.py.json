@@ -1,0 +1,7 @@
+{
+    "source file": "dist_utils.py",
+    "line number": "282",
+    "func name": "get_function_event",
+    "func arg": "(function_events, partial_event_name)",
+    "comments": "Returns the first event that matches partial_event_name in the provided function_events. These function_events should be the output of torch.autograd.profiler.function_events().\n\n\n##### Args\n* **function_events**: function_events returned by the profiler.\n\n* **event_name (str)**: partial key that the event was profiled with.\n\n"
+}

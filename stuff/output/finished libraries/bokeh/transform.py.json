@@ -1,0 +1,7 @@
+{
+    "source file": "transform.py",
+    "line number": "302",
+    "func name": "transform",
+    "func arg": "(field_name, transform)",
+    "comments": "Create a ``DataSpec`` dict that applies an arbitrary client-side ``Transform`` to a ``ColumnDataSource`` column.\n\n\n##### Args\n* **field_name (str) **: A field name to configure ``DataSpec`` with\n\n* **transform (Transform) **: A transforms to apply to that field\n\n##### Returns\n"
+}

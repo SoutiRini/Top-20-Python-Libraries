@@ -1,0 +1,7 @@
+{
+    "source file": "ragged_math_ops.py",
+    "line number": "634",
+    "func name": "_set_ragged_reduce_docstring",
+    "func arg": "(func, combination, combined, default, example)",
+    "comments": ""
+}

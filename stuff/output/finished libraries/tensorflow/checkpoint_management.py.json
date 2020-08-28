@@ -1,0 +1,7 @@
+{
+    "source file": "checkpoint_management.py",
+    "line number": "493",
+    "func name": "meta_graph_filename",
+    "func arg": "(checkpoint_filename, meta_graph_suffix)",
+    "comments": "Returns the meta graph filename.\n\n\n##### Args\n* **checkpoint_filename**: Name of the checkpoint file.\n\n* **meta_graph_suffix**: Suffix for `MetaGraphDef` file. Defaults to 'meta'.\n\n##### Returns\n"
+}

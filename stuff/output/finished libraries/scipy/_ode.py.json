@@ -1,0 +1,7 @@
+{
+    "source file": "_ode.py",
+    "line number": "825",
+    "func name": "_vode_banded_jac_wrapper",
+    "func arg": "(jacfunc, ml, jac_params)",
+    "comments": "Wrap a banded Jacobian function with a function that pads the Jacobian with `ml` rows of zeros.\n\n\n"
+}

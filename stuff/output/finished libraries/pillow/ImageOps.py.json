@@ -1,0 +1,7 @@
+{
+    "source file": "ImageOps.py",
+    "line number": "531",
+    "func name": "exif_transpose",
+    "func arg": "(image)",
+    "comments": "If an image has an EXIF Orientation tag, return a new image that is transposed accordingly. Otherwise, return a copy of the image.\n\nparam image: The image to transpose. :return: An image.\n"
+}

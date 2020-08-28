@@ -1,0 +1,7 @@
+{
+    "source file": "parallel_device_test.py",
+    "line number": "68",
+    "func name": "_collective_sum",
+    "func arg": "(inputs, num_replicas)",
+    "comments": ""
+}

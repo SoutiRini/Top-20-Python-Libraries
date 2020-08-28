@@ -1,0 +1,7 @@
+{
+    "source file": "test_safe_import1.py",
+    "line number": "28",
+    "func name": "test_safe_import_dummy",
+    "func arg": "(monkeypatch, min_version, valid)",
+    "comments": ""
+}

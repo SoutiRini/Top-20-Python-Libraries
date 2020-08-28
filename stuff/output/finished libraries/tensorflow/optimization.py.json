@@ -1,0 +1,7 @@
+{
+    "source file": "optimization.py",
+    "line number": "39",
+    "func name": "optimize",
+    "func arg": "(optimizations)",
+    "comments": "A transformation that applies optimizations.\n\n\n##### Args\n* **optimizations**: (Optional.) A `tf.string` vector `tf.Tensor` identifying\n  optimizations to use. If not specified, the default set of optimizations\n  is applied.\n\n##### Returns\n"
+}

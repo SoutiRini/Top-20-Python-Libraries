@@ -1,0 +1,7 @@
+{
+    "source file": "stackplot.py",
+    "line number": "16",
+    "func name": "stackplot",
+    "func arg": "(axes, x, **kwargs)",
+    "comments": "Draw a stacked area plot.\n\nParameters ---------- x : 1d array of dimension N\n\ny : 2d array (dimension MxN), or sequence of 1d arrays (each dimension 1xN)\n\nThe data is assumed to be unstacked. Each of the following calls is legal::\n\nstackplot(x, y)\n\n\n\n\n\n\n\n\n\n\n\n\n\n # where y is MxN stackplot(x, y1, y2, y3, y4)\n\n# where y1, y2, y3, y4, are all 1xNm\n\nbaseline : {'zero', 'sym', 'wiggle', 'weighted_wiggle'} Method used to calculate the baseline:\n\n- ``'zero'``: Constant zero baseline, i.e. a simple stacked plot.\n\n- ``'sym'``:\n\nSymmetric around zero and is sometimes called 'ThemeRiver'.\n\n- ``'wiggle'``: Minimizes the sum of the squared slopes.\n\n- ``'weighted_wiggle'``: Does the same but weights to account for size of each layer. It is also called 'Streamgraph'-layout. More details can be found at http://leebyron.com/streamgraph/.\n\nlabels : Length N sequence of strings Labels to assign to each data series.\n\ncolors : Length N sequence of colors A list or tuple of colors. These will be cycled through and used to colour the stacked areas.\n\n**kwargs All other keyword arguments are passed to `.Axes.fill_between`.\n##### Returns\n"
+}

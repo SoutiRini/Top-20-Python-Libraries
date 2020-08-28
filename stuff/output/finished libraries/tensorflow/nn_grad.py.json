@@ -1,0 +1,7 @@
+{
+    "source file": "nn_grad.py",
+    "line number": "1121",
+    "func name": "_NthElementGrad",
+    "func arg": "(op, grad)",
+    "comments": "Return the gradients for NthElement.\n\n\n##### Args\n* **op**: The NthElementOp for which we need to generate gradients.\n\n* **grad**: Tensor. The gradients passed to the NthElementOp\n\n##### Returns\n"
+}

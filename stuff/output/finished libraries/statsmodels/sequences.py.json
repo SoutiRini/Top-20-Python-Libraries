@@ -1,0 +1,7 @@
+{
+    "source file": "sequences.py",
+    "line number": "154",
+    "func name": "halton",
+    "func arg": "(dim, n_sample, bounds, start_index)",
+    "comments": "Halton sequence.\n\nPseudo-random number generator that generalize the Van der Corput sequence for multiple dimensions. Halton sequence use base-two Van der Corput sequence for the first dimension, base-three for its second and base-n for its n-dimension.\n\nParameters ---------- dim : int Dimension of the parameter space. n_sample : int Number of samples to generate in the parametr space. bounds : tuple or array_like ([min, k_vars], [max, k_vars]) Desired range of transformed data. The transformation apply the bounds on the sample and not the theoretical space, unit cube. Thus min and max values of the sample will coincide with the bounds. start_index : int Index to start the sequence from.\n##### Returns\n* **sequence **: array_like (n_samples, k_vars)\n    Sequence of Halton.\n\n"
+}

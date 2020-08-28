@@ -1,0 +1,7 @@
+{
+    "source file": "_bicluster2.py",
+    "line number": "49",
+    "func name": "consensus_score",
+    "func arg": "(a, b)",
+    "comments": "The similarity of two sets of biclusters.\n\nSimilarity between individual biclusters is computed. Then the best matching between sets is found using the Hungarian algorithm. The final score is the sum of similarities divided by the size of the larger set.\n\nRead more in the :ref:`User Guide <biclustering>`.\n\nParameters ---------- a : (rows, columns) Tuple of row and column indicators for a set of biclusters.\n\nb : (rows, columns) Another set of biclusters like ``a``.\n\nsimilarity : 'jaccard' or callable, default='jaccard' May be the string \"jaccard\" to use the Jaccard coefficient, or any function that takes four arguments, each of which is a 1d indicator vector: (a_rows, a_columns, b_rows, b_columns).\n\nReferences ----------\n\n* Hochreiter, Bodenhofer, et. al., 2010. `FABIA: factor analysis for bicluster acquisition <https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2881408/>`__.\n"
+}

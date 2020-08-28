@@ -1,0 +1,7 @@
+{
+    "source file": "multicomp63.py",
+    "line number": "14",
+    "func name": "pairwise_tukeyhsd",
+    "func arg": "(endog, groups, alpha)",
+    "comments": "Calculate all pairwise comparisons with TukeyHSD confidence intervals\n\nParameters ---------- endog : ndarray, float, 1d response variable groups : ndarray, 1d array with groups, can be string or integers alpha : float significance level for the test\n##### Returns\n* **results **: TukeyHSDResults instance\n    A results class containing relevant data and some post-hoc\n    calculations, including adjusted p-value\n\n"
+}

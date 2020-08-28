@@ -1,0 +1,7 @@
+{
+    "source file": "erroranalysis.py",
+    "line number": "14",
+    "func name": "error_list",
+    "func arg": "(train_sents, test_sents)",
+    "comments": "Returns a list of human-readable strings indicating the errors in the given tagging of the corpus.\n\nparam train_sents: The correct tagging of the corpus :type train_sents: list(tuple) :param test_sents: The tagged corpus :type test_sents: list(tuple)\n"
+}

@@ -1,0 +1,7 @@
+{
+    "source file": "FontFile.py",
+    "line number": "25",
+    "func name": "puti16",
+    "func arg": "(fp, values)",
+    "comments": "Write network order (big-endian) 16-bit sequence\n\n\n"
+}

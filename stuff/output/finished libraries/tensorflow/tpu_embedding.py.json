@@ -1,0 +1,7 @@
+{
+    "source file": "tpu_embedding.py",
+    "line number": "2227",
+    "func name": "_create_partitioned_variables",
+    "func arg": "(name, num_hosts, vocabulary_size, embedding_dimension, initializer, collections)",
+    "comments": "Creates PartitionedVariables based on `num_hosts` for `table`.\n\n\n"
+}

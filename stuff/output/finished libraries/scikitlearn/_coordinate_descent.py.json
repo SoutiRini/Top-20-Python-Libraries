@@ -1,0 +1,7 @@
+{
+    "source file": "_coordinate_descent.py",
+    "line number": "1040",
+    "func name": "_path_residuals",
+    "func arg": "(X, y, train, test, path, path_params, alphas, l1_ratio, X_order, dtype)",
+    "comments": "Returns the MSE for the models computed by 'path'\n\nParameters ---------- X : {array-like, sparse matrix} of shape (n_samples, n_features) Training data.\n\ny : array-like of shape (n_samples,) or (n_samples, n_targets) Target values\n\ntrain : list of indices The indices of the train set\n\ntest : list of indices The indices of the test set\n\npath : callable function returning a list of models on the path. See enet_path for an example of signature\n\npath_params : dictionary Parameters passed to the path function\n\nalphas : array-like, default=None Array of float that is used for cross-validation. If not provided, computed using 'path'.\n\nl1_ratio : float, default=1 float between 0 and 1 passed to ElasticNet (scaling between l1 and l2 penalties). For ``l1_ratio = 0`` the penalty is an L2 penalty. For ``l1_ratio = 1`` it is an L1 penalty. For ``0 < l1_ratio < 1``, the penalty is a combination of L1 and L2.\n\nX_order : {'F', 'C'}, default=None The order of the arrays expected by the path function to avoid memory copies\n\ndtype : a numpy dtype, default=None The dtype of the arrays expected by the path function to avoid memory copies\n"
+}

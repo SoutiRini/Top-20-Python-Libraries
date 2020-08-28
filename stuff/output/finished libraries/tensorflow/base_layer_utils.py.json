@@ -1,0 +1,7 @@
+{
+    "source file": "base_layer_utils.py",
+    "line number": "833",
+    "func name": "no_ragged_support",
+    "func arg": "(inputs, layer_name)",
+    "comments": ""
+}

@@ -1,0 +1,7 @@
+{
+    "source file": "Hdf5StubImagePlugin.py",
+    "line number": "61",
+    "func name": "_save",
+    "func arg": "(im, fp, filename)",
+    "comments": ""
+}

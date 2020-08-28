@@ -1,0 +1,7 @@
+{
+    "source file": "multitest.py",
+    "line number": "456",
+    "func name": "local_fdr",
+    "func arg": "(zscores, null_proportion, null_pdf, deg, nbins, alpha)",
+    "comments": "Calculate local FDR values for a list of Z-scores.\n\nParameters ---------- zscores : array_like A vector of Z-scores null_proportion : float The assumed proportion of true null hypotheses null_pdf : function mapping reals to positive reals The density of null Z-scores; if None, use standard normal deg : int The maximum exponent in the polynomial expansion of the density of non-null Z-scores nbins : int The number of bins for estimating the marginal density of Z-scores. alpha : float Use Poisson ridge regression with parameter alpha to estimate the density of non-null Z-scores.\n##### Returns\n* **fdr **: array_like\n    A vector of FDR values\n\n* **Model.  Statistical Science 23**: 1, 1-22.\n\n* **Basic use (the null Z-scores are taken to be standard normal)**: \n\n* **Use a Gaussian null distribution estimated from the data**: \n\n"
+}

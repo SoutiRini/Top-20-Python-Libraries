@@ -1,0 +1,7 @@
+{
+    "source file": "test_deprecation.py",
+    "line number": "83",
+    "func name": "test_since_with_extra",
+    "func arg": "(mock_warn)",
+    "comments": ""
+}

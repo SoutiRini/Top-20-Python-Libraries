@@ -1,0 +1,7 @@
+{
+    "source file": "scrapydocs.py",
+    "line number": "135",
+    "func name": "rev_role",
+    "func arg": "(name, rawtext, text, lineno, inliner, options, content)",
+    "comments": ""
+}

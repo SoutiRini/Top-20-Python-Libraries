@@ -1,0 +1,7 @@
+{
+    "source file": "_secondary_axes.py",
+    "line number": "10",
+    "func name": "_make_secondary_locator",
+    "func arg": "(rect, parent)",
+    "comments": "Helper function to locate the secondary axes.\n\nA locator gets used in `Axes.set_aspect` to override the default locations...\n\nIt is a function that takes an axes object and a renderer and tells `set_aspect` where it is to be placed.\n\nThis locator make the transform be in axes-relative co-coordinates because that is how we specify the \"location\" of the secondary axes.\n\nHere *rect* is a rectangle [l, b, w, h] that specifies the location for the axes in the transform given by *trans* on the *parent*.\n"
+}

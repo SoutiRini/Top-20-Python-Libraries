@@ -1,0 +1,7 @@
+{
+    "source file": "packed_distributed_variable.py",
+    "line number": "341",
+    "func name": "_tensor_conversion_packed_var_and_device",
+    "func arg": "(var, dtype, name, as_ref)",
+    "comments": ""
+}

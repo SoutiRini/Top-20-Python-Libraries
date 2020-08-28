@@ -1,0 +1,7 @@
+{
+    "source file": "api.py",
+    "line number": "756",
+    "func name": "rpc_async",
+    "func arg": "(to, func, args, kwargs, timeout)",
+    "comments": "Make a non-blocking RPC call to run function ``func`` on worker ``to``. RPC messages are sent and received in parallel to execution of Python code. This method is thread-safe. This method will immediately return a :class:`~torch.futures.Future` that can be awaited on.\n\nArguments: to (str or WorkerInfo): id or name of the destination worker. func (callable): a callable function, such as Python callables, builtin operators (e.g. :meth:`~torch.add`) and annotated TorchScript functions. args (tuple): the argument tuple for the ``func`` invocation. kwargs (dict): is a dictionary of keyword arguments for the ``func`` invocation. timeout (float, optional): timeout in seconds to use for this RPC. If the RPC does not complete in this amount of time, an exception indicating it has timed out will be raised. A value of 0 indicates an infinite timeout, i.e. a timeout error will never be raised. If not provided, the default value set during initialization or with ``_set_rpc_timeout`` is used.\n##### Returns\n* **``kwargs`` can be retrieved from the **: class\n\n* **arning **: \n\n* ****: class\n\n* **ple**: \n\n* **on both workers. Refer to **: meth\n\n* **Then run the following code in two different processes**: \n\n* **>>> # On worker 0**: \n\n* **>>> # On worker 1**: \n\n* **>>> # On both workers**: \n\n* **>>> def my_script_add(t1, t2)**: \n\n"
+}

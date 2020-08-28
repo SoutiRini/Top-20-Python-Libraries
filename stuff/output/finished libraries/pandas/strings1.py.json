@@ -1,0 +1,7 @@
+{
+    "source file": "strings1.py",
+    "line number": "2017",
+    "func name": "copy",
+    "func arg": "(source)",
+    "comments": "Copy a docstring from another source function (if present)\n\n\n"
+}

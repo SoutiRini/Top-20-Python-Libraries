@@ -1,0 +1,7 @@
+{
+    "source file": "explicit_resnet_param_update.py",
+    "line number": "10",
+    "func name": "gen_param_update_builder_fun",
+    "func arg": "(model, dataset, is_train)",
+    "comments": ""
+}

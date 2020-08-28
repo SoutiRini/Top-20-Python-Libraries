@@ -1,0 +1,7 @@
+{
+    "source file": "abs.py",
+    "line number": "28",
+    "func name": "make_abs_tests",
+    "func arg": "(options)",
+    "comments": "Make a set of tests to do abs.\n\n\n"
+}

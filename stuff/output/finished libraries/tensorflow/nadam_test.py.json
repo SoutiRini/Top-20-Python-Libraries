@@ -1,0 +1,7 @@
+{
+    "source file": "nadam_test.py",
+    "line number": "47",
+    "func name": "nadam_update_numpy",
+    "func arg": "(param, g_t, t, m, v, m_cache, alpha, beta1, beta2, epsilon)",
+    "comments": ""
+}

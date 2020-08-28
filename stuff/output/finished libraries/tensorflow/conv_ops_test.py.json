@@ -1,0 +1,7 @@
+{
+    "source file": "conv_ops_test.py",
+    "line number": "3194",
+    "func name": "GetInceptionBackFilterTest",
+    "func arg": "(input_size, filter_size, output_size, strides, padding, gpu_only)",
+    "comments": ""
+}

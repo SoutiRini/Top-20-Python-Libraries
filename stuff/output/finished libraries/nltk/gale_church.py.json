@@ -1,0 +1,7 @@
+{
+    "source file": "gale_church.py",
+    "line number": "255",
+    "func name": "parse_token_stream",
+    "func arg": "(stream, soft_delimiter, hard_delimiter)",
+    "comments": "Parses a stream of tokens and splits it into sentences (using C{soft_delimiter} tokens) and blocks (using C{hard_delimiter} tokens) for use with the L{align_texts} function.\n\n\n"
+}

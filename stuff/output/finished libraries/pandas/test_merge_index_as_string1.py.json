@@ -1,0 +1,7 @@
+{
+    "source file": "test_merge_index_as_string1.py",
+    "line number": "166",
+    "func name": "test_join_indexes_and_columns_on",
+    "func arg": "(df1, df2, left_index, join_type)",
+    "comments": ""
+}

@@ -1,0 +1,7 @@
+{
+    "source file": "vincent_renderer.py",
+    "line number": "47",
+    "func name": "fig_to_vincent",
+    "func arg": "(fig)",
+    "comments": "Convert a matplotlib figure to a vincent object\n\n\n"
+}

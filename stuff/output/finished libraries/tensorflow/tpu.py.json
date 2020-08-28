@@ -1,0 +1,7 @@
+{
+    "source file": "tpu.py",
+    "line number": "2116",
+    "func name": "prune_unconnected_ops_from_xla",
+    "func arg": "(prune_graph)",
+    "comments": "Prunes unconnected ops as listed in _UNCONNECTED_OPS_TO_PRUNE.\n\n\n##### Args\n* **prune_graph**: A tensorflow graph from which we wish to prune unconnected ops\n  as listed in _UNCONNECTED_OPS_TO_PRUNE.  In general, these ops should have\n  no inputs and no consumers. These can often be left behind due to graph\n  construction rewiring (for instance TF-Hub). While they never execute,\n  they will cause XLA compile to fail so we strip them from XLA compile by\n  removing the tpu_replicate attribute.\n\n"
+}

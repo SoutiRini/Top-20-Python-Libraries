@@ -1,0 +1,7 @@
+{
+    "source file": "factory.py",
+    "line number": "444",
+    "func name": "lstm_factory_multilayer",
+    "func arg": "(cell, script)",
+    "comments": ""
+}

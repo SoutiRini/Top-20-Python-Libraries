@@ -1,0 +1,7 @@
+{
+    "source file": "ImageFont.py",
+    "line number": "721",
+    "func name": "load_default",
+    "func arg": "()",
+    "comments": "Load a \"better than nothing\" default font.\n\n.. versionadded:: 1.1.4\n\n:return: A font object.\n"
+}

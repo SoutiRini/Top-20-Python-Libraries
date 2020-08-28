@@ -1,0 +1,7 @@
+{
+    "source file": "tensor_tracer.py",
+    "line number": "368",
+    "func name": "_trace_files_need_precreated",
+    "func arg": "(output_dir)",
+    "comments": "Return True if trace files must be pre-created by users.\n\n\n"
+}

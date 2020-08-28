@@ -1,0 +1,7 @@
+{
+    "source file": "run_tests_in_batch.py",
+    "line number": "122",
+    "func name": "run",
+    "func arg": "(stdout, stderr, argv, theano_nose, batch_size, time_profile, display_batch_output)",
+    "comments": ""
+}

@@ -1,0 +1,7 @@
+{
+    "source file": "_base6.py",
+    "line number": "39",
+    "func name": "_check_X",
+    "func arg": "(X, n_components, n_features, ensure_min_samples)",
+    "comments": "Check the input data X.\n\nParameters ---------- X : array-like of shape (n_samples, n_features)\n\nn_components : int\n##### Returns\n* **X **: array, shape (n_samples, n_features)\n\n"
+}

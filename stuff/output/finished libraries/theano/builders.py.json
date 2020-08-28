@@ -1,0 +1,7 @@
+{
+    "source file": "builders.py",
+    "line number": "718",
+    "func name": "inline_ofg_expansion",
+    "func arg": "(node)",
+    "comments": "This optimization expands internal graph of OpFromGraph. Only performed if node.op.is_inline == True Doing so can improve optimization at the cost of compilation speed.\n\n\n"
+}

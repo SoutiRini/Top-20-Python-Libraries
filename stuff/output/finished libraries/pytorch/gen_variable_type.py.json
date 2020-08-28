@@ -1,0 +1,7 @@
+{
+    "source file": "gen_variable_type.py",
+    "line number": "1270",
+    "func name": "dispatch_strategy",
+    "func arg": "(declaration)",
+    "comments": "How are we going to call the underlying implementation of a declaration?  There are two strategies\n\n- use_derived: we want to call the implementation on CPUDoubleType (or a similar, derived Type instance).\n\nBecause these derived instances deal in Tensors, not Variables (it's a completely different object, so it doesn't dispatch back to VariableType), code on this dispatch path needs to wrap/unwrap tensors.\n\nIf the derived implementation takes and returns tensors, the implementation is usually differentiable (although we also use the derived dispatch path for non-differentiable functions that we still want to dispatch on the derived Type instance; e.g., size())\n\n- use_type: we want to call the implementation on Type, because it is implemented concretely, and the functions it invokes will get dispatched back to VariableType (which will ensure that they are differentiable.)\n"
+}

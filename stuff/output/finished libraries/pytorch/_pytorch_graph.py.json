@@ -1,0 +1,7 @@
+{
+    "source file": "_pytorch_graph.py",
+    "line number": "272",
+    "func name": "graph",
+    "func arg": "(model, args, verbose)",
+    "comments": "This method processes a PyTorch model and produces a `GraphDef` proto that can be logged to TensorBoard.\n\n\n##### Args\n* **model (PyTorch module)**: The model to be parsed.\n\n* **args (tuple)**: input tensor[s] for the model.\n\n* **verbose (bool)**: Whether to print out verbose information while\n  processing.\n\n"
+}

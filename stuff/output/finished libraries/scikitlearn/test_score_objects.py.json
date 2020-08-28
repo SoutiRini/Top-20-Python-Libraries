@@ -1,0 +1,7 @@
+{
+    "source file": "test_score_objects.py",
+    "line number": "744",
+    "func name": "test_multiclass_roc_no_proba_scorer_errors",
+    "func arg": "(scorer_name)",
+    "comments": ""
+}

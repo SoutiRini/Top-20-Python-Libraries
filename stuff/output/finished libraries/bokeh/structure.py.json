@@ -1,0 +1,7 @@
+{
+    "source file": "structure.py",
+    "line number": "67",
+    "func name": "generate_structure_plot",
+    "func arg": "(f)",
+    "comments": "Given a bokeh model f, return a model that displays the graph of its submodels.\n\nClicking on the nodes of the graph reveals the attributes of that submodel.\n"
+}

@@ -1,0 +1,7 @@
+{
+    "source file": "test_image.py",
+    "line number": "51",
+    "func name": "test_image_save_as_saves_valid_image",
+    "func arg": "(setup_image, image_format, width, height, scale)",
+    "comments": ""
+}

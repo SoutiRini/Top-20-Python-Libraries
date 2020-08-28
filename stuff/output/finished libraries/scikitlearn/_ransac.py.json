@@ -1,0 +1,7 @@
+{
+    "source file": "_ransac.py",
+    "line number": "23",
+    "func name": "_dynamic_max_trials",
+    "func arg": "(n_inliers, n_samples, min_samples, probability)",
+    "comments": "Determine number trials such that at least one outlier-free subset is sampled for the given inlier/outlier ratio.\n\nParameters ---------- n_inliers : int Number of inliers in the data.\n\nn_samples : int Total number of samples in the data.\n\nmin_samples : int Minimum number of samples chosen randomly from original data.\n\nprobability : float Probability (confidence) that one outlier-free sample is generated.\n##### Returns\n* **trials **: int\n    Number of trials.\n\n"
+}

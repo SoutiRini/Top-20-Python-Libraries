@@ -1,0 +1,7 @@
+{
+    "source file": "confidence_ellipse.py",
+    "line number": "104",
+    "func name": "get_correlated_dataset",
+    "func arg": "(n, dependency, mu, scale)",
+    "comments": ""
+}

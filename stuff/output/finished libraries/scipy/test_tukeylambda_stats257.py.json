@@ -1,0 +1,7 @@
+{
+    "source file": "test_tukeylambda_stats257.py",
+    "line number": "77",
+    "func name": "test_tukeylambda_stats_invalid",
+    "func arg": "()",
+    "comments": "Test values of lambda outside the domains of the functions.\n\n\n"
+}

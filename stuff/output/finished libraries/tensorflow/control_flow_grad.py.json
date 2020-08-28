@@ -1,0 +1,7 @@
+{
+    "source file": "control_flow_grad.py",
+    "line number": "243",
+    "func name": "_LoopCondGrad",
+    "func arg": "(_)",
+    "comments": "Stop backprop for the predicate of a while loop.\n\n\n"
+}

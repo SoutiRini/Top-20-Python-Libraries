@@ -1,0 +1,7 @@
+{
+    "source file": "parallelize_bmuf_distributed_test.py",
+    "line number": "22",
+    "func name": "bmuf_process",
+    "func arg": "(filestore_dir, process_id, shared_results, cpu_device, nesterov)",
+    "comments": ""
+}

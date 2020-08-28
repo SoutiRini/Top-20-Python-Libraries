@@ -1,0 +1,7 @@
+{
+    "source file": "transform.py",
+    "line number": "76",
+    "func name": "transform_caffe2_net",
+    "func arg": "(pred_net, input_shapes, populate_shapes, max_batch_size, max_workspace_size, verbosity, debug_builder, build_serializable_op)",
+    "comments": "Transform the caffe2_net by collapsing TRT-runnable nodes into trt c2 ops\n\n\n"
+}

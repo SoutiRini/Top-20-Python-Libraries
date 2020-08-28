@@ -1,0 +1,7 @@
+{
+    "source file": "logical.py",
+    "line number": "98",
+    "func name": "not_eq",
+    "func arg": "(a, b)",
+    "comments": "Functional form of \"not-equal\".\n\n\n"
+}

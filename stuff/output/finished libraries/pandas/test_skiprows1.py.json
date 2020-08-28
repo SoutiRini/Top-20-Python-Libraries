@@ -1,0 +1,7 @@
+{
+    "source file": "test_skiprows1.py",
+    "line number": "246",
+    "func name": "test_skip_rows_bad_callable",
+    "func arg": "(all_parsers)",
+    "comments": ""
+}

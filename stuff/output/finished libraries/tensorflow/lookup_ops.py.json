@@ -1,0 +1,7 @@
+{
+    "source file": "lookup_ops.py",
+    "line number": "1601",
+    "func name": "index_to_string_table_from_tensor",
+    "func arg": "(vocabulary_list, default_value, name)",
+    "comments": "Returns a lookup table that maps a `Tensor` of indices into strings.\n\nThis operation constructs a lookup table to map int64 indices into string values. The mapping is initialized from a string `vocabulary_list` 1-D `Tensor` where each element is a value and the corresponding index within the tensor is the key.\n\nAny input which does not have a corresponding index in 'vocabulary_list' (an out-of-vocabulary entry) is assigned the `default_value`\n\nThe underlying table must be initialized by calling `session.run(tf.compat.v1.tables_initializer())` or `session.run(table.init())` once.\n\nElements in `vocabulary_list` cannot have duplicates, otherwise when executing the table initializer op, it will throw a `FailedPreconditionError`.\n\nSample Usages:\n\n```python vocabulary_list = tf.constant([\"emerson\", \"lake\", \"palmer\"]) indices = tf.constant([1, 5], tf.int64) table = tf.lookup.index_to_string_table_from_tensor( vocabulary_list, default_value=\"UNKNOWN\") values = table.lookup(indices) ... tf.compat.v1.tables_initializer().run()\n\nvalues.eval() ==> [\"lake\", \"UNKNOWN\"] ```\n##### Args\n* **vocabulary_list**: A 1-D string `Tensor` that specifies the strings to map\n  from indices.\n\n* **default_value**: The value to use for out-of-vocabulary indices.\n\n* **name**: A name for this op (optional).\n\n##### Returns\n"
+}

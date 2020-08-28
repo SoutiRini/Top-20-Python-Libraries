@@ -1,0 +1,7 @@
+{
+    "source file": "transforms.py",
+    "line number": "2893",
+    "func name": "offset_copy",
+    "func arg": "(trans, fig, x, y, units)",
+    "comments": "Return a new transform with an added offset.\n\nParameters ---------- trans : `Transform` subclass Any transform, to which offset will be applied. fig : `~matplotlib.figure.Figure`, default: None Current figure. It can be None if *units* are 'dots'. x, y : float, default: 0.0 The offset to apply. units : {'inches', 'points', 'dots'}, default: 'inches' Units of the offset.\n##### Returns\n"
+}

@@ -1,0 +1,7 @@
+{
+    "source file": "wsd.py",
+    "line number": "13",
+    "func name": "lesk",
+    "func arg": "(context_sentence, ambiguous_word, pos, synsets)",
+    "comments": "Return a synset for an ambiguous word in a context.\n\nparam iter context_sentence: The context sentence where the ambiguous word occurs, passed as an iterable of words. :param str ambiguous_word: The ambiguous word that requires WSD. :param str pos: A specified Part-of-Speech (POS). :param iter synsets: Possible synsets of the ambiguous word. :return: ``lesk_sense`` The Synset() object with the highest signature overlaps.\n\nThis function is an implementation of the original Lesk algorithm (1986) [1].\n\nUsage example::\n\n>>> lesk(['I', 'went', 'to', 'the', 'bank', 'to', 'deposit', 'money', '.'], 'bank', 'n') Synset('savings_bank.n.02')\n\n[1] Lesk, Michael. \"Automatic sense disambiguation using machine readable dictionaries: how to tell a pine cone from an ice cream cone.\" Proceedings of the 5th Annual International Conference on Systems Documentation. ACM, 1986. http://dl.acm.org/citation.cfm?id=318728\n"
+}

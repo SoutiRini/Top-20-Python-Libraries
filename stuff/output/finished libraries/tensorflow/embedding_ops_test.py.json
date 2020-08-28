@@ -1,0 +1,7 @@
+{
+    "source file": "embedding_ops_test.py",
+    "line number": "188",
+    "func name": "_EmbeddingResult",
+    "func arg": "(params, id_vals, num_shards, vocab_size, partition_strategy, weight_vals)",
+    "comments": ""
+}

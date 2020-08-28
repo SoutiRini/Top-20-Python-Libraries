@@ -1,0 +1,7 @@
+{
+    "source file": "test_cumulativ1.py",
+    "line number": "18",
+    "func name": "_check_accum_op",
+    "func arg": "(name, series, check_dtype)",
+    "comments": ""
+}

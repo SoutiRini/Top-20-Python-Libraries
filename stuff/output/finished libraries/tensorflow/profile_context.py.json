@@ -1,0 +1,7 @@
+{
+    "source file": "profile_context.py",
+    "line number": "45",
+    "func name": "_profiled_run",
+    "func arg": "(fetches, feed_dict, options, run_metadata)",
+    "comments": "Overwrites the session.run().\n\n\n"
+}

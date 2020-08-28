@@ -1,0 +1,7 @@
+{
+    "source file": "survfunc.py",
+    "line number": "739",
+    "func name": "plot_survfunc",
+    "func arg": "(survfuncs, ax)",
+    "comments": "Plot one or more survivor functions.\n\nParameters ---------- survfuncs : object or array_like A single SurvfuncRight object, or a list or SurvfuncRight objects that are plotted together.\n##### Returns\n* **Add a legend**: \n\n* **>>> df = data.loc[data.sex == \"F\", **: ]\n\n* **Change the line colors**: \n\n"
+}

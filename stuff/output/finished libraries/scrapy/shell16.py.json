@@ -1,0 +1,7 @@
+{
+    "source file": "shell16.py",
+    "line number": "164",
+    "func name": "_request_deferred",
+    "func arg": "(request)",
+    "comments": "Wrap a request inside a Deferred.\n\nThis function is harmful, do not use it until you know what you are doing.\n\nThis returns a Deferred whose first pair of callbacks are the request callback and errback. The Deferred also triggers when the request callback/errback is executed (i.e. when the request is downloaded)\n\nWARNING: Do not call request.replace() until after the deferred is called.\n"
+}

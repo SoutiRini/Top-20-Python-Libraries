@@ -1,0 +1,7 @@
+{
+    "source file": "test_complexity.py",
+    "line number": "24",
+    "func name": "num_non_tensor_nodes",
+    "func arg": "(block)",
+    "comments": ""
+}

@@ -1,0 +1,7 @@
+{
+    "source file": "offsetbox.py",
+    "line number": "137",
+    "func name": "_get_aligned_offsets",
+    "func arg": "(hd_list, height, align)",
+    "comments": "Given a list of (height, descent) of each boxes, align the boxes with *align* and calculate the y-offsets of each boxes. total width and the offset positions of each items according to *mode*. xdescent is analogous to the usual descent, but along the x-direction. xdescent values are currently ignored.\n\nParameters ---------- hd_list List of (height, xdescent) of boxes to be aligned. height : float or None Intended total length. If None, the maximum of the heights in *hd_list* is used. align : {'baseline', 'left', 'top', 'right', 'bottom', 'center'} Align mode.\n"
+}

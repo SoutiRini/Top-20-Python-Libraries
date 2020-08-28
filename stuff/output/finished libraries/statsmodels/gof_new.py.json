@@ -1,0 +1,7 @@
+{
+    "source file": "gof_new.py",
+    "line number": "591",
+    "func name": "bootstrap2",
+    "func arg": "(value, distr, args, nobs, nrep)",
+    "comments": "Monte Carlo (or parametric bootstrap) p-values for gof\n\ncurrently hardcoded for A^2 only\n\nnon vectorized, loops over all parametric bootstrap replications and calculates and returns specific p-value,\n\nrename function to less generic\n"
+}

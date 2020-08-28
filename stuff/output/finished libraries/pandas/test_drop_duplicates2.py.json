@@ -1,0 +1,7 @@
+{
+    "source file": "test_drop_duplicates2.py",
+    "line number": "406",
+    "func name": "test_drop_duplicates_ignore_index",
+    "func arg": "(inplace, origin_dict, output_dict, ignore_index, output_index)",
+    "comments": ""
+}

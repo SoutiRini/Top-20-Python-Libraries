@@ -1,0 +1,7 @@
+{
+    "source file": "data_prepare.py",
+    "line number": "143",
+    "func name": "write_data",
+    "func arg": "(data_to_write, path)",
+    "comments": ""
+}

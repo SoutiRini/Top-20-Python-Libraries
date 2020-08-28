@@ -1,0 +1,7 @@
+{
+    "source file": "util3.py",
+    "line number": "1361",
+    "func name": "saver_with_op_caching",
+    "func arg": "(obj)",
+    "comments": "A TrackableSaver with a SaveableObject cache when graph building.\n\n\n"
+}

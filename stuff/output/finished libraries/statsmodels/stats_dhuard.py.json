@@ -1,0 +1,7 @@
+{
+    "source file": "stats_dhuard.py",
+    "line number": "118",
+    "func name": "empiricalcdf",
+    "func arg": "(data, method)",
+    "comments": "Return the empirical cdf.\n\nMethods available: Hazen:\n\n\n\n\n\n (i-0.5)/N Weibull:\n\n\n\n i/(N+1) Chegodayev:\n\n(i-.3)/(N+.4) Cunnane:\n\n\n\n (i-.4)/(N+.2) Gringorten:\n\n(i-.44)/(N+.12) California:\n\n(i-1)/N\n\nWhere i goes from 1 to N.\n"
+}

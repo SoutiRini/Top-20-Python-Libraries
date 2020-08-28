@@ -1,0 +1,7 @@
+{
+    "source file": "rnn_cell_wrapper_impl.py",
+    "line number": "507",
+    "func name": "_enumerated_map_structure_up_to",
+    "func arg": "(shallow_structure, map_fn, **kwargs)",
+    "comments": ""
+}

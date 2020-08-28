@@ -1,0 +1,7 @@
+{
+    "source file": "command_parser.py",
+    "line number": "494",
+    "func name": "get_print_tensor_argparser",
+    "func arg": "(description)",
+    "comments": "Get an ArgumentParser for a command that prints tensor values.\n\nExamples of such commands include print_tensor and print_feed.\n##### Args\n* **description**: Description of the ArgumentParser.\n\n##### Returns\n"
+}

@@ -1,0 +1,7 @@
+{
+    "source file": "gh_api.py",
+    "line number": "98",
+    "func name": "get_pulls_list",
+    "func arg": "(project, github_api)",
+    "comments": "get pull request list\n\ngithub_api : version of github api to use\n"
+}

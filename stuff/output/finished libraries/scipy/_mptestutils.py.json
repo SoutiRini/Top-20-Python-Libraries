@@ -1,0 +1,7 @@
+{
+    "source file": "_mptestutils.py",
+    "line number": "418",
+    "func name": "mp_assert_allclose",
+    "func arg": "(res, std, atol, rtol)",
+    "comments": "Compare lists of mpmath.mpf's or mpmath.mpc's directly so that it can be done to higher precision than double.\n\n\n"
+}

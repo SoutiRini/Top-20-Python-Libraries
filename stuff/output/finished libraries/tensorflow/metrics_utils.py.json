@@ -1,0 +1,7 @@
+{
+    "source file": "metrics_utils.py",
+    "line number": "479",
+    "func name": "ragged_assert_compatible_and_get_flat_values",
+    "func arg": "(values, mask)",
+    "comments": "If ragged, it checks the compatibility and then returns the flat_values.\n\nNote: If two tensors are dense, it does not check their compatibility. Note: Although two ragged tensors with different ragged ranks could have identical overall rank and dimension sizes and hence be compatible, we do not support those cases.\n##### Args\n* **values**: A list of potentially ragged tensor of the same ragged_rank.\n\n* **mask**: A potentially ragged tensor of the same ragged_rank as elements in\n  Values.\n\n##### Returns\n"
+}

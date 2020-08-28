@@ -1,0 +1,7 @@
+{
+    "source file": "lapack.py",
+    "line number": "991",
+    "func name": "_check_work_float",
+    "func arg": "(value, dtype, int_dtype)",
+    "comments": "Convert LAPACK-returned work array size float to integer, carefully for single-precision types.\n\n\n"
+}

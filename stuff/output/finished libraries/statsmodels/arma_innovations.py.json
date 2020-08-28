@@ -1,0 +1,7 @@
+{
+    "source file": "arma_innovations.py",
+    "line number": "230",
+    "func name": "arma_scoreobs",
+    "func arg": "(endog, ar_params, ma_params, sigma2, prefix)",
+    "comments": "Compute the score (gradient) per observation.\n\nParameters ---------- endog : ndarray The observed time-series process. ar_params : ndarray, optional Autoregressive coefficients, not including the zero lag. ma_params : ndarray, optional Moving average coefficients, not including the zero lag, where the sign convention assumes the coefficients are part of the lag polynomial on the right-hand-side of the ARMA definition (i.e. they have the same sign from the usual econometrics convention in which the coefficients are on the right-hand-side of the ARMA definition). sigma2 : ndarray, optional The ARMA innovation variance. Default is 1. prefix : str, optional The BLAS prefix associated with the datatype. Default is to find the best datatype based on given input. This argument is typically only used internally.\n##### Returns\n"
+}

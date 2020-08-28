@@ -1,0 +1,7 @@
+{
+    "source file": "common_shapes.py",
+    "line number": "89",
+    "func name": "broadcast_shape",
+    "func arg": "(shape_x, shape_y)",
+    "comments": "Returns the broadcasted shape between `shape_x` and `shape_y`.\n\n\n##### Args\n* **shape_x**: A `TensorShape`\n\n* **shape_y**: A `TensorShape`\n\n##### Returns\n"
+}

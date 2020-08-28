@@ -1,0 +1,7 @@
+{
+    "source file": "utils.py",
+    "line number": "673",
+    "func name": "_check_argument",
+    "func arg": "(param, options, value)",
+    "comments": "Raise if value for param is not in options.\n\n\n"
+}

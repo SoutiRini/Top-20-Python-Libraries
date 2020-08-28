@@ -1,0 +1,7 @@
+{
+    "source file": "porter.py",
+    "line number": "678",
+    "func name": "demo",
+    "func arg": "()",
+    "comments": "A demonstration of the porter stemmer on a sample from the Penn Treebank corpus.\n\n\n"
+}

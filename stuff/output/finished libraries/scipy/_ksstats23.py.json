@@ -1,0 +1,7 @@
+{
+    "source file": "_ksstats23.py",
+    "line number": "567",
+    "func name": "kolmogni",
+    "func arg": "(n, q, cdf)",
+    "comments": "Computes the PPF(or ISF) for the two-sided Kolmogorov-Smirnov distribution.\n\nParameters ---------- n : integer, array_like the number of samples q : float, array_like Probabilities, float between 0 and 1 cdf : bool, optional whether to compute the PPF(default=true) or the ISF.\n##### Returns\n* **ppf **: ndarray\n    PPF (or ISF if cdf is False) at the specified locations\n\n"
+}

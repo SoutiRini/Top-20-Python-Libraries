@@ -1,0 +1,7 @@
+{
+    "source file": "curses_ui.py",
+    "line number": "51",
+    "func name": "_get_command_from_line_attr_segs",
+    "func arg": "(mouse_x, attr_segs)",
+    "comments": "Attempt to extract command from the attribute segments of a line.\n\n\n##### Args\n* **mouse_x**: (int) x coordinate of the mouse event.\n\n* **attr_segs**: (list) The list of attribute segments of a line from a\n  RichTextLines object.\n\n##### Returns\n* **(str or None) If a command exists**: the command as a str; otherwise, None.\n\n"
+}

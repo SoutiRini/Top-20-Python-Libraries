@@ -1,0 +1,7 @@
+{
+    "source file": "gradients2.py",
+    "line number": "83",
+    "func name": "batch_jacobian",
+    "func arg": "(output, inp, use_pfor, parallel_iterations)",
+    "comments": "Computes and stacks jacobians of `output[i,...]` w.r.t. `input[i,...]`.\n\ne.g. x = tf.constant([[1, 2], [3, 4]], dtype=tf.float32) y = x * x jacobian = batch_jacobian(y, x) # => [[[2,\n\n0], [0,\n\n4]], [[6,\n\n0], [0,\n\n8]]]\n##### Args\n* **output**: A tensor with shape [b, y1, ..., y_n]. `output[i,...]` should\n  only depend on `inp[i,...]`.\n\n* **inp**: A tensor with shape [b, x1, ..., x_m]\n\n* **use_pfor**: If true, uses pfor for computing the Jacobian. Else uses a\n  tf.while_loop.\n\n* **parallel_iterations**: A knob to control how many iterations are vectorized\n  and dispatched in parallel. The default value of None, when use_pfor is\n  true, corresponds to vectorizing all the iterations. When use_pfor is\n  false, the default value of None corresponds to parallel_iterations=10.\n  This knob can be used to control the total memory usage.\n\n##### Returns\n"
+}

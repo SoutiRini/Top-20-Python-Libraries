@@ -1,0 +1,7 @@
+{
+    "source file": "norms.py",
+    "line number": "827",
+    "func name": "estimate_location",
+    "func arg": "(a, scale, norm, axis, initial, maxiter, tol)",
+    "comments": "M-estimator of location using self.norm and a current estimator of scale.\n\nThis iteratively finds a solution to\n\nnorm.psi((a-mu)/scale).sum() == 0\n\nParameters ---------- a : ndarray Array over which the location parameter is to be estimated scale : ndarray Scale parameter to be used in M-estimator norm : RobustNorm, optional Robust norm used in the M-estimator.\n\nThe default is HuberT(). axis : int, optional Axis along which to estimate the location parameter.\n\nThe default is 0. initial : ndarray, optional Initial condition for the location parameter.\n\nDefault is None, which uses the median of a. niter : int, optional Maximum number of iterations.\n\nThe default is 30. tol : float, optional Toleration for convergence.\n\nThe default is 1e-06.\n##### Returns\n* **mu **: ndarray\n    Estimate of location\n\n"
+}

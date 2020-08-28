@@ -1,0 +1,7 @@
+{
+    "source file": "test_usecols1.py",
+    "line number": "565",
+    "func name": "test_usecols_subset_names_mismatch_orig_columns",
+    "func arg": "(all_parsers, usecols)",
+    "comments": ""
+}

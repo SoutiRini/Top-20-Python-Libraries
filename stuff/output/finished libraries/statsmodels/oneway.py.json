@@ -1,0 +1,7 @@
+{
+    "source file": "oneway.py",
+    "line number": "886",
+    "func name": "equivalence_scale_oneway",
+    "func arg": "(data, equiv_margin, method, center, transform, trim_frac_mean, trim_frac_anova)",
+    "comments": "Oneway Anova test for equivalence of scale, variance or dispersion\n\nThis hypothesis test performs a oneway equivalence anova test on transformed data.\n\nNote, the interpretation of the equivalence margin `equiv_margin` will depend on the transformation of the data. Transformations like absolute deviation are not scaled to correspond to the variance under normal distribution.\n"
+}

@@ -1,0 +1,7 @@
+{
+    "source file": "sequence_feature_column_test.py",
+    "line number": "143",
+    "func name": "_get_sparse_tensors",
+    "func arg": "(column, features)",
+    "comments": ""
+}

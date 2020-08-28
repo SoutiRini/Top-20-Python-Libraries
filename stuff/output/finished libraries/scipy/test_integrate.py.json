@@ -1,0 +1,7 @@
+{
+    "source file": "test_integrate.py",
+    "line number": "804",
+    "func name": "test_repeated_t_values",
+    "func arg": "()",
+    "comments": "Regression test for gh-8217.\n\n\n"
+}

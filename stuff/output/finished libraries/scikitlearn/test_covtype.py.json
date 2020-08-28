@@ -1,0 +1,7 @@
+{
+    "source file": "test_covtype.py",
+    "line number": "45",
+    "func name": "test_pandas_dependency_message",
+    "func arg": "(fetch_covtype_fxt, hide_available_pandas)",
+    "comments": ""
+}

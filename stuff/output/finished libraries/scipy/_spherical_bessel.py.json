@@ -1,0 +1,7 @@
+{
+    "source file": "_spherical_bessel.py",
+    "line number": "157",
+    "func name": "spherical_kn",
+    "func arg": "(n, z, derivative)",
+    "comments": "Modified spherical Bessel function of the second kind or its derivative.\n\nDefined as [1]_,\n\n.. math:: k_n(z) = \\sqrt{\\frac{\\pi}{2z}} K_{n + 1/2}(z),\n\nwhere :math:`K_n` is the modified Bessel function of the second kind.\n\nParameters ---------- n : int, array_like Order of the Bessel function (n >= 0). z : complex or float, array_like Argument of the Bessel function. derivative : bool, optional If True, the value of the derivative (rather than the function itself) is returned.\n##### Returns\n* **kn **: ndarray\n\n* **.. math**: \n\n* **.. versionadded**: \n\n* **.. [1] https**: //dlmf.nist.gov/10.47.E9\n\n* **.. [2] https**: //dlmf.nist.gov/10.51.E5\n\n"
+}

@@ -1,0 +1,7 @@
+{
+    "source file": "deprecation.py",
+    "line number": "610",
+    "func name": "silence",
+    "func arg": "()",
+    "comments": "Temporarily silence deprecation warnings.\n\n\n"
+}

@@ -1,0 +1,7 @@
+{
+    "source file": "checkpoint_test.py",
+    "line number": "46",
+    "func name": "local_copy_op",
+    "func arg": "(src, dest)",
+    "comments": ""
+}

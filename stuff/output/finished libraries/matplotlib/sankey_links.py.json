@@ -1,0 +1,7 @@
+{
+    "source file": "sankey_links.py",
+    "line number": "27",
+    "func name": "corner",
+    "func arg": "(sankey)",
+    "comments": "Generate a corner link.\n\n\n"
+}

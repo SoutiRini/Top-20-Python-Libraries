@@ -1,0 +1,7 @@
+{
+    "source file": "temporal_sample_weights_correctness_test.py",
+    "line number": "70",
+    "func name": "run_with_different_sample_weight_mode_inputs",
+    "func arg": "(fn, partial_sw)",
+    "comments": "Executes the given function with different sample weight mode inputs.\n\n\n##### Args\n* **fn**: Training or eval function to execute.\n\n* **partial_sw**: Boolean flag to indicate whether temporal sample weight mode\n  should be set partially just for one output.\n\n"
+}

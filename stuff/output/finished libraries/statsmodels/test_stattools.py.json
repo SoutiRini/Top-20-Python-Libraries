@@ -1,0 +1,7 @@
+{
+    "source file": "test_stattools.py",
+    "line number": "1055",
+    "func name": "test_pacf_nlags_error",
+    "func arg": "(reset_randomstate)",
+    "comments": ""
+}

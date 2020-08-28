@@ -1,0 +1,7 @@
+{
+    "source file": "logging_ops.py",
+    "line number": "635",
+    "func name": "scalar_summary",
+    "func arg": "(tags, values, collections, name)",
+    "comments": "Outputs a `Summary` protocol buffer with scalar values.\n\nThis ops is deprecated. Please switch to tf.summary.scalar. For an explanation of why this op was deprecated, and information on how to migrate, look ['here'](https://github.com/tensorflow/tensorflow/blob/master/tensorflow/contrib/deprecated/__init__.py)\n\nThe input `tags` and `values` must have the same shape.\n\nThe generated summary has a summary value for each tag-value pair in `tags` and `values`.\n##### Args\n* **tags**: A `string` `Tensor`.  Tags for the summaries.\n\n* **values**: A real numeric Tensor.  Values for the summaries.\n\n* **collections**: Optional list of graph collections keys. The new summary op is\n  added to these collections. Defaults to `[GraphKeys.SUMMARIES]`.\n\n* **name**: A name for the operation (optional).\n\n##### Returns\n"
+}

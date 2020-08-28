@@ -1,0 +1,7 @@
+{
+    "source file": "_analytic_rotation.py",
+    "line number": "106",
+    "func name": "promax",
+    "func arg": "(A, k)",
+    "comments": "Performs promax rotation of the matrix :math:`A`.\n\nThis method was not very clear to me from the literature, this implementation is as I understand it should work.\n\nPromax rotation is performed in the following steps:\n\n* Determine varimax rotated patterns :math:`V`.\n\n* Construct a rotation target matrix :math:`|V_{ij}|^k/V_{ij}`\n\n* Perform procrustes rotation towards the target to obtain T\n\n* Determine the patterns\n\nFirst, varimax rotation a target matrix :math:`H` is determined with orthogonal varimax rotation. Then, oblique target rotation is performed towards the target.\n\nParameters ---------- A : numpy matrix non rotated factors k : float parameter, should be positive\n\nReferences ---------- [1] Browne (2001)\n\n- An overview of analytic rotation in exploratory factor analysis\n\n[2] Navarra, Simoncini (2010)\n\n- A guide to empirical orthogonal functions for climate data analysis\n"
+}

@@ -1,0 +1,7 @@
+{
+    "source file": "subtensor.py",
+    "line number": "2438",
+    "func name": "take",
+    "func arg": "(a, indices, axis, mode)",
+    "comments": ""
+}

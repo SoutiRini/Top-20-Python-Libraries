@@ -1,0 +1,7 @@
+{
+    "source file": "test_qcut1.py",
+    "line number": "293",
+    "func name": "test_qcut_nullable_integer",
+    "func arg": "(q, any_nullable_int_dtype)",
+    "comments": ""
+}

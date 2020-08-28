@@ -1,0 +1,7 @@
+{
+    "source file": "test_decorators.py",
+    "line number": "51",
+    "func name": "test_deprecated_alias",
+    "func arg": "(msg, remove_version, warning)",
+    "comments": ""
+}

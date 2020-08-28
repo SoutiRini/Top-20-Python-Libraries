@@ -1,0 +1,7 @@
+{
+    "source file": "tpu_values.py",
+    "line number": "183",
+    "func name": "enclosing_tpu_context",
+    "func arg": "()",
+    "comments": "Returns the TPUReplicateContext, which exists inside a tpu.rewrite().\n\n\n"
+}

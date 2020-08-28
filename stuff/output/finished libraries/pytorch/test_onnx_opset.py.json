@@ -1,0 +1,7 @@
+{
+    "source file": "test_onnx_opset.py",
+    "line number": "48",
+    "func name": "check_onnx_opsets_operator",
+    "func arg": "(module, x, ops, opset_versions, training, example_outputs)",
+    "comments": ""
+}

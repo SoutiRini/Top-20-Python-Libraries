@@ -1,0 +1,7 @@
+{
+    "source file": "clip_ops.py",
+    "line number": "389",
+    "func name": "clip_by_average_norm",
+    "func arg": "(t, clip_norm, name)",
+    "comments": "Clips tensor values to a maximum average L2-norm.\n\nGiven a tensor `t`, and a maximum clip value `clip_norm`, this operation normalizes `t` so that its average L2-norm is less than or equal to `clip_norm`. Specifically, if the average L2-norm is already less than or equal to `clip_norm`, then `t` is not modified. If the average L2-norm is greater than `clip_norm`, then this operation returns a tensor of the same type and shape as `t` with its values set to:\n\n`t * clip_norm / l2norm_avg(t)`\n\nIn this case, the average L2-norm of the output tensor is `clip_norm`.\n\nThis operation is typically used to clip gradients before applying them with an optimizer.\n##### Args\n* **t**: A `Tensor`.\n\n* **clip_norm**: A 0-D (scalar) `Tensor` > 0. A maximum clipping value.\n\n* **name**: A name for the operation (optional).\n\n##### Returns\n"
+}

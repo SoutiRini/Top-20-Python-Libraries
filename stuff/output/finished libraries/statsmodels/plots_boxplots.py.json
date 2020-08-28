@@ -1,0 +1,7 @@
+{
+    "source file": "plots_boxplots.py",
+    "line number": "56",
+    "func name": "beanplot",
+    "func arg": "(data, plot_opts, jitter)",
+    "comments": "helper function to try out different plot options\n\n\n"
+}

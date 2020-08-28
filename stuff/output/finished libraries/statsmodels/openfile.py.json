@@ -1,0 +1,7 @@
+{
+    "source file": "openfile.py",
+    "line number": "35",
+    "func name": "get_file_obj",
+    "func arg": "(fname, mode, encoding)",
+    "comments": "Light wrapper to handle strings, path objects and let files (anything else) pass through.\n\nIt also handle '.gz' files.\n\nParameters ---------- fname : str, path object or file-like object File to open / forward mode : str Argument passed to the 'open' or 'gzip.open' function encoding : str For Python 3 only, specify the encoding of the file\n##### Returns\n"
+}

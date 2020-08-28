@@ -1,0 +1,7 @@
+{
+    "source file": "tpu_embedding_gradient.py",
+    "line number": "129",
+    "func name": "get_gradients_through_dummy_table_variables",
+    "func arg": "(tpu_embedding)",
+    "comments": "Get gradients wrt the activations of each feature.\n\n\n##### Args\n* **tpu_embedding**: TPUEmbedding, create dummy table variable to be used with\n  tpu_embedding.\n\n##### Returns\n"
+}

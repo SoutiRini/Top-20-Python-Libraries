@@ -1,0 +1,7 @@
+{
+    "source file": "init_ops_v2.py",
+    "line number": "997",
+    "func name": "_assert_float_dtype",
+    "func arg": "(dtype)",
+    "comments": "Validate and return floating point type based on `dtype`.\n\n`dtype` must be a floating point type.\n##### Args\n* **dtype**: The data type to validate.\n\n##### Returns\n"
+}

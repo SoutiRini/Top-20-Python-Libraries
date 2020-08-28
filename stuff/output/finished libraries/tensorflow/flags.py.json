@@ -1,0 +1,7 @@
+{
+    "source file": "flags.py",
+    "line number": "44",
+    "func name": "_wrap_define_function",
+    "func arg": "(original_function)",
+    "comments": "Wraps absl.flags's define functions so tf.flags accepts old names.\n\n\n"
+}

@@ -1,0 +1,7 @@
+{
+    "source file": "distribute_coordinator_context.py",
+    "line number": "26",
+    "func name": "get_current_worker_context",
+    "func arg": "()",
+    "comments": "Returns the current task context.\n\n\n"
+}

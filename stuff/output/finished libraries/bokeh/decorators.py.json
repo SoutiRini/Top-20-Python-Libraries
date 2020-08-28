@@ -1,0 +1,7 @@
+{
+    "source file": "decorators.py",
+    "line number": "127",
+    "func name": "warning",
+    "func arg": "(code_or_name)",
+    "comments": "Decorator to mark a validator method for a Bokeh error condition\n\n\n##### Args\n* **code_or_name (int or str) **: a code from ``bokeh.validation.errors`` or a string label for a custom check\n\n##### Returns\n* **callable **: decorator for Bokeh model methods\n\n* **ples**: \n\n* **ode-block**: \n\n* **def _check_no_glyph_renderers(self)**: if bad_condition\n\n* **def _check_my_custom_warning(self)**: if bad_condition\n\n"
+}

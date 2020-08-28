@@ -1,0 +1,7 @@
+{
+    "source file": "text_dataset.py",
+    "line number": "186",
+    "func name": "path_to_string_content",
+    "func arg": "(path, max_length)",
+    "comments": ""
+}
